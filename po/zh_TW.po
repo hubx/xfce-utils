@@ -1,6 +1,7 @@
 # Copyrsght (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce-utils package.
 # umm <umm@pchome.com.tw>, 2003.
+# Minor updates by Ambrose Li <acli@ada.dhs.org>, 2004.
 #
 msgid ""
 msgstr ""
@@ -8,21 +9,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-20 08:27+0200\n"
 "PO-Revision-Date: 2003-08-29 21:19+0800\n"
-"Last-Translator: umm <umm@pchome.com.tw>\n"
+"Last-Translator: Ambrose Li <acli@ada.dhs.org>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "關於 XFce 4"
+msgstr "關於 Xfce 4"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce 桌面環境"
+msgstr "Xfce 桌面環境"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -60,7 +59,7 @@ msgstr "xfrun4: 無法將歷史記錄寫入檔案 %s\n"
 #: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "使用那個程式開啟「%s」？"
 
 #: xfrun/xfrun.c:392
 msgid "Run program"
@@ -85,39 +84,36 @@ msgid "Position"
 msgstr "位置"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "頂部"
+msgstr "頂部(_T)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "底部"
+msgstr "底部(_B)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "對齊"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "左邊(_L)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "中間(_C)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "右邊(_R)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "自動隱藏"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "自動隱藏工作列"
+msgstr "自動隱藏工作列(_H)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -139,42 +135,40 @@ msgstr "大"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "闊度："
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "工作"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "顯示所有工作區的工作"
+msgstr "顯示所有工作區的工作(_A)"
 
+# FIXME 譯文有待改進
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "總是將工作分成群組(_G)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "顯示應用程式的名稱(_N)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "頁面切換器"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "在工作列中顯示頁面切換器"
+msgstr "在工作列中顯示頁面切換器(_P)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "系統提示區"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "在工作列中顯示系統匣"
+msgstr "在工作列中顯示系統匣(_S)"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -194,9 +188,8 @@ msgid "This should not happen"
 msgstr "這不應該發生"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "無法取得桌面邊界"
+msgstr "無法取得預設螢幕\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
