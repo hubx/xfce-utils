@@ -23,8 +23,8 @@ msgid "XFce Desktop Environment"
 msgstr "Рабочая среда XFce"
 
 #: xfce4-about/info.c:246
-msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "Copyright 2002-2003 by Olivier Fourdan"
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:265

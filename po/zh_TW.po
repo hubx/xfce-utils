@@ -1,4 +1,4 @@
-# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyrsght (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce-utils package.
 # umm <umm@pchome.com.tw>, 2003.
 #
@@ -22,8 +22,8 @@ msgid "XFce Desktop Environment"
 msgstr "XFce 桌面環境"
 
 #: xfce4-about/info.c:246
-msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "版權所有 2002-2003 Olivier Fourdan"
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "版權所有 2002-2004 Olivier Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:265

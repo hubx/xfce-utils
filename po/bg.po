@@ -26,8 +26,8 @@ msgid "XFce Desktop Environment"
 msgstr "XFce·десктоп среда"
 
 #: xfce4-about/info.c:246
-msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "Запазена марка 2002-2003·на·Olivier·Fourdan"
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Запазена марка 2002-2004·на·Olivier·Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:265
