@@ -197,6 +197,7 @@ write_config (BackdropDialog * bd)
 }
 
 static Atom prop = 0;
+static Atom e_prop = 0;
 
 /* the next two functions are taken mostly
  * from windownaker's wmsetbg */
@@ -249,10 +250,13 @@ set_root_pixmap_property (Pixmap pixmap)
     if (!prop)
         prop = XInternAtom (dpy, "_XROOTPMAP_ID", False);
 
+    if (!e_prop)
+	e_prop = XInternAtom (dpy, "ESETROOT_PMAP_ID", False);
+
     XGrabServer(dpy);
 
     /* Clear out the old pixmap */
-    XGetWindowProperty(dpy, GDK_ROOT_WINDOW(), prop, 0L, 1L, False, AnyPropertyType,
+    XGetWindowProperty(dpy, GDK_ROOT_WINDOW(), e_prop, 0L, 1L, False, AnyPropertyType,
                        &type, &format, &length, &after, &data);
 
     if ((type == XA_PIXMAP) && (format == 32) && (length == 1)) 
@@ -271,10 +275,17 @@ set_root_pixmap_property (Pixmap pixmap)
     
     gdk_error_trap_push ();
     if (pixmap)
+    {
 	XChangeProperty(dpy, GDK_ROOT_WINDOW(), prop, XA_PIXMAP, 32, mode,
 			(unsigned char *) &pixmap, 1);
+	XChangeProperty(dpy, GDK_ROOT_WINDOW(), e_prop, XA_PIXMAP, 32, mode,
+			(unsigned char *) &pixmap, 1);
+    }    
     else
+    {
 	XDeleteProperty(dpy, GDK_ROOT_WINDOW(), prop);
+	XDeleteProperty(dpy, GDK_ROOT_WINDOW(), e_prop);
+    }
 
   
     gdk_flush ();
