@@ -492,6 +492,7 @@ int main(int argc, char **argv)
     gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
 
     taskbar->tray = xfce_system_tray_new();
+    taskbar_toggle_tray(taskbar);
 
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
