@@ -28,10 +28,14 @@ xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
 if test "x$panel" != "x" ; then
-	status=`$panel`
-	while test $status ; do
-		echo "Panel crash"
-		status=`$panel`
+	$panel
+	ret=$?
+	while [ $ret -ne 0 ] ; do
+		echo "A crash occured in the panel"
+		echo "Please report this to the xfce4-dev@moongroup.com list"
+		echo "Meanwhile the panel will be restarted"
+		$panel
+		ret=$?
 	done
 fi
 xsetroot -solid black -cursor_name watch
