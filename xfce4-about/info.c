@@ -289,6 +289,10 @@ int main(int argc, char **argv)
     gtk_button_box_set_child_secondary(GTK_BUTTON_BOX(buttonbox),
                                        info_ok_button, TRUE);
 
+    g_signal_connect(info, "delete-event", 
+	    	     G_CALLBACK(gtk_main_quit), NULL);
+    g_signal_connect(info, "destroy-event", 
+	    	     G_CALLBACK(gtk_main_quit), NULL);
     g_signal_connect(info_ok_button, "clicked", 
 	    	     G_CALLBACK(gtk_main_quit), NULL);
     g_signal_connect(info_help_button, "clicked", 
