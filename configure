@@ -1965,7 +1965,7 @@ am__tar='${AMTAR} chof - "$$tardir"'; am__untar='${AMTAR} xf -'
 
 
 cat >>confdefs.h <<_ACEOF
-#define RELEASE_LABEL ""
+#define RELEASE_LABEL "Xfce 4.2"
 _ACEOF
 
 

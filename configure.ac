@@ -12,7 +12,7 @@ AC_INIT([xfrun/xfrun.c])
 
 AM_INIT_AUTOMAKE([xfce-utils], [4.2.0])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], [""], [Optional release plain name])
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.2"], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
