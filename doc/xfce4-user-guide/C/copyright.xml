@@ -6,18 +6,14 @@
     copyrighted by their respective authors.
   </para>
 
-  <para>libxfce4util and xfprint are distributed under the terms of the
-    BSD license.</para>
+  <para>Three different licenses are used in the XFce 4 project: BSD, LGPL 
+    and GPL.
+  </para>
 
-  <para>xfce-mcs-manager, libxfce4mcs and libxfcegui4 are distributed under 
-    the terms of the GNU Library General Public License as published by the 
-    Free Software Foundation; either version 2 of the License, or (at your
-    option) any later version.</para>
-
-  <para>xfce-mcs-plugins, xfce-utils, xfce4, xfdesktop, xffm and xfwm4 are 
-    distributed under the terms of the GNU General Public License as published 
-    by the Free Software Foundation; either version 2 of the License, or (at 
-    your option) any later version.</para>
-
+  <para>
+    Please, refer to the COPYING files included in the packages for 
+    the licensing terms of the separate XFce 4 components.
+  </para>
+  
 </sect1>
 
