@@ -7,20 +7,18 @@ msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2003-06-01 23:30--200\n"
-"Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
+"PO-Revision-Date: 2004-10-15 13:30+0300\n"
+"Last-Translator: Ilkka Ollakka <ilkka.ollakka@iki.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
 msgstr "Tietoja XFce4:stä"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "XFce-työpöytäympäristö"
 
@@ -42,15 +40,15 @@ msgstr "Tekijänoikeudet"
 
 #: xfce4-about/info.c:294
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:295
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:296
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:323
 #, c-format
@@ -60,7 +58,7 @@ msgstr "xfrun4: Komento historiaa ei voitu kirjoittaa tiedostoon %s\n"
 #: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Millä ohjelmalla haluat avata %s?"
 
 #: xfrun/xfrun.c:429
 msgid "Run program"
@@ -85,39 +83,36 @@ msgid "Position"
 msgstr "Paikka"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
 msgstr "Yläosa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
 msgstr "Alaosa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Tasaus"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "Vasen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "Keskellä"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "Oikea"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Piilota automaattisesti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Piilota "
+msgstr "Piilota te_htäväpalkki automaattisesti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -139,42 +134,39 @@ msgstr "Suuri"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Leveys:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Prosessit"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Näytä kaikkien työpöytien ohjelmat"
+msgstr "Näytä k_aikkien työpöytien ohjelmat"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Ryhmitä ohjelmat aina"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Näytä ohjelmien _nimet"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "työpöydän vaihtaja"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Näytä työpöydän vaihtaja tehtäväpalkissa"
+msgstr "Näytä työ_pöydän vaihtaja tehtäväpalkissa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Muistutusalue"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Näytä järjestelmälokero tehtäväpalkissa"
+msgstr "Näytä järje_stelmälokero tehtäväpalkissa"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -194,9 +186,8 @@ msgid "This should not happen"
 msgstr "Tämän ei pitäisi tapahtua"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Työpöydän marginaaleja ei saatavilla"
+msgstr "Oletusnäyttöä ei saatu selville\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
