@@ -209,7 +209,7 @@ copy_pixmap(Pixmap pixmap, int width, int height)
 
     /* must open a new display or the RetainPermanent will
      * leave stuff allocated in RContext unallocated after exit */
-    tmpDpy = XOpenDisplay("");
+    tmpDpy = XOpenDisplay(NULL);
     
     if (!tmpDpy)
     {
