@@ -619,6 +619,12 @@ int main(int argc, char **argv)
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
     gtk_window_set_resizable(GTK_WINDOW(taskbar->win), FALSE);
     gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
+    if ((gtk_major_version >=2) && (gtk_minor_version >= 1))
+    {
+	g_object_set (G_OBJECT(taskbar->win), "skip_taskbar_hint", TRUE, NULL);
+	g_object_set (G_OBJECT(taskbar->win), "skip_pager_hint", TRUE, NULL);
+    }
+    
     g_signal_connect (G_OBJECT(taskbar->win), "destroy", G_CALLBACK(taskbar_destroy), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "enter_notify_event", G_CALLBACK (taskbar_enter), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "leave_notify_event", G_CALLBACK (taskbar_leave), taskbar);
