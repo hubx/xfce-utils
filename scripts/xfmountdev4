@@ -34,9 +34,11 @@ then
   EJECTCMD=eject
 fi
 
+# use xftree4 instead of xffm to show only the mounted filesystem
+# seems clearer to me -- Jasper
 if [ "x$FILEMANAGER" = "x" ]
 then
-  FILEMANAGER=xffm
+  FILEMANAGER=xftree4
 fi
 
 if [ "x$1" = "x" ]; then
