@@ -1,0 +1,168 @@
+# Portuguese translation of PACKAGE.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nuno Donato <nunodonato@sapo.pt>, 2003.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"PO-Revision-Date: 2003-09-12 01:25+0100\n"
+"Last-Translator: Nuno Donato <nunodonato@sapo.pt>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "Sobre o XFce 4"
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "Ambiente de Trabalho XFce"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2003-2003 por Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Informação"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Créditos"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Não foi possível escrever o histórico no ficheiro %s\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Executar Programa"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Executar"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Executar na _consola"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Barra de Tarefas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Posição"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Topo"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Fundo"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Esconder Automáticamente"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Esconder automáticamente a barra de tarefas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Tamanho"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Altura:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Pequena"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Alta"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Tarefas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Mostrar as tarefas de todas as Areas de Trabalho"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Alternador de Areas de Trabalho"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Mostrar o alternador na barra de tarefas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Area de notificação"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Mostrar os ícones de sistema na barra de tarefas"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Nao foi possível obter o estilo inicial"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Já existe uma area de notificação a correr neste ecrã"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Não foi possível registar a area de notificação: %s"
+
+#: xftaskbar/xftaskbar.c:385
+msgid "This should not happen"
+msgstr "Isto não devia acontecer"
+
+#: xftaskbar/xftaskbar.c:475
+msgid "Cannot connect to session manager"
+msgstr "Não foi possível establecer ligação com o gestor de sessão"
+
+#: xftaskbar/xftaskbar.c:488
+msgid "Cannot get desktop margins"
+msgstr "Não foi possível obter as margens do ambiente de trabalho"
+
+#: xftaskbar/xftaskbar.c:564
+msgid "Cannot create MCS client channel"
+msgstr "Não foi possível criar o canal de cliente MCS"
+
