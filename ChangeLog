@@ -1,8 +1,116 @@
-2003-02-17 23:15  huysmans
+2003-03-12  huysmans
+
+	* xfrun/: Makefile.am, Makefile.in, xfrun.c: Safe terminal option
+	in history and allow xfrun to open directories. Patch by James
+	Tappin.
+
+2003-03-11  xfce
+
+	* xftaskbar/xftaskbar.c: Fix compiler warnings
+
+2003-03-01  xfce
+
+	* Makefile.in, aclocal.m4, config.h.in, configure, ltcf-c.sh,
+	ltconfig, ltmain.sh, doc/Makefile.in, doc/html/Makefile.in,
+	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: [no log
+	message]
+
+2003-02-28  bmeurer
+
+	* TODO: [no log message]
+
+2003-02-28  xfce
+
+	* Makefile.in, aclocal.m4, configure, ltmain.sh, doc/Makefile.in,
+	doc/html/Makefile.in, doc/images/Makefile.in, doc/xml/Makefile.in,
+	gdm/Makefile.in, scripts/Makefile.in, xfce4-about/Makefile.in,
+	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Fix xfce-mcs-manager API/ABI
+	versionning Update configure/libtool to use libtool 1.4.3
+
+2003-02-28  bmeurer
+
+	* ltcf-c.sh, ltconfig, ltmain.sh, aclocal.m4, configure,
+	Makefile.in, configure.ac, doc/html/Makefile.in, doc/Makefile.in,
+	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/plugin/Makefile.in, xftaskbar/Makefile.in: Fixed
+	xfce-mcs-manager version problem.
+
+2003-02-27  huysmans
+
+	* xfce4-about/AUTHORS: Update credits file. Initial try
+
+2003-02-26  xfce
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	depcomp, doc/Makefile.in, doc/html/Makefile.in,
+	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xfrun/xfrun.c, xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in,
+	xftaskbar/plugin/xftaskbar_plugin.c: Apply Benedikt Meurer
+	<Benedikt.Meurer@unix-ag.uni-siegen.de> patch Replace all 
+	occurences of g_getenv("HOME") with g_get_home_dir() Regenerate all
+	Makefiles.on and configure scripts
+
+2003-02-25  huysmans
+
+	* configure, Makefile.am, Makefile.in, configure.ac: autotool
+	cleanup
+
+2003-02-25  huysmans
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	depcomp, doc/Makefile.in, doc/html/GPL.html, doc/html/Makefile.am,
+	doc/html/Makefile.in, doc/html/index.html,
+	doc/html/xfce-utils-copyright.html, doc/html/xfce-utils-run.html,
+	doc/html/xfce-utils-scripts.html, doc/html/xfce-utils-taskbar.html,
+	doc/html/xfce-utils.html, doc/html/xfce4-copyright.html,
+	doc/html/xfce4-using.html, doc/images/Makefile.in,
+	doc/xml/Makefile.in, doc/xml/xfce-utils.xml, doc/xml/xfce4.xml,
+	gdm/Makefile.in, scripts/Makefile.in, xfce4-about/Makefile.in,
+	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Add skeleton xfce-utils docs
+
+2003-02-25  huysmans
+
+	* autogen.sh: Fix proper use of AC_PROG_LIBTOOL
+
+2003-02-24  jensl
+
+	* doc/images/Makefile.am: fixed installation path
+
+2003-02-24  jensl
+
+	* doc/html/: GPL.html, index.html, xfce4-copyright.html,
+	xfce4-using.html: added link to xfdesktop documentation
+
+2003-02-22  jensl
+
+	* doc/images/Makefile.am: [no log message]
+
+2003-02-22  jensl
+
+	* doc/images/default-session.png: screenshot showing a default
+	xfce4 session
+
+2003-02-22  huysmans
+
+	* doc/: html/xfce4-using.html, xml/xfce4.xml: Small doc update
+
+2003-02-22  huysmans
+
+	* ChangeLog, Makefile.am, Makefile.in, configure, configure.ac,
+	scripts/Makefile.am, scripts/Makefile.in, scripts/xfhelp4.in: Add
+	xfhelp4 script
+
+2003-02-17  huysmans
 
 	* xfce4-about/info.c: Exit when quit button is pressed
 
-2003-02-17 21:53  huysmans
+2003-02-17  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	doc/Makefile.am, doc/Makefile.in, doc/html/GPL.html,
@@ -12,7 +120,7 @@
 	doc/xml/Makefile.am, doc/xml/Makefile.in, doc/xml/copyright.xml,
 	doc/xml/xfce.xsl, doc/xml/xfce4.xml: Add common xfce 4 docs
 
-2003-02-17 13:47  huysmans
+2003-02-17  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce4-about/AUTHORS, xfce4-about/COPYING, xfce4-about/Makefile.am,
@@ -20,17 +128,17 @@
 	xfce4-about/xfce-logo-icon.h, xfce4-about/xfce-logo.jpg: Add
 	xfce4-about
 
-2003-02-16 21:51  xfce
+2003-02-16  xfce
 
 	* scripts/xinitrc: Use Xcursor theme "redglass" with a size of 24
 
-2003-02-14 21:10  xfce
+2003-02-14  xfce
 
 	* Makefile.in, configure, configure.ac, gdm/10XFce4.in,
 	gdm/Makefile.am, gdm/Makefile.in, gdm/XFce4.in,
 	gdm/Xclients.xfce4.in: Fix expansion if path
 
-2003-02-14 15:35  xfce
+2003-02-14  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	gdm/10XFce4.in, gdm/Makefile.am, gdm/Makefile.in, gdm/XFce4.in,
@@ -38,19 +146,19 @@
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Add optional
 	gdm support
 
-2003-02-14 12:45  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: Fix xinitrc for good (I hope)
 
-2003-02-14 11:55  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: [no log message]
 
-2003-02-14 11:45  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: xinitrc fixes
 
-2003-02-14 11:40  xfce
+2003-02-14  xfce
 
 	* Makefile.in, configure, configure.ac, xfce-utils.spec.in,
 	scripts/Makefile.am, scripts/Makefile.in, scripts/startxfce4.in,
@@ -58,50 +166,50 @@
 	xinitrc Fix various issues with xfrun Remove unsecure expand_path
 	function
 
-2003-02-10 23:17  huysmans
+2003-02-10  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	scripts/Makefile.am, scripts/Makefile.in, scripts/xflock4,
 	scripts/xfmountdev4, scripts/xfterm4: Copy some useful scripts from
 	xfce 3
 
-2003-02-04 21:00  jensl
+2003-02-04  jensl
 
 	* xfrun/xfrun.c: changed xfrun to open the dialog at mouse position
 
-2003-02-02 11:08  xfce
+2003-02-02  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce-utils.spec.in: Cleanup
 
-2003-01-27 21:56  xfce
+2003-01-27  xfce
 
 	* INSTALL, Makefile.am, Makefile.in, autogen.sh, config.guess,
 	config.sub, configure, configure.ac, install-sh, mkinstalldirs,
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Update Makefiles
 
-2003-01-26 22:22  xfce
+2003-01-26  xfce
 
 	* configure, configure.ac, xftaskbar/xftaskbar.c: Use libxfcegui4
 	.15 to avoid input on taskbar window
 
-2003-01-25 23:50  xfce
+2003-01-25  xfce
 
 	* xftaskbar/xftaskbar.c: Add ICCCM hints to tell the window manager
 	not to focus the taskbar. This way, switching desktops by clicking
 	on the pager leaves the focus to the windows.
 
-2003-01-25 22:13  xfce
+2003-01-25  xfce
 
 	* xftaskbar/: xftaskbar.c, plugin/xftaskbar_plugin.c: Add option to
 	show all tasks from all workspaces in taskbar
 
-2003-01-25 18:17  xfce
+2003-01-25  xfce
 
 	* xftaskbar/xftaskbar.c: Fix pager width at startup
 
-2003-01-20 11:10  xfce
+2003-01-20  xfce
 
 	* Makefile.in, aclocal.m4, autogen.sh, config.guess, config.h.in,
 	config.sub, configure, configure.ac, ltmain.sh, xfce-utils.spec.in,
@@ -112,48 +220,48 @@
 	xftaskbar/plugin/xftaskbar_plugin.c: add mcs plugin to configure
 	xftaskbar
 
-2003-01-15 16:01  xfce
+2003-01-15  xfce
 
 	* xftaskbar/xftaskbar.c: [no log message]
 
-2003-01-15 11:12  xfce
+2003-01-15  xfce
 
 	* xftaskbar/xftaskbar.c: [no log message]
 
-2003-01-14 23:25  xfce
+2003-01-14  xfce
 
 	* xftaskbar/xftaskbar.c: Autohide the taskbar.
 
-2002-11-28 21:30  madkiss
+2002-11-28  madkiss
 
 	* debian/: changelog, control, docs, menu, rules: 
 	Update to debian/-subdir included in xfce4_20021127-1.
 
-2002-11-23 18:40  xfce
+2002-11-23  xfce
 
 	* xftaskbar/xftaskbar.c: Update for libxfcegui4 new include base
 	dir.
 
-2002-11-10 11:05  madkiss
+2002-11-10  madkiss
 
 	* debian/: changelog, control, copyright, docs, menu, rules:
 	Initial revision
 
-2002-11-10 11:05  madkiss
+2002-11-10  madkiss
 
 	* debian/: changelog, control, copyright, docs, menu, rules: 
 	Added first official version of debian/ subdirectory
 
-2002-11-09 17:59  huysmans
+2002-11-09  huysmans
 
 	* xfrun/xfrun.c: Small cosmetic update
 
-2002-11-09 17:44  huysmans
+2002-11-09  huysmans
 
 	* xfrun/xfrun.c: Update xfrun to use new buttonorder and error
 	dialog
 
-2002-11-08 23:19  xfce
+2002-11-08  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	xfce-utils.spec.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
@@ -162,25 +270,25 @@
 	one place (configure.in/ac) xfbd uses preview file selector from
 	libxfcegui4
 
-2002-11-02 21:23  xfce
+2002-11-02  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce-utils.spec.in, xftaskbar/Makefile.am, xftaskbar/Makefile.in,
 	xftaskbar/xftaskbar.c: Add xftaskbar
 
-2002-09-16 22:12  huysmans
+2002-09-16  huysmans
 
 	* xfrun/: Makefile.am, Makefile.in: Add '4' to all binaries
 
-2002-09-15 23:09  huysmans
+2002-09-15  huysmans
 
 	* xfce-utils-020915.tar.gz: Don't know how this got here ;-)
 
-2002-09-15 15:51  huysmans
+2002-09-15  huysmans
 
 	* ChangeLog: fix typo in backdrops install dir
 
-2002-09-15 14:35  huysmans
+2002-09-15  huysmans
 
 	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, Makefile.in,
 	NEWS, README, TODO, aclocal.m4, autogen.sh, compile, config.guess,
