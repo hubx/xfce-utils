@@ -52,6 +52,9 @@ typedef struct _Taskbar Taskbar;
 
 struct _Taskbar
 {
+    Display *dpy;
+    int scr;
+
     guint x, y, width, height;
     gboolean position;
     gboolean autohide;
@@ -194,14 +197,14 @@ register_tray(Taskbar *taskbar)
 {
     GError *error = NULL;
 
-    if (xfce_system_tray_check_running(DefaultScreenOfDisplay(GDK_DISPLAY()))) 
+    if (xfce_system_tray_check_running(DefaultScreenOfDisplay(taskbar->dpy))) 
     {
 	    xfce_info(_("There is already a system tray running on this "
 			"screen"));
 	    return FALSE;
     }
     else if (!xfce_system_tray_register(taskbar->tray, 
-		DefaultScreenOfDisplay(GDK_DISPLAY()),
+		DefaultScreenOfDisplay(taskbar->dpy),
 		&error)) 
     {
         xfce_err(_("Unable to register system tray: %s"), error->message);
@@ -262,11 +265,11 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
     {
         if (taskbar->position == TOP)
         {
-            taskbar->y = 0;
+            taskbar->y = MyDisplayY(0, 0);
         }
         else
         {
-            taskbar->y = gdk_screen_height() - allocation->height;
+            taskbar->y = MyDisplayMaxY(taskbar->dpy, taskbar->scr, 0, 0) - allocation->height;
         }
         gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
     }
@@ -392,8 +395,6 @@ int main(int argc, char **argv)
     DesktopMargins margins;
     NetkScreen *screen;
     Taskbar *taskbar;
-    Display *dpy;
-    int scr;
     int left, right;
     gboolean use_xinerama;
 
@@ -419,26 +420,27 @@ int main(int argc, char **argv)
     {
         g_message(_("Cannot connect to session manager"));
     }
-    dpy = GDK_DISPLAY();
-    scr = XDefaultScreen(dpy);
     screen = netk_screen_get_default();
-
     /* because the pager doesn't respond to signals at the moment */
     netk_screen_force_update(screen);
 
-    if(!netk_get_desktop_margins(DefaultScreenOfDisplay(dpy), &margins))
+    taskbar = g_new(Taskbar, 1);
+
+    taskbar->dpy = GDK_DISPLAY();
+    taskbar->scr = XDefaultScreen(taskbar->dpy);
+
+    if(!netk_get_desktop_margins(DefaultScreenOfDisplay(taskbar->dpy), &margins))
     {
         g_message(_("Cannot get desktop margins"));
     }
     
-    use_xinerama = xineramaInit(dpy);
-    left = isLeftMostHead(dpy, scr, 0, 0) ? margins.left : 0;
-    right = isRightMostHead(dpy, scr, 0, 0) ? margins.right : 0;
+    use_xinerama = xineramaInit(taskbar->dpy);
+    left = isLeftMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.left : 0;
+    right = isRightMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.right : 0;
     
-    taskbar = g_new(Taskbar, 1);
     taskbar->x = left;
-    taskbar->width = MyDisplayWidth(dpy, scr, 0, 0) - left - right;
-    taskbar->y = 0;
+    taskbar->width = MyDisplayWidth(taskbar->dpy, taskbar->scr, 0, 0) - left - right;
+    taskbar->y = MyDisplayY(0, 0);
     taskbar->height = 1;
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
@@ -492,7 +494,7 @@ int main(int argc, char **argv)
     taskbar_change_size(taskbar, DEFAULT_HEIGHT);
     taskbar_position(taskbar);
 
-    client = mcs_client_new(GDK_DISPLAY(), XDefaultScreen(GDK_DISPLAY()), notify_cb, watch_cb, taskbar);
+    client = mcs_client_new(taskbar->dpy, taskbar->scr, notify_cb, watch_cb, taskbar);
     if(client)
     {
         mcs_client_add_channel(client, CHANNEL);
