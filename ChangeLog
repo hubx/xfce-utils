@@ -1,3 +1,108 @@
+2004-10-21 00:06  pollux
+
+	* po/: et.gmo, et.po: update ET translations
+
+2004-10-17 23:07  pollux
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	  AUTHORS.es, AUTHORS.eu, AUTHORS.fr, AUTHORS.he, AUTHORS.it,
+	  AUTHORS.lt, AUTHORS.ru, AUTHORS.sk, AUTHORS.vi: update locale for
+	  translators in AUTHORS.??
+
+2004-10-17 22:28  pollux
+
+	* po/: ar.gmo, az.gmo, be.gmo, bg.gmo, ca.gmo, cs.gmo, de.gmo,
+	  es.gmo, es_MX.gmo, et.gmo, eu.gmo, fi.gmo, fi.po, fr.gmo, gu.gmo,
+	  he.gmo, hi.gmo, hu.gmo, it.gmo, ja.gmo, ko.gmo, lt.gmo, ms.gmo,
+	  nl.gmo, pa.gmo, pl.gmo, pt_BR.gmo, pt_PT.gmo, ru.gmo, sk.gmo,
+	  sv.gmo, ta.gmo, tr.gmo, uk.gmo, vi.gmo, zh_CN.gmo, zh_TW.gmo:
+	  update FI translations
+
+2004-10-17 14:13  fleclainche
+
+	* doc/xfce-utils/C/: xfce-utils.html, xfce-utils.xml: Fixing
+	  xinitrc path
+
+2004-10-11 18:30  benny
+
+	* po/: ar.po, az.po, be.po, bg.po, ca.po, cs.po, de.po, es.po,
+	  es_MX.po, et.po, eu.po, fi.po, fr.po, gu.po, he.po, hi.po, hu.po,
+	  it.po, ja.po, ko.po, lt.po, ms.po, nl.po, pa.po, pl.po, pt_BR.po,
+	  pt_PT.po, ru.po, sk.po, sv.po, ta.po, tr.po, uk.po, vi.po,
+	  zh_CN.po, zh_TW.po: update-po for Moe.
+
+2004-10-10 13:52  pollux
+
+	* po/: es.gmo, es_MX.gmo, pt_PT.gmo, pt_PT.po: update pt_PT
+	  translations
+
+2004-10-10 04:02  edscott
+
+	* po/: es.po, es_MX.po: correct another spelling mistake
+
+2004-10-09 16:20  pollux
+
+	* configure, configure.ac, po/fa.gmo, po/fa.po, po/fa_IR.gmo,
+	  po/fa_IR.po: update FA translations
+
+2004-10-09 15:48  pollux
+
+	* po/: es.gmo, es.po, es_MX.gmo, es_MX.po, pa.gmo, pa.po: Punjabi
+	  translations update from jaswinderlinux@netscape.net
+
+2004-10-08 15:43  edscott
+
+	* po/: es.po, es_MX.po: translation updates.
+
+2004-10-07 22:35  benny
+
+	* Makefile.in, aclocal.m4, configure, ltmain.sh, doc/Makefile.in,
+	  doc/index/Makefile.in, doc/index/C/Makefile.in,
+	  doc/index/fr/Makefile.in, doc/index/it/Makefile.in,
+	  doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	  doc/xfce-utils/C/images/Makefile.in,
+	  doc/xfce-utils/fr/Makefile.in,
+	  doc/xfce-utils/fr/images/Makefile.in,
+	  doc/xfce-utils/it/Makefile.in,
+	  doc/xfce-utils/it/images/Makefile.in,
+	  doc/xfce4-user-guide/Makefile.in,
+	  doc/xfce4-user-guide/C/Makefile.in,
+	  doc/xfce4-user-guide/C/images/Makefile.in,
+	  doc/xfce4-user-guide/fr/Makefile.in,
+	  doc/xfce4-user-guide/fr/images/Makefile.in,
+	  doc/xfce4-user-guide/it/Makefile.in,
+	  doc/xfce4-user-guide/it/images/Makefile.in, gdm/Makefile.in,
+	  icons/Makefile.in, icons/48x48/Makefile.in,
+	  icons/scalable/Makefile.in, m4/debug.m4, m4/glib-gettext.m4,
+	  m4/pkg.m4, scripts/Makefile.in, xfce4-about/Makefile.in,
+	  xfrun/Makefile.in, xftaskbar/Makefile.in,
+	  xftaskbar/plugin/Makefile.in: Added --enable-final (-O1 for GNU
+	  ld) as per Jaspers request. Added missing m4 files.
+
+2004-10-07 09:22  jasper
+
+	* scripts/xfterm4: There you go benny ;-)
+
+2004-10-06 02:23  kelnos
+
+	* scripts/xinitrc: kill ssh-agent after the session ends
+
+2004-10-03 18:14  pollux
+
+	* po/: pa.gmo, pa.po: Punjabi translations (PA) from
+	  jaswinderlinux@netscape.net
+
+2004-10-03 17:43  pollux
+
+	* gdm/xfce.desktop, xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  zh_TW translations of desktop files from Ambrose Li
+	  <acli@ada.dhs.org>
+
+2004-10-02 15:28  olivier
+
+	* ChangeLog, ltmain.sh, po/xfce-utils.pot: Update all files for 4.2
+	  beta 1
+
 2004-10-01 10:25  pollux
 
 	* configure, configure.ac, po/pa.gmo, po/pa.po: add PA translations

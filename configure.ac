@@ -10,7 +10,7 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.90])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.91])
 
 AM_CONFIG_HEADER([config.h])
 
