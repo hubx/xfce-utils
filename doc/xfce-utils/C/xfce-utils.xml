@@ -197,8 +197,7 @@ maintainers, etc. Commented out by default.
 	  <filename>~/.xfce4/</filename> directory and edit that file. If you 
 	  install from source, <filename>${sysconfdir}</filename> defaults to 
 	  <filename>/usr/local/etc</filename>; for binary packages it is often 
-	  set to <filename>/etc</filename>. The file has to be executable:
-	<programlisting>chmod u+x ~/.xfce4/xinitrc</programlisting>
+	  set to <filename>/etc</filename>.
 	</para>
       </listitem>
     </varlistentry>
