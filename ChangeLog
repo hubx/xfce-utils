@@ -1,3 +1,43 @@
+2003-09-10 09:39  huysmans
+
+	* aclocal.m4, configure, configure.ac, po/ru.po, po/zh_TW.po:
+	Update version numbers and po files for release
+
+2003-09-08 08:25  huysmans
+
+	* po/: ru.gmo, ru.po: Update russian translations
+
+2003-09-08 08:14  huysmans
+
+	* xfce4-about/INFO.html.ca.in: Updated catalan info html file
+
+2003-09-02 08:48  huysmans
+
+	* po/: ms.gmo, ms.po: Update malaysian translations
+
+2003-09-02 00:04  xfce
+
+	* aclocal.m4, configure, xfce4-about/BSD.html,
+	xfce4-about/COPYING.html, xfce4-about/GPL.html,
+	xfce4-about/LGPL.html, xfce4-about/Makefile.am,
+	xfce4-about/Makefile.in: Added missing HTML files as reported by
+	Madkiss
+
+2003-08-30 14:49  huysmans
+
+	* aclocal.m4, configure, configure.ac, po/zh_TW.Big5.gmo,
+	po/zh_TW.Big5.po, po/zh_TW.gmo, po/zh_TW.po: Rename zh_TW.Big5 ->
+	zh_TW
+
+2003-08-30 10:58  huysmans
+
+	* po/: zh_TW.Big5.gmo, zh_TW.Big5.po: Add traditional chinese
+	translations
+
+2003-08-26 09:38  huysmans
+
+	* ChangeLog: Update changelogs
+
 2003-08-26 09:12  huysmans
 
 	* po/: ca.gmo, ca.po, de.gmo, de.po, es.gmo, es.po, es_MX.gmo,
