@@ -8,7 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
-"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-20 08:27+0200\n"
 "PO-Revision-Date: 2004-08-24 02:22+0600\n"
 "Last-Translator: Anthony Ivanoff <a-i@bk.ru>\n"
 "Language-Team: Russian\n"
@@ -16,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: xfce4-about/info.c:253
 msgid "About Xfce 4"
@@ -30,55 +32,54 @@ msgstr "Рабочая среда Xfce"
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "Авторское право 2002-2004, Оливье Фурдан"
 
-#. add pages
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:291
 msgid "Info"
 msgstr "Информация"
 
-#: xfce4-about/info.c:289
+#: xfce4-about/info.c:292
 msgid "Credits"
 msgstr "Авторы"
 
-#: xfce4-about/info.c:290
+#: xfce4-about/info.c:293
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:294
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:295
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:296
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:271
+#: xfrun/xfrun.c:280
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Невозможно записать историю в файл %s\n"
 
-#: xfrun/xfrun.c:378
+#: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Какой программой открыть %s?"
 
-#: xfrun/xfrun.c:379
+#: xfrun/xfrun.c:392
 msgid "Run program"
 msgstr "Запуск программы"
 
-#: xfrun/xfrun.c:387
+#: xfrun/xfrun.c:400
 msgid "_Run"
 msgstr "Выполнить"
 
-#: xfrun/xfrun.c:417
+#: xfrun/xfrun.c:430
 msgid "Run in _terminal"
 msgstr "Запустить в терминале"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:277
-#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
 #: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
 msgstr "Панель задач"
@@ -201,4 +202,3 @@ msgstr "Ошибка подключения к диспетчеру сеансо
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "Невозможно создать канал для MCS-клиента"
-
