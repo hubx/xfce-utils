@@ -63,6 +63,7 @@ struct _Taskbar
     Display *dpy;
     int scr;
 
+    GdkScreen *gscr;
     guint x, y, width, height;
     guint width_percent;
     gint horiz_align;  /* <0 left, =0 center, >0 right */
@@ -169,10 +170,11 @@ static gint taskbar_get_x(Taskbar *taskbar)
 
 static void taskbar_update_margins(Taskbar *taskbar)
 {
-    DesktopMargins margins;
     guint height;
+    gulong data [12] = { 0, };
 
     g_return_if_fail (taskbar != NULL);
+    
     if (taskbar->autohide)
     {
         height = (2 * taskbar_get_thickness(taskbar) + 1);
@@ -182,17 +184,39 @@ static void taskbar_update_margins(Taskbar *taskbar)
         height = taskbar->height;
     }
     
-    margins.left = 0;
-    margins.right = 0;
-    margins.top = (taskbar->position) ? height : 0;
-    margins.bottom = (taskbar->position) ? 0 : height;
-    netk_set_desktop_margins(GDK_WINDOW_XWINDOW(taskbar->win->window), &margins);
+    data[0]  = 0;                                 /* left           */	        		
+    data[1]  = 0;                                 /* right          */	        		
+    data[2]  = (taskbar->position) ? height : 0;  /* top            */	        		
+    data[3]  = (taskbar->position) ? 0 : height;  /* bottom         */	        		
+    data[4]  = 0;                                 /* left_start_y   */     		
+    data[5]  = 0;                                 /* left_end_y     */       		
+    data[6]  = 0;                                 /* right_start_y  */    		
+    data[7]  = 0;                                 /* right_end_y    */      		
+    data[8]  = taskbar_get_x (taskbar);  	  /* top_start_x    */			
+    data[9]  = taskbar_get_x (taskbar) 
+               + taskbar_get_width (taskbar);     /* top_end_x      */        		
+    data[10] = taskbar_get_x (taskbar);           /* bottom_start_x */   		
+    data[11] = taskbar_get_x (taskbar) 
+               + taskbar_get_width (taskbar);     /* bottom_end_x   */     		
+
+    gdk_error_trap_push ();
+    gdk_property_change (taskbar->win->window,
+			 gdk_atom_intern ("_NET_WM_STRUT", FALSE),
+			 gdk_atom_intern ("CARDINAL", FALSE), 32,
+			 GDK_PROP_MODE_REPLACE, (guchar *) &data, 4);
+    gdk_property_change (taskbar->win->window,
+			 gdk_atom_intern ("_NET_WM_STRUT_PARTIAL", FALSE),
+			 gdk_atom_intern ("CARDINAL", FALSE), 32,
+			 GDK_PROP_MODE_REPLACE, (guchar *) &data, 12);
+    gdk_error_trap_pop ();
+    g_free (data);
 }
 
 static void taskbar_position(Taskbar *taskbar)
 {
     g_return_if_fail (taskbar != NULL);
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar_get_width(taskbar), taskbar_get_height(taskbar));
+    taskbar_update_margins(taskbar);
 }
 
 static void taskbar_toggle_autohide(Taskbar *taskbar)
@@ -210,7 +234,6 @@ static void taskbar_toggle_autohide(Taskbar *taskbar)
         taskbar->hidden = FALSE;
         taskbar_position(taskbar);
     }
-    taskbar_update_margins(taskbar);
 }
 
 static void taskbar_toggle_pager(Taskbar *taskbar)
@@ -292,7 +315,6 @@ static void taskbar_change_size(Taskbar *taskbar, int height)
         taskbar->height = height;
         gtk_widget_set_size_request(GTK_WIDGET(taskbar->pager), -1, taskbar->height - 2 * taskbar_get_thickness(taskbar));
         taskbar_position(taskbar);
-        taskbar_update_margins(taskbar);
     }
 }
 
@@ -321,19 +343,26 @@ static void taskbar_set_horiz_align(Taskbar *taskbar, int horiz_align)
 static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocation, gpointer data)
 {
     Taskbar *taskbar = (Taskbar *) data;
+    GdkRectangle rect;
+    gint monitor_nbr;
     
     g_assert (data != NULL);
+
+    monitor_nbr = gdk_screen_get_monitor_at_point (taskbar->gscr, 0, 0);
+    gdk_screen_get_monitor_geometry (taskbar->gscr, monitor_nbr, &rect);
+
     if ((allocation) && (widget == taskbar->win))
     {
         if (taskbar->position == TOP)
         {
-            taskbar->y = MyDisplayY(0, 0);
+            taskbar->y = rect.y;
         }
         else
         {
-            taskbar->y = MyDisplayMaxY(taskbar->dpy, taskbar->scr, 0, 0) - allocation->height;
+            taskbar->y = rect.y + rect.height - allocation->height;
         }
         gtk_window_move(GTK_WINDOW(taskbar->win), taskbar_get_x(taskbar), taskbar->y);
+        taskbar_update_margins(taskbar);
     }
     return FALSE;
 }
@@ -447,7 +476,6 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                 {
                     taskbar->position = setting->data.v_int ? TOP : BOTTOM;
                     taskbar_position(taskbar);
-                    taskbar_update_margins(taskbar);
                 }
                 else if (!strcmp(name, "Taskbar/AutoHide"))
                 {
@@ -518,7 +546,6 @@ static void message_new(XfceSystemTray *tray, GtkWidget *icon, glong id,
 {
 }
 
-#if GTK_CHECK_VERSION(2,2,0)
 static void
 taskbar_size_changed(GdkScreen *screen, Taskbar *taskbar)
 {
@@ -532,16 +559,14 @@ taskbar_size_changed(GdkScreen *screen, Taskbar *taskbar)
             taskbar->height);
     taskbar_change_size(taskbar, taskbar->height);
 }
-#endif
 
 int main(int argc, char **argv)
 {
     SessionClient *client_session;
-    DesktopMargins margins;
     NetkScreen *screen;
     Taskbar *taskbar;
-    int left, right;
-    gboolean use_xinerama;
+    GdkRectangle rect;
+    gint monitor_nbr;
 
     /* This is required for UTF-8 at least - Please don't remove it */
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
@@ -560,25 +585,25 @@ int main(int argc, char **argv)
 
     taskbar = g_new(Taskbar, 1);
 
-    taskbar->dpy = GDK_DISPLAY();
-    taskbar->scr = XDefaultScreen(taskbar->dpy);
-
-    if(!netk_get_desktop_margins(DefaultScreenOfDisplay(taskbar->dpy), &margins))
+    taskbar->gscr = gdk_screen_get_default ();
+    if (!taskbar->gscr)
     {
-        g_message(_("Cannot get desktop margins"));
+	g_error (_("Cannot get default screen\n"));
     }
-    
-    use_xinerama = xineramaInit(taskbar->dpy);
-    left = isLeftMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.left : 0;
-    right = isRightMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.right : 0;
-    
+    gtk_widget_push_colormap(gdk_screen_get_rgb_colormap (taskbar->gscr));
+    taskbar->scr = gdk_screen_get_number (taskbar->gscr);
+    taskbar->dpy = gdk_x11_display_get_xdisplay (gdk_screen_get_display (taskbar->gscr));
+
+    monitor_nbr = gdk_screen_get_monitor_at_point (taskbar->gscr, 0, 0);
+    gdk_screen_get_monitor_geometry (taskbar->gscr, monitor_nbr, &rect);
+
     taskbar->hide_timeout = 0;
     taskbar->unhide_timeout = 0;
-    taskbar->x = left;
-    taskbar->width = MyDisplayWidth(taskbar->dpy, taskbar->scr, 0, 0) - left - right;
+    taskbar->x = rect.x;
+    taskbar->width = rect.width;
     taskbar->width_percent = DEFAULT_WIDTH_PERCENT;
     taskbar->horiz_align = DEFAULT_HORIZ_ALIGN;
-    taskbar->y = MyDisplayY(0, 0);
+    taskbar->y = rect.y;
     taskbar->height = 1;
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
@@ -605,17 +630,14 @@ int main(int argc, char **argv)
     g_signal_connect (G_OBJECT(taskbar->win), "leave_notify_event", G_CALLBACK (taskbar_leave), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "size_allocate", G_CALLBACK (taskbar_size_allocate), taskbar);
 
-#if GTK_CHECK_VERSION(2,2,0)
-    if (xineramaGetHeads() < 2) {
+    if (gdk_screen_get_n_monitors (taskbar->gscr)< 2) {
         /*
          * Xrandr compatibility, since Xrandr does not work well with
          * Xinerama, we only use it when theres no more than one Xinerama
          * screen reported.
          */
-        g_signal_connect(G_OBJECT(gdk_screen_get_default()), "size-changed",
-                G_CALLBACK(taskbar_size_changed), taskbar);
+        g_signal_connect(G_OBJECT(taskbar->gscr), "size-changed", G_CALLBACK(taskbar_size_changed), taskbar);
     }
-#endif
 
     taskbar->frame = gtk_frame_new(NULL);
     gtk_frame_set_shadow_type(GTK_FRAME(taskbar->frame), GTK_SHADOW_OUT);
@@ -663,6 +685,5 @@ int main(int argc, char **argv)
 
     gtk_main();
 
-    xineramaFree();
     return 0;
 }
