@@ -36,8 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO ChangeLog NEWS INSTALL COPYING AUTHORS
 %{_bindir}/*
 %{_libdir}/xfce4/mcs-plugins/*
-%{_datadir}/locale/
-%{_datadir}/xfce4/
+%{_datadir}/*
 %config(noreplace) %{_sysconfdir}/*
 
 
