@@ -10,9 +10,13 @@ about_DATA =								\
 	AUTHORS.html.fr							\
 	AUTHORS.html							\
 	COPYING								\
+	COPYING.html							\
 	BSD								\
+	BSD.html							\
 	LGPL								\
+	LGPL.html							\
 	GPL								\
+	GPL.html							\
 	INFO								\
 	INFO.ca								\
 	INFO.fr								\
