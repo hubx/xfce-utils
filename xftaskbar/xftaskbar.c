@@ -507,6 +507,7 @@ int main(int argc, char **argv)
     taskbar->tray_registered = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_widget_realize(GTK_WIDGET(taskbar->win));
     gtk_window_stick(GTK_WINDOW(taskbar->win));
     netk_gtk_window_set_dock_type(GTK_WINDOW(taskbar->win));
     netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
