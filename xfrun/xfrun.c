@@ -2,7 +2,7 @@
  *  Copyright (C) 2000, 2002 Olivier Fourdan (fourdan@xfce.org)
  *  Copyright (C) 2002 Jasper Huijsmans (huysmans@users.sourceforge.net)
  *  Copyright (C) 2003 Eduard Roccatello (master@spine-group.org)
- *  Copyright (C) 2003 Edscott Wilson Garcia <edscott@users.sourceforge.net>
+ *  Copyright (C) 2003,2004 Edscott Wilson Garcia <edscott@users.sourceforge.net>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -66,6 +66,8 @@ GList *history = NULL;
 gint nComplete;
 char *fileman = NULL;
 gboolean use_xfc_combo=FALSE;
+gboolean open_with=FALSE;
+char *argument;
 
 #ifdef HAVE_LIBDBH
 #include "xfcombo.i"
@@ -179,6 +181,11 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
 	    execute = g_strconcat("xfterm4 -e ", cmd, NULL);
 	else
 	    execute = g_strdup(cmd);
+    }
+    if (open_with){
+	gchar *g=g_strconcat(execute," ",argument,NULL);
+	g_free(execute);
+	execute=g;
     }
 
     g_free(path);
@@ -337,6 +344,7 @@ int main(int argc, char **argv)
     GtkWidget *vbox;
     GtkWidget *combo;
     XFCommand *current;
+    gchar *title;
 
 #if 0
 #ifdef ENABLE_NLS
@@ -353,14 +361,20 @@ int main(int argc, char **argv)
 
     gtk_init(&argc, &argv);
 
+    if (argc >= 2 && g_file_test(argv[1], G_FILE_TEST_EXISTS)){
+	argument=argv[1];
+	open_with=TRUE;
+    }
     history = get_history();
 
     fileman = get_fileman();
 
     complete = g_completion_new(NULL);
 
-    dialog = gtk_dialog_new_with_buttons(_("Run program"), NULL, GTK_DIALOG_NO_SEPARATOR, NULL);
-    
+    if (open_with) title=g_strdup_printf(_("Open %s with what program?"),argument);
+    else title=g_strdup(_("Run program"));
+    dialog = gtk_dialog_new_with_buttons(title, NULL, GTK_DIALOG_NO_SEPARATOR, NULL);
+    g_free(title);
     button = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
     GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
     gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button, GTK_RESPONSE_CANCEL);
