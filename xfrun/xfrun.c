@@ -27,6 +27,7 @@
 #include <string.h>
 #include <unistd.h>
 
+#include <libxfce4util/util.h>
 #include <libxfcegui4/dialogs.h>
 
 #ifndef PATH_MAX
@@ -42,7 +43,6 @@
 #define _(x) x
 #define N_(x) x
 
-#define XFCEDIR ".xfce4"
 #define HFILE "xfrun_history"
 
 #define MAXHISTORY 10
@@ -111,8 +111,7 @@ static char *get_fileman(void)
 GList *get_history(void)
 {
     FILE *fp;
-    const char *home = g_get_home_dir();
-    char *hfile = g_build_filename(home, XFCEDIR, HFILE, NULL);
+    char *hfile = xfce_get_userfile(HFILE, NULL);
     char line[DEFAULT_LENGTH];
     char *check;
     GList *cbtemp = NULL;
@@ -164,8 +163,7 @@ GList *get_history(void)
 void put_history(const char *newest, gboolean in_terminal, GList * cb)
 {
     FILE *fp;
-    const char *home = g_get_home_dir();
-    char *hfile = g_build_filename(home, XFCEDIR, HFILE, NULL);
+    char *hfile = xfce_get_userfile(HFILE, NULL);
     GList *node;
     int i;
 
@@ -179,12 +177,11 @@ void put_history(const char *newest, gboolean in_terminal, GList * cb)
     fprintf(fp, "%s %d\n", newest, in_terminal);
     i = 1;
 
-    for(node = cb; node && i < MAXHISTORY; node = node->next)
-    {
-	XFCommand *current =  node->data;
+    for(node = cb; node != NULL && i < MAXHISTORY; node = node->next) {
+	    XFCommand *current = (XFCommand *)node->data;
 
         if(current->command && strlen(current->command) &&
-	   (strcmp(current->command, newest) != 0))
+          (strcmp(current->command, newest) != 0))
         {
             fprintf(fp, "%s %d\n", current->command, current->in_terminal);
             i++;
@@ -205,7 +202,7 @@ int main(int argc, char **argv)
 {
     GtkWidget *button;
     GtkWidget *combo_entry, *combo_list;
-    GList *hitem, *hstrings=NULL;
+    GList *hitem, *hstrings;
     GtkWidget *vbox;
     GtkWidget *combo;
     XFCommand *current;
@@ -221,7 +218,8 @@ int main(int argc, char **argv)
     
     button = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
     gtk_widget_show(button);
-    gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button, GTK_RESPONSE_CANCEL);
+    gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button,
+            GTK_RESPONSE_CANCEL);
     
     button = mixed_button_new(GTK_STOCK_OK, _("_Run"));
     gtk_widget_show(button);
@@ -240,14 +238,16 @@ int main(int argc, char **argv)
 
     combo = gtk_combo_new();
     
-    for (hitem = history ; hitem ; hitem=hitem->next) 
-    {
-	current=hitem->data;
-	hstrings=g_list_append(hstrings,current->command);
+    for (hitem = history, hstrings = NULL; hitem != NULL; hitem = hitem->next) {
+	    current = hitem->data;
+	    hstrings = g_list_append(hstrings,current->command);
     }
-    
-    gtk_combo_set_popdown_strings(GTK_COMBO(combo), hstrings);
-    g_list_free(hstrings);
+
+    if (hstrings != NULL) {
+        gtk_combo_set_popdown_strings(GTK_COMBO(combo), hstrings);
+        g_list_free(hstrings);
+    }
+
     gtk_box_pack_start(GTK_BOX(vbox), combo, TRUE, TRUE, 0);
     gtk_widget_show(combo);
 		     
@@ -258,9 +258,12 @@ int main(int argc, char **argv)
     g_object_set(G_OBJECT(combo_entry), "activates-default", TRUE, NULL);
 
     checkbox = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
-    current=history->data;
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbox),
-				 current->in_terminal);
+    
+    if (history != NULL && (current = history->data) != NULL) {
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbox),
+				    current->in_terminal);
+    }
+
     gtk_widget_show(checkbox);
     gtk_box_pack_start(GTK_BOX(vbox), checkbox, TRUE, TRUE, 0);
 
@@ -270,37 +273,36 @@ int main(int argc, char **argv)
     g_signal_connect(G_OBJECT(combo_list), "select_child",
 		     G_CALLBACK(set_history_checkbox), NULL);
 
-    while (1)
-    {
-	int response = GTK_RESPONSE_NONE;
+    for (;;) {
+	    int response;
 	
-	response = gtk_dialog_run(GTK_DIALOG(dialog));
+	    response = gtk_dialog_run(GTK_DIALOG(dialog));
 
-	if (response == GTK_RESPONSE_OK)
-	{
-	    const gchar *command;
-	    gboolean in_terminal;
+	    if (response == GTK_RESPONSE_OK) {
+	        const gchar *command;
+	        gboolean in_terminal;
 	    
-	    command = gtk_entry_get_text(GTK_ENTRY(combo_entry));
+	        command = gtk_entry_get_text(GTK_ENTRY(combo_entry));
 
-	    in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(checkbox));
+	        in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(
+                        checkbox));
 
-	    if (do_run(command, in_terminal))
-	    {
-		put_history(command, in_terminal, history);
-		break;
+	        if (do_run(command, in_terminal)) {
+		        put_history(command, in_terminal, history);
+		        break;
+	        }
 	    }
-	}
-	else
-	{
-	    break;
-	}
+	    else
+	        break;
     }
     
     gtk_widget_destroy(dialog);
     g_free(fileman);
-    g_list_foreach(history, (GFunc)free_hitem, NULL);
-    g_list_free(history);
+
+    if (history != NULL) {
+        g_list_foreach(history, (GFunc)free_hitem, NULL);
+        g_list_free(history);
+    }
 
     return 0;
 }
