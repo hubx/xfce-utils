@@ -117,7 +117,7 @@
 
   <para>
     The latest version of this document can always be found at 
-<ulink url="http://www.loculus.nl/xfce/documentation/xfce4-user\-guide.html" 
+<ulink url="http://www.loculus.nl/xfce/documentation/" 
   type="html">this location</ulink>.
   </para>
   
@@ -127,29 +127,21 @@
   <title>Introduction</title>
 
   <para>Xfce is a lightweight desktop environment for unix-like operating
-    systems. It aims to be fast with a low memory footprint, while still being 
-    visually appealing and easy to use.
+    systems. It aims to be fast and light on system resources, while still 
+    being visually appealing and easy to use.
   </para>
 
-  <para>Xfce 4 is a complete rewrite of the previous version. It's based 
-    on the GTK+ toolkit version 2. Xfce 4 has a radically different 
-    architecture from Xfce 3. It embodies the traditional UNIX philosophy of 
-    modularity and re-usability. All of Xfce 4's core components have been 
-    written from scratch in order to fit into the new architecture.
+  <para>Xfce 4 embodies the traditional UNIX philosophy of modularity and 
+    re-usability. All of Xfce 4's core components can be build and installed 
+    separately. Xfce 4 is based on the <ulink url="http://www.gtk.org" 
+      type="html">GTK+ toolkit</ulink> version 2. 
   </para>
 
-  <para>
-    Another priority of Xfce 4 is adhereance to standards, specifically those
-    defined at <ulink url="http://www.freedesktop.org" 
-      type="html">freedesktop.org</ulink>. This allows Xfce 4 to seamlessly
-    interoperate with programs written for other desktop environments, if
-    those programs follow the specified standards.
-  </para>
-
-  <para>Xfce 4 consists of a number of components that together provide the 
-    full functionality of the desktop environment. They are packaged separately 
-    and you can pick and choose from the available packages to create the best
-    personal working environment.
+  <para>Adhereance to standards is one of the main design goals of Xfce 4, 
+    specifically those defined at <ulink url="http://www.freedesktop.org" 
+      type="html">Freedesktop.org</ulink>. This allows Xfce 4 to seamlessly
+    interoperate with programs written for other desktop environments that
+    follow these specifications.
   </para>
 
   <para>Xfce is all free software. The separate components are released under
@@ -161,24 +153,24 @@
     <title>Resources</title>
 
     <para>If you are looking for specific information about Xfce 4, chances are
-      you can obtain it from one of these resources:
+      you can obtain it from one of the resources in this list:
     </para>
 
     <itemizedlist>
-      <listitem>The
-	<ulink url="http://www.xfce.org" type="http">Xfce website</ulink>
+      <listitem><ulink url="http://www.xfce.org" 
+	  type="http">Xfce website</ulink>
       </listitem>
-      <listitem>The Xfce user
-	<ulink url="http://xfce.org/mailman/listinfo/xfce" 
-	  type="http">mailing list</ulink>
+      <listitem><ulink url="http://xfce.org/mailman/listinfo/xfce" 
+	  type="http">User mailing list</ulink>
       </listitem>
-      <listitem>The Xfce 4 development 
-	<ulink url="http://xfce.org/mailman/listinfo/xfce4-dev" 
-	  type="http">mailing list</ulink>
+      <listitem><ulink url="http://xfce.org/mailman/listinfo/xfce4-dev" 
+	  type="http">Development mailing list</ulink>
       </listitem>
-      <listitem>The Xfce  
-	<ulink url="http://forum.xfce.org" 
-	  type="http">Forum</ulink>
+      <listitem><ulink url="http://forum.xfce.org" 
+	  type="http">Xfce Forum</ulink>
+      </listitem>
+      <listitem><ulink url="http://bugzilla.xfce.org" 
+	  type="http">Bug tracker</ulink>
       </listitem>
     </itemizedlist>
 
@@ -196,22 +188,27 @@
       which includes the session manager, the panel, the taskbar, the window 
       manager and the desktop manager. 
       All programs (or symbolic links to programs) in 
-      <filename>~/Desktop/Autostart/</filename> will be run on startup.
+      <filename>~/Desktop/Autostart/</filename> will be run on startup (note
+      that this directory does not exist by default and you may have to create
+      it).
+    </para>
+
+    <para>By default the Xfce session manager manages the startup of
+      applciations. It allows you to save your session when you quit Xfce, so
+      that the next time you log in, the same applications will be started for 
+      you automatically.
     </para>
 
     <para>
       To customize the behaviour of <application>startxfce4</application>, 
       copy the file <filename>${sysconfdir}/xdg/xfce4/xinitrc</filename> to 
       your personal <filename role="directory">~/.config/xfce4/</filename> 
-      directory and edit that file.
-    </para>
-
-    <para>
-      Depending on your installation method the location of the system 
-      <filename>xinitrc</filename> file may be different. If you install from 
-      source, <filename role="directory">${sysconfdir}</filename> defaults to 
-      <filename role="directory">/usr/local/etc/</filename>. For binary 
-      packages it is often set to <filename role="directory">/etc/</filename>;
+      directory and edit that file.  Depending on your installation method the 
+      location of the system <filename>xinitrc</filename> file may be 
+      different. If you install from source, <filename
+      role="directory">${sysconfdir}</filename> defaults to <filename
+      role="directory">/usr/local/etc/</filename>. For binary packages
+      it is often set to <filename role="directory">/etc/</filename>;
       you can use your package manager to find out.
     </para>
 
@@ -668,20 +665,12 @@
       by other people for your OS or distribution.
     </para>
     
-    <para>Martin Loschwitz is the debian developer who maintains the Xfce 4
-      packages for Debian unstable. Up-to-date versions should be available
-      soon after the release.
-    </para>
-
     <para>Look at the Xfce site for 
       <ulink url="http://xfce.org/index.php?page=download" 
 	type="html">download locations</ulink> and additional information
-      about available binary packages.
-    </para>
-
-    <para>If you could not find binary packages for your OS, they may be 
-      available from your OS vendor or distributor, or you can install Xfce 4
-      from source.
+      about available binary packages.  If you could not find binary packages 
+      for your OS, they may be available from your OS vendor or
+      distributor, or you can install Xfce 4 from source.
     </para>
    
   </sect2>
@@ -689,11 +678,23 @@
     <para>&nbsp;</para>
     
   <sect2>
+    <title>Graphical installers</title>
+
+    <para>The easiest way to install Xfce from source is by using the
+      <ulink url="http://xfce-installers.os-cillation.com/" 
+	type="html">graphical installers</ulink>. Documentation and 
+      instructions are available.
+    </para>
+  </sect2>
+    
+    <para>&nbsp;</para>
+    
+  <sect2>
     <title>Building from source</title>
 
-    <para>Look at the Xfce site for 
+    <para>To compile Xfce manually, look at the Xfce site for 
       <ulink url="http://xfce.org/index.php?page=download" 
-	type="html">download locations</ulink> for the source tarballs.
+	type="html">download locations</ulink>.
     </para>
 
     <para>Building the packages should be a simple matter of unpacking the
