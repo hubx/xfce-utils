@@ -418,7 +418,7 @@ static void create_channel(McsPlugin * mcs_plugin)
     }
     else
     {
-        show_pager = TRUE;
+        show_pager = FALSE;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowPager", CHANNEL, show_pager ? 1 : 0);
     }
 
@@ -430,7 +430,7 @@ static void create_channel(McsPlugin * mcs_plugin)
     else
     {
         show_tray = TRUE;
-        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowTray", CHANNEL, show_pager ? 1 : 0);
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowTray", CHANNEL, show_tray ? 1 : 0);
     }
 
     setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL);
