@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2003-07-30 09:13+0200\n"
+"POT-Creation-Date: 2003-08-13 19:16+0200\n"
 "PO-Revision-Date: 2003-07-16 16:20+0200\n"
 "Last-Translator: Egmont Koblinger <egmont@uhulinux.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -18,40 +18,40 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.0.1\n"
 
-#: xfce4-about/info.c:230
+#: xfce4-about/info.c:231
 msgid "About XFce 4"
 msgstr "Az XFce 4 névjegye"
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "XFce Desktop Environment"
 msgstr "XFce Munkakörnyezet"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:246
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Copyright 2002-2003, Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:265
 msgid "Info"
 msgstr "Névjegy"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:266
 msgid "Credits"
 msgstr "Stáb"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:267
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:268
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:269
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:270
 msgid "GPL"
 msgstr "GPL"
 

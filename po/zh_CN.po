@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-07-30 09:13+0200\n"
+"POT-Creation-Date: 2003-08-13 19:16+0200\n"
 "PO-Revision-Date: 2003-08-10 00:31+0200\n"
 "Last-Translator: Yongtao Yang <yongtao.yang@telia.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,40 +15,40 @@ msgstr ""
 "Content-Transfer-Encoding: UTF-8\n"
 "Report-Msgid-Bugs-To: \n"
 
-#: xfce4-about/info.c:230
+#: xfce4-about/info.c:231
 msgid "About XFce 4"
 msgstr "关于XFce 4 "
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "XFce Desktop Environment"
 msgstr "XFce 桌面环境"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:246
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "版权所有2002-2003 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:265
 msgid "Info"
 msgstr "信息"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:266
 msgid "Credits"
 msgstr "致谢名单"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:267
 msgid "Copyright"
 msgstr "版权"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:268
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:269
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:270
 msgid "GPL"
 msgstr ""
 
