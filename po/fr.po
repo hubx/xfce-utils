@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-04-25 23:26+0200\n"
+"PO-Revision-Date: 2003-05-03 15:05+0200\n"
+"Last-Translator: Olivier Fourdan <fourdan@xfce.org>\n"
+"Language-Team: none <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:230
+msgid "About XFce 4"
+msgstr "À propos de Xfce 4"
+
+#: xfce4-about/info.c:243
+msgid "XFce Desktop Environment"
+msgstr "Xfce Desktop Environment"
+
+#: xfce4-about/info.c:244
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 - Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:263
+msgid "Info"
+msgstr "Info"
+
+#: xfce4-about/info.c:264
+msgid "Credits"
+msgstr "Crédits"
+
+#: xfce4-about/info.c:265
+msgid "License"
+msgstr "License"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Impossible de sauveragder l'historique dans le fichier %s\n"
+
+#: xfrun/xfrun.c:231
+msgid "Run program"
+msgstr "Lancer un programme"
+
+#: xfrun/xfrun.c:238
+msgid "_Run"
+msgstr "_Lancer"
+
+#: xfrun/xfrun.c:274
+msgid "Run in _terminal"
+msgstr "Lancer dans un _terminal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Barre des tâches"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
+msgid "Top"
+msgstr "Haut"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
+msgid "Bottom"
+msgstr "Bas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "Position"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
+msgid "Auto hide taskbar"
+msgstr "Masquer automatiquement\nla barre des tâches"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "Masquer automatiquement"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Height :"
+msgstr "Hauteur :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr "Petit"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr "Grand"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Taille"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Afficher les tâches de\ntous les espaces de travail"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Tâches"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Afficher les bureaux dans\nla barre des tâches"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "Bureaux"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Afficher les icônes systèmes\ndans la barre des tâches"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Zone de notification"
+
+#: xftaskbar/xftaskbar.c:118
+msgid "Cannot get initial style"
+msgstr "Impossible de récupérer le style initial"
+
+#: xftaskbar/xftaskbar.c:277
+msgid "This should not happen"
+msgstr "Ça ne devrait pas se produire"
+
+#: xftaskbar/xftaskbar.c:367
+msgid "Cannot connect to session manager"
+msgstr "Impossible de se connecter au gestionnaire de session"
+
+#: xftaskbar/xftaskbar.c:378
+msgid "Cannot get desktop margins"
+msgstr "Impossible de récupérer les marges du bureau"
+
+#: xftaskbar/xftaskbar.c:461
+msgid "Cannot create MCS client channel"
+msgstr "Impossible de créer la chaîne pour le client MCS"
