@@ -2,7 +2,7 @@
  *  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
  *                2002 Xavier MAILLARD (zedek@fxgsproject.org)
  *                2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
- *                2003 Benedikt Meurer (benedikt.meurer@unix-ag.uni-siegen.de)
+ *                2003 Benedikt Meurer (benny@xfce.org)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -241,7 +241,7 @@ main (int argc, char **argv)
 	g_strdup_printf
 	("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
 	 _("XFce Desktop Environment"),
-	 _("Copyright 2002-2003 by Olivier Fourdan"));
+	 _("Copyright 2002-2004 by Olivier Fourdan"));
     header = create_header (logo_pb, text);
     gtk_widget_show (header);
     gtk_box_pack_start (GTK_BOX (vbox2), header, FALSE, FALSE, 0);
