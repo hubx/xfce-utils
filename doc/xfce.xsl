@@ -6,8 +6,10 @@
 
 <!-- Load chunks.xsl stylesheet 
      TODO: how can I put a location independent link here?
+This should work. The url can be translated to a local one in the catalog
+file"
 -->
-<xsl:import href="/usr/share/docbook-xsl/html/chunk.xsl"/>
+<xsl:import href="http://docbook.sourceforge.net/release/xsl/current/html/chunk.xsl"/>
 
 <!-- Use stylesheet -->
 <xsl:param name="html.stylesheet" select="'../xfce.css'"/>
