@@ -7,9 +7,9 @@ msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2004-10-15 13:30+0300\n"
-"Last-Translator: Ilkka Ollakka <ilkka.ollakka@iki.fi>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2005-01-21 15:52+0200\n"
+"Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr "Tietoja XFce4:stä"
 
 #: xfce4-about/info.c:268
 msgid "Xfce Desktop Environment"
-msgstr "XFce-työpöytäympäristö"
+msgstr "Xfce-työpöytäympäristö"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -32,11 +32,11 @@ msgstr "Tietoja"
 
 #: xfce4-about/info.c:292
 msgid "Credits"
-msgstr "Kehittäjät"
+msgstr "Tekijät"
 
 #: xfce4-about/info.c:293
 msgid "Copyright"
-msgstr "Tekijänoikeudet"
+msgstr "Tekijänoikeus"
 
 #: xfce4-about/info.c:294
 msgid "BSDL"
@@ -53,12 +53,12 @@ msgstr "GPL"
 #: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Komento historiaa ei voitu kirjoittaa tiedostoon %s\n"
+msgstr "xfrun4: Komentohistoriaa ei voitu kirjoittaa tiedostoon %s\n"
 
 #: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Millä ohjelmalla haluat avata %s?"
+msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
 
 #: xfrun/xfrun.c:429
 msgid "Run program"
@@ -70,7 +70,7 @@ msgstr "_Suorita"
 
 #: xfrun/xfrun.c:467
 msgid "Run in _terminal"
-msgstr "Suoritä päät_teessä"
+msgstr "Suoritä pää_tteessä"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:278
 #: xftaskbar/plugin/xftaskbar_plugin.c:285
@@ -80,31 +80,31 @@ msgstr "Tehtäväpalkki"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Position"
-msgstr "Paikka"
+msgstr "Sijainti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "_Top"
-msgstr "Yläosa"
+msgstr "Yläreuna"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
 msgid "_Bottom"
-msgstr "Alaosa"
+msgstr "Alareuna"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr "Tasaus"
+msgstr "Tasaa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr "Vasen"
+msgstr "Vasemmalle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr "Keskellä"
+msgstr "Keskelle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr "Oikea"
+msgstr "Oikealle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
@@ -120,7 +120,7 @@ msgstr "Koko"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
-msgstr "Korkeus:"
+msgstr "Korkeus :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:376
 #: xftaskbar/plugin/xftaskbar_plugin.c:413
@@ -138,23 +138,23 @@ msgstr "Leveys:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
-msgstr "Prosessit"
+msgstr "Tehtävät"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
 msgid "Show tasks from _all workspaces"
-msgstr "Näytä k_aikkien työpöytien ohjelmat"
+msgstr "Näytä k_aikkien työpöytien tehtävät"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr "Ryhmitä ohjelmat aina"
+msgstr "Ryhmitä tehtävät aina"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr "Näytä ohjelmien _nimet"
+msgstr "Näytä sovellusten _nimet"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
-msgstr "työpöydän vaihtaja"
+msgstr "Työpöydän vaihtaja"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
 msgid "Show _pager in taskbar"
@@ -170,29 +170,30 @@ msgstr "Näytä järje_stelmälokero tehtäväpalkissa"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
-msgstr "Tyyliä ei ollut saatavilla"
+msgstr "Pohjatyyliä ei saatavilla"
 
 #: xftaskbar/xftaskbar.c:260
 msgid "There is already a system tray running on this screen"
-msgstr "Näytöllä on jo järjestelmälokero ajossa"
+msgstr "Näytöllä on jo järjestelmälokero toiminnassa"
 
 #: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Systeemilokeroa ei voitu rekisteröidä: %s"
+msgstr "järjestelmälokeron rekisteröinti ei onnistu: %s"
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "Tämän ei pitäisi tapahtua"
+msgstr "Näin ei pitäisi tapahtua"
 
 #: xftaskbar/xftaskbar.c:592
 msgid "Cannot get default screen\n"
-msgstr "Oletusnäyttöä ei saatu selville\n"
+msgstr "Oletusnäytön selvittäminen ei onnistu\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
-msgstr "Istunnon hallintaan ei saatu yhteyttä"
+msgstr "Istunnonhallintaan yhdistäminen ei onnistu"
 
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
-msgstr "Ei voi luoda MCS-asiakas kanavaa"
+msgstr "Ei voi luoda MCS-asiakaskanavaa"
+

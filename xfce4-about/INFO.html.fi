@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <h3><font size=5>Xfce 4, versio @VERSION@</font></h3>
+
+    <i>... ja hiiret lentävät ...</i>
+
+    <p>Xfce on kokoelma sovelluksia, jotka yhdessä muodostavat täysimittaisen
+    työpöytäympäristön. Xfce koostuu seuraavista ohjelmista:</p>
+
+    <ul>
+      <li><b><u>Ikkunamanageri</u> (<i>xfwm4</i>)</b><br />
+        hoitaa ikkunoiden sijoittelun ruudulla</li>
+
+      <li><b><u>Paneeli</u> (<i>xfce4-panel</i>)</b><br />
+        ohjelmien käynnistimet, ponnahdusvalikot, kello, työpöydän vaihtaja yms.</li>
+
+      <li><b><u>Työpöytämanageri</u> (<i>xfdesktop</i>)</b><br />
+        asettaa taustavärin tai -kuvan ja tarjoaa valikon napsauttaessasi työpöytää</li>
+
+      <li><b><u>Tiedostonhallinta</u> (<i>xffm</i>)</b><br />
+        vauhdikas tiedostonhallinta</li>
+
+      <li><b><u>Istunnonhallinta</u> (<i>xfce4-session</i>)</b><br />
+        palauttaa istuntosi käynnistyksen yhteydessä ja mahdollistaa tietokoneen
+        sammuttamisen Xfce:stä</li>
+
+      <li><b><u>Apuohjelmat</u></b><br />
+          <i>xfprint4</i>: tulostaa tiedostoja<br />
+          <i>xfrun4</i>: käynnistää sovelluksia<br />
+          <i>xftaskbar4</i>: yksinkertainen tehtäväpalkki valinnaisella työpöydän vaihtajalla ja järjestelmälokerolla<br />
+        </li>
+    </ul>
+
+    <p>Kiitämme kiinnostuksestanne Xfce:tä kohtaan.</p>
+
+    <i>-- Xfce:n Kehitystiimi --</i>
+  </body>
+<html>

@@ -6,6 +6,7 @@ about_DATA =								\
 	AUTHORS.ca							\
 	AUTHORS.de							\
 	AUTHORS.es							\
+	AUTHORS.fi							\
 	AUTHORS.fr							\
 	AUTHORS.he							\
 	AUTHORS.html							\
@@ -13,6 +14,7 @@ about_DATA =								\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
 	AUTHORS.html.es							\
+	AUTHORS.html.fi							\
 	AUTHORS.html.fr							\
 	AUTHORS.html.it							\
 	AUTHORS.html.ru                                                 \
@@ -34,11 +36,13 @@ about_DATA =								\
 	INFO								\
 	INFO.ca								\
 	INFO.es								\
+	INFO.fi								\
 	INFO.fr								\
 	INFO.html							\
 	INFO.html.ca							\
 	INFO.html.de							\
 	INFO.html.es							\
+	INFO.html.fi							\
 	INFO.html.fr							\
 	INFO.html.it							\
 	INFO.html.ru							\
