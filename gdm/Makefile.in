@@ -141,59 +141,39 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-bin_SCRIPTS = \
-	     xfterm4 \
-	     xflock4 \
-	     xfmountdev4 \
-	     startxfce4
 
+gdm_prefix = @GDM_PREFIX@
+switchdesk_prefix = "/usr/share/apps/switchdesk"
+wmsession_prefix = "/etc/X11/wmsession.d"
 
-conffilesdir = @sysconfdir@/xfce4
-conffiles_DATA = \
-	xinitrc
-
-
-EXTRA_DIST = $(bin_SCRIPTS) $(conffiles_DATA) startxfce4.in
-subdir = scripts
+noinst_DATA = $(xfce_FILES)
+xfce_SOURCE = XFce4.in Xclients.xfce4.in 10XFce4.in
+xfce_FILES = XFce4 Xclients.xfce4 10XFce4
+EXTRA_DIST = $(xfce_SOURCE)
+DISTCLEANFILES = $(xfce_FILES)
+subdir = gdm
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = startxfce4
-SCRIPTS = $(bin_SCRIPTS)
-
+CONFIG_CLEAN_FILES = 10XFce4 Xclients.xfce4 XFce4
 DIST_SOURCES =
-DATA = $(conffiles_DATA)
+DATA = $(noinst_DATA)
 
-DIST_COMMON = Makefile.am Makefile.in startxfce4.in
+DIST_COMMON = 10XFce4.in Makefile.am Makefile.in XFce4.in \
+	Xclients.xfce4.in
 all: all-am
 
 .SUFFIXES:
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configure.ac $(ACLOCAL_M4)
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  scripts/Makefile
+	  $(AUTOMAKE) --gnu  gdm/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
-startxfce4: $(top_builddir)/config.status startxfce4.in
+10XFce4: $(top_builddir)/config.status 10XFce4.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-binSCRIPT_INSTALL = $(INSTALL_SCRIPT)
-install-binSCRIPTS: $(bin_SCRIPTS)
-	@$(NORMAL_INSTALL)
-	$(mkinstalldirs) $(DESTDIR)$(bindir)
-	@list='$(bin_SCRIPTS)'; for p in $$list; do \
-	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
-	  if test -f $$d$$p; then \
-	    f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
-	    echo " $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f"; \
-	    $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f; \
-	  else :; fi; \
-	done
-
-uninstall-binSCRIPTS:
-	@$(NORMAL_UNINSTALL)
-	@list='$(bin_SCRIPTS)'; for p in $$list; do \
-	  f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
-	  echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
-	  rm -f $(DESTDIR)$(bindir)/$$f; \
-	done
+Xclients.xfce4: $(top_builddir)/config.status Xclients.xfce4.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+XFce4: $(top_builddir)/config.status XFce4.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -204,24 +184,6 @@ clean-libtool:
 distclean-libtool:
 	-rm -f libtool
 uninstall-info-am:
-conffilesDATA_INSTALL = $(INSTALL_DATA)
-install-conffilesDATA: $(conffiles_DATA)
-	@$(NORMAL_INSTALL)
-	$(mkinstalldirs) $(DESTDIR)$(conffilesdir)
-	@list='$(conffiles_DATA)'; for p in $$list; do \
-	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
-	  f="`echo $$p | sed -e 's|^.*/||'`"; \
-	  echo " $(conffilesDATA_INSTALL) $$d$$p $(DESTDIR)$(conffilesdir)/$$f"; \
-	  $(conffilesDATA_INSTALL) $$d$$p $(DESTDIR)$(conffilesdir)/$$f; \
-	done
-
-uninstall-conffilesDATA:
-	@$(NORMAL_UNINSTALL)
-	@list='$(conffiles_DATA)'; for p in $$list; do \
-	  f="`echo $$p | sed -e 's|^.*/||'`"; \
-	  echo " rm -f $(DESTDIR)$(conffilesdir)/$$f"; \
-	  rm -f $(DESTDIR)$(conffilesdir)/$$f; \
-	done
 tags: TAGS
 TAGS:
 
@@ -262,10 +224,9 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(SCRIPTS) $(DATA)
+all-am: Makefile $(DATA)
 
 installdirs:
-	$(mkinstalldirs) $(DESTDIR)$(bindir) $(DESTDIR)$(conffilesdir)
 
 install: install-am
 install-exec: install-exec-am
@@ -287,6 +248,7 @@ clean-generic:
 
 distclean-generic:
 	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
@@ -307,9 +269,9 @@ info: info-am
 
 info-am:
 
-install-data-am: install-conffilesDATA
+install-data-am: install-data-local
 
-install-exec-am: install-binSCRIPTS
+install-exec-am:
 
 install-info: install-info-am
 
@@ -333,20 +295,39 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-binSCRIPTS uninstall-conffilesDATA \
-	uninstall-info-am
+uninstall-am: uninstall-info-am uninstall-local
 
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
 	distclean distclean-generic distclean-libtool distdir dvi \
-	dvi-am info info-am install install-am install-binSCRIPTS \
-	install-conffilesDATA install-data install-data-am install-exec \
-	install-exec-am install-info install-info-am install-man \
-	install-strip installcheck installcheck-am installdirs \
-	maintainer-clean maintainer-clean-generic mostlyclean \
-	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	uninstall uninstall-am uninstall-binSCRIPTS \
-	uninstall-conffilesDATA uninstall-info-am
+	dvi-am info info-am install install-am install-data \
+	install-data-am install-data-local install-exec install-exec-am \
+	install-info install-info-am install-man install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-generic \
+	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
+	uninstall-info-am uninstall-local
 
+
+install-data-local :
+	test no = @USE_GDM@ || $(MAKE) install-gdm
+
+install-gdm: $(xfce_FILES)
+	$(mkinstalldirs) $(DESTDIR)$(gdm_prefix)
+	$(mkinstalldirs) $(DESTDIR)$(switchdesk_prefix)
+	$(mkinstalldirs) $(DESTDIR)$(wmsession_prefix)
+	$(INSTALL_SCRIPT) XFce4 \
+	 $(DESTDIR)$(gdm_prefix)/XFce4
+	$(INSTALL_SCRIPT) Xclients.xfce4 \
+	 $(DESTDIR)$(switchdesk_prefix)/Xclients.xfce4
+	$(INSTALL_SCRIPT) 10XFce4 \
+	 $(DESTDIR)$(wmsession_prefix)/10XFce4
+
+uninstall-local: uninstall-gdm
+
+uninstall-gdm:
+	rm -f $(DESTDIR)$(gdm_prefix)/XFce4
+	rm -f $(DESTDIR)$(switchdesk_prefix)/Xclients.xfce4
+	rm -f $(DESTDIR)$(wmsession_prefix)/10XFce4
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:

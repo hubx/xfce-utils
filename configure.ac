@@ -34,6 +34,25 @@ AC_CHECK_LIB(Xpm, main,, AC_MSG_ERROR([libXpm is missing from your system: Make 
 
 AC_CHECK_FUNCS(setlocale strchr strrchr strstr)
 
+dnl enable GDM-specific startup files?
+AC_MSG_CHECKING(whether to install GDM specific files)
+AC_ARG_ENABLE(gdm,
+	[  --enable-gdm            enable GDM specific files],
+	[USE_GDM=$enableval],
+	[USE_GDM=no]
+)
+AC_MSG_RESULT($USE_GDM)
+AC_SUBST(USE_GDM)
+
+GDM_PREFIX=/etc/X11/gdm/Sessions
+AC_MSG_CHECKING(where GDM keeps session files)
+AC_ARG_WITH(gdm-prefix,
+	[  --with-gdm-prefix=STR        where GDM keeps session files (default=/etc/X11/gdm/Sessions)],
+	[ GDM_PREFIX="$withval", GDM_PREFIX=/etc/X11/gdm/Sessions]
+)
+AC_MSG_RESULT($GDM_PREFIX)
+AC_SUBST(GDM_PREFIX)
+
 ## Versions of dependencies
 GLIB_REQUIRED_VERSION=2.0.0
 GTK_REQUIRED_VERSION=2.0.0
@@ -74,5 +93,9 @@ xftaskbar/Makefile
 xftaskbar/plugin/Makefile
 scripts/Makefile
 scripts/startxfce4
+gdm/Makefile
+gdm/10XFce4
+gdm/Xclients.xfce4
+gdm/XFce4
 ])
 
