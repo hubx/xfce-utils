@@ -53,10 +53,7 @@ fi
 
 xftaskbar4&
 xfdesktop&
-
-if [ -x `which xfcalendar` ]; then
 xfcalendar &
-fi
 
 panel=`which xfce4-panel`
 case "x$panel" in
