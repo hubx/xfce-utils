@@ -217,15 +217,13 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->vbox1);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox1, TRUE, TRUE, 0);
 
-    dialog->frame1 = frame_box (_("Position"), GTK_SHADOW_NONE);
+    dialog->frame1 = xfce_framebox_new (_("Position"), TRUE);
     gtk_widget_show (dialog->frame1);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame1, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame1), 3);
 
     dialog->hbox2 = gtk_hbox_new (TRUE, 0);
     gtk_widget_show (dialog->hbox2);
-    gtk_container_add (GTK_CONTAINER (dialog->frame1), dialog->hbox2);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->hbox2), 5);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame1), dialog->hbox2);
 
     dialog->pos_top_radiobutton = gtk_radio_button_new_with_mnemonic (NULL, _("Top"));
     gtk_widget_show (dialog->pos_top_radiobutton);
@@ -241,24 +239,22 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     dialog->pos_radiobutton_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->pos_bottom_radiobutton));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->pos_bottom_radiobutton), !position);
 
-    dialog->frame3 = frame_box (_("Autohide"), GTK_SHADOW_NONE);
+    dialog->frame3 = xfce_framebox_new (_("Autohide"), TRUE);
     gtk_widget_show (dialog->frame3);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame3), 3);
 
     dialog->autohide_checkbutton = gtk_check_button_new_with_mnemonic (_("Auto hide taskbar"));
     gtk_widget_show (dialog->autohide_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame3), dialog->autohide_checkbutton);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame3), dialog->autohide_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->autohide_checkbutton), autohide);
 
-    dialog->frame4 = frame_box (_("Size"), GTK_SHADOW_NONE);
+    dialog->frame4 = xfce_framebox_new (_("Size"), TRUE);
     gtk_widget_show (dialog->frame4);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame4, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame4), 3);
 
     dialog->table3 = gtk_table_new (2, 3, FALSE);
     gtk_widget_show (dialog->table3);
-    gtk_container_add (GTK_CONTAINER (dialog->frame4), dialog->table3);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame4), dialog->table3);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->table3), 5);
 
     dialog->label14 = gtk_label_new (_("Height :"));
@@ -300,34 +296,31 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->vbox2);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
 
-    dialog->frame5 = frame_box (_("Tasks"), GTK_SHADOW_NONE);
+    dialog->frame5 = xfce_framebox_new (_("Tasks"), TRUE);
     gtk_widget_show (dialog->frame5);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame5), 3);
 
     dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
     gtk_widget_show (dialog->alltasks_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame5), dialog->alltasks_checkbutton);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame5), dialog->alltasks_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
 
-    dialog->frame2 = frame_box (_("Pager"), GTK_SHADOW_NONE);
+    dialog->frame2 = xfce_framebox_new (_("Pager"), TRUE);
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
 
     dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show pager in taskbar"));
     gtk_widget_show (dialog->pager_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->pager_checkbutton);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame2), dialog->pager_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->pager_checkbutton), show_pager);
 
-    dialog->frame2 = frame_box (_("Notification area"), GTK_SHADOW_NONE);
+    dialog->frame2 = xfce_framebox_new (_("Notification area"), TRUE);
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
 
     dialog->tray_checkbutton = gtk_check_button_new_with_mnemonic (_("Show system tray in taskbar"));
     gtk_widget_show (dialog->tray_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->tray_checkbutton);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame2), dialog->tray_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->tray_checkbutton), show_tray);
 
     dialog->dialog_action_area1 = GTK_DIALOG (dialog->xftaskbar_dialog)->action_area;
