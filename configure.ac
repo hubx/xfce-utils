@@ -69,5 +69,6 @@ xftaskbar/plugin/Makefile
 scripts/Makefile
 gdm/Makefile
 xfce4-about/Makefile
+xfce4-about/INFO
 ])
 

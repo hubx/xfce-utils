@@ -57,6 +57,7 @@ struct _Taskbar
     gboolean position;
     gboolean autohide;
     gboolean show_pager;
+    gboolean show_systray;
     gboolean all_tasks;
     gboolean hidden;
     GtkWidget *win;
@@ -188,6 +189,15 @@ static void taskbar_toggle_pager(Taskbar *taskbar)
     }
 }
 
+static void
+taskbar_toggle_systray(Taskbar *taskbar)
+{
+	if (taskbar->show_systray)
+		gtk_widget_show(taskbar->iconbox);
+	else
+		gtk_widget_hide(taskbar->iconbox);
+}
+
 static void taskbar_change_size(Taskbar *taskbar, int height)
 {
     g_return_if_fail (taskbar != NULL);
@@ -271,28 +281,33 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
         case MCS_ACTION_CHANGED:
             if(setting->type == MCS_TYPE_INT)
             {
-                if(!strcmp(name, "Taskbar/Position"))
+                if (!strcmp(name, "Taskbar/Position"))
                 {
                     taskbar->position = setting->data.v_int ? TOP : BOTTOM;
 		    taskbar_position(taskbar);
 		    taskbar_update_margins(taskbar);
                 }
-                else if(!strcmp(name, "Taskbar/AutoHide"))
+                else if (!strcmp(name, "Taskbar/AutoHide"))
                 {
                     taskbar->autohide = setting->data.v_int ? TRUE : FALSE;
 		    taskbar_toggle_autohide(taskbar);
                 }
-                else if(!strcmp(name, "Taskbar/ShowPager"))
+                else if (!strcmp(name, "Taskbar/ShowPager"))
                 {
                     taskbar->show_pager = setting->data.v_int ? TRUE : FALSE;
 		    taskbar_toggle_pager(taskbar);
                 }
-                else if(!strcmp(name, "Taskbar/ShowAllTasks"))
+		else if (!strcmp(name, "Taskbar/ShowSystemTray"))
+		{
+		    taskbar->show_systray = setting->data.v_int ? TRUE : FALSE;
+		    taskbar_toggle_systray(taskbar);
+		}
+                else if (!strcmp(name, "Taskbar/ShowAllTasks"))
                 {
                     taskbar->all_tasks = setting->data.v_int ? TRUE : FALSE;
 		    netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
                 }
-                else if(!strcmp(name, "Taskbar/Height"))
+                else if (!strcmp(name, "Taskbar/Height"))
                 {
                     taskbar_change_size(taskbar, setting->data.v_int);
                 }
@@ -356,6 +371,7 @@ int main(int argc, char **argv)
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
     taskbar->show_pager = TRUE;
+    taskbar->show_systray = TRUE;
     taskbar->all_tasks = FALSE;
     taskbar->hidden = FALSE;
 

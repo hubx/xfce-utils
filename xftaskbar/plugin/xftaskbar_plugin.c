@@ -53,9 +53,6 @@
 #define DEFAULT_HEIGHT	30
 
 #define DEFAULT_ICON_SIZE 48
-#ifndef DATADIR
-#define DATADIR "/usr/local/share/xfce4"
-#endif
 
 static void create_channel(McsPlugin * mcs_plugin);
 static gboolean write_options(McsPlugin * mcs_plugin);
@@ -98,6 +95,7 @@ struct _Itf
     GtkWidget *label15;
     GtkWidget *label16;
     GtkWidget *pager_checkbutton;
+    GtkWidget *systray_checkbutton;
     GtkWidget *pos_bottom_radiobutton;
     GtkWidget *pos_top_radiobutton;
     GtkWidget *table3;
@@ -141,6 +139,12 @@ static void cb_showpager_changed(GtkWidget * dialog, gpointer user_data)
     mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowPager", CHANNEL, show_pager ? 1 : 0);
     mcs_manager_notify(mcs_plugin->manager, CHANNEL);
     write_options(mcs_plugin);
+}
+
+static void
+cb_showsystray_changed(GtkWidget *dialog, gpointer user_data)
+{
+	/* XXX - to be implemented */
 }
 
 static void cb_alltasks_changed(GtkWidget * dialog, gpointer user_data)

@@ -2,6 +2,7 @@
  *  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
  *                2002 Xavier MAILLARD (zedek@fxgsproject.org)
  *                2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
+ *                2003 Benedikt Meurer (benedikt.meurer@unix-ag.uni-siegen.de)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +19,7 @@
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifdef HAVE
+#ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
 
@@ -26,6 +27,9 @@
 #include <memory.h>
 #endif
 #include <stdio.h>
+#ifdef HAVE_STDLIB_H
+#include <stdlib.h>
+#endif
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
@@ -35,215 +39,102 @@
 
 #include "xfce-logo-icon.h"
 
-#define SLOGAN "\" ... and mice fly ... \""
-
 #ifndef XFCE_LICENSE
-#define XFCE_LICENSE "COPYING"
+#define XFCE_LICENSE	"COPYING"
 #endif
 
 #ifndef XFCE_AUTHORS
-#define XFCE_AUTHORS "AUTHORS"
+#define XFCE_AUTHORS	"AUTHORS"
+#endif
+
+#ifndef XFCE_INFO
+#define XFCE_INFO	"INFO"
 #endif
 
 #define BORDER 6
 
-static char *progname = NULL;
-
-/* useful functions */
-static void fill_buffer(const char *filename, char **buf, int *nb)
+static void
+info_help_cb(GtkWidget *w, gpointer data)
 {
-    GError *err = NULL;
-
-    if(!filename)
-        return;
-
-    g_file_get_contents(filename, buf, nb, &err);
-
-    if(err)
-    {
-        g_error("%s: %s", progname, err->message);
-	g_error_free(err);
-    }
+	exec_command("xfhelp4");
 }
 
-static GtkWidget *create_bold_label(const char *text)
+static void
+add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
+		gboolean hscrolling)
 {
-    GtkWidget *label;
-    char *markup;
+	GtkTextBuffer *textbuffer;
+	GtkWidget *textview;
+	GtkWidget *label;
+	GtkWidget *view;
+	GtkWidget *sw;
+	GError *err;
+	char *path;
+	char *buf;
+	int n;
 
-    if(!text)
-        return gtk_label_new("");
+	err = NULL;
 
-    markup = g_strconcat("<b> ", text, " </b>", NULL);
+	label = gtk_label_new(name);
+	gtk_widget_show(label);
 
-    label = gtk_label_new(NULL);
-    gtk_label_set_markup(GTK_LABEL(label), markup);
+	path = g_build_filename(DATADIR, filename, NULL);
 
-    return label;
+	g_file_get_contents(path, &buf, &n, &err);
+
+	if (err != NULL) {
+		xfce_err("%s", err->message);
+		g_error_free(err);
+	}
+	else {
+		textbuffer = gtk_text_buffer_new(NULL);
+		gtk_text_buffer_set_text(textbuffer, buf, n);
+
+		view = gtk_frame_new(NULL);
+		gtk_container_set_border_width(GTK_CONTAINER(view), BORDER);
+		gtk_frame_set_shadow_type(GTK_FRAME(view), GTK_SHADOW_IN);
+		gtk_widget_show(view);
+
+		sw = gtk_scrolled_window_new(NULL, NULL);
+		gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(sw), 
+			hscrolling ? GTK_POLICY_AUTOMATIC : GTK_POLICY_NEVER,
+			GTK_POLICY_AUTOMATIC);
+		gtk_widget_show(sw);
+		gtk_container_add(GTK_CONTAINER(view), sw);
+
+		textview = gtk_text_view_new_with_buffer(textbuffer);
+		gtk_text_view_set_editable(GTK_TEXT_VIEW(textview), FALSE);
+		gtk_text_view_set_left_margin(GTK_TEXT_VIEW(textview), BORDER);
+		gtk_text_view_set_right_margin(GTK_TEXT_VIEW(textview), BORDER);
+		gtk_widget_show(textview);
+		gtk_container_add(GTK_CONTAINER(sw), textview);
+
+		gtk_notebook_append_page(notebook, view, label);
+
+		g_free(buf);
+	}
+
+	g_free(path);
 }
 
-static void info_help_cb(GtkWidget * w, gpointer data)
-{
-    exec_command("xfhelp4");
-}
-
-GtkWidget *create_scrolled_text_view(const char *buffer, int length, 
-				     gboolean hscrolling)
-{
-    GtkWidget *frame, *sw, *textview;
-    GtkTextBuffer *textbuffer;
-
-    g_return_val_if_fail(buffer != NULL, NULL);
-    
-    textbuffer = gtk_text_buffer_new(NULL);
-    textview = gtk_text_view_new();
-    
-    frame = gtk_frame_new(NULL);
-    gtk_container_set_border_width(GTK_CONTAINER(frame), BORDER);
-    gtk_frame_set_shadow_type(GTK_FRAME(frame), GTK_SHADOW_IN);
-    gtk_widget_show(frame);
-
-    sw = gtk_scrolled_window_new(NULL, NULL);
-    gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(sw), 
-		   hscrolling ? GTK_POLICY_AUTOMATIC : GTK_POLICY_NEVER,
-		   GTK_POLICY_AUTOMATIC);
-    gtk_widget_show(sw);
-    gtk_container_add(GTK_CONTAINER(frame), sw);
-
-    gtk_text_buffer_set_text(GTK_TEXT_BUFFER(textbuffer), buffer, length);
-
-    gtk_text_view_set_buffer(GTK_TEXT_VIEW(textview), textbuffer);
-    gtk_text_view_set_editable(GTK_TEXT_VIEW(textview), FALSE);
-    gtk_text_view_set_left_margin(GTK_TEXT_VIEW(textview), BORDER);
-    gtk_text_view_set_right_margin(GTK_TEXT_VIEW(textview), BORDER);
-
-    gtk_widget_show(textview);
-    gtk_container_add(GTK_CONTAINER(sw), textview);
-
-    return frame;
-}
-
-static void add_info_header(GtkWidget *vbox, GdkPixbuf *icon)
-{
-    GtkWidget *header;
-    char *text;
-
-    text = 
-	g_strdup_printf("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
-		_("XFce Desktop Environment"), 
-		_("Copyright 2002-2003 by Olivier Fourdan" ));
-	   
-    header = create_header(icon, text);
-    g_free(text);   		   
-    gtk_widget_show(header);
-    
-    gtk_box_pack_start(GTK_BOX(vbox), header, FALSE, FALSE, 0);
-}
-
-static void add_info_page(GtkNotebook * notebook)
-{
-    GtkWidget *info_label_1;
-    GtkWidget *info_notebook_page;
-    GtkWidget *info_view;
-    char *buffer;
-
-    info_label_1 = gtk_label_new(_("Info"));
-    gtk_widget_show(info_label_1);
-
-    /* %s, %s == version, slogan */
-    buffer = g_strdup_printf(_("\n"
-"XFce 4, version %s\n"
-"%s\n"
-"\n"
-"XFce is a collection of programs that together provide a full-featured\n"
-"desktop enviroment. The following programs are part of XFce:\n"
-"\n"
-"o Window manager (xfwm4)\n"
-"   handles the placement of windows on the screen\n"
-"\n"
-"o Panel (xfce4-panel)\n"
-"   program lauchers, popup menus, clock, desktop switcher and more.\n"
-"\n"
-"o Desktop manager (xfdesktop)\n"
-"   sets a background color or image and provides a menu when you\n"
-"   click on the desktop background\n"
-"\n"
-"o File manager (xffm)\n"
-"   fast file manager\n"
-"\n"
-"o Utilities\n"
-"   xfprint4: print files\n"
-"   xfrun4: run programs\n"
-"   xftaskbar4: simple taskbar with optional pager\n"
-"\n\n"
-"Thank you for your interest in XFce,\n"
-"\n"
-"                -- The XFce Development Team --\n"), 
-    VERSION, SLOGAN);
-
-
-    info_view = create_scrolled_text_view(buffer, -1, FALSE);
-    g_free(buffer);
-    gtk_notebook_append_page(GTK_NOTEBOOK(notebook), info_view,
-                             info_label_1);
-}
-
-static void add_credits_page(GtkNotebook * notebook)
-{
-    GtkWidget *info_label;
-    GtkWidget *info_credits_view;
-    char *filename, *buffer;
-    int nbytes_read;
-
-    info_label = gtk_label_new(_("Credits"));
-    gtk_widget_show(info_label);
-
-    filename = g_build_filename(DATADIR, XFCE_AUTHORS, NULL);
-    fill_buffer(filename, &buffer, &nbytes_read);
-    g_free(filename);
-
-    info_credits_view = create_scrolled_text_view(buffer, nbytes_read, FALSE);
-    gtk_widget_show(info_credits_view);
-    g_free(buffer);
-    
-    gtk_notebook_append_page(notebook, info_credits_view, info_label);
-}
-
-static void add_license_page(GtkNotebook * notebook)
-{
-    GtkWidget *info_label;
-    GtkWidget *info_license_view;
-    char *filename, *buffer;
-    int nbytes_read;
-
-    info_label = gtk_label_new(_("License"));
-    gtk_widget_show(info_label);
-
-    filename = g_build_filename(DATADIR, XFCE_LICENSE, NULL);
-    fill_buffer(filename, &buffer, &nbytes_read);
-    g_free(filename);
-
-    info_license_view = create_scrolled_text_view(buffer, nbytes_read, TRUE);
-    gtk_widget_show(info_license_view);
-    g_free(buffer);
-    
-    gtk_notebook_append_page(notebook, info_license_view, info_label);
-}
-
-int main(int argc, char **argv)
+int
+main(int argc, char **argv)
 {
     GtkWidget *info;
+    GtkWidget *header;
     GtkWidget *vbox, *vbox2;
     GtkWidget *notebook;
     GtkWidget *buttonbox;
     GtkWidget *info_ok_button;
     GtkWidget *info_help_button;
     GdkPixbuf *logo_pb;
-
-    progname = argv[0];
+    char *text;
 
     gtk_init(&argc, &argv);
-    
+
+    /* XXX - We could use a GtkDialog instead here, since this is
+     * really a simple dialog.
+     */
     info = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title(GTK_WINDOW(info), _("About XFce 4"));
     gtk_window_stick(GTK_WINDOW(info));
@@ -256,7 +147,14 @@ int main(int argc, char **argv)
     gtk_container_add(GTK_CONTAINER(info), vbox2);
 
     /* header with logo */
-    add_info_header(vbox2, logo_pb);
+    text = g_strdup_printf(
+		    "%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
+		    _("XFce Desktop Environment"), 
+		    _("Copyright 2002-2003 by Olivier Fourdan"));
+    header = create_header(logo_pb, text);
+    gtk_widget_show(header);
+    gtk_box_pack_start(GTK_BOX(vbox2), header, FALSE, FALSE, 0);
+    g_free(text);
     g_object_unref(logo_pb);
 
     vbox = gtk_vbox_new(FALSE, BORDER);
@@ -271,9 +169,9 @@ int main(int argc, char **argv)
     gtk_box_pack_start(GTK_BOX(vbox), notebook, TRUE, TRUE, 0);
 
     /* add pages */
-    add_info_page(GTK_NOTEBOOK(notebook));
-    add_credits_page(GTK_NOTEBOOK(notebook));
-    add_license_page(GTK_NOTEBOOK(notebook));
+    add_page(GTK_NOTEBOOK(notebook), _("Info"), XFCE_INFO, FALSE);
+    add_page(GTK_NOTEBOOK(notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+    add_page(GTK_NOTEBOOK(notebook), _("License"), XFCE_LICENSE, TRUE);
 
     /* buttons */
     buttonbox = gtk_hbutton_box_new();
@@ -304,4 +202,6 @@ int main(int argc, char **argv)
     gtk_widget_show(info);
 
     gtk_main();
+
+    return(EXIT_SUCCESS);
 }

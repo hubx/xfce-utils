@@ -2,7 +2,8 @@ aboutdir=$(datadir)/xfce4
 
 about_DATA =								\
 	AUTHORS								\
-	COPYING
+	COPYING								\
+	INFO
 
 bin_PROGRAMS =  xfce4-about
 
@@ -12,8 +13,7 @@ xfce4_about_SOURCES =							\
 
 xfce4_about_CFLAGS =							\
 	@LIBXFCEGUI4_CFLAGS@						\
-	-DDATADIR=\"$(datadir)/xfce4\"					\
-	-DSYSCONFDIR=\"$(sysconfdir)/xfce4\"
+	-DDATADIR=\"$(datadir)/xfce4\"
 
 xfce4_about_LDADD =							\
 	@LIBXFCEGUI4_LIBS@

@@ -142,7 +142,8 @@ aboutdir = $(datadir)/xfce4
 
 about_DATA = \
 	AUTHORS								\
-	COPYING
+	COPYING								\
+	INFO
 
 
 bin_PROGRAMS = xfce4-about
@@ -172,7 +173,7 @@ EXTRA_DIST = $(noinst_DATA)
 subdir = xfce4-about
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES =
+CONFIG_CLEAN_FILES = INFO
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -195,7 +196,7 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING Makefile.am Makefile.in
+DIST_COMMON = AUTHORS COPYING INFO.in Makefile.am Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
 
 all: all-am
@@ -207,6 +208,8 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configu
 	  $(AUTOMAKE) --foreign  xfce4-about/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
+INFO: $(top_builddir)/config.status INFO.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
