@@ -150,23 +150,26 @@ static gint taskbar_get_height(Taskbar *taskbar)
 
 static gint taskbar_get_width(Taskbar *taskbar)
 {
-  return (taskbar->width * taskbar->width_percent) / 100.0;
+    return (taskbar->width * taskbar->width_percent) / 100.0;
 }
 
 static gint taskbar_get_x(Taskbar *taskbar)
 {
-  if (taskbar->horiz_align < 0) {
-    /* left */
-    return taskbar->x;
-  }
-  else if (taskbar->horiz_align > 0) {
-    /* right */
-    return taskbar->x + (taskbar->width - taskbar_get_width(taskbar));
-  }
-  else {
-    /* center */
-    return taskbar->x + (taskbar->width - taskbar_get_width(taskbar)) / 2;
-  }
+    if (taskbar->horiz_align < 0) 
+    {
+        /* left */
+        return taskbar->x;
+    }
+    else if (taskbar->horiz_align > 0) 
+    {
+        /* right */
+        return taskbar->x + (taskbar->width - taskbar_get_width(taskbar));
+    }
+    else 
+    {
+        /* center */
+        return taskbar->x + (taskbar->width - taskbar_get_width(taskbar)) / 2;
+    }
 }
 
 static void taskbar_update_margins(Taskbar *taskbar)
@@ -185,30 +188,30 @@ static void taskbar_update_margins(Taskbar *taskbar)
         height = taskbar->height;
     }
     
-    data[0]  = 0;                                 /* left           */	        		
-    data[1]  = 0;                                 /* right          */	        		
-    data[2]  = (taskbar->position) ? height : 0;  /* top            */	        		
-    data[3]  = (taskbar->position) ? 0 : height;  /* bottom         */	        		
-    data[4]  = 0;                                 /* left_start_y   */     		
-    data[5]  = 0;                                 /* left_end_y     */       		
-    data[6]  = 0;                                 /* right_start_y  */    		
-    data[7]  = 0;                                 /* right_end_y    */      		
-    data[8]  = taskbar_get_x (taskbar);  	  /* top_start_x    */			
+    data[0]  = 0;                                 /* left           */                          
+    data[1]  = 0;                                 /* right          */                          
+    data[2]  = (taskbar->position) ? height : 0;  /* top            */                          
+    data[3]  = (taskbar->position) ? 0 : height;  /* bottom         */                          
+    data[4]  = 0;                                 /* left_start_y   */                  
+    data[5]  = 0;                                 /* left_end_y     */                  
+    data[6]  = 0;                                 /* right_start_y  */                  
+    data[7]  = 0;                                 /* right_end_y    */                  
+    data[8]  = taskbar_get_x (taskbar);           /* top_start_x    */                  
     data[9]  = taskbar_get_x (taskbar) 
-               + taskbar_get_width (taskbar);     /* top_end_x      */        		
-    data[10] = taskbar_get_x (taskbar);           /* bottom_start_x */   		
+               + taskbar_get_width (taskbar);     /* top_end_x      */                  
+    data[10] = taskbar_get_x (taskbar);           /* bottom_start_x */                  
     data[11] = taskbar_get_x (taskbar) 
-               + taskbar_get_width (taskbar);     /* bottom_end_x   */     		
+               + taskbar_get_width (taskbar);     /* bottom_end_x   */                  
 
     gdk_error_trap_push ();
     gdk_property_change (taskbar->win->window,
-			 gdk_atom_intern ("_NET_WM_STRUT", FALSE),
-			 gdk_atom_intern ("CARDINAL", FALSE), 32,
-			 GDK_PROP_MODE_REPLACE, (guchar *) &data, 4);
+                         gdk_atom_intern ("_NET_WM_STRUT", FALSE),
+                         gdk_atom_intern ("CARDINAL", FALSE), 32,
+                         GDK_PROP_MODE_REPLACE, (guchar *) &data, 4);
     gdk_property_change (taskbar->win->window,
-			 gdk_atom_intern ("_NET_WM_STRUT_PARTIAL", FALSE),
-			 gdk_atom_intern ("CARDINAL", FALSE), 32,
-			 GDK_PROP_MODE_REPLACE, (guchar *) &data, 12);
+                         gdk_atom_intern ("_NET_WM_STRUT_PARTIAL", FALSE),
+                         gdk_atom_intern ("CARDINAL", FALSE), 32,
+                         GDK_PROP_MODE_REPLACE, (guchar *) &data, 12);
     gdk_error_trap_pop ();
 }
 
@@ -219,7 +222,9 @@ static void taskbar_position(Taskbar *taskbar)
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), -1, 1);
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar_get_width(taskbar), taskbar_get_height(taskbar));
     if (GTK_WIDGET_REALIZED (taskbar->win))
-      taskbar_update_margins(taskbar);
+    {
+        taskbar_update_margins(taskbar);
+    }
 }
 
 static void taskbar_toggle_autohide(Taskbar *taskbar)
@@ -259,18 +264,18 @@ register_tray(Taskbar *taskbar)
 
     if (xfce_system_tray_check_running(DefaultScreenOfDisplay(taskbar->dpy))) 
     {
-	    xfce_info(_("There is already a system tray running on this "
-			"screen"));
-	    return FALSE;
+            xfce_info(_("There is already a system tray running on this "
+                        "screen"));
+            return FALSE;
     }
     else if (!xfce_system_tray_register(taskbar->tray, 
-		DefaultScreenOfDisplay(taskbar->dpy),
-		&error)) 
+                DefaultScreenOfDisplay(taskbar->dpy),
+                &error)) 
     {
         xfce_err(_("Unable to register system tray: %s"), error->message);
         g_error_free(error);
 
-	return FALSE;
+        return FALSE;
     }
 
     return TRUE;
@@ -283,29 +288,29 @@ static gboolean taskbar_toggle_tray(Taskbar *taskbar)
     
     if (taskbar->show_tray)
     {
-	if (!taskbar->tray_registered)
-	{
-	    taskbar->tray_registered = register_tray(taskbar);
-	}
+        if (!taskbar->tray_registered)
+        {
+            taskbar->tray_registered = register_tray(taskbar);
+        }
 
-	taskbar->iconbox = gtk_hbox_new(FALSE, 5);
-	gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
-			   FALSE, FALSE,0);
-	gtk_widget_show (taskbar->iconbox);
+        taskbar->iconbox = gtk_hbox_new(FALSE, 5);
+        gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
+                           FALSE, FALSE,0);
+        gtk_widget_show (taskbar->iconbox);
     }
     else
     {
-	if (taskbar->tray_registered)
-	{
-	    xfce_system_tray_unregister(taskbar->tray);
-	    taskbar->tray_registered = FALSE;
-	}
-	
-	if (taskbar->iconbox) 
-	{
+        if (taskbar->tray_registered)
+        {
+            xfce_system_tray_unregister(taskbar->tray);
+            taskbar->tray_registered = FALSE;
+        }
+        
+        if (taskbar->iconbox) 
+        {
             gtk_widget_destroy (taskbar->iconbox);
-	    taskbar->iconbox = NULL;
-	}
+            taskbar->iconbox = NULL;
+        }
     }
 
     return FALSE;
@@ -356,7 +361,8 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
     monitor_nbr = gdk_screen_get_monitor_at_point (taskbar->gscr, 0, 0);
     gdk_screen_get_monitor_geometry (taskbar->gscr, monitor_nbr, &rect);
 
-    if ((allocation) && (widget == taskbar->win))
+    if ((allocation) && (widget == taskbar->win) && 
+        ((allocation->height != taskbar->height) || (allocation->width != taskbar->width)))
     {
         if (taskbar->position == TOP)
         {
@@ -368,7 +374,9 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
         }
         gtk_window_move(GTK_WINDOW(taskbar->win), taskbar_get_x(taskbar), taskbar->y);
         if (GTK_WIDGET_REALIZED (taskbar->win))
-          taskbar_update_margins(taskbar);
+        {
+            taskbar_update_margins(taskbar);
+        }
     }
     return FALSE;
 }
@@ -383,8 +391,8 @@ static gboolean taskbar_unhide_timeout (Taskbar *taskbar)
 
     if (taskbar->unhide_timeout)
     {
-	g_source_remove (taskbar->unhide_timeout);
-	taskbar->unhide_timeout = 0;
+        g_source_remove (taskbar->unhide_timeout);
+        taskbar->unhide_timeout = 0;
     }
 
     return FALSE;
@@ -400,18 +408,18 @@ static gboolean taskbar_enter (GtkWidget *widget, GdkEventCrossing *event, gpoin
     }
     if (event->detail != GDK_NOTIFY_INFERIOR)
     {
-	if (taskbar->hide_timeout)
-	{
-	    g_source_remove (taskbar->hide_timeout);
-	    taskbar->hide_timeout = 0;
-	}
+        if (taskbar->hide_timeout)
+        {
+            g_source_remove (taskbar->hide_timeout);
+            taskbar->hide_timeout = 0;
+        }
 
-	if (!taskbar->unhide_timeout)
-	{
-	    taskbar->unhide_timeout =
-		g_timeout_add (UNHIDE_TIMEOUT,
-			       (GSourceFunc) taskbar_unhide_timeout, taskbar);
-	}
+        if (!taskbar->unhide_timeout)
+        {
+            taskbar->unhide_timeout =
+                g_timeout_add (UNHIDE_TIMEOUT,
+                               (GSourceFunc) taskbar_unhide_timeout, taskbar);
+        }
 
     }
   
@@ -428,8 +436,8 @@ static gboolean taskbar_hide_timeout (Taskbar *taskbar)
 
     if (taskbar->hide_timeout)
     {
-	g_source_remove (taskbar->hide_timeout);
-	taskbar->hide_timeout = 0;
+        g_source_remove (taskbar->hide_timeout);
+        taskbar->hide_timeout = 0;
     }
 
     return FALSE;
@@ -446,18 +454,18 @@ static gboolean taskbar_leave (GtkWidget *widget, GdkEventCrossing *event, gpoin
     
     if (event->detail != GDK_NOTIFY_INFERIOR)
     {
-	if (taskbar->unhide_timeout)
-	{
-	    g_source_remove (taskbar->unhide_timeout);
-	    taskbar->unhide_timeout = 0;
-	}
+        if (taskbar->unhide_timeout)
+        {
+            g_source_remove (taskbar->unhide_timeout);
+            taskbar->unhide_timeout = 0;
+        }
 
-	if (!taskbar->hide_timeout)
-	{
-	    taskbar->hide_timeout =
-		g_timeout_add (HIDE_TIMEOUT, 
+        if (!taskbar->hide_timeout)
+        {
+            taskbar->hide_timeout =
+                g_timeout_add (HIDE_TIMEOUT, 
                                (GSourceFunc) taskbar_hide_timeout, taskbar);
-	}
+        }
     }
     return FALSE;
 }
@@ -543,8 +551,8 @@ static void icon_docked(XfceSystemTray *tray, GtkWidget *icon, Taskbar *taskbar)
 {
     if (taskbar->tray_registered)
     {
-	gtk_box_pack_start(GTK_BOX(taskbar->iconbox), icon, FALSE, FALSE, 0);
-	gtk_widget_show(icon);
+        gtk_box_pack_start(GTK_BOX(taskbar->iconbox), icon, FALSE, FALSE, 0);
+        gtk_widget_show(icon);
     }
 }
 
@@ -553,7 +561,7 @@ static void icon_undocked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox
 }
 
 static void message_new(XfceSystemTray *tray, GtkWidget *icon, glong id,
-		glong timeout, const gchar *text)
+                glong timeout, const gchar *text)
 {
 }
 
@@ -593,7 +601,7 @@ int main(int argc, char **argv)
     taskbar->gscr = gdk_screen_get_default ();
     if (!taskbar->gscr)
     {
-	g_error (_("Cannot get default screen\n"));
+        g_error (_("Cannot get default screen\n"));
     }
     gtk_widget_push_colormap(gdk_screen_get_rgb_colormap (taskbar->gscr));
     taskbar->scr = gdk_screen_get_number (taskbar->gscr);
@@ -627,8 +635,8 @@ int main(int argc, char **argv)
     netk_gtk_window_set_type(GTK_WINDOW(taskbar->win), NETK_WINDOW_DOCK);
     if ((gtk_major_version >=2) && (gtk_minor_version >= 1))
     {
-	g_object_set (G_OBJECT(taskbar->win), "skip_taskbar_hint", TRUE, NULL);
-	g_object_set (G_OBJECT(taskbar->win), "skip_pager_hint", TRUE, NULL);
+        g_object_set (G_OBJECT(taskbar->win), "skip_taskbar_hint", TRUE, NULL);
+        g_object_set (G_OBJECT(taskbar->win), "skip_pager_hint", TRUE, NULL);
     }
     gtk_window_stick(GTK_WINDOW(taskbar->win));
     gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
@@ -696,7 +704,7 @@ int main(int argc, char **argv)
     else
     {
         g_warning(_("Cannot create MCS client channel"));
-	taskbar_toggle_tray(taskbar);
+        taskbar_toggle_tray(taskbar);
     }
 
     gtk_widget_show (taskbar->tasklist);
