@@ -1,3 +1,12 @@
+2003-03-17  bmeurer
+
+	* configure, configure.ac, ltcf-c.sh, ltconfig, ltmain.sh,
+	xfrun/xfrun.c: Fixed xfrun4 crashing when no history file exists.
+
+2003-03-13  xfce
+
+	* ChangeLog: Update Changelogs
+
 2003-03-12  huysmans
 
 	* xfrun/: Makefile.am, Makefile.in, xfrun.c: Safe terminal option
