@@ -27,9 +27,9 @@ xfwm4 --daemon
 xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
-if [ "x$panel" -ne "x" ]; then
+if test "x$panel" != "x" ; then
 	status=`$panel`
-	while [ status != 0 ]; do
+	while test $status != 0 ; do
 		echo "Panel crash"
 		status=`$panel`
 	done
