@@ -22809,7 +22809,7 @@ echo "${ECHO_T}yes" >&6
   fi
 
 
-                                                                                                                                                                                                                            ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.html xfce4-about/INFO.html.ca xfce4-about/INFO.html.de"
+                                                                                                                                                                                                                                                ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.fr xfce4-about/INFO.html xfce4-about/INFO.html.ca xfce4-about/INFO.html.de xfce4-about/INFO.html.fr"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -23399,9 +23399,11 @@ do
   "gdm/Makefile" ) CONFIG_FILES="$CONFIG_FILES gdm/Makefile" ;;
   "xfce4-about/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/Makefile" ;;
   "xfce4-about/INFO" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO" ;;
+  "xfce4-about/INFO.fr" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.fr" ;;
   "xfce4-about/INFO.html" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html" ;;
   "xfce4-about/INFO.html.ca" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html.ca" ;;
   "xfce4-about/INFO.html.de" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html.de" ;;
+  "xfce4-about/INFO.html.fr" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html.fr" ;;
   "depfiles" ) CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
   "default-1" ) CONFIG_COMMANDS="$CONFIG_COMMANDS default-1" ;;
   "config.h" ) CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;

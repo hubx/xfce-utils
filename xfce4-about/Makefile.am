@@ -4,16 +4,20 @@ about_DATA =								\
 	AUTHORS								\
 	AUTHORS.ca							\
 	AUTHORS.de							\
+	AUTHORS.fr							\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
+	AUTHORS.html.fr							\
 	AUTHORS.html							\
 	COPYING								\
 	BSD								\
 	LGPL								\
 	GPL								\
 	INFO								\
+	INFO.fr								\
 	INFO.html.ca							\
 	INFO.html.de							\
+	INFO.html.fr							\
 	INFO.html
 
 bin_PROGRAMS =  xfce4-about

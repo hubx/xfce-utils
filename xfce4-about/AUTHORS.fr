@@ -1,0 +1,52 @@
+Direction du projet
+  Olivier Fourdan <fourdan@xfce.org>
+  
+Principaux développeurs
+  Benedikt Meurer <Benedikt.Meurer@unix-ag.uni-siegen.de>
+  Biju Chacko <botsie@myrealbox.com>
+  Edscott Wilson Garcia <edscott@imp.mx>
+  Jasper Huijsmans <huysmans@users.sourceforge.net>
+
+Contributeurs
+  Danny Milosavljevic <danny_milo@yahoo.com>
+  Ejvend Nielsen <prophet@sphere-x.net>
+  François Le Clainche <fleclainche@wanadoo.fr>
+  Jens Luedicke <jens@irs-net.com>
+  Karsten Luetkewitz <phrep@plskthx.org>
+  Martin Loschwitz <madkiss@debian.org>
+  Tobias Henle <tobias@page23.de>
+  Xavier Maillard <zedek@fxgsproject.org>
+  Bernhard Walle <Bernhard.Walle@gmx.de> 
+  Thomas Leonard <tal00r@ecs.soton.ac.uk>
+  Erik Touve <etouve@earthlink.net>
+  Jens Guballa <j.guballa@t-online.de>
+  Joakim Andreasson <joakim.andreasson@gmx.net>
+  Michael Mosier <michael@spyonit.com>
+
+Hébergement du site et listes de diffusions fournis par
+  Chuck Mead <csm@MoonGroup.com>
+
+Traducteurs
+  Carles Muñoz Gorriz <carlesmu@internautas.org>
+  Dan Korostelev <digger_temp@netman.ru>
+  Davide D'Amico <dave@gufi.org>
+  Dinesh Nadarajah <n_dinesh@yahoo.com>
+  Egmont Koblinger <egmont@uhulinux.hu>
+  Erçin EKER <erc.caldera@gmx.net>
+  G Karunakar <karunakar@freedomink.org>
+  Harun Musa <mharun@gmx.net>
+  Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>
+  Jaime Buffery <nestu@onlylinux.homelinux.net>
+  Moritz Heiber <mistermoe@hackerboard.de>
+  Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
+  Paweł Pastuła <pastulap@poczta.onet.pl>
+  Peter Somogyi <jerry@gnu.hu>
+  Yongtao Yang <yongtao.yang@teila.com>
+  Zele Gabor <zegab@axelero.hu>
+  Zhao Ji <zhao-ji@awz.ne.jp>
+
+Si vous connaissez quelqu'un qui manque à cette liste, merci de 
+nous en informer sur xfce4-dev@moongroup.com
+
+Merci à tous ceux qui ont aidé à la réalisation de ce logiciel.
+

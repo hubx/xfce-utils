@@ -46,7 +46,9 @@
 
 #include "xfce-logo-icon.h"
 
-#define SEARCHPATH	(DATADIR "/%F.%L:" DATADIR "/%F.%l:" DATADIR "/%F")
+#define SEARCHPATH	(DATADIR G_DIR_SEPARATOR_S "%F.%L:"\
+                         DATADIR G_DIR_SEPARATOR_S "%F.%l:"\
+                         DATADIR G_DIR_SEPARATOR_S "%F")
 
 #define XFCE_COPYRIGHT	"COPYING"
 #define XFCE_AUTHORS	"AUTHORS"

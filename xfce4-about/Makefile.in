@@ -179,16 +179,20 @@ about_DATA = \
 	AUTHORS								\
 	AUTHORS.ca							\
 	AUTHORS.de							\
+	AUTHORS.fr							\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
+	AUTHORS.html.fr							\
 	AUTHORS.html							\
 	COPYING								\
 	BSD								\
 	LGPL								\
 	GPL								\
 	INFO								\
+	INFO.fr								\
 	INFO.html.ca							\
 	INFO.html.de							\
+	INFO.html.fr							\
 	INFO.html
 
 
@@ -225,7 +229,8 @@ subdir = xfce4-about
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO INFO.html INFO.html.ca INFO.html.de
+CONFIG_CLEAN_FILES = INFO INFO.fr INFO.html INFO.html.ca INFO.html.de \
+	INFO.html.fr
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -248,8 +253,9 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING INFO.html.ca.in INFO.html.de.in \
-	INFO.html.in INFO.in Makefile.am Makefile.in
+DIST_COMMON = AUTHORS COPYING INFO.fr.in INFO.html.ca.in \
+	INFO.html.de.in INFO.html.fr.in INFO.html.in INFO.in \
+	Makefile.am Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
 
 all: all-am
@@ -263,11 +269,15 @@ Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.s
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
 INFO: $(top_builddir)/config.status INFO.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.fr: $(top_builddir)/config.status INFO.fr.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html: $(top_builddir)/config.status INFO.html.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html.ca: $(top_builddir)/config.status INFO.html.ca.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html.de: $(top_builddir)/config.status INFO.html.de.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.html.fr: $(top_builddir)/config.status INFO.html.fr.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 install-binPROGRAMS: $(bin_PROGRAMS)
