@@ -1,0 +1,165 @@
+# Ukrainian translation for xfce-utils.
+# Copyright (C) Free Software Foundation
+# This file is distributed under the same license as the PACKAGE package.
+# Maxim Dziumanenko <mvd@mylinux.com.ua>, 2003.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"PO-Revision-Date: 2003-10-22 8:44+0200\n"
+"Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "Про XFce 4"
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "Робоче середовище XFce"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 by Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Інформація"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Подяки"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "Авторські права"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Неможливо записати історію у файл %s\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Запуск програми"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Запустити"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Запустити у _терміналі"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Панель задач"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Розташування"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Згори"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Знизу"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Автоматичне приховування"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Автоматично приховувати панель задач"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Розмір"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Висота:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Маленька"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Велика"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Процеси"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Показувати процеси усіх робочих стільниць"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Графічний пейджер"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Показувати пейджер на панелі задач"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Область сповіщення"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Показувати системний лоток на панелі задач"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Помилка отримання початкового стилю"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Системний лоток вже зареєстрований на цьому екрані"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Неможливо зареєструвати системний лоток: %s"
+
+#: xftaskbar/xftaskbar.c:388
+msgid "This should not happen"
+msgstr "Цього не повинно бути"
+
+#: xftaskbar/xftaskbar.c:478
+msgid "Cannot connect to session manager"
+msgstr "Помилка підключення до менеджера сеансів"
+
+#: xftaskbar/xftaskbar.c:491
+msgid "Cannot get desktop margins"
+msgstr "Неможливо визначити поля робочої стільниці"
+
+#: xftaskbar/xftaskbar.c:569
+msgid "Cannot create MCS client channel"
+msgstr "Неможливо створити канал до MCS клієнта"
