@@ -30,6 +30,7 @@ Contribuidores
   Chuck Mead <csm@MoonGroup.com>
 
 Traductores
+  Abbas Izad <abbasizad@hotmail.com>
   ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>
   Carles Muñoz Gorriz <carlesmu@internautas.org>
   Dan Korostelev <digger_temp@netman.ru>

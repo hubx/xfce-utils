@@ -30,6 +30,7 @@ Hébergement du site et listes de diffusions fournis par
   Chuck Mead <csm@MoonGroup.com>
 
 Traducteurs
+  Abbas Izad <abbasizad@hotmail.com>
   ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>
   Carles Muñoz Gorriz <carlesmu@internautas.org>
   Dan Korostelev <digger_temp@netman.ru>
