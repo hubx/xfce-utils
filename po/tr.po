@@ -1,30 +1,27 @@
 # translation of xfce-utils.po to Turkish
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# Erçin EKER <erc.caldera@gmx.net>, 2003
+# Erçin EKER <ercin.eker@linux.org.tr>, 2004
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2003-07-17 01:24+0300\n"
-"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
+"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"PO-Revision-Date: 2004-10-18 16:40+0300\n"
+"Last-Translator: Erçin EKER <ercin.eker@linux.org.tr>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.2\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "XFce 4 Hakkında"
+msgstr "Xfce 4 Hakkında"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce Masaüstü Ortamı"
+msgstr "Xfce Masaüstü Ortamı"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -54,25 +51,25 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:280
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4:Geçmiş dosyaya yazılamıyor %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "%s hangi uygulama ile açılsın?"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:392
 msgid "Run program"
 msgstr "Uygulama çalıştır"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:400
 msgid "_Run"
 msgstr "_Çalıştır"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:430
 msgid "Run in _terminal"
 msgstr "_Terminalde çalıştır"
 
@@ -87,39 +84,36 @@ msgid "Position"
 msgstr "Konum"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Üst"
+msgstr "Ü_st"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Alt"
+msgstr "A_lt"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Hizalama"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "_Sol"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "_Merkez"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "S_ağ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Otomatik gizle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Görev çubuğunu Oto. gizle"
+msgstr "Görev çubuğunu Oto. _gizle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -141,42 +135,39 @@ msgstr "Büyük"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Genişlik:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Görevler"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Tüm masaüstlerinden görevleri göster"
+msgstr "_Tüm masaüstlerindeki görevleri göster"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Göreleri _her zaman grupla"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Uygulama _isimlerini göster"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Sayfalayıcı"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Görev çubuğunda sayfalayıcıyı göster"
+msgstr "Görev çubuğunda _sayfalayıcıyı göster"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Bilgilendirme bölümü"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Sistem çekmecesini görev çubuğunda göster"
+msgstr "Sis_tem çekmecesini görev çubuğunda göster"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -196,9 +187,8 @@ msgid "This should not happen"
 msgstr "Bu gerçekleşmeyecek"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Masaüstü sınırları okunamıyor"
+msgstr "Öntanımlı ekran belirlenemiyor\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
