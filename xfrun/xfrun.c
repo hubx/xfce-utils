@@ -233,9 +233,22 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
     success = xfce_exec (execute, FALSE, FALSE, NULL);
     g_free(execute);
     if (!success)
-    {
- 	xfce_err(strerror(ENOENT));
-    }
+    {   /* maybe this utf validation should be in xfce_err? */
+	gchar *s,*t=strerror(ENOENT);
+	if (!g_utf8_validate (t,-1,NULL)) {
+	    GError *error=NULL;
+	    gsize r_bytes, w_bytes;
+	    const char *fc;
+	    g_get_charset(&fc);
+	    if (!fc) fc = "ISO-8859-1";
+	    s = g_convert (t,strlen(t),"UTF-8",fc,&r_bytes, &w_bytes, &error);
+	    if (error) g_error_free(error);
+	    g_free(t);
+	    t=s;
+	}	    
+ 	xfce_err(t);
+	g_free(t);
+    }    
     
     return success;
 }
