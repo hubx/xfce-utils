@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-06-01 17:56+0200\n"
-"PO-Revision-Date: 2003-04-25 19:30--200\n"
+"PO-Revision-Date: 2003-06-01 23:30--200\n"
 "Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "Kehittäjät"
 
 #: xfce4-about/info.c:241
 msgid "Copyright"
-msgstr ""
+msgstr "Tekijänoikeudet"
 
 #: xfce4-about/info.c:242
 msgid "BSDL"
@@ -54,7 +54,7 @@ msgstr ""
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr ""
+msgstr "xfrun4: Historiaa ei voitu kirjoittaa tiedostoon %s\n"
 
 #: xfrun/xfrun.c:231
 msgid "Run program"
@@ -100,11 +100,11 @@ msgstr "Korkeus:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:287
 msgid "Small"
-msgstr ""
+msgstr "Pieni"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Large"
-msgstr ""
+msgstr "Suuri"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
@@ -140,12 +140,12 @@ msgstr "Tyyliä ei ollut saatavilla"
 
 #: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "Näytöllä on jo järjestelmälokero ajossa"
 
 #: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "Systeemilokeroa ei voitu rekisteröidä: %s"
 
 #: xftaskbar/xftaskbar.c:317
 msgid "This should not happen"
