@@ -1,0 +1,201 @@
+# Translation of xfce4-utils.po to Punjabi.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Supreet Sethi <supreet@linux-delhi.org>, 2004.
+#
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-29 12:33+0530\n"
+"PO-Revision-Date: 2004-09-29 12:33+0530\n"
+"Last-Translator: Supreet Sethi <supreet@linux-delhi.org>\n"
+"Language-Team: Punjabi Language Team <punjabi@linux-delhi.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:253
+msgid "About Xfce 4"
+msgstr "Xfce ੪ ਦੇ ਬਾਰੇ ਵਿਚ "
+
+#: xfce4-about/info.c:268
+msgid "Xfce Desktop Environment"
+msgstr "Xfce ਵਿਹੜਾ ਵਾਤਾਵਰਨ"
+
+#: xfce4-about/info.c:269
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Olivier Fourdan ਦਾ copyright 2002-2004 ਤਕ"
+
+#: xfce4-about/info.c:291
+msgid "Info"
+msgstr "ਜਾਣਕਾਰੀ"
+
+#: xfce4-about/info.c:292
+msgid "Credits"
+msgstr "ਮਾਣ"
+
+#: xfce4-about/info.c:293
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:294
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:295
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:296
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:280
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: ਪਿਛਲੇ commands ਦਿ ਫਾਇਲ %s ਨਹੀਂ ਲਿਖਿ ਜਾ ਸਕਦਿ\n"
+
+#: xfrun/xfrun.c:391
+#, c-format
+msgid "Open %s with what program?"
+msgstr "%s ਨੁ ਕਿਦੇ ਨਾਲ ਚਲਾਣਾ ਹੇ"
+
+#: xfrun/xfrun.c:392
+msgid "Run program"
+msgstr "program ਚਲਾਔ"
+
+#: xfrun/xfrun.c:400
+msgid "_Run"
+msgstr "_ਚਲਾਔ"
+
+#: xfrun/xfrun.c:430
+msgid "Run in _terminal"
+msgstr "_ਕਾਲਾ ਡਬਾ ਚਲਾਔ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
+msgid "Taskbar"
+msgstr "ਕੰਮ ਦਾ ਲੇਖਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "ਸਥਿਤੀ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_ਉਤੇ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_ਥਲੇ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "ਨਿਰਧਾਰਿਤ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_ਖਬਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_ਵਿਚਕਾਰਲਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_ਸਜਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "ਆਪਣੇ ਆਪ ਗੁਮ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "ਕੰਮ ਦਾ ਲੇਖਾ ਆਪਣੇ ਆਪ _ਗੁਮ ਕਰੋ "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "ਅਕਾਰ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "ਉਚਾਈ:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "ਛੋਟਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "ਵਡਾ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "ਚੌਡ਼ਾਈ:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "ਕੰਮ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "_ਸਾਰੇ workspaces ਦੇ ਕੰਮ ਵਿਖਾਔ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "ਕੰਮਾ ਦੇ ਗਟ "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "ਕੰਮਾ ਦੇ _ਨਾ ਵਿਖਾਔ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Pager"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "_pager taskbar ਵਿਚ ਦਿਖਾਔ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "ਟਿੱਪਣੀ ਦਸਤੇ ਅਸਥਾਨ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "_system tray taskbar ਵਿਚ ਦਿਖਾਔ"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "ਸ਼ੁਰੂਆਤਿ ਸ਼ੈਲੀ ਨਹੀਂ ਮਿਲਿ"
+
+#: xftaskbar/xftaskbar.c:260
+msgid "There is already a system tray running on this screen"
+msgstr "system tray ਅੇਸ screen ਤੇ ਪੇਹਲੇ ਤੋ ਹੇ"
+
+#: xftaskbar/xftaskbar.c:268
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "system tray %s ਸੂਚੀਬੱਧ ਨਹੀਂ ਹੋ ਰੇਹਾ "
+
+#: xftaskbar/xftaskbar.c:467
+msgid "This should not happen"
+msgstr "ਅੇ ਨਹੀਂ ਹੋਨਾ ਚਾਹਿਦਾ"
+
+#: xftaskbar/xftaskbar.c:592
+msgid "Cannot get default screen\n"
+msgstr "default screen ਨਹੀਂ ਦਿਸਦੀ ਪਅਈ\n"
+
+#: xftaskbar/xftaskbar.c:681
+msgid "Cannot connect to session manager"
+msgstr "session manager ਨਾਲ ਮੇਲ ਨਹੀਂ ਹੋਆ"
+
+#: xftaskbar/xftaskbar.c:694
+msgid "Cannot create MCS client channel"
+msgstr "MCS client channel ਨਹੀਂ ਬਣਆ "
