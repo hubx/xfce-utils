@@ -198,22 +198,32 @@ exec xfce4-panel
   <sect2 id="xfce4-components">
     <title>XFce 4 components</title>
 
-    <para>These manuals are available for the XFce 4 components:</para>
+    <para> The different components of the XFce 4 Desktop Environment are
+      described and explained in separate manuals. Choose from the list
+      below:
+    </para>
 
     <itemizedlist>
-      <listitem>Window manager
+      <listitem>Window manager. The window manager handles the the placement
+	of windows on the screen, paints the window borders and handles
+	keyboard shortcuts.
       </listitem>
-      <listitem><ulink url="xfce4-panel.html" type="http">Panel</ulink>
+      <listitem><ulink url="xfce4-panel.html" type="http">Panel</ulink>. The
+	panel allows you to start programs, exit the session, and more.
       </listitem>
       <listitem><ulink url="xfdesktop.html" type="http">Desktop
-	  manager</ulink>
+	manager</ulink>. The desktop manager handles the background image
+	and desktop mouse menus.
       </listitem>
-      <listitem>File manager
+      <listitem>File manager. View, move, copy or remove files, browse samba
+	shares (share files with computers running MS Windows) and more.
       </listitem>
-      <listitem>Settings manager
+      <listitem>Settings manager. Change behaviour of XFce 4 components and
+	some system settings.
       </listitem>
       <listitem><ulink url="xfce-utils.html" type="http">Utilities and
-	  scripts</ulink>
+	  scripts</ulink>. Taskbar, run dialog, info panel and some very
+	useful scripts.
       </listitem>
     </itemizedlist>
     

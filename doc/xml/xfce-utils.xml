@@ -85,10 +85,20 @@ maintainers, etc. Commented out by default.
 <sect1 id="xfce-utils-taskbar">
   <title>Taskbar</title>
 
+  <para>The taskbar is either at the top or the bottom of the screen and shows 
+    all running programs. The behaviour of the taskbar can be changed from
+    settings manager. Run <command>xfce-setting-show taskbar</command>, or
+    start the settings manager from the panel.</para>
+  
 </sect1>
 
 <sect1 id="xfce-utils-run">
   <title>Run Dialog</title>
+
+</sect1>
+
+<sect1 id="xfce-utils-about">
+  <title>About Dialog</title>
 
 </sect1>
 

@@ -7,6 +7,7 @@ xfce4-using.html \
 index.html \
 xfce-utils-taskbar.html \
 xfce-utils-run.html \
+xfce-utils-about.html \
 xfce-utils-scripts.html \
 xfce-utils-copyright.html \
 xfce-utils.html
