@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfwm4 1.0.0\n"
+"Project-Id-Version: xfce-utils 3.99.3\n"
 "POT-Creation-Date: 2003-08-13 19:16+0200\n"
-"PO-Revision-Date: 2003-05-21 02:24+0800\n"
+"PO-Revision-Date: 2003-08-31 12:50+0800\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -38,19 +38,19 @@ msgstr "Kredit"
 
 #: xfce4-about/info.c:267
 msgid "Copyright"
-msgstr ""
+msgstr "Hakcipta"
 
 #: xfce4-about/info.c:268
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:269
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:270
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -163,6 +163,3 @@ msgstr "Tak boleh dapat margin meja"
 #: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "Tak boleh cipta saluran klien MCS"
-
-#~ msgid "License"
-#~ msgstr "Lesen"
