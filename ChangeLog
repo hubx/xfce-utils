@@ -1,3 +1,25 @@
+2003-07-13 10:31  huysmans
+
+	* po/xfce-utils.pot: Update pot's before release
+
+2003-07-12 21:38  huysmans
+
+	* xftaskbar/xftaskbar.c: Reduce spacing between systray icons
+
+2003-07-12 11:08  huysmans
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de: Update credits: remove patches
+	category, put in all known translators
+
+2003-07-11 15:42  huysmans
+
+	* xftaskbar/xftaskbar.c: Show systray on first start
+
+2003-07-11 09:33  huysmans
+
+	* ChangeLog: Update ChangeLog's for release
+
 2003-07-11 08:55  huysmans
 
 	* po/: zh_CN.gmo, zh_CN.po: Update Chinese translations
