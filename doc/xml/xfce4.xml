@@ -205,13 +205,15 @@ exec xfce4-panel
       </listitem>
       <listitem><ulink url="xfce4-panel.html" type="http">Panel</ulink>
       </listitem>
-      <listitem>Desktop manager
+      <listitem><ulink url="xfdesktop.html" type="http">Desktop
+	  manager</ulink>
       </listitem>
       <listitem>File manager
       </listitem>
       <listitem>Settings manager
       </listitem>
-      <listitem>Utilities and scripts
+      <listitem><ulink url="xfce-utils.html" type="http">Utilities and
+	  scripts</ulink>
       </listitem>
     </itemizedlist>
     
