@@ -2,7 +2,7 @@ Líder del proyecto
   Olivier Fourdan <fourdan@xfce.org>
   
 Desarrolladores
-  Benedikt Meurer <Benedikt.Meurer@unix-ag.uni-siegen.de>
+  Benedikt Meurer <Benedikt.Meurer@xfce.org>
   Biju Chacko <botsie@myrealbox.com>
   Edscott Wilson Garcia <edscott@imp.mx>
   Jasper Huijsmans <huysmans@users.sourceforge.net>
