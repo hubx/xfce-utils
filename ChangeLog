@@ -1,3 +1,23 @@
+2004-10-30 16:00  pollux
+
+	* po/: lt.gmo, lt.po: update LT translations
+
+2004-10-28 13:55  pollux
+
+	* gdm/xfce.desktop, po/he.gmo, po/he.po,
+	  xftaskbar/plugin/xfce-taskbar-settings.desktop: update HE
+	  translations
+
+2004-10-25 09:55  jasper
+
+	* configure, configure.ac, ltmain.sh, scripts/xfhelp4.in: Don't
+	  prefer mozilla over lighter relatives. Let default browser be
+	  empty by default
+
+2004-10-23 16:45  olivier
+
+	* ChangeLog: Update ChangeLog
+
 2004-10-22 22:38  olivier
 
 	* ChangeLog, configure, configure.ac, ltmain.sh: Updated versions
