@@ -1,3 +1,45 @@
+2003-08-26 09:12  huysmans
+
+	* po/: ca.gmo, ca.po, de.gmo, de.po, es.gmo, es.po, es_MX.gmo,
+	es_MX.po, fi.gmo, fi.po, fr.gmo, fr.po, hu.gmo, hu.po, it.gmo,
+	it.po, ja.gmo, ja.po, ko.gmo, ko.po, lt.gmo, lt.po, ms.gmo, ms.po,
+	nl.gmo, nl.po, pl.gmo, pl.po, ru.gmo, ru.po, ta.gmo, ta.po, tr.gmo,
+	tr.po, zh_CN.gmo, zh_CN.po: Update version numbers and po files for
+	release
+
+2003-08-17 13:36  huysmans
+
+	* configure, configure.ac, po/lt.gmo, po/lt.po: Add lithuanian
+	translations
+
+2003-08-14 21:09  xfce
+
+	* po/xfce-utils.pot: Resync with cvs
+
+2003-08-10 21:54  huysmans
+
+	* po/: zh_CN.gmo, zh_CN.po: Update chinese translations
+
+2003-08-08 00:09  huysmans
+
+	* aclocal.m4, configure, configure.ac, xfce4-about/INFO.ca.in,
+	xfce4-about/INFO.html.ca.in, xfce4-about/Makefile.am,
+	xfce4-about/Makefile.in: Update catalan translations
+
+2003-08-07 21:05  huysmans
+
+	* xfce4-about/info.c: Make i18n work
+
+2003-08-05 07:53  xfce
+
+	* configure, configure.ac, po/ko.gmo, po/ko.po, po/xfce-utils.pot:
+	Add Korean translation by ByungHyun Choi
+	<byunghyunchoi@hotmail.com>
+
+2003-08-03 20:45  bmeurer
+
+	* ChangeLog: Updated ChangeLogs
+
 2003-08-03 20:37  bmeurer
 
 	* m4/X11.m4: grep -q does not work with Solaris grep, fixed it.
@@ -736,20 +778,12 @@
 	* Makefile.am, Makefile.in, aclocal.m4, config.guess, config.sub,
 	configure, configure.ac, doc/Makefile.am, doc/Makefile.in,
 	doc/xfce-nochunk.xsl, doc/xfce.css, doc/xfce.xsl,
-	doc/html/BSD.html, doc/html/GPL.html, doc/html/Makefile.am,
-	doc/html/Makefile.in, doc/html/index.html,
-	doc/html/xfce-utils-about.html, doc/html/xfce-utils-copyright.html,
-	doc/html/xfce-utils-run.html, doc/html/xfce-utils-scripts.html,
-	doc/html/xfce-utils-taskbar.html, doc/html/xfce-utils.html,
-	doc/html/xfce4-copyright.html, doc/html/xfce4-using.html,
-	doc/images/Makefile.am, doc/images/Makefile.in,
-	doc/images/about-dialog.png, doc/images/default-session.png,
-	doc/images/run-dialog.png, doc/index/Makefile.am,
-	doc/index/Makefile.in, doc/index/C/Makefile.am,
-	doc/index/C/Makefile.in, doc/index/C/index.html,
-	doc/xfce-utils/Makefile.am, doc/xfce-utils/Makefile.in,
-	doc/xfce-utils/C/Makefile.am, doc/xfce-utils/C/Makefile.in,
-	doc/xfce-utils/C/xfce-utils.html, doc/xfce-utils/C/xfce-utils.xml,
+	doc/index/Makefile.am, doc/index/Makefile.in,
+	doc/index/C/Makefile.am, doc/index/C/Makefile.in,
+	doc/index/C/index.html, doc/xfce-utils/Makefile.am,
+	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.am,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/xfce-utils.html,
+	doc/xfce-utils/C/xfce-utils.xml,
 	doc/xfce-utils/C/images/Makefile.am,
 	doc/xfce-utils/C/images/Makefile.in,
 	doc/xfce-utils/C/images/about-dialog.png,
@@ -770,19 +804,16 @@
 	doc/xfce4-user-guide/C/images/Makefile.am,
 	doc/xfce4-user-guide/C/images/Makefile.in,
 	doc/xfce4-user-guide/C/images/default-session.png,
-	doc/xfce4-user-guide/C/images/link_xfce.jpg, doc/xml/BSD.xml,
-	doc/xml/GPL.xml, doc/xml/Makefile.am, doc/xml/Makefile.in,
-	doc/xml/copyright.xml, doc/xml/xfce-utils.xml, doc/xml/xfce.xsl,
-	doc/xml/xfce4.xml, gdm/Makefile.in, scripts/Makefile.in,
-	scripts/xfhelp4.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
-	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Large
-	documentation update. Moved to new location.
+	doc/xfce4-user-guide/C/images/link_xfce.jpg, gdm/Makefile.in,
+	scripts/Makefile.in, scripts/xfhelp4.in, xfce4-about/Makefile.in,
+	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Large documentation update. Moved to
+	new location.
 
 2003-05-08 16:43  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
-	configure.ac, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	configure.ac, doc/Makefile.in, gdm/Makefile.in,
 	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	xftaskbar/Makefile.in, xftaskbar/xftaskbar.c,
 	xftaskbar/plugin/Makefile.in: Remove gtk+-2.2 requirement, thus an
@@ -792,11 +823,10 @@
 2003-05-05 09:06  huysmans
 
 	* Makefile.am, Makefile.in, aclocal.m4, config.guess, config.sub,
-	xfce-utils.spec.in, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
-	po/ChangeLog, po/de.gmo, po/de.po, po/fi.gmo, po/fi.po, po/fr.gmo,
-	po/fr.po, po/nl.gmo, po/nl.po, po/pl.gmo, po/pl.po,
-	po/xfce-utils.pot, po/zh_CN.gmo, po/zh_CN.po, scripts/Makefile.in,
+	xfce-utils.spec.in, doc/Makefile.in, gdm/Makefile.in, po/ChangeLog,
+	po/de.gmo, po/de.po, po/fi.gmo, po/fi.po, po/fr.gmo, po/fr.po,
+	po/nl.gmo, po/nl.po, po/pl.gmo, po/pl.po, po/xfce-utils.pot,
+	po/zh_CN.gmo, po/zh_CN.po, scripts/Makefile.in,
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Fixes for rpm and distcheck targets
 
@@ -807,9 +837,8 @@
 2003-05-04 00:01  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
-	configure.ac, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
-	po/fr.gmo, po/fr.po, scripts/Makefile.in, xfce4-about/Makefile.in,
+	configure.ac, doc/Makefile.in, gdm/Makefile.in, po/fr.gmo,
+	po/fr.po, scripts/Makefile.in, xfce4-about/Makefile.in,
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Various fixes, added french
 	translation, fixed desktop switching in xfwm4
@@ -818,7 +847,6 @@
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	configure.ac, ltcf-c.sh, ltconfig, ltmain.sh, doc/Makefile.in,
-	doc/html/Makefile.in, doc/images/Makefile.in, doc/xml/Makefile.in,
 	gdm/Makefile.in, po/zh_CN.gmo, po/zh_CN.po, scripts/Makefile.in,
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Add Chinese translations
@@ -826,8 +854,7 @@
 2003-05-02 19:12  bmeurer
 
 	* Makefile.in, aclocal.m4, configure, configure.ac,
-	doc/Makefile.in, doc/html/Makefile.in, doc/images/Makefile.in,
-	doc/xml/Makefile.in, gdm/Makefile.in, m4/depends.m4,
+	doc/Makefile.in, gdm/Makefile.in, m4/depends.m4,
 	scripts/Makefile.in, xfce4-about/Makefile.in, xfce4-about/info.c,
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in: Several
@@ -838,22 +865,6 @@
 2003-05-01 21:33  bmeurer
 
 	* scripts/xfterm4: Added gnome2-terminal.
-
-2003-05-01 21:13  bmeurer
-
-	* doc/xml/: BSD.xml, copyright.xml, xfce-utils.xml, xfce.xsl,
-	xfce4.xml: Updated documentation.
-
-2003-05-01 21:09  bmeurer
-
-	* doc/: html/BSD.html, html/GPL.html, html/Makefile.am,
-	html/Makefile.in, html/index.html, html/xfce-utils-about.html,
-	html/xfce-utils-copyright.html, html/xfce-utils-run.html,
-	html/xfce-utils-scripts.html, html/xfce-utils-taskbar.html,
-	html/xfce-utils.html, html/xfce4-copyright.html,
-	html/xfce4-using.html, images/Makefile.am, images/Makefile.in,
-	images/about-dialog.png, images/run-dialog.png: Updated
-	documentation.
 
 2003-05-01 16:04  bmeurer
 
@@ -999,14 +1010,13 @@
 2003-04-25 00:13  bmeurer
 
 	* Makefile.in, NOTES, TODO, aclocal.m4, config.h.in, configure,
-	configure.ac, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
-	po/Makefile.in.in, po/POTFILES.in, po/de.po, po/xfce-utils.pot,
-	scripts/Makefile.in, xfce4-about/Makefile.am,
-	xfce4-about/Makefile.in, xfce4-about/info.c, xfrun/Makefile.in,
-	xftaskbar/Makefile.am, xftaskbar/Makefile.in,
-	xftaskbar/xftaskbar.c, xftaskbar/plugin/Makefile.am,
-	xftaskbar/plugin/Makefile.in: Added gettext framework.
+	configure.ac, doc/Makefile.in, gdm/Makefile.in, po/Makefile.in.in,
+	po/POTFILES.in, po/de.po, po/xfce-utils.pot, scripts/Makefile.in,
+	xfce4-about/Makefile.am, xfce4-about/Makefile.in,
+	xfce4-about/info.c, xfrun/Makefile.in, xftaskbar/Makefile.am,
+	xftaskbar/Makefile.in, xftaskbar/xftaskbar.c,
+	xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in: Added
+	gettext framework.
 
 2003-04-24 22:53  bmeurer
 
@@ -1017,8 +1027,7 @@
 2003-04-24 22:41  bmeurer
 
 	* AUTHORS, Makefile.in, NEWS, config.h.in, configure, configure.ac,
-	doc/Makefile.in, doc/html/Makefile.in, doc/images/Makefile.in,
-	doc/xml/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
+	doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
 	xfce4-about/AUTHORS.html, xfce4-about/INFO.html.in,
 	xfce4-about/Makefile.am, xfce4-about/Makefile.in,
 	xfce4-about/info.c, xfrun/Makefile.in, xftaskbar/Makefile.in,
@@ -1053,8 +1062,7 @@
 
 	* Makefile.am, Makefile.in, aclocal.m4, autogen.sh, config.h.in,
 	configure, configure.ac, ltcf-c.sh, ltconfig, ltmain.sh,
-	doc/Makefile.in, doc/html/Makefile.in, doc/images/Makefile.in,
-	doc/xml/Makefile.in, gdm/Makefile.in, m4/X11.m4, m4/debug.m4,
+	doc/Makefile.in, gdm/Makefile.in, m4/X11.m4, m4/debug.m4,
 	m4/depends.m4, m4/i18n.m4, scripts/Makefile.in,
 	xfce4-about/Makefile.am, xfce4-about/Makefile.in,
 	xfce4-about/info.c, xfrun/Makefile.am, xfrun/Makefile.in,
@@ -1086,22 +1094,12 @@
 	* xftaskbar/plugin/xftaskbar_plugin.c: Initialize early i18n in mcs
 	plugins Add Etria theme
 
-2003-03-30 20:24  huysmans
-
-	* doc/html/xfce-utils-about.html: Add new file
-
 2003-03-30 12:08  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
-	depcomp, doc/Makefile.in, doc/html/Makefile.am,
-	doc/html/Makefile.in, doc/html/xfce-utils-run.html,
-	doc/html/xfce-utils-scripts.html, doc/html/xfce-utils-taskbar.html,
-	doc/html/xfce-utils.html, doc/html/xfce4-using.html,
-	doc/images/Makefile.in, doc/xml/Makefile.in,
-	doc/xml/xfce-utils.xml, doc/xml/xfce4.xml, gdm/Makefile.in,
-	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
-	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Small doc
-	update
+	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
+	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Small doc update
 
 2003-03-27 22:37  xfce
 
@@ -1156,8 +1154,7 @@
 2003-03-01 00:38  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, ltcf-c.sh,
-	ltconfig, ltmain.sh, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	ltconfig, ltmain.sh, doc/Makefile.in, gdm/Makefile.in,
 	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: [no log
 	message]
@@ -1169,7 +1166,6 @@
 2003-02-28 19:42  xfce
 
 	* Makefile.in, aclocal.m4, configure, ltmain.sh, doc/Makefile.in,
-	doc/html/Makefile.in, doc/images/Makefile.in, doc/xml/Makefile.in,
 	gdm/Makefile.in, scripts/Makefile.in, xfce4-about/Makefile.in,
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Fix xfce-mcs-manager API/ABI
@@ -1178,8 +1174,7 @@
 2003-02-28 11:47  bmeurer
 
 	* ltcf-c.sh, ltconfig, ltmain.sh, aclocal.m4, configure,
-	Makefile.in, configure.ac, doc/html/Makefile.in, doc/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
+	Makefile.in, configure.ac, doc/Makefile.in, gdm/Makefile.in,
 	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	xftaskbar/plugin/Makefile.in, xftaskbar/Makefile.in: Fixed
 	xfce-mcs-manager version problem.
@@ -1191,10 +1186,9 @@
 2003-02-26 08:17  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
-	depcomp, doc/Makefile.in, doc/html/Makefile.in,
-	doc/images/Makefile.in, doc/xml/Makefile.in, gdm/Makefile.in,
-	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
-	xfrun/xfrun.c, xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in,
+	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
+	xfce4-about/Makefile.in, xfrun/Makefile.in, xfrun/xfrun.c,
+	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in,
 	xftaskbar/plugin/xftaskbar_plugin.c: Apply Benedikt Meurer
 	<Benedikt.Meurer@unix-ag.uni-siegen.de> patch Replace all 
 	occurences of g_getenv("HOME") with g_get_home_dir() Regenerate all
@@ -1208,42 +1202,13 @@
 2003-02-25 22:43  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
-	depcomp, doc/Makefile.in, doc/html/GPL.html, doc/html/Makefile.am,
-	doc/html/Makefile.in, doc/html/index.html,
-	doc/html/xfce-utils-copyright.html, doc/html/xfce-utils-run.html,
-	doc/html/xfce-utils-scripts.html, doc/html/xfce-utils-taskbar.html,
-	doc/html/xfce-utils.html, doc/html/xfce4-copyright.html,
-	doc/html/xfce4-using.html, doc/images/Makefile.in,
-	doc/xml/Makefile.in, doc/xml/xfce-utils.xml, doc/xml/xfce4.xml,
-	gdm/Makefile.in, scripts/Makefile.in, xfce4-about/Makefile.in,
-	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
+	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Add skeleton xfce-utils docs
 
 2003-02-25 22:17  huysmans
 
 	* autogen.sh: Fix proper use of AC_PROG_LIBTOOL
-
-2003-02-24 21:52  jensl
-
-	* doc/images/Makefile.am: fixed installation path
-
-2003-02-24 21:26  jensl
-
-	* doc/html/: GPL.html, index.html, xfce4-copyright.html,
-	xfce4-using.html: added link to xfdesktop documentation
-
-2003-02-22 14:26  jensl
-
-	* doc/images/Makefile.am: [no log message]
-
-2003-02-22 14:21  jensl
-
-	* doc/images/default-session.png: screenshot showing a default
-	xfce4 session
-
-2003-02-22 12:06  huysmans
-
-	* doc/: html/xfce4-using.html, xml/xfce4.xml: Small doc update
 
 2003-02-22 10:52  huysmans
 
@@ -1258,12 +1223,7 @@
 2003-02-17 21:53  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
-	doc/Makefile.am, doc/Makefile.in, doc/html/GPL.html,
-	doc/html/Makefile.am, doc/html/Makefile.in, doc/html/index.html,
-	doc/html/xfce4-copyright.html, doc/html/xfce4-using.html,
-	doc/images/Makefile.am, doc/images/Makefile.in, doc/xml/GPL.xml,
-	doc/xml/Makefile.am, doc/xml/Makefile.in, doc/xml/copyright.xml,
-	doc/xml/xfce.xsl, doc/xml/xfce4.xml: Add common xfce 4 docs
+	doc/Makefile.am, doc/Makefile.in: Add common xfce 4 docs
 
 2003-02-17 13:47  huysmans
 
