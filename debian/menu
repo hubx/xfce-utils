@@ -1,0 +1,10 @@
+?package(xfce-utils4): needs=X11 section="Apps/Tools" command="xfbd4" \
+  title="XFbd4" longtitle="XFce Backdrop Manager, v4" hints="Background manager"
+?package(xfce-utils4): needs=X11 section="Apps/Tools" command="xfbdmgr4" \
+  title="XFbdmgr4" longtitle="XFce Backdrop Manager, v4" hints="Background manager"
+?package(xfce-utils4): needs=X11 section="Apps/Tools" command="xfmouse4" \
+  title="XFMouse4" longtitle="XFce Mouse Configuration, v4" hints="Mouse config"
+?package(xfce-utils4): needs=X11 section="Apps/Tools" command="xfrun4" \
+  title="XFrun4" longtitle="XFce application start tool" hints="Start tool"
+?package(xfce-utils4): needs=X11 section="Apps/Tools" command="xftaskbar4" \
+  title="XFTaskbar4" longtitle="XFce taskbar" hints="Taskbar"
