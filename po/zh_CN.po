@@ -1,28 +1,28 @@
+# #-#-#-#-#  zh_CN.po (PACKAGE VERSION)  #-#-#-#-#
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-20 08:27+0200\n"
-"PO-Revision-Date: 2004-01-19 00:31+0200\n"
+"PO-Revision-Date: 2004-09-28 16:07+0200\n"
 "Last-Translator: Yongtao Yang <yongtao.yang@telia.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "关于XFce 4 "
+msgstr "关于Xfce 4 "
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce 桌面环境"
+msgstr "Xfce 桌面环境"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -34,7 +34,7 @@ msgstr "信息"
 
 #: xfce4-about/info.c:292
 msgid "Credits"
-msgstr "致谢名单"
+msgstr "光荣榜"
 
 #: xfce4-about/info.c:293
 msgid "Copyright"
@@ -60,7 +60,7 @@ msgstr "xfrun4: 无法将历史记录写入文件 %s \n"
 #: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "用什么程序打开 %s ?"
 
 #: xfrun/xfrun.c:392
 msgid "Run program"
@@ -85,39 +85,36 @@ msgid "Position"
 msgstr "位置"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "顶端"
+msgstr "顶端(_T)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "底部"
+msgstr "底部(_B)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "对齐方式"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "左侧(_L)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "居中(_C)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "右侧(_R)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "自动隐藏"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "任务拦自动隐藏"
+msgstr "任务栏自动隐藏(_h)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -139,42 +136,39 @@ msgstr "大"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "宽度:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "任务"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "显示所有工作区的任务"
+msgstr "显示所有工作区的任务(_a)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "总是对任务分组(_g)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "显示应用程序名称(_n)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "页面切换器"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "在任务栏中显示页面切换器"
+msgstr "在任务栏中显示页面切换器(_p)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "系统提示区"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "在任务拦中显示系统托盘"
+msgstr "在任务拦中显示系统托盘(_s)"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -191,12 +185,11 @@ msgstr "无法注册系统托盘: %s"
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "这不应该发生。"
+msgstr "不应发生此种情况"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "无法得到工作区边缘"
+msgstr "无法得到默认屏幕\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
@@ -204,7 +197,9 @@ msgstr "无法连接到会话管理器"
 
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
-msgstr "无法创建MCS客户频道"
+msgstr "无法创建 MCS 客户通道"
 
-#~ msgid "License"
-#~ msgstr "许可证"
+
+
+
+
