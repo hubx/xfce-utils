@@ -113,7 +113,6 @@ msgid "Autohide"
 msgstr "Ausblenden"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
 msgstr "Taskbar automatisch ausblenden"
 
