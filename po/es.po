@@ -189,7 +189,7 @@ msgstr "Esto no debiera ocurrir"
 
 #: xftaskbar/xftaskbar.c:592
 msgid "Cannot get default screen\n"
-msgstr "No se puede obtener la pantalla preestablecida"
+msgstr "No se puede obtener la pantalla preestablecida\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
