@@ -3,8 +3,8 @@ body 		{ font: "Vera Sans", "Arial", "Helvetica", "sans-serif";
 h1,h2,h3,h4	{ color: #336699; }
 a		{ font-weight: bold; text-decoration: none; }
 a:link,a:active { color: #3366CC; }
-a:visited	{ color: #003366; }
-a:hover		{ color: #3399FF; }
+a:visited	{ color: #3366CC; }
+a:hover		{ color: #3399FF; text-decoration: underline; }
 hr		{ background-color: #336699; }
 li		{ list-style-type: square; }
 dt		{ font-weight: bold; }
