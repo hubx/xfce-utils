@@ -76,11 +76,11 @@ BM_I18N([xfce-utils], [ar az be bg ca cs de es es_MX et eu fa fi fr gu he
 		       sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
-BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.1.3])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.27])
+BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.1.99])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.99])
 
 dnl configure the mcs plugin
-XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.1.3])
+XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.1.99])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
