@@ -80,7 +80,7 @@ X_PRE_LIBS = @X_PRE_LIBS@
 am__include = @am__include@
 am__quote = @am__quote@
 install_sh = @install_sh@
-backdropdir = $(datadir)/xfce4/backdrop
+backdropdir = $(datadir)/xfce4/backdrops
 
 EXTRA_DIST = Blue.list.in
 

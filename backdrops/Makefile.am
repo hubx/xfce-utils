@@ -1,4 +1,4 @@
-backdropdir=$(datadir)/xfce4/backdrop
+backdropdir=$(datadir)/xfce4/backdrops
 
 EXTRA_DIST = Blue.list.in
 
