@@ -1,3 +1,17 @@
+2003-03-19  xfce
+
+	* xfrun/xfrun.c: Add CAN_DEFAULT flag to cancel button
+
+2003-03-19  huysmans
+
+	* autogen.sh: Only add extra autogen parameters when none are given
+
+2003-03-18  xfce
+
+	* ChangeLog, ltcf-c.sh, ltconfig, ltmain.sh: Update ChangeLog
+	Update build scripts (ie rerun autogen.sh) Update xfwm4's microdeck
+	theme Remove 1 pix border arround xffm menu bar
+
 2003-03-17  bmeurer
 
 	* configure, configure.ac, ltcf-c.sh, ltconfig, ltmain.sh,
