@@ -44,10 +44,12 @@
 #include <libxfce4util/i18n.h>
 
 #define CHANNEL  "taskbar"
-#define HIDDEN_HEIGHT 5
-#define TOP TRUE
-#define BOTTOM FALSE
-#define DEFAULT_HEIGHT  30
+#define HIDDEN_HEIGHT  5
+#define HIDE_TIMEOUT   500
+#define UNHIDE_TIMEOUT 100
+#define TOP            TRUE
+#define BOTTOM         FALSE
+#define DEFAULT_HEIGHT 30
 
 static McsClient *client = NULL;
 
@@ -59,6 +61,8 @@ struct _Taskbar
     int scr;
 
     guint x, y, width, height;
+    gint hide_timeout;
+    gint unhide_timeout;
     gboolean position;
     gboolean autohide;
     gboolean show_pager;
@@ -283,6 +287,23 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
     return FALSE;
 }
 
+static gboolean taskbar_unhide_timeout (Taskbar *taskbar)
+{
+    g_return_val_if_fail (taskbar != NULL, FALSE);
+
+    gtk_widget_show (taskbar->frame);
+    taskbar->hidden = FALSE;
+    taskbar_position(taskbar);
+
+    if (taskbar->unhide_timeout)
+    {
+	g_source_remove (taskbar->unhide_timeout);
+	taskbar->unhide_timeout = 0;
+    }
+
+    return FALSE;
+}
+
 static gboolean taskbar_enter (GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
     Taskbar *taskbar = (Taskbar *) data;
@@ -293,11 +314,38 @@ static gboolean taskbar_enter (GtkWidget *widget, GdkEventCrossing *event, gpoin
     }
     if (event->detail != GDK_NOTIFY_INFERIOR)
     {
-        gtk_widget_show (taskbar->frame);
-        taskbar->hidden = FALSE;
-        taskbar_position(taskbar);
+	if (taskbar->hide_timeout)
+	{
+	    g_source_remove (taskbar->hide_timeout);
+	    taskbar->hide_timeout = 0;
+	}
+
+	if (!taskbar->unhide_timeout)
+	{
+	    taskbar->unhide_timeout =
+		g_timeout_add (UNHIDE_TIMEOUT,
+			       (GSourceFunc) taskbar_unhide_timeout, taskbar);
+	}
+
     }
   
+    return FALSE;
+}
+
+static gboolean taskbar_hide_timeout (Taskbar *taskbar)
+{
+    g_return_val_if_fail (taskbar != NULL, FALSE);
+
+    gtk_widget_hide (taskbar->frame);
+    taskbar->hidden = TRUE;
+    taskbar_position(taskbar);
+
+    if (taskbar->hide_timeout)
+    {
+	g_source_remove (taskbar->hide_timeout);
+	taskbar->hide_timeout = 0;
+    }
+
     return FALSE;
 }
 
@@ -309,11 +357,21 @@ static gboolean taskbar_leave (GtkWidget *widget, GdkEventCrossing *event, gpoin
     {
         return FALSE;
     }
+    
     if (event->detail != GDK_NOTIFY_INFERIOR)
     {
-        gtk_widget_hide (taskbar->frame);
-        taskbar->hidden = TRUE;
-        taskbar_position(taskbar);
+	if (taskbar->unhide_timeout)
+	{
+	    g_source_remove (taskbar->unhide_timeout);
+	    taskbar->unhide_timeout = 0;
+	}
+
+	if (!taskbar->hide_timeout)
+	{
+	    taskbar->hide_timeout =
+		g_timeout_add (HIDE_TIMEOUT, 
+                               (GSourceFunc) taskbar_hide_timeout, taskbar);
+	}
     }
     return FALSE;
 }
@@ -434,6 +492,8 @@ int main(int argc, char **argv)
     left = isLeftMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.left : 0;
     right = isRightMostHead(taskbar->dpy, taskbar->scr, 0, 0) ? margins.right : 0;
     
+    taskbar->hide_timeout = 0;
+    taskbar->unhide_timeout = 0;
     taskbar->x = left;
     taskbar->width = MyDisplayWidth(taskbar->dpy, taskbar->scr, 0, 0) - left - right;
     taskbar->y = MyDisplayY(0, 0);
