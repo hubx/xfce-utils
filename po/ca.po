@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-06-01 17:56+0200\n"
-"PO-Revision-Date: 2003-05-19 15:46+0100\n"
+"PO-Revision-Date: 2003-07-05 16:05+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,19 +37,19 @@ msgstr "Crèdits"
 
 #: xfce4-about/info.c:241
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: xfce4-about/info.c:242
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:243
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:244
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -109,7 +108,7 @@ msgstr "Gran"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
-msgstr "Tamany"
+msgstr "Mida"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:332
 msgid "Show tasks from all workspaces"
@@ -164,5 +163,3 @@ msgstr "No es pot obtenir els marges de l'escriptori"
 msgid "Cannot create MCS client channel"
 msgstr "No es pot crear el canal del client MCS"
 
-#~ msgid "License"
-#~ msgstr "Llicència"
