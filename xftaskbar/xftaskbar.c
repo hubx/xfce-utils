@@ -410,7 +410,7 @@ int main(int argc, char **argv)
 
     gtk_init(&argc, &argv);
 
-    client_session = client_session_new(argc, argv, NULL /* data */ , SESSION_RESTART_IF_RUNNING, 60);
+    client_session = client_session_new(argc, argv, NULL /* data */ , SESSION_RESTART_IF_RUNNING, 30);
 
     if(!session_init(client_session))
     {
