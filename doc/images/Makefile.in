@@ -158,9 +158,17 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-EXTRA_DIST = $(images_DATA)
 imagesdir = $(datadir)/xfce4/doc/images
-images_DATA = default-session.png
+
+images_DATA = \
+	about-dialog.png						\
+	default-session.png						\
+	run-dialog.png
+
+
+EXTRA_DIST = \
+	$(images_DATA)
+
 subdir = doc/images
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
