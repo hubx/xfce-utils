@@ -269,42 +269,6 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
     }
 }
 
-static void taskbar_realize(GtkWidget * widget)
-{
-    XWMHints *wmhints;
-    Atom *protocols = None;
-    int n;
-
-    g_message("bouh!");
-    wmhints = XGetWMHints (GDK_WINDOW_XDISPLAY (widget->window), GDK_WINDOW_XWINDOW (widget->window));
-    wmhints->flags |= InputHint;
-    wmhints->input = False;
-    XSetWMHints (GDK_WINDOW_XDISPLAY (widget->window), GDK_WINDOW_XWINDOW (widget->window), wmhints);    
-    XFree (wmhints);
-
-    if(XGetWMProtocols(GDK_WINDOW_XDISPLAY (widget->window), GDK_WINDOW_XWINDOW (widget->window), &protocols, &n))
-    {
-        Atom *replace_protocols, *ap, *bp;
-        Atom wm_takefocus;
-        int i, m;
-	
-	replace_protocols = g_new(Atom, n);
-        wm_takefocus = XInternAtom(GDK_WINDOW_XDISPLAY (widget->window), "WM_TAKE_FOCUS", False);
-        for(i = 0, m = 0, ap = protocols, bp = replace_protocols; i < n; i++, ap++)
-        {
-            if(*ap != (Atom) wm_takefocus)
-            {
-		*bp = *ap;
-                bp++;
-		m++;
-            }
-        }
-	XSetWMProtocols (GDK_WINDOW_XDISPLAY (widget->window), GDK_WINDOW_XWINDOW (widget->window), replace_protocols, m);
-	XFree(protocols);
-	g_free(replace_protocols);
-    }
-}
-
 static void taskbar_destroy(GtkWidget * widget, gpointer data)
 {
     g_assert (data != NULL);
@@ -348,9 +312,9 @@ int main(int argc, char **argv)
     taskbar->hidden = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    g_signal_connect (G_OBJECT(taskbar->win), "realize", G_CALLBACK (taskbar_realize), NULL);
     gtk_window_stick(GTK_WINDOW(taskbar->win));
     netk_gtk_window_set_dock_type(GTK_WINDOW(taskbar->win));
+    netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar->height);
     gtk_window_set_title(GTK_WINDOW(taskbar->win), "Task List");
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
