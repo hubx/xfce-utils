@@ -99,11 +99,15 @@ doc/xfce-utils/C/Makefile
 doc/xfce-utils/C/images/Makefile
 doc/xfce-utils/fr/Makefile
 doc/xfce-utils/fr/images/Makefile
+doc/xfce-utils/it/Makefile
+doc/xfce-utils/it/images/Makefile
 doc/xfce4-user-guide/Makefile
 doc/xfce4-user-guide/C/Makefile
 doc/xfce4-user-guide/C/images/Makefile
 doc/xfce4-user-guide/fr/Makefile
 doc/xfce4-user-guide/fr/images/Makefile
+doc/xfce4-user-guide/it/Makefile
+doc/xfce4-user-guide/it/images/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
