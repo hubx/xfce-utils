@@ -62,7 +62,7 @@ BM_DEPEND([XFCE_MCS_MANAGER], [xfce-mcs-manager], [0.1.0])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
-  [gtkhtml], [GTK+ HTML library])
+  [gtkhtml], [GTK+ HTML library], [no])
 
 dnl Check for debugging support
 BM_DEBUG_SUPPORT
