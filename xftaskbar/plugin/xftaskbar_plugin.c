@@ -520,7 +520,7 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
     g_signal_connect(G_OBJECT(itf->width_scale), "value_changed", G_CALLBACK(cb_width_percent_changed), itf);
 
-    gtk_window_set_position (GTK_WINDOW (itf->xftaskbar_dialog), GTK_WIN_POS_CENTER);
+    xfce_gtk_window_center_on_monitor_with_pointer (GTK_WINDOW (itf->xftaskbar_dialog));
     gtk_widget_show(itf->xftaskbar_dialog);
 }
 
