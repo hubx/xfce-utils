@@ -15,6 +15,7 @@ about_DATA =								\
 	AUTHORS.html.fr							\
 	AUTHORS.html.it							\
 	AUTHORS.it							\
+	AUTHORS.lt							\
 	AUTHORS.vi							\
 	BSD								\
 	BSD.html							\
