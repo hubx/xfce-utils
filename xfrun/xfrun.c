@@ -320,10 +320,12 @@ void runit(GtkEntry * entry, gpointer user_data){
 #if HAVE_LIBDBH 
 
 		else if (use_xfc_combo) {
-		    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
+		    gchar *xdg_dir=xfce_resource_save_location (XFCE_RESOURCE_CACHE,"/",TRUE);
+		    gchar *f=g_build_filename(xdg_dir,RUN_DBH_FILE,NULL); 
       		    XFC_save_to_history(f,(char *)command);
       		    save_flags((char *)command,in_terminal,FALSE);
 		    g_free(f);
+		    g_free(xdg_dir);
 		}
 #endif
     }
@@ -340,10 +342,12 @@ void alt_runit(GtkEntry * entry, gpointer user_data){
                         checkbox));
 
     if (do_run(command, in_terminal)) {
-	    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
+	    gchar *xdg_dir=xfce_resource_save_location (XFCE_RESOURCE_CACHE,"/",TRUE);
+	    gchar *f=g_build_filename(xdg_dir,RUN_DBH_FILE,NULL); 
 	    XFC_save_to_history(f,(char *)command);
 	    save_flags((char *)command,in_terminal,FALSE);
 	    g_free(f);
+	    g_free(xdg_dir);
 	    gtk_dialog_response (GTK_DIALOG(dialog),GTK_RESPONSE_NONE);
     }
 }
