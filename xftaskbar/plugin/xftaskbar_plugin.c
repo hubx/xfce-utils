@@ -667,6 +667,8 @@ static void create_channel(McsPlugin * mcs_plugin)
         show_text = TRUE;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowText", CHANNEL, show_text ? 1 : 0);
     }
+
+    write_options (mcs_plugin);
 }
 
 static gboolean write_options(McsPlugin * mcs_plugin)
