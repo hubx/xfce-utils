@@ -44,7 +44,7 @@ else
 fi
 
 case $BROWSER in
-    netscape|mozilla|phoenix)
+    netscape|mozilla|phoenix*)
 	$BROWSER -remote openurl\(file://"$URL",new-window\) || \
 		$BROWSER "$URL"    
 	;;
