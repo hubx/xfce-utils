@@ -1,0 +1,164 @@
+# xfce-utils for XFCE
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce-utils package.
+# Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfwm4 1.0.0\n"
+"POT-Creation-Date: 2003-09-22 21:23+0200\n"
+"PO-Revision-Date: 2003-10-24 23:55+9\n"
+"Last-Translator: Lâm Vĩnh Niên <nienvl@yahoo.ca>\n"
+"Language-Team: none <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "Về XFce 4"
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "XFce Desktop Environment"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Bản quyền 2002-2003 bởi Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Thông tin"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Ghi công"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "Bản quyền"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Không thể viết lịch sử vào tập tin %s\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Chạy chương trình"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Chạy"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Chạy trong _trạm cuối"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Thanh tác vụ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Vị trí"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Đỉnh"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Đáy"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Tự động ẩn"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Tự động ẩn thanh tác vụ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Kích thước"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Chiều cao :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Nhỏ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "To"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Tác vụ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Hiển thị các tác vụ từ mọi không gian làm việc"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Trình chuyển trang"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Hiển thị trình chuyển trang trên thanh tác vụ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Vùng thông báo"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Hiển thị khay hệ thống trên thanh tác vụ"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Không thể lấy kiểu khởi đầu"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Có sẵn khay hệ thống đang chạy trên màn hình này"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Không thể đăng kí khay hệ thống: %s"
+
+#: xftaskbar/xftaskbar.c:388
+msgid "This should not happen"
+msgstr "Điều này không thể xảy ra"
+
+#: xftaskbar/xftaskbar.c:478
+msgid "Cannot connect to session manager"
+msgstr "Không thể nối vào trình quản lí phiên"
+
+#: xftaskbar/xftaskbar.c:491
+msgid "Cannot get desktop margins"
+msgstr "Không thể lấy được lề desktop"
+
+#: xftaskbar/xftaskbar.c:569
+msgid "Cannot create MCS client channel"
+msgstr "Không thể tạo kênh khách MCS"
