@@ -5,8 +5,8 @@
   <!ENTITY BSD SYSTEM "BSD.xml"> 
   <!ENTITY GPL SYSTEM "GPL.xml"> 
   <!ENTITY LGPL SYSTEM "LGPL.xml"> 
-  <!ENTITY manrevision "0.4"> 
-  <!ENTITY date "May 2003"> 
+  <!ENTITY manrevision "0.8"> 
+  <!ENTITY date "July 2003"> 
 ]>
 
 <article id="xfce4-user-guide" lang="en">
@@ -165,7 +165,7 @@
   </para>
 
   <para>XFce is all free software. The separate components are released under
-    the BSD, the GNU LGPL or the GNU GPL license (see <xref 
+    either the BSD license, the GNU LGPL or the GNU GPL (see <xref 
       linkend="xfce4-copyright"/> for details).
   </para>
 
@@ -409,8 +409,8 @@
 	  <term>xfce4-trigger-laucher</term>
 	  <listitem>
 	    <para>Provides a toggle button for the panel, showing on or off
-	      state. May be used for starting or ending network connections
-	      for example.
+	      state. Check the README file provided in the package for more
+	      information.
 	    </para>
 	  </listitem>
 	</varlistentry>
@@ -429,10 +429,9 @@
       by other people for your OS or distribution.
     </para>
     
-    <para>Martin Loschwitz has prepared official packages for Debian unstable.
-      See his email <ulink 
-	url="http://moongroup.com/pipermail/xfce4-dev/2003-March/002417.html" 
-	type="html">here</ulink> for instructions on how to get them.
+    <para>Martin Loschwitz is the debian developer who maintains the XFce 4
+      packages for Debian unstable. Up-to-date versions should be available
+      soon after the release.
     </para>
 
     <para>Look at our SourceForge repository for the availability of other
@@ -451,7 +450,7 @@
     <title>Building from source</title>
 
     <para>Source tarballs are available from our SourceForge repository:
-      <ulink url="http://sf.net/projects/xfce/files" 
+      <ulink url="http://sourceforge.net/project/showfiles.php?group_id=19869" 
 	type="html">http://sf.net/projects/xfce/files</ulink>.
     </para>
 
@@ -467,6 +466,11 @@
 	type="html">SourceForge</ulink>.
     </para>
 
+    <para>Optionally you can install librsvg >= 2.2, for SVG icon support, and
+      libstartup-notification, to have a busy cursor when loading applications
+      that support this standard.
+    </para> 
+
     <para>If you install into a different prefix from pkg-config, you have to
       set the PKG_CONFIG_PATH variable to include the path to the *.pc files
       installed by the XFce 4 libraries, which is ${prefix}/lib/pkgconfig. For
@@ -475,9 +479,9 @@
 
 <programlisting>export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig</programlisting>
 
-    <para>Many of the source tarballs contain so called spec files that allow
+    <para>All source tarballs also contain a so called spec file that allows
       you to build your own rpm's:
-      <programlisting>rpmbuild -ta <filename>module.tar.gz</filename></programlisting>
+<programlisting>rpmbuild -ta <filename>module.tar.gz</filename></programlisting>
     </para>
 
   </sect2>
@@ -514,7 +518,8 @@
       <filename>~/.xfce4/</filename> directory and edit that file. If you 
       install from source, <filename>${sysconfdir}</filename> defaults to 
       <filename>/usr/local/etc</filename>; for binary packages it is often 
-      set to <filename>/etc</filename>. 
+      set to <filename>/etc</filename>. The file has to be made executable:
+      <programlisting>chmod u+x ~/.xfce4/xinitrc</programlisting>
     </para>
 
     <!--
@@ -556,8 +561,8 @@ exec xfce4-panel
 	  </imageobject> 
 	  --> 
 	  <textobject>
-	    <phrase>Shows default XFce session. Contains the panel, the file
-	      manager, and several settings dialogs open.
+	    <phrase>Shows default XFce session, with background manager, panel 
+	      and taskbar.
 	    </phrase>
 	  </textobject>
 	</mediaobject>
@@ -618,13 +623,13 @@ exec xfce4-panel
 	  <para>The desktop manager provides the desktop background image and
 	    two menus when you click on the desktop background.
 	  </para>
-	  <para>The left mouse button opens a menu that allows you to start 
+	  <para>The right mouse button opens a menu that allows you to start 
 	    applications. Look at the <ulink url="xfdesktop.html" 
 	      type="html">manual</ulink> to find out how to change the menu 
 	    contents.
 	  </para>
-	  <para>The right mouse button (or Shift + left click) opens a list of
-	    all applications that are currently running. You can focus an
+	  <para>The middle mouse button (or Shift + left click) opens a list of
+	    all applications that are currently running. You can activate an
 	    application by clicking on its menu entry.
 	  </para>
 	</listitem>
@@ -745,10 +750,10 @@ exec xfce4-panel
 	      look at the taskbar. Clicking on a button in the taskbar will
 	      focus the associated application. Clicking again will hide it.
 	    </para>
-	    <para>When you right click on the desktop background a list of
-	      windows is shown, ordered by workspace. You can activate the
-	      application or change workspaces by choosing the appropriate 
-	      menu entry.
+	    <para>When you click with the middle mouse button on the desktop 
+	      background a list of windows is shown, ordered by workspace. 
+	      You can activate the application or change workspaces by 
+	      choosing the appropriate menu entry.
 	    </para>
 	  </listitem>
 	</varlistentry>
@@ -763,7 +768,7 @@ exec xfce4-panel
 	      workspaces. Using the mousewheel over the pager or the desktop
 	      background will have the same effect.
 	    </para>
-	    <para>To add or remove workspaces you can use the right click
+	    <para>To add or remove workspaces you can use the middle click
 	      desktop menu or the settings dialog (see below).
 	    </para>
 	  </listitem>
