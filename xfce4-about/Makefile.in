@@ -232,8 +232,10 @@ about_DATA = \
 	AUTHORS.html.es							\
 	AUTHORS.html.fr							\
 	AUTHORS.html.it							\
+	AUTHORS.html.ru                                                 \
 	AUTHORS.it							\
 	AUTHORS.lt							\
+	AUTHORS.ru							\
 	AUTHORS.vi							\
 	BSD								\
 	BSD.html							\
