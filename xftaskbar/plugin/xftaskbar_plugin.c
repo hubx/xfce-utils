@@ -65,6 +65,7 @@ static gboolean is_running = FALSE;
 static gboolean position = TOP;
 static gboolean autohide = FALSE;
 static gboolean show_pager = TRUE;
+static gboolean all_tasks = FALSE;
 static int height = DEFAULT_HEIGHT;
 
 typedef struct _Itf Itf;
@@ -75,30 +76,33 @@ struct _Itf
     GSList *pos_radiobutton_group;
 
     GtkWidget *xftaskbar_dialog;
-    GtkWidget *dialog_vbox1;
-    GtkWidget *dialog_header;
-    GtkWidget *hbox1;
-    GtkWidget *vbox1;
-    GtkWidget *frame1;
-    GtkWidget *hbox2;
-    GtkWidget *pos_top_radiobutton;
-    GtkWidget *pos_bottom_radiobutton;
-    GtkWidget *label1;
-    GtkWidget *frame2;
-    GtkWidget *pager_checkbutton;
-    GtkWidget *label2;
-    GtkWidget *vbox2;
-    GtkWidget *frame3;
+    GtkWidget *alltasks_checkbutton;
     GtkWidget *autohide_checkbutton;
-    GtkWidget *label9;
+    GtkWidget *dialog_action_area1;
+    GtkWidget *dialog_header;
+    GtkWidget *dialog_vbox1;
+    GtkWidget *frame1;
+    GtkWidget *frame2;
+    GtkWidget *frame3;
     GtkWidget *frame4;
-    GtkWidget *table3;
+    GtkWidget *frame5;
+    GtkWidget *hbox1;
+    GtkWidget *hbox2;
+    GtkWidget *height_scale;
+    GtkWidget *label1;
+    GtkWidget *label2;
+    GtkWidget *label3;
+    GtkWidget *label9;
+    GtkWidget *label13;
     GtkWidget *label14;
     GtkWidget *label15;
     GtkWidget *label16;
-    GtkWidget *height_scale;
-    GtkWidget *label13;
-    GtkWidget *dialog_action_area1;
+    GtkWidget *pager_checkbutton;
+    GtkWidget *pos_bottom_radiobutton;
+    GtkWidget *pos_top_radiobutton;
+    GtkWidget *table3;
+    GtkWidget *vbox1;
+    GtkWidget *vbox2;
     GtkWidget *closebutton;
 };
 
@@ -135,6 +139,18 @@ static void cb_showpager_changed(GtkWidget * dialog, gpointer user_data)
     show_pager = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->pager_checkbutton));
 
     mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowPager", CHANNEL, show_pager ? 1 : 0);
+    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    write_options(mcs_plugin);
+}
+
+static void cb_alltasks_changed(GtkWidget * dialog, gpointer user_data)
+{
+    Itf *itf = (Itf *) user_data;
+    McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+    all_tasks = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->alltasks_checkbutton));
+
+    mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL, all_tasks ? 1 : 0);
     mcs_manager_notify(mcs_plugin->manager, CHANNEL);
     write_options(mcs_plugin);
 }
@@ -227,6 +243,21 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->label1);
     gtk_frame_set_label_widget (GTK_FRAME (dialog->frame1), dialog->label1);
     gtk_label_set_justify (GTK_LABEL (dialog->label1), GTK_JUSTIFY_LEFT);
+
+    dialog->frame5 = gtk_frame_new (NULL);
+    gtk_widget_show (dialog->frame5);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame5, TRUE, TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame5), 3);
+
+    dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
+    gtk_widget_show (dialog->alltasks_checkbutton);
+    gtk_container_add (GTK_CONTAINER (dialog->frame5), dialog->alltasks_checkbutton);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
+
+    dialog->label3 = gtk_label_new (_("Tasks"));
+    gtk_widget_show (dialog->label3);
+    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame5), dialog->label3);
+    gtk_label_set_justify (GTK_LABEL (dialog->label3), GTK_JUSTIFY_LEFT);
 
     dialog->frame2 = gtk_frame_new (NULL);
     gtk_widget_show (dialog->frame2);
@@ -330,6 +361,7 @@ static void setup_dialog(Itf * itf)
 
     g_signal_connect(G_OBJECT(itf->pos_top_radiobutton), "toggled", G_CALLBACK(cb_position_changed), itf);
     g_signal_connect(G_OBJECT(itf->pager_checkbutton), "toggled", G_CALLBACK(cb_showpager_changed), itf);
+    g_signal_connect(G_OBJECT(itf->alltasks_checkbutton), "toggled", G_CALLBACK(cb_alltasks_changed), itf);
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
 
@@ -390,6 +422,17 @@ static void create_channel(McsPlugin * mcs_plugin)
     {
         show_pager = TRUE;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowPager", CHANNEL, show_pager ? 1 : 0);
+    }
+
+    setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL);
+    if(setting)
+    {
+        all_tasks = (setting->data.v_int ? TRUE : FALSE);
+    }
+    else
+    {
+        all_tasks = FALSE;
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL, all_tasks ? 1 : 0);
     }
 
     setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/Height", CHANNEL);

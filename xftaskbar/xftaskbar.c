@@ -22,6 +22,7 @@ struct _Taskbar
     gboolean position;
     gboolean autohide;
     gboolean show_pager;
+    gboolean all_tasks;
     gboolean hidden;
     GtkWidget *win;
     GtkWidget *frame;
@@ -249,6 +250,11 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                     taskbar->show_pager = setting->data.v_int ? TRUE : FALSE;
 		    taskbar_toggle_pager(taskbar);
                 }
+                else if(!strcmp(name, "Taskbar/ShowAllTasks"))
+                {
+                    taskbar->all_tasks = setting->data.v_int ? TRUE : FALSE;
+		    netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
+                }
                 else if(!strcmp(name, "Taskbar/Height"))
                 {
                     taskbar_change_size(taskbar, setting->data.v_int);
@@ -300,6 +306,7 @@ int main(int argc, char **argv)
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
     taskbar->show_pager = TRUE;
+    taskbar->all_tasks = FALSE;
     taskbar->hidden = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -326,7 +333,8 @@ int main(int argc, char **argv)
 
     taskbar->tasklist = netk_tasklist_new(screen);
     netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), NETK_TASKLIST_ALWAYS_GROUP);
-    netk_tasklist_set_grouping_limit(NETK_TASKLIST(taskbar->tasklist), 0);
+    netk_tasklist_set_grouping_limit(NETK_TASKLIST(taskbar->tasklist), 100);
+    netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
     gtk_box_pack_start (GTK_BOX (taskbar->hbox), taskbar->tasklist, TRUE, TRUE, 0);
 
     taskbar->pager = netk_pager_new(screen);
