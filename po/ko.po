@@ -8,47 +8,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2004-11-27 22:34+0900\n"
+"POT-Creation-Date: 2004-12-11 18:34+0100\n"
+"PO-Revision-Date: 2004-12-15 16:13+0900\n"
 "Last-Translator: ByungHyun Choi<byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:262
 msgid "About Xfce 4"
 msgstr "XFce 4란..."
 
-#: xfce4-about/info.c:278
+#: xfce4-about/info.c:277
 msgid "Xfce Desktop Environment"
 msgstr "XFce 데스크탑 환경"
 
-#: xfce4-about/info.c:279
+#: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr ""
 
-#: xfce4-about/info.c:301
+#: xfce4-about/info.c:300
 msgid "Info"
 msgstr "정보"
 
-#: xfce4-about/info.c:302
+#: xfce4-about/info.c:301
 msgid "Credits"
 msgstr "만든 사람들..."
 
-#: xfce4-about/info.c:303
+#: xfce4-about/info.c:302
 msgid "Copyright"
 msgstr "저작권"
 
-#: xfce4-about/info.c:304
+#: xfce4-about/info.c:303
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:305
+#: xfce4-about/info.c:304
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:306
+#: xfce4-about/info.c:305
 msgid "GPL"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr "터미널에서 실행(_t)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:278
 #: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
 msgid "Taskbar"
 msgstr "태스크바"
 
@@ -174,27 +174,23 @@ msgstr "태스크바에 시스템 트레이 보이기(_s)"
 msgid "Cannot get initial style"
 msgstr "초기화 스타일을 못 찾겠습니다."
 
-#: xftaskbar/xftaskbar.c:260
+#: xftaskbar/xftaskbar.c:267
 msgid "There is already a system tray running on this screen"
 msgstr "이 화면에는 시스템 트레이가 이미 동작 중입니다."
 
-#: xftaskbar/xftaskbar.c:268
+#: xftaskbar/xftaskbar.c:275
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "시스템 트레이에 %s를(을) 등록하지 못 했습니다."
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "이런 일은 생겨서는 안됩니다."
-
-#: xftaskbar/xftaskbar.c:592
+#: xftaskbar/xftaskbar.c:603
 msgid "Cannot get default screen\n"
 msgstr "화면 여백을 확보하지 못 했습니다.\n"
 
-#: xftaskbar/xftaskbar.c:681
+#: xftaskbar/xftaskbar.c:692
 msgid "Cannot connect to session manager"
 msgstr "세션 관리도구와 연결하지 못 했습니다."
 
-#: xftaskbar/xftaskbar.c:694
+#: xftaskbar/xftaskbar.c:705
 msgid "Cannot create MCS client channel"
 msgstr "MCS 클라이언트 채널을 생성하지 못 했습니다."
