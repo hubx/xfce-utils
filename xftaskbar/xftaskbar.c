@@ -384,7 +384,6 @@ static void icon_undocked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox
 static void message_new(XfceSystemTray *tray, GtkWidget *icon, glong id,
 		glong timeout, const gchar *text)
 {
-	g_print("MESSAGE(%d): \"%s\" (%d)\n", id, text, timeout);
 }
 
 int main(int argc, char **argv)

@@ -185,7 +185,6 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 {
     Itf *dialog;
     GdkPixbuf *icon;
-    gchar *str;
 
     dialog = g_new(Itf, 1);
 
