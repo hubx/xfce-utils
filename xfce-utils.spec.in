@@ -21,7 +21,7 @@ xfce-utils contains utilities for the XFce Desktop Environment
 %setup -q
 
 %build
-%configure
+%configure --enable-gdm
 make
 
 %install
@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/xfce4/mcs-plugins/*
 %{_datadir}/locale/
 %{_datadir}/xfce4/
-%config(noreplace) %{_sysconfdir}/xfce4/*
+%config(noreplace) %{_sysconfdir}/*
 
 
