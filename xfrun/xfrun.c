@@ -32,6 +32,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <errno.h>
 
 #include <libxfce4util/libxfce4util.h>
 #include <libxfcegui4/libxfcegui4.h>
@@ -168,7 +169,8 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
     if (path && g_file_test (path, G_FILE_TEST_IS_DIR)){
 	g_free(path);
 	path=NULL;
-    }
+    } 
+
         
     /* open directory in terminal or file manager */
     if (g_file_test (cmd, G_FILE_TEST_IS_DIR) && !path)
@@ -178,12 +180,17 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
 	else 
 	    execute = g_strconcat(fileman, " ", cmd, NULL);
     }
-    else
+    else if(path)
     {
 	if(in_terminal)
 	    execute = g_strconcat("xfterm4 -e ", cmd, NULL);
 	else
 	    execute = g_strdup(cmd);
+    } 
+    else /* !path */
+    {
+	show_error(strerror(ENOENT));
+	return FALSE;
     }
     if (open_with){
 	gchar *g=g_strconcat(execute," ",argument,NULL);
