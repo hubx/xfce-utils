@@ -4,5 +4,5 @@ h1,h2,h3	{ color: #336699; }
 a:link,a:active { color: #3366CC; }
 a:visited	{ color: #003366; }
 hr		{ background-color: #336699; }
-li		{ list-style-type: square; color: #336699; }
+li		{ list-style-type: square; }
 
