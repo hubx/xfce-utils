@@ -1,0 +1,152 @@
+# translation of xfce-utils.po to Turkish
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Erçin EKER <erc.caldera@gmx.net>, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils\n"
+"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"PO-Revision-Date: 2003-05-21 21:07+0300\n"
+"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
+"Language-Team: Turkish <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:208
+msgid "About XFce 4"
+msgstr "XFce 4 Hakkında"
+
+#: xfce4-about/info.c:221
+msgid "XFce Desktop Environment"
+msgstr "XFce Masaüstü Ortamı"
+
+#: xfce4-about/info.c:222
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Kopyahakkı 2002-2003 Oliver Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:241
+msgid "Info"
+msgstr "Bilgi"
+
+#: xfce4-about/info.c:242
+msgid "Credits"
+msgstr "Krediler"
+
+#: xfce4-about/info.c:243
+msgid "License"
+msgstr "Lisans"
+
+#: xfrun/xfrun.c:180
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4:Geçmiş dosyaya yazılamıyor %s\n"
+
+#: xfrun/xfrun.c:231
+msgid "Run program"
+msgstr "Uygulama çalıştır"
+
+#: xfrun/xfrun.c:238
+msgid "_Run"
+msgstr "_Çalıştır"
+
+#: xfrun/xfrun.c:274
+msgid "Run in _terminal"
+msgstr "_Terminalde çalıştır"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Görev çubuğu"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
+msgid "Top"
+msgstr "Üst"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
+msgid "Bottom"
+msgstr "Alt"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "Konum"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
+msgid "Auto hide taskbar"
+msgstr "Görev çubuğunu Oto. gizle"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "Oto. gizle"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Height :"
+msgstr "Yükseklik:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr "Küçük"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr "Büyük"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Boyut"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Tüm masaüstlerinden görevleri göster"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Görevler"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Görev çubuğunda sayfalayıcıyı göster"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "Sayfalayıcı"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Sistem çekmecesini görev çubuğunda göster"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Bilgilendirme bölümü"
+
+#: xftaskbar/xftaskbar.c:118
+msgid "Cannot get initial style"
+msgstr "Stil elde edilemiyor"
+
+#: xftaskbar/xftaskbar.c:277
+msgid "This should not happen"
+msgstr "Bu gerçekleşmeyecek"
+
+#: xftaskbar/xftaskbar.c:366
+msgid "Cannot connect to session manager"
+msgstr ":Oturum yöneticisine ulaşılamıyor"
+
+#: xftaskbar/xftaskbar.c:377
+msgid "Cannot get desktop margins"
+msgstr "Masa üstü sınırları okunamıyor"
+
+#: xftaskbar/xftaskbar.c:439
+msgid "There is already a system tray running on this screen"
+msgstr "Bu ekranda zaten çalışan bir sistem çekmecesi var"
+
+#: xftaskbar/xftaskbar.c:445
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Sistem çekmecesi kaydedilemiyor: %s"
+
+#: xftaskbar/xftaskbar.c:463
+msgid "Cannot create MCS client channel"
+msgstr "MCS istemci kanalı oluşturulamıyor"
+
