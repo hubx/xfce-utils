@@ -51,13 +51,12 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 # Launch xscreensaver (if available), but only as non-root user
 test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
 
-# Use ssh-agent if installed
+# Use ssh-agent if installed.  Run it separately so it populates the
+# environment here, so we can clean it up later.
 sshagent=`which ssh-agent`
-case "x$sshagent" in
-	xno*)
-		unset sshagent
-		;;
-esac
+if test "$sshagent" -a "x$sshagent" != "xno"; then
+	eval `$sshagent`
+fi
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
@@ -65,9 +64,12 @@ case "x$xfcesm" in
 	x|xno*)
 		;;
 	*)
-		exec $sshagent $xfcesm
-		# Shouldn't get there, but anyway...
-		exit
+		$xfcesm
+
+		if test "$SSH_AGENT_PID"; then
+			eval `$sshagent -k`
+		fi
+		exit 0
 		;;
 esac
 
@@ -75,9 +77,6 @@ esac
 xsetroot -solid black -cursor_name watch
 
 # or use old-fashioned startup script otherwise
-
-# Start ssh-agent if available
-test -n "$sshagent" && eval `$sshagent`
 
 xfce-mcs-manager
 xfwm4 --daemon
@@ -121,5 +120,9 @@ EOF
 		done
 		;;
 esac
+
+if test "$SSH_AGENT_PID"; then
+	eval `$sshagent -k`
+fi
 
 xsetroot -bg white -fg red  -solid black -cursor_name watch
