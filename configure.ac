@@ -109,6 +109,9 @@ doc/xfce4-user-guide/fr/Makefile
 doc/xfce4-user-guide/fr/images/Makefile
 doc/xfce4-user-guide/it/Makefile
 doc/xfce4-user-guide/it/images/Makefile
+icons/Makefile
+icons/48x48/Makefile
+icons/scalable/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile

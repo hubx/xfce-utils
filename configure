@@ -24427,7 +24427,7 @@ echo "${ECHO_T}yes" >&6
   fi
 
 
-                                                                                                                                                                                                                                                                                        ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/index/fr/Makefile doc/index/it/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce-utils/fr/Makefile doc/xfce-utils/fr/images/Makefile doc/xfce-utils/it/Makefile doc/xfce-utils/it/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile doc/xfce4-user-guide/fr/Makefile doc/xfce4-user-guide/fr/images/Makefile doc/xfce4-user-guide/it/Makefile doc/xfce4-user-guide/it/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile"
+                                                                                                                                                                                                                                                                                                                      ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/index/fr/Makefile doc/index/it/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce-utils/fr/Makefile doc/xfce-utils/fr/images/Makefile doc/xfce-utils/it/Makefile doc/xfce-utils/it/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile doc/xfce4-user-guide/fr/Makefile doc/xfce4-user-guide/fr/images/Makefile doc/xfce4-user-guide/it/Makefile doc/xfce4-user-guide/it/images/Makefile icons/Makefile icons/48x48/Makefile icons/scalable/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -25021,6 +25021,9 @@ do
   "doc/xfce4-user-guide/fr/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/fr/images/Makefile" ;;
   "doc/xfce4-user-guide/it/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/it/Makefile" ;;
   "doc/xfce4-user-guide/it/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/it/images/Makefile" ;;
+  "icons/Makefile" ) CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;
+  "icons/48x48/Makefile" ) CONFIG_FILES="$CONFIG_FILES icons/48x48/Makefile" ;;
+  "icons/scalable/Makefile" ) CONFIG_FILES="$CONFIG_FILES icons/scalable/Makefile" ;;
   "xfrun/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfrun/Makefile" ;;
   "xftaskbar/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/Makefile" ;;
   "xftaskbar/plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/plugin/Makefile" ;;

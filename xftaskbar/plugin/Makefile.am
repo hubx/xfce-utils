@@ -21,9 +21,5 @@ xftaskbar_plugin_la_LIBADD = 						\
 desktopdir = $(datadir)/applications
 desktop_DATA = xfce-taskbar-settings.desktop
 
-iconsdir = $(datadir)/icons/hicolor/48x48/apps
-icons_DATA = xfce4-taskbar.png
-
 EXTRA_DIST = 								\
-	$(desktop_DATA)							\
-	$(icons_DATA)
+	$(desktop_DATA)
