@@ -592,7 +592,7 @@ exec xfce4-panel
 	    is done by using the right mouse button. Both the panel items and
 	    the panel move handles have a right-click mouse menu from where
 	    you can chage the panel configuration. For more information look
-	    at the <ulink url="xfce-panel.html" type="html">panel
+	    at the <ulink url="xfce4-panel.html" type="html">panel
 	      manual</ulink>.
 	  </para>
 	</listitem>
@@ -764,11 +764,11 @@ exec xfce4-panel
 	move handles or from the main desktop menu.
       </para>
 
-      <para>The settings manager dialog allows you to open preferences dialogs
-	for many aspects of the XFce 4 desktop environment. The different
-	options are described in the manuals of each XFce 4 component. It may
-	be interesting to have a quick look at all the dialogs to see what
-	options are available to create the best possible working environment.
+      <para>Preferences dialogs for many aspects of the XFce 4 desktop 
+	environment are available. The different options are described in the 
+	manuals of each XFce 4 component. It may be interesting to have a quick
+	look at all the dialogs to see all options that allow you to create 
+	the best possible working environment.
       </para>
 
     </sect3>
