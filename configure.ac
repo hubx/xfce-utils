@@ -82,10 +82,6 @@ BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.2.0])
 dnl configure the mcs plugin
 XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.2.0])
 
-dnl Check for gtkhtml installed
-BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
-  [gtkhtml], [GTK+ HTML library], [no])
-
 dnl Check for dbh installed
 BM_DEPEND_CHECK([LIBDBH], [dbh-1.0], [1.0],
   [dbh], [DBH library], [yes])

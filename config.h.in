@@ -33,9 +33,6 @@
 /* Define if you have dbh-1.0 >= 1.0 */
 #undef HAVE_LIBDBH
 
-/* Define if you have libgtkhtml-2.0 >= 2.0.0 */
-#undef HAVE_LIBGTKHTML
-
 /* Define if libX11 is available */
 #undef HAVE_LIBX11
 
