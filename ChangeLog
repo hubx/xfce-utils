@@ -1,3 +1,11 @@
+2003-03-25  huysmans
+
+	* xfce4-about/AUTHORS: Update credits
+
+2003-03-23  xfce
+
+	* ChangeLog: Update ChangeLog
+
 2003-03-19  xfce
 
 	* xfrun/xfrun.c: Add CAN_DEFAULT flag to cancel button
