@@ -120,7 +120,7 @@ void unload_xfc(void){
 	}
 #ifdef DEBUG
 	else {
-           g_message ("xffm: module libxffm_combo unloaded");
+           g_message ("module libxfce4_combo unloaded");
 	}	   
 #endif
 	xfc_cm=NULL;
@@ -132,13 +132,13 @@ xfc_combo_functions *load_xfc(void){
    
     if (xfc_fun) return xfc_fun;
     
-    library=g_strconcat("libxffm_combo.",G_MODULE_SUFFIX, NULL);
-    module = g_build_filename (LIBDIR, "xffm", library, NULL);
+    library=g_strconcat("libxfce4_combo.",G_MODULE_SUFFIX, NULL);
+    module = g_build_filename (LIBDIR, "xfce4", "modules",library, NULL);
     
     xfc_cm=g_module_open (module, 0);
-    if (!xfc_cm){
-	g_error("g_module_open(%s) == NULL\n",module);
-   	exit(1);
+    if (!xfc_cm) {
+	g_warning("cannot load xfce4-module %s\n",module);
+	return NULL;
     }
     
     if (!g_module_symbol (xfc_cm, "module_init",(gpointer *) &(module_init)) ) {
@@ -170,7 +170,7 @@ xfc_combo_functions *load_xfc(void){
 	return NULL;
     }
 #ifdef DEBUG
-    g_message ("xffm: module %s successfully loaded", library);	    
+    g_message ("module %s successfully loaded", library);	    
 #endif
     g_free(library);
     g_free(module);
