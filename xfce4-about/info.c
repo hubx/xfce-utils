@@ -288,7 +288,7 @@ main(int argc, char **argv)
     g_signal_connect(info_help_button, "clicked", 
 	    	     G_CALLBACK(info_help_cb), NULL);
 
-    gtk_window_set_position(GTK_WINDOW(info), GTK_WIN_POS_CENTER);
+    gtk_window_set_position(GTK_WINDOW(info), GTK_WIN_POS_CENTER_ALWAYS);
     gtk_widget_show(info);
 
     gtk_main();
