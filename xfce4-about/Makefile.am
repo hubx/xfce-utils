@@ -41,7 +41,9 @@ about_DATA =								\
 	INFO.html.es							\
 	INFO.html.fr							\
 	INFO.html.it							\
+	INFO.html.ru							\
 	INFO.it								\
+	INFO.ru								\
 	INFO.uk								\
 	INFO.vi								\
 	LGPL								\
