@@ -6,7 +6,7 @@ if test "x$UID" = "x"; then
 fi
 
 # create temp file for X resources
-XRESOURCES=`mktemp /tmp/xrdb.XXXXXX`
+XRESOURCES="/tmp/xrdb-$UID.$$"
 
 # Has to go prior to merging Xft.xrdb, as its the "Defaults" file
 test -r $HOME/.Xdefaults && cat $HOME/.Xdefaults >> $XRESOURCES
