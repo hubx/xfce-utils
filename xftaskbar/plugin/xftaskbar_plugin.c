@@ -57,7 +57,7 @@ static gboolean is_running = FALSE;
 static gboolean position = TOP;
 static gboolean autohide = FALSE;
 static gboolean show_pager = TRUE;
-static gboolean show_tray = FALSE;
+static gboolean show_tray = TRUE;
 static gboolean all_tasks = FALSE;
 static int height = DEFAULT_HEIGHT;
 
