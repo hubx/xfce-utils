@@ -649,26 +649,129 @@ exec xfce4-panel
   <sect2>
     <title>Common Tasks</title>
 
-    <para>Running programs</para>
+    <para>This section will explain how to perform several common tasks to 
+      quicklt get you started working with XFce 4. Because that is what
+      XFce 4 is designed for, to allow you to get work done.
+    </para>
 
-    <para>- panel</para>
+    <sect3>
+      <title>Running programs</title>
 
-    <para>- desktop menu</para>
+      <variablelist>
 
-    <para>- run dialog</para>
+	<varlistentry>
+	  <term>XFce 4 panel</term>
+	  <listitem>
+	    <para>The panel is designed to allow quick access to the most
+	      frequently used applications by putting them on the main panel.
+	      Less often used applications can be put in a panel menu. 
+	    </para>
+	  </listitem>
+	</varlistentry>
 
-    <para>Managing windows and workspaces</para>
+	<varlistentry>
+	  <term>Desktop menu</term>
+	  <listitem>
+	    <para>Another method for starting applications is from the desktop
+	      mouse menu. Read the <application>xfdesktop</application> <ulink
+		url="xfdesktop.html" type="html">manual</ulink> for
+	      information on how to change the menu contents.
+	    </para>
+	  </listitem>
+	</varlistentry>
 
-    <para>- basic window operations (move, maximize/minimize/shade, stick,
-      close)</para>
+	<varlistentry>
+	  <term>Run dialog</term>
+	  <listitem>
+	    <para>If you know the name of a program and it is not on the panel
+	      or in the desktop menu you can use the run dialog. To open the
+	      dialog type <keycombo>Alt-F2</keycombo> or choose the 'Run
+	      program...' option from the desktop menu.
+	    </para>
+	    <para>The dialog will remeber the 10 last commands that were
+	      successfully executed.
+	    </para>	      
+	  </listitem>
+	</varlistentry>
 
-    <para>- running apps (taskbar, window list)</para>
+      </variablelist>
+      
+    </sect3>
 
-    <para>- workspaces (pager)</para>
+    <sect3>
+      <title>Managing windows and workspaces</title>
 
-    <para>Using the settings manager</para>
+      <variablelist>
 
-    <para>- how to start it: panel, root menu, run xfce-mcs-manager</para>
+	<varlistentry>
+	  <term>Basic window operations</term>
+	  <listitem>
+	    <para>You can move windows around the screen by dragging their
+	      title bar. A window can be closed, hidden, maximized, shaded and
+	      made sticky &mdash; this means it will show up on all workspaces
+	      &mdash; by using the title bar buttons.
+	    </para>
+	    <para>Right clicking on the title bar will open a menu that gives
+	      access to all window operations.</para>
+	    <para>Shading a window, which means collapsing it to only show the
+	      title bar, can also be accomplished by using the mouse wheel
+	      over the title bar. Up is shade, down is unshade.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Application management</term>
+	  <listitem>
+	    <para>To find out what applications are currently running you can
+	      look at the taskbar. Clicking on a button in the taskbar will
+	      focus the associated application. Clicking again will hide it.
+	    </para>
+	    <para>When you right click on the desktop background a list of
+	      windows is shown, ordered by workspace. You can activate the
+	      application or change workspaces by choosing the appropriate 
+	      menu entry.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Workspaces</term>
+	  <listitem>
+	    <para>You can change workspaces by clicking on them in the
+	      graphical pager, either on the taskbar or on the panel. Pressing
+	      <keycombo>Ctrl-Alt-LeftArrow</keycombo> or 
+	      <keycombo>Ctrl-Alt-RightArrow</keycombo> will cycle through the
+	      workspaces. Using the mousewheel over the pager or the desktop
+	      background will have the same effect.
+	    </para>
+	    <para>To add or remove workspaces you can use the right click
+	      desktop menu or the settings dialog (see below).
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+      </variablelist>
+
+    </sect3>
+
+    <sect3>
+      <title>Using the settings manager dialog</title>
+
+      <para>The settings manager dialog provides access to the global
+	preferences of many XFce 4 applications. You can run it by pressing 
+	the setup button on the panel, from the right click menu on the panel
+	move handles or from the main desktop menu.
+      </para>
+
+      <para>The settings manager dialog allows you to open preferences dialogs
+	for many aspects of the XFce 4 desktop environment. The different
+	options are described in the manuals of each XFce 4 component. It may
+	be interesting to have a quick look at all the dialogs to see what
+	options are available to create the best possible working environment.
+      </para>
+
+    </sect3>
 
   </sect2>
 
@@ -677,10 +780,9 @@ exec xfce4-panel
 
     <para>This user guide has only given a very general overview of the XFce 4
       Desktop Environment. More information is  available in the manuals of
-      the separate components of XFce 4.
+      the separate components of XFce 4, that can be found <ulink
+	url="index.html" type="html">here</ulink>.
     </para>
-
-    <para>list of manuals</para>
 
   </sect2>
   
