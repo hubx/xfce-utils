@@ -333,7 +333,7 @@
     
     <programlisting>./configure &amp;&amp; make &amp;&amp; make install</programlisting>
 
-    <para>Building XFce 4 depends on pkg-config, GTK+ >= 2.0.6 (also dev 
+    <para>Building XFce 4 depends on pkg-config, GTK+ >= 2.0.6 (including dev 
       packages), libxml2 and, for xffm, on libdbh, which is available from
       <ulink url="http://sf.net/projects/libdbh" 
 	type="html">SourceForge</ulink>.
@@ -411,7 +411,7 @@ exec xfce4-panel
     <title>The Default Desktop</title>
 
     <figure id="default-session-fig">
-      <title>Typical XFce session</title> 
+      <title>Default XFce 4 session</title> 
       <screenshot>
 	<mediaobject>
 	  <imageobject>
@@ -423,7 +423,7 @@ exec xfce4-panel
 	  </imageobject> 
 	  --> 
 	  <textobject>
-	    <phrase>Shows typical XFce session. Contains the panel, the file
+	    <phrase>Shows default XFce session. Contains the panel, the file
 	      manager, and several settings dialogs open.
 	    </phrase>
 	  </textobject>
@@ -431,7 +431,22 @@ exec xfce4-panel
       </screenshot>
     </figure>
 
-    <para>Explanation of the important desktop components</para>
+    <para>The XFce 4 Desktop Environment is not a single entity that provides
+      all funtionality, but rather it tries th adhere to the old UNIX
+      tradition of small tools that do one job and do it well. A default XFce
+      4 desktop with no programs running is shown in <xref
+	linkend="default-session-fig"/>.
+    </para>
+    
+    <para>Explanation of the important desktop components:</para>
+
+    <para>taskbar</para>
+
+    <para>panel</para>
+
+    <para>desktop manager</para>
+
+    <para>window manager</para>
 
   </sect2>
 
@@ -440,9 +455,36 @@ exec xfce4-panel
 
     <para>Running programs</para>
 
-    <para>Managing windows and worlspaces</para>
+    <para>- panel</para>
+
+    <para>- desktop menu</para>
+
+    <para>- run dialog</para>
+
+    <para>Managing windows and workspaces</para>
+
+    <para>- basic window operations (move, maximize/minimize/shade, stick,
+      close)</para>
+
+    <para>- running apps (taskbar, window list)</para>
+
+    <para>- workspaces (pager)</para>
 
     <para>Using the settings manager</para>
+
+    <para>- how to start it: panel, root menu, run xfce-mcs-manager</para>
+
+  </sect2>
+
+  <sect2>
+    <title>Further reading</title>
+
+    <para>This user guide has only given a very general overview of the XFce 4
+      Desktop Environment. More information is  available in the manuals of
+      the separate components of XFce 4.
+    </para>
+
+    <para>list of manuals</para>
 
   </sect2>
   
