@@ -55,7 +55,7 @@ msgstr ""
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr ""
+msgstr "xfrun4: 화일 %s에 사용이력를 기록할 수 없습니다.\n"
 
 #: xfrun/xfrun.c:237
 msgid "Run program"
@@ -137,29 +137,29 @@ msgstr "트레이에 보이기"
 
 #: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
-msgstr ""
+msgstr "초기화 스타일을 못 찾겠습니다."
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "이 화면에는 시스템 트레이가 이미 동작 중입니다."
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "시스템 트레이에 %s를(을) 등록하지 못 했습니다."
 
 #: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
-msgstr ""
+msgstr "이런 일이 생겨서는 안됩니다."
 
 #: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
-msgstr ""
+msgstr "세션 관리도구와 연결하지 못 했습니다."
 
 #: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
-msgstr ""
+msgstr "데스크탑 여백을 확복하지 못 했습니다."
 
 #: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
-msgstr ""
+msgstr "MCS 클라이언트 채널을 생성하지 못 했습니다."
