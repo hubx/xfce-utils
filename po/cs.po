@@ -1,30 +1,30 @@
+# translation of cs.po to Czech
 # Czech translation for xfce-utils
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Lukáš Konarovský <daeltar@daeltar.org>, 2003.
+# Alois Nespor <Alois.Nespor@seznam.cz>, 2004.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2003-11-15 HO:MI+ZONE\n"
-"Last-Translator: Lukas Konarovsky <daeltar@daeltar.org>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"PO-Revision-Date: 2004-10-28 00:19+0000\n"
+"Last-Translator: Alois Nespor <Alois.Nespor@seznam.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "O XFce 4"
+msgstr "O Xfce 4"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce Desktop Environment"
+msgstr "XFce desktopové prostředí"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -54,25 +54,25 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:280
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Nemohu zapsat historii do souboru %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Otevřít %s s tímto programem?"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:392
 msgid "Run program"
 msgstr "Spustit program"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:400
 msgid "_Run"
 msgstr "_Spustit"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:430
 msgid "Run in _terminal"
 msgstr "Spustit v _terminálu"
 
@@ -87,39 +87,36 @@ msgid "Position"
 msgstr "Pozice"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Nahoře"
+msgstr "_Nahoře"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Dole"
+msgstr "_Dole"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Zarovnat"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "_Vlevo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "_Na střed"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "_Napravo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
-msgstr "Automatické skrývání"
+msgstr "Automatické skrývání "
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Automatické skrývání"
+msgstr "Automatické skrývání panelu úloh"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -141,42 +138,39 @@ msgstr "Větší"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Šířka:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Úlohy"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Ukazovat úlohy ze všech ploch"
+msgstr "Ukazovat úlohy ze všech pracovních ploch"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Vždy _seskupovat úkoly"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Ukázat _jména aplikací"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Přepínač ploch"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Zobrazit přepínač ploch na panelu úloh"
+msgstr "Zobrazit přepínač ploch v panelu úloh"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Upozorňovací oblast"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Ukázat upozorňovací oblast na panelu"
+msgstr "Ukázat systémový panel v panelu úloh"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -189,21 +183,21 @@ msgstr "Na této obrazovce již jedna upozorňovací oblast běží"
 #: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Unable to register system tray: %s"
+msgstr "Nelze vložit do systémového panelu: %s"
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "Toto se nikdy nestane"
+msgstr "Toto se nemělo stát"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Nemohu získat okraje plochy"
+msgstr "Nemohu získat standartní obraz\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
-msgstr "Nemohu se připojit ke správci session"
+msgstr "Nemohu se připojit ke správci sezení"
 
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
-msgstr "Cannot create MCS client channel"
+msgstr "Nelze vytvořit kanál MCS klienta"
+
