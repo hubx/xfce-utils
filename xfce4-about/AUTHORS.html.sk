@@ -12,8 +12,12 @@
       <li>Benedikt Meurer &lt;<a href="mailto:benny@xfce.org">benny@xfce.org</a>&gt;</li>
       <li>Biju Chacko &lt;<a href="mailto:botsie@myrealbox.com">botsie@myrealbox.com</a>&gt;</li>
       <li>Brian Tarricone &lt;<a href="mailto:bjt23@cornell.edu">bjt23@cornell.edu</a>&gt;</li>
+      <li>Danny Milosavljevic &lt;<a href="mailto:danny_milo@yahoo.com">danny_milo@yahoo.com</a>&gt;</li>
+      <li>Eduard Roccatello &lt;<a href="mailto:eduard@xfce.org">eduard@xfce.org</a>&gt;</li>
       <li>Edscott Wilson Garcia &lt;<a href="mailto:edscott@imp.mx">edscott@imp.mx</a>&gt;</li>
-      <li>Jasper Huijsmans &lt;<a href="mailto:huysmans@users.sourceforge.net">huysmans@users.sourceforge.net</a>&gt;</li>
+      <li>Fran&ccedil;ois Le Clainche &lt;<a href="mailto:fleclainche@wanadoo.fr">fleclainche@wanadoo.fr</a>&gt;</li>
+      <li>Jasper Huijsmans &lt;<a href="mailto:jasper@xfce.org">huysmans@users.sourceforge.net</a>&gt;</li>
+      <li>Jean-Fran&ccedil;ois Wauthy &lt;<a href="mailto:pollux@xfce.org">pollux@xfce.org</a>&gt;</li>
       <li>Olivier Fourdan &lt;<a href="mailto:fourdan@xfce.org">fourdan@xfce.org</a>&gt;</li>
     </ul>
 
@@ -22,12 +26,8 @@
     <ul>
       <li>Bernhard Walle &lt;<a href="mailto:Bernhard.Walle@gmx.de">Bernhard.Walle@gmx.de</a>&gt;</li>
       <li>Craig Betts &lt;<a href="mailto:craig.betts.dfrc.nasa.gov">craig.betts.dfrc.nasa.gov</a>&gt;</li>
-      <li>Danny Milosavljevic &lt;<a href="mailto:danny_milo@yahoo.com">danny_milo@yahoo.com</a>&gt;</li>
-      <li>Eduard Roccatello &lt;<a href="mailto:eduard@xfce.org">eduard@xfce.org</a>&gt;</li>
       <li>Ejvend Nielsen &lt;<a href="mailto:prophet@sphere-x.net">prophet@sphere-x.net</a>&gt;</li>
       <li>Erik Touve &lt;<a href="mailto:etouve@earthlink.net">etouve@earthlink.net</a>&gt;</li>
-      <li>Fran&ccedil;ois Le Clainche &lt;<a href="mailto:fleclainche@wanadoo.fr">fleclainche@wanadoo.fr</a>&gt;</li>
-      <li>Jean-Fran&ccedil;ois Wauthy &lt;<a href="mailto:pollux@xfce.org">pollux@xfce.org</a>&gt;</li>
       <li>Jens Guballa &lt;<a href="mailto:j.guballa@t-online.de">j.guballa@t-online.de</a>&gt;</li>
       <li>Jens Luedicke &lt;<a href="mailto:jens@irs-net.com">jens@irs-net.com</a>&gt;</li>
       <li>Joakim Andreasson &lt;<a href="mailto:joakim.andreasson@gmx.net">joakim.andreasson@gmx.net</a>&gt;</li>
