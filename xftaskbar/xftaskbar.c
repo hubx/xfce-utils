@@ -583,10 +583,10 @@ int main(int argc, char **argv)
     taskbar->tray_registered = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
+    netk_gtk_window_set_type(GTK_WINDOW(taskbar->win), NETK_WINDOW_DOCK);
     gtk_widget_realize(GTK_WIDGET(taskbar->win));
     gtk_window_stick(GTK_WINDOW(taskbar->win));
-    netk_gtk_window_set_dock_type(GTK_WINDOW(taskbar->win));
-    netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar->height);
     gtk_window_set_title(GTK_WINDOW(taskbar->win), "Task List");
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
@@ -637,7 +637,6 @@ int main(int argc, char **argv)
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
     g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar);
-
     gtk_widget_show (taskbar->tasklist);
     gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
