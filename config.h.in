@@ -66,9 +66,6 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #undef HAVE_UNISTD_H
 
-/* Define if you have xfheaders-4.1 >= 4.1 */
-#undef HAVE_XFHEADERS
-
 /* Name of package */
 #undef PACKAGE
 

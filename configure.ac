@@ -68,7 +68,7 @@ BM_I18N([xfce-utils], [ar az bg ca cs de es es_MX eu fa_IR fi fr hi hu it ja ko 
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.0.0])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.22])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.26])
 
 dnl configure the mcs plugin
 XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.0.0])
@@ -80,9 +80,6 @@ BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
 dnl Check for dbh installed
 BM_DEPEND_CHECK([LIBDBH], [dbh-1.0], [1.0],
   [dbh], [DBH library], [yes])
-dnl Check for xfheaders installed
-BM_DEPEND_CHECK([XFHEADERS], [xfheaders-4.1], [4.1],
-  [xfheaders], [on demand library headers], [yes])
 
 
 
