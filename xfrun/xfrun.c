@@ -310,7 +310,7 @@ void runit(GtkEntry * entry, gpointer user_data){
 	        if (!use_xfc_combo) put_history(command, in_terminal, history);
 #ifdef HAVE_LIBDBH
 		else if (use_xfc_combo) {
-		    gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
+		    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
       		    XFC_save_to_history(f,(char *)command);
       		    save_flags((char *)command,in_terminal,FALSE);
 		    g_free(f);
@@ -329,7 +329,7 @@ void alt_runit(GtkEntry * entry, gpointer user_data){
                         checkbox));
 
     if (do_run(command, in_terminal)) {
-	    gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
+	    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
 	    XFC_save_to_history(f,(char *)command);
 	    save_flags((char *)command,in_terminal,FALSE);
 	    g_free(f);
