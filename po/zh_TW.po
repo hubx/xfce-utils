@@ -161,4 +161,3 @@ msgstr "無法取得桌面邊界"
 #: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "無法建立 MCS 用戶通道"
-

@@ -162,4 +162,3 @@ msgstr "Невозможно определить поля рабочего ме
 #: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "Невозможно создать канал для MCS клиента"
-
