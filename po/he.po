@@ -1,4 +1,3 @@
-# translation of he.po to 
 # translation of he.po to Hebrew
 # This file is distributed under the same license as the PACKAGE package.
 # Dotan Kamber <kamberd@yahoo.com>, 2004.
@@ -9,77 +8,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-06 16:17+0200\n"
-"PO-Revision-Date: 2004-10-27 19:33+0200\n"
+"POT-Creation-Date: 2004-12-11 18:34+0100\n"
+"PO-Revision-Date: 2004-12-31 16:55+0200\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
-"Language-Team: \n"
+"Language-Team: Hebrew Team <xfce2004@yahoo.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9.1\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:262
 msgid "About Xfce 4"
 msgstr "אודות Xfce 4"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:277
 msgid "Xfce Desktop Environment"
 msgstr "סביבת העבודה Xfce"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "זכויות יוצרים 2002-2004 שמורות לאוליבר פורדאן (Oliver Fourdan)"
 
-#. add pages
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:300
 msgid "Info"
 msgstr "מידע"
 
-#: xfce4-about/info.c:289
+#: xfce4-about/info.c:301
 msgid "Credits"
 msgstr "תודות"
 
-#: xfce4-about/info.c:290
+#: xfce4-about/info.c:302
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:303
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:304
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:305
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:271
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4 -אין אפשרות לכתוב היסוריה לקובץ %s\n"
 
-#: xfrun/xfrun.c:378
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr "עם איזו תכנה לפתוח את %s?"
+msgstr "עם איזו תוכנה לפתוח את %s?"
 
-#: xfrun/xfrun.c:379
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "הרץ תוכנית"
 
-#: xfrun/xfrun.c:387
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "_הרץ"
 
-#: xfrun/xfrun.c:417
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "הרץ ב_מסוף"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:277
-#: xftaskbar/plugin/xftaskbar_plugin.c:284
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
 msgid "Taskbar"
 msgstr "שורת המשימות"
 
@@ -177,28 +175,24 @@ msgstr "הצג את _מגש המערכת בשורת המשימות"
 msgid "Cannot get initial style"
 msgstr "סגנון הפתיחה אינו זמין"
 
-#: xftaskbar/xftaskbar.c:260
+#: xftaskbar/xftaskbar.c:267
 msgid "There is already a system tray running on this screen"
 msgstr "מגש המערכת כבר פתוח בחלון זה"
 
-#: xftaskbar/xftaskbar.c:268
+#: xftaskbar/xftaskbar.c:275
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "אין אפשרות לרשום את מגש המערכת: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "דבר זה אינו אמור להתרחש"
-
-#: xftaskbar/xftaskbar.c:592
+#: xftaskbar/xftaskbar.c:603
 msgid "Cannot get default screen\n"
 msgstr "אין אפשרות לקבל את מסך ברירת המחדל\n"
 
-#: xftaskbar/xftaskbar.c:681
+#: xftaskbar/xftaskbar.c:692
 msgid "Cannot connect to session manager"
 msgstr "אין אפשרות להתחבר למנהל ההפעלה"
 
-#: xftaskbar/xftaskbar.c:694
+#: xftaskbar/xftaskbar.c:705
 msgid "Cannot create MCS client channel"
 msgstr "אין אפשרות ליצור ערוץ לקוח MCS"
 
