@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2003-07-10 10:25+0200\n"
-"PO-Revision-Date: 2003-07-05 16:05+0100\n"
-"Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
+"PO-Revision-Date: 2003-07-15 22:15+0100\n"
+"Last-Translator: Carles MuNoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -104,7 +104,7 @@ msgstr "Alçada:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
-msgstr "Petit"
+msgstr "Menut"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Large"
@@ -132,7 +132,7 @@ msgstr "Àrea de notificacions"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
-msgstr "Mostra la safata del sitema a la batrra de tasques"
+msgstr "Mostra la safata del sistema a la barra de tasques"
 
 #: xftaskbar/xftaskbar.c:125
 msgid "Cannot get initial style"
@@ -153,7 +153,7 @@ msgstr "Això no hauria de succeir"
 
 #: xftaskbar/xftaskbar.c:428
 msgid "Cannot connect to session manager"
-msgstr "No es pot conectar al gestor de sessions"
+msgstr "No es pot connectar al gestor de sessions"
 
 #: xftaskbar/xftaskbar.c:441
 msgid "Cannot get desktop margins"
@@ -162,3 +162,4 @@ msgstr "No es pot obtenir els marges de l'escriptori"
 #: xftaskbar/xftaskbar.c:513
 msgid "Cannot create MCS client channel"
 msgstr "No es pot crear el canal del client MCS"
+
