@@ -6,6 +6,12 @@ xftaskbar_plugin_la_LDFLAGS =						\
 	-avoid-version							\
 	-module
 
+if HAVE_CYGWIN
+xftaskbar_plugin_la_LDFLAGS +=                                          \
+	-no-undefined                                                   \
+	-export-symbols $(datadir)/xfce4/devel/mcs-manager.def
+endif
+
 xftaskbar_plugin_la_SOURCES =						\
 	xftaskbar_plugin.c
 
