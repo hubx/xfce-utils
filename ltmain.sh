@@ -44,7 +44,7 @@ EXIT_FAILURE=1
 PROGRAM=ltmain.sh
 PACKAGE=libtool
 VERSION=1.5.6
-TIMESTAMP=" (1.1220.2.95 2004/04/11 05:50:42)"
+TIMESTAMP=" (1.1220.2.95 2004/04/11 05:50:42) Debian$Rev: 215 $"
 
 
 # Check that we have a working $echo.
@@ -1838,7 +1838,10 @@ EOF
 	case $pass in
 	dlopen) libs="$dlfiles" ;;
 	dlpreopen) libs="$dlprefiles" ;;
-	link) libs="$deplibs %DEPLIBS% $dependency_libs" ;;
+	link)
+	  libs="$deplibs %DEPLIBS%"
+	  test "X$link_all_deplibs" != Xno && libs="$libs $dependency_libs"
+	  ;;
 	esac
       fi
       if test "$pass" = dlopen; then
@@ -2930,6 +2933,11 @@ EOF
 	    age="$number_minor"
 	    revision="$number_minor"
 	    ;;
+	  *)
+	    $echo "$modename: unknown library version type \`$version_type'" 1>&2
+	    $echo "Fatal configuration error.  See the $PACKAGE docs for more information." 1>&2
+	    exit $EXIT_FAILURE
+	    ;;
 	  esac
 	  ;;
 	no)
@@ -2941,7 +2949,7 @@ EOF
 
 	# Check that each of the things are valid numbers.
 	case $current in
-	[0-9]*) ;;
+	0 | [1-9] | [1-9][0-9] | [1-9][0-9][0-9]) ;;
 	*)
 	  $echo "$modename: CURRENT \`$current' is not a nonnegative integer" 1>&2
 	  $echo "$modename: \`$vinfo' is not valid version information" 1>&2
@@ -2950,7 +2958,7 @@ EOF
 	esac
 
 	case $revision in
-	[0-9]*) ;;
+	0 | [1-9] | [1-9][0-9] | [1-9][0-9][0-9]) ;;
 	*)
 	  $echo "$modename: REVISION \`$revision' is not a nonnegative integer" 1>&2
 	  $echo "$modename: \`$vinfo' is not valid version information" 1>&2
@@ -2959,7 +2967,7 @@ EOF
 	esac
 
 	case $age in
-	[0-9]*) ;;
+	0 | [1-9] | [1-9][0-9] | [1-9][0-9][0-9]) ;;
 	*)
 	  $echo "$modename: AGE \`$age' is not a nonnegative integer" 1>&2
 	  $echo "$modename: \`$vinfo' is not valid version information" 1>&2

@@ -285,6 +285,9 @@ main (int argc, char **argv)
     gtk_box_pack_start (GTK_BOX (vbox), notebook, TRUE, TRUE, 0);
 
     /* add pages */
+#ifdef VENDOR_INFO
+    add_page (GTK_NOTEBOOK (notebook), VENDOR_INFO, VENDOR_INFO, FALSE);
+#endif
     add_page (GTK_NOTEBOOK (notebook), _("Info"), XFCE_INFO, FALSE);
     add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
     add_page (GTK_NOTEBOOK (notebook), _("Copyright"), XFCE_COPYRIGHT, TRUE);

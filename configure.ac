@@ -10,7 +10,7 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.3])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.4])
 
 AM_CONFIG_HEADER([config.h])
 
@@ -71,11 +71,11 @@ BM_I18N([xfce-utils], [ar az bg ca cs de es es_MX eu fa_IR fi fr hi hu it ja ko 
 	 ms nl pl pt_BR pt_PT ru sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
-BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.0.0])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.26])
+BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.1.3])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.27])
 
 dnl configure the mcs plugin
-XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.0.0])
+XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.1.3])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
@@ -89,6 +89,18 @@ BM_DEPEND_CHECK([LIBDBH], [dbh-1.0], [1.0],
 
 dnl Check for debugging support
 BM_DEBUG_SUPPORT
+
+dnl Check for vendor specific information
+AC_MSG_CHECKING([for additional vendor info])
+AC_ARG_WITH([vendor-info],
+AC_HELP_STRING([--with-vendor-info=FILE], [Specify an additional file that should be displayed in the about dialog]),
+  [], [with_vendor_info=])
+if test x"$with_vendor_info" != x""; then
+  AC_DEFINE_UNQUOTED([VENDOR_INFO], ["$with_vendor_info"], [Additional vendor info])
+  AC_MSG_RESULT([$with_vendor_info])
+else
+  AC_MSG_RESULT([none])
+fi
 
 AC_OUTPUT([
 xfce-utils.spec
