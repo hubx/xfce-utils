@@ -30,7 +30,7 @@
   Xavier Maillard <zedek@fxgsproject.org>
 
 Хостинг сайта и списков рассылок
-  Chuck Mead <csm@MoonGroup.com>
+   Remco Lubbers - WebAdept (www.web-adept.nl - remco at web-adept.nl)
 
 Переводчики
   Abbas Izad (fa) <abbasizad@hotmail.com>

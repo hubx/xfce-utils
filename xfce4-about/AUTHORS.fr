@@ -30,7 +30,7 @@ Contributeurs
   Xavier Maillard <zedek@fxgsproject.org>
 
 Hébergement du site et listes de diffusions fournis par
-  Chuck Mead <csm@MoonGroup.com>
+   Remco Lubbers - WebAdept (www.web-adept.nl - remco at web-adept.nl)
 
 Traducteurs
   Abbas Izad (fa) <abbasizad@hotmail.com>

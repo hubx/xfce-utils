@@ -30,7 +30,7 @@ Contribuidores
   Xavier Maillard <zedek@fxgsproject.org>
 
 'Web Hosting' y Listas de Correo proporcionadas por
-  Chuck Mead <csm@MoonGroup.com>
+   Remco Lubbers - WebAdept (www.web-adept.nl - remco at web-adept.nl)
 
 Traductores
   Abbas Izad (fa) <abbasizad@hotmail.com>
