@@ -230,7 +230,7 @@ static void taskbar_toggle_tray(Taskbar *taskbar)
 	    taskbar->tray_registered = register_tray(taskbar);
 	}
 
-	taskbar->iconbox = gtk_hbox_new(TRUE, 3);
+	taskbar->iconbox = gtk_hbox_new(TRUE, 7);
 	gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
 			   FALSE, FALSE,0);
 	gtk_widget_show (taskbar->iconbox);
@@ -405,19 +405,8 @@ int main(int argc, char **argv)
     int left, right;
     gboolean use_xinerama;
 
-#if 0
-#ifdef ENABLE_NLS
-    /* This is required for UTF-8 at least - Please don't remove it */
-    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-#ifdef HAVE_BIND_TEXTDOMAIN_CODESET
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-#endif
-    textdomain (GETTEXT_PACKAGE);
-#endif
-#else
     /* This is required for UTF-8 at least - Please don't remove it */
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
-#endif
 
     gtk_init(&argc, &argv);
 
