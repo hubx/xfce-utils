@@ -9,48 +9,46 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2003-08-02 03:36+0900\n"
+"PO-Revision-Date: 2004-11-24 15:08+0900\n"
 "Last-Translator: ByungHyun Choi<byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
-#, fuzzy
+#: xfce4-about/info.c:263
 msgid "About Xfce 4"
 msgstr "XFce 4에 대하여"
 
-#: xfce4-about/info.c:268
-#, fuzzy
+#: xfce4-about/info.c:278
 msgid "Xfce Desktop Environment"
 msgstr "XFce 데스크탑 환경"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:279
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr ""
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:301
 msgid "Info"
 msgstr "정보"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:302
 msgid "Credits"
 msgstr "만든 사람들..."
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:303
 msgid "Copyright"
-msgstr ""
+msgstr "저작권"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:304
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:305
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:306
 msgid "GPL"
 msgstr ""
 
@@ -62,7 +60,7 @@ msgstr "xfrun4: 화일 %s에 사용이력를 기록할 수 없습니다.\n"
 #: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "%s을(를) 어떤 프로그램으로 열어 볼까요?"
 
 #: xfrun/xfrun.c:429
 msgid "Run program"
@@ -87,39 +85,36 @@ msgid "Position"
 msgstr "위치"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "맨위"
+msgstr "맨위(_T)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "아래"
+msgstr "아래(_B)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "배치"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "왼쪽(_L)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "가운데(_C)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "오른쪽(_R)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "자동 숨기기"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "자동 숨김"
+msgstr "태스크바 자동 숨김(_h)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -141,42 +136,39 @@ msgstr "크게"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "폭:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "태스크"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "모든 작업공간의 태스크 보이기"
+msgstr "모든 작업공간의 태스크 보이기(_a)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "같은 태스크는 한 군데로 모으기(_g) "
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "프로그램 이름 보이기(_n)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "페이저"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "태스크바에 보이기"
+msgstr "태스크바에 페이저 보이기(_p)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "알림 영역"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "트레이에 보이기"
+msgstr "태스크바에 시스템 트레이 보이기(_s)"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -193,12 +185,11 @@ msgstr "시스템 트레이에 %s를(을) 등록하지 못 했습니다."
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "이런 일이 생겨서는 안됩니다."
+msgstr "이런 일은 생겨서는 안됩니다."
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "데스크탑 여백을 확복하지 못 했습니다."
+msgstr "데스크탑 여백을 확보하지 못 했습니다.\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
