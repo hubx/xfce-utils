@@ -166,6 +166,10 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
      * users's home dir with the same name as an executable,
      * e.g. evolution */
     path = g_find_program_in_path(cmd);
+    if (path && g_file_test (path, G_FILE_TEST_IS_DIR)){
+	g_free(path);
+	path=NULL;
+    }
         
     /* open directory in terminal or file manager */
     if (g_file_test (cmd, G_FILE_TEST_IS_DIR) && !path)
@@ -187,7 +191,6 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
 	g_free(execute);
 	execute=g;
     }
-
     g_free(path);
     success = exec_command(execute);
     g_free(execute);
@@ -202,7 +205,7 @@ static char *get_fileman(void)
     if (var && strlen(var))
 	return g_strdup(var);
     else
-	return g_strdup("xffm");	    
+	return g_strdup("xftree4");	    
 }
 
 GList *get_history(void)
