@@ -94,6 +94,7 @@ doc/Makefile
 doc/index/Makefile
 doc/index/C/Makefile
 doc/index/fr/Makefile
+doc/index/it/Makefile
 doc/xfce-utils/Makefile
 doc/xfce-utils/C/Makefile
 doc/xfce-utils/C/images/Makefile

@@ -1,4 +1,5 @@
 SUBDIRS = \
 	C \
-	fr
+	fr \
+	it
 
