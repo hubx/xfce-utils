@@ -35,23 +35,23 @@ msgstr "Info"
 
 #: xfce4-about/info.c:240
 msgid "Credits"
-msgstr "Crditos"
+msgstr "Créditos"
 
 #: xfce4-about/info.c:241
 msgid "Copyright"
-msgstr ""
+msgstr "Derechos de autor"
 
 #: xfce4-about/info.c:242
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:243
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:244
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -86,7 +86,7 @@ msgstr "Abajo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:249
 msgid "Position"
-msgstr "Posicin"
+msgstr "Posición"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:259
 msgid "Auto hide taskbar"
@@ -102,7 +102,7 @@ msgstr "Altura :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:287
 msgid "Small"
-msgstr "Pequeo"
+msgstr "Pequeño"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Large"
@@ -110,7 +110,7 @@ msgstr "Grande"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
-msgstr "Tamao"
+msgstr "Tamaño"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:332
 msgid "Show tasks from all workspaces"
@@ -134,7 +134,7 @@ msgstr "Mostrar la bandeja de iconos en la barra de tareas"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:367
 msgid "Notification area"
-msgstr "rea de notificacin"
+msgstr "Área de notificación"
 
 #: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
@@ -142,7 +142,7 @@ msgstr "No se puede obtener estilo inicial"
 
 #: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
-msgstr "Ya hay una bandeja de iconos funcionando en esta pantalla"
+msgstr "Ya hay una bandeja de íconos funcionando en esta pantalla"
 
 #: xftaskbar/xftaskbar.c:207
 #, c-format
@@ -151,7 +151,7 @@ msgstr "Imposible registrar la bandeja de iconos: %s"
 
 #: xftaskbar/xftaskbar.c:317
 msgid "This should not happen"
-msgstr "Esto no debiera ocurrir"
+msgstr "Esto no debe ocurrir"
 
 #: xftaskbar/xftaskbar.c:414
 msgid "Cannot connect to session manager"
@@ -159,7 +159,7 @@ msgstr "No se puede conectar con el administrador de sesiones"
 
 #: xftaskbar/xftaskbar.c:425
 msgid "Cannot get desktop margins"
-msgstr "No se pueden obtener los mrgenes del escritorio"
+msgstr "No se pueden obtener los márgenes del escritorio"
 
 #: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
