@@ -16,9 +16,6 @@
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 */
 
-#include <gtk/gtk.h>
-#include <xfce4/libxfcegui4/libxfcegui4.h>
-#include <gdk/gdkx.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,6 +23,9 @@
 #include <X11/Xatom.h>
 #include <time.h>
 #include <sys/wait.h>
+#include <gtk/gtk.h>
+#include <gdk/gdkx.h>
+#include <libxfcegui4/libxfcegui4.h>
 
 #include "icons/xfbd_icon.xpm"
 

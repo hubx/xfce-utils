@@ -1,6 +1,6 @@
 
-#include <libxfcegui4.h>
 #include <gtk/gtk.h>
+#include <libxfcegui4/libxfcegui4.h>
 
 #define FIXED_HEIGHT 26
 
