@@ -183,11 +183,13 @@ about_DATA = \
 	AUTHORS.ca							\
 	AUTHORS.de							\
 	AUTHORS.fr							\
+	AUTHORS.vi							\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
 	AUTHORS.html.fr							\
 	AUTHORS.html							\
 	COPYING								\
+	COPYING.vi							\
 	COPYING.html							\
 	BSD								\
 	BSD.html							\
@@ -198,6 +200,7 @@ about_DATA = \
 	INFO								\
 	INFO.ca								\
 	INFO.fr								\
+	INFO.vi								\
 	INFO.html.ca							\
 	INFO.html.de							\
 	INFO.html.fr							\
