@@ -541,7 +541,7 @@
   <sect2 id="xfce4-getting-started">
     <title>Getting started</title>
 
-    <para>Use <application>startxfce4</application> to start an XFce sessioni,
+    <para>Use <application>startxfce4</application> to start an XFce session,
       which includes the panel, the window manager and the desktop manager. 
       All programs, or symbolic links to programs, in 
       <filename>~/Desktop/Autostart/</filename> will be run on startup.
