@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils.hi.po\n"
+"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"PO-Revision-Date: 2003-11-01 18:20+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
+"Language-Team: Hindi <indlinux-group@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "एक्सएफसीई 4 (XFce 4) के बारे में "
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "एक्सएफसीई डेस्कटॉप वातावरण"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "स्वत्वाधिकार 2002-2003 ओलिवियर फोरदन द्वारा"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "जानकारी"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "श्रेय"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "स्वत्वाधिकार"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "एलजीपीएल"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "जीपीएल"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "एक्सएफरन4 (xfrun4): फाइल %s में हिस्ट्री नहीं लिख सका\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "प्रोग्राम चलाएं"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "चलाएँ (_R)"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "टर्मिनल में चलाएं (_t)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "टास्कबार"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "स्थिति"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "ऊपर"
+
+# #-#-#-#-#  libgnomeprintui.HEAD.hi.po (libgnomeprintui )  #-#-#-#-#
+# libgnomeprintui/gnome-print-paper-selector.c:2013
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "नीचे"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "स्वतः छुपें"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "टास्कबार को स्वतः छुपाएँ "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "आकार"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr " ऊँचाई:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "छोटा"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "विशाल"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "टास्कस"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "सभी कार्यस्थान से टास्क दिखाएं"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "पेजर"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "टास्कबार में पेजर दिखाएं"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "नोटिफिकेशन क्षेत्र"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "टास्कबार में सिस्टम ट्रे दिखाएं"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "आरंभिक स्टाइल प्राप्त नहीं कर सका!"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "इस स्क्रीन पर पहले से ही सिस्टम ट्रे चल रहा है"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "सिस्टम ट्रे रजिस्टर करने में अक्षम: %s"
+
+#: xftaskbar/xftaskbar.c:385
+msgid "This should not happen"
+msgstr "ऐसा होना नहीं चाहिए"
+
+#: xftaskbar/xftaskbar.c:475
+msgid "Cannot connect to session manager"
+msgstr "सत्र प्रबंधक से जुड़ नहीं सकता"
+
+#: xftaskbar/xftaskbar.c:488
+msgid "Cannot get desktop margins"
+msgstr "डेस्कटॉप हाशिया प्राप्त नहीं कर सका"
+
+#: xftaskbar/xftaskbar.c:564
+msgid "Cannot create MCS client channel"
+msgstr " MCS क्लाएंट चैनल नहीं बना सकता"

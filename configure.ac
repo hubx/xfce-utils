@@ -7,7 +7,7 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.0.0])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.0])
 
 AM_CONFIG_HEADER([config.h])
 
@@ -65,7 +65,7 @@ if test x"$enable_gdm" = x"yes"; then
 fi
 
 dnl Check for i18n support
-BM_I18N([xfce-utils], [ca de es es_MX fi fr hu it ja ko lt ms nl pl pt_PT ru
+BM_I18N([xfce-utils], [ca de es es_MX fi fr hi hu it ja ko lt ms nl pl pt_PT ru
 	 sv ta tr vi zh_CN zh_TW])
 
 dnl Check for required packages
