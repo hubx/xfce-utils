@@ -1,138 +1,138 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Xfce4-utils German translation
+# Copyright (C) 2003 Olivier Fourdan
+# This file is distributed under the same license as the xfce-mcs-manager package.
+# Moritz Heiber <mistermoe@hackerboard.de>, 2003
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-04-25 00:00+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: xfce-utils 1.0.0\n"
+"POT-Creation-Date: 2003-04-24 23:55+0100\n"
+"PO-Revision-Date: 2003-04-25 00:30+0100\n"
+"Last-Translator: Moritz Heiber <mistermoe@hackerboard.de>\n"
+"Language-Team: none <none@none>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:181
 msgid "About XFce 4"
-msgstr ""
+msgstr "Über XFce 4"
 
 #: xfce4-about/info.c:194
 msgid "XFce Desktop Environment"
-msgstr ""
+msgstr "XFce Desktop Umgebung"
 
 #: xfce4-about/info.c:195
 msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr ""
+msgstr "Copyright 2002-2003 by Olivier Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:214
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: xfce4-about/info.c:215
 msgid "Credits"
-msgstr ""
+msgstr "Credits"
 
 #: xfce4-about/info.c:216
 msgid "License"
-msgstr ""
+msgstr "Lizenz"
 
 #: xfrun/xfrun.c:222
 msgid "Run program"
-msgstr ""
+msgstr "Programm ausführen"
 
 #: xfrun/xfrun.c:229
 msgid "_Run"
-msgstr ""
+msgstr "_Ausführen"
 
 #: xfrun/xfrun.c:265
 msgid "Run in _terminal"
-msgstr ""
+msgstr "In _Terminal ausführen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:210
 #: xftaskbar/plugin/xftaskbar_plugin.c:217
 #: xftaskbar/plugin/xftaskbar_plugin.c:409
 msgid "Taskbar"
-msgstr ""
+msgstr "Taskbar"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:239
 msgid "Top"
-msgstr ""
+msgstr "Oben"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:246
 msgid "Bottom"
-msgstr ""
+msgstr "Unten"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Position"
-msgstr ""
+msgstr "Position"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:263
 msgid "Auto hide taskbar"
-msgstr ""
+msgstr "Taskbar automatisch ausblenden"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:268
 msgid "Autohide"
-msgstr ""
+msgstr "Ausblenden"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:283
 msgid "Height :"
-msgstr ""
+msgstr "Höhe :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:291
 msgid "<small><i>Small</i></small>"
-msgstr ""
+msgstr "<small><i>Klein</i></small>"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:300
 msgid "<small><i>Large</i></small>"
-msgstr ""
+msgstr "<small><i>Groß</i></small>"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:332
 msgid "Show tasks from all workspaces"
-msgstr ""
+msgstr "Sämtliche Tasks anzeigen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:337
 msgid "Tasks"
-msgstr ""
+msgstr "Tasks"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:347
 msgid "Show pager in taskbar"
-msgstr ""
+msgstr "Pager in Taskbar anzeigen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:352
 msgid "Pager"
-msgstr ""
+msgstr "Pager"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:362
 msgid "Show system tray in taskbar"
-msgstr ""
+msgstr "Systemtray in Taskbar anzeigen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:367
 msgid "Notification area"
-msgstr ""
+msgstr "Status Icons"
 
 #: xftaskbar/xftaskbar.c:118
 msgid "Cannot get initial style"
-msgstr ""
+msgstr "Kann Eingangsstil nicht finden"
 
 #: xftaskbar/xftaskbar.c:277
 msgid "This should not happen"
-msgstr ""
+msgstr "Das sollte nicht passieren"
 
 #: xftaskbar/xftaskbar.c:360
 msgid "Cannot connect to session manager"
-msgstr ""
+msgstr "Keinen Session Manager gefunden"
 
 #: xftaskbar/xftaskbar.c:371
 msgid "Cannot get desktop margins"
-msgstr ""
+msgstr "Keine Rändereinstellung finden"
 
 #: xftaskbar/xftaskbar.c:454
 msgid "Cannot create MCS client channel"
-msgstr ""
+msgstr "Kann MCS client nicht erstellen"
