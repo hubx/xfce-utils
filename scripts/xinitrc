@@ -51,13 +51,21 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 # Launch xscreensaver (if available), but only as non-root user
 test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
 
+# Use ssh-agent if installed
+sshagent=`which ssh-agent`
+case "x$sshagent" in
+	xno*)
+		unset sshagent
+		;;
+esac
+
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
 case "x$xfcesm" in
 	x|xno*)
 		;;
 	*)
-		exec $xfcesm
+		exec $sshagent $xfcesm
 		# Shouldn't get there, but anyway...
 		exit
 		;;
@@ -67,6 +75,10 @@ esac
 xsetroot -solid black -cursor_name watch
 
 # or use old-fashioned startup script otherwise
+
+# Start ssh-agent if available
+test -n "$sshagent" && eval `$sshagent`
+
 xfce-mcs-manager
 xfwm4 --daemon
 
