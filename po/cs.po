@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2003-09-22 21:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2003-11-15 HO:MI+ZONE\n"
 "Last-Translator: Lukas Konarovsky <daeltar@daeltar.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgstr "Úlohy"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
-msgstr "Ukázovat úlohy ze všech ploch"
+msgstr "Ukazovat úlohy ze všech ploch"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
@@ -154,11 +154,11 @@ msgstr "Toto se nikdy nestane"
 
 #: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
-msgstr "Cannot connect to session manager"
+msgstr "Nemohu se připojit ke správci session"
 
 #: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
-msgstr "Cannot get desktop margins"
+msgstr "Nemohu získat okraje plochy"
 
 #: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
