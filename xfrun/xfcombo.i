@@ -22,12 +22,18 @@
 #include <gmodule.h>
 #include <dbh.h>
 
-typedef struct _xfc_combo_info_t xfc_combo_info_t;
-
+/* these should coincide with defined in xffm/libs/constants.h
+ * so that the dbh files are shared...
+ * */
 #define CURRENT_RUNFLAG "xffm.runflag.2.dbh"
 #define CURRENT_RUN_HISTORY "xffm.runlist.2.dbh"
 #define RUN_FLAG_FILE g_get_home_dir(),"/.xfce4/xffm/",CURRENT_RUNFLAG
 #define RUN_DBH_FILE g_get_home_dir(),"/.xfce4/xffm/",CURRENT_RUN_HISTORY
+
+/* These structures should be a verbatim copy of combo.h from the xfce4-modules
+ * directory. It should be copied here to permit compilation if
+ * xfce4-modules source directory is not available */
+typedef struct _xfc_combo_info_t xfc_combo_info_t;
 
 struct _xfc_combo_info_t{
     GtkCombo 	*combo;  
@@ -60,6 +66,8 @@ struct _xfc_combo_functions {
     gpointer	extra_key_data;
 };
 
+/* These are convenience macros to allow calling a function
+ * without keeping track of function pointers. */
 #define XFC_is_in_history (*(load_xfc()->xfc_is_in_history))
 #define XFC_set_combo (*(load_xfc()->xfc_set_combo))
 #define XFC_set_blank (*(load_xfc()->xfc_set_blank))
@@ -149,26 +157,6 @@ xfc_combo_functions *load_xfc(void){
     
     xfc_fun = (*module_init)();
  
-    if (
-       !g_module_symbol (xfc_cm, "xfc_is_in_history",(gpointer *) &(xfc_fun->xfc_is_in_history))  ||
-       !g_module_symbol (xfc_cm, "xfc_set_combo", (gpointer *) &(xfc_fun->xfc_set_combo)) ||
-       !g_module_symbol (xfc_cm, "xfc_set_blank", (gpointer *) &(xfc_fun->xfc_set_blank)) ||
-       !g_module_symbol (xfc_cm, "xfc_set_entry", (gpointer *) &(xfc_fun->xfc_set_entry)) ||
-       !g_module_symbol (xfc_cm, "xfc_save_to_history", (gpointer *) &(xfc_fun->xfc_save_to_history)) ||
-       !g_module_symbol (xfc_cm, "xfc_remove_from_history", (gpointer *) &(xfc_fun->xfc_remove_from_history)) ||
-       !g_module_symbol (xfc_cm, "xfc_read_history", (gpointer *) &(xfc_fun->xfc_read_history)) ||
-       !g_module_symbol (xfc_cm, "xfc_clear_history", (gpointer *) &(xfc_fun->xfc_clear_history)) ||
-       !g_module_symbol (xfc_cm, "xfc_init_combo", (gpointer *) &(xfc_fun->xfc_init_combo)) ||
-       !g_module_symbol (xfc_cm, "xfc_destroy_combo", (gpointer *) &(xfc_fun->xfc_destroy_combo)) ||
-       !g_module_symbol (xfc_cm, "xfc_init_combo", (gpointer *) &(xfc_fun->xfc_init_combo)) ||
-       !g_module_symbol (xfc_cm, "xfc_destroy_combo", (gpointer *) &(xfc_fun->xfc_destroy_combo)) 
-   	     ) {
-	/*g_error("g_module_symbol() != FALSE\n");*/
-        /*exit(1);*/
-    	g_free(library);
-    	g_free(module);
-	return NULL;
-    }
 #ifdef DEBUG
     g_message ("module %s successfully loaded", library);	    
 #endif
