@@ -7,9 +7,9 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_CONFIG_HEADER([config.h])
+AM_INIT_AUTOMAKE([xfce-utils], [3.90.0])
 
-AM_INIT_AUTOMAKE([xfce-utils], [3.90])
+AM_CONFIG_HEADER([config.h])
 
 AM_MAINTAINER_MODE
 
