@@ -599,7 +599,7 @@ static void create_channel(McsPlugin * mcs_plugin)
     }
     else
     {
-        width_percent = DEFAULT_HEIGHT;
+        width_percent = DEFAULT_WIDTH_PERCENT;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/WidthPercent", CHANNEL, width_percent);
     }
 }
