@@ -16,6 +16,7 @@ xfce4_about_SOURCES =							\
 xfce4_about_CFLAGS =							\
 	@LIBGTKHTML_CFLAGS@						\
 	@LIBXFCEGUI4_CFLAGS@						\
+	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"				\
 	-DDATADIR=\"$(datadir)/xfce4\"
 
 xfce4_about_LDADD =							\

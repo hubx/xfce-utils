@@ -172,6 +172,13 @@ main(int argc, char **argv)
     GdkPixbuf *logo_pb;
     char *text;
 
+#ifdef ENABLE_NLS
+    /* This is required for UTF-8 at least - Please don't remove it */
+    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+#endif
+
     gtk_init(&argc, &argv);
 
     /* XXX - We could use a GtkDialog instead here, since this is

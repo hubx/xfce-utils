@@ -2,6 +2,6 @@ TODO for xfce-utils
 ===================
 * change dialogs to instant-apply if possible
 * use new gnome button order
-* add gettext framework
+* add gettext framework (DONE)
 * add docs
-* update auto*/libtool stuff
+* update auto*/libtool stuff (DONE)

@@ -13,6 +13,7 @@ xftaskbar_plugin_la_SOURCES =						\
 
 xftaskbar_plugin_la_CFLAGS = 						\
 	@XFCE_MCS_MANAGER_CFLAGS@ 					\
+	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"				\
 	-DSYSCONFDIR=\"$(sysconfdir)\"					\
 	-DDATADIR=\"$(pkgdatadir)\" 
 

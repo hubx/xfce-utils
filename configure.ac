@@ -52,6 +52,9 @@ AC_ARG_WITH(gdm-prefix,
 AC_MSG_RESULT($GDM_PREFIX)
 AC_SUBST(GDM_PREFIX)
 
+dnl Check for i18n support
+BM_I18N([xfce-utils], [de])
+
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [0.0.3])
 BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [0.0.19])
@@ -67,6 +70,7 @@ BM_DEBUG_SUPPORT
 AC_OUTPUT([
 xfce-utils.spec
 Makefile
+po/Makefile.in
 doc/Makefile
 doc/images/Makefile
 doc/html/Makefile
