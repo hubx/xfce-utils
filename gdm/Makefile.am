@@ -6,8 +6,8 @@ dmsession_prefix  = "$(gdm_prefix)/dm/Sessions"
 gdmsession_prefix = "$(gdm_prefix)/gdm/Sessions"
 
 noinst_DATA = $(xfce_FILES)
-xfce_SOURCE = XFce4.in Xclients.xfce4.in 10XFce4.in
-xfce_FILES = XFce4 Xclients.xfce4 10XFce4 xfce.desktop
+xfce_SOURCE = XFce4.in Xclients.xfce4.in 10XFce4.in xfce.desktop
+xfce_FILES = XFce4 Xclients.xfce4 10XFce4
 EXTRA_DIST = $(xfce_SOURCE)
 DISTCLEANFILES = $(xfce_FILES)
 
