@@ -72,8 +72,6 @@ LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LIBTOOL = @LIBTOOL@
-
-LIBTOOL_DEPS = @LIBTOOL_DEPS@
 LIBXFCE4MCS_REQUIRED_VERSION = @LIBXFCE4MCS_REQUIRED_VERSION@
 LIBXFCEGUI4_REQUIRED_VERSION = @LIBXFCEGUI4_REQUIRED_VERSION@
 LN_S = @LN_S@
@@ -562,8 +560,6 @@ distclean-local:
 rpm: dist
 	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz
 	@rm -f $(PACKAGE)-$(VERSION).tar.gz
-libtool: $(LIBTOOL_DEPS)
-	$(SHELL) ./config.status --recheck
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
