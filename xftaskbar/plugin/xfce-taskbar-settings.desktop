@@ -2,10 +2,12 @@
 Encoding=UTF-8
 Name=Xfce 4 Taskbar Settings
 Name[fr]=Paramètres de la barre de tâches Xfce 4
+Name[he]=הגדרות שורת המשימות Xfce 4
 Name[nl]=Instellingen Xfce 4 Taakbalk
 Name[zh_TW]=Xfce 4 工作列設定
 Comment=Taskbar Settings
 Comment[fr]=Paramétrage de la barre de tâches
+Comment[he]=הגדרות שורת המשימות
 Comment[nl]=Instellingen voor de taakbalk
 Comment[zh_TW]=設定 Xfce 4 的工作列
 Exec=xfce-setting-show taskbar
