@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2004-11-13 19:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,39 +16,39 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:263
 msgid "About Xfce 4"
 msgstr ""
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:278
 msgid "Xfce Desktop Environment"
 msgstr ""
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:279
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr ""
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:301
 msgid "Info"
 msgstr ""
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:302
 msgid "Credits"
 msgstr ""
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:303
 msgid "Copyright"
 msgstr ""
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:304
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:305
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:306
 msgid "GPL"
 msgstr ""
 
