@@ -1,4 +1,5 @@
 <html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <body>
     <h3>Capo progetto</h3>
 
@@ -47,43 +48,47 @@
 
     <h3>Traduttori</h3>
 
-    <ul>
-      <li>Abbas Izad &lt;<a href="mailto:abbasizad@hotmail.com">abbasizad@hotmail.com</a>&gt;</li>
-      <li>Alex Dupre (it) &lt;<a href="mailto:ale@FreeBSD.org">ale@FreeBSD.org</a>&gt;</li>
-      <li>ByungHyun Choi &lt;<a href="mailto:byunghyunchoi@rtlinux.or.kr">byunghyunchoi@rtlinux.or.kr</a>&gt;</li>
-      <li>Carles Mu&ntilde;oz Gorriz &lt;<a href="mailto:carlesmu@internautas.org">carlesmu@internautas.org</a>&gt;</li>
-      <li>Dan Korostelev &lt;<a href="mailto:digger_temp@netman.ru">digger_temp@netman.ru</a>&gt;</li>
-      <li>Davide D'Amico &lt;<a href="mailto:dave@gufi.org">dave@gufi.org</a>&gt;</li>
-      <li>Dinesh Nadarajah &lt;<a href="mailto:n_dinesh@yahoo.com">n_dinesh@yahoo.com</a>&gt;</li>
-      <li>Duarte Henriques &lt;<a href="mailto:duarte_henriques@myrealbox.com">duarte_henriques@myrealbox.com</a>&gt;</li>
-      <li>Egmont Koblinger &lt;<a href="mailto:egmont@uhulinux.hu">egmont@uhulinux.hu</a>&gt;</li>
-      <li>Er&ccedil;in EKER &lt;<a href="mailto:erc.caldera@gmx.net">erc.caldera@gmx.net</a>&gt;</li>
-      <li>G Karunakar &lt;<a href="mailto:karunakar@freedomink.org">karunakar@freedomink.org</a>&gt;</li>
-      <li>Harun Musa &lt;<a href="mailto:mharun@gmx.net">mharun@gmx.net</a>&gt;</li>
-      <li>Ilkka Ollakka (fi) &lt;<a href="mailto:ilkka.j.ollakka@students.oamk.fi">ilkka.j.ollakka@students.oamk.fi</a>&gt;</li>
-      <li>Jaime Buffery &lt;<a href="mailto:nestu@onlylinux.homelinux.net">nestu@onlylinux.homelinux.net</a>&gt;</li>
-      <li>Joakim Andreasson &lt;<a href="mailto:joakim.andreasson@gmx.net">joakim.andreasson@gmx.net</a>&gt;</li>
-      <li>Johan Hammar &lt;<a href="mailto:johan.hammar@swipnet.se">johan.hammar@swipnet.se</a>&gt;</li>
-      <li>Lam Vinh Nien &lt;<a href="mailto:nienvl@yahoo.ca">nienvl@yahoo.ca</a>&gt;</li>
-      <li>Lukas Konarovsky &lt;<a href="mailto:daeltar@daeltar.org">daeltar@daeltar.org</a>&gt;</li>
-      <li>Marie-Claude Collilieux &lt;<a href="mailto:m.collilieux@free.fr">m.collilieux@free.fr</a>&gt;</li>
-      <li>Maxim Dziumanenko &lt;<a href="mailto:mvd@mylinux.com.ua">mvd@mylinux.com.ua</a>&gt;</li>
-      <li>Miroslav Yordanov &lt;<a href="mailto:miordanov@i-space.org">miordanov@i-space.org</a>&gt;</li>
-      <li>Moritz Heiber (de) &lt;<a href="mailto:moe@lunar-linux.org">moe@lunar-linux.org</a>&gt;</li>
-      <li>Nabil Ben Khalifa &lt;<a href="mailto:nabil_benkhalifa@yahoo.fr">nabil_benkhalifa@yahoo.fr</a>&gt;</li>
-      <li>Nuno Donato &lt;<a href="mailto:nunodonato@sapo.pt">nunodonato@sapo.pt</a>&gt;</li>
-      <li>Pawel Pastula &lt;<a href="mailto:pastulap@poczta.onet.pl">pastulap@poczta.onet.pl</a>&gt;</li>
-      <li>Peter Slavov &lt;<a href="mailto:peshka@i-space.org">peshka@i-space.org</a>&gt;</li>
-      <li>Peter Somogyi &lt;<a href="mailto:jerry@gnu.hu">jerry@gnu.hu</a>&gt;</li>
-      <li>Ravishankar Shrivastava &lt;<a href="mailto:raviratlami@yahoo.com">raviratlami@yahoo.com</a>&gt;</li>
-      <li>Saleh Hathal &lt;<a href="mailto:hathalsal@hotmail.com">hathalsal@hotmail.com</a>&gt;</li>
-      <li>tximas &lt;<a href="mailto:a_gomez@mipagina.zzn.com">a_gomez@mipagina.zzn.com</a>&gt;</li>
-      <li>umm &lt;<a href="mailto:umm@pchome.com.tw">umm@pchome.com.tw</a>&gt;</li>
-      <li>Yongtao Yang (zh_CN) &lt;<a href="mailto:yongtao.yang@teila.com">yongtao.yang@teila.com</a>&gt;</li>
-      <li>Yuval Tanny (he) &lt;<a href="mailto:tanai@int.gov.il">tanai@int.gov.il</a>&gt;</li>
-      <li>Zele Gabor &lt;<a href="mailto:zegab@axelero.hu">zegab@axelero.hu</a>&gt;</li>
-      <li>Zhao Ji &lt;<a href="mailto:zhao-ji@awz.ne.jp">zhao-ji@awz.ne.jp</a>&gt;</li>
-    </ul>
+    <table>
+      <tr><td><li>az : </li></td><td>Metin Amiroff &lt;<a href="mailto:metin@karegen.com">metin@karegen.com</a>&gt;</td></tr>
+      <tr><td><li>be : </li></td><td>Ales Nyakhaychyk &lt;<a href="mailto:nab@mail.by">nab@mail.by</a>&gt;</td></tr>
+      <tr><td><li>cs : </li></td><td>Alois Nespor &lt;<a href="mailto:Alois.Nespor@seznam.cz">Alois.Nespor@seznam.cz</a>&gt;</td></tr>
+      <tr><td><li>de : </li></td><td>Moritz Heiber &lt;<a href="mailto:moe@xfce.org">moe@xfce.org</a>&gt;</td></tr>
+      <tr><td><li>en_GB : </li></td><td>Dwayne Bailey &lt;<a href="mailto:dwayne@translate.org.za">dwayne@translate.org.za</a>&gt;</td></tr>
+      <tr><td><li>es : </li></td><td>Jaime Buffery &lt;<a href="mailto:nestu@lunar-linux.org">nestu@lunar-linux.org</a>&gt;</td></tr>
+      <tr><td><li>es_MX : </li><td>Edscott Wilson Garcia &lt;<a href="mailto:edscott@imp.mx">edscott@imp.mx</a>&gt;</td></tr>
+      <tr><td><li>et : </li></td><td>Peeter Vois &lt;<a href="mailto:peeter.vois@proekspert.ee">peeter.vois@proekspert.ee</a>&gt;</td></tr>
+      <tr><td></td><td>Mart T&otilde;nso &lt;<a href="mailto:Mart.Tonso@ttu.ee">Mart.Tonso@ttu.ee</a>&gt;</td></tr>
+      <tr><td><li>eu : </li></td><td>Piarres Beobide Ega&ntilde;a &lt;<a href="mailto:pi@beobide.net">pi@beobide.net</a>&gt;</td></tr>
+      <tr><td><li>fa : </li></td><td>Abbas Izad &lt;<a href="mailto:abbasizad@hotmail.com">abbasizad@hotmail.com</a>&gt;</td></tr>
+      <tr><td><li>fi : </li></td><td>Ilkka Ollakka &lt;<a href="mailto:ilkka.j.ollakka@students.oamk.fi">ilkka.j.ollakka@students.oamk.fi</a>&gt;</td></tr>
+      <tr><td></td><td>Juha Kautto &lt;<a href="mailto:kautto.juha@kolumbus.fi">kautto.juha@kolumbus.fi</a>&gt;</td></tr>
+      <tr><td><li>fr : </li></td><td>Mickal Graf &lt;<a href="mailto:korbinus@linux.se">korbinus@linux.se</a>&gt;</td></tr>
+      <tr><td></td><td>Olivier Fourdan &lt;<a href="mailto:fourdan@xfce.org">fourdan@xfce.org</a>&gt;</td></tr>
+      <tr><td></td><td>Jean-Fran&ccedil;ois Wauthy &lt;<a href="mailto:pollux@xfce.org">pollux@xfce.org</a>&gt;</td></tr>
+      <tr><td><li>gu : </li></td><td>Ankit Patel &lt;<a href="mailto:ankit@redhat.com">ankit@redhat.com</a>&gt;</td></tr>
+      <tr><td><li>hi : </li></td><td>Ravi Shrivastava &lt;<a href="mailto:raviratlami@yahoo.com">raviratlami@yahoo.com</a>&gt;</td></tr>
+      <tr><td><li>he : </li></td><td>Dotan Kamber &lt;<a hre="mailto:kamberd@yahoo.com">kamberd@yahoo.com</a>&gt;</td></tr>
+      <tr><td></td><td>Jonatan Perry &lt;<a href="mailto:Jonatan443@walla.co.il">Jonatan443@walla.co.il</a>&gt;</td></tr>
+      <tr><td></td><td>Yuval Tanny &lt;<a href="mailto:tanai@int.gov.il">tanai@int.gov.il</a>&gt;</td></tr>
+      <tr><td><li>it : </li></td><td>Alex Dupre &lt;<a href="mailto:ale@FreeBSD.org">ale@FreeBSD.org</a>&gt;</td></tr>
+      <tr><td></td><td>Luca Marrocco &lt;<a href="mailto:buildup@liber.it">buildup@liber.it</a>&gt;</td></tr>
+      <tr><td><li>ko : </li></td><td>ByungHyun Choi &lt;<a href="mailto:byunghyunchoi@hotmail.com">byunghyunchoi@hotmail.com</a>&gt;</td></tr>
+      <tr><td><li>lt : </li></td><td>Mantas Zapolskas &lt;<a href="mailto:mantaz@users.sf.net">mantaz@users.sf.net</a>&gt;</td></tr>
+      <tr><td><li>nb_NO :</li></td><td>Eskild Hustvedt &lt;<a href="mailto:zerodogg@skolelinux.no">zerodogg@skolelinux.no</a>&gt;</td></tr>
+      <tr><td><li>nl : </li></td><td>Jasper Huijsmans &lt;<a href="mailto:jasper@xfce.org">jasper@xfce.org</a>&gt;</td></tr>
+      <tr><td><li>pa : </li></td><td>Amanpreet Singh Alam &lt;<a href="mailto:aalam@redhat.com">aalam@redhat.com</a>&gt;</td></tr>
+      <tr><td><li>pt_BR : </li></td><td>Felix da Silva Costa &lt;<a href="mailto:felix@online.eti.br">felix@online.eti.br</a>&gt;</td></tr>
+      <tr><td><li>pt_PT : </li></td><td>Nuno Donato &lt;<a href="mailto:nunodonato@zmail.pt">nunodonato@zmail.pt</a>&gt;</td></tr>
+      <tr><td><li>ro : </li></td><td>Mişu Moldovan &lt;<a href="mailto:dumol@go.ro">dumol@go.ro</a>&gt;</td></tr>
+      <tr><td><li>ru : </li></td><td>Anthony Ivanoff &lt;<a href="mailto:a-i@bk.ru">a-i@bk.ru</a>&gt;</td></tr>
+      <tr><td><li>sk : </li></td><td>Juraj Brosz &lt;<a href="mailto:Juraj.Brosz@pobox.sk">Juraj.Brosz@pobox.sk</a>&gt;</td></tr>
+      <tr><td><li>ta : </li></td><td>Dinesh Nadarajah &lt;<a href="mailto:dinesh_list@sbcglobal.net">dinesh_list@sbcglobal.net</a>&gt;</td></tr>
+      <tr><td><li>tr : </li></td><td>Er&ccedil;in EKER &lt;<a href="mailto:erc.caldera@gmx.net">erc.caldera@gmx.net</a>&gt;</td></tr>
+      <tr><td><li>uk : </li></td><td>Maxim V. Dziumanenko &lt;<a href="mailto:mvd@mylinux.com.ua">mvd@mylinux.com.ua</a>&gt;</td></tr>
+      <tr><td><li>vi : </li></td><td>L&acirc;m Vĩnh Ni&ecirc;n &lt;<a href="mailto:nienvl@yahoo.ca">nienvl@yahoo.ca</a>&gt;</td></tr>
+      <tr><td><li>zh_CN : </li></td><td>Yongtao Yang &lt;<a href="mailto:yongtao.yang@telia.com">yongtao.yang@telia.com</a>&gt;</td></tr>
+      <tr><td><li>zh_TW : </li></td><td>Hydonsingore Sie &lt;<a href="mailto:hydonsingore@mail.educities.edu.tw">hydonsingore@mail.educities.edu.tw</a>&gt;</td></tr>
+    </table>
 
     <p>Se sai di qualcuno omesso in questa lista, per favore faccelo sapere a
     <a href="mailto:xfce4-dev@xfce.org">xfce4-dev@xfce.org</a>.</p>
