@@ -31,7 +31,7 @@
 
 #define RCFILE "xfbdrc"
 #define LIST_TEXT "# xfce backdrop list"
-#define XFBDMGR "xfbdmgr"
+#define XFBDMGR "xfbdmgr4"
 
 #ifndef XFCE_CONFIG
 #define XFCE_CONFIG SYSCONFDIR
@@ -866,12 +866,14 @@ create_dialog (BackdropDialog * bd)
 void
 usage (const char *name)
 {
-  fprintf (stderr, _("Usage : %s [OPTIONS]\n"), name);
+  fprintf (stderr, _("Usage : %s [FILENAME]\n"), name);
+  fprintf (stderr, _("        %s [OPTIONS]\n"), name);
+
   fprintf (stderr, _("   Where OPTIONS are :\n"));
   fprintf (stderr,
-	   _("   -i : interactive, prompts for backdrop to display\n"));
+	   _("   -i :      interactive, prompts for backdrop to display\n"));
   fprintf (stderr,
-	   _("   -d : display, reads configuration and exit (default)\n\n"));
+	   _("   -d :      display, reads configuration and exit (default)\n\n"));
   fprintf (stderr,
 	   _
 	   ("%s is part of the XFce distribution, written by Olivier Fourdan\n\n"),
@@ -881,32 +883,20 @@ usage (const char *name)
 int
 main (int argc, char **argv)
 {
-  BackdropDialog *bd = backdrop_dialog_new ();
+    BackdropDialog *bd = backdrop_dialog_new ();
 
-  gtk_init (&argc, &argv);
+    gtk_init (&argc, &argv);
 
-  read_config (bd);
-  icon = gdk_pixbuf_new_from_xpm_data (xfbd_icon_xpm);
+    read_config (bd);
+    icon = gdk_pixbuf_new_from_xpm_data (xfbd_icon_xpm);
 
-  if (argc > 2 && g_file_test (argv[argc - 1], G_FILE_TEST_EXISTS))
-    {
-      g_free (bd->filename);
-      bd->filename = g_strdup (argv[argc - 1]);
-      bd->radiovalue = AUTO;
-
-      set_preview_image (bd);
-      set_backdrop (bd);
-      return 0;
-    }
-
-  if (argc == 1 || (argc == 2 && !strncmp ("-d", argv[1], 2)))
+    if (argc == 1 || (argc == 2 && !strncmp ("-d", argv[1], 2)))
     {
       set_preview_image (bd);
       set_backdrop (bd);
       return 0;
     }
-
-  if (argc == 2 && !strncmp ("-i", argv[1], 2))
+    else if (argc == 2 && !strncmp ("-i", argv[1], 2))
     {
 
       set_preview_image (bd);
@@ -915,6 +905,23 @@ main (int argc, char **argv)
       gtk_main ();
       return 0;
     }
+    else if (argc == 2 && g_file_test(argv[1], G_FILE_TEST_EXISTS))
+    {
+	  fprintf (stderr, "using filename %s\n", argv[1]);
+
+      g_free (bd->filename);
+      bd->filename = g_strdup (argv[1]);
+      bd->radiovalue = AUTO;
+
+      set_preview_image (bd);
+      set_backdrop (bd);
+      write_config(bd);
+      return 0;
+   }
+   else
+   {
+	fprintf(stderr, "ERROR: Couldn't find filename %s!\n\n", argv[1]);
+   }
 
   usage (argv[0]);
   return 0;
