@@ -208,6 +208,7 @@ main(int argc, char **argv)
     GdkPixbuf *logo_pb;
     char *text;
 
+#if 0
 #ifdef ENABLE_NLS
     /* This is required for UTF-8 at least - Please don't remove it */
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -215,6 +216,9 @@ main(int argc, char **argv)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 #endif
     textdomain (GETTEXT_PACKAGE);
+#endif
+#else
+    xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 #endif
 
     gtk_init(&argc, &argv);
