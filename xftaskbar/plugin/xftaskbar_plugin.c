@@ -18,7 +18,7 @@
  */
 
 #ifdef HAVE_CONFIG_H
-#  include <config.h>
+#include <config.h>
 #endif
 
 #include <string.h>
@@ -37,11 +37,10 @@
 
 #include <libxfce4mcs/mcs-common.h>
 #include <libxfce4mcs/mcs-manager.h>
-#include <xfce-mcs-manager/manager-plugin.h>
+#include <libxfce4util/i18n.h>
 #include <libxfcegui4/libxfcegui4.h>
+#include <xfce-mcs-manager/manager-plugin.h>
 #include "inline-icon.h"
-
-#define _(String) String
 
 #define RCDIR    "settings"
 #define CHANNEL  "taskbar"
