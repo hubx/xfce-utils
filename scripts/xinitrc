@@ -29,7 +29,7 @@ xfdesktop&
 panel=`which xfce4-panel`
 if test "x$panel" != "x" ; then
 	status=`$panel`
-	while test $status != 0 ; do
+	while test $status ; do
 		echo "Panel crash"
 		status=`$panel`
 	done
