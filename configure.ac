@@ -10,7 +10,10 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.91])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.99.1])
+
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.2 RC1"], [Optional release plain name])
+AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
 

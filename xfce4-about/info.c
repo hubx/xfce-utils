@@ -92,19 +92,29 @@ link_clicked (HtmlDocument * htmldoc, const gchar * url, gpointer data)
 static gchar*
 replace_version (gchar *buffer)
 {
-    const gchar *version = xfce_version_string ();
     gchar *dst;
     gchar *bp;
 
     bp = strstr (buffer, "@VERSION@");
     if (bp != NULL)
     {
+        const gchar *version = xfce_version_string ();
+        gchar *complete_version;
+        
+#ifdef RELEASE_LABEL
+        if (strlen (RELEASE_LABEL))
+            complete_version = g_strdup_printf ("%s (%s)", version, RELEASE_LABEL);
+        else
+#endif
+            complete_version = g_strdup (version);
+
         gsize n = bp - buffer;
 
-        dst = g_new (gchar, strlen (buffer) + strlen (version) + 1);
+        dst = g_new (gchar, strlen (buffer) + strlen (complete_version) + 1);
         memcpy (dst, buffer, n);
-        memcpy (dst + n, version, strlen (version));
-        strcpy (dst + n + strlen (version), buffer + n + strlen ("@VERSION@"));
+        memcpy (dst + n, complete_version, strlen (complete_version));
+        strcpy (dst + n + strlen (complete_version), buffer + n + strlen ("@VERSION@"));
+        g_free (complete_version);
         g_free (buffer);
         
         return dst;
