@@ -213,13 +213,12 @@ int main(int argc, char **argv)
 
     fileman = get_fileman();
     
-    dialog = gtk_dialog_new_with_buttons(_("Run program"), NULL, 
-					 GTK_DIALOG_NO_SEPARATOR, NULL);
+    dialog = gtk_dialog_new_with_buttons(_("Run program"), NULL, GTK_DIALOG_NO_SEPARATOR, NULL);
     
     button = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
+    GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
+    gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button, GTK_RESPONSE_CANCEL);
     gtk_widget_show(button);
-    gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button,
-            GTK_RESPONSE_CANCEL);
     
     button = mixed_button_new(GTK_STOCK_OK, _("_Run"));
     gtk_widget_show(button);
