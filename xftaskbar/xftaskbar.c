@@ -416,8 +416,7 @@ int main(int argc, char **argv)
     gtk_container_add (GTK_CONTAINER (taskbar->frame), taskbar->hbox);
 
     taskbar->tasklist = netk_tasklist_new(screen);
-    netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), NETK_TASKLIST_ALWAYS_GROUP);
-    netk_tasklist_set_grouping_limit(NETK_TASKLIST(taskbar->tasklist), 100);
+    netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), NETK_TASKLIST_AUTO_GROUP);
     netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
     gtk_box_pack_start (GTK_BOX (taskbar->hbox), taskbar->tasklist, TRUE, TRUE, 0);
 
