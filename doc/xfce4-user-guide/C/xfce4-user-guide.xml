@@ -329,15 +329,6 @@
 	</varlistentry>
 
 	<varlistentry>
-	  <term>xfce4-iconbox</term>
-	  <listitem>
-	    <para>An icon box that can be used as an alternative for the
-	      taskbar provided in the xfce-utils package.
-	    </para>
-	  </listitem>
-	</varlistentry>
-		  
-	<varlistentry>
 	  <term>gtk-xfce-engine-2</term>
 	  <listitem>
 	    <para>Theme engine for GTK2. Not required for the desktop, but
@@ -379,6 +370,15 @@
 	  </listitem>
 	</varlistentry>
 
+	<varlistentry>
+	  <term>xfce4-iconbox</term>
+	  <listitem>
+	    <para>An iconbox that can be used as an alternative for the
+	      taskbar provided in the xfce-utils package.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
 	<varlistentry>
 	  <term>xfce4-mixer</term>
 	  <listitem>
@@ -730,6 +730,10 @@ exec xfce4-panel
 	    <para>Shading a window, which means collapsing it to only show the
 	      title bar, can also be accomplished by using the mouse wheel
 	      over the title bar. Up is shade, down is unshade.
+	    </para>
+	    <para>If you want maximized windows to not cover the entire screen
+	      you can set workspace margins from the settings manager dialog
+	      (see below).
 	    </para>
 	  </listitem>
 	</varlistentry>
