@@ -5,9 +5,7 @@ about_DATA =								\
 	AUTHORS.de							\
 	AUTHORS.html.de							\
 	AUTHORS.html							\
-	GPL								\
-	LGPL								\
-	BSD								\
+	COPYING								\
 	INFO								\
 	INFO.html.de							\
 	INFO.html
