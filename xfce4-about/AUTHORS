@@ -12,6 +12,8 @@ Main developers:
   Biju Chacko  -  Core developer
   <botsie@myrealbox.com>
 
+  Benedikt Meurer  -  Core developer
+  <Benedikt.Meurer@unix-ag.uni-siegen.de>
 
 Contributors:
 
@@ -24,12 +26,10 @@ Contributors:
   Xavier Maillard  -  XFclock port, initial about box
   <zedek@fxgsproject.org>
   
-  Benedikt Meurer  -  GNU Autotools and other patches
-  <Benedikt.Meurer@unix-ag.uni-siegen.de>
-
 Patches:
-  Michael Mosier" <michael@spyonit.com>
+  Michael Mosier <michael@spyonit.com>
   Joakim Andreasson <joakim.andreasson@gmx.net>
+  Jens Guballa <j.guballa@t-online.de>
 
 Translators:
   <to be done>
