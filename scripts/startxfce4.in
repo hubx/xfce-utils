@@ -28,14 +28,14 @@ fi
 if test x"$DISPLAY" = x""
 then
   echo "$0: Starting X server"
-  if [ -x $HOME/.xfce4/xinitrc ]; then
+  if [ -f $HOME/.xfce4/xinitrc ]; then
 	exec xinit $HOME/.xfce4/xinitrc $*
   else
 	exec xinit @sysconfdir@/xfce4/xinitrc $*
   fi  
 else
   echo "$0: X server already running on display $DISPLAY"
-  if [ -x $HOME/.xfce4/xinitrc ]; then
+  if [ -f $HOME/.xfce4/xinitrc ]; then
 	exec /bin/sh $HOME/.xfce4/xinitrc $*
   else
 	exec /bin/sh @sysconfdir@/xfce4/xinitrc $*
