@@ -281,7 +281,7 @@ main (int argc, char **argv)
     /* the notebook */
     notebook = gtk_notebook_new ();
     gtk_widget_show (notebook);
-    gtk_widget_set_size_request (notebook, -1, 300);
+    gtk_widget_set_size_request (notebook, -1, 270);
     gtk_box_pack_start (GTK_BOX (vbox), notebook, TRUE, TRUE, 0);
 
     /* add pages */
@@ -315,7 +315,7 @@ main (int argc, char **argv)
     g_signal_connect (info_help_button, "clicked",
 		      G_CALLBACK (info_help_cb), NULL);
 
-    gtk_window_set_position (GTK_WINDOW (info), GTK_WIN_POS_CENTER);
+    xfce_gtk_window_center_on_monitor_with_pointer (GTK_WINDOW (info));
     gtk_widget_show (info);
 
     gtk_main ();
