@@ -157,49 +157,85 @@ void set_history_checkbox(GtkList *list, GtkWidget *child)
 
 static gboolean do_run(const char *cmd, gboolean in_terminal)
 {
-    gchar *execute, *path;
+    gchar *execute, *path, *dirpath = NULL;
     gboolean success;
 
     g_return_val_if_fail(cmd != NULL, FALSE);
 
+    /* arguments to cmd? */
+    if (strchr(cmd,' '))
+    {
+	gchar *g=g_strdup(cmd);
+	g=strtok(g," ");
+	path = g_find_program_in_path(g);
+	g_free(g);
+    }
+    else
+    {
+	path = g_find_program_in_path(cmd);
+    }
+	
     /* this is only used to prevent us to open a directory in the 
      * users's home dir with the same name as an executable,
      * e.g. evolution */
-    path = g_find_program_in_path(cmd);
-    if (path && g_file_test (path, G_FILE_TEST_IS_DIR)){
+    
+    if (path && g_file_test (path, G_FILE_TEST_IS_DIR))
+    {
 	g_free(path);
 	path=NULL;
     } 
 
+    
+    if (!path)
+    {
+	/* must be a directory */
+	if (g_file_test (cmd, G_FILE_TEST_IS_DIR))
+	{
+	    dirpath=g_strdup(cmd);
+	}
+	else
+	{
+	    /* could it be relative to homedir? */
+	    dirpath=g_build_filename(g_get_home_dir(),cmd,NULL);
+	    if (!g_file_test (dirpath, G_FILE_TEST_IS_DIR))
+	    {
+		g_free(dirpath);
+		dirpath=NULL;
+	    }
+	}
+    }
+    
+
         
     /* open directory in terminal or file manager */
-    if (g_file_test (cmd, G_FILE_TEST_IS_DIR) && !path)
+    if (dirpath)
     {
 	if(in_terminal)
-	    execute = g_strconcat("xfterm4 ", cmd, NULL);
+	    execute = g_strconcat("xfterm4 ", dirpath, NULL);
 	else 
-	    execute = g_strconcat(fileman, " ", cmd, NULL);
+	    execute = g_strconcat(fileman, " ", dirpath, NULL);
     }
-    else if(path)
+    else 
     {
 	if(in_terminal)
 	    execute = g_strconcat("xfterm4 -e ", cmd, NULL);
 	else
 	    execute = g_strdup(cmd);
     } 
-    else /* !path */
+    if (open_with)
     {
-	show_error(strerror(ENOENT));
-	return FALSE;
-    }
-    if (open_with){
 	gchar *g=g_strconcat(execute," ",argument,NULL);
 	g_free(execute);
 	execute=g;
     }
     g_free(path);
+    g_free(dirpath);
     success = xfce_exec (execute, FALSE, FALSE, NULL);
     g_free(execute);
+    if (!success)
+    {
+ 	show_error(strerror(ENOENT));
+    }
     
     return success;
 }
