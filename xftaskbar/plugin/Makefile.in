@@ -20,7 +20,7 @@ VPATH = @srcdir@
 pkgdatadir = $(datadir)/@PACKAGE@
 pkglibdir = $(libdir)/@PACKAGE@
 pkgincludedir = $(includedir)/@PACKAGE@
-top_builddir = ..
+top_builddir = ../..
 
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = @INSTALL@
@@ -138,28 +138,37 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-bin_PROGRAMS = xfmouse4
+xftaskbar_plugindir = $(libdir)/xfce-mcs-manager/plugins
 
-xfmouse4_SOURCES = xfmouse.c 
+xftaskbar_plugin_LTLIBRARIES = xftaskbar_plugin.la
+xftaskbar_plugin_la_LDFLAGS = -module -avoid-version
 
-xfmouse4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\"  -I..
-xfmouse4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
-subdir = xfmouse
+xftaskbar_plugin_la_SOURCES = xftaskbar_plugin.c inline-icon.h
+
+xftaskbar_plugin_la_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ @MCS_MANAGER_CFLAGS@ @XFCE_MCS_MANAGER_CFLAGS@ -DG_DISABLE_DEPRECATED -DSYSCONFDIR=\"$(sysconfdir)\" -DDATADIR=\"$(pkgdatadir)\" 
+xftaskbar_plugin_la_LIBADD = @LIBS@ @X_LIBS@ @BASE_DEPENDENCIES_LIBS@ @MCS_MANAGER_LIBS@ @XFCE_MCS_MANAGER_LIBS@
+
+IMAGES = icon.png
+VARIABLES = default_icon_data $(srcdir)/$(IMAGES)
+
+EXTRA_DIST = inline-icon.h icon.png
+
+noinst_DATA = inline-icon.h icon.png
+subdir = xftaskbar/plugin
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-bin_PROGRAMS = xfmouse4$(EXEEXT)
-PROGRAMS = $(bin_PROGRAMS)
+LTLIBRARIES = $(xftaskbar_plugin_LTLIBRARIES)
 
-am_xfmouse4_OBJECTS = xfmouse4-xfmouse.$(OBJEXT)
-xfmouse4_OBJECTS = $(am_xfmouse4_OBJECTS)
-xfmouse4_DEPENDENCIES =
-xfmouse4_LDFLAGS =
+xftaskbar_plugin_la_DEPENDENCIES =
+am_xftaskbar_plugin_la_OBJECTS = xftaskbar_plugin_la-xftaskbar_plugin.lo
+xftaskbar_plugin_la_OBJECTS = $(am_xftaskbar_plugin_la_OBJECTS)
 
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
-@AMDEP_TRUE@DEP_FILES = ./$(DEPDIR)/xfmouse4-xfmouse.Po
+@AMDEP_TRUE@DEP_FILES = \
+@AMDEP_TRUE@	./$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Plo
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
@@ -167,9 +176,11 @@ LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
 CCLD = $(CC)
 LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(AM_LDFLAGS) $(LDFLAGS) -o $@
-DIST_SOURCES = $(xfmouse4_SOURCES)
+DIST_SOURCES = $(xftaskbar_plugin_la_SOURCES)
+DATA = $(noinst_DATA)
+
 DIST_COMMON = Makefile.am Makefile.in
-SOURCES = $(xfmouse4_SOURCES)
+SOURCES = $(xftaskbar_plugin_la_SOURCES)
 
 all: all-am
 
@@ -177,41 +188,39 @@ all: all-am
 .SUFFIXES: .c .lo .o .obj
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configure.ac $(ACLOCAL_M4)
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  xfmouse/Makefile
+	  $(AUTOMAKE) --gnu  xftaskbar/plugin/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
-binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
-install-binPROGRAMS: $(bin_PROGRAMS)
+xftaskbar_pluginLTLIBRARIES_INSTALL = $(INSTALL)
+install-xftaskbar_pluginLTLIBRARIES: $(xftaskbar_plugin_LTLIBRARIES)
 	@$(NORMAL_INSTALL)
-	$(mkinstalldirs) $(DESTDIR)$(bindir)
-	@list='$(bin_PROGRAMS)'; for p in $$list; do \
-	  p1=`echo $$p|sed 's/$(EXEEXT)$$//'`; \
-	  if test -f $$p \
-	     || test -f $$p1 \
-	  ; then \
-	    f=`echo "$$p1" | sed 's,^.*/,,;$(transform);s/$$/$(EXEEXT)/'`; \
-	   echo " $(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(binPROGRAMS_INSTALL) $$p $(DESTDIR)$(bindir)/$$f"; \
-	   $(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(binPROGRAMS_INSTALL) $$p $(DESTDIR)$(bindir)/$$f || exit 1; \
+	$(mkinstalldirs) $(DESTDIR)$(xftaskbar_plugindir)
+	@list='$(xftaskbar_plugin_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    f="`echo $$p | sed -e 's|^.*/||'`"; \
+	    echo " $(LIBTOOL) --mode=install $(xftaskbar_pluginLTLIBRARIES_INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(xftaskbar_plugindir)/$$f"; \
+	    $(LIBTOOL) --mode=install $(xftaskbar_pluginLTLIBRARIES_INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(xftaskbar_plugindir)/$$f; \
 	  else :; fi; \
 	done
 
-uninstall-binPROGRAMS:
+uninstall-xftaskbar_pluginLTLIBRARIES:
 	@$(NORMAL_UNINSTALL)
-	@list='$(bin_PROGRAMS)'; for p in $$list; do \
-	  f=`echo "$$p" | sed 's,^.*/,,;s/$(EXEEXT)$$//;$(transform);s/$$/$(EXEEXT)/'`; \
-	  echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
-	  rm -f $(DESTDIR)$(bindir)/$$f; \
+	@list='$(xftaskbar_plugin_LTLIBRARIES)'; for p in $$list; do \
+	    p="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " $(LIBTOOL) --mode=uninstall rm -f $(DESTDIR)$(xftaskbar_plugindir)/$$p"; \
+	  $(LIBTOOL) --mode=uninstall rm -f $(DESTDIR)$(xftaskbar_plugindir)/$$p; \
 	done
 
-clean-binPROGRAMS:
-	@list='$(bin_PROGRAMS)'; for p in $$list; do \
-	  f=`echo $$p|sed 's/$(EXEEXT)$$//'`; \
-	  echo " rm -f $$p $$f"; \
-	  rm -f $$p $$f ; \
+clean-xftaskbar_pluginLTLIBRARIES:
+	-test -z "$(xftaskbar_plugin_LTLIBRARIES)" || rm -f $(xftaskbar_plugin_LTLIBRARIES)
+	@list='$(xftaskbar_plugin_LTLIBRARIES)'; for p in $$list; do \
+	  dir="`echo $$p | sed -e 's|/[^/]*$$||'`"; \
+	  test "$$dir" = "$$p" && dir=.; \
+	  echo "rm -f \"$${dir}/so_locations\""; \
+	  rm -f "$${dir}/so_locations"; \
 	done
-xfmouse4$(EXEEXT): $(xfmouse4_OBJECTS) $(xfmouse4_DEPENDENCIES) 
-	@rm -f xfmouse4$(EXEEXT)
-	$(LINK) $(xfmouse4_LDFLAGS) $(xfmouse4_OBJECTS) $(xfmouse4_LDADD) $(LIBS)
+xftaskbar_plugin.la: $(xftaskbar_plugin_la_OBJECTS) $(xftaskbar_plugin_la_DEPENDENCIES) 
+	$(LINK) -rpath $(xftaskbar_plugindir) $(xftaskbar_plugin_la_LDFLAGS) $(xftaskbar_plugin_la_OBJECTS) $(xftaskbar_plugin_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT) core *.core
@@ -219,7 +228,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfmouse4-xfmouse.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Plo@am__quote@
 
 distclean-depend:
 	-rm -rf ./$(DEPDIR)
@@ -257,38 +266,38 @@ distclean-depend:
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(LTCOMPILE) -c -o $@ `test -f '$<' || echo '$(srcdir)/'`$<
 
-xfmouse4-xfmouse.o: xfmouse.c
-@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -MT xfmouse4-xfmouse.o -MD -MP -MF "$(DEPDIR)/xfmouse4-xfmouse.Tpo" \
-@am__fastdepCC_TRUE@	  -c -o xfmouse4-xfmouse.o `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c; \
-@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xfmouse4-xfmouse.Tpo" "$(DEPDIR)/xfmouse4-xfmouse.Po"; \
-@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xfmouse4-xfmouse.Tpo"; exit 1; \
+xftaskbar_plugin_la-xftaskbar_plugin.o: xftaskbar_plugin.c
+@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -MT xftaskbar_plugin_la-xftaskbar_plugin.o -MD -MP -MF "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" \
+@am__fastdepCC_TRUE@	  -c -o xftaskbar_plugin_la-xftaskbar_plugin.o `test -f 'xftaskbar_plugin.c' || echo '$(srcdir)/'`xftaskbar_plugin.c; \
+@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Po"; \
+@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo"; exit 1; \
 @am__fastdepCC_TRUE@	fi
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xfmouse.c' object='xfmouse4-xfmouse.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xfmouse4-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse4-xfmouse.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xftaskbar_plugin.c' object='xftaskbar_plugin_la-xftaskbar_plugin.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Po' tmpdepfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -c -o xfmouse4-xfmouse.o `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -c -o xftaskbar_plugin_la-xftaskbar_plugin.o `test -f 'xftaskbar_plugin.c' || echo '$(srcdir)/'`xftaskbar_plugin.c
 
-xfmouse4-xfmouse.obj: xfmouse.c
-@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -MT xfmouse4-xfmouse.obj -MD -MP -MF "$(DEPDIR)/xfmouse4-xfmouse.Tpo" \
-@am__fastdepCC_TRUE@	  -c -o xfmouse4-xfmouse.obj `if test -f 'xfmouse.c'; then $(CYGPATH_W) 'xfmouse.c'; else $(CYGPATH_W) '$(srcdir)/xfmouse.c'; fi`; \
-@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xfmouse4-xfmouse.Tpo" "$(DEPDIR)/xfmouse4-xfmouse.Po"; \
-@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xfmouse4-xfmouse.Tpo"; exit 1; \
+xftaskbar_plugin_la-xftaskbar_plugin.obj: xftaskbar_plugin.c
+@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -MT xftaskbar_plugin_la-xftaskbar_plugin.obj -MD -MP -MF "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" \
+@am__fastdepCC_TRUE@	  -c -o xftaskbar_plugin_la-xftaskbar_plugin.obj `if test -f 'xftaskbar_plugin.c'; then $(CYGPATH_W) 'xftaskbar_plugin.c'; else $(CYGPATH_W) '$(srcdir)/xftaskbar_plugin.c'; fi`; \
+@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Po"; \
+@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo"; exit 1; \
 @am__fastdepCC_TRUE@	fi
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xfmouse.c' object='xfmouse4-xfmouse.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xfmouse4-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse4-xfmouse.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xftaskbar_plugin.c' object='xftaskbar_plugin_la-xftaskbar_plugin.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Po' tmpdepfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -c -o xfmouse4-xfmouse.obj `if test -f 'xfmouse.c'; then $(CYGPATH_W) 'xfmouse.c'; else $(CYGPATH_W) '$(srcdir)/xfmouse.c'; fi`
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -c -o xftaskbar_plugin_la-xftaskbar_plugin.obj `if test -f 'xftaskbar_plugin.c'; then $(CYGPATH_W) 'xftaskbar_plugin.c'; else $(CYGPATH_W) '$(srcdir)/xftaskbar_plugin.c'; fi`
 
-xfmouse4-xfmouse.lo: xfmouse.c
-@am__fastdepCC_TRUE@	if $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -MT xfmouse4-xfmouse.lo -MD -MP -MF "$(DEPDIR)/xfmouse4-xfmouse.Tpo" \
-@am__fastdepCC_TRUE@	  -c -o xfmouse4-xfmouse.lo `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c; \
-@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xfmouse4-xfmouse.Tpo" "$(DEPDIR)/xfmouse4-xfmouse.Plo"; \
-@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xfmouse4-xfmouse.Tpo"; exit 1; \
+xftaskbar_plugin_la-xftaskbar_plugin.lo: xftaskbar_plugin.c
+@am__fastdepCC_TRUE@	if $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -MT xftaskbar_plugin_la-xftaskbar_plugin.lo -MD -MP -MF "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" \
+@am__fastdepCC_TRUE@	  -c -o xftaskbar_plugin_la-xftaskbar_plugin.lo `test -f 'xftaskbar_plugin.c' || echo '$(srcdir)/'`xftaskbar_plugin.c; \
+@am__fastdepCC_TRUE@	then mv "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo" "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Plo"; \
+@am__fastdepCC_TRUE@	else rm -f "$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Tpo"; exit 1; \
 @am__fastdepCC_TRUE@	fi
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xfmouse.c' object='xfmouse4-xfmouse.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xfmouse4-xfmouse.Plo' tmpdepfile='$(DEPDIR)/xfmouse4-xfmouse.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='xftaskbar_plugin.c' object='xftaskbar_plugin_la-xftaskbar_plugin.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.Plo' tmpdepfile='$(DEPDIR)/xftaskbar_plugin_la-xftaskbar_plugin.TPlo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -c -o xfmouse4-xfmouse.lo `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c
+@am__fastdepCC_FALSE@	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xftaskbar_plugin_la_CFLAGS) $(CFLAGS) -c -o xftaskbar_plugin_la-xftaskbar_plugin.lo `test -f 'xftaskbar_plugin.c' || echo '$(srcdir)/'`xftaskbar_plugin.c
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -355,7 +364,7 @@ distclean-tags:
 	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 
-top_distdir = ..
+top_distdir = ../..
 distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
 
 distdir: $(DISTFILES)
@@ -387,10 +396,10 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(PROGRAMS)
+all-am: Makefile $(LTLIBRARIES) $(DATA)
 
 installdirs:
-	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	$(mkinstalldirs) $(DESTDIR)$(xftaskbar_plugindir)
 
 install: install-am
 install-exec: install-exec-am
@@ -418,7 +427,8 @@ maintainer-clean-generic:
 	@echo "it deletes files that may require special tools to rebuild."
 clean: clean-am
 
-clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
+clean-am: clean-generic clean-libtool clean-xftaskbar_pluginLTLIBRARIES \
+	mostlyclean-am
 
 distclean: distclean-am
 
@@ -433,9 +443,9 @@ info: info-am
 
 info-am:
 
-install-data-am:
+install-data-am: install-xftaskbar_pluginLTLIBRARIES
 
-install-exec-am: install-binPROGRAMS
+install-exec-am:
 
 install-info: install-info-am
 
@@ -460,20 +470,24 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-binPROGRAMS uninstall-info-am
+uninstall-am: uninstall-info-am uninstall-xftaskbar_pluginLTLIBRARIES
 
-.PHONY: CTAGS GTAGS all all-am check check-am clean clean-binPROGRAMS \
-	clean-generic clean-libtool ctags distclean distclean-compile \
-	distclean-depend distclean-generic distclean-libtool \
-	distclean-tags distdir dvi dvi-am info info-am install \
-	install-am install-binPROGRAMS install-data install-data-am \
+.PHONY: CTAGS GTAGS all all-am check check-am clean clean-generic \
+	clean-libtool clean-xftaskbar_pluginLTLIBRARIES ctags distclean \
+	distclean-compile distclean-depend distclean-generic \
+	distclean-libtool distclean-tags distdir dvi dvi-am info \
+	info-am install install-am install-data install-data-am \
 	install-exec install-exec-am install-info install-info-am \
-	install-man install-strip installcheck installcheck-am \
-	installdirs maintainer-clean maintainer-clean-generic \
-	mostlyclean mostlyclean-compile mostlyclean-generic \
-	mostlyclean-libtool pdf pdf-am ps ps-am tags uninstall \
-	uninstall-am uninstall-binPROGRAMS uninstall-info-am
+	install-man install-strip install-xftaskbar_pluginLTLIBRARIES \
+	installcheck installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-compile \
+	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
+	tags uninstall uninstall-am uninstall-info-am \
+	uninstall-xftaskbar_pluginLTLIBRARIES
 
+
+inline-icon.h: $(IMAGES)
+	$(GDK_PIXBUF_CSOURCE) --raw --build-list $(VARIABLES) > $(srcdir)/inline-icon.h
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
