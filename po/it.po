@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# dave@gufi.org 2003
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-06-06 21:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:206
+msgid "About XFce 4"
+msgstr "Su XFce 4"
+
+#: xfce4-about/info.c:219
+msgid "XFce Desktop Environment"
+msgstr "XFce Desktop Environment"
+
+#: xfce4-about/info.c:220
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 by Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:239
+msgid "Info"
+msgstr "Informazioni"
+
+#: xfce4-about/info.c:240
+msgid "Credits"
+msgstr "Riconoscimenti"
+
+#: xfce4-about/info.c:241
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:242
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:243
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:244
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Impossibile scrivere l'history nel file %s\n"
+
+#: xfrun/xfrun.c:231
+msgid "Run program"
+msgstr "Esegui programma"
+
+#: xfrun/xfrun.c:238
+msgid "_Run"
+msgstr "Esegui"
+
+#: xfrun/xfrun.c:275
+msgid "Run in _terminal"
+msgstr "Esegui in un terminale"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Barra dei Processi"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
+msgid "Top"
+msgstr "Alto"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
+msgid "Bottom"
+msgstr "Basso"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "Posizione"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
+msgid "Auto hide taskbar"
+msgstr "Nascondimento Automatico Taskbar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "Nascondimento Automatico"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Height :"
+msgstr "Altezza :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr "Piccolo"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr "Largo"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Dimensione"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Mostra i processi di tutti gli ambienti di lavoro"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Processi"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Mostra nella barra dei processi"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "Pager"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Mostra Barra Icone di Sistema nella barra dei processi"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Area di Notifica"
+
+#: xftaskbar/xftaskbar.c:119
+msgid "Cannot get initial style"
+msgstr "Impossibile caricare lo stile iniziale"
+
+#: xftaskbar/xftaskbar.c:199
+msgid "There is already a system tray running on this screen"
+msgstr "Barra Icone di Sistema già presente su questo schermo"
+
+#: xftaskbar/xftaskbar.c:207
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Impossibile registrare Spazio Icone di Sistema"
+
+#: xftaskbar/xftaskbar.c:317
+msgid "This should not happen"
+msgstr "Ciò non avrebbe dovuto verificarsi"
+
+#: xftaskbar/xftaskbar.c:414
+msgid "Cannot connect to session manager"
+msgstr "Impossibile connettersi al gestore di sessione"
+
+#: xftaskbar/xftaskbar.c:425
+msgid "Cannot get desktop margins"
+msgstr "Impossibile determinare i margini dello schermo"
+
+#: xftaskbar/xftaskbar.c:496
+msgid "Cannot create MCS client channel"
+msgstr "Impossibile creare canale client MCS"
