@@ -1,21 +1,37 @@
-2003-09-10 09:39  huysmans
+2003-09-13  huysmans
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr:
+	Add Duarte Henriques to translators
+
+2003-09-13  huysmans
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr:
+	Add Craig Betts to contributors
+
+2003-09-10  huysmans
+
+	* ChangeLog: Update ChangeLogs
+
+2003-09-10  huysmans
 
 	* aclocal.m4, configure, configure.ac, po/ru.po, po/zh_TW.po:
 	Update version numbers and po files for release
 
-2003-09-08 08:25  huysmans
+2003-09-08  huysmans
 
 	* po/: ru.gmo, ru.po: Update russian translations
 
-2003-09-08 08:14  huysmans
+2003-09-08  huysmans
 
 	* xfce4-about/INFO.html.ca.in: Updated catalan info html file
 
-2003-09-02 08:48  huysmans
+2003-09-02  huysmans
 
 	* po/: ms.gmo, ms.po: Update malaysian translations
 
-2003-09-02 00:04  xfce
+2003-09-02  xfce
 
 	* aclocal.m4, configure, xfce4-about/BSD.html,
 	xfce4-about/COPYING.html, xfce4-about/GPL.html,
@@ -23,22 +39,22 @@
 	xfce4-about/Makefile.in: Added missing HTML files as reported by
 	Madkiss
 
-2003-08-30 14:49  huysmans
+2003-08-30  huysmans
 
 	* aclocal.m4, configure, configure.ac, po/zh_TW.Big5.gmo,
 	po/zh_TW.Big5.po, po/zh_TW.gmo, po/zh_TW.po: Rename zh_TW.Big5 ->
 	zh_TW
 
-2003-08-30 10:58  huysmans
+2003-08-30  huysmans
 
 	* po/: zh_TW.Big5.gmo, zh_TW.Big5.po: Add traditional chinese
 	translations
 
-2003-08-26 09:38  huysmans
+2003-08-26  huysmans
 
 	* ChangeLog: Update changelogs
 
-2003-08-26 09:12  huysmans
+2003-08-26  huysmans
 
 	* po/: ca.gmo, ca.po, de.gmo, de.po, es.gmo, es.po, es_MX.gmo,
 	es_MX.po, fi.gmo, fi.po, fr.gmo, fr.po, hu.gmo, hu.po, it.gmo,
@@ -47,44 +63,44 @@
 	tr.po, zh_CN.gmo, zh_CN.po: Update version numbers and po files for
 	release
 
-2003-08-17 13:36  huysmans
+2003-08-17  huysmans
 
 	* configure, configure.ac, po/lt.gmo, po/lt.po: Add lithuanian
 	translations
 
-2003-08-14 21:09  xfce
+2003-08-14  xfce
 
 	* po/xfce-utils.pot: Resync with cvs
 
-2003-08-10 21:54  huysmans
+2003-08-10  huysmans
 
 	* po/: zh_CN.gmo, zh_CN.po: Update chinese translations
 
-2003-08-08 00:09  huysmans
+2003-08-08  huysmans
 
 	* aclocal.m4, configure, configure.ac, xfce4-about/INFO.ca.in,
 	xfce4-about/INFO.html.ca.in, xfce4-about/Makefile.am,
 	xfce4-about/Makefile.in: Update catalan translations
 
-2003-08-07 21:05  huysmans
+2003-08-07  huysmans
 
 	* xfce4-about/info.c: Make i18n work
 
-2003-08-05 07:53  xfce
+2003-08-05  xfce
 
 	* configure, configure.ac, po/ko.gmo, po/ko.po, po/xfce-utils.pot:
 	Add Korean translation by ByungHyun Choi
 	<byunghyunchoi@hotmail.com>
 
-2003-08-03 20:45  bmeurer
+2003-08-03  bmeurer
 
 	* ChangeLog: Updated ChangeLogs
 
-2003-08-03 20:37  bmeurer
+2003-08-03  bmeurer
 
 	* m4/X11.m4: grep -q does not work with Solaris grep, fixed it.
 
-2003-08-03 19:44  xfce
+2003-08-03  xfce
 
 	* configure, configure.ac, xfce4-about/AUTHORS.fr,
 	xfce4-about/AUTHORS.html.fr, xfce4-about/INFO.fr.in,
@@ -92,11 +108,11 @@
 	xfce4-about/Makefile.am, xfce4-about/Makefile.in,
 	xfce4-about/info.c: Add fr locale
 
-2003-07-30 13:31  huysmans
+2003-07-30  huysmans
 
 	* ChangeLog: Update changlogs
 
-2003-07-30 10:05  huysmans
+2003-07-30  huysmans
 
 	* configure, configure.ac, po/ca.gmo, po/ca.po, po/de.gmo,
 	po/de.po, po/es.gmo, po/es.po, po/es_MX.gmo, po/es_MX.po,
@@ -107,7 +123,7 @@
 	po/zh_CN.gmo, po/zh_CN.po: Update version numbers and po files for
 	release
 
-2003-07-29 17:03  huysmans
+2003-07-29  huysmans
 
 	* doc/: xfce-utils/C/xfce-utils.html, xfce-utils/C/xfce-utils.xml,
 	xfce4-user-guide/C/GPL.html, xfce4-user-guide/C/LGPL.html,
@@ -118,67 +134,67 @@
 	xfce4-user-guide/C/xfce4-user-guide.xml: Update documentation to
 	latest versions
 
-2003-07-29 14:22  huysmans
+2003-07-29  huysmans
 
 	* doc/: xfce-utils/C/images/about-dialog.png,
 	xfce-utils/C/images/run-dialog.png,
 	xfce4-user-guide/C/images/default-session.png: Update all images to
 	new defaults
 
-2003-07-29 08:28  huysmans
+2003-07-29  huysmans
 
 	* po/: ru.gmo, ru.po: Update russian translations
 
-2003-07-26 16:34  xfce
+2003-07-26  xfce
 
 	* xfrun/xfrun.c: Center "Run" dialog on screen instead using mouse
 	position
 
-2003-07-24 23:37  xfce
+2003-07-24  xfce
 
 	* xftaskbar/xftaskbar.c: Realize top level window early in time
 
-2003-07-24 08:26  huysmans
+2003-07-24  huysmans
 
 	* po/: fi.gmo, fi.po: Update finnish translations
 
-2003-07-22 21:50  xfce
+2003-07-22  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Don't enable pager in
 	taskbar by default Enable systray by default
 
-2003-07-21 22:15  xfce
+2003-07-21  xfce
 
 	* scripts/xinitrc: Apply changes as suggested by Martti Kuparinen
 	<martti.kuparinen@iki.fi>
 
-2003-07-19 11:30  huysmans
+2003-07-19  huysmans
 
 	* ChangeLog: Update ChangeLogs
 
-2003-07-19 10:59  huysmans
+2003-07-19  huysmans
 
 	* configure, configure.ac, po/hu.gmo, po/hu.po, po/tr.gmo,
 	po/tr.po: Update version numbers and po files for release
 
-2003-07-18 13:06  huysmans
+2003-07-18  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Update translators
 
-2003-07-18 12:56  huysmans
+2003-07-18  huysmans
 
 	* po/: hu.gmo, hu.po: Update hungarian translations
 
-2003-07-18 09:46  huysmans
+2003-07-18  huysmans
 
 	* po/: tr.gmo, tr.po: Update turkish translations
 
-2003-07-16 20:01  huysmans
+2003-07-16  huysmans
 
 	* po/: nl.gmo, nl.po: Update dutch translations
 
-2003-07-16 11:57  huysmans
+2003-07-16  huysmans
 
 	* configure, configure.ac, po/ca.gmo, po/ca.po, po/de.gmo,
 	po/de.po, po/es.gmo, po/es.po, po/es_MX.gmo, po/es_MX.po,
@@ -191,71 +207,71 @@
 	xfce4-about/AUTHORS.html, xfce4-about/AUTHORS.html.ca,
 	xfce4-about/AUTHORS.html.de: Add hungarian translations
 
-2003-07-16 10:22  huysmans
+2003-07-16  huysmans
 
 	* po/: ca.gmo, ca.po: Update catalan translations
 
-2003-07-16 00:00  xfce
+2003-07-16  xfce
 
 	* xftaskbar/xftaskbar.c: Add timeouts to taskbar hide/show in
 	autohide mode with values similar to those of the panel
 
-2003-07-15 23:36  bmeurer
+2003-07-15  bmeurer
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Fixed the following problem:
 	Set "Show system tray in taskbar" to false, log out and log in then
 	the field is selected but the system tray is not shown in taskbar.
 	Clicking twice on the box enables it again.
 
-2003-07-15 22:23  bmeurer
+2003-07-15  bmeurer
 
 	* xftaskbar/xftaskbar.c: Make the taskbar start earlier so
 	restarting KDE tray icon apps works.
 
-2003-07-14 20:08  bmeurer
+2003-07-14  bmeurer
 
 	* xftaskbar/xftaskbar.c: Updated icon spacing to 7
 
-2003-07-14 13:41  xfce
+2003-07-14  xfce
 
 	* configure, configure.ac, scripts/xinitrc: Fix case where wich
 	returns "no" instead of nothing at all Set version to 3.99.2 (rc2)
 
-2003-07-13 10:43  huysmans
+2003-07-13  huysmans
 
 	* ChangeLog: Update ChangeLogs for release
 
-2003-07-13 10:31  huysmans
+2003-07-13  huysmans
 
 	* po/xfce-utils.pot: Update pot's before release
 
-2003-07-12 21:38  huysmans
+2003-07-12  huysmans
 
 	* xftaskbar/xftaskbar.c: Reduce spacing between systray icons
 
-2003-07-12 11:08  huysmans
+2003-07-12  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Update credits: remove patches
 	category, put in all known translators
 
-2003-07-11 15:42  huysmans
+2003-07-11  huysmans
 
 	* xftaskbar/xftaskbar.c: Show systray on first start
 
-2003-07-11 09:33  huysmans
+2003-07-11  huysmans
 
 	* ChangeLog: Update ChangeLog's for release
 
-2003-07-11 08:55  huysmans
+2003-07-11  huysmans
 
 	* po/: zh_CN.gmo, zh_CN.po: Update Chinese translations
 
-2003-07-10 11:56  huysmans
+2003-07-10  huysmans
 
 	* ChangeLog: Update ChangeLog's for release
 
-2003-07-10 11:24  huysmans
+2003-07-10  huysmans
 
 	* configure, configure.ac, po/ca.gmo, po/ca.po, po/de.gmo,
 	po/de.po, po/es.gmo, po/es.po, po/es_MX.gmo, po/es_MX.po,
@@ -265,52 +281,52 @@
 	po/tr.gmo, po/tr.po, po/xfce-utils.pot, po/zh_CN.gmo, po/zh_CN.po:
 	Bump version numbers for release and update po files
 
-2003-07-09 15:39  huysmans
+2003-07-09  huysmans
 
 	* doc/xfce4-user-guide/C/: xfce4-install.html, xfce4-use.html,
 	xfce4-user-guide.html, xfce4-user-guide.xml: Update docs: iconbox
 	moved to extras
 
-2003-07-08 00:43  xfce
+2003-07-08  xfce
 
 	* scripts/xinitrc: Use xfce4-session if available
 
-2003-07-08 00:26  xfce
+2003-07-08  xfce
 
 	* ltmain.sh: Update ltmain.sh with patched version
 
-2003-07-07 23:18  huysmans
+2003-07-07  huysmans
 
 	* po/: ca.gmo, ca.po: Update catalan translations
 
-2003-07-07 18:16  huysmans
+2003-07-07  huysmans
 
 	* doc/xfce4-user-guide/C/images/default-session.png: Update default
 	session screenshot
 
-2003-07-06 21:45  huysmans
+2003-07-06  huysmans
 
 	* ChangeLog: Updating ChangeLogs
 
-2003-07-05 14:31  xfce
+2003-07-05  xfce
 
 	* Makefile.in, ltconfig: Remove ltconfig script as it is generated
 
-2003-07-05 10:52  huysmans
+2003-07-05  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Add Bernhard Walle
 
-2003-07-05 01:37  xfce
+2003-07-05  xfce
 
 	* Makefile.in, configure, configure.ac, ltcf-c.sh, po/es_MX.gmo:
 	libttol update and all
 
-2003-07-04 22:30  edscott
+2003-07-04  edscott
 
 	* po/es_MX.po: [no log message]
 
-2003-07-04 21:30  xfce
+2003-07-04  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	ltmain.sh, doc/Makefile.in, doc/index/Makefile.in,
@@ -324,7 +340,7 @@
 	xftaskbar/plugin/xftaskbar_plugin.c: Revert adding of es_MX as the
 	potfile is actually missing and that breaks compilation.
 
-2003-07-03 20:16  edscott
+2003-07-03  edscott
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	ltmain.sh, doc/Makefile.in, doc/index/Makefile.in,
@@ -338,12 +354,12 @@
 	xftaskbar/plugin/Makefile.in: spanish tranlation updates for 4.0
 	release.
 
-2003-07-03 12:23  huysmans
+2003-07-03  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Add Prophet to contributors
 
-2003-06-28 11:46  xfce
+2003-06-28  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, ltmain.sh,
 	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
@@ -357,51 +373,51 @@
 	libtool-1.5 Use proper complete CURRENT:REVISION:AGE scheme for lib
 	versionning
 
-2003-06-24 22:40  xfce
+2003-06-24  xfce
 
 	* aclocal.m4, configure, configure.ac, ltcf-c.sh, ltconfig,
 	ltmain.sh, po/it.gmo, po/it.po: Add italian locale
 
-2003-06-24 08:35  xfce
+2003-06-24  xfce
 
 	* po/xfce-utils.pot: Sync
 
-2003-06-23 23:53  bmeurer
+2003-06-23  bmeurer
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Updated Moe's email address.
 
-2003-06-21 20:04  bmeurer
+2003-06-21  bmeurer
 
 	* aclocal.m4, configure, configure.ac: Fixes.
 
-2003-06-21 19:56  bmeurer
+2003-06-21  bmeurer
 
 	* aclocal.m4, configure, configure.ac, scripts/xinitrc,
 	xftaskbar/xftaskbar.c: Fixes.
 
-2003-06-21 19:30  bmeurer
+2003-06-21  bmeurer
 
 	* scripts/xinitrc: Updated xinitrc. Thanks to Ric.
 
-2003-06-21 01:56  xfce
+2003-06-21  xfce
 
 	* po/xfce-utils.pot, scripts/xinitrc: Put some changes suggested by
 	Matthew Weier OPhinney <matthew-lists@weierophinney.net> regarding
 	xinitrc startup sequence
 
-2003-06-18 22:36  xfce
+2003-06-18  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Call gtk_window_set_position
 	() as late at possible as it seems there is a race cond in gtk+
 
-2003-06-16 00:11  xfce
+2003-06-16  xfce
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Add Thomas Leonard to the about
 	box list.
 
-2003-06-15 15:07  bmeurer
+2003-06-15  bmeurer
 
 	* xftaskbar/xftaskbar.c: 
 	"[This bug was found when using the ebuilds from Gentoo]
@@ -413,41 +429,41 @@
 	Thanks to Matti Rendahl <matti@comedialabs.com> for providing this
 	patch.
 
-2003-06-15 00:56  xfce
+2003-06-15  xfce
 
 	* xftaskbar/xftaskbar.c: A lot of improvements on Xinerama support
 
-2003-06-15 00:23  bmeurer
+2003-06-15  bmeurer
 
 	* README: Note --enable-gtkhtml in README.
 
-2003-06-14 23:53  bmeurer
+2003-06-14  bmeurer
 
 	* xfce4-about/info.c, xfrun/xfrun.c, xftaskbar/xftaskbar.c,
 	xftaskbar/plugin/xftaskbar_plugin.c: Introduced xfce_textdomain()
 
-2003-06-14 18:03  xfce
+2003-06-14  xfce
 
 	* xfce4-about/info.c, xftaskbar/plugin/xftaskbar_plugin.c: Revert
 	the GTK_POS_WINDOW_CENTER
 
-2003-06-14 01:57  xfce
+2003-06-14  xfce
 
 	* xfce4-about/info.c, xftaskbar/plugin/xftaskbar_plugin.c: Use
 	GTK_WIN_POS_CENTER_ALWAYS instead of GTK_WIN_POS_CENTER when
 	centering dialogs
 
-2003-06-14 00:30  bmeurer
+2003-06-14  bmeurer
 
 	* aclocal.m4, configure, m4/i18n.m4, scripts/startxfce4.in,
 	scripts/xfhelp4.in: Fixed bind_textdomain_codeset() problem on
 	linux.
 
-2003-06-11 21:44  bmeurer
+2003-06-11  bmeurer
 
 	* xfce4-about/info.c: Fixed bind_textdomain_codeset() problem
 
-2003-06-11 19:25  bmeurer
+2003-06-11  bmeurer
 
 	* doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
 	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
@@ -460,22 +476,22 @@
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Make default
 	browser configurable. Add xmessages.
 
-2003-06-11 19:22  bmeurer
+2003-06-11  bmeurer
 
 	* Makefile.in, README, TODO, configure, configure.ac: Make default
 	browser configurable. Add xmessages.
 
-2003-06-11 00:13  bmeurer
+2003-06-11  bmeurer
 
 	* xfce4-about/info.c: Use new i18n framework.
 
-2003-06-10 23:24  bmeurer
+2003-06-10  bmeurer
 
 	* xfce4-about/info.c, xfrun/xfrun.c, xftaskbar/xftaskbar.c,
 	xftaskbar/plugin/xftaskbar_plugin.c: Fixed
 	bind_textdomain_codeset() problem.
 
-2003-06-10 22:13  bmeurer
+2003-06-10  bmeurer
 
 	* doc/index/Makefile.in, doc/index/C/Makefile.in,
 	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
@@ -488,29 +504,29 @@
 	xftaskbar/plugin/Makefile.in, xftaskbar/plugin/xftaskbar_plugin.c:
 	Make this compile with --enable-debug=full
 
-2003-06-10 22:09  bmeurer
+2003-06-10  bmeurer
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	install-sh, ltcf-c.sh, ltconfig, ltmain.sh, doc/Makefile.in: Make
 	this compile with --enable-debug=full
 
-2003-06-10 01:36  xfce
+2003-06-10  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Add new widget xfce_framebox
 	to unify look across UI Migrate all plugins to this new widget
 
-2003-06-09 19:17  xfce
+2003-06-09  xfce
 
 	* Makefile.in, configure, configure.ac,
 	xftaskbar/plugin/xftaskbar_plugin.c: Redesign UI
 
-2003-06-08 16:42  bmeurer
+2003-06-08  bmeurer
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Added Karsten Luetkewitz
 	<phrep@plskthx.org>
 
-2003-06-08 16:29  huysmans
+2003-06-08  huysmans
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
@@ -524,24 +540,24 @@
 	xftaskbar/plugin/Makefile.in: Add russian translation and fix
 	xfdesktop not reading a new local menu
 
-2003-06-07 14:51  bmeurer
+2003-06-07  bmeurer
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Added dannym.
 
-2003-06-07 03:34  xfce
+2003-06-07  xfce
 
 	* xfce-utils.spec.in: Fix path for RH9
 
-2003-06-07 02:11  xfce
+2003-06-07  xfce
 
 	* xfce-utils.spec.in: Fix spec fileto unclude gdm config
 
-2003-06-07 00:57  bmeurer
+2003-06-07  bmeurer
 
 	* scripts/xfhelp4.in: phoenix -> phoenix* to support phoenix-linux.
 
-2003-06-06 23:36  xfce
+2003-06-06  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
@@ -554,22 +570,22 @@
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Versionning scheme
 
-2003-06-06 18:23  huysmans
+2003-06-06  huysmans
 
 	* doc/xfce4-user-guide/C/: xfce4-install.html, xfce4-intro.html,
 	xfce4-use.html, xfce4-user-guide.html, xfce4-user-guide.xml: Update
 	licence statement
 
-2003-06-06 18:09  huysmans
+2003-06-06  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Add nestu to credits
 
-2003-06-06 11:19  huysmans
+2003-06-06  huysmans
 
 	* doc/index/C/index.html: Add xffm manual to index
 
-2003-06-05 23:49  huysmans
+2003-06-05  huysmans
 
 	* doc/: xfce-utils/C/xfce-utils.html, xfce-utils/C/xfce-utils.xml,
 	xfce4-user-guide/C/copyright.xml,
@@ -580,112 +596,112 @@
 	xfce4-user-guide/C/xfce4-user-guide.html,
 	xfce4-user-guide/C/xfce4-user-guide.xml: Doc fixes assorti
 
-2003-06-05 14:50  huysmans
+2003-06-05  huysmans
 
 	* xfrun/xfrun.c: make combo case sensitive
 
-2003-06-05 11:18  huysmans
+2003-06-05  huysmans
 
 	* doc/xfce4-user-guide/C/images/default-session.png: Updated images
 
-2003-06-05 09:28  huysmans
+2003-06-05  huysmans
 
 	* po/: de.gmo, de.po, tr.gmo, tr.po: Updated translations and
 	multiple file drop on backdrop list manager
 
-2003-06-04 08:10  huysmans
+2003-06-04  huysmans
 
 	* doc/xfce4-user-guide/C/: xfce4-install.html, xfce4-use.html,
 	xfce4-user-guide.html, xfce4-user-guide.xml: doc tweaks
 
-2003-06-04 08:03  huysmans
+2003-06-04  huysmans
 
 	* doc/: index/C/index.html, xfce4-user-guide/C/xfce4-install.html,
 	xfce4-user-guide/C/xfce4-use.html,
 	xfce4-user-guide/C/xfce4-user-guide.html,
 	xfce4-user-guide/C/xfce4-user-guide.xml: doc tweaks
 
-2003-06-03 22:10  huysmans
+2003-06-03  huysmans
 
 	* xfce4-about/: AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de: use
 	entity for c cedille
 
-2003-06-03 12:55  huysmans
+2003-06-03  huysmans
 
 	* doc/xfce-utils/C/images/about-dialog.png,
 	doc/xfce-utils/C/images/run-dialog.png, xfce4-about/COPYING: Small
 	fix, screenshot updates
 
-2003-06-03 09:13  huysmans
+2003-06-03  huysmans
 
 	* doc/index/C/index.html: Fix link
 
-2003-06-02 22:51  huysmans
+2003-06-02  huysmans
 
 	* doc/index/C/index.html: Update index
 
-2003-06-02 17:46  huysmans
+2003-06-02  huysmans
 
 	* doc/xfce4-user-guide/C/images/default-session.png: change some
 	defaults
 
-2003-06-02 15:46  huysmans
+2003-06-02  huysmans
 
 	* scripts/xfmountdev4: Use xftree4 instead of xffm in xfmountdev4
 
-2003-06-01 23:23  huysmans
+2003-06-01  huysmans
 
 	* xfce-utils.spec.in, po/fi.gmo, po/fi.po: Update fi translations
 	and specfile fix
 
-2003-06-01 18:29  huysmans
+2003-06-01  huysmans
 
 	* po/: ca.gmo, ca.po, de.gmo, de.po, es.gmo, es.po, fi.gmo, fi.po,
 	fr.gmo, fr.po, ja.gmo, ja.po, ms.gmo, ms.po, nl.gmo, nl.po, pl.gmo,
 	pl.po, ta.gmo, ta.po, tr.gmo, tr.po, xfce-utils.pot, zh_CN.gmo,
 	zh_CN.po: po-file fixes
 
-2003-06-01 17:43  huysmans
+2003-06-01  huysmans
 
 	* xftaskbar/xftaskbar.c: Fix growing systray when
 	enabling/disabling
 
-2003-06-01 13:59  huysmans
+2003-06-01  huysmans
 
 	* doc/xfce4-user-guide/C/: xfce4-use.html, xfce4-user-guide.html,
 	xfce4-user-guide.xml: Update user guide (small fixes)
 
-2003-06-01 13:53  huysmans
+2003-06-01  huysmans
 
 	* doc/xfce4-user-guide/C/: xfce4-use.html, xfce4-user-guide.html,
 	xfce4-user-guide.xml: Update user guide
 
-2003-06-01 12:01  huysmans
+2003-06-01  huysmans
 
 	* doc/xfce4-user-guide/C/: BSD.html, GPL.html, LGPL.html,
 	xfce4-copyright.html, xfce4-install.html, xfce4-intro.html,
 	xfce4-use.html, xfce4-user-guide.html, xfce4-user-guide.xml: Update
 	user guide
 
-2003-05-31 23:18  huysmans
+2003-05-31  huysmans
 
 	* doc/xfce-utils/C/: xfce-utils.html, xfce-utils.xml: doc update
 
-2003-05-31 14:37  huysmans
+2003-05-31  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.html,
 	AUTHORS.html.ca, AUTHORS.html.de: Add Francois to AUTHORS
 
-2003-05-31 13:10  huysmans
+2003-05-31  huysmans
 
 	* po/: tr.gmo, tr.po: Update turkish translations
 
-2003-05-30 22:36  huysmans
+2003-05-30  huysmans
 
 	* configure, configure.ac, po/es.gmo, po/es.po, po/ms.gmo,
 	po/ms.po: Add malayan translations
 
-2003-05-30 10:47  huysmans
+2003-05-30  huysmans
 
 	* Makefile.in, doc/Makefile.in, doc/index/Makefile.in,
 	doc/index/C/Makefile.in, doc/xfce-utils/Makefile.in,
@@ -697,30 +713,30 @@
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Small tweaks to build files
 
-2003-05-29 17:40  huysmans
+2003-05-29  huysmans
 
 	* xfce-utils.spec.in: update spec file
 
-2003-05-29 15:53  huysmans
+2003-05-29  huysmans
 
 	* xfce4-about/: BSD, COPYING, GPL, LGPL, Makefile.am, Makefile.in,
 	info.c: Add more licenses
 
-2003-05-29 14:52  huysmans
+2003-05-29  huysmans
 
 	* doc/: xfce-nochunk.xsl, xfce.xsl: improve stylesheet import
 
-2003-05-29 14:33  huysmans
+2003-05-29  huysmans
 
 	* aclocal.m4, config.guess, config.h.in, config.sub, configure,
 	configure.ac, depcomp, install-sh, mkinstalldirs, po/ca.gmo,
 	po/ca.po: Update catalan translations
 
-2003-05-29 11:58  huysmans
+2003-05-29  huysmans
 
 	* po/: nl.gmo, nl.po: Translations update
 
-2003-05-27 23:29  xfce
+2003-05-27  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.h.in, config.sub,
 	configure, configure.ac, depcomp, install-sh, ltcf-c.sh, ltconfig,
@@ -735,7 +751,7 @@
 	xftaskbar/plugin/Makefile.in: Add Japanese translation by Zhao-Ji
 	<zhao-ji at awz dot ne dot jp>
 
-2003-05-26 16:37  bmeurer
+2003-05-26  bmeurer
 
 	* aclocal.m4, configure, configure.ac, ltcf-c.sh, ltconfig,
 	ltmain.sh, xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.html.ca,
@@ -743,45 +759,45 @@
 	xfce4-about/Makefile.in, xftaskbar/xftaskbar.c: Added Catalan info
 	files, contributed by Carles Muñoz Gorriz.
 
-2003-05-25 23:40  xfce
+2003-05-25  xfce
 
 	* scripts/xinitrc: Set Xft.dpi to 96, and use "Sans 8" as default
 	font and "Sans Bold 10" as window title font
 
-2003-05-21 23:42  huysmans
+2003-05-21  huysmans
 
 	* configure, configure.ac, po/tr.gmo, po/tr.po: Add Turkish
 	translations
 
-2003-05-21 22:18  xfce
+2003-05-21  xfce
 
 	* scripts/xinitrc: Call xrdb only once to reduce startup time
 
-2003-05-19 22:29  huysmans
+2003-05-19  huysmans
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Should not have been changed
 
-2003-05-19 21:46  huysmans
+2003-05-19  huysmans
 
 	* xftaskbar/: xftaskbar.c, plugin/xftaskbar_plugin.c: Properly
 	register/unregister systray
 
-2003-05-18 23:15  huysmans
+2003-05-18  huysmans
 
 	* doc/xfce4-user-guide/C/: BSD.html, GPL.html, LGPL.html,
 	xfce4-copyright.html, xfce4-install.html, xfce4-intro.html,
 	xfce4-use.html, xfce4-user-guide.html, xfce4-user-guide.xml: Minor
 	update; just to prove I'm still thinking about it ...
 
-2003-05-16 20:39  huysmans
+2003-05-16  huysmans
 
 	* xfce4-about/: Makefile.am, Makefile.in: Fix broken commit.
 
-2003-05-16 20:34  huysmans
+2003-05-16  huysmans
 
 	* xfce4-about/info.c: oops, not supposed to be commited
 
-2003-05-16 20:32  huysmans
+2003-05-16  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	configure.ac, doc/Makefile.in, doc/index/Makefile.in,
@@ -797,23 +813,23 @@
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Add tamil
 	translations
 
-2003-05-15 17:00  huysmans
+2003-05-15  huysmans
 
 	* doc/xfce4-user-guide/C/: BSD.html, GPL.html, LGPL.html,
 	copyright.xml, xfce4-copyright.html, xfce4-install.html,
 	xfce4-use.html, xfce4-user-guide.html, xfce4-user-guide.xml: fix
 	documentation
 
-2003-05-15 13:03  huysmans
+2003-05-15  huysmans
 
 	* ChangeLog: Mass update of ChangeLogs
 
-2003-05-14 09:54  huysmans
+2003-05-14  huysmans
 
 	* doc/xfce4-user-guide/C/images/default-session.png: update
 	background screenshot
 
-2003-05-13 13:33  huysmans
+2003-05-13  huysmans
 
 	* Makefile.am, Makefile.in, aclocal.m4, config.guess, config.sub,
 	configure, configure.ac, doc/Makefile.am, doc/Makefile.in,
@@ -850,7 +866,7 @@
 	xftaskbar/plugin/Makefile.in: Large documentation update. Moved to
 	new location.
 
-2003-05-08 16:43  xfce
+2003-05-08  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	configure.ac, doc/Makefile.in, gdm/Makefile.in,
@@ -860,7 +876,7 @@
 	API change in libxfcegui4 that jumps to version 0.22 Change
 	xftaskbar accordingly.
 
-2003-05-05 09:06  huysmans
+2003-05-05  huysmans
 
 	* Makefile.am, Makefile.in, aclocal.m4, config.guess, config.sub,
 	xfce-utils.spec.in, doc/Makefile.in, gdm/Makefile.in, po/ChangeLog,
@@ -870,11 +886,11 @@
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Fixes for rpm and distcheck targets
 
-2003-05-04 21:34  xfce
+2003-05-04  xfce
 
 	* xftaskbar/xftaskbar.c: Set grouping mode to "auto"
 
-2003-05-04 00:01  xfce
+2003-05-04  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	configure.ac, doc/Makefile.in, gdm/Makefile.in, po/fr.gmo,
@@ -883,7 +899,7 @@
 	xftaskbar/plugin/Makefile.in: Various fixes, added french
 	translation, fixed desktop switching in xfwm4
 
-2003-05-03 12:23  huysmans
+2003-05-03  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	configure.ac, ltcf-c.sh, ltconfig, ltmain.sh, doc/Makefile.in,
@@ -891,7 +907,7 @@
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Add Chinese translations
 
-2003-05-02 19:12  bmeurer
+2003-05-02  bmeurer
 
 	* Makefile.in, aclocal.m4, configure, configure.ac,
 	doc/Makefile.in, gdm/Makefile.in, m4/depends.m4,
@@ -902,15 +918,15 @@
 	http://www.home.unix-ag.org/bmeurer/xfce/index.html#20030502 for
 	details.
 
-2003-05-01 21:33  bmeurer
+2003-05-01  bmeurer
 
 	* scripts/xfterm4: Added gnome2-terminal.
 
-2003-05-01 16:04  bmeurer
+2003-05-01  bmeurer
 
 	* po/pl.gmo: added missing pl.gmo file.
 
-2003-05-01 12:42  bmeurer
+2003-05-01  bmeurer
 
 	* configure, configure.ac, xfce4-about/AUTHORS.de.html,
 	xfce4-about/AUTHORS.html.de, xfce4-about/INFO.de.html.in,
@@ -918,136 +934,136 @@
 	xfce4-about/Makefile.in, xfce4-about/info.c: Added i18n functions
 	to libxfce4util.
 
-2003-05-01 07:55  huysmans
+2003-05-01  huysmans
 
 	* po/: de.gmo, fi.gmo: Add missing gmo files
 
-2003-04-28 21:36  xfce
+2003-04-28  xfce
 
 	* scripts/xinitrc: Don't set Xcursor theme
 
-2003-04-28 21:10  bmeurer
+2003-04-28  bmeurer
 
 	* xfce4-about/info.c: Fixed solaris LC_MESSAGES problem. Noted by 
 	K. Prasad.
 
-2003-04-27 22:16  bmeurer
+2003-04-27  bmeurer
 
 	* configure, configure.ac, po/pl.po, xfce4-about/AUTHORS,
 	xfce4-about/AUTHORS.de, xfce4-about/AUTHORS.de.html,
 	xfce4-about/AUTHORS.html: Added polish translations.
 
-2003-04-27 20:29  bmeurer
+2003-04-27  bmeurer
 
 	* xftaskbar/xftaskbar.c: taskbar no longer ignores running
 	systrays.
 
-2003-04-26 23:21  bmeurer
+2003-04-26  bmeurer
 
 	* aclocal.m4, configure, configure.ac, ltcf-c.sh, ltconfig,
 	ltmain.sh: non-HTML is now default.
 
-2003-04-26 23:16  bmeurer
+2003-04-26  bmeurer
 
 	* m4/depends.m4: Updated BM_DEPEND_CHECK.
 
-2003-04-26 13:59  huysmans
+2003-04-26  huysmans
 
 	* po/nl.po~: Remove backup file
 
-2003-04-26 13:53  bmeurer
+2003-04-26  bmeurer
 
 	* m4/debug.m4: Fixed a stupid typo.
 
-2003-04-26 13:23  huysmans
+2003-04-26  huysmans
 
 	* po/: nl.gmo, nl.po, nl.po~: Add Dutch translations
 
-2003-04-26 10:06  bmeurer
+2003-04-26  bmeurer
 
 	* xfce4-about/info.c: Fixed bug with hfilename only declared for
 	the HTML version, as noted by Moritz.
 
-2003-04-26 00:35  xfce
+2003-04-26  xfce
 
 	* xftaskbar/xftaskbar.c: Fix missing xinerama init *sigh*
 
-2003-04-25 23:29  huysmans
+2003-04-25  huysmans
 
 	* Makefile.in, aclocal.m4, configure, configure.ac, ltcf-c.sh,
 	ltconfig, ltmain.sh, po/de.po, po/fi.po, po/xfce-utils.pot: Add
 	Dutch translations
 
-2003-04-25 23:01  bmeurer
+2003-04-25  bmeurer
 
 	* po/de.po, po/fi.po, po/xfce-utils.pot,
 	xftaskbar/plugin/xftaskbar_plugin.c: Do not translate strings with
 	tags. Fixed two other issues.
 
-2003-04-25 22:42  bmeurer
+2003-04-25  bmeurer
 
 	* xfce4-about/: AUTHORS.de, AUTHORS.de.html, Makefile.am,
 	Makefile.in: I18n updates again. Thanks to Moritz.
 
-2003-04-25 22:39  bmeurer
+2003-04-25  bmeurer
 
 	* Makefile.in, po/de.po: I18n updates again. Thanks to Moritz.
 
-2003-04-25 21:52  bmeurer
+2003-04-25  bmeurer
 
 	* xfce4-about/: INFO.de.html.in, INFO.html.in: Updated files.
 	Thanks to Moritz Heiber.
 
-2003-04-25 21:28  bmeurer
+2003-04-25  bmeurer
 
 	* configure, configure.ac, xfce4-about/INFO.de.html.in,
 	xfce4-about/Makefile.am, xfce4-about/Makefile.in,
 	xfce4-about/info.c: Added a hack to support localized info pages.
 	This will be rewritten in the near future.
 
-2003-04-25 20:48  bmeurer
+2003-04-25  bmeurer
 
 	* configure, configure.ac: xfce-mcs-manager version was changed to
 	0.1.0
 
-2003-04-25 20:09  bmeurer
+2003-04-25  bmeurer
 
 	* xfce4-about/: AUTHORS, AUTHORS.html: Updated translators.
 
-2003-04-25 19:46  bmeurer
+2003-04-25  bmeurer
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: gettext fixes in the plugin.
 
-2003-04-25 19:41  bmeurer
+2003-04-25  bmeurer
 
 	* xfrun/Makefile.am, xfrun/Makefile.in, xfrun/xfrun.c,
 	xftaskbar/xftaskbar.c: Fixed some gettext related problems.
 
-2003-04-25 19:26  bmeurer
+2003-04-25  bmeurer
 
 	* aclocal.m4, configure, configure.ac, po/fi.po: Added finish
 	translations.
 
-2003-04-25 13:27  bmeurer
+2003-04-25  bmeurer
 
 	* Makefile.am, Makefile.in: Forgotten.
 
-2003-04-25 11:53  bmeurer
+2003-04-25  bmeurer
 
 	* m4/depends.m4: Updated depends.m4 and added macro for use with
 	panel plugins. Updated libxfce4util to install the common m4 files
 	into $(datadir)/xfce4/m4.
 
-2003-04-25 00:51  bmeurer
+2003-04-25  bmeurer
 
 	* po/de.po: Updated german translation. Thanks to Moritz Heiber.
 
-2003-04-25 00:48  bmeurer
+2003-04-25  bmeurer
 
 	* xfce4-about/info.c: HTML requires more space, so resize the
 	window, if HTML is used.
 
-2003-04-25 00:13  bmeurer
+2003-04-25  bmeurer
 
 	* Makefile.in, NOTES, TODO, aclocal.m4, config.h.in, configure,
 	configure.ac, doc/Makefile.in, gdm/Makefile.in, po/Makefile.in.in,
@@ -1058,13 +1074,13 @@
 	xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in: Added
 	gettext framework.
 
-2003-04-24 22:53  bmeurer
+2003-04-24  bmeurer
 
 	* configure, configure.ac, xfce4-about/AUTHORS,
 	xfce4-about/AUTHORS.html: Changed Madkiss' email to
 	madkiss@debian.org (on his request) and increased version to 0.2.1.
 
-2003-04-24 22:41  bmeurer
+2003-04-24  bmeurer
 
 	* AUTHORS, Makefile.in, NEWS, config.h.in, configure, configure.ac,
 	doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
@@ -1074,31 +1090,31 @@
 	xftaskbar/plugin/Makefile.in: Added optional gtkhtml support to the
 	about box. Someone should rework the INFO.html.in file.
 
-2003-04-24 22:33  xfce
+2003-04-24  xfce
 
 	* xftaskbar/xftaskbar.c: Make xftaskbar xinerama aware
 
-2003-04-21 22:50  xfce
+2003-04-21  xfce
 
 	* xftaskbar/xftaskbar.c: Fix compiler warning
 
-2003-04-20 15:03  huysmans
+2003-04-20  huysmans
 
 	* xftaskbar/: xftaskbar.c, plugin/xftaskbar_plugin.c: Add systray
 	option to settings dialog
 
-2003-04-20 14:55  bmeurer
+2003-04-20  bmeurer
 
 	* xfce4-about/INFO.in: added missing file.
 
-2003-04-20 13:46  bmeurer
+2003-04-20  bmeurer
 
 	* Makefile.in, configure, configure.ac, xfce4-about/Makefile.am,
 	xfce4-about/Makefile.in, xfce4-about/info.c, xftaskbar/xftaskbar.c,
 	xftaskbar/plugin/xftaskbar_plugin.c: Cleaned up xfce4-about code.
 	Added some systray related stuff to xftaskbar4, requires more work.
 
-2003-04-19 23:32  bmeurer
+2003-04-19  bmeurer
 
 	* Makefile.am, Makefile.in, aclocal.m4, autogen.sh, config.h.in,
 	configure, configure.ac, ltcf-c.sh, ltconfig, ltmain.sh,
@@ -1112,86 +1128,86 @@
 	libxfcegui4 and frontend to xftaskbar4.  Lots of cleanups in the
 	autotools stuff.
 
-2003-04-18 23:44  xfce
+2003-04-18  xfce
 
 	* xfce4-about/AUTHORS: Added Chuck and Toby
 
-2003-04-14 14:59  huysmans
+2003-04-14  huysmans
 
 	* xfce4-about/AUTHORS: Update AUTHORS file. Needs more work.
 
-2003-04-08 13:17  huysmans
+2003-04-08  huysmans
 
 	* xfrun/xfrun.c: Fix bug where a program wasn't run when there was
 	a directory with the same name in the user's home dir.
 
-2003-04-02 23:18  xfce
+2003-04-02  xfce
 
 	* ChangeLog: Update ChangeLog
 
-2003-04-01 23:33  xfce
+2003-04-01  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c: Initialize early i18n in mcs
 	plugins Add Etria theme
 
-2003-03-30 12:08  huysmans
+2003-03-30  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Small doc update
 
-2003-03-27 22:37  xfce
+2003-03-27  xfce
 
 	* xftaskbar/xftaskbar.c: Prefer gdk_screen[width|height] instead of
 	XDisplay[Width|Height]
 
-2003-03-27 21:32  xfce
+2003-03-27  xfce
 
 	* ChangeLog: Update ChangeLog
 
-2003-03-25 07:53  huysmans
+2003-03-25  huysmans
 
 	* xfce4-about/AUTHORS: Update credits
 
-2003-03-23 22:17  xfce
+2003-03-23  xfce
 
 	* ChangeLog: Update ChangeLog
 
-2003-03-19 21:42  xfce
+2003-03-19  xfce
 
 	* xfrun/xfrun.c: Add CAN_DEFAULT flag to cancel button
 
-2003-03-19 08:12  huysmans
+2003-03-19  huysmans
 
 	* autogen.sh: Only add extra autogen parameters when none are given
 
-2003-03-18 23:34  xfce
+2003-03-18  xfce
 
 	* ChangeLog, ltcf-c.sh, ltconfig, ltmain.sh: Update ChangeLog
 	Update build scripts (ie rerun autogen.sh) Update xfwm4's microdeck
 	theme Remove 1 pix border arround xffm menu bar
 
-2003-03-17 16:22  bmeurer
+2003-03-17  bmeurer
 
 	* configure, configure.ac, ltcf-c.sh, ltconfig, ltmain.sh,
 	xfrun/xfrun.c: Fixed xfrun4 crashing when no history file exists.
 
-2003-03-13 21:39  xfce
+2003-03-13  xfce
 
 	* ChangeLog: Update Changelogs
 
-2003-03-12 14:18  huysmans
+2003-03-12  huysmans
 
 	* xfrun/: Makefile.am, Makefile.in, xfrun.c: Safe terminal option
 	in history and allow xfrun to open directories. Patch by James
 	Tappin.
 
-2003-03-11 22:02  xfce
+2003-03-11  xfce
 
 	* xftaskbar/xftaskbar.c: Fix compiler warnings
 
-2003-03-01 00:38  xfce
+2003-03-01  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, ltcf-c.sh,
 	ltconfig, ltmain.sh, doc/Makefile.in, gdm/Makefile.in,
@@ -1199,11 +1215,11 @@
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: [no log
 	message]
 
-2003-02-28 23:47  bmeurer
+2003-02-28  bmeurer
 
 	* TODO: [no log message]
 
-2003-02-28 19:42  xfce
+2003-02-28  xfce
 
 	* Makefile.in, aclocal.m4, configure, ltmain.sh, doc/Makefile.in,
 	gdm/Makefile.in, scripts/Makefile.in, xfce4-about/Makefile.in,
@@ -1211,7 +1227,7 @@
 	xftaskbar/plugin/Makefile.in: Fix xfce-mcs-manager API/ABI
 	versionning Update configure/libtool to use libtool 1.4.3
 
-2003-02-28 11:47  bmeurer
+2003-02-28  bmeurer
 
 	* ltcf-c.sh, ltconfig, ltmain.sh, aclocal.m4, configure,
 	Makefile.in, configure.ac, doc/Makefile.in, gdm/Makefile.in,
@@ -1219,11 +1235,11 @@
 	xftaskbar/plugin/Makefile.in, xftaskbar/Makefile.in: Fixed
 	xfce-mcs-manager version problem.
 
-2003-02-27 22:31  huysmans
+2003-02-27  huysmans
 
 	* xfce4-about/AUTHORS: Update credits file. Initial try
 
-2003-02-26 08:17  xfce
+2003-02-26  xfce
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
@@ -1234,38 +1250,38 @@
 	occurences of g_getenv("HOME") with g_get_home_dir() Regenerate all
 	Makefiles.on and configure scripts
 
-2003-02-25 23:17  huysmans
+2003-02-25  huysmans
 
 	* configure, Makefile.am, Makefile.in, configure.ac: autotool
 	cleanup
 
-2003-02-25 22:43  huysmans
+2003-02-25  huysmans
 
 	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
 	depcomp, doc/Makefile.in, gdm/Makefile.in, scripts/Makefile.in,
 	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Add skeleton xfce-utils docs
 
-2003-02-25 22:17  huysmans
+2003-02-25  huysmans
 
 	* autogen.sh: Fix proper use of AC_PROG_LIBTOOL
 
-2003-02-22 10:52  huysmans
+2003-02-22  huysmans
 
 	* ChangeLog, Makefile.am, Makefile.in, configure, configure.ac,
 	scripts/Makefile.am, scripts/Makefile.in, scripts/xfhelp4.in: Add
 	xfhelp4 script
 
-2003-02-17 23:15  huysmans
+2003-02-17  huysmans
 
 	* xfce4-about/info.c: Exit when quit button is pressed
 
-2003-02-17 21:53  huysmans
+2003-02-17  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	doc/Makefile.am, doc/Makefile.in: Add common xfce 4 docs
 
-2003-02-17 13:47  huysmans
+2003-02-17  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce4-about/AUTHORS, xfce4-about/COPYING, xfce4-about/Makefile.am,
@@ -1273,17 +1289,17 @@
 	xfce4-about/xfce-logo-icon.h, xfce4-about/xfce-logo.jpg: Add
 	xfce4-about
 
-2003-02-16 21:51  xfce
+2003-02-16  xfce
 
 	* scripts/xinitrc: Use Xcursor theme "redglass" with a size of 24
 
-2003-02-14 21:10  xfce
+2003-02-14  xfce
 
 	* Makefile.in, configure, configure.ac, gdm/10XFce4.in,
 	gdm/Makefile.am, gdm/Makefile.in, gdm/XFce4.in,
 	gdm/Xclients.xfce4.in: Fix expansion if path
 
-2003-02-14 15:35  xfce
+2003-02-14  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	gdm/10XFce4.in, gdm/Makefile.am, gdm/Makefile.in, gdm/XFce4.in,
@@ -1291,19 +1307,19 @@
 	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Add optional
 	gdm support
 
-2003-02-14 12:45  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: Fix xinitrc for good (I hope)
 
-2003-02-14 11:55  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: [no log message]
 
-2003-02-14 11:45  xfce
+2003-02-14  xfce
 
 	* scripts/xinitrc: xinitrc fixes
 
-2003-02-14 11:40  xfce
+2003-02-14  xfce
 
 	* Makefile.in, configure, configure.ac, xfce-utils.spec.in,
 	scripts/Makefile.am, scripts/Makefile.in, scripts/startxfce4.in,
@@ -1311,50 +1327,50 @@
 	xinitrc Fix various issues with xfrun Remove unsecure expand_path
 	function
 
-2003-02-10 23:17  huysmans
+2003-02-10  huysmans
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	scripts/Makefile.am, scripts/Makefile.in, scripts/xflock4,
 	scripts/xfmountdev4, scripts/xfterm4: Copy some useful scripts from
 	xfce 3
 
-2003-02-04 21:00  jensl
+2003-02-04  jensl
 
 	* xfrun/xfrun.c: changed xfrun to open the dialog at mouse position
 
-2003-02-02 11:08  xfce
+2003-02-02  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce-utils.spec.in: Cleanup
 
-2003-01-27 21:56  xfce
+2003-01-27  xfce
 
 	* INSTALL, Makefile.am, Makefile.in, autogen.sh, config.guess,
 	config.sub, configure, configure.ac, install-sh, mkinstalldirs,
 	xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Update Makefiles
 
-2003-01-26 22:22  xfce
+2003-01-26  xfce
 
 	* configure, configure.ac, xftaskbar/xftaskbar.c: Use libxfcegui4
 	.15 to avoid input on taskbar window
 
-2003-01-25 23:50  xfce
+2003-01-25  xfce
 
 	* xftaskbar/xftaskbar.c: Add ICCCM hints to tell the window manager
 	not to focus the taskbar. This way, switching desktops by clicking
 	on the pager leaves the focus to the windows.
 
-2003-01-25 22:13  xfce
+2003-01-25  xfce
 
 	* xftaskbar/: xftaskbar.c, plugin/xftaskbar_plugin.c: Add option to
 	show all tasks from all workspaces in taskbar
 
-2003-01-25 18:17  xfce
+2003-01-25  xfce
 
 	* xftaskbar/xftaskbar.c: Fix pager width at startup
 
-2003-01-20 11:10  xfce
+2003-01-20  xfce
 
 	* Makefile.in, aclocal.m4, autogen.sh, config.guess, config.h.in,
 	config.sub, configure, configure.ac, ltmain.sh, xfce-utils.spec.in,
@@ -1365,33 +1381,33 @@
 	xftaskbar/plugin/xftaskbar_plugin.c: add mcs plugin to configure
 	xftaskbar
 
-2003-01-15 16:01  xfce
+2003-01-15  xfce
 
 	* xftaskbar/xftaskbar.c: [no log message]
 
-2003-01-15 11:12  xfce
+2003-01-15  xfce
 
 	* xftaskbar/xftaskbar.c: [no log message]
 
-2003-01-14 23:25  xfce
+2003-01-14  xfce
 
 	* xftaskbar/xftaskbar.c: Autohide the taskbar.
 
-2002-11-23 18:40  xfce
+2002-11-23  xfce
 
 	* xftaskbar/xftaskbar.c: Update for libxfcegui4 new include base
 	dir.
 
-2002-11-09 17:59  huysmans
+2002-11-09  huysmans
 
 	* xfrun/xfrun.c: Small cosmetic update
 
-2002-11-09 17:44  huysmans
+2002-11-09  huysmans
 
 	* xfrun/xfrun.c: Update xfrun to use new buttonorder and error
 	dialog
 
-2002-11-08 23:19  xfce
+2002-11-08  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
 	xfce-utils.spec.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
@@ -1400,25 +1416,25 @@
 	one place (configure.in/ac) xfbd uses preview file selector from
 	libxfcegui4
 
-2002-11-02 21:23  xfce
+2002-11-02  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	xfce-utils.spec.in, xftaskbar/Makefile.am, xftaskbar/Makefile.in,
 	xftaskbar/xftaskbar.c: Add xftaskbar
 
-2002-09-16 22:12  huysmans
+2002-09-16  huysmans
 
 	* xfrun/: Makefile.am, Makefile.in: Add '4' to all binaries
 
-2002-09-15 23:09  huysmans
+2002-09-15  huysmans
 
 	* xfce-utils-020915.tar.gz: Don't know how this got here ;-)
 
-2002-09-15 15:51  huysmans
+2002-09-15  huysmans
 
 	* ChangeLog: fix typo in backdrops install dir
 
-2002-09-15 14:35  huysmans
+2002-09-15  huysmans
 
 	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, Makefile.in,
 	NEWS, README, TODO, aclocal.m4, autogen.sh, compile, config.guess,
