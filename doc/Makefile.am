@@ -10,7 +10,8 @@ noinst_DATA = \
 cssdir = $(datadir)/xfce4/doc
 
 css_DATA = \
-	xfce.css
+	xfce.css \
+	xfce-mouse.png
 
 EXTRA_DIST = $(noinst_DATA) $(css_DATA)
 
