@@ -32,10 +32,6 @@
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
-#include <time.h>
-#ifdef HAVE_UNISTD_H
-#include <unistd.h>
-#endif
 
 #include <gtk/gtk.h>
 #include <gdk/gdk.h>
@@ -86,10 +82,6 @@ struct _Taskbar
     GtkWidget *hbox;
     GtkWidget *tasklist;
     GtkWidget *pager;
-
-    GtkTooltips *tooltips;
-    GtkWidget *ebox;
-    GtkWidget *clock;
 
     XfceSystemTray *tray;
     GtkWidget *iconbox;
@@ -579,53 +571,7 @@ taskbar_size_changed(GdkScreen *screen, Taskbar *taskbar)
     taskbar_change_size(taskbar, taskbar->height);
 }
 
-static gboolean
-taskbar_update_clock (Taskbar *taskbar)
-{
-  time_t ticks;
-  struct tm *tm;
-  static gint mday = -1;
-  char date_s[255];
-  char *utf8date = NULL;
-
-  ticks = time (0);
-  tm = localtime (&ticks);
-
-  if (mday != tm->tm_mday)
-    {
-      mday = tm->tm_mday;
-      /* Use format characters from strftime(3)
-       * to get the proper string for your locale.
-       * I used these:
-       * %A  : full weekday name
-       * %d  : day of the month
-       * %B  : full month name
-       * %Y  : four digit year
-       */
-      strftime (date_s, 255, _("%A, %d %B %Y"), tm);
-
-      /* Conversion to utf8
-       * patch by Oliver M. Bolzer <oliver@fakeroot.net>
-       */
-      if (!g_utf8_validate (date_s, -1, NULL))
-          utf8date = g_locale_to_utf8 (date_s, -1, NULL, NULL, NULL);
-        
-      if (utf8date)
-        {
-          gtk_tooltips_set_tip (taskbar->tooltips, taskbar->ebox, utf8date, NULL);
-          g_free (utf8date);
-        }
-      else
-        {
-          gtk_tooltips_set_tip (taskbar->tooltips, taskbar->ebox, date_s, NULL);
-        }
-    }
-
-  return TRUE;
-}
-
-int
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
     SessionClient *client_session;
     NetkScreen *screen;
@@ -713,31 +659,6 @@ main(int argc, char **argv)
 
     taskbar->iconbox = NULL;
 
-    taskbar->tooltips = gtk_tooltips_new ();
-
-    taskbar->ebox = gtk_event_box_new ();
-    gtk_box_pack_start (GTK_BOX (taskbar->hbox), taskbar->ebox, FALSE, FALSE, 0);
-    gtk_widget_show (taskbar->ebox);
-
-    taskbar->clock = xfce_clock_new ();
-    xfce_clock_set_mode (XFCE_CLOCK (taskbar->clock), XFCE_CLOCK_DIGITAL);
-    xfce_clock_show_ampm (XFCE_CLOCK (taskbar->clock), FALSE);
-    xfce_clock_show_military (XFCE_CLOCK (taskbar->clock), TRUE);
-    gtk_container_add (GTK_CONTAINER (taskbar->ebox), taskbar->clock);
-    gtk_widget_show (taskbar->clock);
-
-    taskbar_update_clock (taskbar);
-    g_timeout_add (60 * 1000, (GSourceFunc) taskbar_update_clock, taskbar);
-
-    taskbar->tray = xfce_system_tray_new();
-    
-/*    will get called when connecting to the mcs client 
- *    taskbar_toggle_tray(taskbar);*/
-
-    g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
-    g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
-    g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar);
-
     taskbar->tasklist = netk_tasklist_new(screen);
     netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), taskbar->group_tasks);
     netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
@@ -747,6 +668,15 @@ main(int argc, char **argv)
     netk_pager_set_orientation(NETK_PAGER(taskbar->pager), GTK_ORIENTATION_HORIZONTAL);
     netk_pager_set_n_rows(NETK_PAGER(taskbar->pager), 1);
     gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
+
+    taskbar->tray = xfce_system_tray_new();
+    
+/*    will get called when connecting to the mcs client 
+ *    taskbar_toggle_tray(taskbar);*/
+
+    g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
+    g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
+    g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar);
 
     client_session = client_session_new(argc, argv, NULL /* data */ , SESSION_RESTART_IF_RUNNING, 30);
 
