@@ -36,7 +36,7 @@ msgstr "Tiitrid"
 
 #: xfce4-about/info.c:293
 msgid "Copyright"
-msgstr "Koopiaõigused"
+msgstr "Autoriõigused"
 
 #: xfce4-about/info.c:294
 msgid "BSDL"
@@ -108,7 +108,7 @@ msgstr "_Paremal"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
-msgstr "Autmaatne varjamine"
+msgstr "Automaatne varjamine"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
 msgid "Auto _hide taskbar"
