@@ -3,8 +3,10 @@ Encoding=UTF-8
 # The names/descriptions should really be better
 Name=Xfce Session
 Name[fr]=Session Xfce
+Name[nl]=Xfce 4 Sessie
 Comment=Use this session to run Xfce as your desktop environment
 Comment[fr]=Sélectionner cette session pour utiliser Xfce comme environnment graphique
+Comment[nl]=Deze optie start de Xfce 4 Desktop Environment
 Exec=startxfce4
 Icon=
 Type=Application

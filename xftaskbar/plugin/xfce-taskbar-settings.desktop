@@ -2,8 +2,10 @@
 Encoding=UTF-8
 Name=Xfce 4 Taskbar Settings
 Name[fr]=Paramètres de la barre de tâches Xfce 4
+Name[nl]=Xfce 4 Taakbalk Opties
 Comment=Taskbar Settings
 Comment[fr]=Paramétrage de la barre de tâches
+Comment[nl]=Instellingen voor de taakbalk
 Exec=xfce-setting-show taskbar
 Icon=xfce4-taskbar
 Terminal=false
@@ -11,3 +13,4 @@ Type=Application
 Categories=X-XFCE;Settings;DesktopSettings;
 OnlyShowIn=XFCE;
 GenericName=Taskbar Settings
+GenericName[nl]=Taakbalk Opties
