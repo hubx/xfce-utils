@@ -224,11 +224,9 @@ main (int argc, char **argv)
 
     gtk_init (&argc, &argv);
 
-    /* XXX - We could use a GtkDialog instead here, since this is
-     * really a simple dialog.
-     */
-    info = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    info = gtk_dialog_new ();
     gtk_window_set_title (GTK_WINDOW (info), _("About XFce 4"));
+    gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
     gtk_window_stick (GTK_WINDOW (info));
 
     logo_pb = inline_icon_at_size (xfce_logo_data, 48, 48);
@@ -236,7 +234,7 @@ main (int argc, char **argv)
 
     vbox2 = gtk_vbox_new (FALSE, 0);
     gtk_widget_show (vbox2);
-    gtk_container_add (GTK_CONTAINER (info), vbox2);
+    gtk_box_pack_start (GTK_BOX (GTK_DIALOG (info)->vbox), vbox2, FALSE, TRUE, 0);
 
     /* header with logo */
     text =
