@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
 "PO-Revision-Date: 2003-07-15 22:15+0100\n"
 "Last-Translator: Carles MuNoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,18 +147,18 @@ msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
 msgid "Unable to register system tray: %s"
 msgstr "No es por registrar la safata del sistema: %s"
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
 msgstr "Això no hauria de succeir"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
 msgstr "No es pot connectar al gestor de sessions"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
 msgstr "No es pot obtenir els marges de l'escriptori"
 
-#: xftaskbar/xftaskbar.c:564
+#: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
 msgstr "No es pot crear el canal del client MCS"

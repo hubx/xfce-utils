@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tamil XFCE-UTILS 4\n"
-"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
 "PO-Revision-Date: 2003-05-14 22:08+0600\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil <tamilinix@yahoogroups.com>\n"
@@ -150,19 +150,19 @@ msgstr "þò¾¢¨ÃÂ¢ø ²ü¸É§Å µ÷ «¨ÁôÒò ¾ðÎ ­ÂíÌ¸¢È�
 msgid "Unable to register system tray: %s"
 msgstr "«¨ÁôÒ ¾ðÎ À¾¢× ¦ºöÂÓÊÂÅ¢ø¨Ä: %s"
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
 msgstr "þÐ ¿¨¼¦ÀÈìÜ¼¡Ð"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
 msgstr "«Á÷× §ÁÄ¡ÇÕ¼ý ­¨½ôÒ ¦¸¡ûÇ ÓÊÂÅ¢ø¨Ä"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
 msgstr "¸½¢§Á¨º ±ø¨Ä¸¨Ç ¦ÀÈÓÊÂÅ¢ø¨Ä"
 
-#: xftaskbar/xftaskbar.c:564
+#: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
 msgstr "MCS §º¨ÅôÀÂÉ÷ ¾¼õ À¨¼ì¸ ÓÊÂÅ¢ø¨Ä"
 

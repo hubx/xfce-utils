@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
 "PO-Revision-Date: 2003-05-03 15:05+0200\n"
 "Last-Translator: Olivier Fourdan <fourdan@xfce.org>\n"
 "Language-Team: none <LL@li.org>\n"
@@ -157,19 +157,19 @@ msgstr ""
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
 msgstr "Ça ne devrait pas se produire"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
 msgstr "Impossible de se connecter au gestionnaire de session"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
 msgstr "Impossible de récupérer les marges du bureau"
 
-#: xftaskbar/xftaskbar.c:564
+#: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
 msgstr "Impossible de créer la chaîne pour le client MCS"
 

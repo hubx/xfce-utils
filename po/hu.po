@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
-"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
 "PO-Revision-Date: 2003-07-16 16:20+0200\n"
 "Last-Translator: Egmont Koblinger <egmont@uhulinux.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -152,18 +152,18 @@ msgstr "Már fut egy rendszer panel ezen a képernyőn"
 msgid "Unable to register system tray: %s"
 msgstr "Nem lehet bejegyezni a panelt: %s"
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
 msgstr "Ennek nem szabadna megtörténnie"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
 msgstr "Nem lehet a munkamenet-kezelőhöz csatlakozni"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
 msgstr "Nem elérhetőek a munkaasztalmargók"
 
-#: xftaskbar/xftaskbar.c:564
+#: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
 msgstr "Nem lehet MCS ügyfélcsatornát létrehozni"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-08-13 19:16+0200\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jasper Huijsmans <huysmans@users.sourceforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,19 +148,19 @@ msgstr "Er is al een system tray actief op dit scherm"
 msgid "Unable to register system tray: %s"
 msgstr "Kan system tray niet registreren: %s"
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
 msgstr "Dit zou niet moeten gebeuren"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
 msgstr "Sessiebeheer niet beschikbaar"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
 msgstr "Kan bureaubladmarges niet vinden"
 
-#: xftaskbar/xftaskbar.c:564
+#: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
 msgstr "Kan MCS client kanaal niet aanmaken"
 
