@@ -13,14 +13,12 @@ Requires:	pango >= @PANGO_REQUIRED_VERSION@
 Requires:	libxfcegui4 >= @LIBXFCEGUI4_REQUIRED_VERSION@
 Requires:	libxfce4mcs >= @LIBXFCE4MCS_REQUIRED_VERSION@
 Requires:	xfce-mcs-manager
-Requires:	libxml2
 BuildRequires: 	gtk2-devel >= @GTK_REQUIRED_VERSION@
 BuildRequires: 	glib2-devel >= @GLIB_REQUIRED_VERSION@
 BuildRequires: 	pango-devel >= @PANGO_REQUIRED_VERSION@
 BuildRequires: 	libxfcegui4-devel >= @LIBXFCEGUI4_REQUIRED_VERSION@
 BuildRequires:	libxfce4mcs-devel >= @LIBXFCE4MCS_REQUIRED_VERSION@
 BuildRequires:	xfce-mcs-manager-devel
-BuildRequires: 	libxml2-devel
 
 %description
 xfce-utils contain utilities for the XFce Desktop Environment
@@ -44,5 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc example.xfce4rc README TODO ChangeLog NEWS INSTALL COPYING AUTHORS
 %{_bindir}/*
 %{_libdir}/*
-%{_datadir}/xfce-utils/
 

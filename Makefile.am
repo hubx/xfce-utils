@@ -2,7 +2,7 @@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 
-SUBDIRS = backdrops icons xfbd xfmouse xfrun xftaskbar
+SUBDIRS = xfrun xftaskbar
 
 distclean-local:
 	rm -f xfce-utils.spec

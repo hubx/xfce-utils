@@ -11022,7 +11022,7 @@ fi
 
 
 
-                                                                                          ac_config_files="$ac_config_files xfce-utils.spec Makefile backdrops/Makefile icons/Makefile xfbd/Makefile xfmouse/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile"
+                                                  ac_config_files="$ac_config_files xfce-utils.spec Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -11587,10 +11587,6 @@ do
   # Handling of arguments.
   "xfce-utils.spec" ) CONFIG_FILES="$CONFIG_FILES xfce-utils.spec" ;;
   "Makefile" ) CONFIG_FILES="$CONFIG_FILES Makefile" ;;
-  "backdrops/Makefile" ) CONFIG_FILES="$CONFIG_FILES backdrops/Makefile" ;;
-  "icons/Makefile" ) CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;
-  "xfbd/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfbd/Makefile" ;;
-  "xfmouse/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfmouse/Makefile" ;;
   "xfrun/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfrun/Makefile" ;;
   "xftaskbar/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/Makefile" ;;
   "xftaskbar/plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/plugin/Makefile" ;;

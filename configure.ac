@@ -69,10 +69,6 @@ AC_SUBST(GDK_PIXBUF_CSOURCE)
 AC_OUTPUT([
 xfce-utils.spec
 Makefile
-backdrops/Makefile
-icons/Makefile
-xfbd/Makefile
-xfmouse/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
