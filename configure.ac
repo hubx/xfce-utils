@@ -58,7 +58,7 @@ BM_I18N([xfce-utils], [de fi])
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [0.0.3])
 BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [0.0.19])
-BM_DEPEND([XFCE_MCS_MANAGER], [xfce-mcs-manager], [0.1])
+BM_DEPEND([XFCE_MCS_MANAGER], [xfce-mcs-manager], [0.1.0])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
