@@ -22,7 +22,21 @@
 
 if [ "x$BROWSER" = "x" ]
 then
-  BROWSER="@BROWSER_DEFAULT@"
+  for b in @BROWSER_DEFAULT@ firefox mozilla epiphany galeon konqueror
+  do
+    if which "$b" > /dev/null 2>&1
+    then
+      BROWSER=$b
+      break;
+    fi
+  done
+fi
+
+if [ "x$BROWSER" = "x" ]
+then
+  echo " *** Error ***: xfhelp4: Could not find browser to use."
+  echo "                Please set the BROWSER variable."
+  exit 1
 fi
 
 HELP_DIR="@datadir@/xfce4/doc/"
@@ -57,15 +71,15 @@ fi
 
 case $BROWSER in
     communicator*|netscape|mozilla*|phoenix*|firebird*|firefox*)
-	$BROWSER -remote openurl\(file://"$URL",new-window\) || \
-		$BROWSER "$URL"    
+	$BROWSER -remote openurl\("file://$URL",new-window\) || \
+		$BROWSER "file://$URL"    
 	;;
     opera*)
-    	$BROWSER -remote openURL\(file://"$URL",new-window\) || \
-		$BROWSER "$URL"
+    	$BROWSER -remote openURL\("file://$URL",new-window\) || \
+		$BROWSER "file://$URL"
 	;;
     *)
-    	$BROWSER file://"$URL"
+    	$BROWSER "file://$URL"
 	;;
 esac
 
