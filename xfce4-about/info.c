@@ -57,6 +57,8 @@
 
 #define BORDER 6
 
+static GtkWidget *info;
+
 static void
 info_help_cb(GtkWidget *w, gpointer data)
 {
@@ -131,6 +133,10 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 
 			textview = html_view_new();
 			html_view_set_document(HTML_VIEW(textview), htmldoc);
+
+			/* resize window */
+			gtk_window_set_default_size(GTK_WINDOW(info),
+					615, 530);
 		}
 		else {
 #endif
@@ -162,7 +168,6 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 int
 main(int argc, char **argv)
 {
-    GtkWidget *info;
     GtkWidget *header;
     GtkWidget *vbox, *vbox2;
     GtkWidget *notebook;
