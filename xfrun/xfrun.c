@@ -264,7 +264,7 @@ int main(int argc, char **argv)
     gtk_dialog_set_default_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
     
     gtk_window_set_default_size(GTK_WINDOW(dialog), 400, 10);
-    gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+    gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_MOUSE);
 
     vbox = gtk_vbox_new(FALSE, 4);
     gtk_widget_show(vbox);
