@@ -1,6 +1,6 @@
 @SET_MAKE@
 
-EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
+EXTRA_DIST = xfce-utils.spec xfce-utils.spec TODO
 
 SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about po
 

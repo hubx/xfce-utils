@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-04-25 23:26+0200\n"
+"POT-Creation-Date: 2003-05-05 08:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jasper Huijsmans <huysmans@users.sourceforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,28 +14,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
 
-#: xfce4-about/info.c:230
+#: xfce4-about/info.c:208
 msgid "About XFce 4"
 msgstr "XFce 4 Info"
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:221
 msgid "XFce Desktop Environment"
 msgstr "XFce Desktop Environment"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:222
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Auteursrecht 2002-2003 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:241
 msgid "Info"
 msgstr "Info"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:242
 msgid "Credits"
 msgstr "Dankwoord"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:243
 msgid "License"
 msgstr "Licentie"
 
@@ -130,14 +130,23 @@ msgstr "Kan initiële stiijl niet vinden"
 msgid "This should not happen"
 msgstr "Dit zou niet moeten gebeuren"
 
-#: xftaskbar/xftaskbar.c:367
+#: xftaskbar/xftaskbar.c:366
 msgid "Cannot connect to session manager"
 msgstr "Sessiebeheer niet beschikbaar"
 
-#: xftaskbar/xftaskbar.c:378
+#: xftaskbar/xftaskbar.c:377
 msgid "Cannot get desktop margins"
 msgstr "Kan bureaubladmarges niet vinden"
 
-#: xftaskbar/xftaskbar.c:461
+#: xftaskbar/xftaskbar.c:439
+msgid "There is already a system tray running on this screen"
+msgstr ""
+
+#: xftaskbar/xftaskbar.c:445
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr ""
+
+#: xftaskbar/xftaskbar.c:463
 msgid "Cannot create MCS client channel"
 msgstr "Kan MCS client kanaal niet aanmaken"

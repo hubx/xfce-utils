@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-04-25 23:26+0200\n"
+"POT-Creation-Date: 2003-05-05 08:37+0200\n"
 "PO-Revision-Date: 2003-04-28 20:31--200\n"
 "Last-Translator: Paweł Pastuła <pastulap@poczta.onet.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,28 +13,28 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:230
+#: xfce4-about/info.c:208
 msgid "About XFce 4"
 msgstr "O XFce 4"
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:221
 msgid "XFce Desktop Environment"
 msgstr "Środowisko XFce"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:222
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr ""
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:241
 msgid "Info"
 msgstr "Informacja"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:242
 msgid "Credits"
 msgstr "Zasłużeni"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:243
 msgid "License"
 msgstr "Licencja"
 
@@ -129,15 +129,24 @@ msgstr "Nie mogę pobrać wstępnego stylu"
 msgid "This should not happen"
 msgstr "To nie powinno się było wydarzyć"
 
-#: xftaskbar/xftaskbar.c:367
+#: xftaskbar/xftaskbar.c:366
 msgid "Cannot connect to session manager"
 msgstr "Nie mogę się połączyć z menadżerem sesji"
 
-#: xftaskbar/xftaskbar.c:378
+#: xftaskbar/xftaskbar.c:377
 msgid "Cannot get desktop margins"
 msgstr "Nie mogę pobrać marginesów obszaru roboczego"
 
-#: xftaskbar/xftaskbar.c:461
+#: xftaskbar/xftaskbar.c:439
+msgid "There is already a system tray running on this screen"
+msgstr ""
+
+#: xftaskbar/xftaskbar.c:445
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr ""
+
+#: xftaskbar/xftaskbar.c:463
 msgid "Cannot create MCS client channel"
 msgstr "Nie mogę utworzyć kanału klienta MCS"
 
