@@ -73,5 +73,6 @@ xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
 scripts/Makefile
+scripts/startxfce4
 ])
 

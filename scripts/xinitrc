@@ -1,0 +1,37 @@
+#!/bin/sh
+
+xsetroot -solid black -cursor_name watch
+
+# Start-up stuff from ~/Desktop/Autostart directory, if it exists
+# (as it seems to be the new standard)
+if [ -d "$HOME/Desktop/Autostart" ]; then
+  for i in `ls -1 ${HOME}/Desktop/Autostart/ 2>/dev/null`; do
+    if [ -x $HOME/Desktop/Autostart/$i ]; then
+      $HOME/Desktop/Autostart/$i &
+    fi
+  done
+fi
+
+if [ -f $HOME/.Xmodmap ]; then
+	xmodmap $HOME/.Xmodmap
+fi
+
+# Set Xft DPI to 72
+echo "Xft.dpi: 72" | xrdb -load -
+
+# Launch xscreensaver (if available)
+xscreensaver -no-splash &
+
+xfce-mcs-manager
+xfwm4 --daemon
+xftaskbar4&
+xfdesktop&
+panel=`which xfce4-panel`
+if [ "x$panel" -ne "x" ]; then
+	status=`$panel`
+	while [ status != 0 ]; do
+		echo "Panel crash"
+		status=`$panel`
+	done
+fi
+xsetroot -solid black -cursor_name watch

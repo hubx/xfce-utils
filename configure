@@ -11022,7 +11022,7 @@ fi
 
 
 
-                                                            ac_config_files="$ac_config_files xfce-utils.spec Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile"
+                                                                      ac_config_files="$ac_config_files xfce-utils.spec Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile scripts/startxfce4"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -11591,6 +11591,7 @@ do
   "xftaskbar/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/Makefile" ;;
   "xftaskbar/plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/plugin/Makefile" ;;
   "scripts/Makefile" ) CONFIG_FILES="$CONFIG_FILES scripts/Makefile" ;;
+  "scripts/startxfce4" ) CONFIG_FILES="$CONFIG_FILES scripts/startxfce4" ;;
   "depfiles" ) CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
   "config.h" ) CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
   *) { { echo "$as_me:$LINENO: error: invalid argument: $ac_config_target" >&5

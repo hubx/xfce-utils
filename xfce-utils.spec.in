@@ -42,4 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc example.xfce4rc README TODO ChangeLog NEWS INSTALL COPYING AUTHORS
 %{_bindir}/*
 %{_libdir}/*
+%config(noreplace) %{confdir}/xfce4/*
+
 

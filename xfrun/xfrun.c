@@ -19,13 +19,20 @@
 
 #include <gtk/gtk.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
-#ifndef MAXSTRLEN
-#define MAXSTRLEN 1024
+#ifndef PATH_MAX
+#define DEFAULT_LENGTH 1024
+#else
+#if (PATH_MAX < 1024)
+#define DEFAULT_LENGTH 1024
+#else
+#define DEFAULT_LENGTH PATH_MAX
 #endif
-
+#endif
+                                                                                                                          
 #define _(x) x
 #define N_(x) x
 
@@ -82,83 +89,34 @@ void report_error(const char *text, GtkWidget *parent)
 
 /* Executing commands. Taken from xfce4. */
 
-/* '~' doesn't get expanded by g_spawn_* */
-/* this has to be statically allocated for putenv !! */
-static char newpath[MAXSTRLEN + 1];
-
-static void expand_path(void)
-{
-    static gboolean first = TRUE;
-
-    /* we don't have to do this every time */
-    if(first)
-    {
-        const char *path = g_getenv("PATH");
-        const char *home = g_getenv("HOME");
-        int homelen = strlen(home);
-        const char *c;
-        char *s;
-
-        if(!path || !strlen(path))
-            return;
-
-        c = path;
-        s = newpath;
-
-        strcpy(s, "PATH=");
-        s += 5;
-
-        while(*c)
-        {
-            if(*c == '~')
-            {
-                strcpy(s, home);
-                s += homelen;
-            }
-            else
-            {
-                *s = *c;
-                s++;
-            }
-
-            c++;
-        }
-
-        *s = '\0';
-        first = FALSE;
-
-        putenv(newpath);
-    }
-}
-
 static gboolean exec_cmd(const char *cmd, gboolean in_terminal)
 {
     GError *error = NULL;       /* this must be NULL to prevent crash :( */
-    char execute[MAXSTRLEN + 1];
+    gchar *execute;
 
-    if(!cmd)
-        return;
-
-    /* make sure '~' is expanded in the users PATH */
-    expand_path();
+    g_return_val_if_fail(cmd != NULL, FALSE);
 
     if(in_terminal)
-        snprintf(execute, MAXSTRLEN, "xfterm -e %s", cmd);
+        execute = g_strdup_printf("xfterm -e %s", cmd);
     else
-        snprintf(execute, MAXSTRLEN, "%s", cmd);
+        execute = g_strdup(cmd);
 
     if(!g_spawn_command_line_async(execute, &error))
     {
-        char *msg;
+        gchar *msg;
 
         msg = g_strcompress(error->message);
 
         report_error(msg, dialog);
-
+        
+	g_error_free(error);
+        g_free(execute);
         g_free(msg);
+	
 	return FALSE;
     }
     
+    g_free(execute);
     return TRUE;
 }
 
@@ -168,7 +126,7 @@ GList *get_history(void)
     const char *home = g_getenv("HOME");
     char *hfile = g_strconcat(home, "/", HFILE, NULL);
     GList *cbtemp = NULL;
-    char line[MAXSTRLEN];
+    char line[DEFAULT_LENGTH];
     char *check;
     int i = 0;
 
@@ -180,10 +138,10 @@ GList *get_history(void)
         return cbtemp;
     }
 
-    line[MAXSTRLEN - 1] = '\0';
+    line[DEFAULT_LENGTH - 1] = '\0';
 
     /* no more than 10 history items */
-    for(i = 0; i < MAXHISTORY && fgets(line, MAXSTRLEN - 1, fp); i++)
+    for(i = 0; i < MAXHISTORY && fgets(line, DEFAULT_LENGTH - 1, fp); i++)
     {
         if((line[0] == '\0') || (line[0] == '\n'))
             break;
@@ -241,7 +199,6 @@ int main(int argc, char **argv)
     GtkWidget *button;
     GtkWidget *combo_entry;
     GList *history;
-    gboolean in_terminal;
     GtkWidget *checkbox;
     GtkWidget *vbox;
     GtkWidget *combo;
@@ -296,8 +253,7 @@ int main(int argc, char **argv)
 
 	if (response == GTK_RESPONSE_OK)
 	{
-	    char *msg;
-	    const char *command;
+	    const gchar *command;
 	    gboolean in_terminal;
 	    
 	    command = gtk_entry_get_text(GTK_ENTRY(combo_entry));

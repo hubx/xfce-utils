@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+#  xfce4
+#
+#  Copyright (C) 1996-2003 Olivier Fourdan (fourdan@xfce.org)
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+if [ ! -d $HOME/.xfce4/ ]; then
+	mkdir $HOME/.xfce4/
+	mkdir $HOME/.xfce4/settings
+	mkdir $HOME/.xfce4/settings
+	mkdir $HOME/.xfce4/xffm
+fi        
+if test "x$DISPLAY" = "x"
+then
+  echo $0: Starting X server
+  if [ -x $HOME/.xfce4/xinitrc ]; then
+	exec xinit $HOME/.xfce4/xinitrc $*
+  else
+	exec xinit @sysconfdir@/xfce4/xinitrc $*
+  fi  
+else
+  echo $0: X server already running on display $DISPLAY
+  if [ -x $HOME/.xfce4/xinitrc ]; then
+	exec /bin/sh $HOME/.xfce4/xinitrc $*
+  else
+	exec /bin/sh @sysconfdir@/xfce4/xinitrc $*
+  fi
+fi
