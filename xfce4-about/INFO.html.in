@@ -1,6 +1,6 @@
 <html>
   <body>
-    <h3>XFce 4, version @VERSION@</h3>
+    <h3><font size=5>XFce 4, version @VERSION@</font></h3>
 
     <i>... and mice fly ...</i>
 
@@ -8,23 +8,23 @@
     desktop environment. The following programs are part of XFce:</p>
 
     <ul>
-      <li>Window manager (xfwm4)<br />
+      <li><b><u>Window manager</u> (<i>xfwm4</i>)</b><br />
         handles the placement of windows on the screen</li>
 
-      <li>Panel (xfce4-panel)<br />
+      <li><b><u>Panel</u> (<i>xfce4-panel</i>)</b><br />
         program launchers, popup menus, clock, desktop switcher and more</li>
 
-      <li>Desktop manager (xfdesktop)<br />
+      <li><b><u>Desktop manager</u> (<i>xfdesktop</i>)</b><br />
         sets a background color or image and provides a menu when you
         click on the desktop background</li>
 
-      <li>File manager (xffm)<br />
+      <li><b><u>File manager</u> (<i>xffm</i>)</b><br />
         fast file manager</li>
 
-      <li>Utilities<br />
-          xfprint4: print files<br />
-          xfrun4: run programs<br />
-          xftaskbar4: simple taskbar with optional pager and system tray<br />
+      <li><b><u>Utilities</u></b><br />
+          <i>xfprint4</i>: print files<br />
+          <i>xfrun4</i>: run programs<br />
+          <i>xftaskbar4</i>: simple taskbar with optional pager and system tray<br />
         </li>
     </ul>
 
@@ -32,5 +32,3 @@
 
     <i>-- The XFce Development Team --</i>
   </body>
-</html>  
-
