@@ -286,21 +286,20 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show(dialog->dialog_header);
     gtk_box_pack_start(GTK_BOX(dialog->dialog_vbox1), dialog->dialog_header, FALSE, TRUE, 0);
 
-    dialog->hbox1 = gtk_hbox_new (TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->hbox1), BORDER + 1);
+    dialog->hbox1 = gtk_hbox_new (FALSE, BORDER);
     gtk_widget_show (dialog->hbox1);
-    gtk_box_pack_start (GTK_BOX (dialog->dialog_vbox1), dialog->hbox1, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->dialog_vbox1), dialog->hbox1, FALSE, FALSE, 0);
 
-    dialog->vbox1 = gtk_vbox_new (FALSE, 0);
+    dialog->vbox1 = gtk_vbox_new (FALSE, BORDER);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox1), BORDER);
     gtk_widget_show (dialog->vbox1);
-    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox1, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox1, FALSE, FALSE, 0);
 
     dialog->frame1 = xfce_framebox_new (_("Position"), TRUE);
     gtk_widget_show (dialog->frame1);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame1, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame1, FALSE, FALSE, 0);
 
-    dialog->hbox2 = gtk_hbox_new (TRUE, 0);
+    dialog->hbox2 = gtk_hbox_new (FALSE, BORDER);
     gtk_widget_show (dialog->hbox2);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame1), dialog->hbox2);
 
@@ -321,9 +320,9 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     dialog->align_frame = xfce_framebox_new (_("Alignment"), TRUE);
     gtk_widget_set_sensitive (dialog->align_frame, (width_percent < 100));
     gtk_widget_show (dialog->align_frame);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->align_frame, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->align_frame, FALSE, FALSE, 0);
 
-    dialog->align_hbox = gtk_hbox_new (TRUE, 0);
+    dialog->align_hbox = gtk_hbox_new (FALSE, BORDER);
     gtk_widget_show (dialog->align_hbox);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->align_frame), dialog->align_hbox);
 
@@ -350,7 +349,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->frame3 = xfce_framebox_new (_("Autohide"), TRUE);
     gtk_widget_show (dialog->frame3);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, FALSE, FALSE, 0);
 
     dialog->autohide_checkbutton = gtk_check_button_new_with_mnemonic (_("Auto _hide taskbar"));
     gtk_widget_show (dialog->autohide_checkbutton);
@@ -359,12 +358,12 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->frame4 = xfce_framebox_new (_("Size"), TRUE);
     gtk_widget_show (dialog->frame4);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame4, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame4, FALSE, FALSE, 0);
 
     dialog->table3 = gtk_table_new (2, 3, FALSE);
     gtk_widget_show (dialog->table3);
+    gtk_table_set_row_spacings (GTK_TABLE (dialog->table3), 3);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame4), dialog->table3);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->table3), 5);
 
     dialog->label14 = gtk_label_new (_("Height :"));
     gtk_widget_show (dialog->label14);
@@ -445,16 +444,16 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_range_set_update_policy (GTK_RANGE (dialog->width_scale),
                                  GTK_UPDATE_DISCONTINUOUS);
 
-    dialog->vbox2 = gtk_vbox_new (TRUE, 0);
+    dialog->vbox2 = gtk_vbox_new (FALSE, BORDER);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox2), BORDER);
     gtk_widget_show (dialog->vbox2);
-    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, FALSE, FALSE, 0);
 
     dialog->frame5 = xfce_framebox_new (_("Tasks"), TRUE);
     gtk_widget_show (dialog->frame5);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, FALSE, FALSE, 0);
 
-    dialog->tasks_vbox = gtk_vbox_new (TRUE, 0);
+    dialog->tasks_vbox = gtk_vbox_new (FALSE, BORDER);
     gtk_widget_show (dialog->tasks_vbox);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame5), dialog->tasks_vbox);
 
@@ -475,7 +474,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->frame2 = xfce_framebox_new (_("Pager"), TRUE);
     gtk_widget_show (dialog->frame2);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, FALSE, FALSE, 0);
 
     dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show _pager in taskbar"));
     gtk_widget_show (dialog->pager_checkbutton);
@@ -484,7 +483,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->frame2 = xfce_framebox_new (_("Notification area"), TRUE);
     gtk_widget_show (dialog->frame2);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, FALSE, FALSE, 0);
 
     dialog->tray_checkbutton = gtk_check_button_new_with_mnemonic (_("Show _system tray in taskbar"));
     gtk_widget_show (dialog->tray_checkbutton);
