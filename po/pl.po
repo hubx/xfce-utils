@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils 1.0.0\n"
+"POT-Creation-Date: 2003-04-25 23:26+0200\n"
+"PO-Revision-Date: 2003-04-28 20:31--200\n"
+"Last-Translator: Paweł Pastuła <pastulap@poczta.onet.pl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:230
+msgid "About XFce 4"
+msgstr "O XFce 4"
+
+#: xfce4-about/info.c:243
+msgid "XFce Desktop Environment"
+msgstr "Środowisko XFce"
+
+#: xfce4-about/info.c:244
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr ""
+
+#. add pages
+#: xfce4-about/info.c:263
+msgid "Info"
+msgstr "Informacja"
+
+#: xfce4-about/info.c:264
+msgid "Credits"
+msgstr "Zasłużeni"
+
+#: xfce4-about/info.c:265
+msgid "License"
+msgstr "Licencja"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Nie mógł zapisać historii do pliku %s\n"
+
+#: xfrun/xfrun.c:231
+msgid "Run program"
+msgstr "Uruchom program"
+
+#: xfrun/xfrun.c:238
+msgid "_Run"
+msgstr "_Uruchom"
+
+#: xfrun/xfrun.c:274
+msgid "Run in _terminal"
+msgstr "Uruchom w _terminalu"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Pasek zadań"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
+msgid "Top"
+msgstr "Góra"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
+msgid "Bottom"
+msgstr "Dół"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "Pozycja"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
+msgid "Auto hide taskbar"
+msgstr "Automatycznie chowaj pasek zadań"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "Automatyczne ukrywanie"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Height :"
+msgstr "Wysokość:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr "Mała"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr "Duża"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Rozmiar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Pokaż zadania z wszystkich obszarów roboczych"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Zadania"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Pokaż pager na pasku zadań"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Pokaż panel systemowy na pasku zadań"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Obszar powiadamiania"
+
+#: xftaskbar/xftaskbar.c:118
+msgid "Cannot get initial style"
+msgstr "Nie mogę pobrać wstępnego stylu"
+
+#: xftaskbar/xftaskbar.c:277
+msgid "This should not happen"
+msgstr "To nie powinno się było wydarzyć"
+
+#: xftaskbar/xftaskbar.c:367
+msgid "Cannot connect to session manager"
+msgstr "Nie mogę się połączyć z menadżerem sesji"
+
+#: xftaskbar/xftaskbar.c:378
+msgid "Cannot get desktop margins"
+msgstr "Nie mogę pobrać marginesów obszaru roboczego"
+
+#: xftaskbar/xftaskbar.c:461
+msgid "Cannot create MCS client channel"
+msgstr "Nie mogę utworzyć kanału klienta MCS"
+
+#~ msgid "<small><i>Small</i></small>"
+#~ msgstr "<small><i>Pieni</i></small>"
+
+#~ msgid "<small><i>Large</i></small>"
+#~ msgstr "<small><i>Suuri</i></small>"

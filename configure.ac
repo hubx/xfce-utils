@@ -53,7 +53,7 @@ AC_MSG_RESULT($GDM_PREFIX)
 AC_SUBST(GDM_PREFIX)
 
 dnl Check for i18n support
-BM_I18N([xfce-utils], [de fi nl])
+BM_I18N([xfce-utils], [de fi nl pl])
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [0.0.3])

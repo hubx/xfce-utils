@@ -6963,7 +6963,7 @@ cat >>confdefs.h <<\_ACEOF
 _ACEOF
 
 
-  ALL_LINGUAS="de fi nl"
+  ALL_LINGUAS="de fi nl pl"
 
 
 
