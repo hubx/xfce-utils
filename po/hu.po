@@ -1,40 +1,43 @@
-# translation of xfce-utils.po to Hungarian
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# Gergely Banos, Gabor Zele <zegab@axelero.hu>, 2003
+# translation of hu.po to Hungarian
+# Hungarian translations for xfce-utils package.
+# Copyright (C) 2003 THE xfce-utils'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce-utils package.
+# Somogyi Peter <jerry@gnu>, 2003.
+# Egmont Koblinger <egmont@uhulinux.hu>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
-"PO-Revision-Date: 2003-07-14 10:57+0200\n"
-"Last-Translator: Gergely Banos, Gabor Zele <zegab@axelero.hu>\n"
-"Language-Team: Hungarian\n"
+"Project-Id-Version: hu\n"
+"POT-Creation-Date: 2003-07-12 23:55+0200\n"
+"PO-Revision-Date: 2003-07-16 16:20+0200\n"
+"Last-Translator: Egmont Koblinger <egmont@uhulinux.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.0.1\n"
 
 #: xfce4-about/info.c:230
 msgid "About XFce 4"
-msgstr "Névjegy"
+msgstr "Az XFce 4 névjegye"
 
 #: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
-msgstr "XFce Grafikus Felhasználói Felület"
+msgstr "XFce Munkakörnyezet"
 
 #: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "A szerzői jogok tulajdonosa Olivier Fourdan, © 2002-2003"
+msgstr "Copyright 2002-2003, Olivier Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:263
 msgid "Info"
-msgstr "Információ"
+msgstr "Névjegy"
 
 #: xfce4-about/info.c:264
 msgid "Credits"
-msgstr "Köszönetnyilvánítás"
+msgstr "Stáb"
 
 #: xfce4-about/info.c:265
 msgid "Copyright"
@@ -55,7 +58,7 @@ msgstr "GPL"
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Nem lehet a régebbi parancsokat tárolni a fájlban: %s\n"
+msgstr "xfrun4: Nem sikerült a(z) %s fájlba a naplót beírni\n"
 
 #: xfrun/xfrun.c:237
 msgid "Run program"
@@ -67,13 +70,14 @@ msgstr "_Futtatás"
 
 #: xfrun/xfrun.c:281
 msgid "Run in _terminal"
-msgstr "Futtatás _parancssorban"
+msgstr "_Terminálban futtatás"
 
+# Ablaklista?
 #: xftaskbar/plugin/xftaskbar_plugin.c:202
 #: xftaskbar/plugin/xftaskbar_plugin.c:208
 #: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
-msgstr "Tálca"
+msgstr "Programlista"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
@@ -81,19 +85,19 @@ msgstr "Elhelyezés"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:230
 msgid "Top"
-msgstr "Felül"
+msgstr "Fent"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:237
 msgid "Bottom"
-msgstr "Alul"
+msgstr "Lent"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
-msgstr "Automatikus rejtés"
+msgstr "Automatikus elrejtés"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
-msgstr "A tálca automatikus rejtése"
+msgstr "Programlista automatikus elrejtése"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
@@ -101,7 +105,7 @@ msgstr "Méret"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:262
 msgid "Height :"
-msgstr "Magasság :"
+msgstr "Magasság:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
@@ -113,53 +117,54 @@ msgstr "Nagy"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
-msgstr "Feladatok"
+msgstr "Programok"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
-msgstr "Feladatok kijelzése minden munkaterületről"
+msgstr "Összes munkaterületen levő programok megjelenítése"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
-msgstr "Munkaterület-váltó"
+msgstr "Lapozó"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:315
 msgid "Show pager in taskbar"
-msgstr "A munkaterület-váltó megjelenítése"
+msgstr "Munkaterület-lapozó megjelenítése a programlistában"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
-msgstr "Rendszerkijelzők"
+msgstr "Értesítési terület"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
-msgstr "Rendszerkijelző terület megjelnítése"
+msgstr "Panel megjelenítése a programlistában"
 
-#: xftaskbar/xftaskbar.c:129
+#: xftaskbar/xftaskbar.c:125
 msgid "Cannot get initial style"
-msgstr "Nem lehet az alapstílust beállítani"
+msgstr "Nem elérhető az eredeti téma"
 
-#: xftaskbar/xftaskbar.c:209
+#: xftaskbar/xftaskbar.c:205
 msgid "There is already a system tray running on this screen"
-msgstr "Már létezik egy rendszerkijelző terület"
+msgstr "Már fut egy rendszer panel ezen a képernyőn"
 
-#: xftaskbar/xftaskbar.c:217
+#: xftaskbar/xftaskbar.c:213
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Nem lehet a rendszerkijelző területet inicializálni: %s"
+msgstr "Nem lehet bejegyezni a panelt: %s"
 
-#: xftaskbar/xftaskbar.c:385
+#: xftaskbar/xftaskbar.c:327
 msgid "This should not happen"
-msgstr "Belső hiba?"
+msgstr "Ennek nem szabadna megtörténnie"
 
-#: xftaskbar/xftaskbar.c:475
+#: xftaskbar/xftaskbar.c:428
 msgid "Cannot connect to session manager"
-msgstr "Nem lehet a bejelentkezéskezelőhöz kapcsolódni"
+msgstr "Nem lehet a munkamenet-kezelőhöz csatlakozni"
 
-#: xftaskbar/xftaskbar.c:488
+#: xftaskbar/xftaskbar.c:441
 msgid "Cannot get desktop margins"
-msgstr "Nem lehet az Asztal margóit beállítani"
+msgstr "Nem elérhetőek a munkaasztalmargók"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:514
 msgid "Cannot create MCS client channel"
-msgstr "Nem lehet Vezérlőpult adatcsatornát létrehozni"
+msgstr "Nem lehet MCS ügyfélcsatornát létrehozni"
+
