@@ -69,17 +69,17 @@ msgstr "اجرا کردن برنامه"
 
 #: xfrun/xfrun.c:244
 msgid "_Run"
-msgstr "اـجرا کردن"
+msgstr "ا‌_جرا کردن"
 
 #: xfrun/xfrun.c:281
 msgid "Run in _terminal"
-msgstr "اجرا کردن در ـپایانه"
+msgstr "اجرا کردن در _پایانه"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:202
 #: xftaskbar/plugin/xftaskbar_plugin.c:208
 #: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
-msgstr "نوار‌تکلیف"
+msgstr "نوارکاری"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
@@ -99,7 +99,7 @@ msgstr "پنهان‌سازی خودکار"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
-msgstr "پنهان‌سازی خودکار نوار‌تکلیف"
+msgstr "پنهان‌سازی خودکار نوارکاری"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
@@ -119,11 +119,11 @@ msgstr "بزرگ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
-msgstr "تکالیف"
+msgstr "کارها"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
-msgstr "نشان دادن تکالیف از همه‌ی فضاهای کاری"
+msgstr "نشان دادن کارها از همه‌ی فضاهای کاری"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
@@ -131,7 +131,7 @@ msgstr "صفحه‌نما"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:315
 msgid "Show pager in taskbar"
-msgstr "نشان دادن صفحه‌نما در نوار‌تکلیف"
+msgstr "نشان دادن صفحه‌نما در نوارکار"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
@@ -139,7 +139,7 @@ msgstr "ناحیه‌ی هشداردهی"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
-msgstr "نشان دادن سینی سیستم در نوار‌تکلیف"
+msgstr "نشان دادن سینی سیستم در نوارکاری"
 
 #: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
