@@ -610,19 +610,19 @@ int main(int argc, char **argv)
     taskbar->tray_registered = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
-    netk_gtk_window_set_type(GTK_WINDOW(taskbar->win), NETK_WINDOW_DOCK);
-    gtk_window_stick(GTK_WINDOW(taskbar->win));
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar->height);
     gtk_window_set_title(GTK_WINDOW(taskbar->win), "Task List");
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
     gtk_window_set_resizable(GTK_WINDOW(taskbar->win), FALSE);
-    gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
+    netk_gtk_window_set_type(GTK_WINDOW(taskbar->win), NETK_WINDOW_DOCK);
     if ((gtk_major_version >=2) && (gtk_minor_version >= 1))
     {
 	g_object_set (G_OBJECT(taskbar->win), "skip_taskbar_hint", TRUE, NULL);
 	g_object_set (G_OBJECT(taskbar->win), "skip_pager_hint", TRUE, NULL);
     }
+    gtk_window_stick(GTK_WINDOW(taskbar->win));
+    gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
+    netk_gtk_window_avoid_input(GTK_WINDOW(taskbar->win));
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar->height);
     
     g_signal_connect (G_OBJECT(taskbar->win), "destroy", G_CALLBACK(taskbar_destroy), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "enter_notify_event", G_CALLBACK (taskbar_enter), taskbar);
