@@ -85,8 +85,8 @@ esac
 
 if [ $? -ne 0 ]; then
 	xmessage -center -file - -title Error <<EOF
-Unable to execute $BROWSER. Online help
-is not available.
+Unable to execute browser. 
+Online help is not available.
 EOF
 	exit 1
 fi

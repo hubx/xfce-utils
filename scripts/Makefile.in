@@ -213,7 +213,7 @@ edit = sed \
         -e 's,@sysconfdir\@,$(sysconfdir),g' \
 	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g'
 
-conffilesdir = @sysconfdir@/xfce4
+conffilesdir = @sysconfdir@/xdg/xfce4
 conffiles_DATA = \
 	xinitrc
 

@@ -24,7 +24,7 @@ xfhelp4: Makefile $(srcdir)/xfhelp4.in
 	$(edit) $(srcdir)/xfhelp4.in >xfhelp4.tmp
 	mv xfhelp4.tmp xfhelp4
 
-conffilesdir=@sysconfdir@/xfce4
+conffilesdir=@sysconfdir@/xdg/xfce4
 conffiles_DATA=\
 	xinitrc
 

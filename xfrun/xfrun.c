@@ -210,14 +210,19 @@ static char *get_fileman(void)
 GList *get_history(void)
 {
     FILE *fp;
-    char *hfile = xfce_get_userfile(HFILE, NULL);
+    char *hfile;
     char line[DEFAULT_LENGTH];
     char *check;
     GList *cbtemp = NULL;
     XFCommand *current;
-
     int i = 0;
 
+    hfile = xfce_resource_lookup (XFCE_RESOURCE_CONFIG,
+                                  "xfce4" G_DIR_SEPARATOR_S HFILE);
+    
+    if (!hfile)
+        hfile = xfce_get_userfile(HFILE, NULL);
+    
     if(!(fp = fopen(hfile, "r")))
     {
         g_free(hfile);
@@ -262,10 +267,14 @@ GList *get_history(void)
 void put_history(const char *newest, gboolean in_terminal, GList * cb)
 {
     FILE *fp;
-    char *hfile = xfce_get_userfile(HFILE, NULL);
+    char *hfile;
     GList *node;
     int i;
 
+    hfile = xfce_resource_save_location (XFCE_RESOURCE_CONFIG,
+                                         "xfce4" G_DIR_SEPARATOR_S HFILE, 
+                                         TRUE);
+    
     if(!(fp = fopen(hfile, "w")))
     {
         g_warning(_("xfrun4: Could not write history to file %s\n"), hfile);

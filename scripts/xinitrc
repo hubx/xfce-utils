@@ -1,15 +1,5 @@
 #!/bin/sh
 
-# make sure that $XFCE4HOME is set
-if test x"$XFCE4HOME" = x""; then
-	XFCE4HOME=$HOME/.xfce4
-	export XFCE4HOME
-fi
-
-# verify that $XFCE4HOME exists and create it on-demand
-test ! -d $XFCE4HOME/          && mkdir -m 0700 $XFCE4HOME/
-test ! -d $XFCE4HOME/settings/ && mkdir -m 0700 $XFCE4HOME/settings/
-
 # fix broken $UID on some system...
 if test "x$UID" = "x"; then
 	UID=`id -u`
@@ -23,14 +13,24 @@ test -r $HOME/.Xdefaults && cat $HOME/.Xdefaults >> $XRESOURCES
 
 # Check if the user wants to override the above defaults (set by
 # mcs ui plugin)
-if test -r $XFCE4HOME/Xft.xrdb; then
-	cat $XFCE4HOME/Xft.xrdb >> $XRESOURCES
+if test "x$XDG_CONFIG_HOME" = "x" ; then
+  BASEDIR=$HOME/.config/xfce4
 else
-	# Those are fallback settings, use the ui plugin to change it
-	# or add your overrides to ~/.Xresources
-	# Xft DPI: 96
-	# Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
-	# Xft hinting: 1/0
+  BASEDIR=$XDG_CONFIG_HOME/xfce4
+fi
+
+if test -r $BASEDIR/Xft.xrdb; then
+  cat $BASEDIR/Xft.xrdb >> $XRESOURCES
+elif test -r $XFCE4HOME/Xft.xrdb; then
+  mkdir -p $BASEDIR
+  cp $XFCE4HOME/Xft.xrdb $BASEDIR/
+  cat $BASEDIR/Xft.xrdb >> $XRESOURCES
+else
+  # Those are fallback settings, use the ui plugin to change it
+  # or add your overrides to ~/.Xresources
+  # Xft DPI: 96
+  # Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
+  # Xft hinting: 1/0
 cat >> $XRESOURCES << EOF
 Xft.dpi: 96
 Xft.hinting: 1

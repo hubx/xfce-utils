@@ -19,25 +19,29 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-if [ ! -d $HOME/.xfce4/ ]; then
-	mkdir $HOME/.xfce4/
-	mkdir $HOME/.xfce4/settings/
-	mkdir $HOME/.xfce4/xffm/
+if test x"$XDG_CONFIG_HOME" = x""
+then
+  BASEDIR=$HOME/.config/xfce4/
+else
+  BASEDIR=$XDG_CONFIG_HOME/xfce4
 fi
 
 if test x"$DISPLAY" = x""
 then
   echo "$0: Starting X server"
-  if [ -f $HOME/.xfce4/xinitrc ]; then
-	exec xinit $HOME/.xfce4/xinitrc $*
-  else
-	exec xinit @sysconfdir@/xfce4/xinitrc $*
-  fi  
+  prog=xinit
 else
   echo "$0: X server already running on display $DISPLAY"
-  if [ -f $HOME/.xfce4/xinitrc ]; then
-	exec /bin/sh $HOME/.xfce4/xinitrc $*
-  else
-	exec /bin/sh @sysconfdir@/xfce4/xinitrc $*
-  fi
+  prog=/bin/sh
 fi
+
+if [ -f $BASEDIR/xinitrc ]; then
+  exec $prog $BASEDIR/xinitrc $*
+elif [ -f $HOME/.xfce4/xinitrc ]; then
+  mkdir -p $BASEDIR
+  cp $HOME/.xfce4/xinitrc $BASEDIR/
+  exec $prog $BASEDIR/xinitrc $*
+else
+  exec $prog @sysconfdir@/xdg/xfce4/xinitrc $*
+fi  
+

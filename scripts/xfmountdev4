@@ -36,9 +36,9 @@ fi
 
 # use xftree4 instead of xffm to show only the mounted filesystem
 # seems clearer to me -- Jasper
-if [ "x$FILEMANAGER" = "x" ]
+if [ "x$FILEMAN" = "x" ]
 then
-  FILEMANAGER=xftree4
+  FILEMAN=xftree4
 fi
 
 if [ "x$1" = "x" ]; then
@@ -52,7 +52,7 @@ else
                 echo Mounting media...
         	$MOUNTCMD "$MOUNTPNT" $*
                 echo Browsing media...
-                $FILEMANAGER "$MOUNTPNT"
+                $FILEMAN "$MOUNTPNT"
                 echo Unmounting media...
         	$UNMOUNTCMD "$MOUNTPNT"
 		if [ "x$EJECTCMD" != "xno" ]; then
