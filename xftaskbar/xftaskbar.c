@@ -347,6 +347,9 @@ int main(int argc, char **argv)
     NetkScreen *screen;
     Taskbar *taskbar;
     GError *error;
+    Display *dpy;
+    int scr;
+    int left, right;
     
     gtk_init(&argc, &argv);
 
@@ -356,7 +359,8 @@ int main(int argc, char **argv)
     {
         g_message(_("Cannot connect to session manager"));
     }
-
+    dpy = GDK_DISPLAY();
+    scr = XDefaultScreen(dpy);
     screen = netk_screen_get_default();
 
     /* because the pager doesn't respond to signals at the moment */
@@ -366,9 +370,13 @@ int main(int argc, char **argv)
     {
         g_message(_("Cannot get desktop margins"));
     }
+    
+    left = isLeftMostHead(dpy, scr, 0, 0) ? margins.left : 0;
+    right = isRightMostHead(dpy, scr, 0, 0) ? margins.right : 0;
+    
     taskbar = g_new(Taskbar, 1);
-    taskbar->x = margins.left;
-    taskbar->width = gdk_screen_width() - margins.left - margins.right;
+    taskbar->x = left;
+    taskbar->width = MyDisplayWidth(dpy, scr, 0, 0) - left - right;
     taskbar->y = 0;
     taskbar->height = 1;
     taskbar->position = TOP;
