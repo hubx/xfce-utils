@@ -55,7 +55,7 @@ test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
 # environment here, so we can clean it up later.
 sshagent=`which ssh-agent`
 if test "$sshagent" -a "x$sshagent" != "xno"; then
-	eval `$sshagent`
+	eval `$sshagent -s`
 fi
 
 # Use dbus-launch if installed.
