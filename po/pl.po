@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "POT-Creation-Date: 2003-09-22 21:20+0200\n"
-"PO-Revision-Date: 2003-04-28 20:31--200\n"
+"PO-Revision-Date: 2003-12-26 21:05+0100\n"
 "Last-Translator: Paweł Pastuła <pastulap@poczta.onet.pl>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: POLISH <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr "Zasłużeni"
 
 #: xfce4-about/info.c:267
 msgid "Copyright"
-msgstr ""
+msgstr "Prawa autorskie"
 
 #: xfce4-about/info.c:268
 msgid "BSDL"
@@ -100,7 +100,7 @@ msgstr "Rozmiar"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:262
 msgid "Height :"
-msgstr "Wysokość:"
+msgstr "Wysokość :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
@@ -116,7 +116,7 @@ msgstr "Zadania"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
-msgstr "Pokaż zadania z wszystkich obszarów roboczych"
+msgstr "Pokaż zadania ze wszystkich obszarów roboczych"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
@@ -140,12 +140,12 @@ msgstr "Nie mogę pobrać wstępnego stylu"
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "Już działa panel systemowy na tym ekranie"
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "Nie mogę zarejstrować panelu systemowego: %s"
 
 #: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
