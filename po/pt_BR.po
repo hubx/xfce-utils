@@ -9,60 +9,58 @@ msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2004-01-17 23:43-0200\n"
-"Last-Translator: Felix da Silva Costa <felix@online.eti.br>\n"
-"Language-Team: pt_BR <felix@online.eti.br>\n"
+"PO-Revision-Date: 2004-12-15 15:50-0300\n"
+"Last-Translator: Rodrigo Coacci <rcoacci@gmail.com>\n"
+"Language-Team: pt_BR <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
-#, fuzzy
+#: xfce4-about/info.c:262
 msgid "About Xfce 4"
-msgstr "Sobre XFce 4"
+msgstr "Sobre o Xfce 4"
 
-#: xfce4-about/info.c:268
-#, fuzzy
+#: xfce4-about/info.c:277
 msgid "Xfce Desktop Environment"
-msgstr "Ambiente Desktop XFce"
+msgstr "Ambiente Desktop Xfce"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
-msgstr "Copyright 20022003 por Olivier Fourdan"
+msgstr "Copyright 2002-2004 por Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:300
 msgid "Info"
-msgstr "InformaçÂões"
+msgstr "Informações"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:301
 msgid "Credits"
 msgstr "Créditos"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:302
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:303
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:304
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:305
 msgid "GPL"
 msgstr "GPL"
 
 #: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Não foi possível escrever o arquivo history %s\n"
+msgstr "xfrun4: Não foi possível escrever histórico no arquivo %s\n"
 
 #: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Abrir %s com qual programa?"
 
 #: xfrun/xfrun.c:429
 msgid "Run program"
@@ -78,7 +76,7 @@ msgstr "Executar no _terminal"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:278
 #: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
 msgid "Taskbar"
 msgstr "Barra de tarefas"
 
@@ -87,37 +85,34 @@ msgid "Position"
 msgstr "Posição"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Topo"
+msgstr "A_cima"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Abaixo"
+msgstr "_Abaixo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Alinhamento"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "_Esquerda"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "_Centro"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "_Direita"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Auto-Ocultar"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
 msgstr "Auto-Ocultar barra de tarefas"
 
@@ -141,69 +136,61 @@ msgstr "Grande"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Largura"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Tarefas"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Exibir tarefas de todas as áreas de trabalho"
+msgstr "Exibir tarefas de _todas as áreas de trabalho"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Sempre a_grupar tarefas"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Mostrar _nomes do aplicativos"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Paginador"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Exibir paginador na barra de tarefas"
+msgstr "Exibir _paginador na barra de tarefas"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
-msgstr "Área de notificaçÂão"
+msgstr "Área de notificação"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Exibir system tray na barra de tarefas"
+msgstr "Exibir bandeja de sistema na barra de tarefas"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "O estilo inicial não pôde ser obtido"
 
-#: xftaskbar/xftaskbar.c:260
+#: xftaskbar/xftaskbar.c:267
 msgid "There is already a system tray running on this screen"
-msgstr "Há um system tray sendo executado nesta tela"
+msgstr "Há uma bandeja de sistema sendo executada nesta tela"
 
-#: xftaskbar/xftaskbar.c:268
+#: xftaskbar/xftaskbar.c:275
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Não foi possível registrar o system tray: %s"
+msgstr "Não foi possível registrar a bandeja de sitema: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Isto não deveria acontecer"
-
-#: xftaskbar/xftaskbar.c:592
-#, fuzzy
+#: xftaskbar/xftaskbar.c:603
 msgid "Cannot get default screen\n"
-msgstr "Não foi possível obter as margens do desktop"
+msgstr "Não foi possível obter a tela padrão\n"
 
-#: xftaskbar/xftaskbar.c:681
+#: xftaskbar/xftaskbar.c:692
 msgid "Cannot connect to session manager"
 msgstr "Não foi possível se conectar ao gerenciador de sessão"
 
-#: xftaskbar/xftaskbar.c:694
+#: xftaskbar/xftaskbar.c:705
 msgid "Cannot create MCS client channel"
-msgstr "Não foi possível criar o canal MCS client"
+msgstr "Não foi possível criar o canal MCS cliente"
