@@ -1,8 +1,41 @@
-Olivier Fourdan <fourdan@xfce.org>
-Jasper Huijsmans <huysmans@users.sourceforge.net>
-Edscott Wilson Garcia <edscott@imp.mx>
-Biju Chacko <botsie@myrealbox.com>
-Jens Luedicke <jens@irs-net.com>
-Martin Loschwitz <madkiss@users.sourceforge.net>
-Xavier Maillard <zedek@fxgsproject.org>
-Michael Mosier" <michael@spyonit.com>
+Main developers:
+
+  Olivier Fourdan  -  Project lead
+  <fourdan@xfce.org>	
+  
+  Jasper Huijsmans  -  Core developer
+  <huysmans@users.sourceforge.net>
+  
+  Edscott Wilson Garcia  -  Core developer
+  <edscott@imp.mx>
+  
+  Biju Chacko  -  Core developer
+  <botsie@myrealbox.com>
+
+
+Contributors:
+
+  Jens Luedicke  -  Code contributions and more
+  <jens@irs-net.com>
+  
+  Martin Loschwitz  -  Debian maintainer
+  <madkiss@users.sourceforge.net>
+  
+  Xavier Maillard  -  XFclock port, initial about box
+  <zedek@fxgsproject.org>
+  
+  Benedikt Meurer  -  GNU Autotools and other patches
+  <Benedikt.Meurer@unix-ag.uni-siegen.de>
+
+Patches:
+  Michael Mosier" <michael@spyonit.com>
+  Joakim Andreasson <joakim.andreasson@gmx.net>
+
+Translators:
+  <to be done>
+
+If you know of anyone missing from this list, please let us know on
+xfce4-dev@moongroup.com
+
+Thanks to all who helped this software to be available.
+
