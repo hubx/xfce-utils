@@ -1,4 +1,5 @@
 
+#include <string.h>
 #include <gtk/gtk.h>
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
@@ -70,7 +71,6 @@ static void watch_cb(Window window, Bool is_start, long mask, void *cb_data)
 static gint taskbar_get_thickness(Taskbar *taskbar)
 {
     GtkStyle *style;
-    gint thickness;
     
     g_return_val_if_fail (taskbar != NULL, 2);
     style = gtk_widget_get_style(taskbar->win);
@@ -84,8 +84,6 @@ static gint taskbar_get_thickness(Taskbar *taskbar)
 
 static gint taskbar_get_height(Taskbar *taskbar)
 {
-    guint height;
-    
     g_return_val_if_fail (taskbar != NULL, DEFAULT_HEIGHT);
     if (taskbar->hidden)
     {
