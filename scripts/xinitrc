@@ -12,11 +12,15 @@ fi
 # Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
 # Xft hinting: 1/0
 
-xrdb -merge - << EOF
+xrdb -nocpp -merge - << EOF
 Xft.dpi: 96
 Xft.hinting: 1
 Xft.hintstyle: hintmedium
 EOF
+
+test -f $HOME/.Xresources && xrdb -nocpp -merge $HOME/.Xresources
+test -f $HOME/.Xdefaults && xrdb -nocpp -merge $HOME/.Xdefaults
+test -f $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Launch xscreensaver (if available), but only as non-root user
 test $UID -gt 0 && xscreensaver -no-splash &
@@ -47,10 +51,6 @@ if test -d "$HOME/Desktop/Autostart"; then
   done
 fi
 
-if test -f $HOME/.Xmodmap; then
-	xmodmap $HOME/.Xmodmap
-fi
-
 xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
@@ -77,4 +77,4 @@ EOF
 		;;
 esac
 
-xsetroot -solid black -cursor_name watch
+xsetroot -bg white -fg red  -solid black -cursor_name watch
