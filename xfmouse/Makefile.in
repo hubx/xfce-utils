@@ -80,23 +80,23 @@ X_PRE_LIBS = @X_PRE_LIBS@
 am__include = @am__include@
 am__quote = @am__quote@
 install_sh = @install_sh@
-bin_PROGRAMS = xfmouse
+bin_PROGRAMS = xfmouse4
 
-xfmouse_SOURCES = xfmouse.c 
+xfmouse4_SOURCES = xfmouse.c 
 
-xfmouse_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\"  -I..
-xfmouse_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+xfmouse4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\"  -I..
+xfmouse4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
 subdir = xfmouse
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-bin_PROGRAMS = xfmouse$(EXEEXT)
+bin_PROGRAMS = xfmouse4$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
-am_xfmouse_OBJECTS = xfmouse-xfmouse.$(OBJEXT)
-xfmouse_OBJECTS = $(am_xfmouse_OBJECTS)
-xfmouse_DEPENDENCIES =
-xfmouse_LDFLAGS =
+am_xfmouse4_OBJECTS = xfmouse4-xfmouse.$(OBJEXT)
+xfmouse4_OBJECTS = $(am_xfmouse4_OBJECTS)
+xfmouse4_DEPENDENCIES =
+xfmouse4_LDFLAGS =
 
 DEFS = @DEFS@
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
@@ -105,15 +105,15 @@ LDFLAGS = @LDFLAGS@
 LIBS = @LIBS@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
-@AMDEP_TRUE@DEP_FILES = ./$(DEPDIR)/xfmouse-xfmouse.Po
+@AMDEP_TRUE@DEP_FILES = ./$(DEPDIR)/xfmouse4-xfmouse.Po
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 CFLAGS = @CFLAGS@
-DIST_SOURCES = $(xfmouse_SOURCES)
+DIST_SOURCES = $(xfmouse4_SOURCES)
 DIST_COMMON = Makefile.am Makefile.in
-SOURCES = $(xfmouse_SOURCES)
+SOURCES = $(xfmouse4_SOURCES)
 
 all: all-am
 
@@ -148,10 +148,10 @@ uninstall-binPROGRAMS:
 
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
-xfmouse-xfmouse.$(OBJEXT): xfmouse.c
-xfmouse$(EXEEXT): $(xfmouse_OBJECTS) $(xfmouse_DEPENDENCIES) 
-	@rm -f xfmouse$(EXEEXT)
-	$(LINK) $(xfmouse_LDFLAGS) $(xfmouse_OBJECTS) $(xfmouse_LDADD) $(LIBS)
+xfmouse4-xfmouse.$(OBJEXT): xfmouse.c
+xfmouse4$(EXEEXT): $(xfmouse4_OBJECTS) $(xfmouse4_DEPENDENCIES) 
+	@rm -f xfmouse4$(EXEEXT)
+	$(LINK) $(xfmouse4_LDFLAGS) $(xfmouse4_OBJECTS) $(xfmouse4_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT) core *.core
@@ -159,7 +159,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfmouse-xfmouse.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfmouse4-xfmouse.Po@am__quote@
 
 distclean-depend:
 	-rm -rf ./$(DEPDIR)
@@ -176,17 +176,17 @@ distclean-depend:
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 	$(COMPILE) -c `cygpath -w $<`
 
-xfmouse-xfmouse.o: xfmouse.c
-@AMDEP_TRUE@	source='xfmouse.c' object='xfmouse-xfmouse.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfmouse-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse-xfmouse.TPo' @AMDEPBACKSLASH@
+xfmouse4-xfmouse.o: xfmouse.c
+@AMDEP_TRUE@	source='xfmouse.c' object='xfmouse4-xfmouse.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfmouse4-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse4-xfmouse.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse_CFLAGS) $(CFLAGS) -c -o xfmouse-xfmouse.o `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -c -o xfmouse4-xfmouse.o `test -f 'xfmouse.c' || echo '$(srcdir)/'`xfmouse.c
 
-xfmouse-xfmouse.obj: xfmouse.c
-@AMDEP_TRUE@	source='xfmouse.c' object='xfmouse-xfmouse.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfmouse-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse-xfmouse.TPo' @AMDEPBACKSLASH@
+xfmouse4-xfmouse.obj: xfmouse.c
+@AMDEP_TRUE@	source='xfmouse.c' object='xfmouse4-xfmouse.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfmouse4-xfmouse.Po' tmpdepfile='$(DEPDIR)/xfmouse4-xfmouse.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse_CFLAGS) $(CFLAGS) -c -o xfmouse-xfmouse.obj `cygpath -w xfmouse.c`
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfmouse4_CFLAGS) $(CFLAGS) -c -o xfmouse4-xfmouse.obj `cygpath -w xfmouse.c`
 CCDEPMODE = @CCDEPMODE@
 uninstall-info-am:
 

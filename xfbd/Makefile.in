@@ -80,32 +80,32 @@ X_PRE_LIBS = @X_PRE_LIBS@
 am__include = @am__include@
 am__quote = @am__quote@
 install_sh = @install_sh@
-bin_PROGRAMS = xfbd xfbdmgr
+bin_PROGRAMS = xfbd4 xfbdmgr4
 
-xfbd_SOURCES = xfbd.c
-xfbdmgr_SOURCES = xfbdmgr.c xfbdmgr.h xfbdmgr_cb.c xfbdmgr_cb.h
+xfbd4_SOURCES = xfbd.c
+xfbdmgr4_SOURCES = xfbdmgr.c xfbdmgr.h xfbdmgr_cb.c xfbdmgr_cb.h
 
-xfbd_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
-xfbd_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+xfbd4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
+xfbd4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
 
-xfbdmgr_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
-xfbdmgr_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+xfbdmgr4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
+xfbdmgr4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
 subdir = xfbd
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-bin_PROGRAMS = xfbd$(EXEEXT) xfbdmgr$(EXEEXT)
+bin_PROGRAMS = xfbd4$(EXEEXT) xfbdmgr4$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
-am_xfbd_OBJECTS = xfbd-xfbd.$(OBJEXT)
-xfbd_OBJECTS = $(am_xfbd_OBJECTS)
-xfbd_DEPENDENCIES =
-xfbd_LDFLAGS =
-am_xfbdmgr_OBJECTS = xfbdmgr-xfbdmgr.$(OBJEXT) \
-	xfbdmgr-xfbdmgr_cb.$(OBJEXT)
-xfbdmgr_OBJECTS = $(am_xfbdmgr_OBJECTS)
-xfbdmgr_DEPENDENCIES =
-xfbdmgr_LDFLAGS =
+am_xfbd4_OBJECTS = xfbd4-xfbd.$(OBJEXT)
+xfbd4_OBJECTS = $(am_xfbd4_OBJECTS)
+xfbd4_DEPENDENCIES =
+xfbd4_LDFLAGS =
+am_xfbdmgr4_OBJECTS = xfbdmgr4-xfbdmgr.$(OBJEXT) \
+	xfbdmgr4-xfbdmgr_cb.$(OBJEXT)
+xfbdmgr4_OBJECTS = $(am_xfbdmgr4_OBJECTS)
+xfbdmgr4_DEPENDENCIES =
+xfbdmgr4_LDFLAGS =
 
 DEFS = @DEFS@
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
@@ -114,17 +114,17 @@ LDFLAGS = @LDFLAGS@
 LIBS = @LIBS@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
-@AMDEP_TRUE@DEP_FILES = ./$(DEPDIR)/xfbd-xfbd.Po \
-@AMDEP_TRUE@	./$(DEPDIR)/xfbdmgr-xfbdmgr.Po \
-@AMDEP_TRUE@	./$(DEPDIR)/xfbdmgr-xfbdmgr_cb.Po
+@AMDEP_TRUE@DEP_FILES = ./$(DEPDIR)/xfbd4-xfbd.Po \
+@AMDEP_TRUE@	./$(DEPDIR)/xfbdmgr4-xfbdmgr.Po \
+@AMDEP_TRUE@	./$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.Po
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 CFLAGS = @CFLAGS@
-DIST_SOURCES = $(xfbd_SOURCES) $(xfbdmgr_SOURCES)
+DIST_SOURCES = $(xfbd4_SOURCES) $(xfbdmgr4_SOURCES)
 DIST_COMMON = Makefile.am Makefile.in
-SOURCES = $(xfbd_SOURCES) $(xfbdmgr_SOURCES)
+SOURCES = $(xfbd4_SOURCES) $(xfbdmgr4_SOURCES)
 
 all: all-am
 
@@ -159,15 +159,15 @@ uninstall-binPROGRAMS:
 
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
-xfbd-xfbd.$(OBJEXT): xfbd.c
-xfbd$(EXEEXT): $(xfbd_OBJECTS) $(xfbd_DEPENDENCIES) 
-	@rm -f xfbd$(EXEEXT)
-	$(LINK) $(xfbd_LDFLAGS) $(xfbd_OBJECTS) $(xfbd_LDADD) $(LIBS)
-xfbdmgr-xfbdmgr.$(OBJEXT): xfbdmgr.c
-xfbdmgr-xfbdmgr_cb.$(OBJEXT): xfbdmgr_cb.c
-xfbdmgr$(EXEEXT): $(xfbdmgr_OBJECTS) $(xfbdmgr_DEPENDENCIES) 
-	@rm -f xfbdmgr$(EXEEXT)
-	$(LINK) $(xfbdmgr_LDFLAGS) $(xfbdmgr_OBJECTS) $(xfbdmgr_LDADD) $(LIBS)
+xfbd4-xfbd.$(OBJEXT): xfbd.c
+xfbd4$(EXEEXT): $(xfbd4_OBJECTS) $(xfbd4_DEPENDENCIES) 
+	@rm -f xfbd4$(EXEEXT)
+	$(LINK) $(xfbd4_LDFLAGS) $(xfbd4_OBJECTS) $(xfbd4_LDADD) $(LIBS)
+xfbdmgr4-xfbdmgr.$(OBJEXT): xfbdmgr.c
+xfbdmgr4-xfbdmgr_cb.$(OBJEXT): xfbdmgr_cb.c
+xfbdmgr4$(EXEEXT): $(xfbdmgr4_OBJECTS) $(xfbdmgr4_DEPENDENCIES) 
+	@rm -f xfbdmgr4$(EXEEXT)
+	$(LINK) $(xfbdmgr4_LDFLAGS) $(xfbdmgr4_OBJECTS) $(xfbdmgr4_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT) core *.core
@@ -175,9 +175,9 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbd-xfbd.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbdmgr-xfbdmgr.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbdmgr-xfbdmgr_cb.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbd4-xfbd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbdmgr4-xfbdmgr.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.Po@am__quote@
 
 distclean-depend:
 	-rm -rf ./$(DEPDIR)
@@ -194,41 +194,41 @@ distclean-depend:
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 	$(COMPILE) -c `cygpath -w $<`
 
-xfbd-xfbd.o: xfbd.c
-@AMDEP_TRUE@	source='xfbd.c' object='xfbd-xfbd.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbd-xfbd.Po' tmpdepfile='$(DEPDIR)/xfbd-xfbd.TPo' @AMDEPBACKSLASH@
+xfbd4-xfbd.o: xfbd.c
+@AMDEP_TRUE@	source='xfbd.c' object='xfbd4-xfbd.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbd4-xfbd.Po' tmpdepfile='$(DEPDIR)/xfbd4-xfbd.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbd_CFLAGS) $(CFLAGS) -c -o xfbd-xfbd.o `test -f 'xfbd.c' || echo '$(srcdir)/'`xfbd.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbd4_CFLAGS) $(CFLAGS) -c -o xfbd4-xfbd.o `test -f 'xfbd.c' || echo '$(srcdir)/'`xfbd.c
 
-xfbd-xfbd.obj: xfbd.c
-@AMDEP_TRUE@	source='xfbd.c' object='xfbd-xfbd.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbd-xfbd.Po' tmpdepfile='$(DEPDIR)/xfbd-xfbd.TPo' @AMDEPBACKSLASH@
+xfbd4-xfbd.obj: xfbd.c
+@AMDEP_TRUE@	source='xfbd.c' object='xfbd4-xfbd.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbd4-xfbd.Po' tmpdepfile='$(DEPDIR)/xfbd4-xfbd.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbd_CFLAGS) $(CFLAGS) -c -o xfbd-xfbd.obj `cygpath -w xfbd.c`
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbd4_CFLAGS) $(CFLAGS) -c -o xfbd4-xfbd.obj `cygpath -w xfbd.c`
 
-xfbdmgr-xfbdmgr.o: xfbdmgr.c
-@AMDEP_TRUE@	source='xfbdmgr.c' object='xfbdmgr-xfbdmgr.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr-xfbdmgr.Po' tmpdepfile='$(DEPDIR)/xfbdmgr-xfbdmgr.TPo' @AMDEPBACKSLASH@
+xfbdmgr4-xfbdmgr.o: xfbdmgr.c
+@AMDEP_TRUE@	source='xfbdmgr.c' object='xfbdmgr4-xfbdmgr.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr4-xfbdmgr.Po' tmpdepfile='$(DEPDIR)/xfbdmgr4-xfbdmgr.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr_CFLAGS) $(CFLAGS) -c -o xfbdmgr-xfbdmgr.o `test -f 'xfbdmgr.c' || echo '$(srcdir)/'`xfbdmgr.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr4_CFLAGS) $(CFLAGS) -c -o xfbdmgr4-xfbdmgr.o `test -f 'xfbdmgr.c' || echo '$(srcdir)/'`xfbdmgr.c
 
-xfbdmgr-xfbdmgr.obj: xfbdmgr.c
-@AMDEP_TRUE@	source='xfbdmgr.c' object='xfbdmgr-xfbdmgr.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr-xfbdmgr.Po' tmpdepfile='$(DEPDIR)/xfbdmgr-xfbdmgr.TPo' @AMDEPBACKSLASH@
+xfbdmgr4-xfbdmgr.obj: xfbdmgr.c
+@AMDEP_TRUE@	source='xfbdmgr.c' object='xfbdmgr4-xfbdmgr.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr4-xfbdmgr.Po' tmpdepfile='$(DEPDIR)/xfbdmgr4-xfbdmgr.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr_CFLAGS) $(CFLAGS) -c -o xfbdmgr-xfbdmgr.obj `cygpath -w xfbdmgr.c`
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr4_CFLAGS) $(CFLAGS) -c -o xfbdmgr4-xfbdmgr.obj `cygpath -w xfbdmgr.c`
 
-xfbdmgr-xfbdmgr_cb.o: xfbdmgr_cb.c
-@AMDEP_TRUE@	source='xfbdmgr_cb.c' object='xfbdmgr-xfbdmgr_cb.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr-xfbdmgr_cb.Po' tmpdepfile='$(DEPDIR)/xfbdmgr-xfbdmgr_cb.TPo' @AMDEPBACKSLASH@
+xfbdmgr4-xfbdmgr_cb.o: xfbdmgr_cb.c
+@AMDEP_TRUE@	source='xfbdmgr_cb.c' object='xfbdmgr4-xfbdmgr_cb.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.Po' tmpdepfile='$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr_CFLAGS) $(CFLAGS) -c -o xfbdmgr-xfbdmgr_cb.o `test -f 'xfbdmgr_cb.c' || echo '$(srcdir)/'`xfbdmgr_cb.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr4_CFLAGS) $(CFLAGS) -c -o xfbdmgr4-xfbdmgr_cb.o `test -f 'xfbdmgr_cb.c' || echo '$(srcdir)/'`xfbdmgr_cb.c
 
-xfbdmgr-xfbdmgr_cb.obj: xfbdmgr_cb.c
-@AMDEP_TRUE@	source='xfbdmgr_cb.c' object='xfbdmgr-xfbdmgr_cb.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr-xfbdmgr_cb.Po' tmpdepfile='$(DEPDIR)/xfbdmgr-xfbdmgr_cb.TPo' @AMDEPBACKSLASH@
+xfbdmgr4-xfbdmgr_cb.obj: xfbdmgr_cb.c
+@AMDEP_TRUE@	source='xfbdmgr_cb.c' object='xfbdmgr4-xfbdmgr_cb.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.Po' tmpdepfile='$(DEPDIR)/xfbdmgr4-xfbdmgr_cb.TPo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr_CFLAGS) $(CFLAGS) -c -o xfbdmgr-xfbdmgr_cb.obj `cygpath -w xfbdmgr_cb.c`
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfbdmgr4_CFLAGS) $(CFLAGS) -c -o xfbdmgr4-xfbdmgr_cb.obj `cygpath -w xfbdmgr_cb.c`
 CCDEPMODE = @CCDEPMODE@
 uninstall-info-am:
 
