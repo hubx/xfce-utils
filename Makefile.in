@@ -347,7 +347,7 @@ distcleancheck_listfiles = find . -type f -print
 distdir: $(DISTFILES)
 	$(am__remove_distdir)
 	mkdir $(distdir)
-	$(mkinstalldirs) $(distdir)/. $(distdir)/scripts
+	$(mkinstalldirs) $(distdir)/.
 	@srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \
 	list='$(DISTFILES)'; for file in $$list; do \
@@ -556,7 +556,7 @@ uninstall-info: uninstall-info-recursive
 @SET_MAKE@
 
 distclean-local:
-	rm -f xfce-utils.spec
+	rm -rf xfce-utils.spec *.cache *~
 
 rpm: dist
 	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz

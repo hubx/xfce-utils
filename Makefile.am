@@ -5,7 +5,7 @@ EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about
 
 distclean-local:
-	rm -f xfce-utils.spec
+	rm -rf xfce-utils.spec *.cache *~
 
 rpm: dist
 	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz

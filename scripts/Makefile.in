@@ -141,11 +141,22 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
+scripts = \
+	 xfterm4 \
+	 xflock4 \
+	 xfmountdev4
+
+
 bin_SCRIPTS = \
-	     xfterm4 \
-	     xflock4 \
-	     xfmountdev4 \
-	     startxfce4
+	     $(scripts) \
+	     startxfce4 \
+	     xfhelp4
+
+
+# cannot be set from configure, because ${prefix} is not expanded
+edit = sed \
+        -e 's,@datadir\@,$(datadir),g' \
+        -e 's,@sysconfdir\@,$(sysconfdir),g'
 
 
 conffilesdir = @sysconfdir@/xfce4
@@ -153,17 +164,17 @@ conffiles_DATA = \
 	xinitrc
 
 
-EXTRA_DIST = $(bin_SCRIPTS) $(conffiles_DATA) startxfce4.in
+EXTRA_DIST = $(scripts) $(conffiles_DATA) startxfce4.in xfhelp4.in
 subdir = scripts
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = startxfce4
+CONFIG_CLEAN_FILES =
 SCRIPTS = $(bin_SCRIPTS)
 
 DIST_SOURCES =
 DATA = $(conffiles_DATA)
 
-DIST_COMMON = Makefile.am Makefile.in startxfce4.in
+DIST_COMMON = Makefile.am Makefile.in
 all: all-am
 
 .SUFFIXES:
@@ -172,8 +183,6 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configu
 	  $(AUTOMAKE) --gnu  scripts/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
-startxfce4: $(top_builddir)/config.status startxfce4.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 binSCRIPT_INSTALL = $(INSTALL_SCRIPT)
 install-binSCRIPTS: $(bin_SCRIPTS)
 	@$(NORMAL_INSTALL)
@@ -297,7 +306,8 @@ clean-am: clean-generic clean-libtool mostlyclean-am
 
 distclean: distclean-am
 
-distclean-am: clean-am distclean-generic distclean-libtool
+distclean-am: clean-am distclean-generic distclean-libtool \
+	distclean-local
 
 dvi: dvi-am
 
@@ -337,16 +347,29 @@ uninstall-am: uninstall-binSCRIPTS uninstall-conffilesDATA \
 	uninstall-info-am
 
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
-	distclean distclean-generic distclean-libtool distdir dvi \
-	dvi-am info info-am install install-am install-binSCRIPTS \
-	install-conffilesDATA install-data install-data-am install-exec \
-	install-exec-am install-info install-info-am install-man \
-	install-strip installcheck installcheck-am installdirs \
-	maintainer-clean maintainer-clean-generic mostlyclean \
-	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	uninstall uninstall-am uninstall-binSCRIPTS \
-	uninstall-conffilesDATA uninstall-info-am
+	distclean distclean-generic distclean-libtool distclean-local \
+	distdir dvi dvi-am info info-am install install-am \
+	install-binSCRIPTS install-conffilesDATA install-data \
+	install-data-am install-exec install-exec-am install-info \
+	install-info-am install-man install-strip installcheck \
+	installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-generic \
+	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
+	uninstall-binSCRIPTS uninstall-conffilesDATA uninstall-info-am
 
+
+startxfce4: Makefile $(srcdir)/startxfce4.in
+	rm -f startxfce4 startxfce4.tmp
+	$(edit) $(srcdir)/startxfce4.in >startxfce4.tmp
+	mv startxfce4.tmp startxfce4
+
+xfhelp4: Makefile $(srcdir)/xfhelp4.in
+	rm -f xfhelp4 xfhelp4.tmp
+	$(edit) $(srcdir)/xfhelp4.in >xfhelp4.tmp
+	mv xfhelp4.tmp xfhelp4
+
+distclean-local:
+	rm -f xfhelp4 startxfce4
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:

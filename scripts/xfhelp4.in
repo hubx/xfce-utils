@@ -1,0 +1,60 @@
+#!/bin/sh
+#
+#  gxfce
+#
+#  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+if [ "x$BROWSER" = "x" ]
+then
+  BROWSER=mozilla
+fi
+
+HELP_DIR="@datadir@/xfce4/doc"
+
+if [ ! "x$1" = "x" ]; then
+    HELP_FILE="$1"
+else
+    HELP_FILE="index.html"
+fi
+
+if [ -r "$HELP_DIR/html.$LANG/$HELP_FILE" ]
+then
+  URL="$HELP_DIR/html.$LANG/$HELP_FILE"
+elif [ -r "$HELP_DIR/html/$HELP_FILE" ]
+then
+  URL="$HELP_DIR/html/$HELP_FILE"
+else 
+  URL="$HELP_DIR/html/index.html"
+fi
+
+case $BROWSER in
+    netscape|mozilla|phoenix)
+	$BROWSER -remote openurl\(file://"$URL",new-window\) || \
+		$BROWSER "$URL"    
+	;;
+    opera)
+    	$BROWSER -remote openURL\(file://"$URL",new-window\) || \
+		$BROWSER "$URL"
+	;;
+    *)
+    $BROWSER file://"$URL"
+	;;
+esac
+
+exit 0
+
