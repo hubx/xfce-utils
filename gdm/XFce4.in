@@ -19,5 +19,5 @@ if [ -x /etc/X11/xinit/XIM ]; then
    . /etc/X11/xinit/XIM
 fi
 
-exec $(bindir)/startxfce4
+exec BIN_DIR/startxfce4
 

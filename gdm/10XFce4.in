@@ -1,6 +1,6 @@
 NAME=xfce4
 ICON=None
-DESC=xfce4 Desktop Environment
-EXEC=$(bindir)/startxfce4
+DESC=XFce4 Desktop Environment
+EXEC=BIN_DIR/startxfce4
 SCRIPT:
-exec $(bindir)/startxfce4
+exec BIN_DIR/startxfce4

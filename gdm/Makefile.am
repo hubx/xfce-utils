@@ -9,6 +9,18 @@ xfce_FILES = XFce4 Xclients.xfce4 10XFce4
 EXTRA_DIST = $(xfce_SOURCE)
 DISTCLEANFILES = $(xfce_FILES)
 
+XFce4 : $(srcdir)/XFce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/XFce4.in > $@
+
+10XFce4 : $(srcdir)/10XFce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/10XFce4.in > $@
+
+Xclients.xfce4 : $(srcdir)/Xclients.xfce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/Xclients.xfce4.in > $@
+
+install-data-local :
+	test no = @USE_GDM@ || $(MAKE) install-gdm
+
 install-data-local :
 	test no = @USE_GDM@ || $(MAKE) install-gdm
 

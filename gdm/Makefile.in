@@ -154,12 +154,11 @@ DISTCLEANFILES = $(xfce_FILES)
 subdir = gdm
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = 10XFce4 Xclients.xfce4 XFce4
+CONFIG_CLEAN_FILES =
 DIST_SOURCES =
 DATA = $(noinst_DATA)
 
-DIST_COMMON = 10XFce4.in Makefile.am Makefile.in XFce4.in \
-	Xclients.xfce4.in
+DIST_COMMON = Makefile.am Makefile.in
 all: all-am
 
 .SUFFIXES:
@@ -168,12 +167,6 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configu
 	  $(AUTOMAKE) --gnu  gdm/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
-10XFce4: $(top_builddir)/config.status 10XFce4.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-Xclients.xfce4: $(top_builddir)/config.status Xclients.xfce4.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-XFce4: $(top_builddir)/config.status XFce4.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -307,6 +300,18 @@ uninstall-am: uninstall-info-am uninstall-local
 	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
 	uninstall-info-am uninstall-local
 
+
+XFce4 : $(srcdir)/XFce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/XFce4.in > $@
+
+10XFce4 : $(srcdir)/10XFce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/10XFce4.in > $@
+
+Xclients.xfce4 : $(srcdir)/Xclients.xfce4.in
+	@sed -e "s%BIN_DIR%$(bindir)%g"     $(srcdir)/Xclients.xfce4.in > $@
+
+install-data-local :
+	test no = @USE_GDM@ || $(MAKE) install-gdm
 
 install-data-local :
 	test no = @USE_GDM@ || $(MAKE) install-gdm
