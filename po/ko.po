@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2004-11-24 15:08+0900\n"
+"PO-Revision-Date: 2004-11-27 22:34+0900\n"
 "Last-Translator: ByungHyun Choi<byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: xfce4-about/info.c:263
 msgid "About Xfce 4"
-msgstr "XFce 4에 대하여"
+msgstr "XFce 4란..."
 
 #: xfce4-about/info.c:278
 msgid "Xfce Desktop Environment"
@@ -86,7 +86,7 @@ msgstr "위치"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "_Top"
-msgstr "맨위(_T)"
+msgstr "위(_T)"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
 msgid "_Bottom"
@@ -189,7 +189,7 @@ msgstr "이런 일은 생겨서는 안됩니다."
 
 #: xftaskbar/xftaskbar.c:592
 msgid "Cannot get default screen\n"
-msgstr "데스크탑 여백을 확보하지 못 했습니다.\n"
+msgstr "화면 여백을 확보하지 못 했습니다.\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
