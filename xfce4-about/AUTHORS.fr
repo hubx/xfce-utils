@@ -28,6 +28,7 @@ Hébergement du site et listes de diffusions fournis par
   Chuck Mead <csm@MoonGroup.com>
 
 Traducteurs
+  ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>
   Carles Muñoz Gorriz <carlesmu@internautas.org>
   Dan Korostelev <digger_temp@netman.ru>
   Davide D'Amico <dave@gufi.org>
@@ -39,11 +40,14 @@ Traducteurs
   Harun Musa <mharun@gmx.net>
   Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>
   Jaime Buffery <nestu@onlylinux.homelinux.net>
+  Joakim Andreasson <joakim.andreasson@gmx.net>
+  Lam Vinh Nien <nienvl@yahoo.ca>
   Moritz Heiber <mistermoe@hackerboard.de>
   Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
   Nuno Donato <nunodonato@sapo.pt>
   Paweł Pastuła <pastulap@poczta.onet.pl>
   Peter Somogyi <jerry@gnu.hu>
+  umm <umm@pchome.com.tw>
   Yongtao Yang <yongtao.yang@teila.com>
   Zele Gabor <zegab@axelero.hu>
   Zhao Ji <zhao-ji@awz.ne.jp>
