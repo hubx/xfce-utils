@@ -17,10 +17,6 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- *
- * TODO:
- *	- the locale stuff is really a hack for now. This will partially
- *	  move to libxfce4util later.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -50,15 +46,14 @@
 
 #include "xfce-logo-icon.h"
 
+#define SEARCHPATH	(DATADIR "/%F.%L:" DATADIR "/%F.%l:" DATADIR "/%F")
+
 #define XFCE_COPYRIGHT	"COPYING"
-
 #define XFCE_AUTHORS	"AUTHORS"
-
 #define XFCE_INFO	"INFO"
-
-#define BSDL	"BSD"
-#define GPL	"GPL"
-#define LGPL	"LGPL"
+#define XFCE_BSDL	"BSD"
+#define XFCE_GPL	"GPL"
+#define XFCE_LGPL	"LGPL"
 
 #define BORDER 6
 
@@ -70,15 +65,40 @@ info_help_cb(GtkWidget *w, gpointer data)
 	exec_command("xfhelp4");
 }
 
+#ifdef HAVE_LIBGTKHTML
+static void
+link_clicked(HtmlDocument *htmldoc, const gchar *url, gpointer data)
+{
+	const gchar *browser;
+	gchar command[2048];
+
+	/*
+	 * launch the browser
+	 *
+	 * XXX - We should probably have something like xfbrowser4, or even
+	 * better: Have the browser configurable through the settings
+	 * manager.
+	 */
+	if ((browser = g_getenv("BROWSER")) != NULL)
+		g_snprintf(command, sizeof(command), "%s \"%s\"", browser, url);
+	else
+		g_snprintf(command, sizeof(command),
+			   "ns-remote -remote \"openURL(%s)\"", url);
+
+	exec_command(command);
+}
+#endif
+
 static void
 add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
-		gboolean hscrolling)
+	 gboolean hscrolling)
 {
 #ifdef HAVE_LIBGTKHTML
+	HtmlDocument *htmldoc;
 	gchar *hfilename;
 	gboolean usehtml;
-	HtmlDocument *htmldoc;
 #endif
+	gchar buffer[PATH_MAX + 1];
 	GtkTextBuffer *textbuffer;
 	GtkWidget *textview;
 	GtkWidget *label;
@@ -87,7 +107,6 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	GError *err;
 	gchar *path;
 	gchar *buf;
-	gchar *base;
 	int n;
 
 	err = NULL;
@@ -95,26 +114,24 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	label = gtk_label_new(name);
 	gtk_widget_show(label);
 
-	base = g_build_filename(DATADIR, filename, NULL);
-
 #ifdef HAVE_LIBGTKHTML
-	hfilename = g_strconcat(base, ".html", NULL);
-	path = xfce_get_file_localized(hfilename);
+	/* try to find a html file first */
+	hfilename = g_strconcat(filename, ".html", NULL);
+	path = xfce_get_path_localized(buffer, sizeof(buffer), SEARCHPATH,
+			hfilename, G_FILE_TEST_IS_REGULAR);
 	g_free(hfilename);
 
-	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
+	if (path != NULL) {
 		usehtml = TRUE;
-		goto found;
 	}
-
-	g_free(path);
+	else {
+		/* fallback to plain text files */
+		usehtml = FALSE;
 #endif
-
-	path = xfce_get_file_localized(base);
-
+		path = xfce_get_path_localized(buffer, sizeof(buffer),
+				SEARCHPATH, filename, G_FILE_TEST_IS_REGULAR);
 #ifdef HAVE_LIBGTKHTML
-	usehtml = FALSE;
-found:
+	}
 #endif
 
 	g_file_get_contents(path, &buf, &n, &err);
@@ -146,6 +163,10 @@ found:
 			textview = html_view_new();
 			html_view_set_document(HTML_VIEW(textview), htmldoc);
 
+			/* connect callbacks */
+			g_signal_connect(G_OBJECT(htmldoc), "link_clicked",
+					G_CALLBACK(link_clicked), NULL);
+
 			/* resize window */
 			gtk_window_set_default_size(GTK_WINDOW(info),
 					615, 530);
@@ -173,9 +194,6 @@ found:
 
 		g_free(buf);
 	}
-
-	g_free(base);
-	g_free(path);
 }
 
 int
@@ -193,9 +211,7 @@ main(int argc, char **argv)
 #ifdef ENABLE_NLS
     /* This is required for UTF-8 at least - Please don't remove it */
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-#ifdef HAVE_BIND_TEXTDOMAIN_CODESET
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-#endif
     textdomain (GETTEXT_PACKAGE);
 #endif
 
@@ -241,9 +257,9 @@ main(int argc, char **argv)
     add_page(GTK_NOTEBOOK(notebook), _("Info"), XFCE_INFO, FALSE);
     add_page(GTK_NOTEBOOK(notebook), _("Credits"), XFCE_AUTHORS, FALSE);
     add_page(GTK_NOTEBOOK(notebook), _("Copyright"), XFCE_COPYRIGHT, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("BSDL"), BSDL, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("LGPL"), LGPL, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("GPL"), GPL, TRUE);
+    add_page(GTK_NOTEBOOK(notebook), _("BSDL"), XFCE_BSDL, TRUE);
+    add_page(GTK_NOTEBOOK(notebook), _("LGPL"), XFCE_LGPL, TRUE);
+    add_page(GTK_NOTEBOOK(notebook), _("GPL"), XFCE_GPL, TRUE);
 
     /* buttons */
     buttonbox = gtk_hbutton_box_new();
