@@ -73,8 +73,10 @@ static void
 add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 		gboolean hscrolling)
 {
-#ifdef HAVE_LIBGTKHTML
+#if defined(HAVE_LIBGTKHTML) || defined(ENABLE_NLS)
 	gchar *hfilename;
+#endif
+#ifdef HAVE_LIBGTKHTML
 	gboolean usehtml;
 	HtmlDocument *htmldoc;
 #endif
