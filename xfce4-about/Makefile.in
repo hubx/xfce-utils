@@ -44,8 +44,9 @@ DIST_COMMON = $(srcdir)/INFO.ca.in $(srcdir)/INFO.es.in \
 	$(srcdir)/INFO.fr.in $(srcdir)/INFO.html.ca.in \
 	$(srcdir)/INFO.html.de.in $(srcdir)/INFO.html.es.in \
 	$(srcdir)/INFO.html.fr.in $(srcdir)/INFO.html.in \
-	$(srcdir)/INFO.in $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	AUTHORS COPYING
+	$(srcdir)/INFO.html.it.in $(srcdir)/INFO.in \
+	$(srcdir)/INFO.it.in $(srcdir)/Makefile.am \
+	$(srcdir)/Makefile.in AUTHORS COPYING
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/X11.m4 \
 	$(top_srcdir)/m4/debug.m4 $(top_srcdir)/m4/depends.m4 \
@@ -54,8 +55,9 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO INFO.ca INFO.es INFO.fr INFO.html \
-	INFO.html.ca INFO.html.de INFO.html.es INFO.html.fr
+CONFIG_CLEAN_FILES = INFO INFO.ca INFO.es INFO.fr INFO.it INFO.html \
+	INFO.html.ca INFO.html.de INFO.html.es INFO.html.fr \
+	INFO.html.it
 am__installdirs = $(DESTDIR)$(bindir) $(DESTDIR)$(aboutdir)
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
@@ -323,6 +325,8 @@ INFO.es: $(top_builddir)/config.status $(srcdir)/INFO.es.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.fr: $(top_builddir)/config.status $(srcdir)/INFO.fr.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.it: $(top_builddir)/config.status $(srcdir)/INFO.it.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html: $(top_builddir)/config.status $(srcdir)/INFO.html.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html.ca: $(top_builddir)/config.status $(srcdir)/INFO.html.ca.in
@@ -332,6 +336,8 @@ INFO.html.de: $(top_builddir)/config.status $(srcdir)/INFO.html.de.in
 INFO.html.es: $(top_builddir)/config.status $(srcdir)/INFO.html.es.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html.fr: $(top_builddir)/config.status $(srcdir)/INFO.html.fr.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.html.it: $(top_builddir)/config.status $(srcdir)/INFO.html.it.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
