@@ -73,7 +73,7 @@
       <tr><td></td><td>Yuval Tanny &lt;<a href="mailto:tanai@int.gov.il">tanai@int.gov.il</a>&gt;</td></tr>
       <tr><td><li>it : </li></td><td>Alex Dupre &lt;<a href="mailto:ale@FreeBSD.org">ale@FreeBSD.org</a>&gt;</td></tr>
       <tr><td></td><td>Luca Marrocco &lt;<a href="mailto:buildup@liber.it">buildup@liber.it</a>&gt;</td></tr>
-      <tr><td><li>ko : </li></td><td>ByungHyun Choi &lt;<a href="mailto:byunghyunchoi@hotmail.com">byunghyunchoi@hotmail.com</a>&gt;</td></tr>
+      <tr><td><li>ko : </li></td><td>ByungHyun Choi &lt;<a href="mailto:byunghyun.choi@gmail.com">byunghyun.choi@gmail.com</a>&gt;</td></tr>
       <tr><td><li>lt : </li></td><td>Mantas Zapolskas &lt;<a href="mailto:mantaz@users.sf.net">mantaz@users.sf.net</a>&gt;</td></tr>
       <tr><td><li>nb_NO :</li></td><td>Eskild Hustvedt &lt;<a href="mailto:zerodogg@skolelinux.no">zerodogg@skolelinux.no</a>&gt;</td></tr>
       <tr><td><li>nl : </li></td><td>Jasper Huijsmans &lt;<a href="mailto:jasper@xfce.org">jasper@xfce.org</a>&gt;</td></tr>
