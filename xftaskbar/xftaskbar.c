@@ -61,7 +61,7 @@ int main(int argc, char **argv)
     netk_tasklist_set_grouping(NETK_TASKLIST(tasklist), NETK_TASKLIST_ALWAYS_GROUP);
     netk_tasklist_set_grouping_limit(NETK_TASKLIST(tasklist), 0);
     gtk_widget_set_size_request (GTK_WIDGET (tasklist), -1, FIXED_HEIGHT);
-    gtk_box_pack_start (GTK_BOX (hbox), tasklist, TRUE, TRUE,0);
+    gtk_box_pack_start (GTK_BOX (hbox), tasklist, TRUE, TRUE, 0);
 
     pager = netk_pager_new(screen);
     netk_pager_set_orientation(NETK_PAGER(pager), GTK_ORIENTATION_HORIZONTAL);

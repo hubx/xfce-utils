@@ -17,6 +17,7 @@
 */
 
 #include <gtk/gtk.h>
+#include <xfce4/libxfcegui4/libxfcegui4.h>
 #include <gdk/gdkx.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -498,7 +499,7 @@ fs_cancel_cb (GtkDialog * fs)
 static char *
 get_filename_dialog (const char *path, BackdropDialog *bd)
 {
-  GtkWidget *fs = gtk_file_selection_new (_("Select backdrop image"));
+  GtkWidget *fs = preview_file_selection_new (_("Select backdrop image"), TRUE);
   char *name = NULL;
   const char *temp;
 
