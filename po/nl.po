@@ -38,7 +38,7 @@ msgstr "Dankwoord"
 
 #: xfce4-about/info.c:265
 msgid "Copyright"
-msgstr ""
+msgstr "Auteursrecht"
 
 #: xfce4-about/info.c:266
 msgid "BSDL"
