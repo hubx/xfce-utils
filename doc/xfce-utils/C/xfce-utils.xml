@@ -65,6 +65,7 @@ maintainers, etc. Commented out by default.
 
   </authorgroup>
 
+  <!--
   <revhistory>
     <revision>
       <revnumber>0.3</revnumber> 
@@ -72,6 +73,7 @@ maintainers, etc. Commented out by default.
       <authorinitials>jbh</authorinitials>
     </revision>
   </revhistory>
+  -->
 
   <releaseinfo>This manual describes the &app; package, version &appversion;.
   </releaseinfo>
@@ -96,11 +98,12 @@ maintainers, etc. Commented out by default.
   <title>Taskbar</title>
 
   <para>The taskbar is either at the top or the bottom of the screen and shows 
-    all running programs. The behaviour of the taskbar can be changed from
+    all running programs. The behaviour of the taskbar can be changed from the
     settings manager. Run <command>xfce-setting-show taskbar</command>, or
     start the settings manager from the panel. In addition to the tasklist,
     the taskbar also features a simple graphical pager and a notification area
-    (also known as the system tray).
+    (also known as the system tray). Both can be disabled from the settings
+    dialog.
   </para>
   
 </sect1>
@@ -126,7 +129,7 @@ maintainers, etc. Commented out by default.
   </figure>
 
   <para>The run dialog allows the user to launch applications. Applications
-    can be run using a Terminal emulator.
+    can be run in a Terminal emulator (xterm by default).
   </para>
 
 </sect1>
@@ -169,23 +172,67 @@ maintainers, etc. Commented out by default.
   <variablelist>
     <varlistentry>
       <term>startxfce4</term>
-      <listitem></listitem>
+      <listitem>
+	<para>The <application>startxfce4</application> is a convenient script
+	  to start an XFce 4 session from the console. It will give you a
+	  session with a taskbar and a panel and with the desktop manager and
+	  window manager running. All programs, or symbolic links to programs, 
+	  in <filename>~/Desktop/Autostart/</filename> will be run by 
+	  <application>startxfce4</application> on startup.
+	</para>
+	<para>To customize the behaviour of 
+	  <application>startxfce4</application>, copy 
+	  <filename>${sysconfdir}/xfce4/xinitrc</filename> to your personal 
+	  <filename>~/.xfce4/</filename> directory and edit that file. If you 
+	  install from source, <filename>${sysconfdir}</filename> defaults to 
+	  <filename>/usr/local/etc</filename>; for binary packages it is often 
+	  set to <filename>/etc</filename>.
+	</para>
+      </listitem>
     </varlistentry>
     <varlistentry>
       <term>xfhelp4</term>
-      <listitem></listitem>
+      <listitem>
+	<para>This script is used to open the local XFce 4 documentation in a
+	  browser. By default it will use <application>mozilla</application>,
+	  but you can change that by setting the $BROWSER environmental
+	  variable. For instance in your <filename>~/.bashrc</filename> put
+	  the following line:
+	  <programlisting>export BROWSER="galeon -w"</programlisting>
+	</para>
+      </listitem>
     </varlistentry>
     <varlistentry>
       <term>xflock4</term>
-      <listitem></listitem>
+      <listitem>
+	<para>This script is used by the panel to lock the screen using
+	  xscreensaver if available and falling back to xlock.
+	</para>
+      </listitem>
     </varlistentry>
     <varlistentry>
       <term>xfmountdev4</term>
-      <listitem></listitem>
+      <listitem>
+	<para>
+	  <command>xfmountdev4 <filename>/dev/mountpoint</filename></command> 
+	  will mount the given mountpoint and open xffm in that location. When
+	  you close the xffm window the filesystem will be unmounted. Note that
+	  you can use <application>xfstab</application> provided with xffm for
+	  the same purpose.
+        </para>
+      </listitem>
     </varlistentry>
     <varlistentry>
       <term>xfterm4</term>
-      <listitem></listitem>
+      <listitem>
+	<para>This is a convenient terminal script. It uses the $TERMCMD
+	  environmental variable as terminal command if available and falls
+	  back to using xterm. Especially useful in the panel where you can
+	  drag file or directories to it that will be viewed by the
+	  appropriate console application (less for text files, lynx for
+	  html). 
+	</para>
+      </listitem>
     </varlistentry>
   </variablelist>
   
