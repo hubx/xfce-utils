@@ -33,9 +33,21 @@ else
     HELP_FILE="index.html"
 fi
 
-if [ -r "$HELP_DIR/$LANG/$HELP_FILE" ]
+# Check for translated documentation
+if [ -n "$LC_ALL" ] ; then 
+  LC=$LC_ALL
+elif [ -n "$LANG" ] ; then
+  LC=$LANG
+else
+  LC="C"
+fi
+
+if [ -r "$HELP_DIR/$LC/$HELP_FILE" ]
 then
-  URL="$HELP_DIR/$LANG/$HELP_FILE"
+  URL="$HELP_DIR/$LC/$HELP_FILE"
+elif [ -r "$HELP_DIR/`echo $LC | sed 's/\(..\)_.*/\1/'`/$HELP_FILE" ]
+then
+  URL="$HELP_DIR/`echo $LC | sed 's/\(..\)_.*/\1/'`/$HELP_FILE"
 elif [ -r "$HELP_DIR/C/$HELP_FILE" ]
 then
   URL="$HELP_DIR/C/$HELP_FILE"
