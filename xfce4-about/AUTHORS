@@ -33,43 +33,45 @@ Web Hosting and Mailing Lists provided by
    Remco Lubbers - WebAdept (www.web-adept.nl - remco at web-adept.nl)
 
 Translators
-  Abbas Izad (fa) <abbasizad@hotmail.com>
-  Alex Dupre (it) <ale@FreeBSD.org>
-  ByungHyun Choi (ko) <byunghyunchoi@rtlinux.or.kr>
-  Carles Muñoz Gorriz (ca) <carlesmu@internautas.org>
-  Dan Korostelev (ru) <digger_temp@netman.ru>
-  Davide D'Amico (it) <dave@gufi.org>
-  Dinesh Nadarajah (pl) <n_dinesh@yahoo.com>
-  Duarte Henriques <duarte_henriques@myrealbox.com>
-  Egmont Koblinger (hu) <egmont@uhulinux.hu>
-  Erçin EKER (tr) <erc.caldera@gmx.net>
-  G Karunakar (hi) <karunakar@freedomink.org>
-  Harun Musa (ms) <mharun@gmx.net>
-  Ilkka Ollakka (fi) <ilkka.j.ollakka@students.oamk.fi>
-  Jaime Buffery (es) <nestu@onlylinux.homelinux.net>
-  Joakim Andreasson <joakim.andreasson@gmx.net>
-  Johan Hammar (sv) <johan.hammar@swipnet.se>
-  Lam Vinh Nien (vi) <nienvl@yahoo.ca>
-  Lukáš Konarovský (cs) <daeltar@daeltar.org>
-  Marie-Claude Collilieux (fr) <m.collilieux@free.fr>
-  Mantas Zapolskas (lt) <mantaz@users.sf.net>
-  Maxim Dziumanenko (uk) <mvd@mylinux.com.ua>
-  Miroslav Yordanov (bg) <miordanov@i-space.org>
-  Moritz Heiber (de) <moe@lunar-linux.org>
-  Nabil Ben Khalifa (ar) <nabil_benkhalifa@yahoo.fr>
-  Nuno Donato (pt_PT) <nunodonato@sapo.pt>
-  Paweł Pastuła (pl) <pastulap@poczta.onet.pl>
-  Peter Slavov (bg) <peshka@i-space.org>
-  Peter Somogyi (hu) <jerry@gnu.hu>
-  Ravishankar Shrivastava (hi) <raviratlami@yahoo.com>
-  Saleh Hathal (ar) <hathalsal@hotmail.com>
-  Ted Sola (no) <ted@disturbedconfusion.com>
-  tximas <a_gomez@mipagina.zzn.com>
-  umm (zh_TW) <umm@pchome.com.tw>
-  Yongtao Yang (zh_CN) <yongtao.yang@teila.com>
-  Yuval Tanny (he) <tanai@int.gov.il>
-  Zele Gabor <zegab@axelero.hu>
-  Zhao Ji (ja) <zhao-ji@awz.ne.jp>
+  az : Metin Amiroff <metin@karegen.com>
+  be : Ales Nyakhaychyk <nab@mail.by>
+  cs : Alois Nespor <Alois.Nespor@seznam.cz>
+  de : Moritz Heiber <moe@xfce.org>
+  en_GB : Dwayne Bailey <dwayne@translate.org.za>
+  es : Jaime Buffery <nestu@lunar-linux.org>
+  es_MX : Edscott Wilson Garcia <edscott@imp.mx>
+  et : Peeter Vois <peeter.vois@proekspert.ee>
+       Mart Tõnso (et) <Mart.Tonso@ttu.ee>
+  eu : Piarres Beobide Egaña <pi@beobide.net>
+  fa : Abbas Izad <abbasizad@hotmail.com>
+  fi : Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>
+       Juha Kautto <kautto.juha@kolumbus.fi>
+  fr : Mickal Graf <korbinus@linux.se>
+       Olivier Fourdan <fourdan@xfce.org>
+       Jean-François Wauthy <pollux@xfce.org>
+  gu : Ankit Patel <ankit@redhat.com>
+  hi : Ravi Shrivastava <raviratlami@yahoo.com>
+  he : Dotan Kamber <kamberd@yahoo.com>
+       Jonatan Perry <Jonatan443@walla.co.il>
+       Yuval Tanny <tanai@int.gov.il>
+  it : Alex Dupre <ale@FreeBSD.org>
+       Luca Marrocco <buildup@liber.it>
+  ko : ByungHyun Choi<byunghyunchoi@hotmail.com>
+  lt : Mantas Zapolskas <mantaz@users.sf.net>
+  nb_NO : Eskild Hustvedt <zerodogg@skolelinux.no>
+  nl : Jasper Huijsmans <jasper@xfce.org>
+  pa : Amanpreet Singh Alam <aalam@redhat.com>
+  pt_BR : Felix da Silva Costa <felix@online.eti.br>
+  pt_PT : Nuno Donato <nunodonato@zmail.pt>
+  ro : Mişu Moldovan <dumol@go.ro>
+  ru : Anthony Ivanoff <a-i@bk.ru>
+  sk : Juraj Brosz <Juraj.Brosz@pobox.sk>
+  ta : Dinesh Nadarajah <dinesh_list@sbcglobal.net>
+  tr : Erçin EKER <erc.caldera@gmx.net>
+  uk : Maxim V. Dziumanenko <mvd@mylinux.com.ua>
+  vi : Lâm Vĩnh Niên <nienvl@yahoo.ca>
+  zh_CN : Yongtao Yang <yongtao.yang@telia.com>
+  zh_TW : Hydonsingore Sie <hydonsingore@mail.educities.edu.tw>
 
 If you know of anyone missing from this list, please let us know on
 xfce4-dev@xfce.org
