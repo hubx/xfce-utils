@@ -68,7 +68,7 @@ gboolean use_xfc_combo=FALSE;
 gboolean open_with=FALSE;
 char *argument;
 
-#ifdef HAVE_LIBDBH
+#if HAVE_LIBDBH && HAVE_XFHEADERS
 #include "xfcombo.i"
 #endif
 
@@ -308,7 +308,8 @@ void runit(GtkEntry * entry, gpointer user_data){
 
     if (do_run(command, in_terminal)) {
 	        if (!use_xfc_combo) put_history(command, in_terminal, history);
-#ifdef HAVE_LIBDBH
+#if HAVE_LIBDBH && HAVE_XFHEADERS
+
 		else if (use_xfc_combo) {
 		    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
       		    XFC_save_to_history(f,(char *)command);
@@ -319,7 +320,8 @@ void runit(GtkEntry * entry, gpointer user_data){
     }
 }
 
-#ifdef HAVE_LIBDBH
+#if HAVE_LIBDBH && HAVE_XFHEADERS
+
 void alt_runit(GtkEntry * entry, gpointer user_data){
     const gchar *command;
     gboolean in_terminal;
@@ -400,7 +402,8 @@ int main(int argc, char **argv)
     combo = gtk_combo_new();
     gtk_combo_set_case_sensitive(GTK_COMBO(combo), TRUE);
 
-#ifdef HAVE_LIBDBH
+#if HAVE_LIBDBH && HAVE_XFHEADERS
+
     if ((xfc_fun=load_xfc()) != NULL) use_xfc_combo=TRUE;  
 #endif
     
@@ -420,18 +423,16 @@ int main(int argc, char **argv)
     }
 
     if (use_xfc_combo) {
-#ifndef HAVE_LIBDBH
-	    g_assert_not_reached();
-#else
+#if HAVE_LIBDBH && HAVE_XFHEADERS
 	    combo_info = XFC_init_combo((GtkCombo *)combo);
 	    combo_info->activate_func = alt_runit;
     	    xfc_fun->extra_key_completion = extra_key_completion;
 	    xfc_fun->extra_key_data = (gpointer)combo_entry;
 	    combo_info->entry = (GtkEntry *)combo_entry;
 	    /*combo_info->activate_user_data=(gpointer)combo_info;*/
-	    
 	    set_run_combo(combo_info);
-	    
+#else
+	    g_assert_not_reached();
 #endif
     } 
     else { 
@@ -484,7 +485,8 @@ int main(int argc, char **argv)
         g_list_free(history);
     }
     
-#ifdef HAVE_LIBDBH
+#if HAVE_LIBDBH && HAVE_XFHEADERS
+
     if (use_xfc_combo) {
 	XFC_destroy_combo(combo_info);
     	unload_xfc();
