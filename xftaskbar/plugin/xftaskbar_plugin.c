@@ -198,7 +198,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     g_object_unref(icon);
 
     gtk_window_set_title (GTK_WINDOW (dialog->xftaskbar_dialog), _("Taskbar"));
-    gtk_window_set_position (GTK_WINDOW (dialog->xftaskbar_dialog), GTK_WIN_POS_CENTER_ALWAYS);
+    gtk_window_set_position (GTK_WINDOW (dialog->xftaskbar_dialog), GTK_WIN_POS_CENTER);
     gtk_dialog_set_has_separator (GTK_DIALOG (dialog->xftaskbar_dialog), FALSE);
 
     dialog->dialog_vbox1 = GTK_DIALOG (dialog->xftaskbar_dialog)->vbox;
