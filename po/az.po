@@ -1,31 +1,30 @@
+# translation of xfce-utils.po to Azerbaijani
 # translation of az.po to Azerbaijani Turkish
 # Azerbaijani Turkish translation of xfce-utils.
 # Copyright (C) 2003 THE xfce-utils'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce-utils package.
-# Mətin Əmirov <metin@karegen.com>, 2003.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: az\n"
+"Project-Id-Version: xfce-utils\n"
 "POT-Creation-Date: 2004-08-06 16:17+0200\n"
-"PO-Revision-Date: 2003-12-15 17:43+0200\n"
+"PO-Revision-Date: 2004-08-18 21:56+0300\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
-"Language-Team: Azerbaijani Turkish <gnome@azitt.com>\n"
+"Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "XFce 4 Haqqında"
+msgstr "Xfce 4 Haqqında"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce Masa Üstü Mühiti"
+msgstr "Xfce Masa Üstü Mühiti"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -64,7 +63,7 @@ msgstr "xfrun4: %s keçmiş faylına yazıla bilmədi\n"
 #: xfrun/xfrun.c:378
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "%s faylı bu proqramla açılsınmı?"
 
 #: xfrun/xfrun.c:379
 msgid "Run program"
@@ -89,39 +88,36 @@ msgid "Position"
 msgstr "Mövqe"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Üst"
+msgstr "Ü_st"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Alt"
+msgstr "_Alt"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Tərəfləmə"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "_Sol"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "_Orta"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "_Sağ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Avtomatik gizlət"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Vəzifə çubuğunu avtomatik gizlət"
+msgstr "Vəzifə çubuğunu avtomatik _gizlət"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -143,42 +139,39 @@ msgstr "Geniş"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "En:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Vəzifələr"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Bütün iş sahələrindəki vəzifələri göstər"
+msgstr "_Bütün iş sahələrindəki vəzifələri göstər"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Vəzifələri həmişə _qrupla"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Proqram _adlarını göstər"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Peycer"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Vəzifə çubuğunda peyceri göstər"
+msgstr "Vəzifə çubuğunda _peyceri göstər"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Bildiriş sahəsi"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Vəzifə çubuğunda bildiriş sahəsini göstər"
+msgstr "Vəzifə çubuğunda _bildiriş sahəsini göstər"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -198,9 +191,8 @@ msgid "This should not happen"
 msgstr "Bu olmamalıdır"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Masa üstü kənarları alına bilmir"
+msgstr "Ön quröulu ekran alına bilmir\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
@@ -209,3 +201,4 @@ msgstr "İclas idarəçisinə bağlana bilmir"
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "MCS alıcı kanalı yaradıla bilmir"
+
