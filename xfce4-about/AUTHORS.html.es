@@ -26,6 +26,7 @@
       <li>Ejvend Nielsen &lt;<a href="mailto:prophet@sphere-x.net">prophet@sphere-x.net</a>&gt;</li>
       <li>Erik Touve &lt;<a href="mailto:etouve@earthlink.net">etouve@earthlink.net</a>&gt;</li>
       <li>Fran&ccedil;ois Le Clainche &lt;<a href="mailto:fleclainche@wanadoo.fr">fleclainche@wanadoo.fr</a>&gt;</li>
+      <li>Jean-Fran&ccedil;ois Wauthy &lt;<a href="mailto:pollux@xfce.org">pollux@xfce.org</a>&gt;</li>
       <li>Jens Guballa &lt;<a href="mailto:j.guballa@t-online.de">j.guballa@t-online.de</a>&gt;</li>
       <li>Jens Luedicke &lt;<a href="mailto:jens@irs-net.com">jens@irs-net.com</a>&gt;</li>
       <li>Joakim Andreasson &lt;<a href="mailto:joakim.andreasson@gmx.net">joakim.andreasson@gmx.net</a>&gt;</li>
