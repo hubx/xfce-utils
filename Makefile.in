@@ -83,7 +83,7 @@ install_sh = @install_sh@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 
-SUBDIRS = backdrops icons xfbd xfmouse xfrun
+SUBDIRS = backdrops icons xfbd xfmouse xfrun xftaskbar
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs

@@ -7,9 +7,9 @@ URL: 		http://www.xfce.org/
 Source0: 	%{name}-%{version}.tar.gz
 Group: 		User Interface/Desktops
 BuildRoot: 	%{_tmppath}/%{name}-root
-Requires:	gtk2
+Requires:	gtk2 >= 2.0.0 libxfcegui4 >= 0.0.7
 Requires:	libxml2
-BuildRequires: 	gtk2-devel >= 2.0.0
+BuildRequires: 	gtk2-devel >= 2.0.0 libxfcegui4-devel >= 0.0.7
 
 %description
 xfce-utils contain utilities for the XFce Desktop Environment

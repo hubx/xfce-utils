@@ -32,7 +32,7 @@ GLIB_REQUIRED_VERSION=2.0.0
 GTK_REQUIRED_VERSION=2.0.0
 PANGO_REQUIRED_VERSION=1.0.0
 
-PKG_CHECK_MODULES(BASE_DEPENDENCIES, glib-2.0 >= $GLIB_REQUIRED_VERSION gtk+-2.0 >= $GTK_REQUIRED_VERSION pango >= $PANGO_REQUIRED_VERSION gmodule-2.0 libxml-2.0)
+PKG_CHECK_MODULES(BASE_DEPENDENCIES, glib-2.0 >= $GLIB_REQUIRED_VERSION gtk+-2.0 >= $GTK_REQUIRED_VERSION pango >= $PANGO_REQUIRED_VERSION gmodule-2.0 libxml-2.0 libxfcegui4-1.0)
 
 ## libtool
 #AC_PROG_LIBTOOL
@@ -45,5 +45,6 @@ icons/Makefile
 xfbd/Makefile
 xfmouse/Makefile
 xfrun/Makefile
+xftaskbar/Makefile
 ])
 
