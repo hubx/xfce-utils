@@ -232,7 +232,7 @@ maintainers, etc. Commented out by default.
 	<para>To customize the behaviour of 
 	  <application>startxfce4</application>, copy the file
 	  <filename>${sysconfdir}/xfce4/xinitrc</filename> to your personal 
-	  <filename>~/.xfce4/</filename> directory and edit that file. If you 
+	  <filename>~/.config/xfce4/</filename> directory and edit that file. If you 
 	  install from source, <filename>${sysconfdir}</filename> defaults to 
 	  <filename>/usr/local/etc</filename>; for binary packages it is often 
 	  set to <filename>/etc</filename>.
