@@ -14,6 +14,7 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
         xfce4 mcs plugin   - (c) 2002 Olivier Fourdan
+                             (c) 2004 Benedikt Meurer
 
  */
 
@@ -48,6 +49,8 @@
 #define TOP TRUE
 #define BOTTOM FALSE
 #define DEFAULT_HEIGHT	30
+#define DEFAULT_WIDTH_PERCENT 100
+#define DEFAULT_HORIZ_ALIGN 0
 
 #define DEFAULT_ICON_SIZE 48
 
@@ -62,6 +65,8 @@ static gboolean show_pager = TRUE;
 static gboolean show_tray = TRUE;
 static gboolean all_tasks = FALSE;
 static int height = DEFAULT_HEIGHT;
+static int width_percent = DEFAULT_WIDTH_PERCENT;
+static int horiz_align = DEFAULT_HORIZ_ALIGN;
 
 typedef struct _Itf Itf;
 struct _Itf
@@ -87,10 +92,22 @@ struct _Itf
     GtkWidget *label14;
     GtkWidget *label15;
     GtkWidget *label16;
+    GtkWidget *width_scale;
+    GtkWidget *width_label_top;
+    GtkWidget *width_label_left;
+    GtkWidget *width_label_right;
     GtkWidget *pager_checkbutton;
     GtkWidget *tray_checkbutton;
     GtkWidget *pos_bottom_radiobutton;
     GtkWidget *pos_top_radiobutton;
+
+    GSList *align_button_group;
+    GtkWidget *align_frame;
+    GtkWidget *align_hbox;
+    GtkWidget *align_left_button;
+    GtkWidget *align_center_button;
+    GtkWidget *align_right_button;
+
     GtkWidget *table3;
     GtkWidget *vbox1;
     GtkWidget *vbox2;
@@ -120,6 +137,23 @@ static void cb_position_changed(GtkWidget * dialog, gpointer user_data)
     mcs_manager_set_int(mcs_plugin->manager, "Taskbar/Position", CHANNEL, position ? 1 : 0);
     mcs_manager_notify(mcs_plugin->manager, CHANNEL);
     write_options(mcs_plugin);
+}
+
+static void cb_align_changed(GtkWidget *dialog, gpointer user_data)
+{
+  Itf *itf = (Itf *)user_data;
+  McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+  if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->align_left_button)))
+    horiz_align = -1;
+  else if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->align_center_button)))
+    horiz_align = 0;
+  else
+    horiz_align = 1;
+
+  mcs_manager_set_int(mcs_plugin->manager, "Taskbar/HorizAlign", CHANNEL, horiz_align);
+  mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+  write_options(mcs_plugin);
 }
 
 static void cb_showpager_changed(GtkWidget * dialog, gpointer user_data)
@@ -183,6 +217,20 @@ static void cb_height_changed(GtkWidget * dialog, gpointer user_data)
     write_options(mcs_plugin);
 }
 
+static void cb_width_percent_changed(GtkWidget *dialog, gpointer user_data)
+{
+    Itf *itf = (Itf *) user_data;
+    McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+    width_percent = (int)gtk_range_get_value(GTK_RANGE(itf->width_scale));
+
+    mcs_manager_set_int(mcs_plugin->manager, "Taskbar/WidthPercent",
+            CHANNEL, width_percent);
+
+    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    write_options(mcs_plugin);
+}
+
 Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 {
     Itf *dialog;
@@ -192,6 +240,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->mcs_plugin = mcs_plugin;
     dialog->pos_radiobutton_group = NULL;
+    dialog->align_button_group = NULL;
 
     dialog->xftaskbar_dialog = gtk_dialog_new();
 
@@ -240,6 +289,35 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->pos_bottom_radiobutton), dialog->pos_radiobutton_group);
     dialog->pos_radiobutton_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->pos_bottom_radiobutton));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->pos_bottom_radiobutton), !position);
+
+    dialog->align_frame = xfce_framebox_new (_("Alignment"), TRUE);
+    gtk_widget_show (dialog->align_frame);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->align_frame, TRUE, TRUE, 0);
+
+    dialog->align_hbox = gtk_hbox_new (TRUE, 0);
+    gtk_widget_show (dialog->align_hbox);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->align_frame), dialog->align_hbox);
+
+    dialog->align_left_button = gtk_radio_button_new_with_mnemonic (NULL, _("Left"));
+    gtk_widget_show (dialog->align_left_button);
+    gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_left_button, FALSE, FALSE, 0);
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_left_button), dialog->align_button_group);
+    dialog->align_button_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->align_left_button));
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->align_left_button), horiz_align < 0);
+
+    dialog->align_center_button = gtk_radio_button_new_with_mnemonic (NULL, _("Center"));
+    gtk_widget_show (dialog->align_center_button);
+    gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_center_button, FALSE, FALSE, 0);
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_center_button), dialog->align_button_group);
+    dialog->align_button_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->align_center_button));
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->align_center_button), horiz_align == 0);
+
+    dialog->align_right_button = gtk_radio_button_new_with_mnemonic (NULL, _("Right"));
+    gtk_widget_show (dialog->align_right_button);
+    gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_right_button, FALSE, FALSE, 0);
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_right_button), dialog->align_button_group);
+    dialog->align_button_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->align_right_button));
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->align_right_button), horiz_align > 0);
 
     dialog->frame3 = xfce_framebox_new (_("Autohide"), TRUE);
     gtk_widget_show (dialog->frame3);
@@ -294,6 +372,50 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_scale_set_digits (GTK_SCALE (dialog->height_scale), 0);
     gtk_range_set_update_policy (GTK_RANGE (dialog->height_scale), GTK_UPDATE_DISCONTINUOUS);
 
+    dialog->width_label_top = gtk_label_new (_("Width:"));
+    gtk_widget_show (dialog->width_label_top);
+    gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_label_top,
+                      0, 3, 2, 3,
+                      (GtkAttachOptions) (GTK_FILL),
+                      (GtkAttachOptions) (0), 0, 0);
+    gtk_label_set_justify (GTK_LABEL (dialog->width_label_top),
+                           GTK_JUSTIFY_LEFT);
+    gtk_misc_set_alignment (GTK_MISC (dialog->width_label_top), 0, 0.5);
+
+    dialog->width_label_left = small_label(_("Small"));
+    gtk_widget_show (dialog->width_label_left);
+    gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_label_left,
+                      0, 1, 3, 4,
+                      (GtkAttachOptions) (GTK_FILL),
+                      (GtkAttachOptions) (0), 0, 0);
+    gtk_label_set_use_markup (GTK_LABEL (dialog->width_label_left), TRUE);
+    gtk_label_set_justify (GTK_LABEL (dialog->width_label_left),
+                           GTK_JUSTIFY_LEFT);
+    gtk_misc_set_alignment (GTK_MISC (dialog->width_label_left), 1, 0.5);
+
+    dialog->width_label_right = small_label(_("Large"));
+    gtk_widget_show (dialog->width_label_right);
+    gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_label_right,
+                      2, 3, 3, 4,
+                      (GtkAttachOptions) (GTK_FILL),
+                      (GtkAttachOptions) (0), 0, 0);
+    gtk_label_set_use_markup (GTK_LABEL (dialog->width_label_right), TRUE);
+    gtk_label_set_justify (GTK_LABEL (dialog->width_label_right),
+                           GTK_JUSTIFY_LEFT);
+    gtk_misc_set_alignment (GTK_MISC (dialog->width_label_right), 0, 0.5);
+
+    dialog->width_scale = gtk_hscale_new (GTK_ADJUSTMENT (
+                gtk_adjustment_new (width_percent, 20, 110, 10, 10, 10)));
+    gtk_widget_show (dialog->width_scale);
+    gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_scale,
+                      1, 2, 3, 4,
+                      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                      (GtkAttachOptions) (GTK_FILL), 0, 0);
+    gtk_scale_set_draw_value (GTK_SCALE (dialog->width_scale), FALSE);
+    gtk_scale_set_digits (GTK_SCALE (dialog->width_scale), 0);
+    gtk_range_set_update_policy (GTK_RANGE (dialog->width_scale),
+                                 GTK_UPDATE_DISCONTINUOUS);
+
     dialog->vbox2 = gtk_vbox_new (TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox2), BORDER);
     gtk_widget_show (dialog->vbox2);
@@ -343,11 +465,15 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->xftaskbar_dialog), "response", G_CALLBACK(cb_dialog_response), itf->mcs_plugin);
 
     g_signal_connect(G_OBJECT(itf->pos_top_radiobutton), "toggled", G_CALLBACK(cb_position_changed), itf);
+    g_signal_connect(G_OBJECT(itf->align_left_button), "toggled", G_CALLBACK(cb_align_changed), itf);
+    g_signal_connect(G_OBJECT(itf->align_center_button), "toggled", G_CALLBACK(cb_align_changed), itf);
+    g_signal_connect(G_OBJECT(itf->align_right_button), "toggled", G_CALLBACK(cb_align_changed), itf);
     g_signal_connect(G_OBJECT(itf->pager_checkbutton), "toggled", G_CALLBACK(cb_showpager_changed), itf);
     g_signal_connect(G_OBJECT(itf->tray_checkbutton), "toggled", G_CALLBACK(cb_showtray_changed), itf);
     g_signal_connect(G_OBJECT(itf->alltasks_checkbutton), "toggled", G_CALLBACK(cb_alltasks_changed), itf);
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
+    g_signal_connect(G_OBJECT(itf->width_scale), "value_changed", G_CALLBACK(cb_width_percent_changed), itf);
 
     gtk_window_set_position (GTK_WINDOW (itf->xftaskbar_dialog), GTK_WIN_POS_CENTER);
     gtk_widget_show(itf->xftaskbar_dialog);
@@ -398,6 +524,17 @@ static void create_channel(McsPlugin * mcs_plugin)
     {
         position = TOP;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/Position", CHANNEL, position ? 1 : 0);
+    }
+
+    setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/HorizAlign", CHANNEL);
+    if(setting)
+    {
+        horiz_align = setting->data.v_int;
+    }
+    else
+    {
+        horiz_align = DEFAULT_HORIZ_ALIGN;
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/HorizAlign", CHANNEL, horiz_align);
     }
 
     setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/AutoHide", CHANNEL);
@@ -453,6 +590,17 @@ static void create_channel(McsPlugin * mcs_plugin)
     {
         height = DEFAULT_HEIGHT;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/Height", CHANNEL, height);
+    }
+
+    setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/WidthPercent", CHANNEL);
+    if(setting)
+    {
+        width_percent = setting->data.v_int;
+    }
+    else
+    {
+        width_percent = DEFAULT_HEIGHT;
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/WidthPercent", CHANNEL, width_percent);
     }
 }
 

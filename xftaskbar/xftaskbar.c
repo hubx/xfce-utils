@@ -1,6 +1,6 @@
 /*  xftaskbar
  *  Copyright (C) 2003 Olivier Fourdan (fourdan@xfce.org)
- *  Copyright (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+ *  Copyright (c) 2003,2004 Benedikt Meurer <benny@xfce.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -51,6 +51,8 @@
 #define TOP            TRUE
 #define BOTTOM         FALSE
 #define DEFAULT_HEIGHT 30
+#define DEFAULT_WIDTH_PERCENT 100
+#define DEFAULT_HORIZ_ALIGN 0
 
 static McsClient *client = NULL;
 
@@ -62,6 +64,8 @@ struct _Taskbar
     int scr;
 
     guint x, y, width, height;
+    guint width_percent;
+    gint horiz_align;  /* <0 left, =0 center, >0 right */
     gint hide_timeout;
     gint unhide_timeout;
     gboolean position;
@@ -141,6 +145,27 @@ static gint taskbar_get_height(Taskbar *taskbar)
     return taskbar->height;
 }
 
+static gint taskbar_get_width(Taskbar *taskbar)
+{
+  return (taskbar->width * taskbar->width_percent) / 100.0;
+}
+
+static gint taskbar_get_x(Taskbar *taskbar)
+{
+  if (taskbar->horiz_align < 0) {
+    /* left */
+    return taskbar->x;
+  }
+  else if (taskbar->horiz_align > 0) {
+    /* right */
+    return taskbar->x + (taskbar->width - taskbar_get_width(taskbar));
+  }
+  else {
+    /* center */
+    return taskbar->x + (taskbar->width - taskbar_get_width(taskbar)) / 2;
+  }
+}
+
 static void taskbar_update_margins(Taskbar *taskbar)
 {
     DesktopMargins margins;
@@ -166,7 +191,7 @@ static void taskbar_update_margins(Taskbar *taskbar)
 static void taskbar_position(Taskbar *taskbar)
 {
     g_return_if_fail (taskbar != NULL);
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar_get_height(taskbar));
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar_get_width(taskbar), taskbar_get_height(taskbar));
 }
 
 static void taskbar_toggle_autohide(Taskbar *taskbar)
@@ -261,13 +286,34 @@ static gboolean taskbar_toggle_tray(Taskbar *taskbar)
 
 static void taskbar_change_size(Taskbar *taskbar, int height)
 {
-    g_return_if_fail (taskbar != NULL);
     if (taskbar->height != height)
     {
         taskbar->height = height;
         gtk_widget_set_size_request(GTK_WIDGET(taskbar->pager), -1, taskbar->height - 2 * taskbar_get_thickness(taskbar));
         taskbar_position(taskbar);
         taskbar_update_margins(taskbar);
+    }
+}
+
+static void taskbar_set_width_percent(Taskbar *taskbar, int width_percent)
+{
+    if (taskbar->width_percent != width_percent)
+    {
+        taskbar->width_percent = width_percent;
+        gtk_widget_set_size_request(GTK_WIDGET(taskbar->win),
+                taskbar_get_width(taskbar),
+                taskbar->height);
+    }
+}
+
+static void taskbar_set_horiz_align(Taskbar *taskbar, int horiz_align)
+{
+    if (taskbar->horiz_align != horiz_align)
+    {
+        taskbar->horiz_align = horiz_align;
+        gtk_widget_set_size_request(GTK_WIDGET(taskbar->win),
+                taskbar_get_width(taskbar),
+                taskbar->height);
     }
 }
 
@@ -286,7 +332,7 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
         {
             taskbar->y = MyDisplayMaxY(taskbar->dpy, taskbar->scr, 0, 0) - allocation->height;
         }
-        gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
+        gtk_window_move(GTK_WINDOW(taskbar->win), taskbar_get_x(taskbar), taskbar->y);
     }
     return FALSE;
 }
@@ -426,6 +472,14 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                 {
                     taskbar_change_size(taskbar, setting->data.v_int);
                 }
+                else if (!strcmp(name, "Taskbar/WidthPercent"))
+                {
+                    taskbar_set_width_percent(taskbar, setting->data.v_int);
+                }
+                else if (!strcmp(name, "Taskbar/HorizAlign"))
+                {
+                    taskbar_set_horiz_align(taskbar, setting->data.v_int);
+                }
             }
             break;
         case MCS_ACTION_DELETED:
@@ -467,7 +521,8 @@ taskbar_size_changed(GdkScreen *screen, Taskbar *taskbar)
      * with Xrandr
      */
     taskbar->width = gdk_screen_get_width(screen);
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width,
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win),
+            taskbar_get_width(taskbar),
             taskbar->height);
     taskbar_change_size(taskbar, taskbar->height);
 }
@@ -515,6 +570,8 @@ int main(int argc, char **argv)
     taskbar->unhide_timeout = 0;
     taskbar->x = left;
     taskbar->width = MyDisplayWidth(taskbar->dpy, taskbar->scr, 0, 0) - left - right;
+    taskbar->width_percent = DEFAULT_WIDTH_PERCENT;
+    taskbar->horiz_align = DEFAULT_HORIZ_ALIGN;
     taskbar->y = MyDisplayY(0, 0);
     taskbar->height = 1;
     taskbar->position = TOP;
