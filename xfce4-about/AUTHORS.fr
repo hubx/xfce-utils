@@ -21,6 +21,7 @@ Contributeurs
   Karsten Luetkewitz <phrep@plskthx.org>
   Martin Loschwitz <madkiss@debian.org>
   Michael Mosier <michael@spyonit.com>
+  Mickael Graf <korbinus@linux.se>
   Thomas Leonard <tal00r@ecs.soton.ac.uk>
   Tobias Henle <tobias@page23.de>
   Xavier Maillard <zedek@fxgsproject.org>
