@@ -57,6 +57,15 @@
     <address><email>jasper@xfce.org</email></address>
   </affiliation>
 </author>
+
+<author>
+  <firstname>Benedikt</firstname>
+  <surname>Meurer</surname>
+ 
+  <affiliation>
+    <address><email>benny@xfce.org</email></address>
+  </affiliation>
+</author>
   
 </authorgroup>
 
@@ -188,13 +197,13 @@
       which includes the session manager, the panel, the taskbar, the window 
       manager and the desktop manager. 
       All programs (or symbolic links to programs) in 
-      <filename>~/Desktop/Autostart/</filename> will be run on startup (note
+      <filename role="directory">~/Desktop/Autostart/</filename> will be run on startup (note
       that this directory does not exist by default and you may have to create
       it).
     </para>
 
     <para>By default the Xfce session manager manages the startup of
-      applciations. It allows you to save your session when you quit Xfce, so
+      applications. It allows you to save your session when you quit Xfce, so
       that the next time you log in, the same applications will be started for 
       you automatically.
     </para>
@@ -208,7 +217,10 @@
       different. If you install from source, <filename
       role="directory">${sysconfdir}</filename> defaults to <filename
       role="directory">/usr/local/etc/</filename>. For binary packages
-      it is often set to <filename role="directory">/etc/</filename>;
+      it is often set to <filename role="directory">/etc/</filename>, 
+      <filename role="directory">/etc/X11</filename>,
+      <filename role="directory">/usr/pkg/etc</filename> or
+      <filename role="directory">/usr/X11R6/etc</filename>;
       you can use your package manager to find out.
     </para>
 
@@ -221,7 +233,7 @@
 
     <para>The Xfce 4 Desktop Environment is not a single entity that provides
       all funtionality, but rather it tries to adhere to the old UNIX
-      tradition of small tools that do one job and do it well. A default 
+      tradition of small tools that do one job and do it best. A default 
       Xfce 4 desktop with no programs running is shown in 
       <xref linkend="default-session-fig"/>.
     </para>
@@ -247,8 +259,9 @@
       </screenshot>
     </figure>
 
-    <para>When you run <application>startxfce4</application> several
-      applications are started by the session manager:
+    <para>
+      When you run <application>startxfce4</application> for the first
+      time, several applications are started by the Xfce session manager:
     </para>
 
     <variablelist>
@@ -330,7 +343,10 @@
 	    that all Xfce 4 applications update their settings when the user 
 	    changes something in the settings manager dialog (see following
 	    section) and takes care of reading the configuration from disk at 
-	    startup.	    
+	    startup. Look at the <ulink url="xfce-mcs-manager.html"
+            type="html">Settings Manager</ulink> and <ulink
+            url="xfce-mcs-plugins.html" type="html">Settings Plugins</ulink>
+            manuals for a full explanation of the settings manager.
 	  </para>
 	</listitem>
       </varlistentry>
@@ -366,8 +382,8 @@
 	  <term>Desktop menu</term>
 	  <listitem>
 	    <para>Another method for starting applications is from the desktop
-	      mouse menu. Read the <application>xfdesktop</application> <ulink
-		url="xfdesktop.html" type="html">manual</ulink> for
+	      mouse menu. Read the <ulink url="xfdesktop.html"
+              type="html">Desktop Manager manual</ulink> for
 	      information on how to change the menu contents.
 	    </para>
 	  </listitem>
@@ -376,13 +392,15 @@
 	<varlistentry>
 	  <term>Run dialog</term>
 	  <listitem>
-	    <para>If you know the name of a program and it is not on the panel
+	    <para>
+              If you know the name of a program and it is not on the panel
 	      or in the desktop menu you can use the run dialog. To open the
-	      dialog type Alt-F2 or choose the 'Run
-	      program...' option from the desktop menu.
+	      dialog type <keycap>Alt+F2</keycap> or choose the <guilabel>Run
+	      program...</guilabel> option from the desktop menu.
 	    </para>
-	    <para>The dialog will remeber the 10 last commands that were
-	      successfully executed.
+	    <para>
+              The dialog will remeber the 10 last commands that were
+	      executed successfully.
 	    </para>	      
 	  </listitem>
 	</varlistentry>
@@ -408,7 +426,8 @@
 	      access to all window operations.</para>
 	    <para>Shading a window, which means collapsing it to only show the
 	      title bar, can also be accomplished by using the mouse wheel
-	      over the title bar. Up is shade, down is unshade.
+	      over the title bar. Mouse wheel up is shade, mouse wheel down 
+              is unshade.
 	    </para>
 	    <para>If you want maximized windows to not cover the entire screen
 	      you can set workspace margins from the settings manager dialog
@@ -441,9 +460,10 @@
 	  <listitem>
 	    <para>You can change workspaces by clicking on them in the
 	      graphical pager, either on the taskbar or on the panel. Pressing 
-	      Ctrl-Alt-LeftArrow or Ctrl-Alt-RightArrow will cycle through the
+	      <keycap>Ctrl+Alt+LeftArrow</keycap> or
+              <keycap>Ctrl+Alt+RightArrow</keycap> will cycle through the
 	      workspaces. Using the mousewheel over the pager or the desktop
-	      background will have the same effect.
+	      background has the same effect.
 	    </para>
 	    <para>To add or remove workspaces you can use the middle click
 	      desktop menu or the settings dialog (see below).
@@ -523,7 +543,7 @@
       <term>xfce-mcs-manager</term>
       <listitem>
 	<para>Settings manager. Runs in the background and provides global
-	  settings information to other xfce components. There is a main
+	  settings information to other Xfce components. There is a main
 	  control panel to access the configuration dialogs of Xfce
 	  components.
 	</para>
@@ -535,8 +555,8 @@
       <listitem>
 	<para>Settings manager plugins. These plugins provide settings 
 	  dialogs for general items that are not part of a package, e.g. 
-	  GTK settings, mouse settings, keyboard settings and display 
-	  settings.
+	  user interface settings (Gtk+ theme, icon theme, font settings),
+          mouse settings, keyboard settings and display settings.
 	</para>
       </listitem>
     </varlistentry>
@@ -546,7 +566,8 @@
       <listitem>
 	<para>Session manager. The session manager controls the startup and
 	  shutdown of the Xfce Desktop Environment. On logout it can save the
-	  running application and start them again the next time you log in.
+	  state of running applications (if the application supports it) and
+          restore them properly again the next time you log in.
 	</para>
       </listitem>
     </varlistentry>
@@ -602,7 +623,7 @@
     <varlistentry>
       <term>xfprint</term>
       <listitem>
-	<para>Print dialog. Provides a graphical frontend for printing.
+	<para>Printing support. Provides a graphical frontend for printing.
 	  Includes <application>xfprint4</application> and 
 	  <application>xfprint-manager</application>.
 	</para>
@@ -637,7 +658,7 @@
     <varlistentry>
       <term>xfce4-icon-theme</term>
       <listitem>
-	<para>Default icon theme for Xfce 4.</para>
+	<para>Default icon theme for Xfce 4, called <emphasis>Rodent</emphasis>.</para>
       </listitem>
     </varlistentry>
 
@@ -755,10 +776,23 @@
   <sect2>
     <title>Additional software</title>
 
-    The <ulink url="http://xfce-goodies.berlios.de" 
-      type="html">Xfce Goodies</ulink> project collects third-party
-    contributions for Xfce 4. There are some excellent panel plugins available
-    that greatly enhance the functionality of Xfce 4.
+    <para>
+      The <ulink url="http://xfce-goodies.berlios.de" type="html">Xfce Goodies</ulink>
+      project collects third-party contributions for Xfce 4. There are some excellent
+      panel plugins available that greatly enhance the functionality of Xfce 4.
+    </para>
+
+    <para>
+      <ulink url="http://spuriousinterrupt.org/projects/xfmedia/" type="html">Xfmedia</ulink>
+      is a lightweight media player for Xfce, based on the xine engine. It is the perfect
+      media player for the perfect desktop environment.
+    </para>
+
+    <para>
+      <ulink url="http://terminal.os-cillation.com/" type="html">Terminal</ulink> is an
+      advanced, but easy to use terminal emulator for the Xfce Desktop Environment. It
+      contains all feature you would expect from a modern terminal emulator.
+    </para>
   </sect2>
    
   <para>&nbsp;</para>
