@@ -429,7 +429,7 @@ PACKAGE_VERSION=
 PACKAGE_STRING=
 PACKAGE_BUGREPORT=
 
-ac_unique_file="xftaskbar"
+ac_unique_file="configure.ac"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>
@@ -11052,7 +11052,7 @@ fi
 
 
 
-                                                                                          ac_config_files="$ac_config_files xfce-utils.spec Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile scripts/startxfce4 gdm/Makefile xfce4-about/Makefile"
+                                                                                                                                  ac_config_files="$ac_config_files xfce-utils.spec Makefile doc/Makefile doc/images/Makefile doc/html/Makefile doc/xml/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile scripts/startxfce4 gdm/Makefile xfce4-about/Makefile"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -11617,6 +11617,10 @@ do
   # Handling of arguments.
   "xfce-utils.spec" ) CONFIG_FILES="$CONFIG_FILES xfce-utils.spec" ;;
   "Makefile" ) CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+  "doc/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
+  "doc/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/images/Makefile" ;;
+  "doc/html/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/html/Makefile" ;;
+  "doc/xml/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xml/Makefile" ;;
   "xfrun/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfrun/Makefile" ;;
   "xftaskbar/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/Makefile" ;;
   "xftaskbar/plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/plugin/Makefile" ;;

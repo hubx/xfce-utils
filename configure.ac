@@ -1,4 +1,4 @@
-AC_INIT(xftaskbar)
+AC_INIT(configure.ac)
 
 AC_PREREQ(2.52)
 
@@ -88,6 +88,10 @@ AC_SUBST(GDK_PIXBUF_CSOURCE)
 AC_OUTPUT([
 xfce-utils.spec
 Makefile
+doc/Makefile
+doc/images/Makefile
+doc/html/Makefile
+doc/xml/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
