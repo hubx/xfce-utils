@@ -1,0 +1,153 @@
+# xfce-utils for XFce desktop environment.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce-utils package.
+# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"PO-Revision-Date: 2003-05-19 15:46+0100\n"
+"Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:208
+msgid "About XFce 4"
+msgstr "Sobre XFce 4"
+
+#: xfce4-about/info.c:221
+msgid "XFce Desktop Environment"
+msgstr "Entorn d'escriptori XFce"
+
+#: xfce4-about/info.c:222
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 by Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:241
+msgid "Info"
+msgstr "Informació"
+
+#: xfce4-about/info.c:242
+msgid "Credits"
+msgstr "Crèdits"
+
+#: xfce4-about/info.c:243
+msgid "License"
+msgstr "Llicència"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: No es pot escriure el fitxer històric %s\n"
+
+#: xfrun/xfrun.c:231
+msgid "Run program"
+msgstr "Executar programa"
+
+#: xfrun/xfrun.c:238
+msgid "_Run"
+msgstr "E_xecutar"
+
+#: xfrun/xfrun.c:274
+msgid "Run in _terminal"
+msgstr "Executar en un _terminal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Barra de tasques"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
+msgid "Top"
+msgstr "A dalt"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
+msgid "Bottom"
+msgstr "A baix"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "Posició"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
+msgid "Auto hide taskbar"
+msgstr "Ocultar automàticament la barra de tasques"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "Ocultar automàticament"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Height :"
+msgstr "Alçada:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr "Petit"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr "Gran"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Tamany"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Mostra les tasques de totes les àrees de treball"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Tasques"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Mostra el paginador en la barra de tasques"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "Paginador"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Mostra la safata del sitema a la batrra de tasques"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Àrea de notificacions"
+
+#: xftaskbar/xftaskbar.c:118
+msgid "Cannot get initial style"
+msgstr "No es pot obtenir l'estil inicial"
+
+#: xftaskbar/xftaskbar.c:277
+msgid "This should not happen"
+msgstr "Això no hauria de succeir"
+
+#: xftaskbar/xftaskbar.c:366
+msgid "Cannot connect to session manager"
+msgstr "No es pot conectar al gestor de sessions"
+
+#: xftaskbar/xftaskbar.c:377
+msgid "Cannot get desktop margins"
+msgstr "No es pot obtenir els marges de l'escriptori"
+
+#: xftaskbar/xftaskbar.c:439
+msgid "There is already a system tray running on this screen"
+msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
+
+#: xftaskbar/xftaskbar.c:445
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "No es por registrar la safata del sistema: %s"
+
+#: xftaskbar/xftaskbar.c:463
+msgid "Cannot create MCS client channel"
+msgstr "No es pot crear el canal del client MCS"
+
