@@ -36,7 +36,6 @@
 #include <libxfce4util/libxfce4util.h>
 #include <libxfcegui4/libxfcegui4.h>
 #include <xfce-mcs-manager/manager-plugin.h>
-#include "inline-icon.h"
 
 #define BORDER 5
 
@@ -252,6 +251,8 @@ static void cb_width_percent_changed(GtkWidget *dialog, gpointer user_data)
 
     width_percent = (int)gtk_range_get_value(GTK_RANGE(itf->width_scale));
 
+    gtk_widget_set_sensitive (itf->align_frame, (width_percent < 100));
+
     mcs_manager_set_int(mcs_plugin->manager, "Taskbar/WidthPercent",
             CHANNEL, width_percent);
 
@@ -262,7 +263,6 @@ static void cb_width_percent_changed(GtkWidget *dialog, gpointer user_data)
 Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 {
     Itf *dialog;
-    GdkPixbuf *icon;
 
     dialog = g_new(Itf, 1);
 
@@ -272,9 +272,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->xftaskbar_dialog = gtk_dialog_new();
 
-    icon = xfce_inline_icon_at_size(default_icon_data, 32, 32);
-    gtk_window_set_icon(GTK_WINDOW(dialog->xftaskbar_dialog), icon);
-    g_object_unref(icon);
+    gtk_window_set_icon(GTK_WINDOW(dialog->xftaskbar_dialog), mcs_plugin->icon);
 
     gtk_window_set_title (GTK_WINDOW (dialog->xftaskbar_dialog), _("Taskbar"));
     gtk_dialog_set_has_separator (GTK_DIALOG (dialog->xftaskbar_dialog), FALSE);
@@ -282,7 +280,8 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     dialog->dialog_vbox1 = GTK_DIALOG (dialog->xftaskbar_dialog)->vbox;
     gtk_widget_show (dialog->dialog_vbox1);
 
-    dialog->dialog_header = xfce_create_header(icon, _("Taskbar"));
+    dialog->dialog_header = xfce_create_header(mcs_plugin->icon,
+                                               _("Taskbar"));
     gtk_widget_show(dialog->dialog_header);
     gtk_box_pack_start(GTK_BOX(dialog->dialog_vbox1), dialog->dialog_header, FALSE, TRUE, 0);
 
@@ -319,6 +318,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->pos_bottom_radiobutton), !position);
 
     dialog->align_frame = xfce_framebox_new (_("Alignment"), TRUE);
+    gtk_widget_set_sensitive (dialog->align_frame, (width_percent < 100));
     gtk_widget_show (dialog->align_frame);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->align_frame, TRUE, TRUE, 0);
 
@@ -525,28 +525,16 @@ static void setup_dialog(Itf * itf)
 
 McsPluginInitResult mcs_plugin_init(McsPlugin * mcs_plugin)
 {
-#if 0
-#ifdef ENABLE_NLS
-    /* This is required for UTF-8 at least - Please don't remove it */
-    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-#ifdef HAVE_BIND_TEXTDOMAIN_CODESET
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-#endif
-    textdomain (GETTEXT_PACKAGE);
-#endif
-#else
     /* This is required for UTF-8 at least - Please don't remove it */
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
-#endif
 
     create_channel(mcs_plugin);
     mcs_plugin->plugin_name = g_strdup(PLUGIN_NAME);
     mcs_plugin->caption = g_strdup(_("Taskbar"));
     mcs_plugin->run_dialog = run_dialog;
-    mcs_plugin->icon = xfce_inline_icon_at_size (default_icon_data,
-                                                 DEFAULT_ICON_SIZE,
-                                                 DEFAULT_ICON_SIZE);
-    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    mcs_plugin->icon = xfce_themed_icon_load ("xfce4-taskbar", 48);
+
+    mcs_manager_notify (mcs_plugin->manager, CHANNEL);
 
     return (MCS_PLUGIN_INIT_OK);
 }

@@ -4,12 +4,10 @@ xftaskbar_plugin_LTLIBRARIES = xftaskbar_plugin.la
 
 xftaskbar_plugin_la_LDFLAGS =						\
 	-avoid-version							\
-	-export-dynamic							\
 	-module
 
 xftaskbar_plugin_la_SOURCES =						\
-	xftaskbar_plugin.c						\
-	inline-icon.h
+	xftaskbar_plugin.c
 
 xftaskbar_plugin_la_CFLAGS = 						\
 	@XFCE_MCS_MANAGER_CFLAGS@ 					\
@@ -20,15 +18,12 @@ xftaskbar_plugin_la_CFLAGS = 						\
 xftaskbar_plugin_la_LIBADD = 						\
 	@XFCE_MCS_MANAGER_LIBS@
 
-IMAGES=icon.png
-VARIABLES=default_icon_data $(srcdir)/$(IMAGES)
+desktopdir = $(datadir)/applications
+desktop_DATA = xfce-taskbar-settings.desktop
 
-EXTRA_DIST = inline-icon.h icon.png xfce-taskbar-settings.desktop
+iconsdir = $(datadir)/icons/hicolor/48x48/apps
+icons_DATA = xfce4-taskbar.png
 
-noinst_DATA = inline-icon.h icon.png
-
-inline-icon.h: $(IMAGES)
-	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/inline-icon.h
-
-appsdir = $(datadir)/applications
-apps_DATA = xfce-taskbar-settings.desktop
+EXTRA_DIST = 								\
+	$(desktop_DATA)							\
+	$(icons_DATA)
