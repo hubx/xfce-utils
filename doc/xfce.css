@@ -1,8 +1,11 @@
 body 		{ font: "Vera Sans", "Arial", "Helvetica", "sans-serif"; 
     		  margin: 2em; }
 h1,h2,h3	{ color: #336699; }
+a		{ font-weight: bold; text-decoration: none; }
 a:link,a:active { color: #3366CC; }
 a:visited	{ color: #003366; }
+a:hover		{ color: #3399FF; }
 hr		{ background-color: #336699; }
 li		{ list-style-type: square; }
+dt		{ font-weight: bold; }
 
