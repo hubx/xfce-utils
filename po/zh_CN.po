@@ -6,49 +6,49 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-07-10 10:25+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jasper Huijsmans <huysmans@users.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-01 17:56+0200\n"
+"PO-Revision-Date: 2003-05-22 23:35+0100\n"
+"Last-Translator: Yongtao Yang <yongtao.yang@telia.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
-"Report-Msgid-Bugs-To: \n"
 
-#: xfce4-about/info.c:230
+#: xfce4-about/info.c:206
 msgid "About XFce 4"
 msgstr "关于XFce 4 "
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:219
 msgid "XFce Desktop Environment"
 msgstr "XFce 桌面环境"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:220
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "版权所有2002-2003 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:239
 msgid "Info"
 msgstr "信息"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:240
 msgid "Credits"
 msgstr "致谢名单"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:241
 msgid "Copyright"
-msgstr ""
+msgstr "版权"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:242
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:243
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:244
 msgid "GPL"
 msgstr ""
 
@@ -57,110 +57,110 @@ msgstr ""
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: 无法将历史记录写入文件 %s \n"
 
-#: xfrun/xfrun.c:237
+#: xfrun/xfrun.c:231
 msgid "Run program"
 msgstr "运行程序"
 
-#: xfrun/xfrun.c:244
+#: xfrun/xfrun.c:238
 msgid "_Run"
 msgstr "运行(_R)"
 
-#: xfrun/xfrun.c:281
+#: xfrun/xfrun.c:274
 msgid "Run in _terminal"
 msgstr "在终端中运行(_t)"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:202
-#: xftaskbar/plugin/xftaskbar_plugin.c:208
-#: xftaskbar/plugin/xftaskbar_plugin.c:374
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
 msgid "Taskbar"
 msgstr "任务栏"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:222
-msgid "Position"
-msgstr "位置"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:230
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
 msgid "Top"
 msgstr "顶端"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:237
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
 msgid "Bottom"
 msgstr "底部"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
-msgid "Autohide"
-msgstr "自动隐藏"
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
+msgid "Position"
+msgstr "位置"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:248
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
 msgid "Auto hide taskbar"
 msgstr "任务拦自动隐藏"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
-msgid "Size"
-msgstr "尺寸"
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
+msgid "Autohide"
+msgstr "自动隐藏"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:262
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Height :"
 msgstr "高度 :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:270
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
 msgid "Small"
 msgstr "小"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Large"
 msgstr "大"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:302
-msgid "Tasks"
-msgstr "任务"
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "尺寸"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
 msgid "Show tasks from all workspaces"
 msgstr "显示所有工作区的任务"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:311
-msgid "Pager"
-msgstr "页面切换器"
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "任务"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:315
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
 msgid "Show pager in taskbar"
 msgstr "在任务栏中显示页面切换器"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Notification area"
-msgstr "系统提示区"
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "页面切换器"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:324
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
 msgid "Show system tray in taskbar"
 msgstr "在任务拦中显示系统托盘"
 
-#: xftaskbar/xftaskbar.c:125
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "系统提示区"
+
+#: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
 msgstr "无法获取初始风格"
 
-#: xftaskbar/xftaskbar.c:205
+#: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:213
+#: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:327
+#: xftaskbar/xftaskbar.c:317
 msgid "This should not happen"
 msgstr "这不应该发生。"
 
-#: xftaskbar/xftaskbar.c:428
+#: xftaskbar/xftaskbar.c:414
 msgid "Cannot connect to session manager"
 msgstr "无法连接到会话管理器"
 
-#: xftaskbar/xftaskbar.c:441
+#: xftaskbar/xftaskbar.c:425
 msgid "Cannot get desktop margins"
 msgstr "无法得到工作区边缘"
 
-#: xftaskbar/xftaskbar.c:513
+#: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "无法创建MCS客户频道"
 
