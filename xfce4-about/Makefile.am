@@ -11,6 +11,7 @@ about_DATA =								\
 	INFO.fi								\
 	INFO.fr								\
 	INFO.it								\
+	INFO.ja								\
 	INFO.ru								\
 	INFO.uk								\
 	INFO.vi								\
