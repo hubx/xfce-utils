@@ -2,7 +2,7 @@
  *  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
  *                2002 Xavier MAILLARD (zedek@fxgsproject.org)
  *                2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
- *                2003 Benedikt Meurer (benny@xfce.org)
+ *                2003,2004 Benedikt Meurer (benny@xfce.org)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -234,7 +234,7 @@ main (int argc, char **argv)
 
     vbox2 = gtk_vbox_new (FALSE, 0);
     gtk_widget_show (vbox2);
-    gtk_box_pack_start (GTK_BOX (GTK_DIALOG (info)->vbox), vbox2, FALSE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (GTK_DIALOG (info)->vbox), vbox2, TRUE, TRUE, 0);
 
     /* header with logo */
     text =
@@ -268,9 +268,7 @@ main (int argc, char **argv)
     add_page (GTK_NOTEBOOK (notebook), _("GPL"), XFCE_GPL, TRUE);
 
     /* buttons */
-    buttonbox = gtk_hbutton_box_new ();
-    gtk_widget_show (buttonbox);
-    gtk_box_pack_start (GTK_BOX (vbox), buttonbox, FALSE, FALSE, BORDER);
+    buttonbox = GTK_DIALOG (info)->action_area;
 
     info_ok_button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
     gtk_widget_show (info_ok_button);
