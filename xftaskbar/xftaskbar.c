@@ -111,8 +111,6 @@ int main(int argc, char **argv)
         g_warning("Cannot get initial style");
 	height = HIDDEN_HEIGHT;
     }
-    gtk_window_set_default_size(GTK_WINDOW(taskbar->win), taskbar->width, height);
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, height);
     gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
     g_signal_connect (G_OBJECT(taskbar->win), "destroy", G_CALLBACK(panel_destroy), taskbar);
     margins.top += HIDDEN_HEIGHT;
@@ -145,6 +143,9 @@ int main(int argc, char **argv)
     gtk_widget_show (taskbar->hbox);
     /* gtk_widget_show (taskbar->frame); */
     gtk_widget_show (taskbar->win);
+
+    gtk_window_set_default_size(GTK_WINDOW(taskbar->win), taskbar->width, height);
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, height);
 
     netk_set_desktop_margins(GDK_WINDOW_XWINDOW(taskbar->win->window), &margins);
 
