@@ -17,6 +17,10 @@
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #undef GTK_DISABLE_DEPRECATED
 
 #include <sys/types.h>
@@ -27,6 +31,7 @@
 #include <string.h>
 #include <unistd.h>
 
+#include <libxfce4util/i18n.h>
 #include <libxfce4util/util.h>
 #include <libxfcegui4/dialogs.h>
 
@@ -39,9 +44,6 @@
 #define DEFAULT_LENGTH PATH_MAX
 #endif
 #endif
-
-#define _(x) x
-#define N_(x) x
 
 #define HFILE "xfrun_history"
 
@@ -175,7 +177,7 @@ void put_history(const char *newest, gboolean in_terminal, GList * cb)
 
     if(!(fp = fopen(hfile, "w")))
     {
-        g_warning("xfrun4: Could not write history to file %s\n", hfile);
+        g_warning(_("xfrun4: Could not write history to file %s\n"), hfile);
         g_free(hfile);
         return;
     }
@@ -212,6 +214,13 @@ int main(int argc, char **argv)
     GtkWidget *vbox;
     GtkWidget *combo;
     XFCommand *current;
+
+#ifdef ENABLE_NLS
+    /* This is required for UTF-8 at least - Please don't remove it */
+    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+#endif
 
     gtk_init(&argc, &argv);
 
