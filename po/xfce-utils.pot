@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-06-18 23:07+0200\n"
+"POT-Creation-Date: 2003-06-23 22:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,31 +135,31 @@ msgstr ""
 msgid "Show system tray in taskbar"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:122
+#: xftaskbar/xftaskbar.c:125
 msgid "Cannot get initial style"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:202
+#: xftaskbar/xftaskbar.c:205
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:210
+#: xftaskbar/xftaskbar.c:213
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:324
+#: xftaskbar/xftaskbar.c:327
 msgid "This should not happen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:425
+#: xftaskbar/xftaskbar.c:428
 msgid "Cannot connect to session manager"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:438
+#: xftaskbar/xftaskbar.c:441
 msgid "Cannot get desktop margins"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:510
+#: xftaskbar/xftaskbar.c:513
 msgid "Cannot create MCS client channel"
 msgstr ""
