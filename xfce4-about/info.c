@@ -270,17 +270,17 @@ main (int argc, char **argv)
     /* buttons */
     buttonbox = GTK_DIALOG (info)->action_area;
 
-    info_ok_button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
-    gtk_widget_show (info_ok_button);
-    gtk_box_pack_start (GTK_BOX (buttonbox), info_ok_button, FALSE, FALSE, 0);
-
     info_help_button = gtk_button_new_from_stock (GTK_STOCK_HELP);
     gtk_widget_show (info_help_button);
     gtk_box_pack_start (GTK_BOX (buttonbox), info_help_button, FALSE, FALSE,
 			0);
 
+    info_ok_button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
+    gtk_widget_show (info_ok_button);
+    gtk_box_pack_start (GTK_BOX (buttonbox), info_ok_button, FALSE, FALSE, 0);
+
     gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (buttonbox),
-					info_ok_button, TRUE);
+					info_help_button, TRUE);
 
     g_signal_connect (info, "delete-event", G_CALLBACK (gtk_main_quit), NULL);
     g_signal_connect (info, "destroy-event",
