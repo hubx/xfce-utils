@@ -89,10 +89,6 @@ xfc_combo_functions *load_xfc(void){
     if (xfc_fun) return xfc_fun;
     module = g_module_build_path(librarydir, "xfce4_combo");
     g_free(librarydir);
-#if 0
-    library=g_strconcat("libxfce4_combo.",G_MODULE_SUFFIX, NULL);
-    module = g_build_filename (LIBDIR, "xfce4", "modules",library, NULL);
-#endif
     
     xfc_cm=g_module_open (module, 0);
     if (!xfc_cm) {
@@ -108,9 +104,6 @@ xfc_combo_functions *load_xfc(void){
     
     xfc_fun = (*module_init)();
  
-#ifdef DEBUG
-    g_message ("module %s successfully loaded", library);	    
-#endif
     g_free(module);
     return xfc_fun;
 }

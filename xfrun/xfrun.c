@@ -306,7 +306,9 @@ static void free_hitem(XFCommand *hitem)
     g_free(hitem);
 }
 
-void runit(GtkEntry * entry, gpointer user_data){
+gboolean
+runit(GtkEntry * entry, gpointer user_data)
+{
     const gchar *command;
     gboolean in_terminal;
 
@@ -328,7 +330,10 @@ void runit(GtkEntry * entry, gpointer user_data){
 		    g_free(xdg_dir);
 		}
 #endif
+		return TRUE;
     }
+	else
+		return FALSE;
 }
 
 #if HAVE_LIBDBH 
@@ -363,18 +368,7 @@ int main(int argc, char **argv)
     XFCommand *current;
     gchar *title;
 
-#if 0
-#ifdef ENABLE_NLS
-    /* This is required for UTF-8 at least - Please don't remove it */
-    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-#ifdef HAVE_BIND_TEXTDOMAIN_CODESET
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-#endif
-    textdomain (GETTEXT_PACKAGE);
-#endif
-#else
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
-#endif
 
     gtk_init(&argc, &argv);
 
@@ -477,16 +471,18 @@ int main(int argc, char **argv)
     gtk_widget_show(combo);
 
     while (1) {
-	    int response;
+	    int response = GTK_RESPONSE_NONE;
 
 	    response = gtk_dialog_run(GTK_DIALOG(dialog));
 
-	    if (response == GTK_RESPONSE_OK) {
-		    	runit(GTK_ENTRY(combo_entry),NULL);
-			break;
-	    }
-	    else
-	        break;
+	    if (response == GTK_RESPONSE_OK && 
+			!runit(GTK_ENTRY(combo_entry),NULL))
+		{
+			gdk_beep ();
+			continue;
+		}
+
+		break;
     }
 
     gtk_widget_destroy(dialog);
