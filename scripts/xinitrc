@@ -16,8 +16,12 @@ if [ -f $HOME/.Xmodmap ]; then
 	xmodmap $HOME/.Xmodmap
 fi
 
+# Those are my settings, change them as appropriate...
 # Set Xft DPI to 72
-echo "Xft.dpi: 72" | xrdb -load -
+echo "Xft.dpi: 72" | xrdb -merge -
+# And use nice Xcursor themes
+echo "Xcursor.theme: redglass" | xrdb -merge -
+echo "Xcursor.size: 24" | xrdb -merge -
 
 # Launch xscreensaver (if available)
 xscreensaver -no-splash &
