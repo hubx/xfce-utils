@@ -14,6 +14,7 @@
       <li>Brian Tarricone &lt;<a href="mailto:bjt23@cornell.edu">bjt23@cornell.edu</a>&gt;</li>
       <li>Edscott Wilson Garcia &lt;<a href="mailto:edscott@imp.mx">edscott@imp.mx</a>&gt;</li>
       <li>Jasper Huijsmans &lt;<a href="mailto:huysmans@users.sourceforge.net">huysmans@users.sourceforge.net</a>&gt;</li>
+      <li>Olivier Fourdan &lt;<a href="mailto:fourdan@xfce.org">fourdan@xfce.org</a>&gt;</li>
     </ul>
 
     <h3>Contributeurs</h3>

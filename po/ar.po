@@ -2,11 +2,10 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # saleh alhathal <hathalsal@hotmail.com>, 2004.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
-"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
 "PO-Revision-Date: 2004-3-8 8:25+0300\n"
 "Last-Translator: saleh alhathal <hathalsal@hotmail.com>\n"
 "Language-Team: arabic\n"
@@ -14,151 +13,195 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:231
-msgid "About XFce 4"
+#: xfce4-about/info.c:253
+#, fuzzy
+msgid "About Xfce 4"
 msgstr "حول XFce 4"
 
-#: xfce4-about/info.c:245
-msgid "XFce Desktop Environment"
+#: xfce4-about/info.c:268
+#, fuzzy
+msgid "Xfce Desktop Environment"
 msgstr "الواجه الرسومية XFce"
 
-#: xfce4-about/info.c:246
+#: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "حقوق الطبع 2002-2004 بواسطة Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:288
 msgid "Info"
 msgstr "معلومات"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:289
 msgid "Credits"
 msgstr "تقدير"
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:290
 msgid "Copyright"
 msgstr "حقوق الطبع"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:291
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:292
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:270
+#: xfce4-about/info.c:293
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:180
+#: xfrun/xfrun.c:271
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: لم يتمكن من كتابة اﻷحداث في الملف %s\n"
 
-#: xfrun/xfrun.c:237
+#: xfrun/xfrun.c:378
+#, c-format
+msgid "Open %s with what program?"
+msgstr ""
+
+#: xfrun/xfrun.c:379
 msgid "Run program"
 msgstr "نفذ برنامج"
 
-#: xfrun/xfrun.c:244
+#: xfrun/xfrun.c:387
 msgid "_Run"
 msgstr "_نفذ"
 
-#: xfrun/xfrun.c:281
+#: xfrun/xfrun.c:417
 msgid "Run in _terminal"
 msgstr "نفذ في _سطر اﻷوامر"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:202
-#: xftaskbar/plugin/xftaskbar_plugin.c:208
-#: xftaskbar/plugin/xftaskbar_plugin.c:374
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
 msgstr "شريط المهام"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:222
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Position"
 msgstr "موقع"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:230
-msgid "Top"
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+#, fuzzy
+msgid "_Top"
 msgstr "أعلى"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:237
-msgid "Bottom"
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+#, fuzzy
+msgid "_Bottom"
 msgstr "أسفل"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "إخفاء تلقائي"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:248
-msgid "Auto hide taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+#, fuzzy
+msgid "Auto _hide taskbar"
 msgstr "إخفاء ذاتي لشريط المهام"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
 msgstr "حجم"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:262
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
 msgstr "إرتفاع :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:270
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
 msgid "Small"
 msgstr "صغير"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
 msgid "Large"
 msgstr "كبير"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:302
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "مهام"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "Show tasks from all workspaces"
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+#, fuzzy
+msgid "Show tasks from _all workspaces"
 msgstr "أظهر"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:311
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "مراقب المهام"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:315
-msgid "Show pager in taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+#, fuzzy
+msgid "Show _pager in taskbar"
 msgstr "أظهر مراقب المهام على الشريط"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "مكان التذكير"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:324
-msgid "Show system tray in taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+#, fuzzy
+msgid "Show _system tray in taskbar"
 msgstr "إضهار صينية النظام في شريط المهام"
 
-#: xftaskbar/xftaskbar.c:129
+#: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "لم أتمكن الحصول على سمة أولية"
 
-#: xftaskbar/xftaskbar.c:209
+#: xftaskbar/xftaskbar.c:260
 msgid "There is already a system tray running on this screen"
 msgstr "هناك صينية نظام تعمل مسبقا على الشاشة"
 
-#: xftaskbar/xftaskbar.c:217
+#: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "لم أتمكن من تسجيل صينية النظام: %s"
 
-#: xftaskbar/xftaskbar.c:388
+#: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
 msgstr "ﻻ يفترض حدوث هذا"
 
-#: xftaskbar/xftaskbar.c:478
+#: xftaskbar/xftaskbar.c:592
+#, fuzzy
+msgid "Cannot get default screen\n"
+msgstr "لم أتمكن من الحصول على هوامش سطح المكتب"
+
+#: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
 msgstr "لم أتمكن التواصل مع مدير الجلسة"
 
-#: xftaskbar/xftaskbar.c:491
-msgid "Cannot get desktop margins"
-msgstr "لم أتمكن من الحصول على هوامش سطح المكتب"
-
-#: xftaskbar/xftaskbar.c:569
+#: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "لم أستطع تكوين قناة عميل MCS"

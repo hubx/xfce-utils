@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Xfce 4 Taskbar Settings
+Name[fr]=Paramètres de la barre de tâches Xfce 4
 Comment=Taskbar Settings
+Comment[fr]=Paramétrage de la barre de tâches
 Exec=xfce-setting-show taskbar
 Icon=xfce4-taskbar
 Terminal=false

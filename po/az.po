@@ -7,162 +7,205 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: az\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
 "PO-Revision-Date: 2003-12-15 17:43+0200\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
 "Language-Team: Azerbaijani Turkish <gnome@azitt.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.0.2\n"
 
-#: xfce4-about/info.c:231
-msgid "About XFce 4"
+#: xfce4-about/info.c:253
+#, fuzzy
+msgid "About Xfce 4"
 msgstr "XFce 4 Haqqında"
 
-#: xfce4-about/info.c:245
-msgid "XFce Desktop Environment"
+#: xfce4-about/info.c:268
+#, fuzzy
+msgid "Xfce Desktop Environment"
 msgstr "XFce Masa Üstü Mühiti"
 
-#: xfce4-about/info.c:246
+#: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "Müəllif Hüququ 2002-2004 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:288
 msgid "Info"
 msgstr "Mə'lumat"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:289
 msgid "Credits"
 msgstr "Müəlliflər"
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:290
 msgid "Copyright"
 msgstr "Müəllif hüququ"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:291
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:292
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:270
+#: xfce4-about/info.c:293
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:180
+#: xfrun/xfrun.c:271
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: %s keçmiş faylına yazıla bilmədi\n"
 
-#: xfrun/xfrun.c:237
+#: xfrun/xfrun.c:378
+#, c-format
+msgid "Open %s with what program?"
+msgstr ""
+
+#: xfrun/xfrun.c:379
 msgid "Run program"
 msgstr "Proqram başlat"
 
-#: xfrun/xfrun.c:244
+#: xfrun/xfrun.c:387
 msgid "_Run"
 msgstr "_Başlat"
 
-#: xfrun/xfrun.c:281
+#: xfrun/xfrun.c:417
 msgid "Run in _terminal"
 msgstr "_Terminalda başlat"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:202
-#: xftaskbar/plugin/xftaskbar_plugin.c:208
-#: xftaskbar/plugin/xftaskbar_plugin.c:374
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
 msgstr "Vəzifə çubuğu"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:222
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Position"
 msgstr "Mövqe"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:230
-msgid "Top"
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+#, fuzzy
+msgid "_Top"
 msgstr "Üst"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:237
-msgid "Bottom"
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+#, fuzzy
+msgid "_Bottom"
 msgstr "Alt"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Avtomatik gizlət"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:248
-msgid "Auto hide taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+#, fuzzy
+msgid "Auto _hide taskbar"
 msgstr "Vəzifə çubuğunu avtomatik gizlət"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
 msgstr "Böyüklük"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:262
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
 msgstr "Hündürlük :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:270
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
 msgid "Small"
 msgstr "Kiçik"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
 msgid "Large"
 msgstr "Geniş"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:302
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Vəzifələr"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "Show tasks from all workspaces"
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+#, fuzzy
+msgid "Show tasks from _all workspaces"
 msgstr "Bütün iş sahələrindəki vəzifələri göstər"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:311
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Peycer"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:315
-msgid "Show pager in taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+#, fuzzy
+msgid "Show _pager in taskbar"
 msgstr "Vəzifə çubuğunda peyceri göstər"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Bildiriş sahəsi"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:324
-msgid "Show system tray in taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+#, fuzzy
+msgid "Show _system tray in taskbar"
 msgstr "Vəzifə çubuğunda bildiriş sahəsini göstər"
 
-#: xftaskbar/xftaskbar.c:129
+#: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "Başlanğıc tərzi alına bilmir"
 
-#: xftaskbar/xftaskbar.c:209
+#: xftaskbar/xftaskbar.c:260
 msgid "There is already a system tray running on this screen"
 msgstr "Hazırkı ekranda onsuzda bir bildiriş sahəsi mövcuddur"
 
-#: xftaskbar/xftaskbar.c:217
+#: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Bildiriş sahəsi qeyd edilə bilmədi: %s"
 
-#: xftaskbar/xftaskbar.c:388
+#: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
 msgstr "Bu olmamalıdır"
 
-#: xftaskbar/xftaskbar.c:478
+#: xftaskbar/xftaskbar.c:592
+#, fuzzy
+msgid "Cannot get default screen\n"
+msgstr "Masa üstü kənarları alına bilmir"
+
+#: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
 msgstr "İclas idarəçisinə bağlana bilmir"
 
-#: xftaskbar/xftaskbar.c:491
-msgid "Cannot get desktop margins"
-msgstr "Masa üstü kənarları alına bilmir"
-
-#: xftaskbar/xftaskbar.c:569
+#: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "MCS alıcı kanalı yaradıla bilmir"
-

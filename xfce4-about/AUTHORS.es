@@ -7,6 +7,7 @@ Desarrolladores
   Brian Tarricone <bjt23@cornell.edu>
   Edscott Wilson Garcia <edscott@imp.mx>
   Jasper Huijsmans <huysmans@users.sourceforge.net>
+  Olivier Fourdan <fourdan@xfce.org>
 
 Contribuidores
   Bernhard Walle <Bernhard.Walle@gmx.de> 
