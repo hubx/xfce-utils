@@ -39,7 +39,7 @@
 
 #define BORDER 5
 
-#define RCDIR    "mcs_settings"
+#define RCDIR    "xfce4" G_DIR_SEPARATOR_S "mcs_settings"
 #define OLDRCDIR "settings"
 #define CHANNEL  "taskbar"
 #define RCFILE   "taskbar.xml"
@@ -543,11 +543,10 @@ McsPluginInitResult mcs_plugin_init(McsPlugin * mcs_plugin)
 static void create_channel(McsPlugin * mcs_plugin)
 {
     McsSetting *setting;
-    gchar *rcfile, *path;
+    gchar *rcfile;
     
-    path = g_build_filename ("xfce4", RCDIR, RCFILE, NULL);
-    rcfile = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, path);
-    g_free (path);
+    rcfile = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, 
+                                   RCDIR G_DIR_SEPARATOR_S RCFILE);
 
     if (!rcfile)
         rcfile = xfce_get_userfile(OLDRCDIR, RCFILE, NULL);
@@ -672,13 +671,13 @@ static void create_channel(McsPlugin * mcs_plugin)
 
 static gboolean write_options(McsPlugin * mcs_plugin)
 {
-    gchar *rcfile, *path;
+    gchar *rcfile;
     gboolean result;
 
-    path = g_build_filename ("xfce4", RCDIR, RCFILE, NULL);
-    rcfile = xfce_resource_save_location (XFCE_RESOURCE_CONFIG, path, TRUE);
+    rcfile = xfce_resource_save_location (XFCE_RESOURCE_CONFIG, 
+                                          RCDIR G_DIR_SEPARATOR_S RCFILE, 
+                                          TRUE);
     result = mcs_manager_save_channel_to_file(mcs_plugin->manager, CHANNEL, rcfile);
-    g_free(path);
     g_free(rcfile);
 
     return result;
