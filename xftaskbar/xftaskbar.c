@@ -230,7 +230,7 @@ static void taskbar_toggle_tray(Taskbar *taskbar)
 	    taskbar->tray_registered = register_tray(taskbar);
 	}
 
-	taskbar->iconbox = gtk_hbox_new(TRUE, 5);
+	taskbar->iconbox = gtk_hbox_new(TRUE, 3);
 	gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
 			   FALSE, FALSE,0);
 	gtk_widget_show (taskbar->iconbox);
@@ -382,7 +382,7 @@ static void icon_docked(XfceSystemTray *tray, GtkWidget *icon, Taskbar *taskbar)
 {
     if (taskbar->tray_registered)
     {
-	gtk_box_pack_start(GTK_BOX(taskbar->iconbox), icon, FALSE, FALSE, 5);
+	gtk_box_pack_start(GTK_BOX(taskbar->iconbox), icon, FALSE, FALSE, 0);
 	gtk_widget_show(icon);
     }
 }
