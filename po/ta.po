@@ -1,170 +1,170 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Tamil translation of Tamil XFCE-UTILS.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Tamil XFCE-UTILS 4\n"
-"POT-Creation-Date: 2003-09-22 21:20+0200\n"
-"PO-Revision-Date: 2003-05-14 22:08+0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
+"PO-Revision-Date: 2003-09-24 17:29-0500\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil <tamilinix@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
+"Content-Transfer-Encoding: 8bit"
 
-#: xfce4-about/info.c:231
+#: xfce4-about/info.c:230
 msgid "About XFce 4"
-msgstr "XFce 4 ÀüÈ¢"
+msgstr "XFce 4 பற்றி"
 
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
-msgstr "XFce ¸½¢§Á¨º ÝÆø"
+msgstr "XFce கணிமேசை சூழல்"
 
-#: xfce4-about/info.c:246
+#: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "ÀÊÔÃ¢¨Á 2002-2003 ´Ä¢Å÷ §À¡÷¼¡ý"
+msgstr "படியுரிமை 2002-2003 ஒலிவர் போர்டான்"
 
 #. add pages
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:263
 msgid "Info"
-msgstr "¾¸Åø"
+msgstr "தகவல்"
+
+#: xfce4-about/info.c:264
+msgid "Credits"
+msgstr "புகழ்கள்"
+
+#: xfce4-about/info.c:265
+msgid "Copyright"
+msgstr "படியுரிமை"
 
 #: xfce4-about/info.c:266
-msgid "Credits"
-msgstr "Ò¸ú¸û"
-
-#: xfce4-about/info.c:267
-msgid "Copyright"
-msgstr ""
-
-#: xfce4-about/info.c:268
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:267
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:270
+#: xfce4-about/info.c:268
 msgid "GPL"
 msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: §¸¡ôÒ %s ìÌ ÅÃÄ¡Ú ±Ø¾ ÓÊÂÅ¢ø¨Ä\n"
+msgstr "xfrun4: கோப்பு %s க்கு வரலாறு எழுத முடியவில்லை\n"
 
 #: xfrun/xfrun.c:237
 msgid "Run program"
-msgstr "¿¢Ã¨Ä þÂìÌ¸"
+msgstr "நிரலை þயக்குக"
 
 #: xfrun/xfrun.c:244
 msgid "_Run"
-msgstr "_­ÂìÌ¸"
+msgstr "_இயக்குக"
 
 #: xfrun/xfrun.c:281
 msgid "Run in _terminal"
-msgstr "Ó¨ÉÂò¾¢ø þÂìÌ¸"
+msgstr "முனையத்தில் þயக்குக"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:202
 #: xftaskbar/plugin/xftaskbar_plugin.c:208
 #: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
-msgstr "§Å¨Äô Àð¨¼"
+msgstr "வேலைப் பட்டை"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
-msgstr "­¼õ"
+msgstr "இடம்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:230
 msgid "Top"
-msgstr "§Áø"
+msgstr "மேல்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:237
 msgid "Bottom"
-msgstr "¸£ú"
+msgstr "கீழ்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
-msgstr "¾¡É¡¸§Å Á¨Èì¸×õ"
+msgstr "தானாகவே மறைக்கவும்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
-msgstr "§Å¨ÄôÀð¨¼¨Â ¾¡É¡¸§Å Á¨Èì¸×õ"
+msgstr "வேலைப்பட்டையை தானாகவே மறைக்கவும்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
-msgstr "«Ç×"
+msgstr "அளவு"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:262
 msgid "Height :"
-msgstr "¯ÂÃõ:"
+msgstr "உயரம்:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
-msgstr "º¢È¢Ð"
+msgstr "சிறிது"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Large"
-msgstr "¦ÀÃ¢Ð"
+msgstr "பெரிது"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
-msgstr "§Å¨Ä¸û"
+msgstr "வேலைகள்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
 msgstr ""
-"«¨ÉòÐ §Å¨Ä þ¼í¸Ç¢ø\n"
-"¯ûÇ ¦ºÂø¸¨ÇÔõ ¸¡ñÀ¢ì¸×õ"
+"அனைத்து வேலை þடங்களில்\n"
+"உள்ள செயல்களையும் காண்பிக்கவும்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
-msgstr "ÀÂÉ¨ÆÂõ"
+msgstr "பயனழையம்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:315
 msgid "Show pager in taskbar"
-msgstr "ÀÂÉ¨ÆÂò¨¾ §Å¨ÄôÀð¨¼Â¢ø ¸¡ñÀ¢ì¸×õ"
+msgstr "பயனழையத்தை வேலைப்பட்டையில் காண்பிக்கவும்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
-msgstr "«È¢Å¢ôÒ þ¼õ"
+msgstr "அறிவிப்பு þடம்"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
-msgstr "§Å¨ÄôÀð¨¼Â¢ø «¨ÁôÒ ¾ðÎ ¸¡ñÀ¢ì¸×õ"
+msgstr "வேலைப்பட்டையில் அமைப்பு தட்டு காண்பிக்கவும்"
 
 #: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
-msgstr "¦¾¡¼ì¸ À¡½¢¨Â ¦ÀÈÓÊÂÅ¢ø¨Ä"
+msgstr "தொடக்க பாணியை பெறமுடியவில்லை"
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr "þò¾¢¨ÃÂ¢ø ²ü¸É§Å µ÷ «¨ÁôÒò ¾ðÎ ­ÂíÌ¸¢ÈÐ"
+msgstr "þத்திரையில் ஏற்கனவே ஓர் அமைப்புத் தட்டு இயங்குகிறது"
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "«¨ÁôÒ ¾ðÎ À¾¢× ¦ºöÂÓÊÂÅ¢ø¨Ä: %s"
+msgstr "அமைப்பு தட்டு பதிவு செய்யமுடியவில்லை: %s"
 
-#: xftaskbar/xftaskbar.c:388
+#: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
-msgstr "þÐ ¿¨¼¦ÀÈìÜ¼¡Ð"
+msgstr "þது நடைபெறக்கூடாது"
 
-#: xftaskbar/xftaskbar.c:478
+#: xftaskbar/xftaskbar.c:475
 msgid "Cannot connect to session manager"
-msgstr "«Á÷× §ÁÄ¡ÇÕ¼ý ­¨½ôÒ ¦¸¡ûÇ ÓÊÂÅ¢ø¨Ä"
+msgstr "அமர்வு மேலாளருடன் இணைப்பு கொள்ள முடியவில்லை"
 
-#: xftaskbar/xftaskbar.c:491
+#: xftaskbar/xftaskbar.c:488
 msgid "Cannot get desktop margins"
-msgstr "¸½¢§Á¨º ±ø¨Ä¸¨Ç ¦ÀÈÓÊÂÅ¢ø¨Ä"
+msgstr "கணிமேசை எல்லைகளை பெறமுடியவில்லை"
 
-#: xftaskbar/xftaskbar.c:569
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
-msgstr "MCS §º¨ÅôÀÂÉ÷ ¾¼õ À¨¼ì¸ ÓÊÂÅ¢ø¨Ä"
+msgstr "MCS சேவைப்பயனர் தடம் படைக்க முடியவில்லை"
 
 #~ msgid "License"
-#~ msgstr "´ôÀó¾õ"
+#~ msgstr "ஒப்பந்தம்"
