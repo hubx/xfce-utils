@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-12-11 18:34+0100\n"
-"PO-Revision-Date: 2005-01-29 18:51+0900\n"
+"PO-Revision-Date: 2005-03-22 22:26+0900\n"
 "Last-Translator: ByungHyun Choi<byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "XFce 데스크탑 환경"
 
 #: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
-msgstr ""
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
 #: xfce4-about/info.c:300
 msgid "Info"
@@ -42,15 +42,15 @@ msgstr "저작권"
 
 #: xfce4-about/info.c:303
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:304
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:305
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:323
 #, c-format
