@@ -23,7 +23,7 @@ test -f $HOME/.Xdefaults && xrdb -nocpp -merge $HOME/.Xdefaults
 test -f $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Launch xscreensaver (if available), but only as non-root user
-test $UID -gt 0 && xscreensaver -no-splash &
+test $UID -gt 0 && test -z $VNCSESSION && xscreensaver -no-splash &
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
