@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-04-25 00:00+0200\n"
+"POT-Creation-Date: 2003-04-25 22:58+0200\n"
 "PO-Revision-Date: 2003-04-25 19:30--200\n"
 "Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,80 +13,85 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:181
+#: xfce4-about/info.c:230
 msgid "About XFce 4"
 msgstr "Tietoja XFce4:stä"
 
-#: xfce4-about/info.c:194
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
 msgstr "XFce-työpöytäympäristö"
 
-#: xfce4-about/info.c:195
+#: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Tekijänoikeus 2002-2003 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:214
+#: xfce4-about/info.c:263
 msgid "Info"
 msgstr "Tietoja"
 
-#: xfce4-about/info.c:215
+#: xfce4-about/info.c:264
 msgid "Credits"
 msgstr "Kehittäjät"
 
-#: xfce4-about/info.c:216
+#: xfce4-about/info.c:265
 msgid "License"
 msgstr "Lisenssi"
 
-#: xfrun/xfrun.c:222
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr ""
+
+#: xfrun/xfrun.c:231
 msgid "Run program"
 msgstr "Suorita ohjelma"
 
-#: xfrun/xfrun.c:229
+#: xfrun/xfrun.c:238
 msgid "_Run"
 msgstr "_Suorita"
 
-#: xfrun/xfrun.c:265
+#: xfrun/xfrun.c:274
 msgid "Run in _terminal"
 msgstr "Suoritä päät_teessä"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:210
-#: xftaskbar/plugin/xftaskbar_plugin.c:217
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
 #: xftaskbar/plugin/xftaskbar_plugin.c:409
 msgid "Taskbar"
 msgstr "Tehtäväpalkki"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:239
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
 msgid "Top"
 msgstr "Yläosa"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:246
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
 msgid "Bottom"
 msgstr "Alaosa"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
 msgid "Position"
 msgstr "Paikka"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:263
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
 msgid "Auto hide taskbar"
 msgstr "Piilota "
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:268
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
 msgid "Autohide"
 msgstr "Piilota automaattisesti"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:283
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Height :"
 msgstr "Korkeus:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:291
-msgid "<small><i>Small</i></small>"
-msgstr "<small><i>Pieni</i></small>"
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:300
-msgid "<small><i>Large</i></small>"
-msgstr "<small><i>Suuri</i></small>"
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr ""
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
@@ -124,15 +129,20 @@ msgstr "Tyyliä ei ollut saatavilla"
 msgid "This should not happen"
 msgstr "Tämän ei pitäisi tapahtua"
 
-#: xftaskbar/xftaskbar.c:360
+#: xftaskbar/xftaskbar.c:367
 msgid "Cannot connect to session manager"
 msgstr "Istunnon hallintaan ei saatu yhteyttä"
 
-#: xftaskbar/xftaskbar.c:371
+#: xftaskbar/xftaskbar.c:378
 msgid "Cannot get desktop margins"
 msgstr "Työpöydän marginaaleja ei saatavilla"
 
-#: xftaskbar/xftaskbar.c:454
+#: xftaskbar/xftaskbar.c:461
 msgid "Cannot create MCS client channel"
 msgstr "Ei voi luoda MCS-asiakas kanavaa"
 
+#~ msgid "<small><i>Small</i></small>"
+#~ msgstr "<small><i>Pieni</i></small>"
+
+#~ msgid "<small><i>Large</i></small>"
+#~ msgstr "<small><i>Suuri</i></small>"

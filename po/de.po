@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-04-24 23:55+0100\n"
+"POT-Creation-Date: 2003-04-25 22:58+0200\n"
 "PO-Revision-Date: 2003-04-25 00:30+0100\n"
 "Last-Translator: Moritz Heiber <mistermoe@hackerboard.de>\n"
 "Language-Team: none <none@none>\n"
@@ -14,80 +14,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:181
+#: xfce4-about/info.c:230
 msgid "About XFce 4"
 msgstr "Über XFce 4"
 
-#: xfce4-about/info.c:194
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
 msgstr "XFce Desktop Umgebung"
 
-#: xfce4-about/info.c:195
+#: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Copyright 2002-2003 von Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:214
+#: xfce4-about/info.c:263
 msgid "Info"
 msgstr "Info"
 
-#: xfce4-about/info.c:215
+#: xfce4-about/info.c:264
 msgid "Credits"
 msgstr "Das Team"
 
-#: xfce4-about/info.c:216
+#: xfce4-about/info.c:265
 msgid "License"
 msgstr "Lizenz"
 
-#: xfrun/xfrun.c:222
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr ""
+
+#: xfrun/xfrun.c:231
 msgid "Run program"
 msgstr "Programm ausführen"
 
-#: xfrun/xfrun.c:229
+#: xfrun/xfrun.c:238
 msgid "_Run"
 msgstr "_Ausführen"
 
-#: xfrun/xfrun.c:265
+#: xfrun/xfrun.c:274
 msgid "Run in _terminal"
 msgstr "In _Terminal ausführen"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:210
-#: xftaskbar/plugin/xftaskbar_plugin.c:217
+#: xftaskbar/plugin/xftaskbar_plugin.c:206
+#: xftaskbar/plugin/xftaskbar_plugin.c:213
 #: xftaskbar/plugin/xftaskbar_plugin.c:409
 msgid "Taskbar"
 msgstr "Taskbar"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:239
+#: xftaskbar/plugin/xftaskbar_plugin.c:235
 msgid "Top"
 msgstr "Oben"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:246
+#: xftaskbar/plugin/xftaskbar_plugin.c:242
 msgid "Bottom"
 msgstr "Unten"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
+#: xftaskbar/plugin/xftaskbar_plugin.c:249
 msgid "Position"
 msgstr "Position"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:263
+#: xftaskbar/plugin/xftaskbar_plugin.c:259
 msgid "Auto hide taskbar"
 msgstr "Taskbar automatisch ausblenden"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:268
+#: xftaskbar/plugin/xftaskbar_plugin.c:264
 msgid "Autohide"
 msgstr "Ausblenden"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:283
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Height :"
 msgstr "Höhe :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:291
-msgid "<small><i>Small</i></small>"
-msgstr "<small><i>Klein</i></small>"
+#: xftaskbar/plugin/xftaskbar_plugin.c:287
+msgid "Small"
+msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:300
-msgid "<small><i>Large</i></small>"
-msgstr "<small><i>Groß</i></small>"
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Large"
+msgstr ""
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
@@ -125,14 +130,20 @@ msgstr "Kann Eingangsstil nicht finden"
 msgid "This should not happen"
 msgstr "Das sollte nicht passieren"
 
-#: xftaskbar/xftaskbar.c:360
+#: xftaskbar/xftaskbar.c:367
 msgid "Cannot connect to session manager"
 msgstr "Keinen Session Manager gefunden"
 
-#: xftaskbar/xftaskbar.c:371
+#: xftaskbar/xftaskbar.c:378
 msgid "Cannot get desktop margins"
 msgstr "Keine Rändereinstellung finden"
 
-#: xftaskbar/xftaskbar.c:454
+#: xftaskbar/xftaskbar.c:461
 msgid "Cannot create MCS client channel"
 msgstr "Kann MCS Client Kanal nicht erstellen"
+
+#~ msgid "<small><i>Small</i></small>"
+#~ msgstr "<small><i>Klein</i></small>"
+
+#~ msgid "<small><i>Large</i></small>"
+#~ msgstr "<small><i>Groß</i></small>"

@@ -21,14 +21,9 @@
 #include <config.h>
 #endif
 
+#ifdef HAVE_STRING_H
 #include <string.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <dirent.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#endif
 
 #include <gtk/gtk.h>
 #include <gdk/gdk.h>
@@ -38,6 +33,7 @@
 #include <libxfce4mcs/mcs-common.h>
 #include <libxfce4mcs/mcs-manager.h>
 #include <libxfce4util/i18n.h>
+#include <libxfce4util/util.h>
 #include <libxfcegui4/libxfcegui4.h>
 #include <xfce-mcs-manager/manager-plugin.h>
 #include "inline-icon.h"
@@ -194,6 +190,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 {
     Itf *dialog;
     GdkPixbuf *icon;
+    gchar *str;
 
     dialog = g_new(Itf, 1);
 
@@ -287,7 +284,9 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label14), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label14), 0, 0.5);
 
-    dialog->label15 = gtk_label_new (_("<small><i>Small</i></small>"));
+    str = g_strdup_printf("<small><i>%s</i></small>", _("Small"));
+    dialog->label15 = gtk_label_new(str);
+    g_free(str);
     gtk_widget_show (dialog->label15);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label15, 0, 1, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -296,7 +295,9 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label15), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label15), 1, 0.5);
 
-    dialog->label16 = gtk_label_new (_("<small><i>Large</i></small>"));
+    str = g_strdup_printf("<small><i>%s</i></small>", _("Large"));
+    dialog->label16 = gtk_label_new(str);
+    g_free(str);
     gtk_widget_show (dialog->label16);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label16, 2, 3, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -417,10 +418,9 @@ static void create_channel(McsPlugin * mcs_plugin)
 {
     McsSetting *setting;
 
-    const gchar *home = g_get_home_dir();
     gchar *rcfile;
     
-    rcfile = g_strconcat(home, G_DIR_SEPARATOR_S, ".xfce4", G_DIR_SEPARATOR_S, RCDIR, G_DIR_SEPARATOR_S, RCFILE, NULL);
+    rcfile = xfce_get_userfile(RCDIR, RCFILE, NULL);
     mcs_manager_add_channel_from_file(mcs_plugin->manager, CHANNEL, rcfile);
     g_free(rcfile);
 
@@ -482,11 +482,10 @@ static void create_channel(McsPlugin * mcs_plugin)
 
 static gboolean write_options(McsPlugin * mcs_plugin)
 {
-    const gchar *home = g_get_home_dir();
     gchar *rcfile;
     gboolean result;
 
-    rcfile = g_strconcat(home, G_DIR_SEPARATOR_S, ".xfce4", G_DIR_SEPARATOR_S, RCDIR, G_DIR_SEPARATOR_S, RCFILE, NULL);
+    rcfile = xfce_get_userfile(RCDIR, RCFILE, NULL);
     result = mcs_manager_save_channel_to_file(mcs_plugin->manager, CHANNEL, rcfile);
     g_free(rcfile);
 
