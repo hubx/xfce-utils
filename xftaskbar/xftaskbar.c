@@ -75,6 +75,7 @@ struct _Taskbar
     gboolean show_tray;
     gboolean all_tasks;
     gboolean group_tasks;
+    gboolean show_text;
     gboolean hidden;
     GtkWidget *win;
     GtkWidget *frame;
@@ -503,6 +504,11 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                     taskbar->group_tasks = setting->data.v_int ? TRUE : FALSE;
                     netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), taskbar->group_tasks ? NETK_TASKLIST_ALWAYS_GROUP : NETK_TASKLIST_AUTO_GROUP);
                 }
+                else if(!strcmp(name, "Taskbar/ShowText"))
+                {
+                    taskbar->show_text = setting->data.v_int ? TRUE : FALSE;
+                    netk_tasklist_set_show_label(NETK_TASKLIST(taskbar->tasklist), taskbar->show_text);
+                }
                 else if (!strcmp(name, "Taskbar/Height"))
                 {
                     taskbar_change_size(taskbar, setting->data.v_int);
@@ -606,6 +612,7 @@ int main(int argc, char **argv)
     taskbar->show_tray = TRUE;
     taskbar->all_tasks = FALSE;
     taskbar->group_tasks = FALSE;
+    taskbar->show_text = TRUE;
     taskbar->hidden = FALSE;
     taskbar->tray_registered = FALSE;
 

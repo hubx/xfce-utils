@@ -64,6 +64,7 @@ static gboolean show_pager = TRUE;
 static gboolean show_tray = TRUE;
 static gboolean all_tasks = FALSE;
 static gboolean group_tasks = FALSE;
+static gboolean show_text = TRUE;
 static int height = DEFAULT_HEIGHT;
 static int width_percent = DEFAULT_WIDTH_PERCENT;
 static int horiz_align = DEFAULT_HORIZ_ALIGN;
@@ -79,6 +80,7 @@ struct _Itf
     GtkWidget *tasks_vbox;
     GtkWidget *alltasks_checkbutton;
     GtkWidget *grouptasks_checkbutton;
+    GtkWidget *showtext_checkbutton;
     GtkWidget *autohide_checkbutton;
     GtkWidget *dialog_action_area1;
     GtkWidget *dialog_header;
@@ -206,6 +208,18 @@ static void cb_grouptasks_changed(GtkWidget * dialog, gpointer user_data)
     write_options(mcs_plugin);
 }
 
+static void cb_showtext_changed(GtkWidget * dialog, gpointer user_data)
+{
+    Itf *itf = (Itf *) user_data;
+    McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+    show_text = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->showtext_checkbutton));
+
+    mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowText", CHANNEL, show_text ? 1 : 0);
+    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    write_options(mcs_plugin);
+}
+
 static void cb_autohide_changed(GtkWidget * dialog, gpointer user_data)
 {
     Itf *itf = (Itf *) user_data;
@@ -290,14 +304,14 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->hbox2);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame1), dialog->hbox2);
 
-    dialog->pos_top_radiobutton = gtk_radio_button_new_with_mnemonic (NULL, _("Top"));
+    dialog->pos_top_radiobutton = gtk_radio_button_new_with_mnemonic (NULL, _("_Top"));
     gtk_widget_show (dialog->pos_top_radiobutton);
     gtk_box_pack_start (GTK_BOX (dialog->hbox2), dialog->pos_top_radiobutton, FALSE, FALSE, 0);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->pos_top_radiobutton), dialog->pos_radiobutton_group);
     dialog->pos_radiobutton_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->pos_top_radiobutton));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->pos_top_radiobutton), position);
 
-    dialog->pos_bottom_radiobutton = gtk_radio_button_new_with_mnemonic (NULL, _("Bottom"));
+    dialog->pos_bottom_radiobutton = gtk_radio_button_new_with_mnemonic (NULL, _("_Bottom"));
     gtk_widget_show (dialog->pos_bottom_radiobutton);
     gtk_box_pack_start (GTK_BOX (dialog->hbox2), dialog->pos_bottom_radiobutton, FALSE, FALSE, 0);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->pos_bottom_radiobutton), dialog->pos_radiobutton_group);
@@ -312,21 +326,21 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->align_hbox);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->align_frame), dialog->align_hbox);
 
-    dialog->align_left_button = gtk_radio_button_new_with_mnemonic (NULL, _("Left"));
+    dialog->align_left_button = gtk_radio_button_new_with_mnemonic (NULL, _("_Left"));
     gtk_widget_show (dialog->align_left_button);
     gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_left_button, FALSE, FALSE, 0);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_left_button), dialog->align_button_group);
     dialog->align_button_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->align_left_button));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->align_left_button), horiz_align < 0);
 
-    dialog->align_center_button = gtk_radio_button_new_with_mnemonic (NULL, _("Center"));
+    dialog->align_center_button = gtk_radio_button_new_with_mnemonic (NULL, _("_Center"));
     gtk_widget_show (dialog->align_center_button);
     gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_center_button, FALSE, FALSE, 0);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_center_button), dialog->align_button_group);
     dialog->align_button_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->align_center_button));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->align_center_button), horiz_align == 0);
 
-    dialog->align_right_button = gtk_radio_button_new_with_mnemonic (NULL, _("Right"));
+    dialog->align_right_button = gtk_radio_button_new_with_mnemonic (NULL, _("_Right"));
     gtk_widget_show (dialog->align_right_button);
     gtk_box_pack_start (GTK_BOX (dialog->align_hbox), dialog->align_right_button, FALSE, FALSE, 0);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (dialog->align_right_button), dialog->align_button_group);
@@ -337,7 +351,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->frame3);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, TRUE, TRUE, 0);
 
-    dialog->autohide_checkbutton = gtk_check_button_new_with_mnemonic (_("Auto hide taskbar"));
+    dialog->autohide_checkbutton = gtk_check_button_new_with_mnemonic (_("Auto _hide taskbar"));
     gtk_widget_show (dialog->autohide_checkbutton);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame3), dialog->autohide_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->autohide_checkbutton), autohide);
@@ -443,21 +457,26 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->tasks_vbox);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame5), dialog->tasks_vbox);
 
-    dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
+    dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from _all workspaces"));
     gtk_widget_show (dialog->alltasks_checkbutton);
     gtk_box_pack_start (GTK_BOX (dialog->tasks_vbox), dialog->alltasks_checkbutton, FALSE, FALSE, 0);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
 
-    dialog->grouptasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Always group tasks"));
+    dialog->grouptasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Always _group tasks"));
     gtk_widget_show (dialog->grouptasks_checkbutton);
     gtk_box_pack_start (GTK_BOX (dialog->tasks_vbox), dialog->grouptasks_checkbutton, FALSE, FALSE, 0);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->grouptasks_checkbutton), group_tasks);
+
+    dialog->showtext_checkbutton = gtk_check_button_new_with_mnemonic (_("Show application _names"));
+    gtk_widget_show (dialog->showtext_checkbutton);
+    gtk_box_pack_start (GTK_BOX (dialog->tasks_vbox), dialog->showtext_checkbutton, FALSE, FALSE, 0);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->showtext_checkbutton), show_text);
 
     dialog->frame2 = xfce_framebox_new (_("Pager"), TRUE);
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
 
-    dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show pager in taskbar"));
+    dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show _pager in taskbar"));
     gtk_widget_show (dialog->pager_checkbutton);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame2), dialog->pager_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->pager_checkbutton), show_pager);
@@ -466,7 +485,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
 
-    dialog->tray_checkbutton = gtk_check_button_new_with_mnemonic (_("Show system tray in taskbar"));
+    dialog->tray_checkbutton = gtk_check_button_new_with_mnemonic (_("Show _system tray in taskbar"));
     gtk_widget_show (dialog->tray_checkbutton);
     xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame2), dialog->tray_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->tray_checkbutton), show_tray);
@@ -495,6 +514,7 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->tray_checkbutton), "toggled", G_CALLBACK(cb_showtray_changed), itf);
     g_signal_connect(G_OBJECT(itf->alltasks_checkbutton), "toggled", G_CALLBACK(cb_alltasks_changed), itf);
     g_signal_connect(G_OBJECT(itf->grouptasks_checkbutton), "toggled", G_CALLBACK(cb_grouptasks_changed), itf);
+    g_signal_connect(G_OBJECT(itf->showtext_checkbutton), "toggled", G_CALLBACK(cb_showtext_changed), itf);
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
     g_signal_connect(G_OBJECT(itf->width_scale), "value_changed", G_CALLBACK(cb_width_percent_changed), itf);
@@ -638,6 +658,17 @@ static void create_channel(McsPlugin * mcs_plugin)
     {
         width_percent = DEFAULT_WIDTH_PERCENT;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/WidthPercent", CHANNEL, width_percent);
+    }
+
+    setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/ShowText", CHANNEL);
+    if(setting)
+    {
+        show_text = setting->data.v_int == 0 ? FALSE : TRUE;
+    }
+    else
+    {
+        show_text = TRUE;
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowText", CHANNEL, show_text ? 1 : 0);
     }
 }
 
