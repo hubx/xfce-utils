@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2003-06-01 23:30--200\n"
 "Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,25 +52,25 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Komento historiaa ei voitu kirjoittaa tiedostoon %s\n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "Suorita ohjelma"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "_Suorita"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "Suoritä päät_teessä"
 

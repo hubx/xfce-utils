@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce-utils 4.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2004-02-07 13:12+0800\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
@@ -53,25 +53,25 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Tak boleh tulis sejarah ke file %s\n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "Lari program"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "_Lari"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "Lari dalam _terminal"
 

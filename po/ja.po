@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2003-05-27 11:30+0900\n"
 "Last-Translator: Zhao Ji <zhao-ji@awz.ne.jp>\n"
 "Language-Team: none <none@none>\n"
@@ -53,25 +53,25 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: ファイルへ履歴を書き込めませんでした %s\n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "プログラム実行"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "実行(_R)"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "ターミナル内で実行(_t)"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2004-08-25 09:12+0200\n"
 "Last-Translator: Jasper Huijsmans <jasper@xfce.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,25 +51,25 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Kone geschiedenis niet naar bestand %s schrijven\n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Open %s met welk programma?"
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "Programma uitvoeren"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "_Uitvoeren"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "in _terminal"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils.hi.po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 08:27+0200\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2003-11-01 18:20+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-group@lists.sourceforge.net>\n"
@@ -53,25 +53,25 @@ msgstr "एलजीपीएल"
 msgid "GPL"
 msgstr "जीपीएल"
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "एक्सएफरन4 (xfrun4): फाइल %s में हिस्ट्री नहीं लिख सका\n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "प्रोग्राम चलाएं"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "चलाएँ (_R)"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "टर्मिनल में चलाएं (_t)"
 

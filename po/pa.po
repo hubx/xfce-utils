@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
-"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
 "PO-Revision-Date: 2004-10-04 05:00+0530\n"
 "Last-Translator: root <root@Phulewala>\n"
 "Language-Team:  <pa@li.org>\n"
@@ -27,55 +28,54 @@ msgstr "ਐਕਸਫੇਸ ਵਿਹੜਾ ਵਾਤਾਵਰਣ"
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਦੁਆਰਾ ਅਧਿਕਾਰ 2002-2004"
 
-#. add pages
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:291
 msgid "Info"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: xfce4-about/info.c:289
+#: xfce4-about/info.c:292
 msgid "Credits"
 msgstr "ਮਾਣ"
 
-#: xfce4-about/info.c:290
+#: xfce4-about/info.c:293
 msgid "Copyright"
 msgstr "ਅਧਿਕਾਰ"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:294
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:295
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:296
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:271
+#: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4ਃ %s ਫਾਈਲ ਦਾ ਅਤੀਤ ਲਿਖ ਨਹੀਂ ਸਕਦਾ \n"
 
-#: xfrun/xfrun.c:378
+#: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਨਾਲ ਖੋਲੋ?"
 
-#: xfrun/xfrun.c:379
+#: xfrun/xfrun.c:429
 msgid "Run program"
 msgstr "ਪ੍ਰੋਗਰਾਮ ਚਲਾਓ"
 
-#: xfrun/xfrun.c:387
+#: xfrun/xfrun.c:437
 msgid "_Run"
 msgstr "_ਚਲਾਓ"
 
-#: xfrun/xfrun.c:417
+#: xfrun/xfrun.c:467
 msgid "Run in _terminal"
 msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:277
-#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
 #: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
 msgstr "ਦਰਜਾ-ਪੱਟੀ"
@@ -198,4 +198,3 @@ msgstr "ਅਜਲਾਸ ਮੈਨੇਜਰ ਨਾਲ ਜੁੜ ਨਹੀਂ ਸ�
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "MCS ਕਲਾਂਈਟ ਚੈਨਲ ਬਣਾ ਨਹੀਂ ਸਕਿਆ"
-
