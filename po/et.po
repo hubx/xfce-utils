@@ -1,0 +1,199 @@
+# Estonian translation of xfce-utils.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce-utils package.
+# peeter <Peeter.Vois@mail.ee>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"PO-Revision-Date: 2004-02-03 10:04+0200\n"
+"Last-Translator: Peeter Vois <Peeter.Vois@mail.ee>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:253
+msgid "About Xfce 4"
+msgstr "Xfce4 info"
+
+#: xfce4-about/info.c:268
+msgid "Xfce Desktop Environment"
+msgstr "Xfce töölaua keskkond"
+
+#: xfce4-about/info.c:269
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Autoriõigus 2002-2004 Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:288
+msgid "Info"
+msgstr "Info"
+
+#: xfce4-about/info.c:289
+msgid "Credits"
+msgstr "Tiitrid"
+
+#: xfce4-about/info.c:290
+msgid "Copyright"
+msgstr "Koopiaõigused"
+
+#: xfce4-about/info.c:291
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:292
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:293
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:271
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Ei suutnud salvestada ajalugu faili %s\n"
+
+#: xfrun/xfrun.c:378
+#, c-format
+msgid "Open %s with what program?"
+msgstr "Ava %s mis programmi abil?"
+
+#: xfrun/xfrun.c:379
+msgid "Run program"
+msgstr "Käivita programm"
+
+#: xfrun/xfrun.c:387
+msgid "_Run"
+msgstr "_Käivita"
+
+#: xfrun/xfrun.c:417
+msgid "Run in _terminal"
+msgstr "Käivita _terminalis"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
+msgid "Taskbar"
+msgstr "Tegumiriba"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "Positsioon"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_Üleval"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_All"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "Asetus"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_Vasakul"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_Keskel"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_Paremal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "Autmaatne varjamine"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "_Varja tegumiriba automaatselt"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "Suurus"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "Kõrgus :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "Väike"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "Suur"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "Laius:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "Tegevused"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "Näita kõigi tööruumide rakendusi."
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "_Grupita rakendusi alati"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "Näita rakenduste _nimesid"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Lehitseja"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "Näita _lehitsejat tegumiribal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "Teadete ala"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "Näita süsteemi _kandikut tegumiribal"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "Ei suutnud võtta algstiili"
+
+#: xftaskbar/xftaskbar.c:260
+msgid "There is already a system tray running on this screen"
+msgstr "Sellel ekraanil juba töötab süsteemi kandik"
+
+#: xftaskbar/xftaskbar.c:268
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Ei suutnud süsteemi kandikut registreerida: %s"
+
+#: xftaskbar/xftaskbar.c:467
+msgid "This should not happen"
+msgstr "Seda ei tohiks juhtuda"
+
+#: xftaskbar/xftaskbar.c:592
+msgid "Cannot get default screen\n"
+msgstr "Ei suuda võtta vaikimisi ekraani\n"
+
+#: xftaskbar/xftaskbar.c:681
+msgid "Cannot connect to session manager"
+msgstr "Ei suutnud ühenduda sessioonihalduriga"
+
+#: xftaskbar/xftaskbar.c:694
+msgid "Cannot create MCS client channel"
+msgstr "Ei suutnud luua MCS kliendi kanalit"
