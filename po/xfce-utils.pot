@@ -7,7 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-18 00:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,151 +16,173 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:231
+#: xfce4-about/info.c:228
 msgid "About XFce 4"
 msgstr ""
 
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
 msgstr ""
 
-#: xfce4-about/info.c:246
-msgid "Copyright 2002-2003 by Olivier Fourdan"
+#: xfce4-about/info.c:244
+msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr ""
 
 #. add pages
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:263
 msgid "Info"
 msgstr ""
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:264
 msgid "Credits"
 msgstr ""
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:265
 msgid "Copyright"
 msgstr ""
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:266
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:267
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:270
+#: xfce4-about/info.c:268
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:180
+#: xfrun/xfrun.c:262
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr ""
 
-#: xfrun/xfrun.c:237
+#: xfrun/xfrun.c:362
 msgid "Run program"
 msgstr ""
 
-#: xfrun/xfrun.c:244
+#: xfrun/xfrun.c:369
 msgid "_Run"
 msgstr ""
 
-#: xfrun/xfrun.c:281
+#: xfrun/xfrun.c:398
 msgid "Run in _terminal"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:202
-#: xftaskbar/plugin/xftaskbar_plugin.c:208
-#: xftaskbar/plugin/xftaskbar_plugin.c:374
+#: xftaskbar/plugin/xftaskbar_plugin.c:251
+#: xftaskbar/plugin/xftaskbar_plugin.c:257
+#: xftaskbar/plugin/xftaskbar_plugin.c:500
 msgid "Taskbar"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:222
+#: xftaskbar/plugin/xftaskbar_plugin.c:271
 msgid "Position"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:230
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Top"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:237
+#: xftaskbar/plugin/xftaskbar_plugin.c:286
 msgid "Bottom"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
-msgid "Autohide"
+#: xftaskbar/plugin/xftaskbar_plugin.c:293
+msgid "Alignment"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:248
-msgid "Auto hide taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:301
+msgid "Left"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
-msgid "Size"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:262
-msgid "Height :"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:270
-msgid "Small"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
-msgid "Large"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:302
-msgid "Tasks"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "Show tasks from all workspaces"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:311
-msgid "Pager"
+#: xftaskbar/plugin/xftaskbar_plugin.c:308
+msgid "Center"
 msgstr ""
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Right"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:322
+msgid "Autohide"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:326
+msgid "Auto hide taskbar"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:331
+msgid "Size"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:340
+msgid "Height :"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:348
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+msgid "Small"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:357
+#: xftaskbar/plugin/xftaskbar_plugin.c:396
+msgid "Large"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:375
+msgid "Width:"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Tasks"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:428
+msgid "Show tasks from all workspaces"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:433
+msgid "Pager"
+msgstr ""
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:437
 msgid "Show pager in taskbar"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
+#: xftaskbar/plugin/xftaskbar_plugin.c:442
 msgid "Notification area"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:324
+#: xftaskbar/plugin/xftaskbar_plugin.c:446
 msgid "Show system tray in taskbar"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:129
+#: xftaskbar/xftaskbar.c:134
 msgid "Cannot get initial style"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:209
+#: xftaskbar/xftaskbar.c:235
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:217
+#: xftaskbar/xftaskbar.c:243
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:388
+#: xftaskbar/xftaskbar.c:435
 msgid "This should not happen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:478
+#: xftaskbar/xftaskbar.c:549
 msgid "Cannot connect to session manager"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:491
+#: xftaskbar/xftaskbar.c:562
 msgid "Cannot get desktop margins"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:569
+#: xftaskbar/xftaskbar.c:653
 msgid "Cannot create MCS client channel"
 msgstr ""
