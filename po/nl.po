@@ -193,7 +193,7 @@ msgstr "Dit zou niet moeten gebeuren"
 
 #: xftaskbar/xftaskbar.c:592
 msgid "Cannot get default screen\n"
-msgstr "Kan standaard scherm niet vinden"
+msgstr "Kan standaard scherm niet vinden\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
