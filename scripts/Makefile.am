@@ -5,6 +5,7 @@ scripts= \
 
 bin_SCRIPTS= \
 	     $(scripts) \
+	     xfbrowser4 \
 	     startxfce4 \
 	     xfhelp4
 
@@ -13,6 +14,11 @@ edit = sed \
         -e 's,@datadir\@,$(datadir),g' \
         -e 's,@sysconfdir\@,$(sysconfdir),g' \
 	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g'
+
+xfbrowser4: Makefile $(srcdir)/xfbrowser4.in
+	rm -f xfbrowser4 xfbrowser4.tmp
+	$(edit) $(srcdir)/xfbrowser4.in >xfbrowser4.tmp
+	mv xfbrowser4.tmp xfbrowser4
 
 startxfce4: Makefile $(srcdir)/startxfce4.in
 	rm -f startxfce4 startxfce4.tmp
@@ -31,5 +37,5 @@ conffiles_DATA=\
 EXTRA_DIST = $(scripts) $(conffiles_DATA) startxfce4.in xfhelp4.in
 
 distclean-local:
-	rm -f xfhelp4 startxfce4
+	rm -f xfhelp4 startxfce4 xfbrowser4
 

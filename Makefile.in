@@ -222,7 +222,7 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec TODO
-SUBDIRS = doc icons xfrun xftaskbar scripts gdm xfce4-about po
+SUBDIRS = doc icons xfrun scripts gdm xfce4-about po
 ACLOCAL_AMFLAGS = -I m4
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive

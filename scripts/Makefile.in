@@ -216,6 +216,7 @@ scripts = \
 
 bin_SCRIPTS = \
 	     $(scripts) \
+	     xfbrowser4 \
 	     startxfce4 \
 	     xfhelp4
 
@@ -434,6 +435,11 @@ uninstall-am: uninstall-binSCRIPTS uninstall-conffilesDATA \
 	uninstall-binSCRIPTS uninstall-conffilesDATA uninstall-info-am
 
 
+xfbrowser4: Makefile $(srcdir)/xfbrowser4.in
+	rm -f xfbrowser4 xfbrowser4.tmp
+	$(edit) $(srcdir)/xfbrowser4.in >xfbrowser4.tmp
+	mv xfbrowser4.tmp xfbrowser4
+
 startxfce4: Makefile $(srcdir)/startxfce4.in
 	rm -f startxfce4 startxfce4.tmp
 	$(edit) $(srcdir)/startxfce4.in >startxfce4.tmp
@@ -445,7 +451,7 @@ xfhelp4: Makefile $(srcdir)/xfhelp4.in
 	mv xfhelp4.tmp xfhelp4
 
 distclean-local:
-	rm -f xfhelp4 startxfce4
+	rm -f xfhelp4 startxfce4 xfbrowser4
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:

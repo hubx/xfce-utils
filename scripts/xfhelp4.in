@@ -3,7 +3,7 @@
 #  gxfce
 #
 #  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
-#  Copyright (C) 2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
+#  Copyright (C) 2003 Jasper Huijsmans (jasper@xfce.org)
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -20,26 +20,7 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-if [ "x$BROWSER" = "x" ]
-then
-  for b in @BROWSER_DEFAULT@ firefox epiphany galeon mozilla konqueror
-  do
-    if which "$b" > /dev/null 2>&1
-    then
-      BROWSER=$b
-      break;
-    fi
-  done
-fi
-
-if [ "x$BROWSER" = "x" ]
-then
-  echo " *** Error ***: xfhelp4: Could not find browser to use."
-  echo "                Please set the BROWSER variable."
-  exit 1
-fi
-
-HELP_DIR="@datadir@/xfce4/doc/"
+HELP_DIR="@datadir@/xfce4/doc"
 
 if [ ! x"$1" = x"" ]; then
     HELP_FILE="$1"
@@ -69,31 +50,4 @@ else
   URL="$HELP_DIR/C/index.html"
 fi
 
-case $BROWSER in
-    firefox*)
-	$BROWSER -a firefox -remote openurl\("file://$URL",new-window\) || \
-		$BROWSER "file://$URL"
-	;;
-    communicator*|netscape|mozilla*|phoenix*|firebird*)
-	$BROWSER -remote openurl\("file://$URL",new-window\) || \
-		$BROWSER "file://$URL"    
-	;;
-    opera*)
-    	$BROWSER -remote openURL\("file://$URL",new-window\) || \
-		$BROWSER "file://$URL"
-	;;
-    *)
-    	$BROWSER "file://$URL"
-	;;
-esac
-
-if [ $? -ne 0 ]; then
-	xmessage -center -file - -title Error <<EOF
-Unable to execute browser. 
-Online help is not available.
-EOF
-	exit 1
-fi
-
-exit 0
-
+xfbrowser4 $URL

@@ -1,0 +1,56 @@
+#!/bin/sh
+
+if [ "x$BROWSER" = "x" ]
+then
+  for b in @BROWSER_DEFAULT@ firefox epiphany galeon mozilla konqueror dillo
+  do
+    if which "$b" > /dev/null 2>&1
+    then
+      BROWSER=$b
+      break;
+    fi
+  done
+fi
+
+if [ "x$BROWSER" = "x" ]
+then
+  echo " *** Error ***: xfbrowser4: Could not find browser to use."
+  echo "                Please set the BROWSER variable."
+  exit 1
+fi
+
+if [ ! "x$1" = "x" ]; then
+  case $1 in
+      *://*) URL=$1;;
+      *) URL="file://$1" ;;
+  esac
+fi
+
+case $BROWSER in
+    firefox*)
+	$BROWSER -a firefox -remote openurl\($URL,new-window\) || \
+		$BROWSER $URL
+	;;
+    communicator*|netscape|mozilla*|phoenix*|firebird*)
+	$BROWSER -remote openurl\($URL,new-window\) || \
+		$BROWSER $URL    
+	;;
+    opera*)
+    	$BROWSER -remote openURL\($URL,new-window\) || \
+		$BROWSER $URL
+	;;
+    *)
+    	$BROWSER $URL
+	;;
+esac
+
+if [ $? -ne 0 ]; then
+	xmessage -center -file - -title Error <<EOF
+Unable to execute browser. 
+Online help is not available.
+EOF
+	exit 1
+fi
+
+exit 0
+
