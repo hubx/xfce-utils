@@ -1,8 +1,6 @@
 #!/bin/sh
 
-xsetroot -solid black -cursor_name watch
-
-# verify that $XFCE4HOME is set
+# make sure that $XFCE4HOME is set
 if test x"$XFCE4HOME" = x""; then
 	XFCE4HOME=$HOME/.xfce4
 	export XFCE4HOME
@@ -17,29 +15,41 @@ if test "x$UID" = "x"; then
 	UID=`id -u`
 fi
 
-# Those are fallback settings, use the ui plugin to change it
-# or add your overrides to ~/.Xresources
-# Xft DPI: 96
-# Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
-# Xft hinting: 1/0
-xrdb -nocpp -merge - << EOF
+# create temp file for X resources
+XRESOURCES=`mktemp /tmp/xrdb.XXXXXX`
+
+# Has to go prior to merging Xft.xrdb, as its the "Defaults" file
+test -r $HOME/.Xdefaults && cat $HOME/.Xdefaults >> $XRESOURCES
+
+# Check if the user wants to override the above defaults (set by
+# mcs ui plugin)
+if test -r $XFCE4HOME/Xft.xrdb; then
+	cat $XFCE4HOME/Xft.xrdb >> $XRESOURCES
+else
+	# Those are fallback settings, use the ui plugin to change it
+	# or add your overrides to ~/.Xresources
+	# Xft DPI: 96
+	# Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
+	# Xft hinting: 1/0
+cat >> $XRESOURCES << EOF
 Xft.dpi: 96
 Xft.hinting: 1
 Xft.hintstyle: hintmedium
 EOF
+fi
 
-# Has to go prior to merging Xft.xrdb, as its the "Defaults" file
-test -f $HOME/.Xdefaults && xrdb -nocpp -merge $HOME/.Xdefaults
+# ~/.Xresources contains overrides to the above
+test -r $HOME/.Xresources && cat $HOME/.Xresources >> $XRESOURCES
 
-# Check if the user wants to override the above defaults (set by
-# mcs ui plugin)
-test -f $XFCE4HOME/Xft.xrdb && xrdb -nocpp -merge $XFCE4HOME/Xft.xrdb
+# load all X resources
+xrdb -nocpp -merge $XRESOURCES
+rm -f $XRESOURCES
 
-test -f $HOME/.Xresources && xrdb -nocpp -merge $HOME/.Xresources
-test -f $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
+# load local modmap
+test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Launch xscreensaver (if available), but only as non-root user
-test $UID -gt 0 && test -z $VNCSESSION && xscreensaver -no-splash &
+test $UID -gt 0 -a -z $VNCSESSION && xscreensaver -no-splash &
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
@@ -52,6 +62,9 @@ case "x$xfcesm" in
 		exit
 		;;
 esac
+
+# this is only necessary when running w/o xfce4-session
+xsetroot -solid black -cursor_name watch
 
 # or use old-fashioned startup script otherwise
 xfce-mcs-manager
