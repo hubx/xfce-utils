@@ -94,12 +94,17 @@ po/Makefile.in
 doc/Makefile
 doc/index/Makefile
 doc/index/C/Makefile
+doc/index/fr/Makefile
 doc/xfce-utils/Makefile
 doc/xfce-utils/C/Makefile
 doc/xfce-utils/C/images/Makefile
+doc/xfce-utils/fr/Makefile
+doc/xfce-utils/fr/images/Makefile
 doc/xfce4-user-guide/Makefile
 doc/xfce4-user-guide/C/Makefile
 doc/xfce4-user-guide/C/images/Makefile
+doc/xfce4-user-guide/fr/Makefile
+doc/xfce4-user-guide/fr/images/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile

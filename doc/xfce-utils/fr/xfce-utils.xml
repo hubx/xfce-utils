@@ -1,0 +1,307 @@
+<?xml version='1.0'?> 
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY date "Sep 2003"> 
+  <!ENTITY appversion "4.0"> 
+  <!ENTITY app "<application>xfce-utils</application>"> 
+]>
+
+<article id="xfce-utils" lang="en">
+
+<!-- Header --> 
+<articleinfo>
+
+  <title>XFce 4 : utilitaires et scripts</title>
+  
+  <copyright>
+    <year>2003</year> <holder>Jasper Huijsmans</holder>
+  </copyright>
+
+  <copyright>
+    <year>2003</year> <holder>Benedikt Meurer</holder>
+  </copyright>
+
+  <copyright>
+   <year>2003</year> <holder>M.C. Collilieux (French
+   translation)</holder>
+  </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year> <holder>ME-THE-TRANSLATOR (Latin
+   translation)</holder>
+  </copyright>
+
+ -->
+
+<!-- I don;t know about this
+  <legalnotice id="legalnotice">
+    <para>
+      This document is provided under the terms of the GNU GPL, version
+      2 or (at your option) any later version.
+    </para>
+  </legalnotice>
+-->
+  
+  <authorgroup>
+
+    <author>
+      <firstname>Jasper</firstname> <surname>Huijsmans</surname>
+      <affiliation>
+	      <address><email>huysmans@users.sourceforge.net</email></address>
+      </affiliation>
+    </author>
+
+    <author>
+      <firstname>Benedikt</firstname> <surname>Meurer</surname>
+      <affiliation>
+        <address><email>benedikt.meurer@unix-ag.uni-siegen.de</email></address>
+      </affiliation>
+    </author>
+
+    <othercredit role="translator">
+      <firstname>Marie-Claude</firstname> <surname>Collilieux</surname>
+      <affiliation>
+	<orgname>French Translation Team</orgname>
+	<address><email>m.collilieux@free.fr</email> </address>
+      </affiliation> <contrib>French translation</contrib>
+    </othercredit>
+
+  </authorgroup>
+
+  <!--
+  <revhistory>
+    <revision>
+      <revnumber>0.3</revnumber> 
+      <date>May 2003</date>
+      <authorinitials>jbh</authorinitials>
+    </revision>
+  </revhistory>
+  -->
+
+  <releaseinfo>Ce manuel décrit le paquetage &app;, version &appversion;.
+  </releaseinfo>
+
+</articleinfo>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-intro">
+  <title>Introduction</title>
+
+  <para>Le paquetage &app; fournit une barre des tâches, la fenêtre "A propos" 
+    de XFce 4, une fenêtre de lancement d'applications et plusieurs scripts utiles qui sont aussi 
+    utilisés par d'autres composants de XFce 4 tels le panneau et le menu du bureau 
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-taskbar">
+  <title>La barre des tâches</title>
+
+  <para>La barre des tâches est en haut ou en bas de l'écran et affiche
+    les programmes en cours. Son comportement peut être modifié à partir du
+    gestionnaire de paramètres. Lancez <command>xfce-setting-show taskbar</command>
+    ou démarrez le gestionnaire de paramètres à partir du panneau. Outre la liste
+    des programmes, la barre des tâches possède aussi un affichage graphique des bureaux
+    et une zone de notification (aussi appelée system tray). Les deux peuvent
+    être inactivés à partir de la gestion des paramètres.
+  </para>
+  
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-run">
+  <title>Run Dialog</title>
+
+  <figure id="run-dialog-fig">
+    <title>La fenêtre de lancement d'applications</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/run-dialog.png" format="PNG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Montre la fenêtre de lancement d'applications</phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>La fenêtre de lancement d'applications permet à l'utilisateur de lancer des programmes.
+    Les programmes peuvent être lancés dans un émulateur de terminal (par défaut, xterm, voir le script
+	xfterm4 ci-dessous)
+    below).
+  </para>
+
+  <para>Dans l'environnement XFce 4 par défaut, la combinaison de touches
+    <keycombo>Alt-F2</keycombo> ouvre la fenêtre de lancement d'applications.
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-about">
+  <title>Le fenêtre "À propos"</title>
+
+  <figure id="about-dialog-fig">
+    <title>Dialogue A propos</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/about-dialog.png" format="PNG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Montre la fenêtre "À propos" affichant la page de crédits.
+          </phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>La fenêtre "À propos" est utilisée pour afficher des informations sur XFce 4, 
+    comprenant une liste des composants, une page crédits pour tous ceux qui ont
+    participé à la création de XFce 4 and les informations légales.
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-scripts">
+  <title>Scripts</title>
+
+  <variablelist>
+    <varlistentry>
+      <term>startxfce4</term>
+      <listitem>
+	<para> <application>Startxfce4</application> est un script pour
+	  lancer une session XFce 4 depuis la console. Il vous procure 
+      une session comprenant  une barre des tâches et un panneau 
+	  et lance les gestionnaires de fenêtres et de bureau.
+	</para>
+
+	<para>Tous les programmes ou liens symboliques vers des programmes 
+	  inclus dans <filename>~/Desktop/Autostart/</filename> sont 
+	  démarrés par <application>startxfce4</application> au lancement.
+	</para>
+	
+	<para>Pour personnaliser le comportement de  
+	  <application>startxfce4</application>, recopiez le fichier 
+	  <filename>${sysconfdir}/xfce4/xinitrc</filename> dans votre répertoire 
+	  <filename>~/.xfce4/</filename> personnel et modifiez ce fichier. Si vous installez 
+	  à partir des sources, <filename>${sysconfdir}</filename> est par défaut : 
+	  <filename>/usr/local/etc</filename> ; à partir d'un 
+	  paquetage binaire, <filename>${sysconfdir}</filename> est souvent 
+	  <filename>/etc</filename>. Ce fichier doit être exécutable : 
+	  <programlisting>chmod u+x ~/.xfce4/xinitrc</programlisting>
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfhelp4</term>
+      <listitem>
+	<para>Ce script est utilisé pour afficher la documentation de XFce 4 
+	  dans un navigateur. Par défaut, il utilise <application>mozilla</application>, 
+	  mais vous pouves modifier ce choix en indiquant la valeur de la variable 
+	  d'environnement $BROWSER.
+	  Pour ceci, ajouter dans votre <filename>~/.bash_profile</filename> 
+	   la ligne suivante : 
+	  <programlisting>export BROWSER="galeon -w"</programlisting> 
+	  Vous devrez quitter et redémarrer votre shell pour que ceci prenne effet.
+	</para>
+	
+	<para>S'il existe une documentation localisée dans votre langue, 
+	  xfhelp4 utilisera celle-ci à la place de la version anglaise 
+	  par défaut.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xflock4</term>
+      <listitem>
+	<para>Ce script est utilisé par le panneau pour verrouiller 
+	  l'écran en utilisant xscreensaver s'il est disponible, ou bien, à défaut, xlock.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfmountdev4</term>
+      <listitem>
+	<para>
+	  <command>xfmountdev4 <filename>/dev/mountpoint</filename></command> 
+	  monte le point de montage indiqué et ouvre xffm à cet endroit. 
+	  A la fermeture de la fenêtre xffm, le système de fichiers est démonté. 
+	  Notez que vous pouvez utiliser, dans la même intention, 
+	   <application>xffstab4</application> fourni avec xffm. 
+        </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfterm4</term>
+      <listitem>
+	<para>C'est un script de terminal. Il utilise la variable 
+	  d'environnement $TERMCMD comme commande si elle est précisée, sinon, 
+	  il utilise xterm. Particulièrement utile dans le panneau : vous pouvez 
+	  glisser des fichiers où des répertoires vers son icône, ce qui permet 
+	  de les visualiser, en mode console,  avec l'application appropriée 
+	  (less pour le texte, lynx pour le html). 
+	</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-copyright">
+  <title>A propos de xfce-utils</title>
+
+  <para>&app; écrit par Jasper Huijsmans
+    (<email>huysmans@users.sourceforge.net</email>), Olivier Fourdan 
+    (<email>fourdan@xfce.org</email>) and Benedikt Meurer
+    (<email>benedikt.meurer@unix-ag.uni-siegen.de</email>).
+    Pour plus d'information,  n'hésitez pas à aller sur  
+    <ulink url="http://www.xfce.org" type="http">Site internet XFce</ulink>. 
+  </para>
+
+  <para>Pour rapporter un bug ou faire une suggestion sur l'application 
+    ou sur le manuel, envoyez un e-mail à la liste de diffusion  
+    <ulink url="http://www.moongroup.com/mailman/listinfo/xfce4-dev/"
+    type="http">xfce4-dev</ulink> &mdash; c'est la meilleure méthode 
+    &mdash; ou utilisez le système de gestion des bugs sur
+    <ulink url="http://sourceforge.net/projects/xfce" 
+    type="http">XFce SourceForge project site</ulink>. 
+	Si vous avez des questions sur l'utilisation ou l'installation 
+	de ce paquetage, posez-les sur la liste de diffusion 
+    <ulink url="http://www.moongroup.com/mailman/listinfo/xfce/"
+      type="http">xfce</ulink>. 
+  </para>
+    
+  <para>Ce programme est distribué selon les termes de la licence publique 
+     générale GNU, publiée par la Free Software Foundation, soit la version 2 
+	 de cette licence, soit (selon votre choix) toute version ultérieure.
+  </para>
+
+  <para>Vous deves avoir reçu une copie de la licence publique 
+     générale GNU avec ce programme. Sinon, écrivez à la Free Software 
+    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
+    USA.
+  </para>
+
+</sect1>
+
+</article>
+

@@ -177,7 +177,8 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 SUBDIRS = \
-	C
+	C \
+	fr
 
 subdir = doc/index
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4

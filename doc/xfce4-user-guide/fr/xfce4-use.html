@@ -1,0 +1,138 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Utiliser XFce4</title><link rel="stylesheet" href="../xfce.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.62.4"><link rel="home" href="xfce4-user-guide.html" title="
+  L'environnement de bureau Xfce4
+"><link rel="up" href="xfce4-user-guide.html" title="
+  L'environnement de bureau Xfce4
+"><link rel="previous" href="xfce4-install.html" title="Installer XFce4"><link rel="next" href="xfce4-copyright.html" title="Copyright and Licences"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Utiliser XFce4</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr></table><hr></div><div class="sect1" lang="fr"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xfce4-use"></a>Utiliser XFce4</h2></div></div><div></div></div><div class="sect2" lang="fr"><div class="titlepage"><div><div><h3 class="title"><a name="xfce4-getting-started"></a>Démarrer</h3></div></div><div></div></div><p>Utilisez <b class="application"><tt>startxfce4</tt></b> pour démarrer une 
+	  session Xfce ; celle-ci inclut le panneau principal, le gestionnaire 
+	  de fenêtres et le gestionnaire de bureau. Tous les programmes ou liens 
+	  liens symboliques vers des programmes, présents dans 
+	  <tt class="filename">~/Desktop/Autostart/</tt> seront lancés au démarrage.
+    </p><p> Pour personnaliser le comportement de <b class="application"><tt>startxfce4</tt></b>, 
+	  copiez <tt class="filename">${sysconfdir}/xfce4/xinitrc</tt> dans votre répertoire 
+	  personnel <tt class="filename">~/.xfce4/</tt> et éditez ce fichier. 
+    </p><p>L'emplacement du fichier <tt class="filename">xinitrc</tt> 
+	  peut être différent selon votre installation. Si vous installez à partir 
+	  sources, le fichier <tt class="filename">${sysconfdir}</tt> pointe vers 
+	  <tt class="filename">/usr/local/etc</tt>. Pour les paquetages compilés, il 
+	  réfère souvent à <tt class="filename">/etc</tt> ; vous pouvez utiliser votre 
+	  gestionnaire de paquetages pour le retrouver.
+    </p><p>Pour terminer, le fichier <tt class="filename">xinitrc</tt> que vous 
+	  avez recopié doit être exécutable : 
+      </p><table border="0" bgcolor="#E0E0E0" width="100%"><tr><td><pre class="programlisting">chmod u+x ~/.xfce4/xinitrc</pre></td></tr></table><p>
+    </p></div><p> </p><div class="sect2" lang="fr"><div class="titlepage"><div><div><h3 class="title"><a name="id2449673"></a>Le bureau par défaut</h3></div></div><div></div></div><p>L'environnement de bureau XFce 4 n'est pas un programme unique 
+	  qui offre toutes les fonctionnalités, au contraire, il tente de respecter 
+	  l'ancienne tradition UNIX : de petits programmes qui effectuent une seule 
+	  tâche et le font bien. Un environnement par défaut sans aucun 
+	  programme en cours est montré à <a href="xfce4-use.html#default-session-fig" title="Figure 1. Session  XFce 4 par défaut">Figure 1, &#8220;Session  XFce 4 par défaut&#8221;</a>.
+    </p><div class="figure"><a name="default-session-fig"></a><p class="title"><b>Figure 1. Session  XFce 4 par défaut</b></p><div class="screenshot"><div class="mediaobject"><img src="images/default-session.png" alt="Session XFce 4 par défaut montrant le gestionnaire de fond d'écran,
+		le panneau principal et la barre des tâches.		  
+	    "></div></div></div><p>Au démarrage de <b class="application"><tt>startxfce4</tt></b> plusieurs 
+      applications sont lancées :
+    </p><div class="variablelist"><dl><dt><span class="term">Barre des tâches</span></dt><dd><p>En haut de l'écran, vous voyez la barre des tâches. Elle 
+	    indique les applications ouvertes dans l'espace de travail en 
+		cours. Vous pouvez donner le focus à l'application en cliquant 
+		sur le bouton correspondant dans la barre des tâches. Cliquer à 
+		nouveau sur ce bouton cache l'application. La barre des tâches 
+		contient aussi un gestionnaire graphique représentant une vue 
+		miniature de vos espaces de travail. Vous pouvez déplacer une 
+		fenêtre d'application vers un autre espace en glissant sa 
+		représentation miniature dans le pager.
+		L'aire de notification est invisible au départ. Elle se remplit 
+		quand une application utilise une icône de statut, par exemple, 
+		le programme de messagerie instantanée <b class="application"><tt>gaim</tt></b>.
+	  </p></dd><dt><span class="term">Panel</span></dt><dd><p>En bas de l'écran, vous avez le panneau principal de XFce 4. 
+	    Il vous permet de lancer les applications ; il possède aussi un 
+		pager graphique, une horloge et un notificateur de courrier. 
+		Certain éléments possédent un panneau de menu associé qui donne 
+		accès à plus d'applications. On ouvre les panneaux de menus en 
+		cliquant sur le bouton représentant une petite flèche proche 
+		de l'élément. En cliquant avec le bouton droit de la souris, 
+		vous pouvez modifier le contenu et les propriétés des éléments 
+		du panneau principal.
+		Les élements du panneau comme ses poignées de déplacement possédent 
+		un menu clic-droit à partir duquel vous pouvez changer la configuration 
+		du panneau. Pour plus d'information, voyez <a href="xfce4-panel.html" target="_top">manuel du panneau</a>.
+	  </p></dd><dt><span class="term">Gestionnaire de bureau</span></dt><dd><p>Le gestionnaire de bureau fournit l'image de fond et deux 
+	    menus quand vous cliquez sur le fond d'écran.
+	  </p><p>Le bouton droit de la souris ouvre un menu pour lancer les 
+	    applications. Lire le <a href="xfdesktop.html" target="_top">manuel <b class="application"><tt>xfdesktop</tt></b></a> 
+		  pour apprendre comment modifier les choix de ce menu.
+	  </p><p>Le bouton central de la souris (ou Maj + clic gauche) ouvre 
+	    la liste de toutes les applications actuellement en cours dans tous 
+		les espaces de travail. Vous pouvez activer une application en 
+		cliquant sur son nom au menu.
+	  </p></dd><dt><span class="term">Gestionnaire de fenêtre</span></dt><dd><p>Le gestionnaire de fenêtre gère le placement des fenêtres sur 
+	    l'écran et fournit les bordures et décorations des fenêtres. Il 
+		vous permet de déplacer les fenêtres en tirant sur la barre de titre 
+		et fournit les boutons de la barre de titre, pour fermer, réduire et 
+		agrandir la fenêtre, par exemple. Lire le <a href="xfwm4.html" target="_top">manuel xfwm4</a> pour obtenir une explication 
+		  complète sur le gestionnaire de fenêtres.
+	  </p></dd><dt><span class="term">Gestionnaire de paramètres</span></dt><dd><p>Le gestionnaire de paramètres tourne en arrière-plan. Il s'assure 
+	    que toutes les applications XFce 4 remettent à jour leurs paramètres 
+		quand l'utilisateur modifie une valeur dans le choix des paramètres 
+		(voir section suivante) et se charge de lire la configuration sur le 
+		disque au démarrage.
+	  </p></dd></dl></div></div><div class="sect2" lang="fr"><div class="titlepage"><div><div><h3 class="title"><a name="id2449319"></a>Tâches courantes</h3></div></div><div></div></div><p>Cette section explique comment réaliser certaines tâches 
+	  courantes pour démarrer plus vite votre travail avec XFce 4. 
+	  Car c'est pour cela que XFce 4 est fait : vous permettre de 
+	  travailler.
+    </p><div class="sect3" lang="fr"><div class="titlepage"><div><div><h4 class="title"><a name="id2450111"></a>Lancer un programme</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">Panneau XFce 4</span></dt><dd><p>Le panneau a pour but de vous permettre un accès rapide 
+		  aux applications fréquemment utilisées en les plaçant directement 
+		  sur le panneau principal. Des applications moins utilisées 
+		  peuvent être placées dans un menu du panneau.
+	    </p></dd><dt><span class="term">Menu du bureau</span></dt><dd><p>Un autre moyen de lancer une application est de le faire 
+		  à partir du menu souris. Lire le  <a href="xfdesktop.html" target="_top">manuel <b class="application"><tt>xfdesktop</tt></b>
+		</a> pour pour apprendre comment modifier les choix de ce menu.
+	    </p></dd><dt><span class="term">Dialogue exécuter</span></dt><dd><p>Si vous connaissez le nom du programme et si celui-ci n'est 
+		  pas dans un des menus, vous pouvez utiliser la commande 
+		  exécuter. Pour accèder à cette commande, tapez  
+		  ou choisissez l'option 'Lancer un programme...' dans le menu du bureau.
+	    </p><p>Le dialogue garde en mémoire les dix dernières commandes 
+		  exécutées avec succès. 
+	    </p></dd></dl></div></div><div class="sect3" lang="fr"><div class="titlepage"><div><div><h4 class="title"><a name="id2450208"></a>Gérer les fenêtres et les espaces de travail</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">Opération courantes sur les fenêtres</span></dt><dd><p>Vous pouvez déplacer les fenêtres sur l'écran en tirant sur 
+		  leur barre de titre. Une fenêtre peut être fermée, maximisée, enroulée  
+		  ou clouée &#8212;, ce qui signifie qu'elle apparaîtra sur tous les 
+		  espaces de travail &#8212; en utilisant les boutons de la barre de 
+		  titre.
+	    </p><p>Un clic droit sur la barre de titre ouvre un menu vous donnant 
+		  accès à toutes les opérations sur la fenêtre.</p><p>Enrouler une fenêtre signifie que seule la barre de titre 
+		  restera visible. Ceci peut être réalisé avec la molette de la 
+		  souris sur la barre de titre. Vers le haut, on enroule la fenêtre, 
+		  vers le bas, on déroule la fenêtre.
+	    </p><p>Si vous souhaitez qu'une fenêtre ouverte au maximum ne couvre 
+		  pas entièrement l'écran, vous devez ajuster les marges de l'espace 
+		  de travail dans le gestionnaire de paramètres (voir ci-dessous).
+	    </p></dd><dt><span class="term">Gestion des applications</span></dt><dd><p>Pour connaître les applications en cours, vous pouvez 
+		  regarder sur la barre des tâches. Cliquer sur un bouton dans 
+		  cette barre donne le focus à l'application, cliquer une 
+		  nouvelle fois la cache.
+	    </p><p>Quand vous cliquez avec le bouton souris du milieu sur le 
+		  fond du bureau, vous obtenez une liste des applications, classées 
+		  par espace de travail. Vous pouvez activer l'application et changer 
+		  d'espace de travail en cliquant sur le choix correspondant.
+	    </p><p>Le programme <b class="application"><tt>xfce4-iconbox</tt></b> peut 
+		  aussi être utilisé pour garder trace des programmes en cours 
+		  d'exécution.
+	    </p></dd><dt><span class="term">Les espaces de travail</span></dt><dd><p>Vous pouvez changer d'espace de travail en cliquant sur l'un d'eux 
+		  dans le pager graphique, soit dans le panneau principal, soit dans la barre 
+		  des tâches. Appuyer sur  ou 
+	       fait défiler les espace de travail. 
+		  Utiliser la molette de la souris sur le pager ou sur le fond du bureau 
+		  donne le même résultat.
+	    </p><p>Pour ajouter ou supprimer un espace de travail, vous pouvez utiliser, 
+		  soit le menu du bureau, soit le module de gestion correspondant (voir ci-dessous).
+	    </p></dd></dl></div></div><div class="sect3" lang="fr"><div class="titlepage"><div><div><h4 class="title"><a name="id2450359"></a>Utiliser le gestionnaire de paramètres</h4></div></div><div></div></div><p>Le gestionnaire de paramètres vous donne accès aux préférences 
+	    globales des applications de XFce 4. Vous pouvez le démarrer en 
+		cliquant sur son bouton dans le panneau principal, par un clic droit 
+		de la souris sur les poignées de déplacement du panneau ou par le menu 
+		souris du bureau.
+      </p><p>De nombreux aspects de l'environnement Xfce 4 sont modifiables 
+	    par ce gestionnaire. Les options accessibles sont décrites dans les 
+		manuels des composants de XFce 4. Il peut être intéressant de jeter 
+		un coup d'oeil à tous les choix pour connaître toutes les options 
+		vous permettant de créer votre meilleur environnement possible.
+      </p></div></div><div class="sect2" lang="fr"><div class="titlepage"><div><div><h3 class="title"><a name="id2450397"></a>Aller plus loin</h3></div></div><div></div></div><p>Ce guide de l'utilisateur vous a donné un aperçu de 
+	  l'environnement XFce 4. Vous trouverez plus d'information dans les 
+	  <a href="index.html" target="_top">manuels</a> de chaque composant 
+	  de XFce 4.
+    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="xfce4-user-guide.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Installer XFce4 </td><td width="20%" align="center"><a accesskey="h" href="xfce4-user-guide.html">Home</a></td><td width="40%" align="right" valign="top"> Copyright and Licences</td></tr></table></div></body></html>

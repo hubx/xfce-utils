@@ -1,0 +1,871 @@
+<?xml version='1.0'?> 
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY copyright SYSTEM "copyright.xml"> 
+  <!ENTITY BSD SYSTEM "BSD.xml"> 
+  <!ENTITY GPL SYSTEM "GPL.xml"> 
+  <!ENTITY LGPL SYSTEM "LGPL.xml"> 
+  <!ENTITY manrevision "0.8"> 
+  <!ENTITY date "Sep 2003"> 
+  <!ENTITY appversion "4.0"> 
+]>
+
+<article id="xfce4-user-guide" lang="fr">
+
+<!-- Header -->
+<articleinfo>
+
+<title>
+  L'environnement de bureau Xfce4
+</title>
+
+<subtitle>
+  <inlinegraphic fileref="images/link_xfce.jpg"/>
+  <emphasis>... et la souris s'envole ...</emphasis>
+</subtitle>
+
+  <copyright>
+    <year>2003</year> 
+    <holder>Jasper Huijsmans</holder>
+  </copyright>
+
+  <copyright>
+   <year>2003</year> <holder>M.C. Collilieux (French
+   translation)</holder>
+  </copyright>
+
+<!-- I don't know about this
+  <legalnotice id="legalnotice">
+    <para>
+      This document is provided under the terms of the GNU GPL, version
+      2 or (at your option) any later version.
+    </para>
+  </legalnotice>
+-->
+  
+<authorgroup>
+
+<author>
+  <firstname>Jasper</firstname>
+  <surname>Huijsmans</surname>
+ 
+  <affiliation>
+    <address><email>huysmans@users.sourceforge.net</email></address>
+  </affiliation>
+</author>
+
+    <othercredit role="translator">
+      <firstname>Marie-Claude</firstname> <surname>Collilieux</surname>
+      <affiliation>
+	<orgname>French Translation Team</orgname>
+	<address><email>m.collilieux@free.fr</email> </address>
+      </affiliation> <contrib>French translation</contrib>
+    </othercredit>
+  
+</authorgroup>
+
+<!--
+<revhistory>
+  <revision>
+    <revnumber>0.4</revnumber>
+    <date>May 2003</date>
+    <authorinitials>jbh</authorinitials>
+  </revision>
+  <revision>
+    <revnumber>0.1</revnumber>
+    <date>2001-07-06</date>
+    <authorinitials>jbh</authorinitials>
+  </revision>
+</revhistory>
+-->
+
+</articleinfo>
+
+<!-- 
+
+  Outline of the XFce 4 User Guide
+  ================================
+
+  Preface
+  ~~~~~~~
+  This document gives an overview of the XFce 4 Desktop Environment and
+  explains how to perform several common tasks.
+
+  Introduction
+  ~~~~~~~~~~~~
+  - General info
+  - History
+  - Resources
+
+  Installation
+  ~~~~~~~~~~~~
+  - binary packages
+  - sources
+  - CVS
+
+  Using XFce 4
+  ~~~~~~~~~~~~
+  - Starting: startxfce4, customizing
+  - Default desktop: components
+  - How to: 
+	* start programs (panel and root menu)
+	* manage windows and workspaces (wm and taskbar)
+	* use the settings manager
+  
+  Other Documents
+  ~~~~~~~~~~~~~~~
+  - all module specific docs
+
+  Copyright and Licence
+  ~~~~~~~~~~~~~~~~~~~~~
+  - copyright
+  - BSD, GPL, LGPL
+
+-->
+
+<sect1 id="preface">
+  
+  <title>Préface</title>
+
+  <para>
+    Ce document offre un aperçu de l'environnement de bureau XFce 4 et 
+	explique comment réaliser les tâches courantes. Son rôle est d'être 
+	un point de départ pour toute personne qui souhaite utiliser Xfce 4 
+	et de diriger vers les autres sources d'information.
+  </para>
+
+  <para>
+    La dernière version de ce document peut être trouvée à : 
+	<ulink url="http://members.home.nl/xfce4/documentation/xfce4-user-guide.html" 
+  type="html">http://www.xfce.org/documentation/xfce4-user-guide.html</ulink>.
+  </para>
+  
+</sect1>
+
+<sect1 id="xfce4-intro">
+  <title>Introduction</title>
+
+  <para>XFce est un environnement de bureau léger pour les systèmes de 
+    type Unix. Son but est d'être rapide et léger, tout en restant 
+	visuellement agréable et simple d'emploi.
+  </para>
+
+  <para>XFce 4 est une récriture complète de la version précédente.
+    Il est basé sur GTK+ version 2. XFce 4 possède une architecture 
+	totalement différente de XFce 3. Il incarne la philosophie traditionnelle 
+	d'UNIX de modularité et de réutilisabilité. Tous les modules de XFce 4 
+	ont été écrits à partir d'une page blanche pour s'adapter à la nouvelle architecture.
+  </para>
+
+  <para>Une des priorités de XFce 4 est l'adhésion aux standards, particulièrement 
+    ceux définis sur <ulink url="http://www.freedesktop.org" 
+    type="html">freedesktop.org</ulink>. Ceci permet à XFce4 de coopérer sans 
+	difficulté avec des programmes écrits pour d'autres gestionnaires d'
+	environnement, si ces programmes respectent eux-mêmes les standards.
+  </para>
+
+  <para>XFce 4 est constitué de composants qui, ensemble, fournissent la 
+    totalité de l'environnement de bureau. Ils sont construits séparement, vous 
+	pouvez choisir parmi eux et créer l'environnement personnalisé qui vous 
+	convient le mieux.
+  </para>
+
+  <para>XFce est un logiciel libre. Les divers composants sont sous licence 
+    BSD, GNU LGPL ou GNU GPL (voir <xref linkend="xfce4-copyright"/> 
+	pour les détails).
+  </para>
+
+  <sect2 id="xfce4-resources">
+    <title>Ressources</title>
+
+    <para>Si vous recherchez une information spécifique sur XFce 4, vous avez 
+	  de grandes chances de l'obtenir auprès de :
+    </para>
+
+    <itemizedlist>
+      <listitem>Le
+	<ulink url="http://www.xfce.org" type="http">site web XFce</ulink>
+      </listitem>
+      <listitem>La <ulink url="http://moongroup.com/mailman/listinfo/xfce" 
+	  type="http">liste de diffusion XFce</ulink>
+      </listitem>
+      <listitem>La <ulink url="http://moongroup.com/mailman/listinfo/xfce4-dev" 
+	  type="http">liste de diffusion de développement Xfce 4</ulink>
+      </listitem>
+    </itemizedlist>
+
+  </sect2>
+  
+</sect1>
+
+<sect1 id="xfce4-install">
+  <title>Installer XFce4</title>
+
+  <sect2>
+    <title>Composants de XFce 4</title>
+    
+    <para>Les composants de XFce 4 sont fournis sous la forme de paquetages séparés. 
+	  Actuellement, les modules suivants sont disponibles.
+    </para>
+
+    <sect3>
+      <title>Bibliothèques</title>
+
+      <para>Au contraire des précédentes versions, XFce 4 fournit une 
+	plateforme de développement consistant en un ensemble de bibliothèques 
+	qui offrent des fonctions d'aide et des widgets permettant à un programme 
+	de s'adapter facilement à l'environnement XFce 4.
+      </para>
+      
+      <variablelist>
+	
+	<varlistentry>
+	  <term>libxfce4util</term>
+	  <listitem>
+	    <para>Bibliothèque avec les fonctions d'aide non graphique.</para>
+	  </listitem>
+	</varlistentry>
+	      
+	<varlistentry>
+	  <term>libxfcegui4</term>
+	  <listitem>
+	    <para>Bibliothèque des widgets, interaction avec le système X.</para>
+	  </listitem>
+	</varlistentry>
+	      
+	<varlistentry>
+	  <term>libxfce4mcs</term>
+	  <listitem>
+	    <para>Bibliothèque de gestion des paramètres, utilisée par la 
+		plupart des modules de XFce 4.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+      </variablelist>
+      
+    </sect3>
+
+    <sect3>
+      <title>Bureau</title>
+
+      <para>Ces modules fournissent les fonctions essentielles de 
+	  l'environnement de bureau.
+      </para>
+      
+      <variablelist>
+	    
+	<varlistentry>
+	  <term>xfce-mcs-manager</term>
+	  <listitem>
+	    <para>Gestionnaire de paramètres, il offre un centre de contrôle 
+		  pour la gestion des plugins installés par les autres modules.
+	    </para>
+	  </listitem>
+	</varlistentry>
+	      
+	<varlistentry>
+	  <term>xfce-mcs-plugins</term>
+	  <listitem>
+	    <para>Les plugins de gestion de paramètres. Ces plugins offrent 
+		  des fenêtres de dialogue pour des éléments qui ne font pas partie 
+		  de XFce 4, tels les paramètres de GTK, de la souris et du clavier.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
+	<varlistentry>
+	  <term>xfwm4</term>
+	  <listitem>
+	    <para>Le gestionnaire de fenêtres Xfce 4. Gère le placement des 
+		  fenêtres des applications sur l'écran, fournit le décor des fenêtres 
+		  et gère les bureaux ou espaces de travail virtuels.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
+	<varlistentry>
+	  <term>xfce4-panel</term>
+	  <listitem>
+	    <para>Le panneau XFce 4. Fournit les lanceurs de programmes, 
+		  un changeur d'espace de travail, des menus, etc.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
+	<varlistentry>
+	  <term>xfdesktop</term>
+	  <listitem>
+	    <para>Le gestionnaire de fond d'écran du bureau. Ce programme
+		  installe l'image et/ou la couleur de fond et fournit un menu de bureau. 
+		  Il comprend aussi deux fenêtres de dialogue pour vous permettre de 
+		  modifier le fond d'écran ou le nombre d'espaces de travail.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
+	<varlistentry>
+	  <term>xfce-utils</term>
+	  <listitem>
+	    <para>Scripts et utilitaires essentiels. Fournit la barre des tâches, 
+		  la fenêtre "À propos" de XFce 4, un fenêtre de lancement d'applications 
+		  et plusieurs scripts importants, utilisés par les autres paquetages, 
+		  y compris le panneau. Contient aussi ce guide de l'utilisateur.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xffm</term>
+	  <listitem>
+	    <para>Gestionnaire de fichiers. Permet également de naviguer parmi les dossiers partagés d'un réseau samba.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfprint</term>
+	  <listitem>
+	    <para>Fenêtre de dialogue pour l'impression. Offre une interface graphique pour l'impression. 
+	    Comprend <application>xfprint4</application> et 
+	    <application>xfprint-manager</application>.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>gtk-xfce-engine-2</term>
+	  <listitem>
+	    <para>Moteur de thèmes pour GTK2. Il est facultatif, mais c'est un moteur de thèmes réussi, 
+	    que vous devriez essayer.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		
+      </variablelist>
+    </sect3>
+
+    <sect3>
+      <title>Extras</title>
+
+      <para>Il existe nombre de paquetages supplémentaires, ne faisant pas 
+	    partie du coeur de l'environnement XFce 4, mais offrants d'autres thèmes 
+		ou d'autres fonctionnalités.
+      </para>
+
+      <variablelist>
+
+	<varlistentry>
+	  <term>xfwm4-themes</term>
+	  <listitem>
+	    <para>Décorations de fenêtres pour xfwm4.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xffm-icons</term>
+	  <listitem>
+	    <para>Thèmes d'icônes pour le gestionnaire de fichiers xffm.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfce4-themes</term>
+	  <listitem>
+	    <para>Thèmes d'icônes pour le panneau XFce 4.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfce4-iconbox</term>
+	  <listitem>
+	    <para>La boîte d'icônes peut être utilisée en remplacement 
+		  de la barre des tâches fournie par le paquetage xfce-utils. 
+		  Lire <xref linkend="xfce4-getting-started"/> pour voir 
+		  comment modifier le script de démarrage.
+	    </para>
+	  </listitem>
+	</varlistentry>
+		  
+	<varlistentry>
+	  <term>xfce4-mixer</term>
+	  <listitem>
+	    <para>Contrôle de volume pour le panneau. Comprend un simple mixer.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfce4-systray</term>
+	  <listitem>
+	    <para>La zone de notification pour le bureau. Retenez qu'il ne 
+		  peut y avoir qu'une seule zone en même temps, vous devez retirer 
+		  la zone de notification de la barre des tâches pour utiliser 
+		  celle du panneau.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfce4-toys</term>
+	  <listitem>
+	    <para>Ajouts et utilitaires moins sérieux du panneau.
+		  Fournit actuellement une fenêtre de dialogue pour les trucs et astuces / fortunes, 
+		  et une implémentation de xeyes.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>xfce4-trigger-laucher</term>
+	  <listitem>
+	    <para>Offre un bouton commutateur sur le panneau, affichant un état 
+		  on/off. Lire le fichier README fourni avec le paquetage pour plus 
+		  d'information.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+      </variablelist>
+      
+    </sect3>
+
+    <para>&nbsp;</para>
+    
+</sect2>
+  
+  <sect2>
+    <title>Paquetages binaires</title>
+
+    <para>Officiellement, le projet XFce 4 ne fournit que le code source de son 
+	  environnement de bureau. Cependant des paquetages binaires ont peut-être été 
+	  réalisés par des contributeurs pour votre OS ou votre distribution.
+    </para>
+    
+    <para>Martin Loschwitz est le développeur Debian qui maintient les 
+	  paquetages XFce 4 pour la Debian unstable. Les mises à jour sont 
+	  rapidement disponibles après une nouvelle version.
+    </para>
+
+    <para>Jetez un oeil sur le site XFce  
+	  <ulink url="http://www.xfce.org/en/download.html"	type="html">
+	  Téléchargements</ulink> pour  voir les informations complémentaires 
+	  sur la disponibilité des paquetages binaires.
+    </para>
+
+    <para>Si vous ne trouvez pas de paquetages pour votre OS, 
+	  ils sont peut-être disponible auprès de votre fournisseur ou distributeur, 
+	  ou encore vous pouvez installer XFce 4 à partir des sources.
+    </para>
+   
+  </sect2>
+
+    <para>&nbsp;</para>
+    
+  <sect2>
+    <title>Installer à partir des sources</title>
+
+    <para>Allez sur le site XFce  
+      <ulink url="http://www.xfce.org/en/download.html" 
+	type="html">Téléchargements</ulink> pour obtenir les archives des sources.
+    </para>
+
+    <para> Compiler les modules devrait être aussi simple que décompresser 
+	  les archives et, à partir du répertoire parent, taper :
+
+    <programlisting>./configure &amp;&amp; make &amp;&amp; make install</programlisting>
+
+      Certains modules peuvent avoir des options de configuration. Vous pouvez 
+	  les obtenir en tapant :
+	   <command>./configure <option>--help</option></command>.
+    </para>
+
+    <para>La compilation de XFce 4 dépend de pkg-config, GTK+ >= 2.0.6, 
+	libxml2 et, pour xffm, de libdbh, qui 
+	  est disponible sur <ulink url="http://sf.net/projects/libdbh" 
+	type="html">SourceForge</ulink>. 
+	Si vous installez ceux-ci à partir de paquetages binaires, assurez-vous  
+	d'installer aussi les paquetages de développement 
+	(paquetages <filename>-dev</filename>).
+    </para>
+
+    <para>Vous pouvez aussi (facultatif) installer  librsvg >= 2.2 pour 
+	  le support des icônes SVG et libstartup-notification pour disposer 
+	  du curseur "occupé" au chargement des applications qui supportent 
+	  la notification de démarrage.
+    </para> 
+
+    <para>Si vous effectuez l'installation avec un préfixe différent de celui 
+	  de pkg-config, vous devrez renseigner la variable PKG_CONFIG_PATH  pour 
+	  y inclure le chemin vers les fichiers *.pc installés par les bibliothèques 
+	  de XFce 4 et qui est ${prefix}/lib/pkgconfig. Par exemple :
+    </para>
+
+<programlisting>export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig</programlisting>
+
+    <para>Toutes les archives des sources contiennent un fichier de spécifications 
+	  pour vous permettre de construire vos propres rpm :
+<programlisting>rpmbuild -ta <filename>module-x.y.z.tar.gz</filename></programlisting>
+    </para>
+
+  </sect2>
+
+    <para>&nbsp;</para>
+    
+  <sect2>
+    <title>Utiliser CVS</title>
+
+    <para>La dernière version des sources XFce 4 est disponible sur CVS.
+    </para>
+    
+    <para>Voici les <ulink url="http://sourceforge.net/cvs/?group_id=19869"
+	type="html">instructions</ulink> pour obtenir les dernières mises à jour 
+	depuis le CVS. Vous pouvez aussi utiliser le lien WebCVS pour consulter 
+	les archives.
+    </para>
+
+  </sect2>
+  
+  <para>&nbsp;</para>
+    
+  <sect2>
+    <title>Programmes supplémentaires</title>
+	
+	Le projet <ulink url="http://xfce-goodies.berlios.de" 
+      type="html">Bonus XFce</ulink> rassemble les contributions de tiers pour 
+	    XFce 4. Il s'y trouve d'excellents modules d'extension qui développent 
+		les fonctionnalités de XFce 4.
+  </sect2>
+   
+  <para>&nbsp;</para>
+    
+</sect1>
+
+<sect1 id="xfce4-use">
+  <title>Utiliser XFce4</title>
+
+  <sect2 id="xfce4-getting-started">
+    <title>Démarrer</title>
+
+    <para>Utilisez <application>startxfce4</application> pour démarrer une 
+	  session Xfce ; celle-ci inclut le panneau principal, le gestionnaire 
+	  de fenêtres et le gestionnaire de bureau. Tous les programmes ou liens 
+	  liens symboliques vers des programmes, présents dans 
+	  <filename>~/Desktop/Autostart/</filename> seront lancés au démarrage.
+    </para>
+
+    <para> Pour personnaliser le comportement de <application>startxfce4</application>, 
+	  copiez <filename>${sysconfdir}/xfce4/xinitrc</filename> dans votre répertoire 
+	  personnel <filename>~/.xfce4/</filename> et éditez ce fichier. 
+    </para>
+
+    <para>L'emplacement du fichier <filename>xinitrc</filename> 
+	  peut être différent selon votre installation. Si vous installez à partir 
+	  sources, le fichier <filename>${sysconfdir}</filename> pointe vers 
+	  <filename>/usr/local/etc</filename>. Pour les paquetages compilés, il 
+	  réfère souvent à <filename>/etc</filename> ; vous pouvez utiliser votre 
+	  gestionnaire de paquetages pour le retrouver.
+    </para>
+
+    <para>Pour terminer, le fichier <filename>xinitrc</filename> que vous 
+	  avez recopié doit être exécutable : 
+      <programlisting>chmod u+x ~/.xfce4/xinitrc</programlisting>
+    </para>
+
+  </sect2>
+
+  <para>&nbsp;</para>
+  
+  <sect2>
+    <title>Le bureau par défaut</title>
+
+    <para>L'environnement de bureau XFce 4 n'est pas un programme unique 
+	  qui offre toutes les fonctionnalités, au contraire, il tente de respecter 
+	  l'ancienne tradition UNIX : de petits programmes qui effectuent une seule 
+	  tâche et le font bien. Un environnement par défaut sans aucun 
+	  programme en cours est montré à <xref linkend="default-session-fig"/>.
+    </para>
+    
+    <figure id="default-session-fig">
+      <title>Session  XFce 4 par défaut</title> 
+      <screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="images/default-session.png" format="PNG"/>
+	  </imageobject> 
+	  <!-- 
+	  <imageobject>
+	    <imagedata fileref="images/default-session.eps" format="EPS"/>
+	  </imageobject> 
+	  --> 
+	  <textobject>
+	    <phrase>Session XFce 4 par défaut montrant le gestionnaire de fond d'écran,
+		le panneau principal et la barre des tâches.		  
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Au démarrage de <application>startxfce4</application> plusieurs 
+      applications sont lancées :
+    </para>
+
+    <variablelist>
+
+      <varlistentry>
+	<term>Barre des tâches</term>
+	<listitem>
+	  <para>En haut de l'écran, vous voyez la barre des tâches. Elle 
+	    indique les applications ouvertes dans l'espace de travail en 
+		cours. Vous pouvez donner le focus à l'application en cliquant 
+		sur le bouton correspondant dans la barre des tâches. Cliquer à 
+		nouveau sur ce bouton cache l'application. La barre des tâches 
+		contient aussi un gestionnaire graphique représentant une vue 
+		miniature de vos espaces de travail. Vous pouvez déplacer une 
+		fenêtre d'application vers un autre espace en glissant sa 
+		représentation miniature dans le pager.
+		L'aire de notification est invisible au départ. Elle se remplit 
+		quand une application utilise une icône de statut, par exemple, 
+		le programme de messagerie instantanée <application>gaim</application>.
+	  </para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+	<term>Panel</term>
+	<listitem>
+	  <para>En bas de l'écran, vous avez le panneau principal de XFce 4. 
+	    Il vous permet de lancer les applications ; il possède aussi un 
+		pager graphique, une horloge et un notificateur de courrier. 
+		Certain éléments possédent un panneau de menu associé qui donne 
+		accès à plus d'applications. On ouvre les panneaux de menus en 
+		cliquant sur le bouton représentant une petite flèche proche 
+		de l'élément. En cliquant avec le bouton droit de la souris, 
+		vous pouvez modifier le contenu et les propriétés des éléments 
+		du panneau principal.
+		Les élements du panneau comme ses poignées de déplacement possédent 
+		un menu clic-droit à partir duquel vous pouvez changer la configuration 
+		du panneau. Pour plus d'information, voyez <ulink url="xfce4-panel.html" 
+		type="html">manuel du panneau</ulink>.
+	  </para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+	<term>Gestionnaire de bureau</term>
+	<listitem>
+	  <para>Le gestionnaire de bureau fournit l'image de fond et deux 
+	    menus quand vous cliquez sur le fond d'écran.
+	  </para>
+	  <para>Le bouton droit de la souris ouvre un menu pour lancer les 
+	    applications. Lire le <ulink url="xfdesktop.html" 
+	      type="html">manuel <application>xfdesktop</application></ulink> 
+		  pour apprendre comment modifier les choix de ce menu.
+	  </para>
+	  <para>Le bouton central de la souris (ou Maj + clic gauche) ouvre 
+	    la liste de toutes les applications actuellement en cours dans tous 
+		les espaces de travail. Vous pouvez activer une application en 
+		cliquant sur son nom au menu.
+	  </para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+	<term>Gestionnaire de fenêtre</term>
+	<listitem>
+	  <para>Le gestionnaire de fenêtre gère le placement des fenêtres sur 
+	    l'écran et fournit les bordures et décorations des fenêtres. Il 
+		vous permet de déplacer les fenêtres en tirant sur la barre de titre 
+		et fournit les boutons de la barre de titre, pour fermer, réduire et 
+		agrandir la fenêtre, par exemple. Lire le <ulink url="xfwm4.html"
+	      type="html">manuel xfwm4</ulink> pour obtenir une explication 
+		  complète sur le gestionnaire de fenêtres.
+	  </para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+	<term>Gestionnaire de paramètres</term>
+	<listitem>
+	  <para>Le gestionnaire de paramètres tourne en arrière-plan. Il s'assure 
+	    que toutes les applications XFce 4 remettent à jour leurs paramètres 
+		quand l'utilisateur modifie une valeur dans le choix des paramètres 
+		(voir section suivante) et se charge de lire la configuration sur le 
+		disque au démarrage.
+	  </para>
+	</listitem>
+      </varlistentry>
+
+    </variablelist>
+
+  </sect2>
+
+  <sect2>
+    <title>Tâches courantes</title>
+
+    <para>Cette section explique comment réaliser certaines tâches 
+	  courantes pour démarrer plus vite votre travail avec XFce 4. 
+	  Car c'est pour cela que XFce 4 est fait : vous permettre de 
+	  travailler.
+    </para>
+
+    <sect3>
+      <title>Lancer un programme</title>
+
+      <variablelist>
+
+	<varlistentry>
+	  <term>Panneau XFce 4</term>
+	  <listitem>
+	    <para>Le panneau a pour but de vous permettre un accès rapide 
+		  aux applications fréquemment utilisées en les plaçant directement 
+		  sur le panneau principal. Des applications moins utilisées 
+		  peuvent être placées dans un menu du panneau.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Menu du bureau</term>
+	  <listitem>
+	    <para>Un autre moyen de lancer une application est de le faire 
+		  à partir du menu souris. Lire le  <ulink
+		url="xfdesktop.html" type="html">manuel <application>xfdesktop</application>
+		</ulink> pour pour apprendre comment modifier les choix de ce menu.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Dialogue exécuter</term>
+	  <listitem>
+	    <para>Si vous connaissez le nom du programme et si celui-ci n'est 
+		  pas dans un des menus, vous pouvez utiliser la commande 
+		  exécuter. Pour accèder à cette commande, tapez <keycombo>Alt-F2</keycombo> 
+		  ou choisissez l'option 'Lancer un programme...' dans le menu du bureau.
+	    </para>
+	    <para>Le dialogue garde en mémoire les dix dernières commandes 
+		  exécutées avec succès. 
+	    </para>	      
+	  </listitem>
+	</varlistentry>
+
+      </variablelist>
+      
+    </sect3>
+
+    <sect3>
+      <title>Gérer les fenêtres et les espaces de travail</title>
+
+      <variablelist>
+
+	<varlistentry>
+	  <term>Opération courantes sur les fenêtres</term>
+	  <listitem>
+	    <para>Vous pouvez déplacer les fenêtres sur l'écran en tirant sur 
+		  leur barre de titre. Une fenêtre peut être fermée, maximisée, enroulée  
+		  ou clouée &mdash;, ce qui signifie qu'elle apparaîtra sur tous les 
+		  espaces de travail &mdash; en utilisant les boutons de la barre de 
+		  titre.
+	    </para>
+	    <para>Un clic droit sur la barre de titre ouvre un menu vous donnant 
+		  accès à toutes les opérations sur la fenêtre.</para>
+
+	    <para>Enrouler une fenêtre signifie que seule la barre de titre 
+		  restera visible. Ceci peut être réalisé avec la molette de la 
+		  souris sur la barre de titre. Vers le haut, on enroule la fenêtre, 
+		  vers le bas, on déroule la fenêtre.
+	    </para>
+	    <para>Si vous souhaitez qu'une fenêtre ouverte au maximum ne couvre 
+		  pas entièrement l'écran, vous devez ajuster les marges de l'espace 
+		  de travail dans le gestionnaire de paramètres (voir ci-dessous).
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Gestion des applications</term>
+	  <listitem>
+	    <para>Pour connaître les applications en cours, vous pouvez 
+		  regarder sur la barre des tâches. Cliquer sur un bouton dans 
+		  cette barre donne le focus à l'application, cliquer une 
+		  nouvelle fois la cache.
+	    </para>
+	    <para>Quand vous cliquez avec le bouton souris du milieu sur le 
+		  fond du bureau, vous obtenez une liste des applications, classées 
+		  par espace de travail. Vous pouvez activer l'application et changer 
+		  d'espace de travail en cliquant sur le choix correspondant.
+	    </para>
+	    <para>Le programme <application>xfce4-iconbox</application> peut 
+		  aussi être utilisé pour garder trace des programmes en cours 
+		  d'exécution.
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term>Les espaces de travail</term>
+	  <listitem>
+	    <para>Vous pouvez changer d'espace de travail en cliquant sur l'un d'eux 
+		  dans le pager graphique, soit dans le panneau principal, soit dans la barre 
+		  des tâches. Appuyer sur <keycombo>Ctrl-Alt-FlêcheGauche</keycombo> ou 
+	      <keycombo>Ctrl-Alt-FlêcheDroite</keycombo> fait défiler les espace de travail. 
+		  Utiliser la molette de la souris sur le pager ou sur le fond du bureau 
+		  donne le même résultat.
+	    </para>
+	    <para>Pour ajouter ou supprimer un espace de travail, vous pouvez utiliser, 
+		  soit le menu du bureau, soit le module de gestion correspondant (voir ci-dessous).
+	    </para>
+	  </listitem>
+	</varlistentry>
+
+      </variablelist>
+
+    </sect3>
+
+    <sect3>
+      <title>Utiliser le gestionnaire de paramètres</title>
+
+      <para>Le gestionnaire de paramètres vous donne accès aux préférences 
+	    globales des applications de XFce 4. Vous pouvez le démarrer en 
+		cliquant sur son bouton dans le panneau principal, par un clic droit 
+		de la souris sur les poignées de déplacement du panneau ou par le menu 
+		souris du bureau.
+      </para>
+
+      <para>De nombreux aspects de l'environnement Xfce 4 sont modifiables 
+	    par ce gestionnaire. Les options accessibles sont décrites dans les 
+		manuels des composants de XFce 4. Il peut être intéressant de jeter 
+		un coup d'oeil à tous les choix pour connaître toutes les options 
+		vous permettant de créer votre meilleur environnement possible.
+      </para>
+
+    </sect3>
+
+  </sect2>
+
+  <sect2>
+    <title>Aller plus loin</title>
+
+    <para>Ce guide de l'utilisateur vous a donné un aperçu de 
+	  l'environnement XFce 4. Vous trouverez plus d'information dans les 
+	  <ulink url="index.html" type="html">manuels</ulink> de chaque composant 
+	  de XFce 4.
+    </para>
+
+  </sect2>
+  
+</sect1>
+
+&copyright;
+
+&BSD;
+
+&GPL;
+
+&LGPL;
+
+</article>
+
+
