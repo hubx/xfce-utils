@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2004-08-06 16:17+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jasper Huijsmans <huysmans@users.sourceforge.net>\n"
+"PO-Revision-Date: 2004-08-25 09:12+0200\n"
+"Last-Translator: Jasper Huijsmans <jasper@xfce.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,15 +44,15 @@ msgstr "Auteursrecht"
 
 #: xfce4-about/info.c:291
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:292
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:293
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:271
 #, c-format
@@ -62,7 +62,7 @@ msgstr "xfrun4: Kone geschiedenis niet naar bestand %s schrijven\n"
 #: xfrun/xfrun.c:378
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Open %s met welk programma?"
 
 #: xfrun/xfrun.c:379
 msgid "Run program"
@@ -87,39 +87,36 @@ msgid "Position"
 msgstr "Positie"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Boven"
+msgstr "_Boven"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Onder"
+msgstr "_Onder"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Uitlijning"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "_Links"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "_Midden"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "_Rechts"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Automatisch verbergen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Automatisch verbergen"
+msgstr "Taakbalk automatisch _verbergen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -127,7 +124,7 @@ msgstr "Grootte"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
-msgstr "Hoogte :"
+msgstr "Hoogte:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:376
 #: xftaskbar/plugin/xftaskbar_plugin.c:413
@@ -141,7 +138,7 @@ msgstr "Groot"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Breedte:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
@@ -154,11 +151,11 @@ msgstr "Taken van alle virtuele desktops tonen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Taken altijd _groeperen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Toon programmatitels"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
@@ -174,9 +171,8 @@ msgid "Notification area"
 msgstr "Status pictogrammen"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Toon status pictogrammen"
+msgstr "Toon _statuspictogrammen"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -196,9 +192,8 @@ msgid "This should not happen"
 msgstr "Dit zou niet moeten gebeuren"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Kan bureaubladmarges niet vinden"
+msgstr "Kan standaard scherm niet vinden"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
