@@ -1,0 +1,303 @@
+<?xml version='1.0'?> 
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY date "Sep 2003"> 
+  <!ENTITY appversion "4.0"> 
+  <!ENTITY app "<application>xfce-utils</application>"> 
+]>
+
+<article id="xfce-utils" lang="en">
+
+<!-- Header --> 
+<articleinfo>
+
+  <title>XFce 4 Utilities and Scripts</title>
+  
+  <copyright>
+    <year>2003</year> <holder>Jasper Huijsmans</holder>
+  </copyright>
+
+  <copyright>
+    <year>2003</year> <holder>Benedikt Meurer</holder>
+  </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year> <holder>ME-THE-TRANSLATOR (Latin
+   translation)</holder>
+  </copyright>
+
+ -->
+
+<!-- I don;t know about this
+  <legalnotice id="legalnotice">
+    <para>
+      This document is provided under the terms of the GNU GPL, version
+      2 or (at your option) any later version.
+    </para>
+  </legalnotice>
+-->
+  
+  <authorgroup>
+
+    <author>
+      <firstname>Jasper</firstname> <surname>Huijsmans</surname>
+      <affiliation>
+	      <address><email>huysmans@users.sourceforge.net</email></address>
+      </affiliation>
+    </author>
+
+    <author>
+      <firstname>Benedikt</firstname> <surname>Meurer</surname>
+      <affiliation>
+        <address><email>benedikt.meurer@unix-ag.uni-siegen.de</email></address>
+      </affiliation>
+    </author>
+
+<!-- This is appropriate place for other contributors: translators,
+maintainers, etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname> <surname>Translator 1</surname>
+      <affiliation>
+	<orgname>Latin Translation Team</orgname>
+	<address><email>translator@gnome.org</email> </address>
+      </affiliation> <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+
+  </authorgroup>
+
+  <!--
+  <revhistory>
+    <revision>
+      <revnumber>0.3</revnumber> 
+      <date>May 2003</date>
+      <authorinitials>jbh</authorinitials>
+    </revision>
+  </revhistory>
+  -->
+
+  <releaseinfo>This manual describes the &app; package, version &appversion;.
+  </releaseinfo>
+
+</articleinfo>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-intro">
+  <title>Introduction</title>
+
+  <para>The &app; package provides a taskbar, the about dialog for XFce 4, a 
+    run dialog and several useful scripts that are also used by other XFce 4 
+    components such as the panel and the desktop menu.
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-taskbar">
+  <title>Taskbar</title>
+
+  <para>The taskbar is either at the top or the bottom of the screen and shows 
+    all running programs. The behaviour of the taskbar can be changed from the
+    settings manager. Run <command>xfce-setting-show taskbar</command>, or
+    start the settings manager from the panel. In addition to the tasklist,
+    the taskbar also features a simple graphical pager and a notification area
+    (also known as the system tray). Both can be disabled from the settings
+    dialog.
+  </para>
+  
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-run">
+  <title>Run Dialog</title>
+
+  <figure id="run-dialog-fig">
+    <title>Run dialog</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/run-dialog.png" format="PNG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Shows the run dialog.</phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>The run dialog allows the user to launch applications. Applications
+    can be run in a Terminal emulator (xterm by default, see xfterm4 script
+    below).
+  </para>
+
+  <para>In a default XFce 4 environment, the key combination
+    <keycombo>Alt-F2</keycombo> will open the run dialog.
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-about">
+  <title>About Dialog</title>
+
+  <figure id="about-dialog-fig">
+    <title>About dialog</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/about-dialog.png" format="PNG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Shows the About Dialog displaying the credits page.
+          </phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>The About Dialog is used to display information about XFce 4, 
+    including a list of components, a credits page for all people who helped
+    to create XFce 4 and license information.
+  </para>
+
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-scripts">
+  <title>Scripts</title>
+
+  <variablelist>
+    <varlistentry>
+      <term>startxfce4</term>
+      <listitem>
+	<para>The <application>startxfce4</application> is a convenient script
+	  to start an XFce 4 session from the console. It will give you a
+	  session with a taskbar and a panel and with the desktop manager and
+	  window manager running. 
+	</para>
+
+	<para>All programs, or symbolic links to programs, in 
+	  <filename>~/Desktop/Autostart/</filename> will be run by 
+	  <application>startxfce4</application> on startup.
+	</para>
+	
+	<para>To customize the behaviour of 
+	  <application>startxfce4</application>, copy the file
+	  <filename>${sysconfdir}/xfce4/xinitrc</filename> to your personal 
+	  <filename>~/.xfce4/</filename> directory and edit that file. If you 
+	  install from source, <filename>${sysconfdir}</filename> defaults to 
+	  <filename>/usr/local/etc</filename>; for binary packages it is often 
+	  set to <filename>/etc</filename>.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfhelp4</term>
+      <listitem>
+	<para>This script is used to open the local XFce 4 documentation in a
+	  browser. By default it will use <application>mozilla</application>,
+	  but you can change that by setting the $BROWSER environmental
+	  variable. For instance in your <filename>~/.bash_profile</filename> 
+	  put the following line:
+	  <programlisting>export BROWSER="galeon -w"</programlisting>
+	  You will need to log out of your shell and log back in to make this
+	  work.
+	</para>
+	
+	<para>If there is documentation installed in the language of your
+	  current locale, xfhelp4 will open that instead of the default 
+	  English documentation.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xflock4</term>
+      <listitem>
+	<para>This script is used by the panel to lock the screen using
+	  xscreensaver if available and falling back to xlock.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfmountdev4</term>
+      <listitem>
+	<para>
+	  <command>xfmountdev4 <filename>/dev/mountpoint</filename></command> 
+	  will mount the given mountpoint and open xffm in that location. When
+	  you close the xffm window the filesystem will be unmounted. Note that
+	  you can use <application>xffstab4</application> provided with xffm 
+	  for the same purpose.
+        </para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
+      <term>xfterm4</term>
+      <listitem>
+	<para>This is a convenient terminal script. It uses the $TERMCMD
+	  environmental variable as terminal command if available and falls
+	  back to using xterm. Especially useful in the panel where you can
+	  drag file or directories to it that will be viewed by the
+	  appropriate console application (less for text files, lynx for
+	  html). 
+	</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+</sect1>
+
+<para>&nbsp;</para>
+
+<sect1 id="utils-copyright">
+  <title>About xfce-utils</title>
+
+  <para>&app; was written by Jasper Huijsmans
+    (<email>huysmans@users.sourceforge.net</email>), Olivier Fourdan 
+    (<email>fourdan@xfce.org</email>) and Benedikt Meurer
+    (<email>benedikt.meurer@unix-ag.uni-siegen.de</email>).
+    To find more information, please visit the 
+    <ulink url="http://www.xfce.org" type="http">XFce web site</ulink>. 
+  </para>
+
+  <para>To report a bug or make a suggestion regarding this application or
+    this manual, send an email to the 
+    <ulink url="http://www.moongroup.com/mailman/listinfo/xfce4-dev/"
+      type="http">xfce4-dev</ulink> mailing list &mdash; this is the preferred
+    method &mdash; or use the bug tracking system at the
+    <ulink url="http://sourceforge.net/projects/xfce" 
+      type="http">XFce SourceForge project site</ulink>. 
+    If you have questions about the use or installation of this package,
+    please ask on the 
+    <ulink url="http://www.moongroup.com/mailman/listinfo/xfce/"
+      type="http">xfce</ulink> mailing list. 
+  </para>
+    
+  <para> This program is distributed under the terms of the
+    GNU General Public License as published by the Free Software Foundation; 
+    either version 2 of the License, or (at your option) any later version.
+  </para>
+
+  <para>You should have received a copy of the GNU General Public License 
+    along with this program; if not, write to the Free Software 
+    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
+    USA.
+  </para>
+
+</sect1>
+
+</article>
+
