@@ -1,3 +1,22 @@
+2003-09-14  huysmans
+
+	* doc/xfce.css: Tweak css file
+
+2003-09-14  huysmans
+
+	* doc/: xfce.css, xfce-utils/C/xfce-utils.html,
+	xfce-utils/C/xfce-utils.xml, xfce4-user-guide/C/copyright.xml,
+	xfce4-user-guide/C/xfce4-copyright.html,
+	xfce4-user-guide/C/xfce4-install.html,
+	xfce4-user-guide/C/xfce4-intro.html,
+	xfce4-user-guide/C/xfce4-use.html,
+	xfce4-user-guide/C/xfce4-user-guide.html,
+	xfce4-user-guide/C/xfce4-user-guide.xml: Documentation updates
+
+2003-09-14  xfce
+
+	* ChangeLog: Update ChangeLog
+
 2003-09-13  huysmans
 
 	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
