@@ -36,13 +36,16 @@
 	  variable. For instance in your <tt class="filename">~/.bashrc</tt> put
 	  the following line:
 	  </p><table border="0" bgcolor="#E0E0E0" width="100%"><tr><td><pre class="programlisting">export BROWSER=&quot;galeon -w&quot;</pre></td></tr></table><p>
+	</p><p>If there is documentation installed in the language of your
+	  current locale, xfhelp will open that instead of the default English
+	  documentation.
 	</p></dd><dt><span class="term">xflock4</span></dt><dd><p>This script is used by the panel to lock the screen using
 	  xscreensaver if available and falling back to xlock.
 	</p></dd><dt><span class="term">xfmountdev4</span></dt><dd><p>
 	  <b class="command">xfmountdev4 <tt class="filename">/dev/mountpoint</tt></b> 
 	  will mount the given mountpoint and open xffm in that location. When
 	  you close the xffm window the filesystem will be unmounted. Note that
-	  you can use <b class="application"><tt>xfstab</tt></b> provided with xffm for
+	  you can use <b class="application"><tt>xffstab</tt></b> provided with xffm for
 	  the same purpose.
         </p></dd><dt><span class="term">xfterm4</span></dt><dd><p>This is a convenient terminal script. It uses the $TERMCMD
 	  environmental variable as terminal command if available and falls

@@ -200,6 +200,10 @@ maintainers, etc. Commented out by default.
 	  the following line:
 	  <programlisting>export BROWSER="galeon -w"</programlisting>
 	</para>
+	<para>If there is documentation installed in the language of your
+	  current locale, xfhelp will open that instead of the default English
+	  documentation.
+	</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -217,7 +221,7 @@ maintainers, etc. Commented out by default.
 	  <command>xfmountdev4 <filename>/dev/mountpoint</filename></command> 
 	  will mount the given mountpoint and open xffm in that location. When
 	  you close the xffm window the filesystem will be unmounted. Note that
-	  you can use <application>xfstab</application> provided with xffm for
+	  you can use <application>xffstab</application> provided with xffm for
 	  the same purpose.
         </para>
       </listitem>

@@ -168,7 +168,7 @@
   <sect2 id="xfce4-resources">
     <title>Resources</title>
 
-    <para>If you are looking for specific information about XFce, chances are
+    <para>If you are looking for specific information about XFce 4, chances are
       you can obtain it from one of these resources:
     </para>
 
@@ -202,7 +202,12 @@
 
     <sect3>
       <title>Libraries</title>
-    
+
+      <para>Unlike previous versions, XFce 4 provides a development platform
+	consisting of a set of libraries that provide helper functions and
+	widgets to make the program fit in nicely with the XFce 4 environment.
+      </para>
+      
       <variablelist>
 	
 	<varlistentry>
@@ -234,6 +239,11 @@
     <sect3>
       <title>Desktop</title>
 
+      <para>
+	These modules provide the basic functionality of the desktop
+	environment.
+      </para>
+      
       <variablelist>
 	    
 	<varlistentry>
@@ -551,7 +561,7 @@ exec xfce4-panel
     </figure>
 
     <para>The XFce 4 Desktop Environment is not a single entity that provides
-      all funtionality, but rather it tries th adhere to the old UNIX
+      all funtionality, but rather it tries to adhere to the old UNIX
       tradition of small tools that do one job and do it well. A default XFce
       4 desktop with no programs running is shown in <xref
 	linkend="default-session-fig"/>.
@@ -564,7 +574,7 @@ exec xfce4-panel
     <variablelist>
 
       <varlistentry>
-	<term>taskbar</term>
+	<term>Taskbar</term>
 	<listitem>
 	  <para>At the top of the screen you will see the taskbar. It shows
 	    the applications running on the current workspace. You can
@@ -581,7 +591,7 @@ exec xfce4-panel
       </varlistentry>
 
       <varlistentry>
-	<term>panel</term>
+	<term>Panel</term>
 	<listitem>
 	  <para>At the bottom of the screen is the XFce4 panel. It allows you
 	    to run applications and also contains a graphical pager, a clock
@@ -599,7 +609,7 @@ exec xfce4-panel
       </varlistentry>
 
       <varlistentry>
-	<term>desktop manager</term>
+	<term>Desktop Manager</term>
 	<listitem>
 	  <para>The desktop manager provides the desktop background image and
 	    two menus when you click on the desktop background.
@@ -617,7 +627,7 @@ exec xfce4-panel
       </varlistentry>
 
       <varlistentry>
-	<term>window manager</term>
+	<term>Window Manager</term>
 	<listitem>
 	  <para>The window manager is responsible for placing the windows on
 	    the screen and provides the window borders and decorations. It
@@ -631,7 +641,7 @@ exec xfce4-panel
       </varlistentry>
 
       <varlistentry>
-	<term>settings manager</term>
+	<term>Settings Manager</term>
 	<listitem>
 	  <para>The settings manager runs in the background and makes sure
 	    that all XFce 4 applications update their settings when the user 
@@ -650,7 +660,7 @@ exec xfce4-panel
     <title>Common Tasks</title>
 
     <para>This section will explain how to perform several common tasks to 
-      quicklt get you started working with XFce 4. Because that is what
+      quickly get you started working with XFce 4. Because that is what
       XFce 4 is designed for, to allow you to get work done.
     </para>
 
