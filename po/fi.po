@@ -54,7 +54,7 @@ msgstr ""
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Historiaa ei voitu kirjoittaa tiedostoon %s\n"
+msgstr "xfrun4: Komento historiaa ei voitu kirjoittaa tiedostoon %s\n"
 
 #: xfrun/xfrun.c:237
 msgid "Run program"
@@ -162,12 +162,3 @@ msgstr "Työpöydän marginaaleja ei saatavilla"
 #: xftaskbar/xftaskbar.c:563
 msgid "Cannot create MCS client channel"
 msgstr "Ei voi luoda MCS-asiakas kanavaa"
-
-#~ msgid "License"
-#~ msgstr "Lisenssi"
-
-#~ msgid "<small><i>Small</i></small>"
-#~ msgstr "<small><i>Pieni</i></small>"
-
-#~ msgid "<small><i>Large</i></small>"
-#~ msgstr "<small><i>Suuri</i></small>"
