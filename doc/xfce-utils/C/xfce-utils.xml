@@ -1,8 +1,8 @@
 <?xml version='1.0'?> 
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
           "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY date "Aug 2004"> 
-  <!ENTITY appversion "4.1.x"> 
+  <!ENTITY date "November 2004"> 
+  <!ENTITY appversion "4.2"> 
   <!ENTITY app "<application>xfce-utils</application>"> 
 ]>
 
@@ -44,7 +44,7 @@
     <author>
       <firstname>Jasper</firstname> <surname>Huijsmans</surname>
       <affiliation>
-	      <address><email>huysmans@users.sourceforge.net</email></address>
+	      <address><email>jasper@xfce.org</email></address>
       </affiliation>
     </author>
 
@@ -102,12 +102,12 @@ maintainers, etc. Commented out by default.
   <title>Taskbar</title>
 
   <para>The taskbar shows all running programs. The behaviour of the taskbar 
-  can be changed from the settings manager. Run 
-  <command>xfce-setting-show taskbar</command>, or start the settings 
-  manager from the panel.
+    can be changed from the settings manager. Run 
+    <command>xfce-setting-show taskbar</command>, or start the settings 
+    manager from the panel.
   </para>
     
-      <figure id="taskbar-settings-fig">
+  <figure id="taskbar-settings-fig">
     <title>Taskbar settings dialog</title> 
     <screenshot>
       <mediaobject>
@@ -130,22 +130,22 @@ maintainers, etc. Commented out by default.
     <para>From the settings dialog, your can select the taskbar 
     	position, either at the top or at the bottom of the screen. You 
     	can set the height and width of the taskbar using the two sliders, 
-    	and even select a left, centered or right alignment, if the width 
+    	and select a left, centered or right alignment, if the width 
     	of the taskbar is smaller than your screen. Another option 
     	allows you to use the "Auto hide" feature.
     </para>
     
     <para>The "Tasks" options allow you to customize the behaviour 
-    of the taskbar regarding the management of the opened 
-    applications. You can choose to show the tasks from all 
-    workspaces or only the current one, to always group tasks or 
-    only group tasks when the taskbar gets crowded, and to show 
-    applications names or only their icons.
+      of the taskbar regarding the management of the opened 
+      applications. You can choose to show the tasks from all 
+      workspaces or only the current one, to always group tasks or 
+      only group tasks when the taskbar gets crowded, and to show 
+      applications names or only their icons.
     </para>
     
-    <para>In addition to the tasklist, the taskbar also features a simple graphical 
-    	pager and a notification area (also known as the system tray). Both can be 
-    	disabled from the settings dialog.
+    <para>In addition to the tasklist, the taskbar also features a simple 
+      graphical pager and a notification area (also known as the system tray). 
+      Both can be disabled from the settings dialog.
     </para>
 
 </sect1>
@@ -172,11 +172,8 @@ maintainers, etc. Commented out by default.
 
   <para>The run dialog allows the user to launch applications. Applications
     can be run in a Terminal emulator (xterm by default, see xfterm4 script
-    below).
-  </para>
-
-  <para>In a default Xfce 4 environment, the Alt+F2 key combination 
-  	will open the run dialog.
+    below). In a default Xfce 4 environment, the Alt+F2 key combination 
+    will open the run dialog.
   </para>
 
 </sect1>
@@ -232,11 +229,17 @@ maintainers, etc. Commented out by default.
 	<para>To customize the behaviour of 
 	  <application>startxfce4</application>, copy the file
 	  <filename>${sysconfdir}/xfce4/xinitrc</filename> to your personal 
-	  <filename>~/.config/xfce4/</filename> directory and edit that file. If you 
-	  install from source, <filename>${sysconfdir}</filename> defaults to 
-	  <filename>/usr/local/etc</filename>; for binary packages it is often 
-	  set to <filename>/etc</filename>.
+	  <filename>~/.config/xfce4/</filename> directory and edit that file. 
+	  If you install from source, <filename>${sysconfdir}</filename> 
+	  defaults to <filename>/usr/local/etc</filename>; for binary packages 
+	  it is often set to <filename>/etc</filename>.
 	</para>
+
+	<para>With the inclusion of a session manager in Xfce 4.2, the
+	  preferred way to change startup behaviour is by using the "Save
+	  session" option in the logout dialog.
+	</para>
+	
       </listitem>
     </varlistentry>
     
@@ -244,10 +247,10 @@ maintainers, etc. Commented out by default.
       <term>xfhelp4</term>
       <listitem>
 	<para>This script is used to open the local Xfce 4 documentation in a
-	  browser. By default it will use <application>mozilla</application>,
-	  but you can change that by setting the $BROWSER environmental
-	  variable. For instance in your <filename>~/.bash_profile</filename> 
-	  put the following line:
+	  browser. By default it will try a number of well-known browsers,
+	  like firefox, galeon or konqueror, but you can change that by 
+	  setting the $BROWSER environmental variable. For instance in your 
+	  <filename>~/.bash_profile</filename> put the following line:
 	  <programlisting>export BROWSER="galeon -w"</programlisting>
 	  You will need to log out of your shell and log back in to make this
 	  work.
@@ -303,25 +306,22 @@ maintainers, etc. Commented out by default.
 <sect1 id="utils-copyright">
   <title>About xfce-utils</title>
 
-  <para>&app; was written by Jasper Huijsmans
-    (<email>huysmans@users.sourceforge.net</email>), Olivier Fourdan 
-    (<email>fourdan@xfce.org</email>) and Benedikt Meurer
-    (<email>benny@xfce.org</email>).
+  <para>&app; was written by 
+    Jasper Huijsmans (<email>jasper@xfce.org</email>), 
+    Olivier Fourdan (<email>fourdan@xfce.org</email>) and 
+    Benedikt Meurer (<email>benny@xfce.org</email>).
     To find more information, please visit the 
     <ulink url="http://www.xfce.org" type="http">Xfce web site</ulink>. 
   </para>
 
   <para>To report a bug or make a suggestion regarding this application or
-    this manual, send an email to the 
+    this manual, use the <ulink url="http://bugzilla.xfce.org/" 
+      type="http">bug tracking system</ulink>. If you have questions about 
+    the use or installation of this package, please ask on the 
     <ulink url="http://lunar-linux.org/mailman/listinfo/xfce"
-      type="http">xfce4-dev</ulink> mailing list &mdash; this is the preferred
-    method &mdash; or use the bug tracking system at the
-    <ulink url="http://bugs.xfce.org/" 
-      type="http">http://bugs.xfce.org/</ulink>. 
-    If you have questions about the use or installation of this package,
-    please ask on the 
-    <ulink url="http://lunar-linux.org/mailman/listinfo/xfce"
-      type="http">xfce</ulink> mailing list. 
+      type="http">xfce</ulink> mailing list. Development discussion takes
+    place on the <ulink url="http://lunar-linux.org/mailman/listinfo/xfce4-dev"
+      type="http">xfce4-dev</ulink> mailing list. 
   </para>
     
   <para> This program is distributed under the terms of the

@@ -5,7 +5,7 @@
                 exclude-result-prefixes="#default">
 
 <!-- Load onechunk.xsl stylesheet 
-TODO: how can I put a location independent link here?
+     TODO: how can I put a location independent link here?
 This should work. The url can be translated to a local one in the catalog
 file"
 -->
@@ -49,7 +49,7 @@ file"
 
 <xsl:attribute-set name="shade.verbatim.style">
 	<xsl:attribute name="border">0</xsl:attribute>
-	<xsl:attribute name="bgcolor">#E0E0E0</xsl:attribute>
+	<xsl:attribute name="bgcolor">#F3F4F8</xsl:attribute>
 	<xsl:attribute name="width">100%</xsl:attribute>
 </xsl:attribute-set>
 
@@ -57,9 +57,9 @@ file"
 <!-- and cell attributes. -->
 <!-- This requires an adapted template for tgroup (see end of stylesheet) -->
 <xsl:attribute-set name="table.style">
-	<xsl:attribute name="bgcolor">#E0E0E0</xsl:attribute>
+  	<xsl:attribute name="bgcolor">#F8F9FD</xsl:attribute>
 	<xsl:attribute name="cellspacing">0</xsl:attribute>
-	<xsl:attribute name="cellpadding">4</xsl:attribute>
+	<xsl:attribute name="cellpadding">4</xsl:attribute> 
 </xsl:attribute-set>
 
 
