@@ -85,7 +85,7 @@
     </ul>
 
     <p>Si conoce a alguien que falte en esta lista, por favor háganoslo saber en
-    <a href="mailto:xfce4-dev@moongroup.com">xfce4-dev@moongroup.com</a>.</p>
+    <a href="mailto:xfce4-dev@xfce.org">xfce4-dev@xfce.org</a>.</p>
 
     <p>Gracias a todos aquellos que ayudaron a hacer este software posible.</p>
 

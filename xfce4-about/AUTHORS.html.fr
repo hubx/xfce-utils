@@ -84,7 +84,7 @@
       <li>Zhao Ji &lt;<a href="mailto:zhao-ji@awz.ne.jp">zhao-ji@awz.ne.jp</a>&gt;</li>
     </ul>
 
-    <p>Si vous connaissez quelqu'un qui manque &agrave; cette liste, merci de nous en informer sur <a href="mailto:xfce4-dev@moongroup.com">xfce4-dev@moongroup.com</a>.</p>
+    <p>Si vous connaissez quelqu'un qui manque &agrave; cette liste, merci de nous en informer sur <a href="mailto:xfce4-dev@xfce.org">xfce4-dev@xfce.org</a>.</p>
 
     <p>Merci &agrave; tous ceux qui ont aid&eacute; &agrave; la r&eacute;alisation de ce logiciel.</p>
 

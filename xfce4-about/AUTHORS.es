@@ -68,7 +68,7 @@ Traductores
   Zhao Ji <zhao-ji@awz.ne.jp>
 
 Si conoce a alguien que falte en esta lista, por favor háganoslo saber
-en xfce4-dev@moongroup.com
+en xfce4-dev@xfce.org
 
 Gracias a todos los que ayudaron a hacer este software posible.
 

@@ -94,12 +94,12 @@ case "x$panel" in
 		while test $ret -ne 0; do
 			xmessage -center -file - -timeout 20 -title Error <<EOF
 A crash occured in the panel
-Please report this to the xfce4-dev@moongroup.com list
+Please report this to the xfce4-dev@xfce.org list
 Meanwhile the panel will be restarted
 EOF
 			cat >&2 <<EOF
 A crash occured in the panel
-Please report this to the xfce4-dev@moongroup.com list
+Please report this to the xfce4-dev@xfce.org list
 Meanwhile the panel will be restarted
 EOF
 			$panel
