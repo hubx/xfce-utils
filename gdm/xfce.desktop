@@ -3,11 +3,13 @@ Encoding=UTF-8
 # The names/descriptions should really be better
 Name=Xfce Session
 Name[fr]=Session Xfce
+Name[et]=Xfce 4 sessioon
 Name[he]=Xfce 4
 Name[ko]=Xfce 4 세션
 Name[nl]=Xfce 4 Sessie
 Name[zh_TW]=Xfce 4 工作階段
 Comment=Use this session to run Xfce as your desktop environment
+Comment[et]=kasuta seda sessiooni, et Xfce käivituks sinu töökeskkonnana
 Comment[fr]=Sélectionner cette session pour utiliser Xfce comme environnment graphique
 Comment[he]=השתמש בזה כדי להפעיל את Xfce כשולחן העובדה שלך
 Comment[ko]=사용자 데스크탑 환경으로 Xfce를 이용합니다.
