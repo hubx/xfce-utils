@@ -1,0 +1,81 @@
+#!/bin/sh
+# Xfterm script revsed in order to make it easier to expand and to be 
+# more compatible with applications such as gnome-terminal
+
+if [ "x$TERMCMD" = "x" ]; then
+	TERMCMD=xterm
+fi
+
+if [ "$1" = "-e" ]; then
+	if [ -n "$2" ]; then
+		ESTRING="$2"
+		shift; shift
+	else
+		shift
+	fi
+fi	
+
+# Add an entry for your own strange non-standard xterm replacement here
+case "$TERMCMD" in
+	"powershell")
+		EXEC="--execute="
+		# The following dosen't seem to work, but it's the best
+		# equalient to a title switch powershell has
+		TITLE="--name="
+		;;
+	"gnome-terminal")
+		EXEC="-x "
+		TITLE="--title "
+		;;
+	"Eterm")
+		EXEC="-e "
+		TITLE="-T "
+		;;
+	*)
+		EXEC="-e "
+		TITLE="-title "
+		;;
+esac
+
+if [ ! "x$ESTRING" = "x" ]; then
+	TSTRING="$ESTRING"
+elif [ "x$1" = "x" ]; then
+	TSTRING="Terminal"
+	ESTRING=""
+	unset EXEC
+elif [ -d "$*" ]; then
+	cd "$*"
+	TSTRING="Terminal"
+	ESTRING=""
+	unset EXEC
+elif [ -x "$*" ]; then
+	cd `dirname "$*"`
+	TSTRING=`basename "$*"`
+	ESTRING="`which pauseme`"
+	MSTRING="$*"
+elif [ -f "$*" ]; then
+	TSTRING="Viewing $*"
+	ESTRING="`which less`"
+	MSTRING="$*"
+elif [ "`echo $* | grep "http:/"`" -o "`echo $* | grep "ftp:"`" ]; then
+	# This requires lynx. If you don't have it, don't drop URLs.
+	TSTRING="Lynx: $*"
+	ESTRING="`which lynx`"
+	MSTRING="$*"
+else
+	exec $TERMCMD $@
+fi
+
+
+# Ugly, why can't they just make all terms work the same way?
+# Note that you cannot feed this script with a text file which
+# contains spaces in its name and/or path if your $TERMCMD = powershell
+if [ "$TERMCMD" = "powershell" ]; then
+ 	exec $TERMCMD $TITLE"$TSTRING" $EXEC"$ESTRING $MSTRING"
+elif [ "x$MSTRING" = "x" ]; then
+	exec $TERMCMD $TITLE"$TSTRING" $EXEC$ESTRING
+else
+	exec $TERMCMD $TITLE"$TSTRING" $EXEC$ESTRING "$MSTRING"
+fi
+
+exit 0			

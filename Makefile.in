@@ -143,7 +143,7 @@ target_alias = @target_alias@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 
-SUBDIRS = xfrun xftaskbar
+SUBDIRS = xfrun xftaskbar scripts
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs

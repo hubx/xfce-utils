@@ -1,0 +1,67 @@
+#!/bin/sh
+#
+#  xfce4
+#
+#  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+if [ "x$MOUNTCMD" = "x" ]
+then
+  MOUNTCMD=mount
+fi
+
+if [ "x$UNMOUNTCMD" = "x" ]
+then
+  UNMOUNTCMD=umount
+fi
+
+if [ "x$EJECTCMD" = "x" ]
+then
+  EJECTCMD=eject
+fi
+
+if [ "x$FILEMANAGER" = "x" ]
+then
+  FILEMANAGER=xffm
+fi
+
+if [ "x$1" = "x" ]; then
+    echo $0: You must provide a mount point
+    exit -1
+else
+	if [ -d "$1" ]; then
+		MOUNTPNT="$1"
+                echo Mount point = $MOUNTPNT
+                shift
+                echo Mounting media...
+        	$MOUNTCMD "$MOUNTPNT" $*
+                echo Browsing media...
+                $FILEMANAGER "$MOUNTPNT"
+                echo Unmounting media...
+        	$UNMOUNTCMD "$MOUNTPNT"
+		if [ "x$EJECTCMD" != "xno" ]; then
+                        echo Ejecting media...
+			$EJECTCMD "$MOUNTPNT"
+		fi
+                exit 0
+        else
+		echo $0: The mount point $1 does not exist
+        	exit -2
+        fi
+fi        
+exit 0
+

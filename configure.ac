@@ -72,5 +72,6 @@ Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
+scripts/Makefile
 ])
 
