@@ -1,6 +1,6 @@
 backdropdir=$(datadir)/xfce4/backdrops
 
-EXTRA_DIST = Blue.list.in
+EXTRA_DIST = Blue.list.in Toulouse.list.in 
 
 # this and the above get included in the tarball ...
 dist_backdrop_DATA = \
@@ -12,6 +12,7 @@ Aurora.xpm \
 BlackStripes.xpm \
 Bluedrops.xpm \
 Bluefalls.xpm \
+Blue.list.in \
 BlueSatin.xpm \
 BlueSea.xpm \
 BlueStripes.xpm \
@@ -33,6 +34,7 @@ Dry.xpm \
 Eyes.xpm \
 Fire.xpm \
 Flames.xpm \
+Flower.jpg \
 Flow.xpm \
 Funkyblue.xpm \
 Gallets.xpm \
@@ -49,10 +51,13 @@ Greysea.xpm \
 Grey.xpm \
 Hardblue.xpm \
 Honey.xpm \
+Horizon.png \
 Leaves.xpm \
+Linea.xpm \
 Marbled.xpm \
 Master-Plan.jpg \
 Maze.xpm \
+Metal-blue.jpg \
 Nebula.xpm \
 Notes.xpm \
 Overdriven.jpg \
@@ -64,6 +69,8 @@ Psy2.xpm \
 Psy3.xpm \
 Psy.xpm \
 PurpleStripes.xpm \
+Purple.xpm \
+Reader.xpm \
 Rotin.xpm \
 Rough.xpm \
 Sandy-ridges.xpm \
@@ -106,20 +113,26 @@ Weave-red.xpm \
 Weird.xpm \
 Whirl.xpm \
 WhiteStripes.xpm \
+WipeBlue.png \
 Wood2.xpm \
 Wood-floor.xpm \
 Wood.xpm \
 Worm.xpm \
+xfce-in-the-moon-3.png \
 Xfce.jpg \
 Xfcelogo.xpm \
 Xfcemice.jpg \
+XfceStellar.xpm \
 Xfce.xpm
 
 # ... and this gets installed
-backdrop_DATA =  $(dist_backdrop_DATA) Blue.list
+backdrop_DATA =  $(dist_backdrop_DATA) Blue.list Toulouse.list
 
 Blue.list:
 	@sed -e "s%XFCE_DIR%$(datadir)/xfce4%" Blue.list.in > Blue.list
+
+Toulouse.list:
+	@sed -e "s%XFCE_DIR%$(datadir)/xfce4%" Toulouse.list.in > Toulouse.list
 
 distclean-local:
 	@rm -f Blue.list
