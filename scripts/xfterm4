@@ -23,7 +23,7 @@ case "$TERMCMD" in
 		# equalient to a title switch powershell has
 		TITLE="--name="
 		;;
-	"gnome-terminal"|"gnome2-terminal"|"Terminal")
+	"gnome-terminal"|"gnome2-terminal"|"Terminal"|"terminal"|"xterminal")
 		EXEC="-x "
 		TITLE="--title "
 		;;
