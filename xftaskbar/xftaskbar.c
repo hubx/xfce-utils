@@ -67,6 +67,7 @@ struct _Taskbar
 
     XfceSystemTray *tray;
     GtkWidget *iconbox;
+    gboolean tray_registered;
 };
 
 static GdkFilterReturn
@@ -214,24 +215,29 @@ register_tray(Taskbar *taskbar)
 
 static void taskbar_toggle_tray(Taskbar *taskbar)
 {
-    static gboolean registered = FALSE;
-    
     g_return_if_fail (taskbar != NULL);
     
     if (taskbar->show_tray)
     {
-	registered = register_tray(taskbar);
-        gtk_widget_show (taskbar->iconbox);
+	if (!taskbar->tray_registered)
+	{
+	    taskbar->tray_registered = register_tray(taskbar);
+	}
+
+	taskbar->iconbox = gtk_hbox_new(TRUE, 5);
+	gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
+			   FALSE, FALSE,0);
+	gtk_widget_show (taskbar->iconbox);
     }
     else
     {
-	if (registered)
+	if (taskbar->tray_registered)
 	{
 	    xfce_system_tray_unregister(taskbar->tray);
-	    registered = FALSE;
+	    taskbar->tray_registered = FALSE;
 	}
 	
-        gtk_widget_hide (taskbar->iconbox);
+        gtk_widget_destroy (taskbar->iconbox);
     }
 }
 
@@ -362,10 +368,13 @@ static void taskbar_destroy(GtkWidget * widget, gpointer data)
     g_free(data);
 }
 
-static void icon_docked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox)
+static void icon_docked(XfceSystemTray *tray, GtkWidget *icon, Taskbar *taskbar)
 {
-    gtk_box_pack_start(iconbox, icon, FALSE, FALSE, 5);
-    gtk_widget_show(icon);
+    if (taskbar->tray_registered)
+    {
+	gtk_box_pack_start(GTK_BOX(taskbar->iconbox), icon, FALSE, FALSE, 5);
+	gtk_widget_show(icon);
+    }
 }
 
 static void icon_undocked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox)
@@ -431,6 +440,7 @@ int main(int argc, char **argv)
     taskbar->show_tray = TRUE;
     taskbar->all_tasks = FALSE;
     taskbar->hidden = FALSE;
+    taskbar->tray_registered = FALSE;
 
     taskbar->win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_stick(GTK_WINDOW(taskbar->win));
@@ -464,17 +474,12 @@ int main(int argc, char **argv)
     netk_pager_set_n_rows(NETK_PAGER(taskbar->pager), 1);
     gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
 
-    taskbar->iconbox = gtk_hbox_new(TRUE, 5);
-    gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, FALSE, FALSE,
-                    0);
-
     taskbar->tray = xfce_system_tray_new();
 
-    g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar->iconbox);
-    g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar->iconbox);
-    g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar->iconbox);
+    g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
+    g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
+    g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar);
 
-    gtk_widget_show (taskbar->iconbox);
     gtk_widget_show (taskbar->tasklist);
     gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
