@@ -383,6 +383,7 @@ install-gdm: $(xfce_FILES)
 	$(mkinstalldirs) $(DESTDIR)$(wmsession_prefix)
 	$(mkinstalldirs) $(DESTDIR)$(dmsession_prefix)
 	$(mkinstalldirs) $(DESTDIR)$(gdmsession_prefix)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)/xsessions
 	$(INSTALL_SCRIPT) XFce4 \
 	        $(DESTDIR)$(gdmsession_prefix)/XFce4
 	$(INSTALL_SCRIPT) Xclients.xfce4 \
