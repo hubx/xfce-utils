@@ -1,9 +1,6 @@
-<chapter id="xfce4-copyright">
+<sect1 id="xfce4-copyright">
   <title>Copyright and Licences</title>
   
-<sect1>
-  <title>XFce 4 copyright</title>
-
   <para>XFce 4 is copyright &copy; Olivier Fourdan 
     (<email>fourdan@xfce.org</email>). The different components are
     copyrighted by their respective authors.
@@ -30,10 +27,3 @@
 
 </sect1>
 
-&BSD;
-
-&GPL;
-
-&LGPL;
-
-</chapter>
