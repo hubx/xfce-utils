@@ -33,8 +33,7 @@
 
 #include <libxfce4mcs/mcs-common.h>
 #include <libxfce4mcs/mcs-manager.h>
-#include <libxfce4util/i18n.h>
-#include <libxfce4util/util.h>
+#include <libxfce4util/libxfce4util.h>
 #include <libxfcegui4/libxfcegui4.h>
 #include <xfce-mcs-manager/manager-plugin.h>
 #include "inline-icon.h"
@@ -259,7 +258,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->xftaskbar_dialog = gtk_dialog_new();
 
-    icon = inline_icon_at_size(default_icon_data, 32, 32);
+    icon = xfce_inline_icon_at_size(default_icon_data, 32, 32);
     gtk_window_set_icon(GTK_WINDOW(dialog->xftaskbar_dialog), icon);
     g_object_unref(icon);
 
@@ -269,7 +268,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     dialog->dialog_vbox1 = GTK_DIALOG (dialog->xftaskbar_dialog)->vbox;
     gtk_widget_show (dialog->dialog_vbox1);
 
-    dialog->dialog_header = create_header(icon, _("Taskbar"));
+    dialog->dialog_header = xfce_create_header(icon, _("Taskbar"));
     gtk_widget_show(dialog->dialog_header);
     gtk_box_pack_start(GTK_BOX(dialog->dialog_vbox1), dialog->dialog_header, FALSE, TRUE, 0);
 
@@ -360,7 +359,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label14), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label14), 0, 0.5);
 
-    dialog->label15 = small_label(_("Small"));
+    dialog->label15 = xfce_create_small_label(_("Small"));
     gtk_widget_show (dialog->label15);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label15, 0, 1, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -369,7 +368,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label15), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label15), 1, 0.5);
 
-    dialog->label16 = small_label(_("Large"));
+    dialog->label16 = xfce_create_small_label(_("Large"));
     gtk_widget_show (dialog->label16);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label16, 2, 3, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -397,7 +396,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
                            GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->width_label_top), 0, 0.5);
 
-    dialog->width_label_left = small_label(_("Small"));
+    dialog->width_label_left = xfce_create_small_label(_("Small"));
     gtk_widget_show (dialog->width_label_left);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_label_left,
                       0, 1, 3, 4,
@@ -408,7 +407,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
                            GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->width_label_left), 1, 0.5);
 
-    dialog->width_label_right = small_label(_("Large"));
+    dialog->width_label_right = xfce_create_small_label(_("Large"));
     gtk_widget_show (dialog->width_label_right);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->width_label_right,
                       2, 3, 3, 4,
@@ -524,7 +523,9 @@ McsPluginInitResult mcs_plugin_init(McsPlugin * mcs_plugin)
     mcs_plugin->plugin_name = g_strdup(PLUGIN_NAME);
     mcs_plugin->caption = g_strdup(_("Taskbar"));
     mcs_plugin->run_dialog = run_dialog;
-    mcs_plugin->icon = inline_icon_at_size(default_icon_data, DEFAULT_ICON_SIZE, DEFAULT_ICON_SIZE);
+    mcs_plugin->icon = xfce_inline_icon_at_size (default_icon_data,
+                                                 DEFAULT_ICON_SIZE,
+                                                 DEFAULT_ICON_SIZE);
     mcs_manager_notify(mcs_plugin->manager, CHANNEL);
 
     return (MCS_PLUGIN_INIT_OK);

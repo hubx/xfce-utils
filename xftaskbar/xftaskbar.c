@@ -215,7 +215,8 @@ static void taskbar_position(Taskbar *taskbar)
 {
     g_return_if_fail (taskbar != NULL);
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar_get_width(taskbar), taskbar_get_height(taskbar));
-    taskbar_update_margins(taskbar);
+    if (GTK_WIDGET_REALIZED (taskbar->win))
+      taskbar_update_margins(taskbar);
 }
 
 static void taskbar_toggle_autohide(Taskbar *taskbar)
@@ -361,7 +362,8 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
             taskbar->y = rect.y + rect.height - allocation->height;
         }
         gtk_window_move(GTK_WINDOW(taskbar->win), taskbar_get_x(taskbar), taskbar->y);
-        taskbar_update_margins(taskbar);
+        if (GTK_WIDGET_REALIZED (taskbar->win))
+          taskbar_update_margins(taskbar);
     }
     return FALSE;
 }
@@ -572,12 +574,6 @@ int main(int argc, char **argv)
 
     gtk_init(&argc, &argv);
 
-    client_session = client_session_new(argc, argv, NULL /* data */ , SESSION_RESTART_IF_RUNNING, 30);
-
-    if(!session_init(client_session))
-    {
-        g_message(_("Cannot connect to session manager"));
-    }
     screen = netk_screen_get_default();
     /* because the pager doesn't respond to signals at the moment */
     netk_screen_force_update(screen);
@@ -622,12 +618,12 @@ int main(int argc, char **argv)
     gtk_window_set_title(GTK_WINDOW(taskbar->win), "Task List");
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
     gtk_window_set_resizable(GTK_WINDOW(taskbar->win), FALSE);
-    gtk_widget_show (taskbar->win);
     gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
     g_signal_connect (G_OBJECT(taskbar->win), "destroy", G_CALLBACK(taskbar_destroy), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "enter_notify_event", G_CALLBACK (taskbar_enter), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "leave_notify_event", G_CALLBACK (taskbar_leave), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "size_allocate", G_CALLBACK (taskbar_size_allocate), taskbar);
+    g_signal_connect_swapped (G_OBJECT (taskbar->win), "realize", G_CALLBACK (taskbar_update_margins), taskbar);
 
     if (gdk_screen_get_n_monitors (taskbar->gscr)< 2) {
         /*
@@ -665,9 +661,14 @@ int main(int argc, char **argv)
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
     g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar);
-    gtk_widget_show (taskbar->tasklist);
-    gtk_widget_show (taskbar->pager);
-    gtk_widget_show (taskbar->hbox);
+
+    client_session = client_session_new(argc, argv, NULL /* data */ , SESSION_RESTART_IF_RUNNING, 30);
+
+    if(!session_init(client_session))
+    {
+        g_message(_("Cannot connect to session manager"));
+    }
+
     taskbar_change_size(taskbar, DEFAULT_HEIGHT);
     taskbar_position(taskbar);
 
@@ -681,6 +682,11 @@ int main(int argc, char **argv)
         g_warning(_("Cannot create MCS client channel"));
 	taskbar_toggle_tray(taskbar);
     }
+
+    gtk_widget_show (taskbar->tasklist);
+    gtk_widget_show (taskbar->pager);
+    gtk_widget_show (taskbar->hbox);
+    gtk_widget_show (taskbar->win);
 
     gtk_main();
 

@@ -33,9 +33,8 @@
 #include <string.h>
 #include <unistd.h>
 
-#include <libxfce4util/i18n.h>
-#include <libxfce4util/util.h>
-#include <libxfcegui4/dialogs.h>
+#include <libxfce4util/libxfce4util.h>
+#include <libxfcegui4/libxfcegui4.h>
 
 
 #ifndef PATH_MAX
@@ -192,7 +191,7 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
 	execute=g;
     }
     g_free(path);
-    success = exec_command(execute);
+    success = xfce_exec (execute, FALSE, FALSE, NULL);
     g_free(execute);
     
     return success;
@@ -383,7 +382,7 @@ int main(int argc, char **argv)
     gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button, GTK_RESPONSE_CANCEL);
     gtk_widget_show(button);
     
-    button = mixed_button_new(GTK_STOCK_OK, _("_Run"));
+    button = xfce_create_mixed_button (GTK_STOCK_OK, _("_Run"));
     gtk_widget_show(button);
     gtk_dialog_add_action_widget(GTK_DIALOG(dialog), button, GTK_RESPONSE_OK);
 

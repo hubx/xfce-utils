@@ -41,7 +41,7 @@
 #include <libgtkhtml/gtkhtml.h>
 #endif
 
-#include <libxfce4util/i18n.h>
+#include <libxfce4util/libxfce4util.h>
 #include <libxfcegui4/libxfcegui4.h>
 
 #include "xfce-logo-icon.h"
@@ -64,7 +64,7 @@ static GtkWidget *info;
 static void
 info_help_cb (GtkWidget * w, gpointer data)
 {
-    exec_command ("xfhelp4");
+    xfce_exec ("xfhelp4", FALSE, FALSE, NULL);
 }
 
 #ifdef HAVE_LIBGTKHTML
@@ -87,9 +87,33 @@ link_clicked (HtmlDocument * htmldoc, const gchar * url, gpointer data)
 	g_snprintf (command, sizeof (command),
 		    "ns-remote -remote \"openURL(%s)\"", url);
 
-    exec_command (command);
+    xfce_exec (command, FALSE, FALSE, NULL);
 }
 #endif
+
+static gchar*
+replace_version (gchar *buffer)
+{
+    const gchar *version = xfce_version_string ();
+    gchar *dst;
+    gchar *bp;
+
+    bp = strstr (buffer, "@VERSION@");
+    if (bp != NULL)
+    {
+        gsize n = bp - buffer;
+
+        dst = g_new (gchar, strlen (buffer) + strlen (version) + 1);
+        memcpy (dst, buffer, n);
+        memcpy (dst + n, version, strlen (version));
+        strcpy (dst + n + strlen (version), buffer + n + strlen ("@VERSION@"));
+        g_free (buffer);
+        
+        return dst;
+    }
+
+    return buffer;
+}
 
 static void
 add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
@@ -145,6 +169,7 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
 #endif
 
     g_file_get_contents (path, &buf, &n, &err);
+    buf = replace_version (buf);
     g_free (path);
 
     if (err != NULL)
@@ -172,7 +197,7 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
 	{
 	    htmldoc = html_document_new ();
 	    html_document_open_stream (htmldoc, "text/html");
-	    html_document_write_stream (htmldoc, buf, n);
+	    html_document_write_stream (htmldoc, buf, strlen (buf));
 	    html_document_close_stream (htmldoc);
 
 	    textview = html_view_new ();
@@ -189,7 +214,7 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
 	{
 #endif
 	    textbuffer = gtk_text_buffer_new (NULL);
-	    gtk_text_buffer_set_text (textbuffer, buf, n);
+	    gtk_text_buffer_set_text (textbuffer, buf, strlen (buf));
 
 	    textview = gtk_text_view_new_with_buffer (textbuffer);
 	    gtk_text_view_set_editable (GTK_TEXT_VIEW (textview), FALSE);
@@ -225,11 +250,11 @@ main (int argc, char **argv)
     gtk_init (&argc, &argv);
 
     info = gtk_dialog_new ();
-    gtk_window_set_title (GTK_WINDOW (info), _("About XFce 4"));
+    gtk_window_set_title (GTK_WINDOW (info), _("About Xfce 4"));
     gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
     gtk_window_stick (GTK_WINDOW (info));
 
-    logo_pb = inline_icon_at_size (xfce_logo_data, 48, 48);
+    logo_pb = xfce_inline_icon_at_size (xfce_logo_data, 48, 48);
     gtk_window_set_icon (GTK_WINDOW (info), logo_pb);
 
     vbox2 = gtk_vbox_new (FALSE, 0);
@@ -240,9 +265,9 @@ main (int argc, char **argv)
     text =
 	g_strdup_printf
 	("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
-	 _("XFce Desktop Environment"),
+	 _("Xfce Desktop Environment"),
 	 _("Copyright 2002-2004 by Olivier Fourdan"));
-    header = create_header (logo_pb, text);
+    header = xfce_create_header (logo_pb, text);
     gtk_widget_show (header);
     gtk_box_pack_start (GTK_BOX (vbox2), header, FALSE, FALSE, 0);
     g_free (text);

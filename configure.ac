@@ -1,13 +1,12 @@
-dnl configure.ac
+dnl $Id$
 dnl
-dnl xfce-utils - Various utilities for the XFce 4 desktop environment
-dnl
-dnl 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+dnl Copyright (c) 2002-2004
+dnl         The Xfce development team. All rights reserved.
 dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.1])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.2])
 
 AM_CONFIG_HEADER([config.h])
 
@@ -69,7 +68,7 @@ BM_I18N([xfce-utils], [ar az bg ca cs de es es_MX eu fa_IR fi fr hi hu it ja ko 
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.0.0])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.0.0])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.10])
 
 dnl configure the mcs plugin
 XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.0.0])
@@ -111,16 +110,5 @@ xftaskbar/plugin/Makefile
 scripts/Makefile
 gdm/Makefile
 xfce4-about/Makefile
-xfce4-about/INFO
-xfce4-about/INFO.ca
-xfce4-about/INFO.es
-xfce4-about/INFO.fr
-xfce4-about/INFO.it
-xfce4-about/INFO.html
-xfce4-about/INFO.html.ca
-xfce4-about/INFO.html.de
-xfce4-about/INFO.html.es
-xfce4-about/INFO.html.fr
-xfce4-about/INFO.html.it
 ])
 
