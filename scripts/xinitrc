@@ -18,7 +18,7 @@ test $UID -gt 0 && xscreensaver -no-splash &
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
-if test "x$xfcesm" != "x" ; then
+if test "x$xfcesm" != "x" && test "x$xfcesm" != "xno" ; then
 	exec $xfcesm
         # Shouldn't get there, but anyway...
         exit
@@ -45,7 +45,7 @@ fi
 xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
-if test "x$panel" != "x" ; then
+if test "x$panel" != "x" && test "x$panel" != "xno"; then
 	$panel
 	ret=$?
 	while test $ret -ne 0; do
