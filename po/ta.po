@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tamil XFCE-UTILS 4\n"
-"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-01 17:56+0200\n"
 "PO-Revision-Date: 2003-05-14 22:08+0600\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil <tamilinix@yahoogroups.com>\n"
@@ -14,30 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:206
 msgid "About XFce 4"
 msgstr "XFce 4 ÀüÈ¢"
 
-#: xfce4-about/info.c:221
+#: xfce4-about/info.c:219
 msgid "XFce Desktop Environment"
 msgstr "XFce ¸½¢§Á¨º ÝÆø"
 
-#: xfce4-about/info.c:222
+#: xfce4-about/info.c:220
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "ÀÊÔÃ¢¨Á 2002-2003 ´Ä¢Å÷ §À¡÷¼¡ý"
 
 #. add pages
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:239
 msgid "Info"
 msgstr "¾¸Åø"
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:240
 msgid "Credits"
 msgstr "Ò¸ú¸û"
 
+#: xfce4-about/info.c:241
+msgid "Copyright"
+msgstr ""
+
+#: xfce4-about/info.c:242
+msgid "BSDL"
+msgstr ""
+
 #: xfce4-about/info.c:243
-msgid "License"
-msgstr "´ôÀó¾õ"
+msgid "LGPL"
+msgstr ""
+
+#: xfce4-about/info.c:244
+msgid "GPL"
+msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -124,32 +137,34 @@ msgstr "§Å¨ÄôÀð¨¼Â¢ø «¨ÁôÒ ¾ðÎ ¸¡ñÀ¢ì¸×õ"
 msgid "Notification area"
 msgstr "«È¢Å¢ôÒ þ¼õ"
 
-#: xftaskbar/xftaskbar.c:118
+#: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
 msgstr "¦¾¡¼ì¸ À¡½¢¨Â ¦ÀÈÓÊÂÅ¢ø¨Ä"
 
-#: xftaskbar/xftaskbar.c:277
-msgid "This should not happen"
-msgstr "þÐ ¿¨¼¦ÀÈìÜ¼¡Ð"
-
-#: xftaskbar/xftaskbar.c:366
-msgid "Cannot connect to session manager"
-msgstr "«Á÷× §ÁÄ¡ÇÕ¼ý ­¨½ôÒ ¦¸¡ûÇ ÓÊÂÅ¢ø¨Ä"
-
-#: xftaskbar/xftaskbar.c:377
-msgid "Cannot get desktop margins"
-msgstr "¸½¢§Á¨º ±ø¨Ä¸¨Ç ¦ÀÈÓÊÂÅ¢ø¨Ä"
-
-#: xftaskbar/xftaskbar.c:439
+#: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
 msgstr "þò¾¢¨ÃÂ¢ø ²ü¸É§Å µ÷ «¨ÁôÒò ¾ðÎ ­ÂíÌ¸¢ÈÐ"
 
-#: xftaskbar/xftaskbar.c:445
+#: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "«¨ÁôÒ ¾ðÎ À¾¢× ¦ºöÂÓÊÂÅ¢ø¨Ä: %s"
 
-#: xftaskbar/xftaskbar.c:463
+#: xftaskbar/xftaskbar.c:317
+msgid "This should not happen"
+msgstr "þÐ ¿¨¼¦ÀÈìÜ¼¡Ð"
+
+#: xftaskbar/xftaskbar.c:414
+msgid "Cannot connect to session manager"
+msgstr "«Á÷× §ÁÄ¡ÇÕ¼ý ­¨½ôÒ ¦¸¡ûÇ ÓÊÂÅ¢ø¨Ä"
+
+#: xftaskbar/xftaskbar.c:425
+msgid "Cannot get desktop margins"
+msgstr "¸½¢§Á¨º ±ø¨Ä¸¨Ç ¦ÀÈÓÊÂÅ¢ø¨Ä"
+
+#: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "MCS §º¨ÅôÀÂÉ÷ ¾¼õ À¨¼ì¸ ÓÊÂÅ¢ø¨Ä"
 
+#~ msgid "License"
+#~ msgstr "´ôÀó¾õ"

@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-01 17:56+0200\n"
 "PO-Revision-Date: 2003-04-25 19:30--200\n"
 "Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,30 +14,42 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:206
 msgid "About XFce 4"
 msgstr "Tietoja XFce4:stä"
 
-#: xfce4-about/info.c:221
+#: xfce4-about/info.c:219
 msgid "XFce Desktop Environment"
 msgstr "XFce-työpöytäympäristö"
 
-#: xfce4-about/info.c:222
+#: xfce4-about/info.c:220
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Tekijänoikeus 2002-2003 Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:239
 msgid "Info"
 msgstr "Tietoja"
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:240
 msgid "Credits"
 msgstr "Kehittäjät"
 
+#: xfce4-about/info.c:241
+msgid "Copyright"
+msgstr ""
+
+#: xfce4-about/info.c:242
+msgid "BSDL"
+msgstr ""
+
 #: xfce4-about/info.c:243
-msgid "License"
-msgstr "Lisenssi"
+msgid "LGPL"
+msgstr ""
+
+#: xfce4-about/info.c:244
+msgid "GPL"
+msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -121,34 +134,37 @@ msgstr "Näytä järjestelmälokero tehtäväpalkissa"
 msgid "Notification area"
 msgstr "Muistutusalue"
 
-#: xftaskbar/xftaskbar.c:118
+#: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
 msgstr "Tyyliä ei ollut saatavilla"
 
-#: xftaskbar/xftaskbar.c:277
-msgid "This should not happen"
-msgstr "Tämän ei pitäisi tapahtua"
-
-#: xftaskbar/xftaskbar.c:366
-msgid "Cannot connect to session manager"
-msgstr "Istunnon hallintaan ei saatu yhteyttä"
-
-#: xftaskbar/xftaskbar.c:377
-msgid "Cannot get desktop margins"
-msgstr "Työpöydän marginaaleja ei saatavilla"
-
-#: xftaskbar/xftaskbar.c:439
+#: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:445
+#: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:463
+#: xftaskbar/xftaskbar.c:317
+msgid "This should not happen"
+msgstr "Tämän ei pitäisi tapahtua"
+
+#: xftaskbar/xftaskbar.c:414
+msgid "Cannot connect to session manager"
+msgstr "Istunnon hallintaan ei saatu yhteyttä"
+
+#: xftaskbar/xftaskbar.c:425
+msgid "Cannot get desktop margins"
+msgstr "Työpöydän marginaaleja ei saatavilla"
+
+#: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "Ei voi luoda MCS-asiakas kanavaa"
+
+#~ msgid "License"
+#~ msgstr "Lisenssi"
 
 #~ msgid "<small><i>Small</i></small>"
 #~ msgstr "<small><i>Pieni</i></small>"

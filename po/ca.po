@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-01 17:56+0200\n"
 "PO-Revision-Date: 2003-05-19 15:46+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,30 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:206
 msgid "About XFce 4"
 msgstr "Sobre XFce 4"
 
-#: xfce4-about/info.c:221
+#: xfce4-about/info.c:219
 msgid "XFce Desktop Environment"
 msgstr "Entorn d'escriptori XFce"
 
-#: xfce4-about/info.c:222
+#: xfce4-about/info.c:220
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Copyright 2002-2003 by Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:239
 msgid "Info"
 msgstr "Informació"
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:240
 msgid "Credits"
 msgstr "Crèdits"
 
+#: xfce4-about/info.c:241
+msgid "Copyright"
+msgstr ""
+
+#: xfce4-about/info.c:242
+msgid "BSDL"
+msgstr ""
+
 #: xfce4-about/info.c:243
-msgid "License"
-msgstr "Llicència"
+msgid "LGPL"
+msgstr ""
+
+#: xfce4-about/info.c:244
+msgid "GPL"
+msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -122,32 +135,34 @@ msgstr "Mostra la safata del sitema a la batrra de tasques"
 msgid "Notification area"
 msgstr "Àrea de notificacions"
 
-#: xftaskbar/xftaskbar.c:118
+#: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
 msgstr "No es pot obtenir l'estil inicial"
 
-#: xftaskbar/xftaskbar.c:277
-msgid "This should not happen"
-msgstr "Això no hauria de succeir"
-
-#: xftaskbar/xftaskbar.c:366
-msgid "Cannot connect to session manager"
-msgstr "No es pot conectar al gestor de sessions"
-
-#: xftaskbar/xftaskbar.c:377
-msgid "Cannot get desktop margins"
-msgstr "No es pot obtenir els marges de l'escriptori"
-
-#: xftaskbar/xftaskbar.c:439
+#: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
 msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
 
-#: xftaskbar/xftaskbar.c:445
+#: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "No es por registrar la safata del sistema: %s"
 
-#: xftaskbar/xftaskbar.c:463
+#: xftaskbar/xftaskbar.c:317
+msgid "This should not happen"
+msgstr "Això no hauria de succeir"
+
+#: xftaskbar/xftaskbar.c:414
+msgid "Cannot connect to session manager"
+msgstr "No es pot conectar al gestor de sessions"
+
+#: xftaskbar/xftaskbar.c:425
+msgid "Cannot get desktop margins"
+msgstr "No es pot obtenir els marges de l'escriptori"
+
+#: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "No es pot crear el canal del client MCS"
 
+#~ msgid "License"
+#~ msgstr "Llicència"

@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfwm4 1.0.0\n"
-"POT-Creation-Date: 2003-05-05 08:37+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-01 17:56+0200\n"
 "PO-Revision-Date: 2003-05-21 02:24+0800\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
@@ -14,31 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:206
 msgid "About XFce 4"
 msgstr "Perihal XFce 4"
 
-#: xfce4-about/info.c:221
+#: xfce4-about/info.c:219
 msgid "XFce Desktop Environment"
 msgstr "Sekitaran Meja XFce"
 
-#: xfce4-about/info.c:222
+#: xfce4-about/info.c:220
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Hakcipta 2002-2003 oleh Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:239
 msgid "Info"
 msgstr "Info"
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:240
 msgid "Credits"
 msgstr "Kredit"
 
+#: xfce4-about/info.c:241
+msgid "Copyright"
+msgstr ""
+
+#: xfce4-about/info.c:242
+msgid "BSDL"
+msgstr ""
+
 #: xfce4-about/info.c:243
-msgid "License"
-msgstr "Lesen"
+msgid "LGPL"
+msgstr ""
+
+#: xfce4-about/info.c:244
+msgid "GPL"
+msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
@@ -123,31 +135,34 @@ msgstr "Lihat tray sistem dalam taskbar"
 msgid "Notification area"
 msgstr "Kawasan notifikasi"
 
-#: xftaskbar/xftaskbar.c:118
+#: xftaskbar/xftaskbar.c:119
 msgid "Cannot get initial style"
 msgstr "Tak boleh dapat stail pemula"
 
-#: xftaskbar/xftaskbar.c:277
-msgid "This should not happen"
-msgstr "Ini tidak sepatutnya berlaku"
-
-#: xftaskbar/xftaskbar.c:366
-msgid "Cannot connect to session manager"
-msgstr "Tak boleh sambung ke pengurus sessi"
-
-#: xftaskbar/xftaskbar.c:377
-msgid "Cannot get desktop margins"
-msgstr "Tak boleh dapat margin meja"
-
-#: xftaskbar/xftaskbar.c:439
+#: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
 msgstr "Tray sistem telah sedia ada berlari diatas skrin"
 
-#: xftaskbar/xftaskbar.c:445
+#: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Tak boleh daftar tray sistem: %s"
 
-#: xftaskbar/xftaskbar.c:463
+#: xftaskbar/xftaskbar.c:317
+msgid "This should not happen"
+msgstr "Ini tidak sepatutnya berlaku"
+
+#: xftaskbar/xftaskbar.c:414
+msgid "Cannot connect to session manager"
+msgstr "Tak boleh sambung ke pengurus sessi"
+
+#: xftaskbar/xftaskbar.c:425
+msgid "Cannot get desktop margins"
+msgstr "Tak boleh dapat margin meja"
+
+#: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "Tak boleh cipta saluran klien MCS"
+
+#~ msgid "License"
+#~ msgstr "Lesen"
