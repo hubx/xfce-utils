@@ -1,3 +1,63 @@
+2003-07-30 10:05  huysmans
+
+	* configure, configure.ac, po/ca.gmo, po/ca.po, po/de.gmo,
+	po/de.po, po/es.gmo, po/es.po, po/es_MX.gmo, po/es_MX.po,
+	po/fi.gmo, po/fi.po, po/fr.gmo, po/fr.po, po/hu.gmo, po/hu.po,
+	po/it.gmo, po/it.po, po/ja.gmo, po/ja.po, po/ms.gmo, po/ms.po,
+	po/nl.gmo, po/nl.po, po/pl.gmo, po/pl.po, po/ru.gmo, po/ru.po,
+	po/ta.gmo, po/ta.po, po/tr.gmo, po/tr.po, po/xfce-utils.pot,
+	po/zh_CN.gmo, po/zh_CN.po: Update version numbers and po files for
+	release
+
+2003-07-29 17:03  huysmans
+
+	* doc/: xfce-utils/C/xfce-utils.html, xfce-utils/C/xfce-utils.xml,
+	xfce4-user-guide/C/GPL.html, xfce4-user-guide/C/LGPL.html,
+	xfce4-user-guide/C/xfce4-install.html,
+	xfce4-user-guide/C/xfce4-intro.html,
+	xfce4-user-guide/C/xfce4-use.html,
+	xfce4-user-guide/C/xfce4-user-guide.html,
+	xfce4-user-guide/C/xfce4-user-guide.xml: Update documentation to
+	latest versions
+
+2003-07-29 14:22  huysmans
+
+	* doc/: xfce-utils/C/images/about-dialog.png,
+	xfce-utils/C/images/run-dialog.png,
+	xfce4-user-guide/C/images/default-session.png: Update all images to
+	new defaults
+
+2003-07-29 08:28  huysmans
+
+	* po/: ru.gmo, ru.po: Update russian translations
+
+2003-07-26 16:34  xfce
+
+	* xfrun/xfrun.c: Center "Run" dialog on screen instead using mouse
+	position
+
+2003-07-24 23:37  xfce
+
+	* xftaskbar/xftaskbar.c: Realize top level window early in time
+
+2003-07-24 08:26  huysmans
+
+	* po/: fi.gmo, fi.po: Update finnish translations
+
+2003-07-22 21:50  xfce
+
+	* xftaskbar/plugin/xftaskbar_plugin.c: Don't enable pager in
+	taskbar by default Enable systray by default
+
+2003-07-21 22:15  xfce
+
+	* scripts/xinitrc: Apply changes as suggested by Martti Kuparinen
+	<martti.kuparinen@iki.fi>
+
+2003-07-19 11:30  huysmans
+
+	* ChangeLog: Update ChangeLogs
+
 2003-07-19 10:59  huysmans
 
 	* configure, configure.ac, po/hu.gmo, po/hu.po, po/tr.gmo,
@@ -1219,25 +1279,10 @@
 
 	* xftaskbar/xftaskbar.c: Autohide the taskbar.
 
-2002-11-28 21:30  madkiss
-
-	* debian/: changelog, control, docs, menu, rules: 
-	Update to debian/-subdir included in xfce4_20021127-1.
-
 2002-11-23 18:40  xfce
 
 	* xftaskbar/xftaskbar.c: Update for libxfcegui4 new include base
 	dir.
-
-2002-11-10 11:05  madkiss
-
-	* debian/: changelog, control, copyright, docs, menu, rules:
-	Initial revision
-
-2002-11-10 11:05  madkiss
-
-	* debian/: changelog, control, copyright, docs, menu, rules: 
-	Added first official version of debian/ subdirectory
 
 2002-11-09 17:59  huysmans
 
