@@ -161,7 +161,7 @@ target_alias = @target_alias@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 
-SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about
+SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about po
 
 ACLOCAL_AMFLAGS = -I m4
 subdir = .

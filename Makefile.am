@@ -2,7 +2,7 @@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec.in TODO
 
-SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about
+SUBDIRS = doc xfrun xftaskbar scripts gdm xfce4-about po
 
 distclean-local:
 	rm -rf xfce-utils.spec *.cache *~
