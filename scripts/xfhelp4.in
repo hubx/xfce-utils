@@ -22,7 +22,7 @@
 
 if [ "x$BROWSER" = "x" ]
 then
-  for b in @BROWSER_DEFAULT@ firefox mozilla epiphany galeon konqueror
+  for b in @BROWSER_DEFAULT@ firefox epiphany galeon mozilla konqueror
   do
     if which "$b" > /dev/null 2>&1
     then

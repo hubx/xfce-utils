@@ -39,8 +39,8 @@ BM_LIBX11_REQUIRE
 dnl Check for default browser to use
 AC_MSG_CHECKING([what browser to use by default])
 AC_ARG_WITH([browser],
-AC_HELP_STRING([--with-browser=BROWSER], [What should be the default browser? (default=mozilla)]),
-  [], [with_browser=mozilla])
+AC_HELP_STRING([--with-browser=BROWSER], [What should be the default browser?]),
+  [], [with_browser=""])
 BROWSER_DEFAULT=$with_browser
 AC_SUBST([BROWSER_DEFAULT])
 AC_MSG_RESULT([$with_browser])
