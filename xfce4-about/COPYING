@@ -1,4 +1,4 @@
-XFce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different 
+Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different 
 components are copyrighted by their respective authors.
 
 The packages libxfce4util and xfprint are distributed under the terms of the 
@@ -9,8 +9,8 @@ distributed under the terms of the GNU Library General Public License as
 published by the Free Software Foundation; either version 2 of the License, or 
 (at your option) any later version.
 
-The packages xfce-mcs-plugins, xfce-utils, xfce4-panel, xfdesktop, xffm and 
-xfwm4 are distributed under the terms of the GNU General Public License as 
-published by the Free Software Foundation; either version 2 of the License, or 
-(at your option) any later version.
+The packages xfce-mcs-plugins, xfce-utils, xfce4-panel, xfce4-session,
+xfdesktop, xffm and xfwm4 are distributed under the terms of the GNU
+General Public License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
 

@@ -1,4 +1,4 @@
-XFCE 4 thuộc bản quyền Olivier Fourdan (fourdan@xfce.org). Các thành 
+Xfce 4 thuộc bản quyền Olivier Fourdan (fourdan@xfce.org). Các thành 
 phần khác thuộc bản quyền của các tác giả tương ứng.
 
 Các gói libxfce4util và xfprint được phân phối theo các điều khoản của giấy 
@@ -9,7 +9,8 @@ phân phối theo các điều khoản của giấy phép GNU Library General Pu
 License được công bố bởi Free Software Foundation; hoặc phiên bản 2 của 
 giấy phép này, hoặc (tuỳ bạn chọn lựa) bất cứ các phiên bản sau này.
 
-Các gói xfce-mcs-plugins, xfce-utils, xfce4-panel, xfdesktop, xffm và xfwm4 
-được phân phối theo các điều khoản của giấy phép GNU General Public 
-License được công bố bởi Free Software Foundation; hoặc phiên bản 2 của 
-giấy phép này, hoặc (tuỳ bạn chọn lựa) bất cứ các phiên bản sau này.
+Các gói xfce-mcs-plugins, xfce-utils, xfce4-panel, xfce4-session,
+xfdesktop, xffm và xfwm4 được phân phối theo các điều khoản của giấy
+phép GNU General Public License được công bố bởi Free Software Foundation;
+hoặc phiên bản 2 của giấy phép này, hoặc (tuỳ bạn chọn lựa) bất cứ các
+phiên bản sau này.
