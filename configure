@@ -1824,7 +1824,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE=xfce-utils
- VERSION=4.1.5
+ VERSION=4.1.90
 
 
 cat >>confdefs.h <<_ACEOF
