@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils 1.0.0\n"
+"POT-Creation-Date: 2003-04-25 00:00+0200\n"
+"PO-Revision-Date: 2003-04-25 19:30--200\n"
+"Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:181
+msgid "About XFce 4"
+msgstr "Tietoja XFce4:stä"
+
+#: xfce4-about/info.c:194
+msgid "XFce Desktop Environment"
+msgstr "XFce-työpöytäympäristö"
+
+#: xfce4-about/info.c:195
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Tekijänoikeus 2002-2003 Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:214
+msgid "Info"
+msgstr "Tietoja"
+
+#: xfce4-about/info.c:215
+msgid "Credits"
+msgstr "Kehittäjät"
+
+#: xfce4-about/info.c:216
+msgid "License"
+msgstr "Lisenssi"
+
+#: xfrun/xfrun.c:222
+msgid "Run program"
+msgstr "Suorita ohjelma"
+
+#: xfrun/xfrun.c:229
+msgid "_Run"
+msgstr "_Suorita"
+
+#: xfrun/xfrun.c:265
+msgid "Run in _terminal"
+msgstr "Suoritä päät_teessä"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:210
+#: xftaskbar/plugin/xftaskbar_plugin.c:217
+#: xftaskbar/plugin/xftaskbar_plugin.c:409
+msgid "Taskbar"
+msgstr "Tehtäväpalkki"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:239
+msgid "Top"
+msgstr "Yläosa"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:246
+msgid "Bottom"
+msgstr "Alaosa"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Position"
+msgstr "Paikka"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:263
+msgid "Auto hide taskbar"
+msgstr "Piilota "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:268
+msgid "Autohide"
+msgstr "Piilota automaattisesti"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:283
+msgid "Height :"
+msgstr "Korkeus:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:291
+msgid "<small><i>Small</i></small>"
+msgstr "<small><i>Pieni</i></small>"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:300
+msgid "<small><i>Large</i></small>"
+msgstr "<small><i>Suuri</i></small>"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:318
+msgid "Size"
+msgstr "Koko"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:332
+msgid "Show tasks from all workspaces"
+msgstr "Näytä kaikkien työpöytien ohjelmat"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:337
+msgid "Tasks"
+msgstr "Prosessit"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:347
+msgid "Show pager in taskbar"
+msgstr "Näytä työpöydän vaihtaja tehtäväpalkissa"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:352
+msgid "Pager"
+msgstr "työpöydän vaihtaja"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:362
+msgid "Show system tray in taskbar"
+msgstr "Näytä järjestelmälokero tehtäväpalkissa"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:367
+msgid "Notification area"
+msgstr "Muistutusalue"
+
+#: xftaskbar/xftaskbar.c:118
+msgid "Cannot get initial style"
+msgstr "Tyyliä ei ollut saatavilla"
+
+#: xftaskbar/xftaskbar.c:277
+msgid "This should not happen"
+msgstr "Tämän ei pitäisi tapahtua"
+
+#: xftaskbar/xftaskbar.c:360
+msgid "Cannot connect to session manager"
+msgstr "Istunnon hallintaan ei saatu yhteyttä"
+
+#: xftaskbar/xftaskbar.c:371
+msgid "Cannot get desktop margins"
+msgstr "Työpöydän marginaaleja ei saatavilla"
+
+#: xftaskbar/xftaskbar.c:454
+msgid "Cannot create MCS client channel"
+msgstr "Ei voi luoda MCS-asiakas kanavaa"
+
