@@ -100,6 +100,7 @@ replace_version (gchar *buffer)
     {
         const gchar *version = xfce_version_string ();
         gchar *complete_version;
+        gsize n = bp - buffer;
         
 #ifdef RELEASE_LABEL
         if (strlen (RELEASE_LABEL))
@@ -107,8 +108,6 @@ replace_version (gchar *buffer)
         else
 #endif
             complete_version = g_strdup (version);
-
-        gsize n = bp - buffer;
 
         dst = g_new (gchar, strlen (buffer) + strlen (complete_version) + 1);
         memcpy (dst, buffer, n);
