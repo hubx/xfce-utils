@@ -1,3 +1,34 @@
+2003-04-01  xfce
+
+	* xftaskbar/plugin/xftaskbar_plugin.c: Initialize early i18n in mcs
+	plugins Add Etria theme
+
+2003-03-30  huysmans
+
+	* doc/html/xfce-utils-about.html: Add new file
+
+2003-03-30  huysmans
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	depcomp, doc/Makefile.in, doc/html/Makefile.am,
+	doc/html/Makefile.in, doc/html/xfce-utils-run.html,
+	doc/html/xfce-utils-scripts.html, doc/html/xfce-utils-taskbar.html,
+	doc/html/xfce-utils.html, doc/html/xfce4-using.html,
+	doc/images/Makefile.in, doc/xml/Makefile.in,
+	doc/xml/xfce-utils.xml, doc/xml/xfce4.xml, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Small doc
+	update
+
+2003-03-27  xfce
+
+	* xftaskbar/xftaskbar.c: Prefer gdk_screen[width|height] instead of
+	XDisplay[Width|Height]
+
+2003-03-27  xfce
+
+	* ChangeLog: Update ChangeLog
+
 2003-03-25  huysmans
 
 	* xfce4-about/AUTHORS: Update credits
