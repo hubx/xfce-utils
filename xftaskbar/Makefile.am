@@ -4,6 +4,13 @@ bin_PROGRAMS =  xftaskbar4
 
 xftaskbar4_SOURCES = xftaskbar.c 
 
-xftaskbar4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ @MCS_CLIENT_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\"  -I..
-xftaskbar4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@ @MCS_CLIENT_LIBS@
+xftaskbar4_CFLAGS =							\
+	@LIBXFCEGUI4_CFLAGS@						\
+	@LIBXFCE4MCS_CLIENT_CFLAGS@					\
+	-DDATADIR=\"$(datadir)/xfce4\"					\
+	-DSYSCONFDIR=\"$(sysconfdir)/xfce4\"
+
+xftaskbar4_LDADD =							\
+	@LIBXFCEGUI4_LIBS@						\
+	@LIBXFCE4MCS_CLIENT_LIBS@
 

@@ -16,20 +16,21 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
-*/
+ */
 
+#ifdef HAVE
 #include <config.h>
-
-#if 0
-#include <my_gettext.h>
 #endif
 
-#define N_(x) x
-#define _(x) x
-
+#ifdef HAVE_MEMORY_H
+#include <memory.h>
+#endif
 #include <stdio.h>
+#ifdef HAVE_STRING_H
 #include <string.h>
+#endif
 
+#include <libxfce4util/i18n.h>
 #include <libxfcegui4/libxfcegui4.h>
 
 #include "xfce-logo-icon.h"
@@ -171,6 +172,7 @@ static void add_info_page(GtkNotebook * notebook)
 "   fast file manager\n"
 "\n"
 "o Utilities\n"
+"   xfprint4: print files\n"
 "   xfrun4: run programs\n"
 "   xftaskbar4: simple taskbar with optional pager\n"
 "\n\n"

@@ -25,14 +25,20 @@
 #undef GDK_MULTIHEAD_SAFE
 #endif
 
+#ifdef HAVE_STRING_H
 #include <string.h>
+#endif
+
 #include <gtk/gtk.h>
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
+
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
+
 #include <libxfcegui4/libxfcegui4.h>
 #include <libxfce4mcs/mcs-client.h>
+#include <libxfce4util/i18n.h>
 
 #define CHANNEL  "taskbar"
 #define HIDDEN_HEIGHT 5
@@ -44,6 +50,7 @@ static McsClient *client = NULL;
 static int mcs_initted = FALSE;
 
 typedef struct _Taskbar Taskbar;
+
 struct _Taskbar
 {
     guint x, y, width, height;
@@ -57,9 +64,13 @@ struct _Taskbar
     GtkWidget *hbox;
     GtkWidget *tasklist;
     GtkWidget *pager;
+
+    XfceSystemTray *tray;
+    GtkWidget *iconbox;
 };
 
-static GdkFilterReturn client_event_filter(GdkXEvent * xevent, GdkEvent * event, gpointer data)
+static GdkFilterReturn
+client_event_filter(GdkXEvent *xevent, GdkEvent *event, gpointer data)
 {
     if(mcs_client_process_event(client, (XEvent *) xevent))
         return GDK_FILTER_REMOVE;
@@ -67,7 +78,8 @@ static GdkFilterReturn client_event_filter(GdkXEvent * xevent, GdkEvent * event,
         return GDK_FILTER_CONTINUE;
 }
 
-static void watch_cb(Window window, Bool is_start, long mask, void *cb_data)
+static void
+watch_cb(Window window, Bool is_start, long mask, void *cb_data)
 {
     GdkWindow *gdkwin;
 
@@ -103,7 +115,7 @@ static gint taskbar_get_thickness(Taskbar *taskbar)
     {
 	return style->ythickness;
     }
-    g_warning("Cannot get initial style");
+    g_warning(_("Cannot get initial style"));
     return 2;
 }
 
@@ -249,7 +261,7 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
 
     if(g_ascii_strcasecmp(CHANNEL, channel_name))
     {
-        g_message("This should not happen");
+        g_message(_("This should not happen"));
         return;
     }
 
@@ -298,12 +310,25 @@ static void taskbar_destroy(GtkWidget * widget, gpointer data)
     g_free(data);
 }
 
+static void
+icon_docked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox)
+{
+	gtk_box_pack_start(iconbox, icon, FALSE, FALSE, 5);
+	gtk_widget_show(icon);
+}
+
+static void
+icon_undocked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox)
+{
+}
+
 int main(int argc, char **argv)
 {
     SessionClient *client_session;
     DesktopMargins margins;
     NetkScreen *screen;
     Taskbar *taskbar;
+    GError *error;
     
     gtk_init(&argc, &argv);
 
@@ -311,7 +336,7 @@ int main(int argc, char **argv)
 
     if(!session_init(client_session))
     {
-        g_message("Cannot connect to session manager");
+        g_message(_("Cannot connect to session manager"));
     }
 
     screen = netk_screen_get_default();
@@ -321,7 +346,7 @@ int main(int argc, char **argv)
 
     if(!netk_get_desktop_margins(DefaultScreenOfDisplay(GDK_DISPLAY()), &margins))
     {
-        g_message("Cannot get desktop margins");
+        g_message(_("Cannot get desktop margins"));
     }
     taskbar = g_new(Taskbar, 1);
     taskbar->x = margins.left;
@@ -365,22 +390,41 @@ int main(int argc, char **argv)
     taskbar->pager = netk_pager_new(screen);
     netk_pager_set_orientation(NETK_PAGER(taskbar->pager), GTK_ORIENTATION_HORIZONTAL);
     netk_pager_set_n_rows(NETK_PAGER(taskbar->pager), 1);
-    gtk_box_pack_end (GTK_BOX (taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
 
+    taskbar->iconbox = gtk_hbox_new(TRUE, 5);
+    gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, FALSE, FALSE,
+		    0);
+
+    taskbar->tray = xfce_system_tray_new();
+
+    g_signal_connect(taskbar->tray, "icon_docked",
+		    G_CALLBACK(icon_docked), taskbar->iconbox);
+    g_signal_connect(taskbar->tray, "icon_undocked",
+		    G_CALLBACK(icon_undocked), taskbar->iconbox);
+
+    if (!xfce_system_tray_register(taskbar->tray, gdk_screen_get_default(),
+			    &error)) {
+	    xfce_err("Unable to register system tray: %s", error->message);
+	    g_error_free(error);
+    }
+
+    gtk_widget_show (taskbar->iconbox);
     gtk_widget_show (taskbar->tasklist);
     gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
     taskbar_change_size(taskbar, DEFAULT_HEIGHT);
     taskbar_position(taskbar);
 
-    client = mcs_client_new(GDK_DISPLAY(), XDefaultScreen(GDK_DISPLAY()), notify_cb, watch_cb, taskbar);
+    client = mcs_client_new(GDK_DISPLAY(), XDefaultScreen(GDK_DISPLAY()),
+		    notify_cb, watch_cb, taskbar);
     if(client)
     {
         mcs_client_add_channel(client, CHANNEL);
     }
     else
     {
-        g_warning("Cannot create MCS client channel");
+        g_warning(_("Cannot create MCS client channel"));
     }
 
     gtk_main();

@@ -2,6 +2,11 @@ bin_PROGRAMS =  xfrun4
 
 xfrun4_SOURCES = xfrun.c 
 
-xfrun4_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\" -I..
-xfrun4_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+xfrun4_CFLAGS =								\
+	@LIBXFCEGUI4_CFLAGS@						\
+	-DDATADIR=\"$(datadir)/xfce4\"					\
+	-DSYSCONFDIR=\"$(sysconfdir)/xfce4\"
+
+xfrun4_LDADD =								\
+	@LIBXFCEGUI4_LIBS@
 

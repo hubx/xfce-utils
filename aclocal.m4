@@ -11,6 +11,32 @@
 # even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.
 
+# Like AC_CONFIG_HEADER, but automatically create stamp file. -*- Autoconf -*-
+
+# Copyright 1996, 1997, 2000, 2001 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+AC_PREREQ([2.52])
+
+# serial 6
+
+# AM_CONFIG_HEADER is obsolete.  It has been replaced by AC_CONFIG_HEADERS.
+AU_DEFUN([AM_CONFIG_HEADER], [AC_CONFIG_HEADERS($@)])
+
 # Do all the work for Automake.                            -*- Autoconf -*-
 
 # This macro actually does too much some checks are only needed if
@@ -863,32 +889,6 @@ AC_DEFUN([AM_MAINTAINER_MODE],
 
 AU_DEFUN([jm_MAINTAINER_MODE], [AM_MAINTAINER_MODE])
 
-# Like AC_CONFIG_HEADER, but automatically create stamp file. -*- Autoconf -*-
-
-# Copyright 1996, 1997, 2000, 2001 Free Software Foundation, Inc.
-
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2, or (at your option)
-# any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-# 02111-1307, USA.
-
-AC_PREREQ([2.52])
-
-# serial 6
-
-# AM_CONFIG_HEADER is obsolete.  It has been replaced by AC_CONFIG_HEADERS.
-AU_DEFUN([AM_CONFIG_HEADER], [AC_CONFIG_HEADERS($@)])
-
 
 # serial 46 AC_PROG_LIBTOOL
 AC_DEFUN([AC_PROG_LIBTOOL],
@@ -1721,6 +1721,163 @@ AC_DEFUN([LT_AC_PROG_GCJ],
   AC_SUBST(GCJFLAGS)
 ])
 
+dnl From Benedikt Meurer (benedikt.meurer@unix-ag.uni-siegen.de)
+dnl Check for X11
+
+AC_DEFUN([BM_LIBX11],
+[
+  AC_REQUIRE([AC_PATH_XTRA])
+  LIBX11_CFLAGS= LIBX11_LDFLAGS= LIBX11_LIBS=
+  if test "$no_x" != "yes"; then
+    AC_CHECK_LIB(X11, main,
+    [
+      AC_DEFINE(HAVE_LIBX11, 1, Define if libX11 is available)
+      LIBX11_CFLAGS="$X_CFLAGS"
+      for option in $X_PRE_LIBS $X_EXTRA_LIBS $X_LIBS; do
+      	case "$option" in
+        -L*)
+          path=`echo $option | sed 's/^-L//'`
+          if test x"$path" != x""; then
+            LIBX11_LDFLAGS="$LIBX11_LDFLAGS -L$path"
+          fi
+          ;;
+        *)
+          LIBX11_LIBS="$LIBX11_LIBS $option"
+          ;;
+        esac
+      done
+      if ! echo $LIBX11_LIBS | grep -q -- '-lX11'; then
+        LIBX11_LIBS="$LIBX11_LIBS -lX11"
+      fi
+    ], [], [$X_CFLAGS $X_PRE_LIBS $X_EXTRA_LIBS $X_LIBS])
+  fi
+  AC_SUBST(LIBX11_CFLAGS)
+  AC_SUBST(LIBX11_LDFLAGS)
+  AC_SUBST(LIBX11_LIBS)
+])
+
+AC_DEFUN([BM_LIBX11_REQUIRE],
+[
+  AC_REQUIRE([BM_LIBX11])
+  if test "$no_x" = "yes"; then
+    AC_MSG_ERROR([X Window system libraries and header files are required])
+  fi
+])
+
+AC_DEFUN([BM_LIBSM],
+[
+  AC_REQUIRE([BM_LIBX11])
+  LIBSM_CFLAGS= LIBSM_LDFLAGS= LIBSM_LIBS=
+  if test "$no_x" != "yes"; then
+    AC_CHECK_LIB(SM, SmcSaveYourselfDone,
+    [
+      AC_DEFINE(HAVE_LIBSM, 1, Define if libSM is available)
+      LIBSM_CFLAGS="$LIBX11_CFLAGS"
+      LIBSM_LDFLAGS="$LIBX11_LDFLAGS"
+      LIBSM_LIBS="$LIBX11_LIBS"
+      if ! echo $LIBSM_LIBS | grep -q -- '-lSM'; then
+        LIBSM_LIBS="$LIBSM_LIBS -lSM -lICE"
+      fi
+    ], [], [$LIBX11_CFLAGS $LIBX11_LDFLAGS $LIBX11_LIBS -lICE])
+  fi
+  AC_SUBST(LIBSM_CFLAGS)
+  AC_SUBST(LIBSM_LDFLAGS)
+  AC_SUBST(LIBSM_LIBS)
+])
+
+AC_DEFUN([BM_LIBXPM],
+[
+  AC_REQUIRE([BM_LIBX11])
+  LIBXPM_CFLAGS= LIBXPM_LDFLAGS= LIBXPM_LIBS=
+  if test "$no_x" != "yes"; then
+    AC_CHECK_LIB(Xpm, main,
+    [
+      AC_DEFINE([HAVE_LIBXPM], [1], [Define if libXpm is available])
+      LIBXPM_CFLAGS="$LIBX11_CFLAGS"
+      LIBXPM_LDFLAGS="$LIBX11_LDFLAGS"
+      LIBXPM_LIBS="$LIBX11_LIBS"
+      if ! echo $LIBXPM_LIBS | grep -q -- '-lXpm'; then
+        LIBXPM_LIBS="$LIBXPM_LIBS -lXpm"
+      fi
+    ], [], [$LIBX11_CFLAGS $LIBX11_LDFLAGS $LIBX11_LIBS -lXpm])
+  fi
+  AC_SUBST([LIBXPM_CFLAGS])
+  AC_SUBST([LIBXPM_LDFLAGS])
+  AC_SUBST([LIBXPM_LIBS])
+])
+
+AC_DEFUN([BM_LIBXPM_REQUIRE],
+[
+  AC_REQUIRE([BM_LIBX11_REQUIRE])
+  AC_REQUIRE([BM_LIBXPM])
+  if test -z "$LIBXPM_LIBS"; then
+    AC_MSG_ERROR([The Xpm library was not found on you system])
+  fi
+])
+
+AC_DEFUN([BM_LIBXINERAMA],
+[
+  AC_ARG_ENABLE(xinerama,
+AC_HELP_STRING([--enable-xinerama], [enable xinerama extension])
+AC_HELP_STRING([--disable-xinerama], [disable xinerama extension [default]]),
+      [], [enable_xinerama=no])
+  LIBXINERAMA_CFLAGS= LIBXINERAMA_LDFLAGS= LIBXINERAMA_LIBS=
+  if test "x$enable_xinerama" = "xyes"; then
+    AC_REQUIRE([BM_LIBX11_REQUIRE])
+    AC_CHECK_LIB(Xinerama, XineramaQueryScreens,
+    [
+      AC_DEFINE(HAVE_LIBXINERAMA, 1, Define if XFree86 Xinerama is available)
+      LIBXINERAMA_CFLAGS="$LIBX11_CFLAGS"
+      LIBXINERAMA_LDFLAGS="$LIBX11_LDFLAGS"
+      LIBXINERAMA_LIBS="$LIBX11_LIBS"
+      if ! echo $LIBXINERAMA_LIBS | grep -q -- '-lXinerama'; then
+        LIBXINERAMA_LIBS="$LIBXINERAMA_LIBS -lXinerama"
+      fi
+      if ! echo $LIBXINERAMA_LIBS | grep -q -- '-lXext'; then
+        LIBXINERAMA_LIBS="$LIBXINERAMA_LIBS -lXext"
+      fi
+    ],[], [$LIBX11_CFLAGS $LIBX11_LDFLAGS $LIBX11_LIBS -lXext])
+  fi
+  AC_SUBST(LIBXINERAMA_CFLAGS)
+  AC_SUBST(LIBXINERAMA_LDFLAGS)
+  AC_SUBST(LIBXINERAMA_LIBS)
+])
+
+
+dnl From Benedikt Meurer (benedikt.meurer@unix-ag.uni-siegen.de)
+dnl
+dnl
+
+AC_DEFUN([BM_DEPEND],
+[
+  PKG_CHECK_MODULES([$1], [$2 >= $3])
+  $1_REQUIRED_VERSION=$3
+  AC_SUBST($1_REQUIRED_VERSION)
+])
+
+dnl
+dnl BM_DEPEND_CHECK(var, pkg, version, name, helpstring)
+dnl
+AC_DEFUN([BM_DEPEND_CHECK],
+[
+  AC_ARG_ENABLE([$4-check],
+AC_HELP_STRING([--enable-$4-check], [Enable checking for $5 (default)])
+AC_HELP_STRING([--disable-$4-check], [Disable checking for $5]),
+    [ac_cv_$1_check=$enableval], [ac_cv_$1_check=yes])
+
+  if test x"$ac_cv_$1_check" = x"yes"; then
+    AC_MSG_CHECKING([for $2 >= $3])
+    if $PKG_CONFIG --atleast-version=$3 $2 2> /dev/null; then
+      AC_MSG_RESULT([yes])
+      BM_DEPEND([$1], [$2], [$3])
+      AC_DEFINE([HAVE_$1], [1], [Define if you have $2 >= $3])
+    else
+      AC_MSG_RESULT([no])
+    fi
+  fi
+])
+
+
 
 dnl PKG_CHECK_MODULES(GSTUFF, gtk+-2.0 >= 1.3 glib = 1.3.4, action-if, action-not)
 dnl defines GSTUFF_LIBS, GSTUFF_CFLAGS, see pkg-config man page
@@ -1778,4 +1935,64 @@ AC_DEFUN(PKG_CHECK_MODULES, [
 ])
 
 
+
+dnl From Benedikt Meurer (benedikt.meurer@unix-ag.uni-siegen.de)
+dnl
+dnl if debug support is requested:
+dnl
+dnl   1) defines DEBUG to 1
+dnl   2) adds requested debug level flags to CFLAGS
+dnl
+
+AC_DEFUN([BM_DEBUG_SUPPORT],
+[
+  AC_ARG_ENABLE([debug],
+AC_HELP_STRING([--enable-debug[=yes|no|full]], [Build with debugging support])
+AC_HELP_STRING([--disable-debug], [Include no debugging support [default]]),
+    [], [enable_debug=no])
+
+  AC_MSG_CHECKING([whether to build with debugging support])
+  if test x"$enable_debug" != x"no"; then
+    AC_DEFINE(DEBUG, 1, Define for debugging support)
+    if test x"$ac_cv_debug" = x"full"; then
+      AC_DEFINE(DEBUG_TRACE, 1, Define for tracing support)
+      CFLAGS="$CFLAGS -g3 -Wall -Werror -DG_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED"
+      AC_MSG_RESULT([full])
+    else
+      CFLAGS="$CFLAGS -g -Wall -DG_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED"
+      AC_MSG_RESULT([yes])
+    fi
+  else
+    AC_MSG_RESULT([no])
+  fi
+
+  AC_ARG_ENABLE([profiling],
+AC_HELP_STRING([--enable-profiling],
+    [Generate extra code to write profile information])
+AC_HELP_STRING([--disable-profiling],
+    [No extra code for profiling (default)]),
+    [], [enable_profiling=no])
+
+  AC_MSG_CHECKING([whether to build with profiling support])
+  if test x"$enable_profiling" != x"no"; then
+    CFLAGS="$CFLAGS -pg"
+    AC_MSG_RESULT([yes])
+  else
+    AC_MSG_RESULT([no])
+  fi
+
+  AC_ARG_ENABLE([asserts],
+AC_HELP_STRING([--enable-asserts], [Enable assert statements (default)])
+AC_HELP_STRING([--disable-asserts],
+    [Disable assert statements (USE WITH CARE!!!)]),
+    [], [enable_asserts=yes])
+
+  AC_MSG_CHECKING([whether to enable assert statements])
+  if test x"$enable_asserts" != x"yes"; then
+    CFLAGS="$CFLAGS -DG_DISABLE_ASSERT -DG_DISABLE_CHECKS"
+    AC_MSG_RESULT([no])
+  else
+    AC_MSG_RESULT([yes])
+  fi
+])
 

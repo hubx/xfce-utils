@@ -6,6 +6,8 @@ test -z "$srcdir" && srcdir=.
 
 DIE=0
 
+ACLOCAL_FLAGS="-I m4 $ACLOCAL_FLAGS"
+
 (test -f $srcdir/configure.ac) || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
     echo " top-level package directory"
@@ -136,8 +138,8 @@ do
 	echo "Running autoheader..."
 	autoheader
       fi
-      echo "Running automake --gnu $am_opt ..."
-      automake --add-missing --gnu  --force --copy $am_opt
+      echo "Running automake --foreign $am_opt ..."
+      automake --add-missing --foreign  --force --copy $am_opt
       echo "Running autoconf ..."
       autoconf
     )
