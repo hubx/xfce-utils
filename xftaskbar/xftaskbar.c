@@ -223,9 +223,10 @@ register_tray(Taskbar *taskbar)
     return TRUE;
 }
 
-static void taskbar_toggle_tray(Taskbar *taskbar)
+/* called from an idle loop, so return FALSE to end loop */
+static gboolean taskbar_toggle_tray(Taskbar *taskbar)
 {
-    g_return_if_fail (taskbar != NULL);
+    g_return_val_if_fail (taskbar != NULL, FALSE);
     
     if (taskbar->show_tray)
     {
@@ -253,6 +254,8 @@ static void taskbar_toggle_tray(Taskbar *taskbar)
 	    taskbar->iconbox = NULL;
 	}
     }
+
+    return FALSE;
 }
 
 static void taskbar_change_size(Taskbar *taskbar, int height)
@@ -411,7 +414,7 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                 else if(!strcmp(name, "Taskbar/ShowTray"))
                 {
                     taskbar->show_tray = setting->data.v_int ? TRUE : FALSE;
-                    taskbar_toggle_tray(taskbar);
+                    g_idle_add((GSourceFunc)taskbar_toggle_tray,(taskbar));
                 }
                 else if(!strcmp(name, "Taskbar/ShowAllTasks"))
                 {
@@ -542,7 +545,9 @@ int main(int argc, char **argv)
     gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->pager, FALSE, FALSE, 0);
 
     taskbar->tray = xfce_system_tray_new();
-    taskbar_toggle_tray(taskbar);
+    
+/*    will get called when connecting to the mcs client 
+ *    taskbar_toggle_tray(taskbar);*/
 
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar);
@@ -562,6 +567,7 @@ int main(int argc, char **argv)
     else
     {
         g_warning(_("Cannot create MCS client channel"));
+	taskbar_toggle_tray(taskbar);
     }
 
     gtk_main();
