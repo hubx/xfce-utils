@@ -10,6 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2004-09-20 08:27+0200\n"
 "PO-Revision-Date: 2004-03-21 12:32+0100\n"
 "Last-Translator: Alex Dupre <ale@FreeBSD.org>\n"
+"Last-Translator: Luca Marrocco <buildup@libero.it>\n"
 "Language-Team: GUFI <traduzioni@gufi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,7 +63,7 @@ msgstr "xfrun4: Impossibile scrivere l'history nel file %s\n"
 #: xfrun/xfrun.c:391
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Con quale progamma %s va aperto ?"
 
 #: xfrun/xfrun.c:392
 msgid "Run program"
