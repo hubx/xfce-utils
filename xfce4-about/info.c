@@ -166,68 +166,70 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
     }
 #endif
 
-    g_file_get_contents (path, &buf, &n, &err);
-    buf = replace_version (buf);
-    g_free (path);
+    if (g_file_get_contents (path, &buf, &n, &err))
+    {
+        buf = replace_version (buf);
+        g_free (path);
+    }
 
     if (err != NULL)
     {
-	xfce_err ("%s", err->message);
-	g_error_free (err);
+        xfce_err ("%s", err->message);
+        g_error_free (err);
     }
     else
     {
-	view = gtk_frame_new (NULL);
-	gtk_container_set_border_width (GTK_CONTAINER (view), BORDER);
-	gtk_frame_set_shadow_type (GTK_FRAME (view), GTK_SHADOW_IN);
-	gtk_widget_show (view);
+        view = gtk_frame_new (NULL);
+        gtk_container_set_border_width (GTK_CONTAINER (view), BORDER);
+        gtk_frame_set_shadow_type (GTK_FRAME (view), GTK_SHADOW_IN);
+        gtk_widget_show (view);
 
-	sw = gtk_scrolled_window_new (NULL, NULL);
-	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
-					hscrolling ? GTK_POLICY_AUTOMATIC :
-					GTK_POLICY_NEVER,
-					GTK_POLICY_AUTOMATIC);
-	gtk_widget_show (sw);
-	gtk_container_add (GTK_CONTAINER (view), sw);
+        sw = gtk_scrolled_window_new (NULL, NULL);
+        gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
+                hscrolling ? GTK_POLICY_AUTOMATIC :
+                GTK_POLICY_NEVER,
+                GTK_POLICY_AUTOMATIC);
+        gtk_widget_show (sw);
+        gtk_container_add (GTK_CONTAINER (view), sw);
 
 #ifdef HAVE_LIBGTKHTML
-	if (usehtml)
-	{
-	    htmldoc = html_document_new ();
-	    html_document_open_stream (htmldoc, "text/html");
-	    html_document_write_stream (htmldoc, buf, strlen (buf));
-	    html_document_close_stream (htmldoc);
+        if (usehtml)
+        {
+            htmldoc = html_document_new ();
+            html_document_open_stream (htmldoc, "text/html");
+            html_document_write_stream (htmldoc, buf, strlen (buf));
+            html_document_close_stream (htmldoc);
 
-	    textview = html_view_new ();
-	    html_view_set_document (HTML_VIEW (textview), htmldoc);
+            textview = html_view_new ();
+            html_view_set_document (HTML_VIEW (textview), htmldoc);
 
-	    /* connect callbacks */
-	    g_signal_connect (G_OBJECT (htmldoc), "link_clicked",
-			      G_CALLBACK (link_clicked), NULL);
+            /* connect callbacks */
+            g_signal_connect (G_OBJECT (htmldoc), "link_clicked",
+                  G_CALLBACK (link_clicked), NULL);
 
-	    /* resize window */
-	    gtk_window_set_default_size (GTK_WINDOW (info), 615, 530);
-	}
-	else
-	{
+            /* resize window */
+            gtk_window_set_default_size (GTK_WINDOW (info), 615, 530);
+        }
+        else
+        {
 #endif
-	    textbuffer = gtk_text_buffer_new (NULL);
-	    gtk_text_buffer_set_text (textbuffer, buf, strlen (buf));
+            textbuffer = gtk_text_buffer_new (NULL);
+            gtk_text_buffer_set_text (textbuffer, buf, strlen (buf));
 
-	    textview = gtk_text_view_new_with_buffer (textbuffer);
-	    gtk_text_view_set_editable (GTK_TEXT_VIEW (textview), FALSE);
-	    gtk_text_view_set_left_margin (GTK_TEXT_VIEW (textview), BORDER);
-	    gtk_text_view_set_right_margin (GTK_TEXT_VIEW (textview), BORDER);
+            textview = gtk_text_view_new_with_buffer (textbuffer);
+            gtk_text_view_set_editable (GTK_TEXT_VIEW (textview), FALSE);
+            gtk_text_view_set_left_margin (GTK_TEXT_VIEW (textview), BORDER);
+            gtk_text_view_set_right_margin (GTK_TEXT_VIEW (textview), BORDER);
 #ifdef HAVE_LIBGTKHTML
-	}
+        }
 #endif
 
-	gtk_widget_show (textview);
-	gtk_container_add (GTK_CONTAINER (sw), textview);
+        gtk_widget_show (textview);
+        gtk_container_add (GTK_CONTAINER (sw), textview);
 
-	gtk_notebook_append_page (notebook, view, label);
+        gtk_notebook_append_page (notebook, view, label);
 
-	g_free (buf);
+        g_free (buf);
     }
 }
 
@@ -295,8 +297,7 @@ main (int argc, char **argv)
 
     info_help_button = gtk_button_new_from_stock (GTK_STOCK_HELP);
     gtk_widget_show (info_help_button);
-    gtk_box_pack_start (GTK_BOX (buttonbox), info_help_button, FALSE, FALSE,
-			0);
+    gtk_box_pack_start (GTK_BOX (buttonbox), info_help_button, FALSE, FALSE, 0);
 
     info_ok_button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
     gtk_widget_show (info_ok_button);
