@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "POT-Creation-Date: 2003-05-05 08:37+0200\n"
-"PO-Revision-Date: 2003-05-21 21:07+0300\n"
+"PO-Revision-Date: 2003-05-28 16:18+0300\n"
 "Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
 "Language-Team: Turkish <>\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +79,7 @@ msgstr "Görev çubuğunu Oto. gizle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:264
 msgid "Autohide"
-msgstr "Oto. gizle"
+msgstr "Otomatik gizle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Height :"
@@ -131,7 +131,7 @@ msgstr "Bu gerçekleşmeyecek"
 
 #: xftaskbar/xftaskbar.c:366
 msgid "Cannot connect to session manager"
-msgstr ":Oturum yöneticisine ulaşılamıyor"
+msgstr "Oturum yöneticisine ulaşılamıyor"
 
 #: xftaskbar/xftaskbar.c:377
 msgid "Cannot get desktop margins"
