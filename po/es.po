@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2003-09-22 21:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jaime Buffery <nestu@onlylinux.homelinux.net>\n"
+"PO-Revision-Date: 2004-01-13 00:00+0100\n"
+"Last-Translator: Jaime Buffery <nestu@lunar-linux.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -90,11 +90,11 @@ msgstr "Abajo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
-msgstr "Autoesconder"
+msgstr "Esconder automáticamente"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
-msgstr "Auto esconder la barra de tareas"
+msgstr "Esconder automáticamente la barra de tareas"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
@@ -138,20 +138,20 @@ msgstr "Mostrar la bandeja de iconos en la barra de tareas"
 
 #: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
-msgstr "No se puede obtener estilo inicial"
+msgstr "No se puede obtener el estilo inicial"
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr "Ya hay una bandeja de íconos funcionando en esta pantalla"
+msgstr "Ya hay una bandeja de iconos funcionando en esta pantalla"
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Imposible registrar la bandeja de iconos: %s"
+msgstr "Es imposible registrar la bandeja de iconos: %s"
 
 #: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
-msgstr "Esto no debe ocurrir"
+msgstr "Esto no debiera ocurrir"
 
 #: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
