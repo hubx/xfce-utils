@@ -694,6 +694,8 @@ static void run_dialog(McsPlugin * mcs_plugin)
 
     is_running = TRUE;
 
+    xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+
     dialog = create_xftaskbar_dialog(mcs_plugin);
     setup_dialog(dialog);
 }
