@@ -29,7 +29,6 @@ AC_C_INLINE
 
 dnl Check for standard header files
 AC_HEADER_STDC
-
 dnl Check for X11 installed
 BM_LIBX11_REQUIRE
 
@@ -78,6 +77,12 @@ XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.0.0])
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
   [gtkhtml], [GTK+ HTML library], [no])
+
+dnl Check for dbh installed
+BM_DEPEND_CHECK([LIBDBH], [dbh-1.0], [1.0],
+  [dbh], [DBH library], [yes])
+
+
 
 dnl Check for debugging support
 BM_DEBUG_SUPPORT

@@ -80,6 +80,9 @@ INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 INSTOBJEXT = @INSTOBJEXT@
 INTLLIBS = @INTLLIBS@
 LDFLAGS = @LDFLAGS@
+LIBDBH_CFLAGS = @LIBDBH_CFLAGS@
+LIBDBH_LIBS = @LIBDBH_LIBS@
+LIBDBH_REQUIRED_VERSION = @LIBDBH_REQUIRED_VERSION@
 LIBGTKHTML_CFLAGS = @LIBGTKHTML_CFLAGS@
 LIBGTKHTML_LIBS = @LIBGTKHTML_LIBS@
 LIBGTKHTML_REQUIRED_VERSION = @LIBGTKHTML_REQUIRED_VERSION@
@@ -175,17 +178,20 @@ sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 bin_PROGRAMS = xfrun4
 
-xfrun4_SOURCES = xfrun.c 
+xfrun4_SOURCES = xfrun.c xfcombo.i
 
 xfrun4_CFLAGS = \
 	@LIBXFCEGUI4_CFLAGS@						\
+	@LIBDBH_CFLAGS@							\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"				\
+	-DLIBDIR=\"$(libdir)\"						\
 	-DDATADIR=\"$(datadir)/xfce4\"					\
 	-DSYSCONFDIR=\"$(sysconfdir)/xfce4\"
 
 
 xfrun4_LDADD = \
-	@LIBXFCEGUI4_LIBS@
+	@LIBXFCEGUI4_LIBS@						\
+	@LIBDBH_LIBS@
 
 subdir = xfrun
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4

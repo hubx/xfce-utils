@@ -2,6 +2,7 @@
  *  Copyright (C) 2000, 2002 Olivier Fourdan (fourdan@xfce.org)
  *  Copyright (C) 2002 Jasper Huijsmans (huysmans@users.sourceforge.net)
  *  Copyright (C) 2003 Eduard Roccatello (master@spine-group.org)
+ *  Copyright (C) 2003 Edscott Wilson Garcia <edscott@users.sourceforge.net>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -36,6 +37,7 @@
 #include <libxfce4util/util.h>
 #include <libxfcegui4/dialogs.h>
 
+
 #ifndef PATH_MAX
 #define DEFAULT_LENGTH 1024
 #else
@@ -63,6 +65,11 @@ GCompletion *complete;
 GList *history = NULL;
 gint nComplete;
 char *fileman = NULL;
+gboolean use_xfc_combo=FALSE;
+
+#ifdef HAVE_LIBDBH
+#include "xfcombo.i"
+#endif
 
 gboolean run_completion (GtkWidget *widget,
                          GdkEventKey *event,
@@ -71,6 +78,8 @@ gboolean run_completion (GtkWidget *widget,
 gboolean tabFocusStop   (GtkWidget *widget,
                          GdkEventKey *event,
                          gpointer user_data);
+
+
 gboolean
 run_completion (GtkWidget *widget,
                 GdkEventKey *event,
@@ -279,6 +288,47 @@ static void free_hitem(XFCommand *hitem)
     g_free(hitem);
 }
 
+void runit(GtkEntry * entry, gpointer user_data){
+    const gchar *command;
+    gboolean in_terminal;
+
+    command = gtk_entry_get_text(entry);
+
+    in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(
+                        checkbox));
+
+    if (do_run(command, in_terminal)) {
+	        if (!use_xfc_combo) put_history(command, in_terminal, history);
+#ifdef HAVE_LIBDBH
+		else if (use_xfc_combo) {
+		    gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
+      		    XFC_save_to_history(f,(char *)command);
+      		    save_flags((char *)command,in_terminal,FALSE);
+		    g_free(f);
+		}
+#endif
+    }
+}
+
+#ifdef HAVE_LIBDBH
+void alt_runit(GtkEntry * entry, gpointer user_data){
+    const gchar *command;
+    gboolean in_terminal;
+    command = gtk_entry_get_text(entry);
+
+    in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(
+                        checkbox));
+
+    if (do_run(command, in_terminal)) {
+	    gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
+	    XFC_save_to_history(f,(char *)command);
+	    save_flags((char *)command,in_terminal,FALSE);
+	    g_free(f);
+	    gtk_dialog_response (GTK_DIALOG(dialog),GTK_RESPONSE_NONE);
+    }
+}
+#endif
+
 int main(int argc, char **argv)
 {
     GtkWidget *button;
@@ -333,20 +383,12 @@ int main(int argc, char **argv)
 
     combo = gtk_combo_new();
     gtk_combo_set_case_sensitive(GTK_COMBO(combo), TRUE);
+
+#ifdef HAVE_LIBDBH
+    if ((xfc_fun=load_xfc()) != NULL) use_xfc_combo=TRUE;  
+#endif
     
-    for (hitem = history, hstrings = NULL; hitem != NULL; hitem = hitem->next) {
-	    current = hitem->data;
-	    hstrings = g_list_append(hstrings,current->command);
-    }
-
-    if (hstrings != NULL) {
-        gtk_combo_set_popdown_strings(GTK_COMBO(combo), hstrings);
-        g_completion_add_items(complete, hstrings);
-        g_list_free(hstrings);
-    }
-
     gtk_box_pack_start(GTK_BOX(vbox), combo, TRUE, TRUE, 0);
-    gtk_widget_show(combo);
 		     
     combo_entry = GTK_COMBO(combo)->entry;
     combo_list = GTK_COMBO(combo)->list;
@@ -354,26 +396,55 @@ int main(int argc, char **argv)
     g_object_set(G_OBJECT(combo_entry), "activates-default", FALSE, NULL);
 
     checkbox = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
+    gtk_box_pack_start(GTK_BOX(vbox), checkbox, TRUE, TRUE, 0);
     
-    if (history != NULL && (current = history->data) != NULL) {
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbox),
-				    current->in_terminal);
+    for (hitem = history, hstrings = NULL; hitem != NULL; hitem = hitem->next) {
+	    current = hitem->data;
+	    hstrings = g_list_append(hstrings,current->command);
     }
 
-	gtk_box_pack_start(GTK_BOX(vbox), checkbox, TRUE, TRUE, 0);
-	gtk_widget_show(checkbox);
+    if (use_xfc_combo) {
+#ifndef HAVE_LIBDBH
+	    g_assert_not_reached();
+#else
+	    combo_info = XFC_init_combo((GtkCombo *)combo);
+	    combo_info->activate_func = alt_runit;
+    	    xfc_fun->extra_key_completion = extra_key_completion;
+	    xfc_fun->extra_key_data = (gpointer)combo_entry;
+	    combo_info->entry = (GtkEntry *)combo_entry;
+	    /*combo_info->activate_user_data=(gpointer)combo_info;*/
+	    
+	    set_run_combo(combo_info);
+	    
+#endif
+    } 
+    else { 
+      if (hstrings != NULL) {
+        gtk_combo_set_popdown_strings(GTK_COMBO(combo), hstrings);
+        g_completion_add_items(complete, hstrings);
+        g_list_free(hstrings);
+      }
 
-    gtk_editable_select_region(GTK_EDITABLE(combo_entry), 0, -1);
-    gtk_widget_grab_focus(combo_entry);
+      if (history != NULL && (current = history->data) != NULL) {
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbox),
+				    current->in_terminal);
+      }
 
-    g_signal_connect(G_OBJECT(combo_list), "select_child",
+      g_signal_connect(G_OBJECT(combo_list), "select_child",
             G_CALLBACK(set_history_checkbox), NULL);
 
-    g_signal_connect(GTK_WIDGET(combo_entry), "key-press-event",
+      g_signal_connect(GTK_WIDGET(combo_entry), "key-press-event",
             G_CALLBACK(run_completion), NULL);
 
-    g_signal_connect_after(GTK_WIDGET(combo_entry), "key-press-event",
+      g_signal_connect_after(GTK_WIDGET(combo_entry), "key-press-event",
             G_CALLBACK(tabFocusStop), NULL);
+    }
+    
+    gtk_editable_select_region(GTK_EDITABLE(combo_entry), 0, -1);
+    gtk_widget_grab_focus(combo_entry);
+    
+    gtk_widget_show(checkbox);
+    gtk_widget_show(combo);
 
     while (1) {
 	    int response;
@@ -381,31 +452,28 @@ int main(int argc, char **argv)
 	    response = gtk_dialog_run(GTK_DIALOG(dialog));
 
 	    if (response == GTK_RESPONSE_OK) {
-	        const gchar *command;
-	        gboolean in_terminal;
-
-	        command = gtk_entry_get_text(GTK_ENTRY(combo_entry));
-
-	        in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(
-                        checkbox));
-
-	        if (do_run(command, in_terminal)) {
-		        put_history(command, in_terminal, history);
-		        break;
-	        }
+		    	runit(GTK_ENTRY(combo_entry),NULL);
+			break;
 	    }
 	    else
 	        break;
     }
 
     gtk_widget_destroy(dialog);
-    g_completion_free(complete);
+    if (!use_xfc_combo) g_completion_free(complete);
     g_free(fileman);
 
     if (history != NULL) {
         g_list_foreach(history, (GFunc)free_hitem, NULL);
         g_list_free(history);
     }
-
+    
+#ifdef HAVE_LIBDBH
+    if (use_xfc_combo) {
+	XFC_destroy_combo(combo_info);
+    	unload_xfc();
+    }
+#endif
+    
     return 0;
 }
