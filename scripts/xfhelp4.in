@@ -70,7 +70,11 @@ else
 fi
 
 case $BROWSER in
-    communicator*|netscape|mozilla*|phoenix*|firebird*|firefox*)
+    firefox*)
+	$BROWSER -a firefox -remote openurl\("file://$URL",new-window\) || \
+		$BROWSER "file://$URL"
+	;;
+    communicator*|netscape|mozilla*|phoenix*|firebird*)
 	$BROWSER -remote openurl\("file://$URL",new-window\) || \
 		$BROWSER "file://$URL"    
 	;;
