@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-07-10 10:25+0200\n"
+"POT-Creation-Date: 2003-07-16 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jasper Huijsmans <huysmans@users.sourceforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,32 +135,32 @@ msgstr "Status pictogrammen"
 msgid "Show system tray in taskbar"
 msgstr "Toon status pictogrammen"
 
-#: xftaskbar/xftaskbar.c:125
+#: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
 msgstr "Kan initiële stijl niet vinden"
 
-#: xftaskbar/xftaskbar.c:205
+#: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
 msgstr "Er is al een system tray actief op dit scherm"
 
-#: xftaskbar/xftaskbar.c:213
+#: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Kan system tray niet registreren: %s"
 
-#: xftaskbar/xftaskbar.c:327
+#: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
 msgstr "Dit zou niet moeten gebeuren"
 
-#: xftaskbar/xftaskbar.c:428
+#: xftaskbar/xftaskbar.c:475
 msgid "Cannot connect to session manager"
 msgstr "Sessiebeheer niet beschikbaar"
 
-#: xftaskbar/xftaskbar.c:441
+#: xftaskbar/xftaskbar.c:488
 msgid "Cannot get desktop margins"
 msgstr "Kan bureaubladmarges niet vinden"
 
-#: xftaskbar/xftaskbar.c:513
+#: xftaskbar/xftaskbar.c:563
 msgid "Cannot create MCS client channel"
 msgstr "Kan MCS client kanaal niet aanmaken"
 

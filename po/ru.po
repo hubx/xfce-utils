@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
-"POT-Creation-Date: 2003-07-10 10:25+0200\n"
+"POT-Creation-Date: 2003-07-16 11:30+0200\n"
 "PO-Revision-Date: 2003-06-08 16:59+0300\n"
 "Last-Translator: Dan Korostelev <digger_temp@netman.ru>\n"
 "Language-Team: Russian <digger_temp@netman.ru>\n"
@@ -134,31 +134,31 @@ msgstr ""
 msgid "Show system tray in taskbar"
 msgstr "Показывать трей в панели задач"
 
-#: xftaskbar/xftaskbar.c:125
+#: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:205
+#: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:213
+#: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Невозможно зарегистрировать системный трей: %s"
 
-#: xftaskbar/xftaskbar.c:327
+#: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
 msgstr "Этого не должно происходить ;)"
 
-#: xftaskbar/xftaskbar.c:428
+#: xftaskbar/xftaskbar.c:475
 msgid "Cannot connect to session manager"
 msgstr "Не могу подключиться к менеджеру сессии"
 
-#: xftaskbar/xftaskbar.c:441
+#: xftaskbar/xftaskbar.c:488
 msgid "Cannot get desktop margins"
 msgstr "Не могу определить поля рабочего стола"
 
-#: xftaskbar/xftaskbar.c:513
+#: xftaskbar/xftaskbar.c:563
 msgid "Cannot create MCS client channel"
 msgstr ""

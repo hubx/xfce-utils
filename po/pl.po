@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-07-10 10:25+0200\n"
+"POT-Creation-Date: 2003-07-16 11:30+0200\n"
 "PO-Revision-Date: 2003-04-28 20:31--200\n"
 "Last-Translator: Paweł Pastuła <pastulap@poczta.onet.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,32 +134,32 @@ msgstr "Obszar powiadamiania"
 msgid "Show system tray in taskbar"
 msgstr "Pokaż panel systemowy na pasku zadań"
 
-#: xftaskbar/xftaskbar.c:125
+#: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
 msgstr "Nie mogę pobrać wstępnego stylu"
 
-#: xftaskbar/xftaskbar.c:205
+#: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:213
+#: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr ""
 
-#: xftaskbar/xftaskbar.c:327
+#: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
 msgstr "To nie powinno się było wydarzyć"
 
-#: xftaskbar/xftaskbar.c:428
+#: xftaskbar/xftaskbar.c:475
 msgid "Cannot connect to session manager"
 msgstr "Nie mogę się połączyć z menadżerem sesji"
 
-#: xftaskbar/xftaskbar.c:441
+#: xftaskbar/xftaskbar.c:488
 msgid "Cannot get desktop margins"
 msgstr "Nie mogę pobrać marginesów obszaru roboczego"
 
-#: xftaskbar/xftaskbar.c:513
+#: xftaskbar/xftaskbar.c:563
 msgid "Cannot create MCS client channel"
 msgstr "Nie mogę utworzyć kanału klienta MCS"
 
