@@ -31,7 +31,7 @@ else
   # Xft DPI: 96
   # Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
   # Xft hinting: 1/0
-cat >> $XRESOURCES << EOF
+  cat >> $XRESOURCES << EOF
 Xft.dpi: 96
 Xft.hinting: 1
 Xft.hintstyle: hintmedium
@@ -51,11 +51,13 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 # Launch xscreensaver (if available), but only as non-root user
 test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
 
-# Use ssh-agent if installed.  Run it separately so it populates the
-# environment here, so we can clean it up later.
+# Use ssh-agent if installed and not already running.  Run it separately
+# so it populates the environment here, so we can clean it up later.
 sshagent=`which ssh-agent`
-if test "$sshagent" -a "x$sshagent" != "xno"; then
+kill_sshagent=0
+if test -z "$SSH_AGENT_PID" -a "$sshagent" -a "x$sshagent" != "xno"; then
 	eval `$sshagent -s`
+	kill_sshagent=1
 fi
 
 # Use dbus-launch if installed.
@@ -74,7 +76,7 @@ case "x$xfcesm" in
 	*)
 		$xfcesm
 
-		if test "$SSH_AGENT_PID"; then
+		if test $kill_sshagent -eq 1; then
 			eval `$sshagent -k`
 		fi
 		exit 0
@@ -129,7 +131,7 @@ EOF
 		;;
 esac
 
-if test "$SSH_AGENT_PID"; then
+if test $kill_sshagent -eq 1; then
 	eval `$sshagent -k`
 fi
 
