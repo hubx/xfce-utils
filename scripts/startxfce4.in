@@ -21,20 +21,20 @@
 
 if [ ! -d $HOME/.xfce4/ ]; then
 	mkdir $HOME/.xfce4/
-	mkdir $HOME/.xfce4/settings
-	mkdir $HOME/.xfce4/settings
-	mkdir $HOME/.xfce4/xffm
-fi        
-if test "x$DISPLAY" = "x"
+	mkdir $HOME/.xfce4/settings/
+	mkdir $HOME/.xfce4/xffm/
+fi
+
+if test x"$DISPLAY" = x""
 then
-  echo $0: Starting X server
+  echo "$0: Starting X server"
   if [ -x $HOME/.xfce4/xinitrc ]; then
 	exec xinit $HOME/.xfce4/xinitrc $*
   else
 	exec xinit @sysconfdir@/xfce4/xinitrc $*
   fi  
 else
-  echo $0: X server already running on display $DISPLAY
+  echo "$0: X server already running on display $DISPLAY"
   if [ -x $HOME/.xfce4/xinitrc ]; then
 	exec /bin/sh $HOME/.xfce4/xinitrc $*
   else

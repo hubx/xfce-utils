@@ -27,7 +27,7 @@ fi
 
 HELP_DIR="@datadir@/xfce4/doc/"
 
-if [ ! "x$1" = "x" ]; then
+if [ ! x"$1" = x"" ]; then
     HELP_FILE="$1"
 else
     HELP_FILE="index.html"
