@@ -42,8 +42,7 @@ about_DATA =								\
 bin_PROGRAMS =  xfce4-about
 
 xfce4_about_SOURCES =							\
-	info.c								\
-	xfce-logo-icon.h
+	info.c
 
 xfce4_about_CFLAGS =							\
 	@LIBGTKHTML_CFLAGS@						\
@@ -55,19 +54,6 @@ xfce4_about_LDADD =							\
 	@LIBGTKHTML_LIBS@						\
 	@LIBXFCEGUI4_LIBS@
 
-IMAGES = xfce-logo.jpg
-
-VARIABLES = xfce_logo_data $(srcdir)/$(IMAGES)
-
-noinst_DATA = xfce-logo.jpg 
-
 EXTRA_DIST = 								\
-	$(about_DATA)							\
-	$(noinst_DATA)
-
-distclean-local:
-	rm -f INFO INFO.fr INFO.ca INFO.html INFO.html.de INFO.html.ca INFO.html.fr
-
-xfce-logo-icon.h: $(IMAGES)
-	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h
+	$(about_DATA)
 

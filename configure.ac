@@ -3,10 +3,14 @@ dnl
 dnl Copyright (c) 2002-2004
 dnl         The Xfce development team. All rights reserved.
 dnl
+dnl Written for Xfce by Olivier Fourdan <fourdan@xfce.org>, Jasper
+dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
+dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
+dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.2])
+AM_INIT_AUTOMAKE([xfce-utils], [4.1.3])
 
 AM_CONFIG_HEADER([config.h])
 

@@ -44,8 +44,6 @@
 #include <libxfce4util/libxfce4util.h>
 #include <libxfcegui4/libxfcegui4.h>
 
-#include "xfce-logo-icon.h"
-
 #define SEARCHPATH	(DATADIR G_DIR_SEPARATOR_S "%F.%L:"	\
                          DATADIR G_DIR_SEPARATOR_S "%F.%l:"	\
                          DATADIR G_DIR_SEPARATOR_S "%F")
@@ -254,7 +252,7 @@ main (int argc, char **argv)
     gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
     gtk_window_stick (GTK_WINDOW (info));
 
-    logo_pb = xfce_inline_icon_at_size (xfce_logo_data, 48, 48);
+    logo_pb = xfce_themed_icon_load ("xfce4-logo", 48);
     gtk_window_set_icon (GTK_WINDOW (info), logo_pb);
 
     vbox2 = gtk_vbox_new (FALSE, 0);

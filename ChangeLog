@@ -1,3 +1,1333 @@
+2004-07-28 23:28  benny
+
+	* configure: Rerun autogen.sh after depends.m4 update.
+
+2004-07-28 23:22  benny
+
+	* m4/depends.m4: Fixed (module)_FOUND bug reported by brian.
+	Hopefully nothing else broke this time.
+
+2004-07-27 21:10  benny
+
+	* Makefile.am, Makefile.in, configure, configure.ac,
+	icons/Makefile.am, icons/Makefile.in, icons/48x48/Makefile.am,
+	icons/48x48/Makefile.in, icons/48x48/xfce4-taskbar.png,
+	icons/scalable/Makefile.am, icons/scalable/Makefile.in,
+	icons/scalable/xfce4-taskbar.svg, xftaskbar/plugin/Makefile.am,
+	xftaskbar/plugin/Makefile.in, xftaskbar/plugin/xfce4-taskbar.png:
+	Added Francois' icons.
+
+2004-07-24 20:52  benny
+
+	* m4/depends.m4: Readded XFCE_MCS_PLUGIN() again, dunno how I
+	manage to remove it everytime I edit depends.m4!
+
+2004-07-24 19:30  benny
+
+	* m4/depends.m4: XFCE_PANEL_PLUGIN had wrong panel version for the
+	threaded test.
+
+2004-07-24 19:28  benny
+
+	* m4/depends.m4: Extended the XFCE_PANEL_PLUGIN macro to include
+	some magic for threaded panels.
+
+2004-07-24 00:41  benny
+
+	* aclocal.m4, xftaskbar/plugin/Makefile.am,
+	xftaskbar/plugin/Makefile.in, xftaskbar/plugin/icon.png,
+	xftaskbar/plugin/inline-icon.h, xftaskbar/plugin/xfce4-taskbar.png,
+	xftaskbar/plugin/xftaskbar_plugin.c: Applied
+	width-100%-alignment-insensitive patch. Made taskbar icon themable.
+
+2004-07-23 22:30  edscott
+
+	* Makefile.in, config.h.in, configure, configure.ac,
+	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/index/it/Makefile.in,
+	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	doc/xfce-utils/C/images/Makefile.in, doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce-utils/it/Makefile.in,
+	doc/xfce-utils/it/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in,
+	doc/xfce4-user-guide/it/Makefile.in,
+	doc/xfce4-user-guide/it/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xfrun/xfrun.c, xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
+	use new location of combo module
+
+2004-07-22 18:39  edscott
+
+	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
+	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/index/it/Makefile.in,
+	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	doc/xfce-utils/C/images/Makefile.in, doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce-utils/it/Makefile.in,
+	doc/xfce-utils/it/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in,
+	doc/xfce4-user-guide/it/Makefile.in,
+	doc/xfce4-user-guide/it/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xfrun/xfrun.c, xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
+	add check for xfheaders (this is *not* a dependency). no attempt to
+	load combo module will be made if xfheaders *and* dbh are not
+	installed.
+
+2004-07-22 01:00  benny
+
+	* m4/depends.m4: Readded the XFCE_MCS_PLUGIN macro. I didn't ment
+	to remove it, tho.
+
+2004-07-21 19:29  edscott
+
+	* xfrun/xfrun.c: .config/.cache stuff
+
+2004-07-21 18:10  edscott
+
+	* xfrun/xfcombo.i: .config/.cache changes
+
+2004-07-20 22:58  benny
+
+	* m4/depends.m4: Modifed panel plugin check, so one (the installer)
+	can choose to install into a different plugin dir.
+
+2004-07-16 16:12  pollux
+
+	* xfrun/xfcombo.i, xftaskbar/plugin/inline-icon.h: - fix #256 -
+	change some hardcoded .xfce4 to xfce_get_userdir
+
+2004-07-15 07:59  jasper
+
+	* doc/xfce-utils/C/xfce-utils.html,
+	doc/xfce-utils/C/xfce-utils.xml, doc/xfce-utils/fr/xfce-utils.html,
+	doc/xfce-utils/fr/xfce-utils.xml,
+	doc/xfce4-user-guide/C/xfce4-intro.html,
+	doc/xfce4-user-guide/C/xfce4-user-guide.xml,
+	doc/xfce4-user-guide/fr/xfce4-intro.html,
+	doc/xfce4-user-guide/fr/xfce4-user-guide.xml, scripts/xinitrc,
+	xfce4-about/AUTHORS, xfce4-about/AUTHORS.az,
+	xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.de,
+	xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.fr,
+	xfce4-about/AUTHORS.html, xfce4-about/AUTHORS.html.az,
+	xfce4-about/AUTHORS.html.ca, xfce4-about/AUTHORS.html.de,
+	xfce4-about/AUTHORS.html.es, xfce4-about/AUTHORS.html.fr,
+	xfce4-about/AUTHORS.html.it, xfce4-about/AUTHORS.it,
+	xfce4-about/AUTHORS.vi: get rid of moongroup references
+
+2004-07-14 22:30  jasper
+
+	* doc/xfce-utils/C/xfce-utils.html,
+	doc/xfce-utils/C/xfce-utils.xml, doc/xfce-utils/fr/xfce-utils.html,
+	doc/xfce-utils/fr/xfce-utils.xml,
+	doc/xfce-utils/it/xfce-utils.html,
+	doc/xfce-utils/it/xfce-utils.xml,
+	doc/xfce4-user-guide/C/xfce4-intro.html,
+	doc/xfce4-user-guide/C/xfce4-user-guide.xml,
+	doc/xfce4-user-guide/fr/xfce4-intro.html,
+	doc/xfce4-user-guide/fr/xfce4-user-guide.xml,
+	doc/xfce4-user-guide/it/xfce4-intro.html,
+	doc/xfce4-user-guide/it/xfce4-user-guide.xml, scripts/xinitrc,
+	xfce4-about/AUTHORS, xfce4-about/AUTHORS.az,
+	xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.de,
+	xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.eu,
+	xfce4-about/AUTHORS.fr, xfce4-about/AUTHORS.html,
+	xfce4-about/AUTHORS.html.az, xfce4-about/AUTHORS.html.ca,
+	xfce4-about/AUTHORS.html.de, xfce4-about/AUTHORS.html.es,
+	xfce4-about/AUTHORS.html.eu, xfce4-about/AUTHORS.html.fr,
+	xfce4-about/AUTHORS.html.it, xfce4-about/AUTHORS.it,
+	xfce4-about/AUTHORS.lt, xfce4-about/AUTHORS.vi: Get rid of
+	moongroup.com references
+
+2004-07-11 22:46  pollux
+
+	* scripts/xinitrc: revert change, danny next time you try to
+	resolve a bug let a message in the bug tracker or set it as
+	resolved... it caused me to mess with #238, #240 ;-)
+
+2004-07-11 21:00  pollux
+
+	* scripts/xinitrc: fix #240 and #238 (duplicate)
+
+2004-07-11 10:02  olivier
+
+	* xftaskbar/xftaskbar.c: Connect later to session manager to avoid
+	race cond with WM
+
+2004-07-09 11:32  olivier
+
+	* ChangeLog: Update ChangeLog
+
+2004-07-09 10:59  olivier
+
+	* po/xfce-utils.pot: Update versions.
+
+2004-07-09 09:53  olivier
+
+	* ChangeLog: Update ChangeLogs for 4.0.6
+
+2004-07-08 21:53  olivier
+
+	* ltmain.sh: Update tree for 4.0.6 release
+
+2004-07-06 17:58  pollux
+
+	* configure, configure.ac, po/eu.gmo, po/eu.po,
+	xfce4-about/AUTHORS, xfce4-about/AUTHORS.az,
+	xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.de,
+	xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.fr,
+	xfce4-about/AUTHORS.html, xfce4-about/AUTHORS.html.az,
+	xfce4-about/AUTHORS.html.ca, xfce4-about/AUTHORS.html.de,
+	xfce4-about/AUTHORS.html.es, xfce4-about/AUTHORS.html.fr,
+	xfce4-about/AUTHORS.html.it, xfce4-about/AUTHORS.it,
+	xfce4-about/AUTHORS.vi: add basque translation from ^pi^
+	<pi@beobide.net>
+
+2004-07-04 21:23  pollux
+
+	* configure, configure.ac, doc/index/Makefile.am,
+	doc/index/Makefile.in, doc/index/it/Makefile.am,
+	doc/index/it/Makefile.in, doc/index/it/index.html: * add italian
+	translation of the doc from Sascha Ales
+
+2004-07-04 21:11  pollux
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	configure.ac, install-sh, ltmain.sh, mkinstalldirs,
+	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce-utils/it/Makefile.in,
+	doc/xfce-utils/it/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in,
+	doc/xfce4-user-guide/it/Makefile.in,
+	doc/xfce4-user-guide/it/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/AUTHORS, xfce4-about/AUTHORS.az,
+	xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.de,
+	xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.eu,
+	xfce4-about/AUTHORS.fr, xfce4-about/AUTHORS.html,
+	xfce4-about/AUTHORS.html.az, xfce4-about/AUTHORS.html.ca,
+	xfce4-about/AUTHORS.html.de, xfce4-about/AUTHORS.html.es,
+	xfce4-about/AUTHORS.html.eu, xfce4-about/AUTHORS.html.fr,
+	xfce4-about/AUTHORS.html.it, xfce4-about/AUTHORS.it,
+	xfce4-about/AUTHORS.lt, xfce4-about/AUTHORS.vi,
+	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: * add Italian translation of the doc
+	from Sascha Ales * some AUTHORS.* modifications (locale in charge
+	added)
+
+2004-07-04 21:05  pollux
+
+	* doc/: xfce-utils/Makefile.am, xfce-utils/it/Makefile.am,
+	xfce-utils/it/Makefile.in, xfce-utils/it/xfce-utils.html,
+	xfce-utils/it/xfce-utils.xml, xfce-utils/it/images/Makefile.am,
+	xfce-utils/it/images/Makefile.in,
+	xfce-utils/it/images/about-dialog.png,
+	xfce-utils/it/images/run-dialog.png, xfce4-user-guide/Makefile.am,
+	xfce4-user-guide/it/BSD.html, xfce4-user-guide/it/BSD.xml,
+	xfce4-user-guide/it/GPL.html, xfce4-user-guide/it/GPL.xml,
+	xfce4-user-guide/it/LGPL.html, xfce4-user-guide/it/LGPL.xml,
+	xfce4-user-guide/it/Makefile.am, xfce4-user-guide/it/Makefile.in,
+	xfce4-user-guide/it/copyright.xml,
+	xfce4-user-guide/it/xfce4-copyright.html,
+	xfce4-user-guide/it/xfce4-install.html,
+	xfce4-user-guide/it/xfce4-intro.html,
+	xfce4-user-guide/it/xfce4-use.html,
+	xfce4-user-guide/it/xfce4-user-guide.html,
+	xfce4-user-guide/it/xfce4-user-guide.xml,
+	xfce4-user-guide/it/images/Makefile.am,
+	xfce4-user-guide/it/images/Makefile.in,
+	xfce4-user-guide/it/images/default-session.png,
+	xfce4-user-guide/it/images/link_xfce.jpg: add Italian translation
+	of the doc from Sascha Ales
+
+2004-07-04 14:02  benny
+
+	* xfce4-about/info.c: Fix for Xinerama and made the window fit on
+	640x480 screens.
+
+2004-06-27 23:18  pollux
+
+	* po/ru.gmo, po/ru.po, xfce4-about/AUTHORS, xfce4-about/AUTHORS.az,
+	xfce4-about/AUTHORS.ca, xfce4-about/AUTHORS.de,
+	xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.fr,
+	xfce4-about/AUTHORS.html, xfce4-about/AUTHORS.html.az,
+	xfce4-about/AUTHORS.html.ca, xfce4-about/AUTHORS.html.de,
+	xfce4-about/AUTHORS.html.es, xfce4-about/AUTHORS.html.fr,
+	xfce4-about/AUTHORS.vi: russian translations update from Anthony
+	Ivanoff
+
+2004-06-27 22:56  kelnos
+
+	* configure, configure.ac, xftaskbar/xftaskbar.c,
+	xftaskbar/plugin/xftaskbar_plugin.c: add support to hide
+	application text on taskbar
+
+2004-06-24 21:17  eduard
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.eu, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.eu,
+	AUTHORS.html.fr, AUTHORS.html.it, AUTHORS.it, AUTHORS.lt,
+	Makefile.in: Eduard email change
+
+2004-06-24 19:15  dannym
+
+	* scripts/xinitrc: try to fix bug #239: quote VNCSESSION variable
+	(in head only for now)
+
+2004-06-24 13:16  pollux
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.fr,
+	AUTHORS.html.it, AUTHORS.it, AUTHORS.vi: some corrections in
+	AUTHORS* and add which locale translator is in charge
+
+2004-06-23 20:57  olivier
+
+	* xftaskbar/xftaskbar.c: Reorg. property set to try to reduce a
+	potential race cond.
+
+2004-06-21 23:13  olivier
+
+	* xftaskbar/xftaskbar.c: Fix pager always showing
+
+2004-06-21 07:53  olivier
+
+	* xftaskbar/xftaskbar.c: Set gtkwindow property before realizing
+	the window.
+
+2004-06-21 07:48  olivier
+
+	* xftaskbar/xftaskbar.c: Work arround some gtk oddities.
+
+2004-06-20 21:23  olivier
+
+	* xftaskbar/: xftaskbar.c, xftaskbar.c: Add skip_taskbar and
+	skip_pager hints
+
+2004-06-20 19:20  benny
+
+	* xfce4-about/info.c: PATH_MAX fixes to get it to compile on
+	GNU/Hurd.
+
+2004-06-16 08:31  pollux
+
+	* xfce4-about/Makefile.am: I've just remembered i forgot to add
+	AUTHORS.lv to the Makefile.am
+
+2004-06-15 22:48  pollux
+
+	* xfce4-about/AUTHORS: begin of author + assigned locale in AUTHORS
+
+2004-06-13 23:18  pollux
+
+	* po/lt.gmo, po/lt.po, xfce4-about/AUTHORS.lt: Updated lt
+	translations from Mantas Zapolskas
+
+2004-06-11 14:34  pollux
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.fr,
+	AUTHORS.html.it, AUTHORS.it, AUTHORS.vi: Add Peeter Vois to the
+	credits
+
+2004-06-11 13:02  pollux
+
+	* po/et.gmo: file et.gmo was initially added on branch xfce_4_0.
+
+2004-06-11 13:02  pollux
+
+	* po/et.po: file et.po was initially added on branch xfce_4_0.
+
+2004-06-11 13:02  pollux
+
+	* configure, configure.ac, ltmain.sh, po/et.gmo, po/et.po: Estonian
+	translations from Peeter Vois <peeter.vois@proekspert.ee> added
+
+2004-06-06 13:23  benny
+
+	* scripts/xinitrc: Don't call xsetroot prior to starting
+	xfce4-session, cause the session manager will setup the splash
+	screen right afterwards. Also call xrdb only once, to speed up the
+	starting process.
+
+2004-06-06 10:50  benny
+
+	* xfce4-about/COPYING.html: Fix Oliviers mail address.
+
+2004-06-06 09:57  benny
+
+	* xfce4-about/: INFO, INFO.ca, INFO.es, INFO.fr, INFO.html,
+	INFO.html.ca, INFO.html.de, INFO.html.es, INFO.html.fr,
+	INFO.html.it, INFO.it: Add missing files.
+
+2004-06-06 00:29  benny
+
+	* xfce4-about/: COPYING, COPYING.html, COPYING.vi: Added
+	xfce4-session to GPL section. Replaced XFce -> Xfce.
+
+2004-06-06 00:25  benny
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	configure.ac, install-sh, ltmain.sh, mkinstalldirs,
+	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in, gdm/Makefile.in,
+	po/ko.gmo, scripts/Makefile.in, xfce4-about/INFO.ca.in,
+	xfce4-about/INFO.es.in, xfce4-about/INFO.eu.in,
+	xfce4-about/INFO.fr.in, xfce4-about/INFO.html.ca.in,
+	xfce4-about/INFO.html.de.in, xfce4-about/INFO.html.es.in,
+	xfce4-about/INFO.html.eu.in, xfce4-about/INFO.html.fr.in,
+	xfce4-about/INFO.html.in, xfce4-about/INFO.html.it.in,
+	xfce4-about/INFO.in, xfce4-about/INFO.it.in, xfce4-about/INFO.vi,
+	xfce4-about/Makefile.in, xfce4-about/info.c, xfrun/Makefile.in,
+	xfrun/xfrun.c, xftaskbar/Makefile.in, xftaskbar/xftaskbar.c,
+	xftaskbar/plugin/Makefile.in, xftaskbar/plugin/xftaskbar_plugin.c:
+	Replace Xfce version at runtime instead of compile time using the
+	xfce-utils version. Don't use deprecated functions. replaced XFce
+	-> Xfce.
+
+2004-06-01 14:08  pollux
+
+	* xfce4-about/: AUTHORS.az, AUTHORS.de, AUTHORS.es, AUTHORS.fr,
+	AUTHORS.vi: fix benny mail so bug 209 can be closed
+
+2004-05-31 16:45  benny
+
+	* xfce4-about/: AUTHORS.html, AUTHORS.html.az, AUTHORS.html.ca,
+	AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.fr, AUTHORS.html.it:
+	Fix #209, emails are now consistent :-)
+
+2004-05-24 14:53  benny
+
+	* xftaskbar/xftaskbar.c: Don't free() stack data.
+
+2004-05-18 23:33  olivier
+
+	* xftaskbar/xftaskbar.c: Get rid of xinerama impl from libxfcegui4,
+	add support for partial struts
+
+2004-05-04 00:14  olivier
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	install-sh, ltmain.sh, mkinstalldirs, doc/Makefile.in,
+	doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in, gdm/Makefile.in,
+	po/xfce-utils.pot, scripts/Makefile.in, xfce4-about/Makefile.in,
+	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Update zh_TW translations by umm
+	<umm@pchome.com.tw>
+
+2004-05-03 23:44  olivier
+
+	* Makefile.in, aclocal.m4, config.guess, config.sub, configure,
+	install-sh, ltmain.sh, mkinstalldirs, doc/Makefile.in,
+	doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/Makefile.in: Update zh_TW translations from umm
+	<umm@pchome.com.tw>
+
+2004-05-03 22:13  kelnos
+
+	* xftaskbar/plugin/: Makefile.am, Makefile.in,
+	xfce-taskbar-settings.desktop: forgot to add xftaskbar settings
+	.desktop file and this time with EXTRA_DIST even
+
+2004-05-03 08:54  kelnos
+
+	* doc/xfce-utils/C/xfce-utils.xml: update docs to reflect new lack
+	of need to set ~/.xfce4/xinitrc executable
+
+2004-05-03 08:52  kelnos
+
+	* scripts/xinitrc: fix typo
+
+2004-05-03 08:49  kelnos
+
+	* scripts/startxfce4.in: no longer require ~/.xfce4/xinitrc to be
+	executable as it's a common source of confusion and is inconsistent
+	and unnecessary.
+
+2004-04-25 11:55  jasper
+
+	* aclocal.m4, configure, configure.ac, ltmain.sh, po/ar.gmo,
+	po/ar.po, po/az.gmo, po/az.po, po/bg.gmo, po/bg.po, po/ca.gmo,
+	po/ca.po, po/cs.gmo, po/cs.po, po/de.gmo, po/de.po, po/es.gmo,
+	po/es.po, po/es_MX.gmo, po/es_MX.po, po/fa_IR.gmo, po/fa_IR.po,
+	po/fi.gmo, po/fi.po, po/fr.gmo, po/fr.po, po/hi.gmo, po/hi.po,
+	po/hu.gmo, po/hu.po, po/it.gmo, po/it.po, po/ja.gmo, po/ja.po,
+	po/ko.po, po/lt.gmo, po/lt.po, po/ms.gmo, po/ms.po, po/nl.gmo,
+	po/nl.po, po/no.gmo, po/no.po, po/pl.po, po/pt_BR.gmo, po/pt_BR.po,
+	po/pt_PT.gmo, po/pt_PT.po, po/ru.gmo, po/ru.po, po/sv.gmo,
+	po/sv.po, po/ta.gmo, po/ta.po, po/tr.gmo, po/tr.po, po/uk.gmo,
+	po/uk.po, po/vi.gmo, po/vi.po, po/zh_CN.gmo, po/zh_CN.po,
+	po/zh_TW.gmo, po/zh_TW.po, xfce4-about/info.c, po/ar.gmo, po/ar.po,
+	po/az.gmo, po/az.po, po/bg.gmo, po/bg.po, po/ca.gmo, po/ca.po,
+	po/cs.gmo, po/cs.po, po/de.gmo, po/de.po, po/es.gmo, po/es.po,
+	po/es_MX.gmo, po/es_MX.po, po/eu.gmo, po/eu.po, po/fa_IR.gmo,
+	po/fa_IR.po, po/fi.gmo, po/fi.po, po/fr.gmo, po/fr.po, po/hi.gmo,
+	po/hi.po, po/hu.gmo, po/hu.po, po/ja.gmo, po/ja.po, po/ko.po,
+	po/lt.gmo, po/lt.po, po/ms.gmo, po/ms.po, po/nl.gmo, po/nl.po,
+	po/pl.po, po/pt_BR.gmo, po/pt_BR.po, po/pt_PT.gmo, po/pt_PT.po,
+	po/ru.gmo, po/ru.po, po/sv.gmo, po/sv.po, po/ta.gmo, po/ta.po,
+	po/tr.gmo, po/tr.po, po/uk.gmo, po/uk.po, po/vi.gmo, po/vi.po,
+	po/zh_CN.gmo, po/zh_CN.po, po/zh_TW.gmo, po/zh_TW.po: Update
+	copyright years
+
+2004-04-13 18:05  edscott
+
+	* xfrun/xfrun.c: fix small bug when using g_find_program_in_path()
+	in FreeBSD.  change fallback fm to xftree4 instead of xffm so only
+	the necessary folder appea rs.
+
+2004-04-13 18:02  edscott
+
+	* xfrun/xfrun.c: fix small bug when using g_find_program_in_path()
+	in FreeBSD.  change fallback fm to xftree4 instead of xffm so only
+	the necessary folder appears.
+
+2004-04-12 22:31  olivier
+
+	* gdm/: Makefile.am, Makefile.in: Danny => autogen.sh
+
+2004-04-12 22:26  olivier
+
+	* gdm/Makefile.in, po/it.gmo, po/it.po: Danny => autogen.sh
+
+2004-04-12 22:05  dannym
+
+	* gdm/: Makefile.am, Makefile.am: fix bug # 0000172, although
+	someone do me the favour to run autogen, please
+
+2004-04-12 17:44  benny
+
+	* AUTHORS, xfce4-about/AUTHORS, xfce4-about/AUTHORS.ca,
+	xfce4-about/AUTHORS.eu, xfce4-about/AUTHORS.html.eu,
+	xfce4-about/AUTHORS.it: Only one email address, thanks danny.
+
+2004-04-12 16:55  dannym
+
+	* xfce4-about/: AUTHORS.html, AUTHORS.html.az, AUTHORS.html.ca,
+	AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.eu, AUTHORS.html.fr,
+	AUTHORS.html.it: its spelled Eduard Roccatello, nestu said :)
+
+2004-04-12 16:47  dannym
+
+	* xfce4-about/: AUTHORS.ca, AUTHORS.html.ca: Updated catalan
+	translations by Carles Muñoz Gorriz
+
+2004-04-07 19:18  edscott
+
+	* xfrun/xfrun.c: Allow an path to be specified as an argument. If
+	the path is valid, then the title of the window changes from "Run
+	program" to "Open %s with what program?", andallows for selection
+	of the program from the xfrun4 dialog. This is now used by xffm
+	when a mimetype program association does not exist for a valid path
+	given on the command line. In this case, xffm execvp's to xfrun4,
+	allowing the user to specify the desired program.
+
+2004-03-30 22:05  olivier
+
+	* xftaskbar/: xftaskbar.c, xftaskbar.c: Apply
+	http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=215308
+
+2004-03-25 08:14  jasper
+
+	* xftaskbar/: xftaskbar.c, plugin/xftaskbar_plugin.c: Task grouping
+	patch by Aurelien Foret <orelien@chez.com>
+
+2004-03-18 00:38  olivier
+
+	* gdm/Makefile.am, gdm/Makefile.in, aclocal.m4, configure,
+	ltmain.sh, gdm/Makefile.am, gdm/Makefile.in, po/xfce-utils.pot:
+	Misplaced file in makefile was removed by distclean
+
+2004-03-18 00:28  olivier
+
+	* configure, configure.ac, po/xfce-utils.pot,
+	xfce4-about/Makefile.in: Missing generation of INFO.html.it and
+	INFO.it
+
+2004-03-17 23:12  olivier
+
+	* xftaskbar/xftaskbar.c: Change for gtk 2.4
+
+2004-03-17 22:58  olivier
+
+	* xftaskbar/xftaskbar.c: Change for gtk 2.4
+
+2004-03-17 21:38  olivier
+
+	* xftaskbar/plugin/xftaskbar_plugin.c: Set min height to 28 as the
+	systray icons are 24
+
+2004-03-17 21:30  olivier
+
+	* xftaskbar/plugin/xftaskbar_plugin.c: Set min height to 28 as the
+	systray icons are 24
+
+2004-03-17 20:07  benny
+
+	* scripts/xfhelp4.in: Added firebird and firefox. How often will
+	they rename this piece of software again?
+
+2004-03-16 00:19  pollux
+
+	* aclocal.m4, configure, configure.ac, ltmain.sh,
+	xfce4-about/Makefile.in: xfce4-about didn't compile anymore,
+	INFO.it.in and INFO.html.it.in was missing. fixed
+
+2004-03-15 08:35  olivier
+
+	* configure, configure.ac, po/ar.gmo, po/ar.po, po/bg.gmo,
+	po/bg.po, po/it.gmo, po/it.po, xfce4-about/AUTHORS,
+	xfce4-about/AUTHORS.az, xfce4-about/AUTHORS.ca,
+	xfce4-about/AUTHORS.de, xfce4-about/AUTHORS.es,
+	xfce4-about/AUTHORS.eu, xfce4-about/AUTHORS.fr,
+	xfce4-about/AUTHORS.html, xfce4-about/AUTHORS.html.az,
+	xfce4-about/AUTHORS.html.ca, xfce4-about/AUTHORS.html.de,
+	xfce4-about/AUTHORS.html.es, xfce4-about/AUTHORS.html.eu,
+	xfce4-about/AUTHORS.html.fr, xfce4-about/AUTHORS.html.it,
+	xfce4-about/AUTHORS.it, xfce4-about/AUTHORS.vi,
+	xfce4-about/INFO.html.it.in, xfce4-about/INFO.it.in,
+	xfce4-about/Makefile.am, xfce4-about/Makefile.in: Add/update i18n
+	for: Bulgarian from Miroslav Yordanov <miordanov@i-space.org> and
+	Peter Slavov <peshka@i-space.org> Italian from Alex Dupre
+	<ale@FreeBSD.org> Arabic from Saleh Hathal <hathalsal@hotmail.com>
+
+2004-03-15 00:25  olivier
+
+	* po/ar.po: file ar.po was initially added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* xfce4-about/AUTHORS.it: file AUTHORS.it was initially added on
+	branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* xfce4-about/INFO.it.in: file INFO.it.in was initially added on
+	branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* po/ar.gmo: file ar.gmo was initially added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* po/bg.gmo: file bg.gmo was initially added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* po/bg.po: file bg.po was initially added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* xfce4-about/INFO.html.it.in: file INFO.html.it.in was initially
+	added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* xfce4-about/AUTHORS.html.it: file AUTHORS.html.it was initially
+	added on branch xfce_4_0.
+
+2004-03-15 00:25  olivier
+
+	* configure, configure.ac, po/ar.gmo, po/ar.po, po/bg.gmo,
+	po/bg.po, po/it.gmo, po/it.po, xfce4-about/AUTHORS,
+	xfce4-about/AUTHORS.az, xfce4-about/AUTHORS.ca,
+	xfce4-about/AUTHORS.de, xfce4-about/AUTHORS.es,
+	xfce4-about/AUTHORS.fr, xfce4-about/AUTHORS.html,
+	xfce4-about/AUTHORS.html.az, xfce4-about/AUTHORS.html.ca,
+	xfce4-about/AUTHORS.html.de, xfce4-about/AUTHORS.html.es,
+	xfce4-about/AUTHORS.html.fr, xfce4-about/AUTHORS.html.it,
+	xfce4-about/AUTHORS.it, xfce4-about/AUTHORS.vi,
+	xfce4-about/INFO.html.it.in, xfce4-about/INFO.it.in,
+	xfce4-about/Makefile.am, xfce4-about/Makefile.in: Add/update i18n
+	for: Bulgarian from Miroslav Yordanov <miordanov@i-space.org> and
+	Peter Slavov <peshka@i-space.org> Italian from Alex Dupre
+	<ale@FreeBSD.org> Arabic from Saleh Hathal <hathalsal@hotmail.com>
+
+2004-03-12 23:49  olivier
+
+	* aclocal.m4, configure, configure.ac, xfce-utils.spec.in,
+	gdm/Makefile.am, gdm/Makefile.in, gdm/xfce.desktop: Backport gdm
+	config from HEAD
+
+2004-03-12 23:37  olivier
+
+	* gdm/: Makefile.am, Makefile.in: Use
+	$(datadir)/xsessions/xfce.desktop as suggested by alley_cat on
+	devblog.
+
+2004-03-12 23:21  benny
+
+	* scripts/xinitrc: Load ~/.xfce4/Xft.xrdb on startup, which is
+	created by the ui plugin.
+
+2004-03-10 22:14  olivier
+
+	* aclocal.m4, configure, configure.ac, ltmain.sh,
+	xfce-utils.spec.in, gdm/Makefile.am, gdm/Makefile.in,
+	gdm/xfce.desktop: Make --enable-gdm compatible with gdk 2.4.x
+	Change the semantic of "--with-gdm-prefix=" to be really the prefix
+	of gdm data dir (and not the  session dir as before)
+
+2004-03-06 13:32  olivier
+
+	* scripts/xinitrc: [no log message]
+
+2004-03-02 22:16  olivier
+
+	* po/xfce-utils.pot: Dummy
+
+2004-03-01 22:09  benny
+
+	* m4/debug.m4: Added --enable-gcov to compile xfce with support for
+	coverage tests. Very useful.
+
+2004-02-28 16:23  olivier
+
+	* ltmain.sh, xfce4-about/info.c: Backport changes for the "about"
+	dialog
+
+2004-02-27 23:22  olivier
+
+	* scripts/: xinitrc, xinitrc: Don't start xscreensaver when running
+	thru VNC as suggested by
+	http://bugs.xfce.org/view_bug_page.php?f_id=125
+
+2004-02-27 22:45  olivier
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.eu, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.eu,
+	AUTHORS.html.fr, AUTHORS.vi: Brian has taken over xfdesktop which a
+	core component, thus he should be listed as a core dev if the 4.2
+	version.
+
+2004-02-26 10:55  pollux
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.eu, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.eu,
+	AUTHORS.html.fr, AUTHORS.vi: added myself to the contributors
+
+2004-02-26 05:06  kelnos
+
+	* xfce4-about/AUTHORS.vi: whoops, missed one
+
+2004-02-26 05:04  kelnos
+
+	* xfce4-about/: AUTHORS.eu.html, AUTHORS.html.eu: hmm that doesn't
+	look right...
+
+2004-02-26 05:03  kelnos
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.eu, AUTHORS.eu.html, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.az, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es,
+	AUTHORS.html.fr: i get around to things eventually...
+
+2004-02-25 21:24  benny
+
+	* xfce4-about/info.c: Use correct button order!
+
+2004-02-24 10:46  benny
+
+	* xfce4-about/info.c: Unbreak about box, thanks to Joshua Cummings
+	for pointing this out.
+
+2004-02-17 20:36  jasper
+
+	* aclocal.m4, configure.ac, po/ms.gmo, po/ms.po: Update Malay
+	translations
+
+2004-02-12 02:21  benny
+
+	* xfce4-about/info.c: Its the year 2004 :-)
+
+2004-02-11 23:02  olivier
+
+	* xfce4-about/info.c: Use a dialog as main widget
+
+2004-02-11 22:42  olivier
+
+	* xfce4-about/info.c: Use a dialog as main widget
+
+2004-02-11 21:44  jasper
+
+	* configure, po/eu.gmo, po/eu.po, xfce4-about/AUTHORS.eu,
+	xfce4-about/AUTHORS.eu.html, xfce4-about/INFO.eu.in,
+	xfce4-about/INFO.html.eu.in: Add Basque (eu) translations
+
+2004-02-10 23:00  olivier
+
+	* xftaskbar/plugin/xftaskbar_plugin.c: Fix cut 'n paste typo.
+
+2004-02-10 17:20  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.fr,
+	AUTHORS.vi, AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.es, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.es, AUTHORS.html.fr,
+	AUTHORS.vi: Add Abbas Izad to translators
+
+2004-02-09 14:34  benny
+
+	* .cvsignore, aclocal.m4, autogen.sh, configure, configure.ac,
+	xftaskbar/xftaskbar.c, xftaskbar/plugin/xftaskbar_plugin.c: Added
+	new taskbar functionality as requested in bug #113. The taskbar
+	width can now be specified in % of the screen width (in a xinerama
+	compatible way) and the horiz. alignment of the taskbar can be set
+	to either "left", "center" or "right".
+
+2004-02-01 17:12  benny
+
+	* xfce4-about/: AUTHORS.es, AUTHORS.html.es: AUTHOR*.es was missing
+	from the last commit.
+
+2004-02-01 02:55  benny
+
+	* xfce4-about/: AUTHORS.az, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.az, AUTHORS.html.ca, AUTHORS.html.de,
+	AUTHORS.html.fr, AUTHORS.vi: Email address updated.
+
+2004-01-30 08:06  jasper
+
+	* configure, configure.ac, ltmain.sh, po/es.gmo, po/es.po,
+	po/fa_IR.gmo, po/fa_IR.po, po/pt_BR.gmo, po/pt_BR.po, po/zh_CN.gmo,
+	po/zh_CN.po, xfce4-about/AUTHORS.es, xfce4-about/AUTHORS.html.es,
+	xfce4-about/INFO.es.in, xfce4-about/INFO.html.es.in,
+	xfce4-about/Makefile.am, xfce4-about/Makefile.in: Update
+	translations for spanish, persian, brasilian and chinese
+
+2004-01-29 16:51  jasper
+
+	* po/: fa_IR.gmo, fa_IR.po: Update Persian translations
+
+2004-01-28 21:43  jasper
+
+	* xftaskbar/xftaskbar.c: Oops, shouldn't have been committed.
+	Thanks Moe.
+
+2004-01-28 21:32  jasper
+
+	* configure, configure.ac, ltmain.sh, xfce4-about/AUTHORS.es,
+	xfce4-about/AUTHORS.html.es, xfce4-about/INFO.es.in,
+	xfce4-about/INFO.html.es.in, xfce4-about/Makefile.am,
+	xfce4-about/Makefile.in, xftaskbar/xftaskbar.c: Forgot to add these
+	spanish translations
+
+2004-01-25 11:35  olivier
+
+	* scripts/xinitrc: Fix auto* tools for xfce4-session
+
+2004-01-25 11:11  olivier
+
+	* scripts/xinitrc: add xfcalendar to xinitrc script
+
+2004-01-25 01:10  olivier
+
+	* Makefile.in, aclocal.m4, compile, config.guess, config.h.in,
+	config.sub, configure, configure.ac, depcomp, install-sh,
+	ltmain.sh, missing, mkinstalldirs, doc/Makefile.in,
+	doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/index/fr/Makefile.in, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/Makefile.in, doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in, gdm/Makefile.in,
+	po/fa_IR.gmo, po/fa_IR.po, scripts/Makefile.in,
+	xfce4-about/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
+	xftaskbar/plugin/Makefile.in: Update libtool and other automake,
+	autoconf and gettext.
+
+2004-01-25 01:07  olivier
+
+	* Makefile.in, aclocal.m4, compile, config.guess, config.h.in,
+	config.sub, configure, depcomp, install-sh, ltmain.sh, missing,
+	mkinstalldirs, doc/Makefile.in, doc/index/Makefile.in,
+	doc/index/C/Makefile.in, doc/index/fr/Makefile.in,
+	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	doc/xfce-utils/C/images/Makefile.in, doc/xfce-utils/fr/Makefile.in,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Update libtool
+	and other automake, autoconf and gettext packages
+
+2004-01-21 14:43  jasper
+
+	* configure, configure.ac, po/es.gmo, po/es.po, po/fa_IR.gmo,
+	po/fa_IR.po, po/pt_BR.gmo, po/pt_BR.po, po/zh_CN.gmo, po/zh_CN.po:
+	Translations added/updated for spanish, persian, japanese, korean,
+	brasilian and chinese
+
+2004-01-13 20:29  benny
+
+	* xfrun/xfcombo.i: Fix invalid cast, still dangerous cast from
+	fn-pointer to void pointer (Future compilers may rely on strict
+	aliasing?!). Some unused variable fixes.
+
+2004-01-13 20:28  benny
+
+	* xfce4-about/info.c: Unused variable fix.
+
+2004-01-11 16:05  edscott
+
+	* xfrun/xfcombo.i: function structure now freed on closing module
+
+2004-01-11 03:26  edscott
+
+	* xfrun/xfcombo.i: changes due to module simplifications
+
+2004-01-07 21:38  olivier
+
+	* ChangeLog, po/ChangeLog: Huge update before 4.0.3 release,
+	mainly: ChangeLog update, Version number updates.
+
+2004-01-07 19:58  olivier
+
+	* xfce-utils.spec.in: Fix spec files so that debug files aren't
+	include on Red Hat 9 and later
+
+2004-01-03 21:54  olivier
+
+	* po/: pl.gmo, pl.po: Fix Polish translation from Daniel Mróz
+	<beorn@alpha.pl>
+
+2004-01-03 21:23  olivier
+
+	* po/: pl.gmo, pl.po: Update Polish translation from Daniel Mróz
+	<beorn@alpha.pl>
+
+2003-12-31 02:51  edscott
+
+	* xfrun/xfcombo.i: changes for xfce4-modules and small bugfix (load
+	module should return NULL if it fails to load instead of
+	terminating program) which should keep a configuration with dbh but
+	without modules functional (like Moe's).
+
+2003-12-29 18:31  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	AUTHORS.fr, AUTHORS.html, AUTHORS.html.az, AUTHORS.html.ca,
+	AUTHORS.html.de, AUTHORS.html.fr, AUTHORS.vi, AUTHORS, AUTHORS.az,
+	AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html, AUTHORS.html.az,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr, AUTHORS.vi: Add
+	Korbinus to AUTHORS
+
+2003-12-29 16:19  olivier
+
+	* ChangeLog, configure, configure.ac, po/no.gmo, po/no.po: Update
+	version number, Update ChangeLog Fix missing CHARSET in potfiles
+
+2003-12-29 13:16  jasper
+
+	* po/no.gmo: file no.gmo was initially added on branch xfce_4_0.
+
+2003-12-29 13:16  jasper
+
+	* po/no.po: file no.po was initially added on branch xfce_4_0.
+
+2003-12-29 13:16  jasper
+
+	* configure, configure.ac, po/no.gmo, po/no.po: Update Norwegian
+	and Turkish translations
+
+2003-12-27 22:52  jasper
+
+	* po/: pl.gmo, pl.po: Update Polish translations
+
+2003-12-27 20:46  jasper
+
+	* po/: de.gmo, pl.gmo, pl.po: Update Polish translations
+
+2003-12-23 21:29  moe
+
+	* scripts/xinitrc: We want to have the calendar if he's installed.
+	Changing the default .xinitrc to reflect that.
+
+2003-12-18 00:00  olivier
+
+	* ChangeLog: Update ChangeLog(s)
+
+2003-12-16 23:36  olivier
+
+	* configure, configure.ac: Resync, update version number
+
+2003-12-16 09:26  jasper
+
+	* xfce4-about/: AUTHORS.az, AUTHORS.html.az, Makefile.am,
+	Makefile.in: Add Azerbaijani translations
+
+2003-12-16 09:21  jasper
+
+	* xfce4-about/AUTHORS.html.az: file AUTHORS.html.az was initially
+	added on branch xfce_4_0.
+
+2003-12-16 09:21  jasper
+
+	* xfce4-about/: AUTHORS.az, AUTHORS.html.az, Makefile.am,
+	Makefile.in: Add Azerbaijani translations
+
+2003-12-16 09:21  jasper
+
+	* xfce4-about/AUTHORS.az: file AUTHORS.az was initially added on
+	branch xfce_4_0.
+
+2003-12-15 22:35  jasper
+
+	* configure, configure.ac, po/az.gmo, po/az.po: Add Azerbaijani
+	translations
+
+2003-12-15 21:56  jasper
+
+	* configure, configure.ac, po/az.gmo, po/az.po: Add Azerbaijani
+	translations
+
+2003-12-12 21:53  olivier
+
+	* xfce4-about/: AUTHORS, AUTHORS: Fix spelling error in Eduard's
+	last name
+
+2003-12-01 12:53  jasper
+
+	* xfce4-about/: AUTHORS.vi, COPYING.vi, INFO.vi, Makefile.am,
+	Makefile.in: Update vietnamese translations
+
+2003-12-01 12:49  jasper
+
+	* xfce4-about/: AUTHORS.vi, COPYING.vi, INFO.vi, Makefile.am,
+	Makefile.in: Update vietnamese translations
+
+2003-12-01 12:49  jasper
+
+	* xfce4-about/COPYING.vi: file COPYING.vi was initially added on
+	branch xfce_4_0.
+
+2003-12-01 12:49  jasper
+
+	* xfce4-about/INFO.vi: file INFO.vi was initially added on branch
+	xfce_4_0.
+
+2003-12-01 12:49  jasper
+
+	* xfce4-about/AUTHORS.vi: file AUTHORS.vi was initially added on
+	branch xfce_4_0.
+
+2003-12-01 12:03  jasper
+
+	* xfce4-about/: AUTHORS.html.ca, AUTHORS.html.ca: Update catalan
+	translations
+
+2003-11-30 22:23  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr,
+	AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr: Update AUTHORS
+
+2003-11-23 14:40  moe
+
+	* po/de.po: Updating german translation.
+
+2003-11-16 09:44  jasper
+
+	* po/: cs.gmo, cs.po, cs.gmo, cs.po: Update Czech translations
+
+2003-11-14 18:12  moe
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr:
+	Updating my email adress ;-)
+
+2003-11-12 08:02  jasper
+
+	* po/: hi.gmo, ta.gmo, vi.gmo: Forgot gmo files update
+
+2003-11-11 20:17  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr,
+	AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr: Last minute
+	credits update
+
+2003-11-11 19:35  jasper
+
+	* po/: hi.po, ta.po, vi.po: Update po files, just in case something
+	changed ...
+
+2003-11-09 20:43  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr,
+	AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr: Add Lukas
+	Konarovsky <daeltar@daeltar.org>, translator for Czech
+
+2003-11-09 20:22  jasper
+
+	* configure, configure.ac, po/cs.gmo, po/cs.po: Add Check
+	translations
+
+2003-11-09 20:09  jasper
+
+	* po/cs.gmo: file cs.gmo was initially added on branch xfce_4_0.
+
+2003-11-09 20:09  jasper
+
+	* po/cs.po: file cs.po was initially added on branch xfce_4_0.
+
+2003-11-09 20:09  jasper
+
+	* configure, configure.ac, po/cs.gmo, po/cs.po: Add Check
+	translations
+
+2003-11-08 17:28  jasper
+
+	* doc/xfce4-user-guide/fr/: BSD.html, copyright.xml,
+	xfce4-copyright.html, xfce4-intro.html, xfce4-use.html,
+	xfce4-user-guide.html, BSD.html, copyright.xml,
+	xfce4-copyright.html, xfce4-intro.html, xfce4-use.html,
+	xfce4-user-guide.html: French documentation updates (final?)
+
+2003-11-08 11:52  jasper
+
+	* doc/xfce4-user-guide/fr/: BSD.html, BSD.xml, GPL.html, GPL.xml,
+	LGPL.html, LGPL.xml, copyright.xml, xfce4-copyright.html,
+	xfce4-install.html, xfce4-intro.html, xfce4-use.html,
+	xfce4-user-guide.html: Add missing French docs
+
+2003-11-07 22:09  jasper
+
+	* configure, configure.ac, doc/index/Makefile.am,
+	doc/index/Makefile.in, doc/index/fr/Makefile.am,
+	doc/index/fr/Makefile.in, doc/index/fr/index.html,
+	doc/xfce-utils/Makefile.am, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/xfce-utils.html, doc/xfce-utils/fr/Makefile.am,
+	doc/xfce-utils/fr/Makefile.in, doc/xfce-utils/fr/xfce-utils.html,
+	doc/xfce-utils/fr/xfce-utils.xml,
+	doc/xfce-utils/fr/images/Makefile.am,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce-utils/fr/images/about-dialog.png,
+	doc/xfce-utils/fr/images/run-dialog.png,
+	doc/xfce4-user-guide/Makefile.am, doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/xfce4-install.html,
+	doc/xfce4-user-guide/C/xfce4-use.html,
+	doc/xfce4-user-guide/C/xfce4-user-guide.html,
+	doc/xfce4-user-guide/fr/Makefile.am,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/xfce4-user-guide.xml,
+	doc/xfce4-user-guide/fr/images/Makefile.am,
+	doc/xfce4-user-guide/fr/images/Makefile.in,
+	doc/xfce4-user-guide/fr/images/default-session.png,
+	doc/xfce4-user-guide/fr/images/link_xfce.jpg, scripts/xfhelp4.in:
+	Add French documentation
+
+2003-11-07 21:21  jasper
+
+	* doc/index/fr/index.html: Another update for the French docs
+
+2003-11-07 19:42  jasper
+
+	* doc/index/fr/index.html: Update French documentation
+
+2003-11-07 16:25  jasper
+
+	* xftaskbar/xftaskbar.c: Reverting last commit to xftaskbar.c .
+	That wasn't supposed to go in.
+
+2003-11-07 16:15  jasper
+
+	* scripts/xfhelp4.in: Improved language selection, looking at
+	LC_ALL or LANG variables
+
+2003-11-07 13:49  jasper
+
+	* aclocal.m4, configure, configure.ac, doc/index/Makefile.am,
+	doc/index/Makefile.in, doc/index/fr/Makefile.am,
+	doc/index/fr/Makefile.in, doc/index/fr/index.html,
+	doc/xfce-utils/Makefile.am, doc/xfce-utils/Makefile.in,
+	doc/xfce-utils/C/xfce-utils.html, doc/xfce-utils/fr/Makefile.am,
+	doc/xfce-utils/fr/Makefile.in, doc/xfce-utils/fr/xfce-utils.html,
+	doc/xfce-utils/fr/xfce-utils.xml,
+	doc/xfce-utils/fr/images/Makefile.am,
+	doc/xfce-utils/fr/images/Makefile.in,
+	doc/xfce-utils/fr/images/about-dialog.png,
+	doc/xfce-utils/fr/images/run-dialog.png,
+	doc/xfce4-user-guide/Makefile.am, doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/xfce4-install.html,
+	doc/xfce4-user-guide/C/xfce4-use.html,
+	doc/xfce4-user-guide/C/xfce4-user-guide.html,
+	doc/xfce4-user-guide/fr/BSD.html, doc/xfce4-user-guide/fr/BSD.xml,
+	doc/xfce4-user-guide/fr/GPL.html, doc/xfce4-user-guide/fr/GPL.xml,
+	doc/xfce4-user-guide/fr/LGPL.html,
+	doc/xfce4-user-guide/fr/LGPL.xml,
+	doc/xfce4-user-guide/fr/Makefile.am,
+	doc/xfce4-user-guide/fr/Makefile.in,
+	doc/xfce4-user-guide/fr/copyright.xml,
+	doc/xfce4-user-guide/fr/xfce4-copyright.html,
+	doc/xfce4-user-guide/fr/xfce4-install.html,
+	doc/xfce4-user-guide/fr/xfce4-intro.html,
+	doc/xfce4-user-guide/fr/xfce4-use.html,
+	doc/xfce4-user-guide/fr/xfce4-user-guide.html,
+	doc/xfce4-user-guide/fr/xfce4-user-guide.xml,
+	doc/xfce4-user-guide/fr/images/Makefile.am,
+	doc/xfce4-user-guide/fr/images/Makefile.in,
+	doc/xfce4-user-guide/fr/images/default-session.png,
+	doc/xfce4-user-guide/fr/images/link_xfce.jpg: Add French
+	documentation. Rather large commit.
+
+2003-11-06 19:48  edscott
+
+	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
+	doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	doc/xfce-utils/C/images/Makefile.in,
+	doc/xfce4-user-guide/Makefile.in,
+	doc/xfce4-user-guide/C/Makefile.in,
+	doc/xfce4-user-guide/C/images/Makefile.in, gdm/Makefile.in,
+	scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.am,
+	xfrun/Makefile.in, xfrun/xfcombo.i, xfrun/xfrun.c,
+	xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: added combo
+	module option
+
+2003-11-06 10:22  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr,
+	AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr: Add new
+	translators to AUTHORS
+
+2003-11-04 22:40  jasper
+
+	* doc/xfce4-user-guide/C/: BSD.html, GPL.html, LGPL.html,
+	xfce4-copyright.html, xfce4-install.html, xfce4-intro.html,
+	xfce4-use.html, xfce4-user-guide.html, xfce4-user-guide.xml,
+	BSD.html, GPL.html, LGPL.html, xfce4-copyright.html,
+	xfce4-install.html, xfce4-intro.html, xfce4-use.html,
+	xfce4-user-guide.html, xfce4-user-guide.xml: Fix typo
+
+2003-11-03 19:06  jasper
+
+	* po/uk.po: file uk.po was initially added on branch xfce_4_0.
+
+2003-11-03 19:06  jasper
+
+	* po/uk.gmo: file uk.gmo was initially added on branch xfce_4_0.
+
+2003-11-03 19:06  jasper
+
+	* configure, configure.ac, po/uk.gmo, po/uk.po, configure,
+	configure.ac, po/uk.gmo, po/uk.po, xftaskbar/xftaskbar.c: Add
+	Ukranian translations
+
+2003-11-02 09:22  olivier
+
+	* configure, configure.ac, po/hi.gmo, po/hi.po: Add hi.po
+
+2003-11-02 00:28  olivier
+
+	* po/hi.po: file hi.po was initially added on branch xfce_4_0.
+
+2003-11-02 00:28  olivier
+
+	* po/hi.gmo: file hi.gmo was initially added on branch xfce_4_0.
+
+2003-11-02 00:28  olivier
+
+	* configure, configure.ac, po/hi.gmo, po/hi.po: Add Hindi
+	translation
+
+2003-10-25 18:25  jasper
+
+	* xfce4-about/: AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr,
+	AUTHORS.html, AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr,
+	AUTHORS, AUTHORS.ca, AUTHORS.de, AUTHORS.fr, AUTHORS.html,
+	AUTHORS.html.ca, AUTHORS.html.de, AUTHORS.html.fr: Update AUTHORS
+
+2003-10-25 00:31  jasper
+
+	* configure, configure.ac, po/vi.gmo, po/vi.po: 
+	Add vietnamese translations by Lam Vinh Nien <nienvl@yahoo.ca>.
+
+2003-10-25 00:20  jasper
+
+	* configure, configure.ac, po/vi.gmo, po/vi.po: 
+	Add vietnamese translations by Lam Vinh Nien <nienvl@yahoo.ca>.
+
+2003-10-17 18:32  jasper
+
+	* configure, configure.ac, po/sv.gmo, po/sv.po: Add/update swedish
+	translations
+
+2003-10-17 17:37  jasper
+
+	* aclocal.m4, configure, configure.ac, po/sv.gmo, po/sv.po:
+	Add/update swedish translations
+
+2003-10-16 18:44  benny
+
+	* ChangeLog, NEWS, README, aclocal.m4, configure,
+	xftaskbar/xftaskbar.c: Added XRandR support for the taskbar.
+
 2003-10-15 13:20  jasper
 
 	* po/: ko.gmo, ko.po, ko.gmo, ko.po: Update korean translations
@@ -2056,13 +3386,15 @@
 2003-02-02 11:08  xfce
 
 	* Makefile.am, Makefile.in, configure, configure.ac,
-	xfce-utils.spec.in: Cleanup
+	xfce-utils.spec.in, icons/Makefile.am, icons/Makefile.in,
+	icons/xfbd_icon.xpm, icons/xfmouse.xpm, icons/xfmouse_icon.xpm:
+	Cleanup
 
 2003-01-27 21:56  xfce
 
 	* INSTALL, Makefile.am, Makefile.in, autogen.sh, config.guess,
 	config.sub, configure, configure.ac, install-sh, mkinstalldirs,
-	xfrun/Makefile.in, xftaskbar/Makefile.in,
+	icons/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	xftaskbar/plugin/Makefile.in: Update Makefiles
 
 2003-01-26 22:22  xfce
@@ -2089,10 +3421,10 @@
 
 	* Makefile.in, aclocal.m4, autogen.sh, config.guess, config.h.in,
 	config.sub, configure, configure.ac, ltmain.sh, xfce-utils.spec.in,
-	xfrun/Makefile.in, xftaskbar/Makefile.am, xftaskbar/Makefile.in,
-	xftaskbar/xftaskbar.c, xftaskbar/plugin/Makefile.am,
-	xftaskbar/plugin/Makefile.in, xftaskbar/plugin/icon.png,
-	xftaskbar/plugin/inline-icon.h,
+	icons/Makefile.in, xfrun/Makefile.in, xftaskbar/Makefile.am,
+	xftaskbar/Makefile.in, xftaskbar/xftaskbar.c,
+	xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in,
+	xftaskbar/plugin/icon.png, xftaskbar/plugin/inline-icon.h,
 	xftaskbar/plugin/xftaskbar_plugin.c: add mcs plugin to configure
 	xftaskbar
 
@@ -2125,11 +3457,11 @@
 2002-11-08 23:19  xfce
 
 	* Makefile.in, aclocal.m4, config.h.in, configure, configure.ac,
-	xfce-utils.spec.in, xfrun/Makefile.in, xftaskbar/Makefile.in,
-	xftaskbar/xftaskbar.c: make sure required libs for build/rpm are
-	listed, with versions and keep the minimum version required at only
-	one place (configure.in/ac) xfbd uses preview file selector from
-	libxfcegui4
+	xfce-utils.spec.in, icons/Makefile.in, xfrun/Makefile.in,
+	xftaskbar/Makefile.in, xftaskbar/xftaskbar.c: make sure required
+	libs for build/rpm are listed, with versions and keep the minimum
+	version required at only one place (configure.in/ac) xfbd uses
+	preview file selector from libxfcegui4
 
 2002-11-02 21:23  xfce
 
@@ -2155,7 +3487,9 @@
 	NEWS, README, TODO, aclocal.m4, autogen.sh, compile, config.guess,
 	config.h.in, config.sub, configure, configure.ac, depcomp,
 	install-sh, missing, mkinstalldirs, xfce-utils-020915.tar.gz,
-	xfce-utils.spec.in, xfrun/Makefile.am, xfrun/Makefile.in,
-	xfrun/xfrun.1, xfrun/xfrun.c: Add xfce-utils package and move xfbd
-	xfmouse and xfrun to it. Remove their old subdirs
+	xfce-utils.spec.in, icons/Makefile.am, icons/Makefile.in,
+	icons/xfbd_icon.xpm, icons/xfmouse.xpm, icons/xfmouse_icon.xpm,
+	xfrun/Makefile.am, xfrun/Makefile.in, xfrun/xfrun.1, xfrun/xfrun.c:
+	Add xfce-utils package and move xfbd xfmouse and xfrun to it.
+	Remove their old subdirs
 
