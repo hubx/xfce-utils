@@ -94,7 +94,7 @@ msgstr "Abajo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr "Alinación"
+msgstr "Alineación"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
