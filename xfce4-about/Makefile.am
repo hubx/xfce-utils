@@ -16,6 +16,7 @@ about_DATA =								\
 	AUTHORS.html.it							\
 	AUTHORS.html.ru                                                 \
 	AUTHORS.html.sk							\
+	AUTHORS.html.vi							\
 	AUTHORS.it							\
 	AUTHORS.lt							\
 	AUTHORS.ru							\

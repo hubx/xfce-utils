@@ -1,13 +1,14 @@
 # xfce-utils for XFCE
 # Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce-utils package.
-# Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2003.
+# This file is distributed under the same license as the xfwm4 package.
+# Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfwm4 1.0.0\n"
-"POT-Creation-Date: 2004-08-06 16:17+0200\n"
-"PO-Revision-Date: 2003-10-24 23:55+9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-15 23:28+0200\n"
+"PO-Revision-Date: 2004-09-08 15:40+9\n"
 "Last-Translator: Lâm Vĩnh Niên <nienvl@yahoo.ca>\n"
 "Language-Team: none <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,14 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "Về XFce 4"
+msgstr "Giới thiệu XFce 4"
 
 #: xfce4-about/info.c:268
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce Desktop Environment"
+msgstr "Môi trường Desktop Xfce"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
@@ -61,7 +60,7 @@ msgstr "xfrun4: Không thể viết lịch sử vào tập tin %s\n"
 #: xfrun/xfrun.c:378
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Mở %s với chương trình nào?"
 
 #: xfrun/xfrun.c:379
 msgid "Run program"
@@ -86,39 +85,36 @@ msgid "Position"
 msgstr "Vị trí"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Đỉnh"
+msgstr "Đỉ_nh"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Đáy"
+msgstr "Đá_y"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Canh hàng"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "T_rái"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "Giữ_a"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "_Phải"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Tự động ẩn"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Tự động ẩn thanh tác vụ"
+msgstr "Tự động ẩn t_hanh tác vụ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -140,42 +136,39 @@ msgstr "To"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Bề rộng:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "Tác vụ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Hiển thị các tác vụ từ mọi không gian làm việc"
+msgstr "Hiển thị các tác vụ từ _mọi không gian làm việc"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Luôn luôn _nhóm các tác vụ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Hiển thị _tên ứng dụng"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Trình chuyển trang"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Hiển thị trình chuyển trang trên thanh tác vụ"
+msgstr "Hiển thị trình chu_yển trang trên thanh tác vụ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Vùng thông báo"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Hiển thị khay hệ thống trên thanh tác vụ"
+msgstr "Hiển thị _khay hệ thống trên thanh tác vụ"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
@@ -192,12 +185,11 @@ msgstr "Không thể đăng kí khay hệ thống: %s"
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "Điều này không thể xảy ra"
+msgstr "Điều này không nên xảy ra"
 
 #: xftaskbar/xftaskbar.c:592
-#, fuzzy
 msgid "Cannot get default screen\n"
-msgstr "Không thể lấy được lề desktop"
+msgstr "Không thể lấy được màn hình mặc định\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"

@@ -1,23 +1,23 @@
 Trưởng dự án
   Olivier Fourdan <fourdan@xfce.org>
   
-Những nhà phát triển nòng cốt
+Những người phát triển chính
   Benedikt Meurer <benny@xfce.org>
   Biju Chacko <botsie@myrealbox.com>
   Brian Tarricone <bjt23@cornell.edu>
-  Danny Milosavljevic <danny_milo@yahoo.com>
   Edscott Wilson Garcia <edscott@imp.mx>
-  Eduard Roccatello <eduard@xfce.org>
-  François Le Clainche <fleclainche@wanadoo.fr>
-  Jasper Huijsmans <jasper@xfce.org>
-  Jean-François Wauthy <pollux@xfce.org>
+  Jasper Huijsmans <huysmans@users.sourceforge.net>
   Olivier Fourdan <fourdan@xfce.org>
 
 Những người đóng góp
   Bernhard Walle <Bernhard.Walle@gmx.de> 
   Craig Betts <craig.betts@dfrc.nasa.gov>
+  Danny Milosavljevic <danny_milo@yahoo.com>
+  Eduard Roccatello <eduard@xfce.org>
   Ejvend Nielsen <prophet@sphere-x.net>
   Erik Touve <etouve@earthlink.net>
+  François Le Clainche <fleclainche@wanadoo.fr>
+  Jean-François Wauthy <pollux@xfce.org>
   Jens Guballa <j.guballa@t-online.de>
   Jens Luedicke <jens@irs-net.com>
   Joakim Andreasson <joakim.andreasson@gmx.net>
@@ -29,10 +29,10 @@ Những người đóng góp
   Tobias Henle <tobias@page23.de>
   Xavier Maillard <zedek@fxgsproject.org>
 
-Web Hosting và các Mailing List được cung cấp bởi
+Web Hosting và Mailing Lists được cung cấp bởi
   Chuck Mead <csm@MoonGroup.com>
 
-Những người phiên dịch
+Những người dịch thuật
   Abbas Izad <abbasizad@hotmail.com>
   Alex Dupre (it) <ale@FreeBSD.org>
   ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>
@@ -42,26 +42,28 @@ Những người phiên dịch
   Dinesh Nadarajah <n_dinesh@yahoo.com>
   Duarte Henriques <duarte_henriques@myrealbox.com>
   Egmont Koblinger <egmont@uhulinux.hu>
-  Erçin EKER <erc.caldera@gmx.net>
+  Erçin EKER (tr) <erc.caldera@gmx.net>
   G Karunakar <karunakar@freedomink.org>
   Harun Musa <mharun@gmx.net>
   Ilkka Ollakka (fi) <ilkka.j.ollakka@students.oamk.fi>
-  Jaime Buffery <nestu@onlylinux.homelinux.net>
+  Jaime Buffery (es) <nestu@onlylinux.homelinux.net>
   Joakim Andreasson <joakim.andreasson@gmx.net>
   Johan Hammar <johan.hammar@swipnet.se>
   Lam Vinh Nien <nienvl@yahoo.ca>
   Lukáš Konarovský <daeltar@daeltar.org>
-  Marie-Claude Collilieux <m.collilieux@free.fr>
+  Marie-Claude Collilieux (fr) <m.collilieux@free.fr>
+  Mantas Zapolskas (lt) <mantaz@users.sf.net>
   Maxim Dziumanenko <mvd@mylinux.com.ua>
   Miroslav Yordanov <miordanov@i-space.org>
   Moritz Heiber (de) <moe@lunar-linux.org>
-  Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
+  Nabil Ben Khalifa (ar) <nabil_benkhalifa@yahoo.fr>
   Nuno Donato <nunodonato@sapo.pt>
   Paweł Pastuła <pastulap@poczta.onet.pl>
   Peter Slavov <peshka@i-space.org>
   Peter Somogyi <jerry@gnu.hu>
   Ravishankar Shrivastava <raviratlami@yahoo.com>
   Saleh Hathal <hathalsal@hotmail.com>
+  Ted Sola (no) <ted@disturbedconfusion.com>
   tximas <a_gomez@mipagina.zzn.com>
   umm <umm@pchome.com.tw>
   Yongtao Yang (zh_CN) <yongtao.yang@teila.com>
@@ -69,7 +71,7 @@ Những người phiên dịch
   Zele Gabor <zegab@axelero.hu>
   Zhao Ji <zhao-ji@awz.ne.jp>
 
-Nếu bạn thấy có bất cứ ai bị thiếu trong danh sách này, hãy cho chúng tôi biết tại
+Nếu bạn biết bất cứ ai thiếu trong danh sách này, vui lòng cho chúng tôi biết tại
 xfce4-dev@xfce.org
 
-Cảm ơn tất cả những ai đã góp sức cho phần mềm này tồn tại.
+Cảm ơn tất cả những ai đã giúp đỡ để phần mềm này hiện hữu.
