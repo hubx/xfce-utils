@@ -251,7 +251,7 @@
     </figure>
 
     <para>When you run <application>startxfce4</application> several
-      applications are started:
+      applications are started by the session manager:
     </para>
 
     <variablelist>
@@ -262,14 +262,14 @@
 	  <para>At the top of the screen you will see the taskbar. It shows
 	    the applications running on the current workspace. You can
 	    focus the application by clicking on the button in the taskbar.
-	    Clicking the button again will hide the application. Moreover,
-	    if click on the button with the right button of the mouse, an
-	    menu will appear, allowing you to perform several actions on
-	    the application window. 
+	    Clicking again will hide the application. If you use the right
+	    mouse button, a menu will appear, allowing you to perform several 
+	    actions on the application window. 
 	  </para>
 	  <para>
-	    The taskbar can also contain a graphical pager showing a miniature
-	    view of all your workspaces and a notification area or system tray.
+	    The taskbar can optionally contain a graphical pager showing a 
+	    miniature view of all your workspaces and a notification area or 
+	    system tray. 
 	  </para>
 	</listitem>
       </varlistentry>
@@ -463,15 +463,15 @@
 
       <para>The settings manager dialog provides access to the global
 	preferences of many Xfce 4 applications. You can run it by pressing 
-	its laucher on the panel, from the right click menu on the panel
-	move handles or from the desktop mouse menu.
+	its laucher on the panel, from the desktop mouse menu or by running
+	<application>xfce-setting-show</application>.
       </para>
 
-      <para>Preference dialogs for many aspects of the Xfce 4 desktop 
-	environment are available. The available options are described in the 
-	manuals of each Xfce 4 component. It may be interesting to have a quick
-	look at all the dialogs to see all options that allow you to create 
-	the best possible working environment.
+      <para>Dialogs to change many aspects of the Xfce 4 desktop 
+	environment are available. See the separate manuals of the Xfce 4 
+	components for more information. It may be interesting to have a quick
+	look at all the dialogs to find out what options are available that
+	allow you to create the best possible working environment.
       </para>
 
     </sect3>
@@ -545,6 +545,16 @@
     </varlistentry>
 	      
     <varlistentry>
+      <term>xfce4-session</term>
+      <listitem>
+	<para>Session manager. The session manager controls the startup and
+	  shutdown of the Xfce Desktop Environment. On logout it can save the
+	  running application and start them again the next time you log in.
+	</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
       <term>xfwm4</term>
       <listitem>
 	<para>The Xfce 4 window mananger. Manages the placement of 
@@ -603,6 +613,22 @@
     </varlistentry>
 
     <varlistentry>
+      <term>xfce4-appfinder</term>
+      <listitem>
+	<para>An application finder, which allows you to search, launch and 
+	  find information about applications installed on your system.
+	</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>xfcalendar</term>
+      <listitem>
+	<para>Simple calendar application with reminders.</para>
+      </listitem>
+    </varlistentry>
+    
+    <varlistentry>
       <term>gtk-xfce-engine-2</term>
       <listitem>
 	<para>Theme engine for GTK2. Not required for the desktop, but
@@ -619,80 +645,14 @@
     </varlistentry>
 
     <varlistentry>
-      <term>xfce4-appfinder</term>
-      <listitem>
-	<para>An application finder, which allows you to search, launch and 
-	  find information about applications installed on your system.
-	</para>
-      </listitem>
-    </varlistentry>
-	    
-    <varlistentry>
       <term>xfwm4-themes</term>
       <listitem>
 	<para>Window decoration themes for xfwm4.</para>
       </listitem>
     </varlistentry>
 
-    <varlistentry>
-      <term>xffm-icons</term>
-      <listitem>
-	<para>Icon themes editor for the xffm file manager.</para>
-      </listitem>
-    </varlistentry>
-
-    <varlistentry>
-      <term>xfce4-iconbox</term>
-      <listitem>
-	<para>An iconbox that can be used as an alternative for the
-	  taskbar provided in the xfce-utils package. See <xref
-	    linkend="xfce4-getting-started"/> to find out how to modify 
-	  the startup script.
-	</para>
-      </listitem>
-    </varlistentry>
-	      
-    <varlistentry>
-      <term>xfce4-mixer</term>
-      <listitem>
-	<para>Volume control for the panel. Includes simple mixer dialog.
-	</para>
-      </listitem>
-    </varlistentry>
-
-    <varlistentry>
-      <term>xfce4-systray</term>
-      <listitem>
-	<para>Notification area or system tray for the panel. Note that
-	  there can be only one system tray running at the time, so you
-	  have to disable the system tray on the taskbar to use this panel
-	  plugin.
-	</para>
-      </listitem>
-    </varlistentry>
-
-    <varlistentry>
-      <term>xfce4-toys</term>
-      <listitem>
-	<para>Less serious utilities and additions for the panel. 
-	  Currently contains a tips/fortunes dialog and an xeyes 
-	  implementation for the panel.
-	</para>
-      </listitem>
-    </varlistentry>
-
-    <varlistentry>
-      <term>xfce4-trigger-laucher</term>
-      <listitem>
-	<para>Provides a toggle button for the panel, showing on or off
-	  state. Check the README file provided in the package for more
-	  information.
-	</para>
-      </listitem>
-    </varlistentry>
-
   </variablelist>
-      
+
   <para>&nbsp;</para>
     
 </sect1>
