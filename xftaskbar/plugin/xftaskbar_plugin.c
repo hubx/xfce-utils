@@ -38,6 +38,8 @@
 #include <xfce-mcs-manager/manager-plugin.h>
 #include "inline-icon.h"
 
+#define BORDER 5
+
 #define RCDIR    "settings"
 #define CHANNEL  "taskbar"
 #define RCFILE   "taskbar.xml"
@@ -208,10 +210,12 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_box_pack_start(GTK_BOX(dialog->dialog_vbox1), dialog->dialog_header, FALSE, TRUE, 0);
 
     dialog->hbox1 = gtk_hbox_new (TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->hbox1), BORDER + 1);
     gtk_widget_show (dialog->hbox1);
     gtk_box_pack_start (GTK_BOX (dialog->dialog_vbox1), dialog->hbox1, TRUE, TRUE, 0);
 
     dialog->vbox1 = gtk_vbox_new (FALSE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox1), BORDER);
     gtk_widget_show (dialog->vbox1);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox1, TRUE, TRUE, 0);
 
@@ -291,6 +295,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_range_set_update_policy (GTK_RANGE (dialog->height_scale), GTK_UPDATE_DISCONTINUOUS);
 
     dialog->vbox2 = gtk_vbox_new (TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox2), BORDER);
     gtk_widget_show (dialog->vbox2);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
 
