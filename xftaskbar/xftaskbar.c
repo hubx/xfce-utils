@@ -296,7 +296,7 @@ int main(int argc, char **argv)
     taskbar->x = margins.left;
     taskbar->width = gdk_screen_width() - margins.left - margins.right;
     taskbar->y = 0;
-    taskbar->height = DEFAULT_HEIGHT;
+    taskbar->height = 1;
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
     taskbar->show_pager = TRUE;
@@ -337,6 +337,7 @@ int main(int argc, char **argv)
     gtk_widget_show (taskbar->tasklist);
     gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
+    taskbar_change_size(taskbar, DEFAULT_HEIGHT);
     taskbar_position(taskbar);
 
     client = mcs_client_new(GDK_DISPLAY(), XDefaultScreen(GDK_DISPLAY()), notify_cb, watch_cb, taskbar);
