@@ -39,9 +39,16 @@ if test "x$panel" != "x" ; then
 	$panel
 	ret=$?
 	while [ $ret -ne 0 ] ; do
-		echo "A crash occured in the panel"
-		echo "Please report this to the xfce4-dev@moongroup.com list"
-		echo "Meanwhile the panel will be restarted"
+		xmessage -center -file - -timeout 20 -title Error <<EOF
+A crash occured in the panel
+Please report this to the xfce4-dev@moongroup.com list
+Meanwhile the panel will be restarted
+EOF
+		cat >&2 <<EOF
+A crash occured in the panel
+Please report this to the xfce4-dev@moongroup.com list
+Meanwhile the panel will be restarted
+EOF
 		$panel
 		ret=$?
 	done

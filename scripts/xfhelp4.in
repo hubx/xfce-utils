@@ -22,7 +22,7 @@
 
 if [ "x$BROWSER" = "x" ]
 then
-  BROWSER=mozilla
+  BROWSER="@BROWSER_DEFAULT@"
 fi
 
 HELP_DIR="@datadir@/xfce4/doc/"
@@ -44,18 +44,26 @@ else
 fi
 
 case $BROWSER in
-    netscape|mozilla|phoenix*)
+    communicator*|netscape|mozilla*|phoenix*)
 	$BROWSER -remote openurl\(file://"$URL",new-window\) || \
 		$BROWSER "$URL"    
 	;;
-    opera)
+    opera*)
     	$BROWSER -remote openURL\(file://"$URL",new-window\) || \
 		$BROWSER "$URL"
 	;;
     *)
-    $BROWSER file://"$URL"
+    	$BROWSER file://"$URL"
 	;;
 esac
+
+if [ $? -ne 0 ]; then
+	xmessage -center -file - -title Error <<EOF
+Unable to execute $BROWSER. Online help
+is not available.
+EOF
+	exit 1
+fi
 
 exit 0
 

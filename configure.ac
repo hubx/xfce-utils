@@ -33,6 +33,15 @@ AC_HEADER_STDC
 dnl Check for X11 installed
 BM_LIBX11_REQUIRE
 
+dnl Check for default browser to use
+AC_MSG_CHECKING([what browser to use by default])
+AC_ARG_WITH([browser],
+AC_HELP_STRING([--with-browser=BROWSER], [What should be the default browser? (default=mozilla)]),
+  [], [with_browser=mozilla])
+BROWSER_DEFAULT=$with_browser
+AC_SUBST([BROWSER_DEFAULT])
+AC_MSG_RESULT([$with_browser])
+
 dnl enable GDM-specific startup files?
 AC_MSG_CHECKING([whether to install GDM specific files])
 AC_ARG_ENABLE([gdm],
@@ -43,14 +52,17 @@ USE_GDM=$enable_gdm
 AC_SUBST([USE_GDM])
 AC_MSG_RESULT([$enable_gdm])
 
-GDM_PREFIX=/etc/X11/gdm/Sessions
-AC_MSG_CHECKING(where GDM keeps session files)
-AC_ARG_WITH(gdm-prefix,
-	[  --with-gdm-prefix=STR        where GDM keeps session files (default=/etc/X11/gdm/Sessions)],
-	[ GDM_PREFIX="$withval", GDM_PREFIX=/etc/X11/gdm/Sessions]
-)
-AC_MSG_RESULT($GDM_PREFIX)
-AC_SUBST(GDM_PREFIX)
+dnl Check where to install GDM session files
+if test x"$enable_gdm" = x"yes"; then
+  GDM_PREFIX=/etc/X11/gdm/Sessions
+  AC_MSG_CHECKING(where GDM keeps session files)
+  AC_ARG_WITH(gdm-prefix,
+  AC_HELP_STRING([--with-gdm-prefix=STR], [where GDM keeps session files (default=/etc/X11/gdm/Sessions)]),
+  	[], [with_gdm_prefix=/etc/X11/gdm/Sessions])
+  GDM_PREFIX=$with_gdm_prefix
+  AC_SUBST(GDM_PREFIX)
+  AC_MSG_RESULT($with_gdm_prefix)
+fi
 
 dnl Check for i18n support
 BM_I18N([xfce-utils], [ca de es fi fr ja ms nl pl ru ta tr zh_CN])

@@ -308,7 +308,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM AWK SET_MAKE am__leading_dot MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP EGREP build build_cpu build_vendor build_os host host_cpu host_vendor host_os LN_S RANLIB ac_ct_RANLIB LIBTOOL X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS LIBX11_CFLAGS LIBX11_LDFLAGS LIBX11_LIBS USE_GDM GDM_PREFIX GETTEXT_PACKAGE USE_NLS MSGFMT GMSGFMT XGETTEXT CATALOGS CATOBJEXT DATADIRNAME GMOFILES INSTOBJEXT INTLLIBS PO_IN_DATADIR_TRUE PO_IN_DATADIR_FALSE POFILES POSUB MKINSTALLDIRS localedir PKG_CONFIG LIBXFCE4MCS_CLIENT_CFLAGS LIBXFCE4MCS_CLIENT_LIBS LIBXFCE4MCS_CLIENT_REQUIRED_VERSION LIBXFCEGUI4_CFLAGS LIBXFCEGUI4_LIBS LIBXFCEGUI4_REQUIRED_VERSION XFCE_MCS_MANAGER_CFLAGS XFCE_MCS_MANAGER_LIBS XFCE_MCS_MANAGER_REQUIRED_VERSION XFCE_MCS_MANAGER_PLUGINSDIR LIBGTKHTML_CFLAGS LIBGTKHTML_LIBS LIBGTKHTML_REQUIRED_VERSION LIBOBJS LTLIBOBJS'
+ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM AWK SET_MAKE am__leading_dot MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP EGREP build build_cpu build_vendor build_os host host_cpu host_vendor host_os LN_S RANLIB ac_ct_RANLIB LIBTOOL X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS LIBX11_CFLAGS LIBX11_LDFLAGS LIBX11_LIBS BROWSER_DEFAULT USE_GDM GDM_PREFIX GETTEXT_PACKAGE USE_NLS MSGFMT GMSGFMT XGETTEXT CATALOGS CATOBJEXT DATADIRNAME GMOFILES INSTOBJEXT INTLLIBS PO_IN_DATADIR_TRUE PO_IN_DATADIR_FALSE POFILES POSUB MKINSTALLDIRS localedir PKG_CONFIG LIBXFCE4MCS_CLIENT_CFLAGS LIBXFCE4MCS_CLIENT_LIBS LIBXFCE4MCS_CLIENT_REQUIRED_VERSION LIBXFCEGUI4_CFLAGS LIBXFCEGUI4_LIBS LIBXFCEGUI4_REQUIRED_VERSION XFCE_MCS_MANAGER_CFLAGS XFCE_MCS_MANAGER_LIBS XFCE_MCS_MANAGER_REQUIRED_VERSION XFCE_MCS_MANAGER_PLUGINSDIR LIBGTKHTML_CFLAGS LIBGTKHTML_LIBS LIBGTKHTML_REQUIRED_VERSION LIBOBJS LTLIBOBJS'
 ac_subst_files=''
 
 # Initialize some variables set by options.
@@ -878,7 +878,10 @@ Optional Packages:
   --with-gnu-ld           assume the C compiler uses GNU ld default=no
   --with-pic              try to use only PIC/non-PIC objects default=use both
   --with-x                use the X Window System
-  --with-gdm-prefix=STR        where GDM keeps session files (default=/etc/X11/gdm/Sessions)
+  --with-browser=BROWSER  What should be the default browser?
+                          (default=mozilla)
+  --with-gdm-prefix=STR   where GDM keeps session files
+                          (default=/etc/X11/gdm/Sessions)
   --with-locales-dir=DIR  Install locales into DIR
 
 Some influential environment variables:
@@ -5123,7 +5126,7 @@ test x"$pic_mode" = xno && libtool_flags="$libtool_flags --prefer-non-pic"
 case $host in
 *-*-irix6*)
   # Find out which ABI we are using.
-  echo '#line 5126 "configure"' > conftest.$ac_ext
+  echo '#line 5129 "configure"' > conftest.$ac_ext
   if { (eval echo "$as_me:$LINENO: \"$ac_compile\"") >&5
   (eval $ac_compile) 2>&5
   ac_status=$?
@@ -6927,6 +6930,21 @@ echo "$as_me: error: X Window system libraries and header files are required" >&
   fi
 
 
+echo "$as_me:$LINENO: checking what browser to use by default" >&5
+echo $ECHO_N "checking what browser to use by default... $ECHO_C" >&6
+
+# Check whether --with-browser or --without-browser was given.
+if test "${with_browser+set}" = set; then
+  withval="$with_browser"
+
+else
+  with_browser=mozilla
+fi;
+BROWSER_DEFAULT=$with_browser
+
+echo "$as_me:$LINENO: result: $with_browser" >&5
+echo "${ECHO_T}$with_browser" >&6
+
 echo "$as_me:$LINENO: checking whether to install GDM specific files" >&5
 echo $ECHO_N "checking whether to install GDM specific files... $ECHO_C" >&6
 # Check whether --enable-gdm or --disable-gdm was given.
@@ -6941,19 +6959,23 @@ USE_GDM=$enable_gdm
 echo "$as_me:$LINENO: result: $enable_gdm" >&5
 echo "${ECHO_T}$enable_gdm" >&6
 
-GDM_PREFIX=/etc/X11/gdm/Sessions
-echo "$as_me:$LINENO: checking where GDM keeps session files" >&5
+if test x"$enable_gdm" = x"yes"; then
+  GDM_PREFIX=/etc/X11/gdm/Sessions
+  echo "$as_me:$LINENO: checking where GDM keeps session files" >&5
 echo $ECHO_N "checking where GDM keeps session files... $ECHO_C" >&6
 
 # Check whether --with-gdm-prefix or --without-gdm-prefix was given.
 if test "${with_gdm_prefix+set}" = set; then
   withval="$with_gdm_prefix"
-   GDM_PREFIX="$withval", GDM_PREFIX=/etc/X11/gdm/Sessions
 
+else
+  with_gdm_prefix=/etc/X11/gdm/Sessions
 fi;
-echo "$as_me:$LINENO: result: $GDM_PREFIX" >&5
-echo "${ECHO_T}$GDM_PREFIX" >&6
+  GDM_PREFIX=$with_gdm_prefix
 
+  echo "$as_me:$LINENO: result: $with_gdm_prefix" >&5
+echo "${ECHO_T}$with_gdm_prefix" >&6
+fi
 
 
   GETTEXT_PACKAGE=xfce-utils
@@ -9353,6 +9375,7 @@ s,@X_EXTRA_LIBS@,$X_EXTRA_LIBS,;t t
 s,@LIBX11_CFLAGS@,$LIBX11_CFLAGS,;t t
 s,@LIBX11_LDFLAGS@,$LIBX11_LDFLAGS,;t t
 s,@LIBX11_LIBS@,$LIBX11_LIBS,;t t
+s,@BROWSER_DEFAULT@,$BROWSER_DEFAULT,;t t
 s,@USE_GDM@,$USE_GDM,;t t
 s,@GDM_PREFIX@,$GDM_PREFIX,;t t
 s,@GETTEXT_PACKAGE@,$GETTEXT_PACKAGE,;t t

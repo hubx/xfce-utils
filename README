@@ -1,0 +1,8 @@
+How to choose a browser for displaying the Online Help?
+-------------------------------------------------------
+
+By default xfce-utils uses mozilla to display the online help. You might
+want to use another browser to display the help. To do so, you can
+either add --with-browser=<my-favourite-browser> to configure or you
+can set the BROWSER environment variable to your favourite browser
+prior to running startxfce4, e.g. in your .xsession or .xinitrc file.

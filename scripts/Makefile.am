@@ -11,7 +11,8 @@ bin_SCRIPTS= \
 # cannot be set from configure, because ${prefix} is not expanded
 edit = sed \
         -e 's,@datadir\@,$(datadir),g' \
-        -e 's,@sysconfdir\@,$(sysconfdir),g'
+        -e 's,@sysconfdir\@,$(sysconfdir),g' \
+	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g'
 
 startxfce4: Makefile $(srcdir)/startxfce4.in
 	rm -f startxfce4 startxfce4.tmp
