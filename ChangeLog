@@ -1,3 +1,44 @@
+2004-11-11 21:21  jasper
+
+	* doc/index/C/index.html: Big screenshot update for the docs
+
+2004-11-06 18:32  olivier
+
+	* xfce4-about/: AUTHORS, AUTHORS.az, AUTHORS.ca, AUTHORS.de,
+	  AUTHORS.es, AUTHORS.eu, AUTHORS.fr, AUTHORS.he, AUTHORS.html,
+	  AUTHORS.html.az, AUTHORS.html.ca, AUTHORS.html.de,
+	  AUTHORS.html.es, AUTHORS.html.eu, AUTHORS.html.fr,
+	  AUTHORS.html.it, AUTHORS.html.ru, AUTHORS.html.sk,
+	  AUTHORS.html.vi, AUTHORS.it, AUTHORS.lt, AUTHORS.ru, AUTHORS.sk,
+	  AUTHORS.vi: Web hosting is now provided by Remco Lubbers
+
+2004-11-06 17:24  olivier
+
+	* ChangeLog, Makefile.in, aclocal.m4, compile, config.guess,
+	  config.sub, configure, depcomp, install-sh, missing,
+	  doc/Makefile.in, doc/index/Makefile.in, doc/index/C/Makefile.in,
+	  doc/index/fr/Makefile.in, doc/index/it/Makefile.in,
+	  doc/xfce-utils/Makefile.in, doc/xfce-utils/C/Makefile.in,
+	  doc/xfce-utils/C/images/Makefile.in,
+	  doc/xfce-utils/fr/Makefile.in,
+	  doc/xfce-utils/fr/images/Makefile.in,
+	  doc/xfce-utils/it/Makefile.in,
+	  doc/xfce-utils/it/images/Makefile.in,
+	  doc/xfce4-user-guide/Makefile.in,
+	  doc/xfce4-user-guide/C/Makefile.in,
+	  doc/xfce4-user-guide/C/images/Makefile.in,
+	  doc/xfce4-user-guide/fr/Makefile.in,
+	  doc/xfce4-user-guide/fr/images/Makefile.in,
+	  doc/xfce4-user-guide/it/Makefile.in,
+	  doc/xfce4-user-guide/it/images/Makefile.in, gdm/Makefile.in,
+	  icons/Makefile.in, icons/48x48/Makefile.in,
+	  icons/scalable/Makefile.in, scripts/Makefile.in,
+	  xfce4-about/Makefile.in, xfrun/Makefile.in,
+	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in: Update
+	  automake/autoconf/libtool/gettext versions to generate the
+	  configure scripts and Makefiles, Update versions of all packages
+	  to 4.1.99.1 (ie 4.2 RC1), Update ChangeLogs.
+
 2004-11-05 23:15  olivier
 
 	* Makefile.in, config.h.in, configure, configure.ac,
