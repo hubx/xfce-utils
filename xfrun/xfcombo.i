@@ -27,8 +27,8 @@
  * */
 #define CURRENT_RUNFLAG "xffm.runflag.2.dbh"
 #define CURRENT_RUN_HISTORY "xffm.runlist.2.dbh"
-#define RUN_FLAG_FILE g_get_home_dir(),"/.xfce4/xffm/",CURRENT_RUNFLAG
-#define RUN_DBH_FILE g_get_home_dir(),"/.xfce4/xffm/",CURRENT_RUN_HISTORY
+#define RUN_FLAG_FILE xfce_get_userdir(),"/xffm/",CURRENT_RUNFLAG
+#define RUN_DBH_FILE xfce_get_userdir(),"/xffm/",CURRENT_RUN_HISTORY
 
 /* These structures should be a verbatim copy of combo.h from the xfce4-modules
  * directory. It should be copied here to permit compilation if
