@@ -42,11 +42,13 @@ Traducteurs
   Jaime Buffery <nestu@onlylinux.homelinux.net>
   Joakim Andreasson <joakim.andreasson@gmx.net>
   Lam Vinh Nien <nienvl@yahoo.ca>
+  Maxim Dziumanenko <mvd@mylinux.com.ua>
   Moritz Heiber <mistermoe@hackerboard.de>
   Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
   Nuno Donato <nunodonato@sapo.pt>
   Paweł Pastuła <pastulap@poczta.onet.pl>
   Peter Somogyi <jerry@gnu.hu>
+  Ravishankar Shrivastava <raviratlami@yahoo.com>
   umm <umm@pchome.com.tw>
   Yongtao Yang <yongtao.yang@teila.com>
   Zele Gabor <zegab@axelero.hu>
