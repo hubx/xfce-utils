@@ -363,7 +363,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label16), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label16), 0, 0.5);
 
-    dialog->height_scale = gtk_hscale_new (GTK_ADJUSTMENT (gtk_adjustment_new (height, 20, 60, 10, 10, 10)));
+    dialog->height_scale = gtk_hscale_new (GTK_ADJUSTMENT (gtk_adjustment_new (height, 28, 60, 10, 10, 10)));
     gtk_widget_show (dialog->height_scale);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->height_scale, 1, 2, 1, 2,
                       (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
