@@ -372,6 +372,12 @@ static void icon_undocked(XfceSystemTray *tray, GtkWidget *icon, GtkBox *iconbox
 {
 }
 
+static void message_new(XfceSystemTray *tray, GtkWidget *icon, glong id,
+		glong timeout, const gchar *text)
+{
+	g_print("MESSAGE(%d): \"%s\" (%d)\n", id, text, timeout);
+}
+
 int main(int argc, char **argv)
 {
     SessionClient *client_session;
@@ -466,6 +472,7 @@ int main(int argc, char **argv)
 
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar->iconbox);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar->iconbox);
+    g_signal_connect(taskbar->tray, "message_new", G_CALLBACK(message_new), taskbar->iconbox);
 
     gtk_widget_show (taskbar->iconbox);
     gtk_widget_show (taskbar->tasklist);

@@ -163,11 +163,14 @@ aboutdir = $(datadir)/xfce4
 
 about_DATA = \
 	AUTHORS								\
+	AUTHORS.ca							\
 	AUTHORS.de							\
+	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
 	AUTHORS.html							\
 	COPYING								\
 	INFO								\
+	INFO.html.ca							\
 	INFO.html.de							\
 	INFO.html
 
@@ -204,7 +207,7 @@ EXTRA_DIST = \
 subdir = xfce4-about
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO INFO.html INFO.html.de
+CONFIG_CLEAN_FILES = INFO INFO.html INFO.html.ca INFO.html.de
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -227,8 +230,8 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING INFO.html.de.in INFO.html.in INFO.in \
-	Makefile.am Makefile.in
+DIST_COMMON = AUTHORS COPYING INFO.html.ca.in INFO.html.de.in \
+	INFO.html.in INFO.in Makefile.am Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
 
 all: all-am
@@ -243,6 +246,8 @@ Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.s
 INFO: $(top_builddir)/config.status INFO.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html: $(top_builddir)/config.status INFO.html.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.html.ca: $(top_builddir)/config.status INFO.html.ca.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html.de: $(top_builddir)/config.status INFO.html.de.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
