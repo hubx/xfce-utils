@@ -121,7 +121,6 @@ static void set_run_combo(xfc_combo_info_t *combo_info)
 
 
 void unload_xfc(void){
-	g_free(xfc_fun);
 	xfc_fun = NULL;
 	if (!g_module_close(xfc_cm)){
 	   g_warning("g_module_close(xfc_cm) != TRUE\n");
