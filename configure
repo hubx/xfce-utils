@@ -20901,7 +20901,7 @@ _ACEOF
           ;;
         esac
       done
-      if ! echo $LIBX11_LIBS | grep -q -- '-lX11'; then
+      if ! echo $LIBX11_LIBS | grep -- '-lX11' > /dev/null; then
         LIBX11_LIBS="$LIBX11_LIBS -lX11"
       fi
 
@@ -22809,7 +22809,7 @@ echo "${ECHO_T}yes" >&6
   fi
 
 
-                                                                                                                                                                                                                                                ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.fr xfce4-about/INFO.html xfce4-about/INFO.html.ca xfce4-about/INFO.html.de xfce4-about/INFO.html.fr"
+                                                                                                                                                                                                                                                          ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.ca xfce4-about/INFO.fr xfce4-about/INFO.html xfce4-about/INFO.html.ca xfce4-about/INFO.html.de xfce4-about/INFO.html.fr"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -23399,6 +23399,7 @@ do
   "gdm/Makefile" ) CONFIG_FILES="$CONFIG_FILES gdm/Makefile" ;;
   "xfce4-about/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/Makefile" ;;
   "xfce4-about/INFO" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO" ;;
+  "xfce4-about/INFO.ca" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.ca" ;;
   "xfce4-about/INFO.fr" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.fr" ;;
   "xfce4-about/INFO.html" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html" ;;
   "xfce4-about/INFO.html.ca" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html.ca" ;;

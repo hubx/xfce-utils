@@ -1,0 +1,41 @@
+Entorn d'escriptori XFce 4
+versió @VERSION@
+
+XFce és un conjunt de programes que, de forma conjunta, proporcionen un entorn
+d'escriptori totalment funcional. Els següents programes formen part de XFce:
+
+o Gestor de finestres</u> (xfwm4)
+   Encarregat del posicionament de les finestres a la pantalla.
+
+o Plafó (xfce4-panel)
+   Llançador de programes, menús emergents, rellotge, canvi d'escriptori
+   i molt més.   
+
+o Gestor de l'escriptori (xfdesktop)
+   Elecció del color o la imatge de fons i ofereix un menú quan es pitja
+   sobre el rerefons de l'escriptori.
+
+o Gestor de fitxers (xffm)
+   Gestor de fitxers realment ràpid.
+
+o Utilitats:
+   xfprint4     : Impressió de fitxers.
+   xfrun4       : Execució de programes.
+   xftaskbar4   : Barra de tasques simple amb, opcionalment, un paginador 
+                  d'escriptoris i una safata de tasques.
+   xfce4-iconbox: Mostra les aplicacions com icones en l'escriptori.
+
+
+XFce 4, és també una plataforma de desenvolupament amb força llibreries, que
+poden ajudar al programador a crear aplicacions que s'adaptin bé a l'entorn
+d'escriptori.
+
+El components de XFce 4 estan llicenciats com a programari lliure o de codi
+obert, GPL o BSDL per les aplicacions, i LGPL o BSDL per les llibreries. Dona
+un cop d'ull a la documentació al codi font o a la web de XFce 
+(http://www.xfce.org/) per més informació.
+
+Gràcies per demostrar el vostre interès en XFce.
+
+                -- L'equip de desenvolupament de XFce --
+

@@ -4,7 +4,7 @@
 
     <i>... i vola amb el ratolí ...</i>
 
-    <p>XFce és una conjunt de programes que, de forma conjunta, proporcionen un entorn
+    <p>XFce és un conjunt de programes que, de forma conjunta, proporcionen un entorn
     d'escriptori totalment funcional. Els següents programes formen part de XFce:</p>
 
     <ul>
@@ -16,7 +16,7 @@
         i molt més.</li>
 
       <li><b><u>Gestor de l'escriptori</u> (<i>xfdesktop</i>)</b><br />
-        Elecció del color o la imatge de fons i ofereix un menú quan es cliqueja
+        Elecció del color o la imatge de fons i ofereix un menú quan es pitja
         sobre el rerefons de l'escriptori.</li>
 
       <li><b><u>Gestor de fitxers</u> (<i>xffm</i>)</b><br />
@@ -29,7 +29,8 @@
         </li>
     </ul>
 
-    <p>Gràcies per demostrar el vostre interés en XFce.</p>
+    <p>Gràcies per demostrar el vostre interès en XFce.</p>
 
     <i>-- L'equip de desenvolupament de XFce --</i>
   </body>
+</html>

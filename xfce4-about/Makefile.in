@@ -189,6 +189,7 @@ about_DATA = \
 	LGPL								\
 	GPL								\
 	INFO								\
+	INFO.ca								\
 	INFO.fr								\
 	INFO.html.ca							\
 	INFO.html.de							\
@@ -229,8 +230,8 @@ subdir = xfce4-about
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO INFO.fr INFO.html INFO.html.ca INFO.html.de \
-	INFO.html.fr
+CONFIG_CLEAN_FILES = INFO INFO.ca INFO.fr INFO.html INFO.html.ca \
+	INFO.html.de INFO.html.fr
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -253,7 +254,7 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING INFO.fr.in INFO.html.ca.in \
+DIST_COMMON = AUTHORS COPYING INFO.ca.in INFO.fr.in INFO.html.ca.in \
 	INFO.html.de.in INFO.html.fr.in INFO.html.in INFO.in \
 	Makefile.am Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
@@ -268,6 +269,8 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configu
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
 INFO: $(top_builddir)/config.status INFO.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.ca: $(top_builddir)/config.status INFO.ca.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.fr: $(top_builddir)/config.status INFO.fr.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
@@ -595,7 +598,7 @@ uninstall-am: uninstall-aboutDATA uninstall-binPROGRAMS \
 
 
 distclean-local:
-	rm -f INFO INFO.html INFO.html.de INFO.html.ca
+	rm -f INFO INFO.fr INFO.ca INFO.html INFO.html.de INFO.html.ca INFO.html.fr
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h

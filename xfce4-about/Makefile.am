@@ -14,6 +14,7 @@ about_DATA =								\
 	LGPL								\
 	GPL								\
 	INFO								\
+	INFO.ca								\
 	INFO.fr								\
 	INFO.html.ca							\
 	INFO.html.de							\
@@ -47,7 +48,7 @@ EXTRA_DIST = 								\
 	$(noinst_DATA)
 
 distclean-local:
-	rm -f INFO INFO.html INFO.html.de INFO.html.ca
+	rm -f INFO INFO.fr INFO.ca INFO.html INFO.html.de INFO.html.ca INFO.html.fr
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h
