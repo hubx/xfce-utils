@@ -7,6 +7,7 @@ about_DATA =								\
 	AUTHORS.de							\
 	AUTHORS.es							\
 	AUTHORS.fr							\
+	AUTHORS.he							\
 	AUTHORS.html							\
 	AUTHORS.html.az							\
 	AUTHORS.html.ca							\

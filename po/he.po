@@ -1,170 +1,203 @@
-# translation of utils.po to Yuval Tanny
 # translation of he.po to Hebrew
-# translation of xfce-utils.po to Hebrew
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Dotan Kamber <kamberd@yahoo.com>, 2004.
-# Yuval Tanny <yuvaltanny@walla.co.il>, 2004.
+# Dotan Kamber <kamberd@yahoo.com>, 2004
+# Jonatan Perry <Jonatan443@walla.co.il>, 2004.
+# Yuval Tanny <tanai@int.gov.il>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: utils\n"
+"Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-14 19:08+0200\n"
-"PO-Revision-Date: 2004-07-08 10:40+0300\n"
-"Last-Translator: Yuval Tanny <yuvaltanny@walla.co.il>\n"
-"Language-Team: Yuval Tanny <en@li.org>\n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"PO-Revision-Date: 2004-08-19 13:38+0300\n"
+"Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
+"Language-Team: Hebrew Team <xfce2004@yahoo.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#: xfce4-about/info.c:228
-msgid "About XFce 4"
-msgstr "אודות XFce 4"
+#: xfce4-about/info.c:253
+msgid "About Xfce 4"
+msgstr "אודות Xfce 4"
 
-#: xfce4-about/info.c:243
-msgid "XFce Desktop Environment"
-msgstr "סביבת העבודה XFce"
+#: xfce4-about/info.c:268
+msgid "Xfce Desktop Environment"
+msgstr "סביבת העבודה Xfce"
 
-#: xfce4-about/info.c:244
-msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "זכויות היוצרים 2002-2003 שמורות לאוליבר פורדאן (Oliver Fourdan( "
+#: xfce4-about/info.c:269
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "זכויות היוצרים 2002-2004 שמורות לאוליבר פורדאן (Oliver Fourdan( "
 
 #. add pages
-#: xfce4-about/info.c:263
+#: xfce4-about/info.c:288
 msgid "Info"
 msgstr "מידע"
 
-#: xfce4-about/info.c:264
+#: xfce4-about/info.c:289
 msgid "Credits"
 msgstr "תודות"
 
-#: xfce4-about/info.c:265
+#: xfce4-about/info.c:290
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: xfce4-about/info.c:266
+#: xfce4-about/info.c:291
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:267
+#: xfce4-about/info.c:292
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:293
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:184
+#: xfrun/xfrun.c:271
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4 -אין אפשרות לכתוב היסוריה לקובץ %s\n"
 
-#: xfrun/xfrun.c:241
+#: xfrun/xfrun.c:378
+#, c-format
+msgid "Open %s with what program?"
+msgstr "עם איזו תכנה לפתוח את %s?"
+
+#: xfrun/xfrun.c:379
 msgid "Run program"
 msgstr "הרץ תוכנית"
 
-#: xfrun/xfrun.c:248
+#: xfrun/xfrun.c:387
 msgid "_Run"
 msgstr "_הרץ"
 
-#: xfrun/xfrun.c:285
+#: xfrun/xfrun.c:417
 msgid "Run in _terminal"
 msgstr "הרץ ב_טרמינל"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:202
-#: xftaskbar/plugin/xftaskbar_plugin.c:208
-#: xftaskbar/plugin/xftaskbar_plugin.c:374
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
 msgstr "שורת המשימות"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:222
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Position"
 msgstr "מיקום"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:230
-msgid "Top"
-msgstr "עליון"
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_עליון"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:237
-msgid "Bottom"
-msgstr "תחתון"
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_תחתון"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "יישור"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_שמאל"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_אמצע"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_מין"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "הסתרה אוטומטית"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:248
-msgid "Auto hide taskbar"
-msgstr "הסתרה אוטומטית של שורת המשימות"
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "_הסתרה אוטומטית של שורת המשימות"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:253
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
 msgstr "גודל"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:262
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
 msgstr "גובה :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:270
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
 msgid "Small"
 msgstr "קטן"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
 msgid "Large"
 msgstr "גדול"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:302
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "רוחב:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
 msgstr "משימות"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "Show tasks from all workspaces"
-msgstr "הצג משימות מכל שולחנות העבודה"
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "הצג משימות מ_כל סביבות העבודה"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:311
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "תמיד _קבץ משימות"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "הראה שמות של תכנות"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "מחליף סביבות עבודה"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:315
-msgid "Show pager in taskbar"
-msgstr "הראה מחליף סביבות עבודה בשורת המשימות"
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "הראה _מחליף סביבות עבודה בשורת המשימות"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "איזור התרעה"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:324
-msgid "Show system tray in taskbar"
-msgstr "הצג את מגש המערכת בשורת המשימות"
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "הצג את _מגש המערכת בשורת המשימות"
 
-#: xftaskbar/xftaskbar.c:129
+#: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "סגנון הפתיחה אינו זמין"
 
-#: xftaskbar/xftaskbar.c:209
+#: xftaskbar/xftaskbar.c:260
 msgid "There is already a system tray running on this screen"
 msgstr "מגש המערכת כבר פתוח בחלון זה"
 
-#: xftaskbar/xftaskbar.c:217
+#: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "אין אפשרות לרשום את מגש המערכת %s"
 
-#: xftaskbar/xftaskbar.c:388
+#: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
 msgstr "דבר זה אינו אמור להתרחש"
 
-#: xftaskbar/xftaskbar.c:478
+#: xftaskbar/xftaskbar.c:592
+msgid "Cannot get default screen\n"
+msgstr "אין אפשרות לקבל את מסך ברירת המחדל\n"
+
+#: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
 msgstr "אין אפשרות להתחבר למנהל ההפעלה"
 
-#: xftaskbar/xftaskbar.c:491
-msgid "Cannot get desktop margins"
-msgstr "גבולות שולחן העבודה לא נמצאו"
-
-#: xftaskbar/xftaskbar.c:568
+#: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
 msgstr "אין אפשרות ליצור ערוץ לקוח MCS"
-
