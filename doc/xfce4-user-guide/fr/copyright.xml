@@ -1,18 +1,19 @@
 <sect1 id="xfce4-copyright">
-  <title>Copyright et Licences</title>
+  <title>Copyright and Licences</title>
   
-  <para>Le copyright de XFce 4 est détenu par &copy; Olivier Fourdan 
-    (<email>fourdan@xfce.org</email>). Ceux des différents composants sont 
-    détenus par leurs auteurs respectifs.
+  <para>Xfce 4 is copyright &copy; Olivier Fourdan 
+    (<email>fourdan@xfce.org</email>). The different components are
+    copyrighted by their respective authors.
   </para>
 
-  <para>Trois licences différentes sont utilisées au sein du projet XFce 4 : BSD, LGPL 
+  <para>Three different licenses are used in the Xfce 4 project: BSD, LGPL 
     and GPL.
   </para>
 
   <para>
-    Merci de vous référer aux fichiers COPYING inclus dans chaque paquet pour connaître les licences
-    relatives à chacun des composants.</para>
+    Please, refer to the COPYING files included in the packages for 
+    the licensing terms of the separate Xfce 4 components.
+  </para>
   
 </sect1>
 
