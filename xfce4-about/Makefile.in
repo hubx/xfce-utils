@@ -163,11 +163,11 @@ aboutdir = $(datadir)/xfce4
 about_DATA = \
 	AUTHORS								\
 	AUTHORS.de							\
-	AUTHORS.de.html							\
+	AUTHORS.html.de							\
 	AUTHORS.html							\
 	COPYING								\
 	INFO								\
-	INFO.de.html							\
+	INFO.html.de							\
 	INFO.html
 
 
@@ -196,11 +196,14 @@ VARIABLES = xfce_logo_data $(srcdir)/$(IMAGES)
 
 noinst_DATA = xfce-logo.jpg 
 
-EXTRA_DIST = $(noinst_DATA)
+EXTRA_DIST = \
+	$(about_DATA)							\
+	$(noinst_DATA)
+
 subdir = xfce4-about
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO INFO.de.html INFO.html
+CONFIG_CLEAN_FILES = INFO INFO.html INFO.html.de
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -223,7 +226,7 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING INFO.de.html.in INFO.html.in INFO.in \
+DIST_COMMON = AUTHORS COPYING INFO.html.de.in INFO.html.in INFO.in \
 	Makefile.am Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
 
@@ -238,9 +241,9 @@ Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.s
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
 INFO: $(top_builddir)/config.status INFO.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-INFO.de.html: $(top_builddir)/config.status INFO.de.html.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 INFO.html: $(top_builddir)/config.status INFO.html.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.html.de: $(top_builddir)/config.status INFO.html.de.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 install-binPROGRAMS: $(bin_PROGRAMS)
@@ -559,7 +562,7 @@ uninstall-am: uninstall-aboutDATA uninstall-binPROGRAMS \
 
 
 distclean-local:
-	rm -f INFO INFO.html
+	rm -f INFO INFO.html INFO.html.de
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h

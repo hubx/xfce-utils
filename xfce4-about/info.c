@@ -76,10 +76,8 @@ static void
 add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 		gboolean hscrolling)
 {
-#if defined(HAVE_LIBGTKHTML) || defined(ENABLE_NLS)
-	gchar *hfilename;
-#endif
 #ifdef HAVE_LIBGTKHTML
+	gchar *hfilename;
 	gboolean usehtml;
 	HtmlDocument *htmldoc;
 #endif
@@ -89,28 +87,21 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	GtkWidget *view;
 	GtkWidget *sw;
 	GError *err;
-	char *path;
-	char *buf;
+	gchar *path;
+	gchar *buf;
+	gchar *base;
 	int n;
-#ifdef ENABLE_NLS
-	gchar lang[3];
-#endif
 
 	err = NULL;
 
 	label = gtk_label_new(name);
 	gtk_widget_show(label);
 
-#ifdef ENABLE_NLS
-	buf = setlocale(LC_MESSAGES, NULL);
-	strncpy(lang, buf, 2);
-	lang[2] = '\0';
-#endif
+	base = g_build_filename(DATADIR, filename, NULL);
 
 #ifdef HAVE_LIBGTKHTML
-#ifdef ENABLE_NLS
-	hfilename = g_strdup_printf("%s.%s.html", filename, lang);
-	path = g_build_filename(DATADIR, hfilename, NULL);
+	hfilename = g_strconcat(base, ".html", NULL);
+	path = xfce_get_file_localized(hfilename);
 	g_free(hfilename);
 
 	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
@@ -121,27 +112,8 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	g_free(path);
 #endif
 
-	hfilename = g_strconcat(filename, ".html", NULL);
-	path = g_build_filename(DATADIR, hfilename, NULL);
-	g_free(hfilename);
+	path = xfce_get_file_localized(base);
 
-	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
-		usehtml = TRUE;
-		goto found;
-	}
-#endif
-#ifdef ENABLE_NLS
-	hfilename = g_strdup_printf("%s.%s", filename, lang);
-	path = g_build_filename(DATADIR, hfilename, NULL);
-	g_free(hfilename);
-
-	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
-		goto found;
-	}
-
-	g_free(path);
-#endif
-	path = g_build_filename(DATADIR, filename, NULL);
 #ifdef HAVE_LIBGTKHTML
 	usehtml = FALSE;
 #endif
@@ -204,6 +176,7 @@ found:
 		g_free(buf);
 	}
 
+	g_free(base);
 	g_free(path);
 }
 

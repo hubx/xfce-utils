@@ -3,11 +3,11 @@ aboutdir = $(datadir)/xfce4
 about_DATA =								\
 	AUTHORS								\
 	AUTHORS.de							\
-	AUTHORS.de.html							\
+	AUTHORS.html.de							\
 	AUTHORS.html							\
 	COPYING								\
 	INFO								\
-	INFO.de.html							\
+	INFO.html.de							\
 	INFO.html
 
 bin_PROGRAMS =  xfce4-about
@@ -32,10 +32,12 @@ VARIABLES = xfce_logo_data $(srcdir)/$(IMAGES)
 
 noinst_DATA = xfce-logo.jpg 
 
-EXTRA_DIST = $(noinst_DATA)
+EXTRA_DIST = 								\
+	$(about_DATA)							\
+	$(noinst_DATA)
 
 distclean-local:
-	rm -f INFO INFO.html
+	rm -f INFO INFO.html INFO.html.de
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h
