@@ -1,0 +1,165 @@
+# Czech translation for xfce-utils
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Lukáš Konarovský <daeltar@daeltar.org>, 2003.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Lukas Konarovsky <daeltar@daeltar.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "O XFce 4"
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "XFce Desktop Environment"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 by Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Informace"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Zásluhy"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Nemohu zapsat historii do souboru %s\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Spustit program"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Spustit"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Spustit v _terminálu"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Panel úloh"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Pozice"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Nahoře"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Dole"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Automatické skrývání"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Automatické skrývání"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Velikost"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Výška"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Menší"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Větší"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Úlohy"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Ukázovat úlohy ze všech ploch"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Přepínač ploch"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Zobrazit přepínač ploch na panelu úloh"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Upozorňovací oblast"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Ukázat upozorňovací oblast na panelu"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Nemohu získat výchozí styl"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Na této obrazovce již jedna upozorňovací oblast běží"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Unable to register system tray: %s"
+
+#: xftaskbar/xftaskbar.c:388
+msgid "This should not happen"
+msgstr "Toto se nikdy nestane"
+
+#: xftaskbar/xftaskbar.c:478
+msgid "Cannot connect to session manager"
+msgstr "Cannot connect to session manager"
+
+#: xftaskbar/xftaskbar.c:491
+msgid "Cannot get desktop margins"
+msgstr "Cannot get desktop margins"
+
+#: xftaskbar/xftaskbar.c:569
+msgid "Cannot create MCS client channel"
+msgstr "Cannot create MCS client channel"
