@@ -1,0 +1,168 @@
+# Bulgarian translation of PACKAGE.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Miroslav Yordanov <miordanov@i-space.org>, 2004.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"PO-Revision-Date: 2004-03-09 18:58+0200\n"
+"Last-Translator: Miroslav Yordanov <miordanov@i-space.org>\n"
+"Language-Team: Bulgarian <bg@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "Относно XFce 4"
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "XFce·десктоп среда"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Запазена марка 2002-2003·на·Olivier·Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Информация"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Кредити"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr "Запазана марка"
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4:·не мога да запиша историята във файла·%s\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Стартира програма"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Стартира"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Стартира в терминал"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Лента за задачи"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Позиция"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Горе"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Долу"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Автоматично скриване"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Автоматично скриване на лентата със задачи"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Размер"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Широчина :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Малък"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Голям"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Задачи"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Показва задачите от всички работни места"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Пейджър"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Показва пейджъра на лентата със задачи"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Област за известяване"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Показва панел с икони в панела с задачите"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Не мога да взема първоначалния стил"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Вече има панел със задачи стартиран в този екран"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Не мога да регистрирам панела с задачите: %s"
+
+#: xftaskbar/xftaskbar.c:388
+msgid "This should not happen"
+msgstr "Това не трябва да се случва"
+
+#: xftaskbar/xftaskbar.c:478
+msgid "Cannot connect to session manager"
+msgstr "Не мога да се свържа с мениджъра на сесии"
+
+#: xftaskbar/xftaskbar.c:491
+msgid "Cannot get desktop margins"
+msgstr "Не мога да взема границите на десктопа"
+
+#: xftaskbar/xftaskbar.c:569
+msgid "Cannot create MCS client channel"
+msgstr "Не мога да създам канала на клиента MCS"
+

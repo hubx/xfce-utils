@@ -1,165 +1,164 @@
-# SOME DESCRIPTIVE TITLE.
+# Arabic translation for xfce-utils
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Davide D'Amico <dave@gufi.org>, 2003.
-#
+# saleh alhathal <hathalsal@hotmail.com>, 2004.
+
 msgid ""
 msgstr ""
-"Project-Id-Version: XFce4\n"
+"Project-Id-Version: ar\n"
 "POT-Creation-Date: 2003-09-22 21:20+0200\n"
-"PO-Revision-Date: 2004-03-11 12:50+0100\n"
-"Last-Translator: Alex Dupre <ale@FreeBSD.org>\n"
-"Language-Team: GUFI <traduzioni@gufi.org>\n"
+"PO-Revision-Date: 2004-3-8 8:25+0300\n"
+"Last-Translator: saleh alhathal <hathalsal@hotmail.com>\n"
+"Language-Team: arabic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:228
+#: xfce4-about/info.c:231
 msgid "About XFce 4"
-msgstr "Info su XFce 4"
+msgstr "حول XFce 4"
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "XFce Desktop Environment"
-msgstr "XFce Desktop Environment"
+msgstr "الواجه الرسومية XFce"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:246
 msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "حقوق الطبع 2002-2003 بواسطة Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:263
-msgid "Info"
-msgstr "Info"
-
-#: xfce4-about/info.c:264
-msgid "Credits"
-msgstr "Riconoscimenti"
-
 #: xfce4-about/info.c:265
-msgid "Copyright"
-msgstr "Copyright"
+msgid "Info"
+msgstr "معلومات"
 
 #: xfce4-about/info.c:266
-msgid "BSDL"
-msgstr "BSDL"
+msgid "Credits"
+msgstr "تقدير"
 
 #: xfce4-about/info.c:267
-msgid "LGPL"
-msgstr "LGPL"
+msgid "Copyright"
+msgstr "حقوق الطبع"
 
 #: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr ""
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr ""
+
+#: xfce4-about/info.c:270
 msgid "GPL"
-msgstr "GPL"
+msgstr ""
 
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Impossibile scrivere l'history nel file %s\n"
+msgstr "xfrun4: لم يتمكن من كتابة اﻷحداث في الملف %s\n"
 
 #: xfrun/xfrun.c:237
 msgid "Run program"
-msgstr "Esegui il programma"
+msgstr "نفذ برنامج"
 
 #: xfrun/xfrun.c:244
 msgid "_Run"
-msgstr "_Esegui"
+msgstr "_نفذ"
 
 #: xfrun/xfrun.c:281
 msgid "Run in _terminal"
-msgstr "Esegui in un _terminale"
+msgstr "نفذ في _سطر اﻷوامر"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:202
 #: xftaskbar/plugin/xftaskbar_plugin.c:208
 #: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
-msgstr "Barra dei Processi"
+msgstr "شريط المهام"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
-msgstr "Posizione"
+msgstr "موقع"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:230
 msgid "Top"
-msgstr "Alto"
+msgstr "أعلى"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:237
 msgid "Bottom"
-msgstr "Basso"
+msgstr "أسفل"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
-msgstr "Nascondimento automatico"
+msgstr "إخفاء تلقائي"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
-msgstr "Nascondimento automatico barra dei processi"
+msgstr "إخفاء ذاتي لشريط المهام"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
-msgstr "Dimensione"
+msgstr "حجم"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:262
 msgid "Height :"
-msgstr "Altezza :"
+msgstr "إرتفاع :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
-msgstr "Piccolo"
+msgstr "صغير"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Large"
-msgstr "Largo"
+msgstr "كبير"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
-msgstr "Processi"
+msgstr "مهام"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
-msgstr "Mostra i processi di tutti gli ambienti di lavoro"
+msgstr "أظهر"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
-msgstr "Pager"
+msgstr "مراقب المهام"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:315
 msgid "Show pager in taskbar"
-msgstr "Mostra il pager nella barra dei processi"
+msgstr "أظهر مراقب المهام على الشريط"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
-msgstr "Area di notifica"
+msgstr "مكان التذكير"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
-msgstr "Mostra la barra di sistema nella barra dei processi"
+msgstr "إضهار صينية النظام في شريط المهام"
 
 #: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
-msgstr "Impossibile caricare lo stile iniziale"
+msgstr "لم أتمكن الحصول على سمة أولية"
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr "Barra di sitema già presente su questo schermo"
+msgstr "هناك صينية نظام تعمل مسبقا على الشاشة"
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Impossibile registrare la barra di sistema: %s"
+msgstr "لم أتمكن من تسجيل صينية النظام: %s"
 
 #: xftaskbar/xftaskbar.c:388
 msgid "This should not happen"
-msgstr "Ciò non avrebbe dovuto verificarsi"
+msgstr "ﻻ يفترض حدوث هذا"
 
 #: xftaskbar/xftaskbar.c:478
 msgid "Cannot connect to session manager"
-msgstr "Impossibile connettersi al gestore di sessione"
+msgstr "لم أتمكن التواصل مع مدير الجلسة"
 
 #: xftaskbar/xftaskbar.c:491
 msgid "Cannot get desktop margins"
-msgstr "Impossibile determinare i bordi dello schermo"
+msgstr "لم أتمكن من الحصول على هوامش سطح المكتب"
 
 #: xftaskbar/xftaskbar.c:569
 msgid "Cannot create MCS client channel"
-msgstr "Impossibile creare canale client MCS"
-
+msgstr "لم أستطع تكوين قناة عميل MCS"

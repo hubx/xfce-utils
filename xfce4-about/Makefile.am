@@ -7,31 +7,36 @@ about_DATA =								\
 	AUTHORS.de							\
 	AUTHORS.es							\
 	AUTHORS.fr							\
-	AUTHORS.vi							\
+	AUTHORS.html							\
 	AUTHORS.html.az							\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
+	AUTHORS.html.es							\
 	AUTHORS.html.fr							\
-	AUTHORS.html							\
-	COPYING								\
-	COPYING.vi							\
-	COPYING.html							\
+	AUTHORS.html.it							\
+	AUTHORS.it							\
+	AUTHORS.vi							\
 	BSD								\
 	BSD.html							\
-	LGPL								\
-	LGPL.html							\
+	COPYING								\
+	COPYING.html							\
+	COPYING.vi							\
 	GPL								\
 	GPL.html							\
 	INFO								\
 	INFO.ca								\
 	INFO.es								\
 	INFO.fr								\
-	INFO.vi								\
+	INFO.html							\
 	INFO.html.ca							\
 	INFO.html.de							\
 	INFO.html.es							\
 	INFO.html.fr							\
-	INFO.html
+	INFO.html.it							\
+	INFO.it								\
+	INFO.vi								\
+	LGPL								\
+	LGPL.html
 
 bin_PROGRAMS =  xfce4-about
 

@@ -1,0 +1,39 @@
+XFce 4 Desktop Environment
+versione @VERSION@
+
+XFce è formato da una serie di programmi che, insieme, costituiscono un
+ambiente desktop completo. Fanno parte di XFce:
+
+o un gestore di finestre (xfwm4)
+   si occupa del posizionamento delle finestre sullo schermo
+
+o un pannello (xfce4-panel)
+   avvia programmi, menu popup, orologio, cambia desktop e altro
+
+o un gestore del desktop (xfdesktop)
+   stabilisce un colore o un'immagine di sfondo e fornisce un menu quando
+   si clicca sullo sfondo del desktop
+
+o un gestore di file (xffm)
+   un veloce gestore di file
+
+o alcuni programmi di utilità
+   xfprint4: stampa i file
+   xfrun4: avvia i programmi
+   xftaskbar4: semplice barra dei processi con pager e barra di sistema a scelta
+   xfce4-iconbox: mostra in un riquadro le icone delle applicazioni minimizzate
+
+
+XFce 4 è anche una piattaforma di sviluppo con molte librerie e ciò aiuta i
+programmatori a fare applicazioni che si integrino con l'ambiente desktop.
+
+I componenti di XFce 4 sono concessi sotto licenze free o open source:
+GPL o BSDL per le applicazioni e LGPL o BSDL per le librerie. Per maggiori
+informazioni si vedano la documentazione, il codice sorgente o il sito di XFce
+(http://www.xfce.org).
+
+
+Grazie per l'interessamento.
+
+                -- Il team di sviluppo di XFce --
+

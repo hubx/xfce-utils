@@ -33,6 +33,7 @@ Contribuidores
 
 Traductores
   Abbas Izad <abbasizad@hotmail.com>
+  Alex Dupre <ale@FreeBSD.org>
   ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>
   Carles Muñoz Gorriz <carlesmu@internautas.org>
   Dan Korostelev <digger_temp@netman.ru>
@@ -44,19 +45,23 @@ Traductores
   G Karunakar <karunakar@freedomink.org>
   Harun Musa <mharun@gmx.net>
   Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>
-  Jaime Buffery <nestu@lunar-linux.org>
+  Jaime Buffery <nestu@onlylinux.homelinux.net>
   Joakim Andreasson <joakim.andreasson@gmx.net>
   Johan Hammar <johan.hammar@swipnet.se>
   Lam Vinh Nien <nienvl@yahoo.ca>
   Lukáš Konarovský <daeltar@daeltar.org>
   Marie-Claude Collilieux <m.collilieux@free.fr>
   Maxim Dziumanenko <mvd@mylinux.com.ua>
+  Miroslav Yordanov <miordanov@i-space.org>
   Moritz Heiber <moe@lunar-linux.org>
   Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
   Nuno Donato <nunodonato@sapo.pt>
   Paweł Pastuła <pastulap@poczta.onet.pl>
+  Peter Slavov <peshka@i-space.org>
   Peter Somogyi <jerry@gnu.hu>
   Ravishankar Shrivastava <raviratlami@yahoo.com>
+  Saleh Hathal <hathalsal@hotmail.com>
+  tximas <a_gomez@mipagina.zzn.com>
   umm <umm@pchome.com.tw>
   Yongtao Yang <yongtao.yang@teila.com>
   Zele Gabor <zegab@axelero.hu>
