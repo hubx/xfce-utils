@@ -1,5 +1,5 @@
 /*  xftaskbar
- *  Copyright (C) 2003 Olivier Fourdan (fourdan@xfce.org)
+ *  Copyright (C) 2003,2004 Olivier Fourdan (fourdan@xfce.org)
  *  Copyright (c) 2003,2004 Benedikt Meurer <benny@xfce.org>
  *
  * This library is free software; you can redistribute it and/or
@@ -689,7 +689,6 @@ int main(int argc, char **argv)
     }
 
     gtk_widget_show (taskbar->tasklist);
-    gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
     gtk_widget_show (taskbar->win);
 
