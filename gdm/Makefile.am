@@ -39,12 +39,15 @@ install-gdm: $(xfce_FILES)
 	        $(DESTDIR)$(wmsession_prefix)/10XFce4
 	$(INSTALL_SCRIPT) xfce.desktop \
 	        $(DESTDIR)$(dmsession_prefix)/xfce.desktop
+	$(INSTALL_SCRIPT) xfce.desktop \
+	        $(DESTDIR)$(datadir)/xsessions/xfce.desktop
 
 uninstall-local: uninstall-gdm
 
 uninstall-gdm:
 	rm -f $(DESTDIR)$(gdmsession_prefix)/XFce4
 	rm -f $(DESTDIR)$(dmsession_prefix)/xfce.desktop
+	rm -f $(DESTDIR)$(datadir)/xsessions/xfce.desktop
 	rm -f $(DESTDIR)$(switchdesk_prefix)/Xclients.xfce4
 	rm -f $(DESTDIR)$(wmsession_prefix)/10XFce4
 
