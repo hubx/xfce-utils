@@ -53,11 +53,11 @@ AC_MSG_RESULT([$enable_gdm])
 
 dnl Check where to install GDM session files
 if test x"$enable_gdm" = x"yes"; then
-  GDM_PREFIX=/etc/X11/gdm/Sessions
+  GDM_PREFIX=/etc/X11
   AC_MSG_CHECKING(where GDM keeps session files)
   AC_ARG_WITH(gdm-prefix,
-  AC_HELP_STRING([--with-gdm-prefix=STR], [where GDM keeps session files (default=/etc/X11/gdm/Sessions)]),
-  	[], [with_gdm_prefix=/etc/X11/gdm/Sessions])
+  AC_HELP_STRING([--with-gdm-prefix=STR], [where gdm data are installed (default=/etc/X11)]),
+  	[], [with_gdm_prefix=/etc/X11])
   GDM_PREFIX=$with_gdm_prefix
   AC_SUBST(GDM_PREFIX)
   AC_MSG_RESULT($with_gdm_prefix)

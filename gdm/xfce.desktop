@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+# The names/descriptions should really be better
+Name=Xfce Session
+Comment=Use this session to run Xfce as your desktop environment
+Exec=startxfce4
+Icon=
+Type=Application

@@ -21,7 +21,7 @@ xfce-utils contains utilities for the XFce Desktop Environment
 %setup -q
 
 %build
-%configure --enable-gdm
+%configure --enable-gdm --with-gdm-prefix=/etc/X11
 make
 
 %install
