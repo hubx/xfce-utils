@@ -71,7 +71,7 @@ if test x"$enable_gdm" = x"yes"; then
 fi
 
 dnl Check for i18n support
-BM_I18N([xfce-utils], [ar az be bg ca cs de es es_MX et eu fa fi fr gu he
+BM_I18N([xfce-utils], [ar az be bg ca cs de en_GB es es_MX et eu fa fi fr gu he
 		       hi hu it ja ko lt ms nl pa pl pt_BR pt_PT ru sk
 		       sv ta tr uk vi zh_CN zh_TW])
 

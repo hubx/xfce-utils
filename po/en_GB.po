@@ -1,0 +1,202 @@
+# British English translations for xfce4-utils package.
+# Copyright (C) 2004 Zuza Software Foundation (Translate.org.za)
+# This file is distributed under the same license as the xfce4-utils package.
+#
+# Zuza Software Foundation (Translate.org.za), 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-23 18:06+0200\n"
+"PO-Revision-Date: 2004-12-03 18:06+0200\n"
+"Last-Translator: Translate.org.za <info@translate.org.za>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: xfce4-about/info.c:263
+msgid "About Xfce 4"
+msgstr "About Xfce 4"
+
+#: xfce4-about/info.c:278
+msgid "Xfce Desktop Environment"
+msgstr "Xfce Desktop Environment"
+
+#: xfce4-about/info.c:279
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
+
+#: xfce4-about/info.c:301
+msgid "Info"
+msgstr "Info"
+
+#: xfce4-about/info.c:302
+msgid "Credits"
+msgstr "Credits"
+
+#: xfce4-about/info.c:303
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:304
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:305
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:306
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:323
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Could not write history to file %s\n"
+
+#: xfrun/xfrun.c:428
+#, c-format
+msgid "Open %s with what program?"
+msgstr "Open %s with what program?"
+
+#: xfrun/xfrun.c:429
+msgid "Run program"
+msgstr "Run program"
+
+#: xfrun/xfrun.c:437
+msgid "_Run"
+msgstr "_Run"
+
+#: xfrun/xfrun.c:467
+msgid "Run in _terminal"
+msgstr "Run in _terminal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
+msgid "Taskbar"
+msgstr "Taskbar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "Position"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_Top"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_Bottom"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "Alignment"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_Left"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_Centre"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_Right"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "Autohide"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "Auto _hide taskbar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "Size"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "Height :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "Small"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "Large"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "Width:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "Tasks"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "Show tasks from _all workspaces"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "Always _group tasks"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "Show application _names"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Pager"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "Show _pager in taskbar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "Notification area"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "Show _system tray in taskbar"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "Cannot get initial style"
+
+#: xftaskbar/xftaskbar.c:260
+msgid "There is already a system tray running on this screen"
+msgstr "There is already a system tray running on this screen"
+
+#: xftaskbar/xftaskbar.c:268
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Unable to register system tray: %s"
+
+#: xftaskbar/xftaskbar.c:467
+msgid "This should not happen"
+msgstr "This should not happen"
+
+#: xftaskbar/xftaskbar.c:592
+msgid "Cannot get default screen\n"
+msgstr "Cannot get default screen\n"
+
+#: xftaskbar/xftaskbar.c:681
+msgid "Cannot connect to session manager"
+msgstr "Cannot connect to session manager"
+
+#: xftaskbar/xftaskbar.c:694
+msgid "Cannot create MCS client channel"
+msgstr "Cannot create MCS client channel"
+
