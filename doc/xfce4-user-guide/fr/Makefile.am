@@ -17,6 +17,7 @@ doc_DATA= \
 	xfce4-user-guide.html \
 	xfce4-intro.html \
 	xfce4-copyright.html \
+	xfce4-components.html \
 	xfce4-use.html \
 	xfce4-install.html
 
