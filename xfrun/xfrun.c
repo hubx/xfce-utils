@@ -234,7 +234,7 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
     g_free(execute);
     if (!success)
     {
- 	show_error(strerror(ENOENT));
+ 	xfce_err(strerror(ENOENT));
     }
     
     return success;
