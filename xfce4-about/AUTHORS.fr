@@ -41,6 +41,7 @@ Traducteurs
   Jaime Buffery <nestu@onlylinux.homelinux.net>
   Moritz Heiber <mistermoe@hackerboard.de>
   Nabil Ben Khalifa <nabil_benkhalifa@yahoo.fr>
+  Nuno Donato <nunodonato@sapo.pt>
   Paweł Pastuła <pastulap@poczta.onet.pl>
   Peter Somogyi <jerry@gnu.hu>
   Yongtao Yang <yongtao.yang@teila.com>
