@@ -83,6 +83,20 @@ case "x$xfcesm" in
 		;;
 esac
 
+
+##################
+# IMPORTANT NOTE #
+##################
+
+# Everything below here ONLY gets executed if you are NOT using xfce4-session
+# (Xfce's session manager).  If you are using the session manager, everything
+# below is handled by it, and the code below is not executed at all.  If you're
+# not sure if you're using the session manager, type 'ps -e|grep xfce4-session'
+# in a terminal while Xfce is running.
+
+##################
+
+
 # this is only necessary when running w/o xfce4-session
 xsetroot -solid black -cursor_name watch
 
