@@ -221,8 +221,9 @@ doc_DATA = \
 	LGPL.html \
 	xfce4-user-guide.html \
 	xfce4-intro.html \
-	xfce4-copyright.html \
 	xfce4-use.html \
+	xfce4-components.html \
+	xfce4-copyright.html \
 	xfce4-install.html
 
 EXTRA_DIST = $(noinst_DATA) $(doc_DATA)
