@@ -1,0 +1,202 @@
+# translation of xfce-utils.po to Gujarati
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Ankit Patel <ankit@redhat.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils\n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"PO-Revision-Date: 2004-09-22 17:35+0530\n"
+"Last-Translator: Ankit Patel <ankit@redhat.com>\n"
+"Language-Team: Gujarati\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+
+#: xfce4-about/info.c:253
+msgid "About Xfce 4"
+msgstr "Xfce 4 વિશે"
+
+#: xfce4-about/info.c:268
+msgid "Xfce Desktop Environment"
+msgstr "Xfce ડેસ્કટોપ પર્યાવરણ"
+
+#: xfce4-about/info.c:269
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:288
+msgid "Info"
+msgstr "જાણકારી"
+
+#: xfce4-about/info.c:289
+msgid "Credits"
+msgstr "યશો"
+
+#: xfce4-about/info.c:290
+msgid "Copyright"
+msgstr "મુદ્રણાધિકાર"
+
+#: xfce4-about/info.c:291
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:292
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:293
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:271
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: ઈતિહાસને ફાઈલ %s માં લખી શક્યા નહિં\n"
+
+#: xfrun/xfrun.c:378
+#, c-format
+msgid "Open %s with what program?"
+msgstr "%s ને કયા કાર્યક્રમ સાથે ખોલવું છે?"
+
+#: xfrun/xfrun.c:379
+msgid "Run program"
+msgstr "કાર્યક્રમ ચલાવો"
+
+#: xfrun/xfrun.c:387
+msgid "_Run"
+msgstr "ચલાવો (_R)"
+
+#: xfrun/xfrun.c:417
+msgid "Run in _terminal"
+msgstr "ટર્મિનલમાં ચલાવો (_t)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
+#: xftaskbar/plugin/xftaskbar_plugin.c:533
+msgid "Taskbar"
+msgstr "સ્થિતિદર્શક પટ્ટી"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "સ્થિતિ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "ઉપર (_T)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "નીચે (_B)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "ગોઠવણી"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "ડાબુ (_L)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "કેન્દ્ર (_C)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "જમણુ (_R)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "આપોઆપ સંતાડો"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "સ્થિતિદર્શક પટ્ટી આપોઆપ સંતાડો (_h)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "માપ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "ઊંચાઈ :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "નાનુ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "મોટુ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "પહોળાઈ:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "બાબતો"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "બધી કામ કરવાની જગ્યાઓમાંથી બાબતો બતાવો (_a)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "હંમેશા જૂથની બાબતો (_g)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "કાર્યક્રમ નામો બતાવો (_n)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "પેજર"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "સ્થિતિદર્શક પટ્ટીમાં પેજર બતાવો (_p)"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "સૂચન વિસ્તાર"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "સ્થિતિદર્શક પટ્ટીમાં સિસ્ટમ ટ્રે બતાવો (_s)"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "પ્રારંભી શૈલી મેળવી શકતા નથી"
+
+#: xftaskbar/xftaskbar.c:260
+msgid "There is already a system tray running on this screen"
+msgstr "ત્યાં પહેલાથી જ સિસ્ટમ ટ્રે સ્ક્રીન પર ચાલી રહેલી છે"
+
+#: xftaskbar/xftaskbar.c:268
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "સિસ્ટમ ટ્રેની નોંધણી કરવા સમર્થ નથી: %s"
+
+#: xftaskbar/xftaskbar.c:467
+msgid "This should not happen"
+msgstr "આ બનવું જોઈએ નહિં"
+
+#: xftaskbar/xftaskbar.c:592
+msgid "Cannot get default screen\n"
+msgstr "મૂળભુત સ્ક્રીન મેળવી શકતા નથી\n"
+
+#: xftaskbar/xftaskbar.c:681
+msgid "Cannot connect to session manager"
+msgstr "સત્ર વ્યવસ્થાપક સાથે સંપર્ક કરી શકતા નથી"
+
+#: xftaskbar/xftaskbar.c:694
+msgid "Cannot create MCS client channel"
+msgstr "MCS ક્લાઈન્ટ ચેનલ બનાવી શકતા નથી"
+
