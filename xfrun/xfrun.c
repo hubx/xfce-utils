@@ -71,13 +71,18 @@ void set_history_checkbox(GtkList *list, GtkWidget *child)
 
 static gboolean do_run(const char *cmd, gboolean in_terminal)
 {
-    gchar *execute;
+    gchar *execute, *path;
     gboolean success;
 
     g_return_val_if_fail(cmd != NULL, FALSE);
 
+    /* this is only used to prevent us to open a directory in the 
+     * users's home dir with the same name as an executable,
+     * e.g. evolution */
+    path = g_find_program_in_path(cmd);
+        
     /* open directory in terminal or file manager */
-    if (g_file_test (cmd, G_FILE_TEST_IS_DIR))
+    if (g_file_test (cmd, G_FILE_TEST_IS_DIR) && !path)
     {
 	if(in_terminal)
 	    execute = g_strconcat("xfterm4 ", cmd, NULL);
@@ -92,6 +97,7 @@ static gboolean do_run(const char *cmd, gboolean in_terminal)
 	    execute = g_strdup(cmd);
     }
 
+    g_free(path);
     success = exec_command(execute);
     g_free(execute);
     
