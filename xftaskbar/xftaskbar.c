@@ -42,7 +42,7 @@
 
 #include <libxfcegui4/libxfcegui4.h>
 #include <libxfce4mcs/mcs-client.h>
-#include <libxfce4util/i18n.h>
+#include <libxfce4util/libxfce4util.h>
 
 #define CHANNEL  "taskbar"
 #define HIDDEN_HEIGHT  5
@@ -209,7 +209,6 @@ static void taskbar_update_margins(Taskbar *taskbar)
 			 gdk_atom_intern ("CARDINAL", FALSE), 32,
 			 GDK_PROP_MODE_REPLACE, (guchar *) &data, 12);
     gdk_error_trap_pop ();
-    g_free (data);
 }
 
 static void taskbar_position(Taskbar *taskbar)
