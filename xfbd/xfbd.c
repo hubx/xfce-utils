@@ -198,32 +198,93 @@ write_config (BackdropDialog * bd)
 
 static Atom prop = 0;
 
-static void
-set_root_pixmap_property (Pixmap pix)
+/* the next two functions are taken mostly
+ * from windownaker's wmsetbg */
+Pixmap
+copy_pixmap(Pixmap pixmap, int width, int height)
 {
-  Display *d = GDK_DISPLAY ();
-  Window w = GDK_ROOT_WINDOW ();
+    Display *tmpDpy;
+    Pixmap copyP;
+    int screen = DefaultScreen(GDK_DISPLAY());
 
-  if (!prop)
-    prop = XInternAtom (d, "_XROOTPMAP_ID", False);
-
-  gdk_error_trap_push ();
-  XChangeProperty (d, w, prop, XA_PIXMAP, 32, PropModeReplace,
-		   (unsigned char *) &pix, 1);
-  gdk_flush ();
-  if (gdk_error_trap_pop ())
+    /* must open a new display or the RetainPermanent will
+     * leave stuff allocated in RContext unallocated after exit */
+    tmpDpy = XOpenDisplay("");
+    
+    if (!tmpDpy)
     {
-      int error;
-      
-      gdk_error_trap_push ();
-      XChangeProperty (d, w, prop, XA_PIXMAP, 32, PropModeAppend,
-		       (unsigned char *) &pix, 1);
-      gdk_flush ();
-      error = gdk_error_trap_pop ();
-      if (error)
-        g_printerr (_("xfbd: could not set property: error number %d\n"),
-                      error);
+	g_printerr("xfbd: could not open display to update background image information");
+
+	return None;
+    } 
+    else 
+    {
+	XSync(GDK_DISPLAY(), False);
+
+	copyP = XCreatePixmap(tmpDpy, GDK_ROOT_WINDOW(), width, height,
+			       DefaultDepth(tmpDpy, screen));
+	XCopyArea(tmpDpy, pixmap, copyP, DefaultGC(tmpDpy, screen),
+		  0, 0, width, height, 0, 0);
+	XSync(tmpDpy, False);
+
+	XSetCloseDownMode(tmpDpy, RetainPermanent);
+	XCloseDisplay(tmpDpy);
     }
+
+    return copyP;
+}
+
+static void
+set_root_pixmap_property (Pixmap pixmap)
+{
+    Display *dpy = GDK_DISPLAY ();
+    Window w = GDK_ROOT_WINDOW ();
+    Atom type;
+    int format;
+    unsigned long length, after;
+    unsigned char *data;
+    int mode;
+    int error;
+
+    if (!prop)
+        prop = XInternAtom (dpy, "_XROOTPMAP_ID", False);
+
+    XGrabServer(dpy);
+
+    /* Clear out the old pixmap */
+    XGetWindowProperty(dpy, GDK_ROOT_WINDOW(), prop, 0L, 1L, False, AnyPropertyType,
+                       &type, &format, &length, &after, &data);
+
+    if ((type == XA_PIXMAP) && (format == 32) && (length == 1)) 
+    {
+        gdk_error_trap_push ();
+        XKillClient(dpy, *((Pixmap *)data));
+	gdk_flush ();
+	gdk_error_trap_pop ();
+
+	mode = PropModeReplace;
+    } 
+    else 
+    {
+	mode = PropModeAppend;
+    }
+    
+    gdk_error_trap_push ();
+    if (pixmap)
+	XChangeProperty(dpy, GDK_ROOT_WINDOW(), prop, XA_PIXMAP, 32, mode,
+			(unsigned char *) &pixmap, 1);
+    else
+	XDeleteProperty(dpy, GDK_ROOT_WINDOW(), prop);
+
+  
+    gdk_flush ();
+    error = gdk_error_trap_pop ();
+
+    XUngrabServer(dpy);
+  
+    if (error)
+      g_printerr (_("xfbd: could not set property: error number %d\n"),
+                    error);
 }
 
 GdkPixbuf *
@@ -262,13 +323,14 @@ set_backdrop (BackdropDialog * bd)
   GdkPixbuf *pb, *pb_scaled;
   GdkPixmap *pix;
   GdkBitmap *mask;
+  int width, height;
 
   if (!bd->preview_image)
     return;
 
   if ((pb = bd->pixbuf))
     {
-      int width, height, pixwidth, pixheight;
+      int pixwidth, pixheight;
 
       switch (bd->radiovalue)
 	{
@@ -298,7 +360,8 @@ set_backdrop (BackdropDialog * bd)
       gdk_window_clear (GDK_ROOT_PARENT ());
       gdk_flush ();
 
-      set_root_pixmap_property (GDK_PIXMAP_XID (pix));
+      /* we need to make a copy here to prevent crashes */
+      set_root_pixmap_property (copy_pixmap(GDK_PIXMAP_XID (pix), width, height));
 
       g_object_unref (pb_scaled);
     }
