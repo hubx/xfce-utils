@@ -2,10 +2,12 @@ aboutdir = $(datadir)/xfce4
 
 about_DATA =								\
 	AUTHORS								\
+	AUTHORS.az							\
 	AUTHORS.ca							\
 	AUTHORS.de							\
 	AUTHORS.fr							\
 	AUTHORS.vi							\
+	AUTHORS.html.az							\
 	AUTHORS.html.ca							\
 	AUTHORS.html.de							\
 	AUTHORS.html.fr							\
