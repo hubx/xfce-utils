@@ -17,10 +17,9 @@ if [ -f $HOME/.Xmodmap ]; then
 fi
 
 # Those are my settings, change them as appropriate...
-# Set Xft DPI to 72
+# Set Xft DPI to 72 (requires fontconfig from XFree 4.3)
 echo "Xft.dpi: 72" | xrdb -merge -
-# And use nice Xcursor themes
-echo "Xcursor.theme: redglass" | xrdb -merge -
+# Adjust cursor size (requires Xcursor from XFree 4.3)
 echo "Xcursor.size: 24" | xrdb -merge -
 
 # Launch xscreensaver (if available)
