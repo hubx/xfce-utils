@@ -1,56 +1,53 @@
 # Ukrainian translation for xfce-utils.
 # Copyright (C) Free Software Foundation
 # This file is distributed under the same license as the PACKAGE package.
-# Maxim Dziumanenko <mvd@mylinux.com.ua>, 2003.
+# Maxim Dziumanenko <mvd@mylinux.com.ua>, 2003-2005.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2003-10-22 8:44+0200\n"
+"POT-Creation-Date: 2004-12-11 18:34+0100\n"
+"PO-Revision-Date: 2005-01-05 8:44+0200\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
-#, fuzzy
+#: xfce4-about/info.c:262
 msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
-#: xfce4-about/info.c:268
-#, fuzzy
+#: xfce4-about/info.c:277
 msgid "Xfce Desktop Environment"
 msgstr "Робоче середовище XFce"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Авторське право 2002-2004, Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:300
 msgid "Info"
 msgstr "Інформація"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:301
 msgid "Credits"
 msgstr "Подяки"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:302
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:303
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:304
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:305
 msgid "GPL"
 msgstr "GPL"
 
@@ -62,7 +59,7 @@ msgstr "xfrun4: Неможливо записати історію у файл %
 #: xfrun/xfrun.c:428
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Якою програмою відкрити %s?"
 
 #: xfrun/xfrun.c:429
 msgid "Run program"
@@ -78,7 +75,7 @@ msgstr "Запустити у _терміналі"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:278
 #: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
 msgid "Taskbar"
 msgstr "Панель задач"
 
@@ -87,39 +84,36 @@ msgid "Position"
 msgstr "Розташування"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
-#, fuzzy
 msgid "_Top"
-msgstr "Згори"
+msgstr "Зг_ори"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
-#, fuzzy
 msgid "_Bottom"
-msgstr "Знизу"
+msgstr "З_низу"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr ""
+msgstr "Вирівнювання"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr ""
+msgstr "З_ліва"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr ""
+msgstr "По _центру"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr ""
+msgstr "С_права"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
 msgstr "Автоматичне приховування"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
-#, fuzzy
 msgid "Auto _hide taskbar"
-msgstr "Автоматично приховувати панель задач"
+msgstr "Автоматично прих_овувати панель задач"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -141,69 +135,61 @@ msgstr "Велика"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr ""
+msgstr "Ширина:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
-msgstr "Процеси"
+msgstr "Програми"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
-#, fuzzy
 msgid "Show tasks from _all workspaces"
-msgstr "Показувати процеси усіх робочих стільниць"
+msgstr "Показувати _програми усіх робочих стільниць"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr ""
+msgstr "Завжди г_рупувати програми"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr ""
+msgstr "Показувати _назви програм"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
 msgstr "Графічний пейджер"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
-#, fuzzy
 msgid "Show _pager in taskbar"
-msgstr "Показувати пейджер на панелі задач"
+msgstr "Показувати п_ейджер на панелі задач"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
 msgstr "Область сповіщення"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
-#, fuzzy
 msgid "Show _system tray in taskbar"
-msgstr "Показувати системний лоток на панелі задач"
+msgstr "Показувати _системний лоток на панелі задач"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "Помилка отримання початкового стилю"
 
-#: xftaskbar/xftaskbar.c:260
+#: xftaskbar/xftaskbar.c:267
 msgid "There is already a system tray running on this screen"
 msgstr "Системний лоток вже зареєстрований на цьому екрані"
 
-#: xftaskbar/xftaskbar.c:268
+#: xftaskbar/xftaskbar.c:275
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "Неможливо зареєструвати системний лоток: %s"
+msgstr "Не вдається зареєструвати системний лоток: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Цього не повинно бути"
-
-#: xftaskbar/xftaskbar.c:592
-#, fuzzy
+#: xftaskbar/xftaskbar.c:603
 msgid "Cannot get default screen\n"
-msgstr "Неможливо визначити поля робочої стільниці"
+msgstr "Неможливо визначити типовий екран\n"
 
-#: xftaskbar/xftaskbar.c:681
+#: xftaskbar/xftaskbar.c:692
 msgid "Cannot connect to session manager"
 msgstr "Помилка підключення до менеджера сеансів"
 
-#: xftaskbar/xftaskbar.c:694
+#: xftaskbar/xftaskbar.c:705
 msgid "Cannot create MCS client channel"
 msgstr "Неможливо створити канал до MCS клієнта"

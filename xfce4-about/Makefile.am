@@ -22,6 +22,7 @@ about_DATA =								\
 	AUTHORS.lt							\
 	AUTHORS.ru							\
 	AUTHORS.sk							\
+	AUTHORS.uk							\
 	AUTHORS.vi							\
 	BSD								\
 	BSD.html							\
@@ -41,6 +42,7 @@ about_DATA =								\
 	INFO.html.fr							\
 	INFO.html.it							\
 	INFO.it								\
+	INFO.uk								\
 	INFO.vi								\
 	LGPL								\
 	LGPL.html
