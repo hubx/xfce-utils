@@ -24,7 +24,7 @@ msgstr "XFce Desktop Umgebung"
 
 #: xfce4-about/info.c:195
 msgid "Copyright 2002-2003 by Olivier Fourdan"
-msgstr "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 von Olivier Fourdan"
 
 #. add pages
 #: xfce4-about/info.c:214
@@ -33,7 +33,7 @@ msgstr "Info"
 
 #: xfce4-about/info.c:215
 msgid "Credits"
-msgstr "Credits"
+msgstr "Das Team"
 
 #: xfce4-about/info.c:216
 msgid "License"
@@ -135,4 +135,4 @@ msgstr "Keine Rändereinstellung finden"
 
 #: xftaskbar/xftaskbar.c:454
 msgid "Cannot create MCS client channel"
-msgstr "Kann MCS client nicht erstellen"
+msgstr "Kann MCS Client Kanal nicht erstellen"

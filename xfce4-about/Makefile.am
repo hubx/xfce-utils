@@ -2,6 +2,8 @@ aboutdir = $(datadir)/xfce4
 
 about_DATA =								\
 	AUTHORS								\
+	AUTHORS.de							\
+	AUTHORS.de.html							\
 	AUTHORS.html							\
 	COPYING								\
 	INFO								\
