@@ -434,11 +434,11 @@ int main(int argc, char **argv)
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar->iconbox);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar->iconbox);
 
-    if (xfce_system_tray_check_running(gdk_screen_get_default())) {
+    if (xfce_system_tray_check_running(DefaultScreenOfDisplay(dpy))) {
 	    xfce_info(_("There is already a system tray running on this "
 			"screen"));
     }
-    else if (!xfce_system_tray_register(taskbar->tray, gdk_screen_get_default(),
+    else if (!xfce_system_tray_register(taskbar->tray, DefaultScreenOfDisplay(dpy),
 			    &error)) 
     {
         xfce_err(_("Unable to register system tray: %s"), error->message);

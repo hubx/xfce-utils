@@ -57,7 +57,7 @@ BM_I18N([xfce-utils], [de fi fr nl pl zh_CN])
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [0.0.3])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [0.0.20])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [0.0.22])
 
 dnl configure the mcs plugin
 XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [0.2.0])
