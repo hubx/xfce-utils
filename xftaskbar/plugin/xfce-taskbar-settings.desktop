@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Xfce 4 Taskbar Settings
+Comment=Taskbar Settings
+Exec=xfce-setting-show taskbar
+Icon=xfce4-taskbar
+Terminal=false
+Type=Application
+Categories=X-XFCE;Settings;DesktopSettings;
+OnlyShowIn=XFCE;

@@ -23,10 +23,12 @@ xftaskbar_plugin_la_LIBADD = 						\
 IMAGES=icon.png
 VARIABLES=default_icon_data $(srcdir)/$(IMAGES)
 
-EXTRA_DIST = inline-icon.h icon.png
+EXTRA_DIST = inline-icon.h icon.png xfce-taskbar-settings.desktop
 
 noinst_DATA = inline-icon.h icon.png
 
 inline-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/inline-icon.h
 
+appsdir = $(datadir)/applications
+apps_DATA = xfce-taskbar-settings.desktop
