@@ -43,7 +43,7 @@ EXTRA_DIST = 								\
 	$(noinst_DATA)
 
 distclean-local:
-	rm -f INFO INFO.html INFO.html.de
+	rm -f INFO INFO.html INFO.html.de INFO.html.ca
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h
