@@ -1,5 +1,6 @@
 /*  xftaskbar
  *  Copyright (C) 2003 Olivier Fourdan (fourdan@xfce.org)
+ *  Copyright (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -457,6 +458,21 @@ static void message_new(XfceSystemTray *tray, GtkWidget *icon, glong id,
 {
 }
 
+#if GTK_CHECK_VERSION(2,2,0)
+static void
+taskbar_size_changed(GdkScreen *screen, Taskbar *taskbar)
+{
+    /*
+     * NOTE: This breaks Xinerama, but anyway, Xinerama is not compatible
+     * with Xrandr
+     */
+    taskbar->width = gdk_screen_get_width(screen);
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width,
+            taskbar->height);
+    taskbar_change_size(taskbar, taskbar->height);
+}
+#endif
+
 int main(int argc, char **argv)
 {
     SessionClient *client_session;
@@ -524,6 +540,18 @@ int main(int argc, char **argv)
     g_signal_connect (G_OBJECT(taskbar->win), "enter_notify_event", G_CALLBACK (taskbar_enter), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "leave_notify_event", G_CALLBACK (taskbar_leave), taskbar);
     g_signal_connect (G_OBJECT(taskbar->win), "size_allocate", G_CALLBACK (taskbar_size_allocate), taskbar);
+
+#if GTK_CHECK_VERSION(2,2,0)
+    if (xineramaGetHeads() < 2) {
+        /*
+         * Xrandr compatibility, since Xrandr does not work well with
+         * Xinerama, we only use it when theres no more than one Xinerama
+         * screen reported.
+         */
+        g_signal_connect(G_OBJECT(gdk_screen_get_default()), "size-changed",
+                G_CALLBACK(taskbar_size_changed), taskbar);
+    }
+#endif
 
     taskbar->frame = gtk_frame_new(NULL);
     gtk_frame_set_shadow_type(GTK_FRAME(taskbar->frame), GTK_SHADOW_OUT);

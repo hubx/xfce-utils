@@ -1,3 +1,8 @@
+20031016:
+---------
+	* XRandR support added for the taskbar. Requires Gtk+ >= 2.2 to work.
+
 20030424:
-	- The about box can make optional use of libgtkhtml to display the
+---------
+	* The about box can make optional use of libgtkhtml to display the
 	  text in HTML instead of plain text.
