@@ -262,7 +262,7 @@ static gboolean taskbar_toggle_tray(Taskbar *taskbar)
 	    taskbar->tray_registered = register_tray(taskbar);
 	}
 
-	taskbar->iconbox = gtk_hbox_new(TRUE, 7);
+	taskbar->iconbox = gtk_hbox_new(FALSE, 5);
 	gtk_box_pack_start(GTK_BOX(taskbar->hbox), taskbar->iconbox, 
 			   FALSE, FALSE,0);
 	gtk_widget_show (taskbar->iconbox);
