@@ -198,7 +198,6 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     g_object_unref(icon);
 
     gtk_window_set_title (GTK_WINDOW (dialog->xftaskbar_dialog), _("Taskbar"));
-    gtk_window_set_position (GTK_WINDOW (dialog->xftaskbar_dialog), GTK_WIN_POS_CENTER);
     gtk_dialog_set_has_separator (GTK_DIALOG (dialog->xftaskbar_dialog), FALSE);
 
     dialog->dialog_vbox1 = GTK_DIALOG (dialog->xftaskbar_dialog)->vbox;
@@ -345,6 +344,7 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
 
+    gtk_window_set_position (GTK_WINDOW (itf->xftaskbar_dialog), GTK_WIN_POS_CENTER);
     gtk_widget_show(itf->xftaskbar_dialog);
 }
 
