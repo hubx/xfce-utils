@@ -10,9 +10,9 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.1.99.3])
+AM_INIT_AUTOMAKE([xfce-utils], [4.2.0])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.2 RC3"], [Optional release plain name])
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], [""], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
@@ -76,11 +76,11 @@ BM_I18N([xfce-utils], [ar az be bg ca cs de en_GB es es_MX et eu fa fi fr gu he
 		       sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
-BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.1.99])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.1.99])
+BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.2.0])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.2.0])
 
 dnl configure the mcs plugin
-XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.1.99])
+XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.2.0])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
