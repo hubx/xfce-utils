@@ -68,8 +68,8 @@ fi
 
 dnl Check for i18n support
 BM_I18N([xfce-utils], [ar az bg ca cs de es es_MX eu fa_IR fi fr he
-		       hi hu it ja ko lt ms nl pl pt_BR pt_PT ru sv
-		       ta tr uk vi zh_CN zh_TW])
+		       hi hu it ja ko lt ms nl pl pt_BR pt_PT ru sk
+		       sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.1.3])
