@@ -1,0 +1,3 @@
+20030424:
+	- The about box can make optional use of libgtkhtml to display the
+	  text in HTML instead of plain text.

@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <h3>XFce 4, version @VERSION@</h3>
+
+    <i>... and mice fly ...</i>
+
+    <p>XFce is a collection of programs that together provide a full-featured
+    desktop environment. The following programs are part of XFce:</p>
+
+    <ul>
+      <li>Window manager (xfwm4)<br />
+        handles the placement of windows on the screen</li>
+
+      <li>Panel (xfce4-panel)<br />
+        program launchers, popup menus, clock, desktop switcher and more</li>
+
+      <li>Desktop manager (xfdesktop)<br />
+        sets a background color or image and provides a menu when you
+        click on the desktop background</li>
+
+      <li>File manager (xffm)<br />
+        fast file manager</li>
+
+      <li>Utilities<br />
+          xfprint4: print files<br />
+          xfrun4: run programs<br />
+          xftaskbar4: simple taskbar with optional pager and system tray<br />
+        </li>
+    </ul>
+
+    <p>Thank you for your interest in XFce.</p>
+
+    <i>-- The XFce Development Team --</i>
+  </body>
+</html>  
+

@@ -9,6 +9,9 @@
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 
+/* Define if you have libgtkhtml-2.0 >= 2.0.0 */
+#undef HAVE_LIBGTKHTML
+
 /* Define if libX11 is available */
 #undef HAVE_LIBX11
 

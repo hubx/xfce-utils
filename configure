@@ -308,7 +308,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM AWK SET_MAKE am__leading_dot MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP EGREP build build_cpu build_vendor build_os host host_cpu host_vendor host_os LN_S RANLIB ac_ct_RANLIB LIBTOOL X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS LIBX11_CFLAGS LIBX11_LDFLAGS LIBX11_LIBS USE_GDM GDM_PREFIX PKG_CONFIG LIBXFCE4MCS_CLIENT_CFLAGS LIBXFCE4MCS_CLIENT_LIBS LIBXFCE4MCS_CLIENT_REQUIRED_VERSION LIBXFCEGUI4_CFLAGS LIBXFCEGUI4_LIBS LIBXFCEGUI4_REQUIRED_VERSION XFCE_MCS_MANAGER_CFLAGS XFCE_MCS_MANAGER_LIBS XFCE_MCS_MANAGER_REQUIRED_VERSION LIBOBJS LTLIBOBJS'
+ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM AWK SET_MAKE am__leading_dot MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP EGREP build build_cpu build_vendor build_os host host_cpu host_vendor host_os LN_S RANLIB ac_ct_RANLIB LIBTOOL X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS LIBX11_CFLAGS LIBX11_LDFLAGS LIBX11_LIBS USE_GDM GDM_PREFIX PKG_CONFIG LIBXFCE4MCS_CLIENT_CFLAGS LIBXFCE4MCS_CLIENT_LIBS LIBXFCE4MCS_CLIENT_REQUIRED_VERSION LIBXFCEGUI4_CFLAGS LIBXFCEGUI4_LIBS LIBXFCEGUI4_REQUIRED_VERSION XFCE_MCS_MANAGER_CFLAGS XFCE_MCS_MANAGER_LIBS XFCE_MCS_MANAGER_REQUIRED_VERSION LIBGTKHTML_CFLAGS LIBGTKHTML_LIBS LIBGTKHTML_REQUIRED_VERSION LIBOBJS LTLIBOBJS'
 ac_subst_files=''
 
 # Initialize some variables set by options.
@@ -862,6 +862,8 @@ Optional Features:
   --disable-libtool-lock  avoid locking (might break parallel builds)
   --enable-gdm            enable the installation of GDM specific files
   --disable-gdm           do not install GDM specific files (default)
+  --enable-gtkhtml-check  Enable checking for GTK+ HTML library (default)
+  --disable-gtkhtml-check Disable checking for GTK+ HTML library
   --enable-debug=yes|no|full
                           Build with debugging support
   --disable-debug         Include no debugging support default
@@ -5119,7 +5121,7 @@ test x"$pic_mode" = xno && libtool_flags="$libtool_flags --prefer-non-pic"
 case $host in
 *-*-irix6*)
   # Find out which ABI we are using.
-  echo '#line 5122 "configure"' > conftest.$ac_ext
+  echo '#line 5124 "configure"' > conftest.$ac_ext
   if { (eval echo "$as_me:$LINENO: \"$ac_compile\"") >&5
   (eval $ac_compile) 2>&5
   ac_status=$?
@@ -7259,6 +7261,135 @@ echo "$as_me: error: Library requirements (xfce-mcs-manager >= 0.1) not met; con
 
 
 
+  # Check whether --enable-gtkhtml-check or --disable-gtkhtml-check was given.
+if test "${enable_gtkhtml_check+set}" = set; then
+  enableval="$enable_gtkhtml_check"
+  ac_cv_LIBGTKHTML_check=$enableval
+else
+  ac_cv_LIBGTKHTML_check=yes
+fi;
+
+  if test x"$ac_cv_LIBGTKHTML_check" = x"yes"; then
+    echo "$as_me:$LINENO: checking for libgtkhtml-2.0 >= 2.0.0" >&5
+echo $ECHO_N "checking for libgtkhtml-2.0 >= 2.0.0... $ECHO_C" >&6
+    if $PKG_CONFIG --atleast-version=2.0.0 libgtkhtml-2.0 2> /dev/null; then
+      echo "$as_me:$LINENO: result: yes" >&5
+echo "${ECHO_T}yes" >&6
+
+
+  succeeded=no
+
+  if test -z "$PKG_CONFIG"; then
+    # Extract the first word of "pkg-config", so it can be a program name with args.
+set dummy pkg-config; ac_word=$2
+echo "$as_me:$LINENO: checking for $ac_word" >&5
+echo $ECHO_N "checking for $ac_word... $ECHO_C" >&6
+if test "${ac_cv_path_PKG_CONFIG+set}" = set; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+else
+  case $PKG_CONFIG in
+  [\\/]* | ?:[\\/]*)
+  ac_cv_path_PKG_CONFIG="$PKG_CONFIG" # Let the user override the test with a path.
+  ;;
+  *)
+  as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+  for ac_exec_ext in '' $ac_executable_extensions; do
+  if $as_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
+    ac_cv_path_PKG_CONFIG="$as_dir/$ac_word$ac_exec_ext"
+    echo "$as_me:$LINENO: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+done
+
+  test -z "$ac_cv_path_PKG_CONFIG" && ac_cv_path_PKG_CONFIG="no"
+  ;;
+esac
+fi
+PKG_CONFIG=$ac_cv_path_PKG_CONFIG
+
+if test -n "$PKG_CONFIG"; then
+  echo "$as_me:$LINENO: result: $PKG_CONFIG" >&5
+echo "${ECHO_T}$PKG_CONFIG" >&6
+else
+  echo "$as_me:$LINENO: result: no" >&5
+echo "${ECHO_T}no" >&6
+fi
+
+  fi
+
+  if test "$PKG_CONFIG" = "no" ; then
+     echo "*** The pkg-config script could not be found. Make sure it is"
+     echo "*** in your path, or set the PKG_CONFIG environment variable"
+     echo "*** to the full path to pkg-config."
+     echo "*** Or see http://www.freedesktop.org/software/pkgconfig to get pkg-config."
+  else
+     PKG_CONFIG_MIN_VERSION=0.9.0
+     if $PKG_CONFIG --atleast-pkgconfig-version $PKG_CONFIG_MIN_VERSION; then
+        echo "$as_me:$LINENO: checking for libgtkhtml-2.0 >= 2.0.0" >&5
+echo $ECHO_N "checking for libgtkhtml-2.0 >= 2.0.0... $ECHO_C" >&6
+
+        if $PKG_CONFIG --exists "libgtkhtml-2.0 >= 2.0.0" ; then
+            echo "$as_me:$LINENO: result: yes" >&5
+echo "${ECHO_T}yes" >&6
+            succeeded=yes
+
+            echo "$as_me:$LINENO: checking LIBGTKHTML_CFLAGS" >&5
+echo $ECHO_N "checking LIBGTKHTML_CFLAGS... $ECHO_C" >&6
+            LIBGTKHTML_CFLAGS=`$PKG_CONFIG --cflags "libgtkhtml-2.0 >= 2.0.0"`
+            echo "$as_me:$LINENO: result: $LIBGTKHTML_CFLAGS" >&5
+echo "${ECHO_T}$LIBGTKHTML_CFLAGS" >&6
+
+            echo "$as_me:$LINENO: checking LIBGTKHTML_LIBS" >&5
+echo $ECHO_N "checking LIBGTKHTML_LIBS... $ECHO_C" >&6
+            LIBGTKHTML_LIBS=`$PKG_CONFIG --libs "libgtkhtml-2.0 >= 2.0.0"`
+            echo "$as_me:$LINENO: result: $LIBGTKHTML_LIBS" >&5
+echo "${ECHO_T}$LIBGTKHTML_LIBS" >&6
+        else
+            LIBGTKHTML_CFLAGS=""
+            LIBGTKHTML_LIBS=""
+            ## If we have a custom action on failure, don't print errors, but
+            ## do set a variable so people can do so.
+            LIBGTKHTML_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libgtkhtml-2.0 >= 2.0.0"`
+            echo $LIBGTKHTML_PKG_ERRORS
+        fi
+
+
+
+     else
+        echo "*** Your version of pkg-config is too old. You need version $PKG_CONFIG_MIN_VERSION or newer."
+        echo "*** See http://www.freedesktop.org/software/pkgconfig"
+     fi
+  fi
+
+  if test $succeeded = yes; then
+     :
+  else
+     { { echo "$as_me:$LINENO: error: Library requirements (libgtkhtml-2.0 >= 2.0.0) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." >&5
+echo "$as_me: error: Library requirements (libgtkhtml-2.0 >= 2.0.0) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." >&2;}
+   { (exit 1); exit 1; }; }
+  fi
+
+  LIBGTKHTML_REQUIRED_VERSION=2.0.0
+
+
+
+cat >>confdefs.h <<\_ACEOF
+#define HAVE_LIBGTKHTML 1
+_ACEOF
+
+    else
+      echo "$as_me:$LINENO: result: no" >&5
+echo "${ECHO_T}no" >&6
+    fi
+  fi
+
+
+
   # Check whether --enable-debug or --disable-debug was given.
 if test "${enable_debug+set}" = set; then
   enableval="$enable_debug"
@@ -7333,7 +7464,7 @@ echo "${ECHO_T}yes" >&6
   fi
 
 
-                                                                                                                                  ac_config_files="$ac_config_files xfce-utils.spec Makefile doc/Makefile doc/images/Makefile doc/html/Makefile doc/xml/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO"
+                                                                                                                                            ac_config_files="$ac_config_files xfce-utils.spec Makefile doc/Makefile doc/images/Makefile doc/html/Makefile doc/xml/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.html"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -7909,6 +8040,7 @@ do
   "gdm/Makefile" ) CONFIG_FILES="$CONFIG_FILES gdm/Makefile" ;;
   "xfce4-about/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/Makefile" ;;
   "xfce4-about/INFO" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO" ;;
+  "xfce4-about/INFO.html" ) CONFIG_FILES="$CONFIG_FILES xfce4-about/INFO.html" ;;
   "depfiles" ) CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
   "config.h" ) CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
   *) { { echo "$as_me:$LINENO: error: invalid argument: $ac_config_target" >&5
@@ -8067,6 +8199,9 @@ s,@LIBXFCEGUI4_REQUIRED_VERSION@,$LIBXFCEGUI4_REQUIRED_VERSION,;t t
 s,@XFCE_MCS_MANAGER_CFLAGS@,$XFCE_MCS_MANAGER_CFLAGS,;t t
 s,@XFCE_MCS_MANAGER_LIBS@,$XFCE_MCS_MANAGER_LIBS,;t t
 s,@XFCE_MCS_MANAGER_REQUIRED_VERSION@,$XFCE_MCS_MANAGER_REQUIRED_VERSION,;t t
+s,@LIBGTKHTML_CFLAGS@,$LIBGTKHTML_CFLAGS,;t t
+s,@LIBGTKHTML_LIBS@,$LIBGTKHTML_LIBS,;t t
+s,@LIBGTKHTML_REQUIRED_VERSION@,$LIBGTKHTML_REQUIRED_VERSION,;t t
 s,@LIBOBJS@,$LIBOBJS,;t t
 s,@LTLIBOBJS@,$LTLIBOBJS,;t t
 CEOF

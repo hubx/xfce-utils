@@ -1,5 +1,9 @@
 dnl configure.ac
 dnl
+dnl xfce-utils - Various utilities for the XFce 4 desktop environment
+dnl
+dnl 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+dnl
 
 AC_INIT([xfrun/xfrun.c])
 
@@ -53,6 +57,10 @@ BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [0.0.3])
 BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [0.0.19])
 BM_DEPEND([XFCE_MCS_MANAGER], [xfce-mcs-manager], [0.1])
 
+dnl Check for gtkhtml installed
+BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
+  [gtkhtml], [GTK+ HTML library])
+
 dnl Check for debugging support
 BM_DEBUG_SUPPORT
 
@@ -70,5 +78,6 @@ scripts/Makefile
 gdm/Makefile
 xfce4-about/Makefile
 xfce4-about/INFO
+xfce4-about/INFO.html
 ])
 

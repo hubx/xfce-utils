@@ -34,6 +34,10 @@
 #include <string.h>
 #endif
 
+#ifdef HAVE_LIBGTKHTML
+#include <libgtkhtml/gtkhtml.h>
+#endif
+
 #include <libxfce4util/i18n.h>
 #include <libxfcegui4/libxfcegui4.h>
 
@@ -63,6 +67,11 @@ static void
 add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 		gboolean hscrolling)
 {
+#ifdef HAVE_LIBGTKHTML
+	gchar *hfilename;
+	gboolean usehtml;
+	HtmlDocument *htmldoc;
+#endif
 	GtkTextBuffer *textbuffer;
 	GtkWidget *textview;
 	GtkWidget *label;
@@ -78,7 +87,21 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	label = gtk_label_new(name);
 	gtk_widget_show(label);
 
-	path = g_build_filename(DATADIR, filename, NULL);
+#ifdef HAVE_LIBGTKHTML
+	hfilename = g_strconcat(filename, ".html", NULL);
+	path = g_build_filename(DATADIR, hfilename, NULL);
+	g_free(hfilename);
+
+	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
+		usehtml = TRUE;
+	}
+	else {
+#endif
+		path = g_build_filename(DATADIR, filename, NULL);
+#ifdef HAVE_LIBGTKHTML
+		usehtml = FALSE;
+	}
+#endif
 
 	g_file_get_contents(path, &buf, &n, &err);
 
@@ -87,9 +110,6 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 		g_error_free(err);
 	}
 	else {
-		textbuffer = gtk_text_buffer_new(NULL);
-		gtk_text_buffer_set_text(textbuffer, buf, n);
-
 		view = gtk_frame_new(NULL);
 		gtk_container_set_border_width(GTK_CONTAINER(view), BORDER);
 		gtk_frame_set_shadow_type(GTK_FRAME(view), GTK_SHADOW_IN);
@@ -102,10 +122,32 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 		gtk_widget_show(sw);
 		gtk_container_add(GTK_CONTAINER(view), sw);
 
-		textview = gtk_text_view_new_with_buffer(textbuffer);
-		gtk_text_view_set_editable(GTK_TEXT_VIEW(textview), FALSE);
-		gtk_text_view_set_left_margin(GTK_TEXT_VIEW(textview), BORDER);
-		gtk_text_view_set_right_margin(GTK_TEXT_VIEW(textview), BORDER);
+#ifdef HAVE_LIBGTKHTML
+		if (usehtml) {
+			htmldoc = html_document_new();
+			html_document_open_stream(htmldoc, "text/html");
+			html_document_write_stream(htmldoc, buf, n);
+			html_document_close_stream(htmldoc);
+
+			textview = html_view_new();
+			html_view_set_document(HTML_VIEW(textview), htmldoc);
+		}
+		else {
+#endif
+			textbuffer = gtk_text_buffer_new(NULL);
+			gtk_text_buffer_set_text(textbuffer, buf, n);
+
+			textview = gtk_text_view_new_with_buffer(textbuffer);
+			gtk_text_view_set_editable(GTK_TEXT_VIEW(textview),
+					FALSE);
+			gtk_text_view_set_left_margin(GTK_TEXT_VIEW(textview),
+					BORDER);
+			gtk_text_view_set_right_margin(GTK_TEXT_VIEW(
+						textview), BORDER);
+#ifdef HAVE_LIBGTKHTML
+		}
+#endif
+
 		gtk_widget_show(textview);
 		gtk_container_add(GTK_CONTAINER(sw), textview);
 

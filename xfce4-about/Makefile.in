@@ -63,6 +63,9 @@ INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 LDFLAGS = @LDFLAGS@
+LIBGTKHTML_CFLAGS = @LIBGTKHTML_CFLAGS@
+LIBGTKHTML_LIBS = @LIBGTKHTML_LIBS@
+LIBGTKHTML_REQUIRED_VERSION = @LIBGTKHTML_REQUIRED_VERSION@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LIBTOOL = @LIBTOOL@
@@ -142,8 +145,10 @@ aboutdir = $(datadir)/xfce4
 
 about_DATA = \
 	AUTHORS								\
+	AUTHORS.html							\
 	COPYING								\
-	INFO
+	INFO								\
+	INFO.html
 
 
 bin_PROGRAMS = xfce4-about
@@ -154,12 +159,13 @@ xfce4_about_SOURCES = \
 
 
 xfce4_about_CFLAGS = \
+	@LIBGTKHTML_CFLAGS@						\
 	@LIBXFCEGUI4_CFLAGS@						\
-	-DDATADIR=\"$(datadir)/xfce4\"					\
-	-DSYSCONFDIR=\"$(sysconfdir)/xfce4\"
+	-DDATADIR=\"$(datadir)/xfce4\"
 
 
 xfce4_about_LDADD = \
+	@LIBGTKHTML_LIBS@						\
 	@LIBXFCEGUI4_LIBS@
 
 
@@ -173,7 +179,7 @@ EXTRA_DIST = $(noinst_DATA)
 subdir = xfce4-about
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = INFO
+CONFIG_CLEAN_FILES = INFO INFO.html
 bin_PROGRAMS = xfce4-about$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 
@@ -196,7 +202,8 @@ LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 DIST_SOURCES = $(xfce4_about_SOURCES)
 DATA = $(about_DATA) $(noinst_DATA)
 
-DIST_COMMON = AUTHORS COPYING INFO.in Makefile.am Makefile.in
+DIST_COMMON = AUTHORS COPYING INFO.html.in INFO.in Makefile.am \
+	Makefile.in
 SOURCES = $(xfce4_about_SOURCES)
 
 all: all-am
@@ -209,6 +216,8 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configu
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
 INFO: $(top_builddir)/config.status INFO.in
+	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+INFO.html: $(top_builddir)/config.status INFO.html.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 install-binPROGRAMS: $(bin_PROGRAMS)
@@ -471,7 +480,8 @@ clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
 distclean: distclean-am
 
 distclean-am: clean-am distclean-compile distclean-depend \
-	distclean-generic distclean-libtool distclean-tags
+	distclean-generic distclean-libtool distclean-local \
+	distclean-tags
 
 dvi: dvi-am
 
@@ -514,16 +524,19 @@ uninstall-am: uninstall-aboutDATA uninstall-binPROGRAMS \
 .PHONY: CTAGS GTAGS all all-am check check-am clean clean-binPROGRAMS \
 	clean-generic clean-libtool ctags distclean distclean-compile \
 	distclean-depend distclean-generic distclean-libtool \
-	distclean-tags distdir dvi dvi-am info info-am install \
-	install-aboutDATA install-am install-binPROGRAMS install-data \
-	install-data-am install-exec install-exec-am install-info \
-	install-info-am install-man install-strip installcheck \
-	installcheck-am installdirs maintainer-clean \
+	distclean-local distclean-tags distdir dvi dvi-am info info-am \
+	install install-aboutDATA install-am install-binPROGRAMS \
+	install-data install-data-am install-exec install-exec-am \
+	install-info install-info-am install-man install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
 	tags uninstall uninstall-aboutDATA uninstall-am \
 	uninstall-binPROGRAMS uninstall-info-am
 
+
+distclean-local:
+	rm -f INFO INFO.html
 
 xfce-logo-icon.h: $(IMAGES)
 	gdk-pixbuf-csource --raw --build-list $(VARIABLES) > $(srcdir)/xfce-logo-icon.h
