@@ -27,6 +27,9 @@
 #include <config.h>
 #endif
 
+#ifdef HAVE_LC_MESSAGES
+#include <locale.h>
+#endif
 #ifdef HAVE_MEMORY_H
 #include <memory.h>
 #endif
