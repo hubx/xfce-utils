@@ -99,7 +99,7 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
     HtmlDocument *htmldoc;
     gboolean usehtml;
 #endif
-    gchar buffer[PATH_MAX + 1];
+    /*gchar buffer[PATH_MAX + 1];*/
     GtkTextBuffer *textbuffer;
     GtkWidget *textview;
     GtkWidget *label;
