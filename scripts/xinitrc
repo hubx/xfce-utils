@@ -2,20 +2,6 @@
 
 xsetroot -solid black -cursor_name watch
 
-# Start-up stuff from ~/Desktop/Autostart directory, if it exists
-# (as it seems to be the new standard)
-if [ -d "$HOME/Desktop/Autostart" ]; then
-  for i in `ls -1 ${HOME}/Desktop/Autostart/ 2>/dev/null`; do
-    if [ -x $HOME/Desktop/Autostart/$i ]; then
-      $HOME/Desktop/Autostart/$i &
-    fi
-  done
-fi
-
-if [ -f $HOME/.Xmodmap ]; then
-	xmodmap $HOME/.Xmodmap
-fi
-
 # Those are my settings, change them as appropriate...
 # Xft DPI: 96
 # Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
@@ -30,15 +16,31 @@ EOF
 # Launch xscreensaver (if available)
 xscreensaver -no-splash &
 
+# then settings and window manager
 xfce-mcs-manager
 xfwm4 --daemon
+
+# Start-up stuff from ~/Desktop/Autostart directory, if it exists
+# (as it seems to be the new standard)
+if test -d "$HOME/Desktop/Autostart"; then
+  for i in `ls -1 -L ${HOME}/Desktop/Autostart/ 2>/dev/null`; do
+    if test -x $HOME/Desktop/Autostart/$i; then
+      $HOME/Desktop/Autostart/$i &
+    fi
+  done
+fi
+
+if test -f $HOME/.Xmodmap; then
+	xmodmap $HOME/.Xmodmap
+fi
+
 xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
 if test "x$panel" != "x" ; then
 	$panel
 	ret=$?
-	while [ $ret -ne 0 ] ; do
+	while test $ret -ne 0; do
 		xmessage -center -file - -timeout 20 -title Error <<EOF
 A crash occured in the panel
 Please report this to the xfce4-dev@moongroup.com list
