@@ -94,5 +94,6 @@ xftaskbar/plugin/Makefile
 scripts/Makefile
 scripts/startxfce4
 gdm/Makefile
+xfce4-about/Makefile
 ])
 
