@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-06-23 22:40+0200\n"
+"POT-Creation-Date: 2003-07-10 10:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,69 +69,69 @@ msgstr ""
 msgid "Run in _terminal"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:200
-#: xftaskbar/plugin/xftaskbar_plugin.c:206
-#: xftaskbar/plugin/xftaskbar_plugin.c:369
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:218
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:226
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
 msgid "Top"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:233
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
 msgid "Bottom"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:240
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:244
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
 msgid "Auto hide taskbar"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:249
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:258
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
 msgid "Height :"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:266
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
 msgid "Small"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:275
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
 msgid "Large"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:297
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:301
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "Show tasks from all workspaces"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:310
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
 msgid "Show pager in taskbar"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:315
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
 msgstr ""
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:319
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
 msgid "Show system tray in taskbar"
 msgstr ""
 

@@ -6,49 +6,49 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfwm4 1.0.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-06-01 17:56+0200\n"
+"POT-Creation-Date: 2003-07-10 10:25+0200\n"
 "PO-Revision-Date: 2003-05-21 02:24+0800\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
-#: xfce4-about/info.c:206
+#: xfce4-about/info.c:230
 msgid "About XFce 4"
 msgstr "Perihal XFce 4"
 
-#: xfce4-about/info.c:219
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
 msgstr "Sekitaran Meja XFce"
 
-#: xfce4-about/info.c:220
+#: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Hakcipta 2002-2003 oleh Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:239
+#: xfce4-about/info.c:263
 msgid "Info"
 msgstr "Info"
 
-#: xfce4-about/info.c:240
+#: xfce4-about/info.c:264
 msgid "Credits"
 msgstr "Kredit"
 
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:265
 msgid "Copyright"
 msgstr ""
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:266
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:267
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:268
 msgid "GPL"
 msgstr ""
 
@@ -57,110 +57,110 @@ msgstr ""
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Tak boleh tulis sejarah ke file %s\n"
 
-#: xfrun/xfrun.c:231
+#: xfrun/xfrun.c:237
 msgid "Run program"
 msgstr "Lari program"
 
-#: xfrun/xfrun.c:238
+#: xfrun/xfrun.c:244
 msgid "_Run"
 msgstr "_Lari"
 
-#: xfrun/xfrun.c:274
+#: xfrun/xfrun.c:281
 msgid "Run in _terminal"
 msgstr "Lari dalam _terminal"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:206
-#: xftaskbar/plugin/xftaskbar_plugin.c:213
-#: xftaskbar/plugin/xftaskbar_plugin.c:409
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
 msgstr "Taskbar"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:235
-msgid "Top"
-msgstr "Atas"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:242
-msgid "Bottom"
-msgstr "Bawah"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:249
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
 msgstr "Posisi"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:259
-msgid "Auto hide taskbar"
-msgstr "Auto sembunyi taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Atas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:264
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Bawah"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
 msgstr "Autosembunyi"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
-msgid "Height :"
-msgstr "Ketinggian :"
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Auto sembunyi taskbar"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:287
-msgid "Small"
-msgstr "Kecil"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Large"
-msgstr "Besar"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:318
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
 msgstr "Saiz"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:332
-msgid "Show tasks from all workspaces"
-msgstr "Lihat tasks dari semua ruangkerja"
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Ketinggian :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:337
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Kecil"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Besar"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
 msgstr "Tasks"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:347
-msgid "Show pager in taskbar"
-msgstr "Lihat pager dalam taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Lihat tasks dari semua ruangkerja"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:352
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
 msgstr "Pager"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:362
-msgid "Show system tray in taskbar"
-msgstr "Lihat tray sistem dalam taskbar"
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Lihat pager dalam taskbar"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:367
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
 msgstr "Kawasan notifikasi"
 
-#: xftaskbar/xftaskbar.c:119
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Lihat tray sistem dalam taskbar"
+
+#: xftaskbar/xftaskbar.c:125
 msgid "Cannot get initial style"
 msgstr "Tak boleh dapat stail pemula"
 
-#: xftaskbar/xftaskbar.c:199
+#: xftaskbar/xftaskbar.c:205
 msgid "There is already a system tray running on this screen"
 msgstr "Tray sistem telah sedia ada berlari diatas skrin"
 
-#: xftaskbar/xftaskbar.c:207
+#: xftaskbar/xftaskbar.c:213
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Tak boleh daftar tray sistem: %s"
 
-#: xftaskbar/xftaskbar.c:317
+#: xftaskbar/xftaskbar.c:327
 msgid "This should not happen"
 msgstr "Ini tidak sepatutnya berlaku"
 
-#: xftaskbar/xftaskbar.c:414
+#: xftaskbar/xftaskbar.c:428
 msgid "Cannot connect to session manager"
 msgstr "Tak boleh sambung ke pengurus sessi"
 
-#: xftaskbar/xftaskbar.c:425
+#: xftaskbar/xftaskbar.c:441
 msgid "Cannot get desktop margins"
 msgstr "Tak boleh dapat margin meja"
 
-#: xftaskbar/xftaskbar.c:496
+#: xftaskbar/xftaskbar.c:513
 msgid "Cannot create MCS client channel"
 msgstr "Tak boleh cipta saluran klien MCS"
 
