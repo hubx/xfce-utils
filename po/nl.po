@@ -124,7 +124,7 @@ msgstr "Status pictogrammen"
 
 #: xftaskbar/xftaskbar.c:118
 msgid "Cannot get initial style"
-msgstr "Kan initiële stiijl niet vinden"
+msgstr "Kan initiële stijl niet vinden"
 
 #: xftaskbar/xftaskbar.c:277
 msgid "This should not happen"
@@ -140,12 +140,12 @@ msgstr "Kan bureaubladmarges niet vinden"
 
 #: xftaskbar/xftaskbar.c:439
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "Er is al een system tray actief op dit scherm"
 
 #: xftaskbar/xftaskbar.c:445
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "Kan system tray niet registreren: %s"
 
 #: xftaskbar/xftaskbar.c:463
 msgid "Cannot create MCS client channel"
