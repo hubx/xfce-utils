@@ -123,7 +123,7 @@ static gboolean exec_cmd(const char *cmd, gboolean in_terminal)
 GList *get_history(void)
 {
     FILE *fp;
-    const char *home = g_getenv("HOME");
+    const char *home = g_get_home_dir();
     char *hfile = g_strconcat(home, "/", HFILE, NULL);
     GList *cbtemp = NULL;
     char line[DEFAULT_LENGTH];
@@ -164,7 +164,7 @@ GList *get_history(void)
 void put_history(const char *newest, GList * cb)
 {
     FILE *fp;
-    const char *home = g_getenv("HOME");
+    const char *home = g_get_home_dir();
     char *hfile = g_strconcat(home, "/", HFILE, NULL);
     GList *node;
     int i;
