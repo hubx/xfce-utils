@@ -56,7 +56,7 @@ else
 fi
 
 case $BROWSER in
-    communicator*|netscape|mozilla*|phoenix*)
+    communicator*|netscape|mozilla*|phoenix*|firebird*|firefox*)
 	$BROWSER -remote openurl\(file://"$URL",new-window\) || \
 		$BROWSER "$URL"    
 	;;
