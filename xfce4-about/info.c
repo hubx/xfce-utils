@@ -50,12 +50,17 @@
 
 #include "xfce-logo-icon.h"
 
-#define BSD	"BSD"
-#define GPL	"GPL"
-#define LGPL	"LGPL"
+#ifndef XFCE_LICENSE
+#define XFCE_LICENSE	"COPYING"
+#endif
 
+#ifndef XFCE_AUTHORS
 #define XFCE_AUTHORS	"AUTHORS"
+#endif
+
+#ifndef XFCE_INFO
 #define XFCE_INFO	"INFO"
+#endif
 
 #define BORDER 6
 
@@ -235,9 +240,7 @@ main(int argc, char **argv)
     /* add pages */
     add_page(GTK_NOTEBOOK(notebook), _("Info"), XFCE_INFO, FALSE);
     add_page(GTK_NOTEBOOK(notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-    add_page(GTK_NOTEBOOK(notebook), "BSDL", BSD, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), "GPL", GPL, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), "LGPL", LGPL, TRUE);
+    add_page(GTK_NOTEBOOK(notebook), _("License"), XFCE_LICENSE, TRUE);
 
     /* buttons */
     buttonbox = gtk_hbutton_box_new();
