@@ -57,7 +57,7 @@ struct _Taskbar
     gboolean position;
     gboolean autohide;
     gboolean show_pager;
-    gboolean show_systray;
+    gboolean show_tray;
     gboolean all_tasks;
     gboolean hidden;
     GtkWidget *win;
@@ -189,13 +189,17 @@ static void taskbar_toggle_pager(Taskbar *taskbar)
     }
 }
 
-static void
-taskbar_toggle_systray(Taskbar *taskbar)
+static void taskbar_toggle_tray(Taskbar *taskbar)
 {
-	if (taskbar->show_systray)
-		gtk_widget_show(taskbar->iconbox);
-	else
-		gtk_widget_hide(taskbar->iconbox);
+    g_return_if_fail (taskbar != NULL);
+    if (taskbar->show_tray)
+    {
+	gtk_widget_show (taskbar->iconbox);
+    }
+    else
+    {
+	gtk_widget_hide (taskbar->iconbox);
+    }
 }
 
 static void taskbar_change_size(Taskbar *taskbar, int height)
@@ -297,12 +301,12 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                     taskbar->show_pager = setting->data.v_int ? TRUE : FALSE;
 		    taskbar_toggle_pager(taskbar);
                 }
-		else if (!strcmp(name, "Taskbar/ShowSystemTray"))
-		{
-		    taskbar->show_systray = setting->data.v_int ? TRUE : FALSE;
-		    taskbar_toggle_systray(taskbar);
-		}
-                else if (!strcmp(name, "Taskbar/ShowAllTasks"))
+                else if(!strcmp(name, "Taskbar/ShowTray"))
+                {
+                    taskbar->show_tray = setting->data.v_int ? TRUE : FALSE;
+		    taskbar_toggle_tray(taskbar);
+                }
+                else if(!strcmp(name, "Taskbar/ShowAllTasks"))
                 {
                     taskbar->all_tasks = setting->data.v_int ? TRUE : FALSE;
 		    netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
@@ -371,7 +375,7 @@ int main(int argc, char **argv)
     taskbar->position = TOP;
     taskbar->autohide = FALSE;
     taskbar->show_pager = TRUE;
-    taskbar->show_systray = TRUE;
+    taskbar->show_tray = TRUE;
     taskbar->all_tasks = FALSE;
     taskbar->hidden = FALSE;
 

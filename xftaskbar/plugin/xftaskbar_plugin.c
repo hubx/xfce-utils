@@ -62,6 +62,7 @@ static gboolean is_running = FALSE;
 static gboolean position = TOP;
 static gboolean autohide = FALSE;
 static gboolean show_pager = TRUE;
+static gboolean show_tray = TRUE;
 static gboolean all_tasks = FALSE;
 static int height = DEFAULT_HEIGHT;
 
@@ -95,7 +96,7 @@ struct _Itf
     GtkWidget *label15;
     GtkWidget *label16;
     GtkWidget *pager_checkbutton;
-    GtkWidget *systray_checkbutton;
+    GtkWidget *tray_checkbutton;
     GtkWidget *pos_bottom_radiobutton;
     GtkWidget *pos_top_radiobutton;
     GtkWidget *table3;
@@ -141,10 +142,16 @@ static void cb_showpager_changed(GtkWidget * dialog, gpointer user_data)
     write_options(mcs_plugin);
 }
 
-static void
-cb_showsystray_changed(GtkWidget *dialog, gpointer user_data)
+static void cb_showtray_changed(GtkWidget * dialog, gpointer user_data)
 {
-	/* XXX - to be implemented */
+    Itf *itf = (Itf *) user_data;
+    McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+    show_tray = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->tray_checkbutton));
+
+    mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowTray", CHANNEL, show_tray ? 1 : 0);
+    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    write_options(mcs_plugin);
 }
 
 static void cb_alltasks_changed(GtkWidget * dialog, gpointer user_data)
@@ -248,43 +255,9 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_frame_set_label_widget (GTK_FRAME (dialog->frame1), dialog->label1);
     gtk_label_set_justify (GTK_LABEL (dialog->label1), GTK_JUSTIFY_LEFT);
 
-    dialog->frame5 = gtk_frame_new (NULL);
-    gtk_widget_show (dialog->frame5);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame5, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame5), 3);
-
-    dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
-    gtk_widget_show (dialog->alltasks_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame5), dialog->alltasks_checkbutton);
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
-
-    dialog->label3 = gtk_label_new (_("Tasks"));
-    gtk_widget_show (dialog->label3);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame5), dialog->label3);
-    gtk_label_set_justify (GTK_LABEL (dialog->label3), GTK_JUSTIFY_LEFT);
-
-    dialog->frame2 = gtk_frame_new (NULL);
-    gtk_widget_show (dialog->frame2);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame2, TRUE, TRUE, 0);
-    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
-
-    dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show pager in taskbar"));
-    gtk_widget_show (dialog->pager_checkbutton);
-    gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->pager_checkbutton);
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->pager_checkbutton), show_pager);
-
-    dialog->label2 = gtk_label_new (_("Pager"));
-    gtk_widget_show (dialog->label2);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame2), dialog->label2);
-    gtk_label_set_justify (GTK_LABEL (dialog->label2), GTK_JUSTIFY_LEFT);
-
-    dialog->vbox2 = gtk_vbox_new (TRUE, 0);
-    gtk_widget_show (dialog->vbox2);
-    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
-
     dialog->frame3 = gtk_frame_new (NULL);
     gtk_widget_show (dialog->frame3);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame3, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame3), 3);
 
     dialog->autohide_checkbutton = gtk_check_button_new_with_mnemonic (_("Auto hide taskbar"));
@@ -299,7 +272,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
 
     dialog->frame4 = gtk_frame_new (NULL);
     gtk_widget_show (dialog->frame4);
-    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame4, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame4, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame4), 3);
 
     dialog->table3 = gtk_table_new (2, 3, FALSE);
@@ -347,6 +320,55 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_frame_set_label_widget (GTK_FRAME (dialog->frame4), dialog->label13);
     gtk_label_set_justify (GTK_LABEL (dialog->label13), GTK_JUSTIFY_LEFT);
 
+    dialog->vbox2 = gtk_vbox_new (TRUE, 0);
+    gtk_widget_show (dialog->vbox2);
+    gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
+
+    dialog->frame5 = gtk_frame_new (NULL);
+    gtk_widget_show (dialog->frame5);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, TRUE, TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame5), 3);
+
+    dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
+    gtk_widget_show (dialog->alltasks_checkbutton);
+    gtk_container_add (GTK_CONTAINER (dialog->frame5), dialog->alltasks_checkbutton);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
+
+    dialog->label3 = gtk_label_new (_("Tasks"));
+    gtk_widget_show (dialog->label3);
+    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame5), dialog->label3);
+    gtk_label_set_justify (GTK_LABEL (dialog->label3), GTK_JUSTIFY_LEFT);
+
+    dialog->frame2 = gtk_frame_new (NULL);
+    gtk_widget_show (dialog->frame2);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
+
+    dialog->pager_checkbutton = gtk_check_button_new_with_mnemonic (_("Show pager in taskbar"));
+    gtk_widget_show (dialog->pager_checkbutton);
+    gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->pager_checkbutton);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->pager_checkbutton), show_pager);
+
+    dialog->label2 = gtk_label_new (_("Pager"));
+    gtk_widget_show (dialog->label2);
+    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame2), dialog->label2);
+    gtk_label_set_justify (GTK_LABEL (dialog->label2), GTK_JUSTIFY_LEFT);
+
+    dialog->frame2 = gtk_frame_new (NULL);
+    gtk_widget_show (dialog->frame2);
+    gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
+    gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
+
+    dialog->tray_checkbutton = gtk_check_button_new_with_mnemonic (_("Show system tray in taskbar"));
+    gtk_widget_show (dialog->tray_checkbutton);
+    gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->tray_checkbutton);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->tray_checkbutton), show_tray);
+
+    dialog->label2 = gtk_label_new (_("Notification area"));
+    gtk_widget_show (dialog->label2);
+    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame2), dialog->label2);
+    gtk_label_set_justify (GTK_LABEL (dialog->label2), GTK_JUSTIFY_LEFT);
+
     dialog->dialog_action_area1 = GTK_DIALOG (dialog->xftaskbar_dialog)->action_area;
     gtk_widget_show (dialog->dialog_action_area1);
     gtk_button_box_set_layout (GTK_BUTTON_BOX (dialog->dialog_action_area1), GTK_BUTTONBOX_END);
@@ -365,6 +387,7 @@ static void setup_dialog(Itf * itf)
 
     g_signal_connect(G_OBJECT(itf->pos_top_radiobutton), "toggled", G_CALLBACK(cb_position_changed), itf);
     g_signal_connect(G_OBJECT(itf->pager_checkbutton), "toggled", G_CALLBACK(cb_showpager_changed), itf);
+    g_signal_connect(G_OBJECT(itf->tray_checkbutton), "toggled", G_CALLBACK(cb_showtray_changed), itf);
     g_signal_connect(G_OBJECT(itf->alltasks_checkbutton), "toggled", G_CALLBACK(cb_alltasks_changed), itf);
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
