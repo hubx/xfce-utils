@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <h3><font size=5>XFce 4, version @VERSION@</font></h3>
+
+    <i>... and mice fly ...</i>
+
+    <p>XFCE guztiz garaturiko idazmahai bat osatzen duten programa sorta da.
+Hurrengo programa hauek XFce-ren parte dira:</p>
+    <ul>
+      <li><b><u>Leiho kudeatzailea</u> (<i>xfwm4</i>)</b><br />
+        Panatailan lehioen kokapenaren arduraduna</li>
+
+      <li><b><u>Panela</u> (<i>xfce4-panel</i>)</b><br />
+       Programa abiarazleak, popup menuak, ordularia, idazmahai aldatzailea eta gehiago </li>
+
+      <li><b><u>Idazmahai kudeatzailea </u> (<i>xfdesktop</i>)</b><br />
+        Atzeko planoko kolore edo irudia ezartzen du eta menu bat abiarazten du
+   Idazmahaiaren atzealdean klikatzerakoan</li>
+
+      <li><b><Fitxategi kudeatzailea</u> (<i>xffm</i>)</b><br />
+        Fitxategi kudeatzaile azkarra</li>
+
+      <li><b><u>Erabilgarriak</u></b><br />
+          <i>xfprint4</i>: Fitxategiak inprimatzeko<br />
+          <i>xfrun4</i>: Programak abiarazteko<br />
+          <i>xftaskbar4</i>: Lan barra Programa sinplea, aukerako sistema barra eta leiho kudeatzailearekin<br />
+        </li>
+    </ul>
+
+    <p>Mila esker XFce-n interesatzegatik</p>
+
+    <i>-- XFce Garatzaile Taldea --</i>
+  </body>
+<html>

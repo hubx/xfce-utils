@@ -1,0 +1,168 @@
+# translation of xfce-utils.po to euskera
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+# Jon Latorre Martinez <patataman@airtel.net>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-22 21:20+0200\n"
+"PO-Revision-Date: 2004-01-16 09:40+0100\n"
+"Last-Translator: Jon Latorre Martinez <patataman@airtel.net>\n"
+"Language-Team: euskera <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: xfce4-about/info.c:231
+msgid "About XFce 4"
+msgstr "XFce 4-ri buruz "
+
+#: xfce4-about/info.c:245
+msgid "XFce Desktop Environment"
+msgstr "XFce Idazmahi Ingurua"
+
+#: xfce4-about/info.c:246
+msgid "Copyright 2002-2003 by Olivier Fourdan"
+msgstr "Copyright 2002-2003 Olivier Fourdan"
+
+#. add pages
+#: xfce4-about/info.c:265
+msgid "Info"
+msgstr "Info"
+
+#: xfce4-about/info.c:266
+msgid "Credits"
+msgstr "Kredituak"
+
+#: xfce4-about/info.c:267
+msgid "Copyright"
+msgstr ""
+
+#: xfce4-about/info.c:268
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:269
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:270
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:180
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: ezen izan da histororioa idatzi %s fitxateguian\n"
+
+#: xfrun/xfrun.c:237
+msgid "Run program"
+msgstr "Programa exekutatu"
+
+#: xfrun/xfrun.c:244
+msgid "_Run"
+msgstr "_Exekutatu"
+
+#: xfrun/xfrun.c:281
+msgid "Run in _terminal"
+msgstr "Exekutatu terminalean"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
+msgid "Taskbar"
+msgstr "Eginbeharren barra"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
+msgid "Position"
+msgstr "Kokalekua"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Goia"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Behea"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
+msgid "Autohide"
+msgstr "Automatikoki izkutatu"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Auto-izkutatu eginbeharren barra"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
+msgid "Size"
+msgstr "Tamaina"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Altuera :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Txikia"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Handia"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
+msgid "Tasks"
+msgstr "Lanak"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Erakutsi idazmahi birtual guztien lanak"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
+msgid "Pager"
+msgstr "Paginadorea"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Erakutsi paginagailua menu barran"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Notification area"
+msgstr "Notifikazio area"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Lan barran erakutsi sistemaren mezuak"
+
+#: xftaskbar/xftaskbar.c:129
+msgid "Cannot get initial style"
+msgstr "Ezin da hasierako estiloa lortu"
+
+#: xftaskbar/xftaskbar.c:209
+msgid "There is already a system tray running on this screen"
+msgstr "Pantaila honetan ikono bandeja bat martxan dago"
+
+#: xftaskbar/xftaskbar.c:217
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Ezinezkoa ikono bandeja erregistratzea: %s"
+
+#: xftaskbar/xftaskbar.c:388
+msgid "This should not happen"
+msgstr "Hau ez du gertatu behar"
+
+#: xftaskbar/xftaskbar.c:478
+msgid "Cannot connect to session manager"
+msgstr "Ezin da saio administratzailearekin konektatu"
+
+#: xftaskbar/xftaskbar.c:491
+msgid "Cannot get desktop margins"
+msgstr "Ezin dira mahaigainaren marginak lortu"
+
+#: xftaskbar/xftaskbar.c:569
+msgid "Cannot create MCS client channel"
+msgstr "MCS bezeroa ezin da sortu"
+
+#~ msgid "License"
+#~ msgstr "Licencia"
