@@ -53,7 +53,10 @@ int extra_key_completion(gpointer user_data)
 
 static void set_run_combo(xfc_combo_info_t *combo_info)
 {
-    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
+    gchar *xdg_dir=xfce_resource_save_location (XFCE_RESOURCE_CACHE,"/",TRUE);
+    gchar *f=g_build_filename(xdg_dir,RUN_DBH_FILE,NULL); 
+
+    g_free(xdg_dir);
 
     if (access(f,F_OK)!=0) return;
     
@@ -80,12 +83,16 @@ void unload_xfc(void){
 
 xfc_combo_functions *load_xfc(void){
     xfc_combo_functions *(*module_init)(void) ;
-    gchar *library, *module;
+    gchar *module;
+    gchar *librarydir=g_build_filename (LIBDIR, "xfce4", "modules",NULL);
    
     if (xfc_fun) return xfc_fun;
-    
+    module = g_module_build_path(librarydir, "xfce4_combo");
+    g_free(librarydir);
+#if 0
     library=g_strconcat("libxfce4_combo.",G_MODULE_SUFFIX, NULL);
     module = g_build_filename (LIBDIR, "xfce4", "modules",library, NULL);
+#endif
     
     xfc_cm=g_module_open (module, 0);
     if (!xfc_cm) {
@@ -104,7 +111,6 @@ xfc_combo_functions *load_xfc(void){
 #ifdef DEBUG
     g_message ("module %s successfully loaded", library);	    
 #endif
-    g_free(library);
     g_free(module);
     return xfc_fun;
 }
@@ -115,7 +121,10 @@ static void  save_flags(gchar *in_cmd, gboolean interm, gboolean hold){
     DBHashTable *runflags;
     GString *gs;
     int *flags;
-    gchar *g=g_build_filename(RUN_FLAG_FILE,NULL);
+    gchar *xdg_dir=xfce_resource_save_location (XFCE_RESOURCE_CACHE,"/",TRUE);
+    
+    gchar *g=g_build_filename(xdg_dir,RUN_FLAG_FILE,NULL);
+    g_free(xdg_dir);
     if((runflags = DBH_open(g)) == NULL)
     {
 	if((runflags = DBH_create(g, 11)) == NULL){
@@ -142,7 +151,10 @@ static void  recover_flags(gchar *in_cmd,gboolean *interm,gboolean *hold){
     DBHashTable *runflags;
     GString *gs;
     int *flags;
-    gchar *g=g_build_filename(RUN_FLAG_FILE,NULL);
+    gchar *xdg_dir=xfce_resource_save_location (XFCE_RESOURCE_CACHE,"/",TRUE);
+    gchar *g=g_build_filename(xdg_dir,RUN_FLAG_FILE,NULL);
+
+    g_free(xdg_dir);
     if((runflags = DBH_open(g)) == NULL)
     {
 #ifdef DEBUG
