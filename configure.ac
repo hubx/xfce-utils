@@ -1,4 +1,6 @@
-AC_INIT(xfbd/xfbd.c)
+AC_INIT(xftaskbar)
+
+AC_PREREQ(2.52)
 
 VERSION=`date +%y%m%d`
 AC_SUBST(VERSION)
@@ -11,6 +13,7 @@ AM_CONFIG_HEADER(config.h)
 ## libtool support (for plugins)
 AC_DISABLE_STATIC
 AC_PROG_LIBTOOL
+AC_SUBST(LIBTOOL_DEPS)
 
 # Honor aclocal flags
 ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
