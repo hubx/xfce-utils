@@ -12,7 +12,7 @@ Contribuidores
   Bernhard Walle <Bernhard.Walle@gmx.de> 
   Craig Betts <craig.betts@dfrc.nasa.gov>
   Danny Milosavljevic <danny_milo@yahoo.com>
-  Eduard Roccatello <master@spine-group.org>
+  Eduard Roccatello <eduard@xfce.org>
   Ejvend Nielsen <prophet@sphere-x.net>
   Erik Touve <etouve@earthlink.net>
   François Le Clainche <fleclainche@wanadoo.fr>
