@@ -13,8 +13,8 @@ Xft.hinting: 1
 Xft.hintstyle: hintmedium
 EOF
 
-# Launch xscreensaver (if available)
-xscreensaver -no-splash &
+# Launch xscreensaver (if available), but only as non-root user
+test $UID -gt 0 && xscreensaver -no-splash &
 
 # then settings and window manager
 xfce-mcs-manager

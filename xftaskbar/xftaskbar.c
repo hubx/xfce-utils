@@ -25,6 +25,9 @@
 #undef GDK_MULTIHEAD_SAFE
 #endif
 
+#ifdef HAVE_MEMORY_H
+#include <memory.h>
+#endif
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
