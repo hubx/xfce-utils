@@ -4,12 +4,12 @@ Líder del proyecto
 Desarrolladores
   Benedikt Meurer <Benedikt.Meurer@xfce.org>
   Biju Chacko <botsie@myrealbox.com>
+  Brian Tarricone <bjt23@cornell.edu>
   Edscott Wilson Garcia <edscott@imp.mx>
   Jasper Huijsmans <huysmans@users.sourceforge.net>
 
 Contribuidores
   Bernhard Walle <Bernhard.Walle@gmx.de> 
-  Brian Tarricone <bjt23@cornell.edu>
   Craig Betts <craig.betts@dfrc.nasa.gov>
   Danny Milosavljevic <danny_milo@yahoo.com>
   Eduard Roccatello <master@spine-group.org>
