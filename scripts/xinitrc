@@ -49,7 +49,7 @@ rm -f $XRESOURCES
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Launch xscreensaver (if available), but only as non-root user
-test $UID -gt 0 -a -z $VNCSESSION && xscreensaver -no-splash &
+test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
