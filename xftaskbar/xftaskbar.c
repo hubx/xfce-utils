@@ -361,8 +361,7 @@ static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocat
     monitor_nbr = gdk_screen_get_monitor_at_point (taskbar->gscr, 0, 0);
     gdk_screen_get_monitor_geometry (taskbar->gscr, monitor_nbr, &rect);
 
-    if ((allocation) && (widget == taskbar->win) && 
-        ((allocation->height != taskbar->height) || (allocation->width != taskbar->width)))
+    if ((allocation) && (widget == taskbar->win))
     {
         if (taskbar->position == TOP)
         {
