@@ -7,7 +7,7 @@ dnl
 
 AC_INIT([xfrun/xfrun.c])
 
-AM_INIT_AUTOMAKE([xfce-utils], [3.99.4])
+AM_INIT_AUTOMAKE([xfce-utils], [4.0.0])
 
 AM_CONFIG_HEADER([config.h])
 
@@ -69,11 +69,11 @@ BM_I18N([xfce-utils], [ca de es es_MX fi fr hu it ja ko lt ms nl pl pt_PT ru
 	 ta tr zh_CN zh_TW])
 
 dnl Check for required packages
-BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [3.99.4])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [3.99.4])
+BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.0.0])
+BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.0.0])
 
 dnl configure the mcs plugin
-XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [3.99.4])
+XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.0.0])
 
 dnl Check for gtkhtml installed
 BM_DEPEND_CHECK([LIBGTKHTML], [libgtkhtml-2.0], [2.0.0],
