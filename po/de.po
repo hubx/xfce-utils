@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-06-01 17:56+0200\n"
-"PO-Revision-Date: 2003-04-25 00:30+0100\n"
+"PO-Revision-Date: 2003-06-04 14:35+0100\n"
 "Last-Translator: Moritz Heiber <mistermoe@hackerboard.de>\n"
 "Language-Team: none <none@none>\n"
 "MIME-Version: 1.0\n"
@@ -38,24 +38,24 @@ msgstr "Das Team"
 
 #: xfce4-about/info.c:241
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: xfce4-about/info.c:242
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:243
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:244
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:180
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr ""
+msgstr "xfrun4: Konnte Historydatei %s nicht schreiben\n"
 
 #: xfrun/xfrun.c:231
 msgid "Run program"
@@ -101,11 +101,11 @@ msgstr "Höhe :"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:287
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Large"
-msgstr ""
+msgstr "Groß"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:318
 msgid "Size"
@@ -141,12 +141,12 @@ msgstr "Kann Eingangsstil nicht finden"
 
 #: xftaskbar/xftaskbar.c:199
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "Es läuft bereits ein Systemtray"
 
 #: xftaskbar/xftaskbar.c:207
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "Konnte Systemtray nicht registrieren: %s"
 
 #: xftaskbar/xftaskbar.c:317
 msgid "This should not happen"
@@ -163,12 +163,3 @@ msgstr "Keine Rändereinstellung finden"
 #: xftaskbar/xftaskbar.c:496
 msgid "Cannot create MCS client channel"
 msgstr "Kann MCS Client Kanal nicht erstellen"
-
-#~ msgid "License"
-#~ msgstr "Lizenz"
-
-#~ msgid "<small><i>Small</i></small>"
-#~ msgstr "<small><i>Klein</i></small>"
-
-#~ msgid "<small><i>Large</i></small>"
-#~ msgstr "<small><i>Groß</i></small>"
