@@ -116,9 +116,9 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 
 #ifdef HAVE_LIBGTKHTML
 	usehtml = FALSE;
+found:
 #endif
 
-found:
 	g_file_get_contents(path, &buf, &n, &err);
 
 	if (err != NULL) {

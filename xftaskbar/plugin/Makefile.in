@@ -116,6 +116,7 @@ USE_NLS = @USE_NLS@
 VERSION = @VERSION@
 XFCE_MCS_MANAGER_CFLAGS = @XFCE_MCS_MANAGER_CFLAGS@
 XFCE_MCS_MANAGER_LIBS = @XFCE_MCS_MANAGER_LIBS@
+XFCE_MCS_MANAGER_PLUGINSDIR = @XFCE_MCS_MANAGER_PLUGINSDIR@
 XFCE_MCS_MANAGER_REQUIRED_VERSION = @XFCE_MCS_MANAGER_REQUIRED_VERSION@
 XGETTEXT = @XGETTEXT@
 X_CFLAGS = @X_CFLAGS@
@@ -158,7 +159,7 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-xftaskbar_plugindir = $(libdir)/xfce-mcs-manager/plugins
+xftaskbar_plugindir = @XFCE_MCS_MANAGER_PLUGINSDIR@
 
 xftaskbar_plugin_LTLIBRARIES = xftaskbar_plugin.la
 

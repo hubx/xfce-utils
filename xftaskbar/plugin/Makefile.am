@@ -1,4 +1,4 @@
-xftaskbar_plugindir = $(libdir)/xfce-mcs-manager/plugins
+xftaskbar_plugindir = @XFCE_MCS_MANAGER_PLUGINSDIR@
 
 xftaskbar_plugin_LTLIBRARIES = xftaskbar_plugin.la
 
