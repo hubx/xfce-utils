@@ -3,7 +3,7 @@
 #include <libxfcegui4/libxfcegui4.h>
 
 #define FIXED_HEIGHT 26
-#define HIDDEN_HEIGHT 4
+#define HIDDEN_HEIGHT 5
 
 typedef struct _Taskbar Taskbar;
 struct _Taskbar
@@ -14,7 +14,6 @@ struct _Taskbar
     GtkWidget *hbox;
     GtkWidget *tasklist;
     GtkWidget *pager;
-    GtkWidget *eventbox;
 };
 
 static gboolean panel_enter (GtkWidget *widget, GdkEventCrossing *event, gpointer data)
@@ -33,12 +32,24 @@ static gboolean panel_enter (GtkWidget *widget, GdkEventCrossing *event, gpointe
 
 static gboolean panel_leave (GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
+    GtkStyle *style;
     Taskbar* taskbar = (Taskbar *) data;
+    guint height;
   
     if (event->detail != GDK_NOTIFY_INFERIOR)
     {
+        style = gtk_widget_get_style(taskbar->win);
+	if (style)
+	{
+	    height = 2 * style->ythickness + 1;
+	}
+	else
+	{
+            g_warning("Cannot get style");
+	    height = HIDDEN_HEIGHT;
+	}
 	gtk_widget_hide (taskbar->frame);
-	gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, HIDDEN_HEIGHT);
+	gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, height);
 	gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
     }
     return FALSE;
@@ -56,6 +67,8 @@ int main(int argc, char **argv)
     DesktopMargins margins;
     NetkScreen *screen;
     Taskbar *taskbar;
+    GtkStyle *style;
+    guint height;
     
     gtk_init(&argc, &argv);
 
@@ -88,21 +101,29 @@ int main(int argc, char **argv)
     gtk_window_set_title(GTK_WINDOW(taskbar->win), "Task List");
     gtk_window_set_decorated(GTK_WINDOW(taskbar->win), FALSE);
     gtk_window_set_resizable(GTK_WINDOW(taskbar->win), FALSE);
-    gtk_window_set_default_size(GTK_WINDOW(taskbar->win), taskbar->width, taskbar->height);
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, taskbar->height);
+    style = gtk_widget_get_style(taskbar->win);
+    if (style)
+    {
+	height = 2 * style->ythickness + 1;
+    }
+    else
+    {
+        g_warning("Cannot get initial style");
+	height = HIDDEN_HEIGHT;
+    }
+    gtk_window_set_default_size(GTK_WINDOW(taskbar->win), taskbar->width, height);
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, height);
     gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
     g_signal_connect (G_OBJECT(taskbar->win), "destroy", G_CALLBACK(panel_destroy), taskbar);
     margins.top += HIDDEN_HEIGHT;
     
-    taskbar->eventbox = gtk_event_box_new();
-    gtk_container_add(GTK_CONTAINER(taskbar->win), taskbar->eventbox);
-    gtk_widget_add_events (taskbar->eventbox, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
-    g_signal_connect (G_OBJECT(taskbar->eventbox), "enter_notify_event", G_CALLBACK (panel_enter), taskbar);
-    g_signal_connect (G_OBJECT(taskbar->eventbox), "leave_notify_event", G_CALLBACK (panel_leave), taskbar);
+    gtk_widget_add_events (taskbar->win, GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK);
+    g_signal_connect (G_OBJECT(taskbar->win), "enter_notify_event", G_CALLBACK (panel_enter), taskbar);
+    g_signal_connect (G_OBJECT(taskbar->win), "leave_notify_event", G_CALLBACK (panel_leave), taskbar);
     
     taskbar->frame = gtk_frame_new(NULL);
     gtk_frame_set_shadow_type(GTK_FRAME(taskbar->frame), GTK_SHADOW_OUT);
-    gtk_container_add(GTK_CONTAINER(taskbar->eventbox), taskbar->frame);
+    gtk_container_add(GTK_CONTAINER(taskbar->win), taskbar->frame);
 
     taskbar->hbox = gtk_hbox_new (FALSE, 1);
     gtk_container_add (GTK_CONTAINER (taskbar->frame), taskbar->hbox);
@@ -122,13 +143,8 @@ int main(int argc, char **argv)
     gtk_widget_show (taskbar->tasklist);
     gtk_widget_show (taskbar->pager);
     gtk_widget_show (taskbar->hbox);
-    gtk_widget_show (taskbar->frame);
-    gtk_widget_show (taskbar->eventbox);
+    /* gtk_widget_show (taskbar->frame); */
     gtk_widget_show (taskbar->win);
-
-    gtk_widget_hide (taskbar->frame);
-    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar->width, HIDDEN_HEIGHT);
-    gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
 
     netk_set_desktop_margins(GDK_WINDOW_XWINDOW(taskbar->win->window), &margins);
 
