@@ -2,6 +2,11 @@
 
 xsetroot -solid black -cursor_name watch
 
+# fix broken $UID on some system...
+if test "x$UID" = "x"; then
+	UID=`id -u`
+fi
+
 # Those are my settings, change them as appropriate...
 # Xft DPI: 96
 # Xft.hintstyle: hintnone/hintslight/hintmedium/hintfull
@@ -18,11 +23,15 @@ test $UID -gt 0 && xscreensaver -no-splash &
 
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
-if test "x$xfcesm" != "x" && test "x$xfcesm" != "xno" ; then
-	exec $xfcesm
-        # Shouldn't get there, but anyway...
-        exit
-fi
+case "x$xfcesm" in
+	x|xno*)
+		;;
+	*)
+		exec $xfcesm
+		# Shouldn't get there, but anyway...
+		exit
+		;;
+esac
 
 # or use old-fashioned startup script otherwise
 xfce-mcs-manager
@@ -45,22 +54,27 @@ fi
 xftaskbar4&
 xfdesktop&
 panel=`which xfce4-panel`
-if test "x$panel" != "x" && test "x$panel" != "xno"; then
-	$panel
-	ret=$?
-	while test $ret -ne 0; do
-		xmessage -center -file - -timeout 20 -title Error <<EOF
-A crash occured in the panel
-Please report this to the xfce4-dev@moongroup.com list
-Meanwhile the panel will be restarted
-EOF
-		cat >&2 <<EOF
-A crash occured in the panel
-Please report this to the xfce4-dev@moongroup.com list
-Meanwhile the panel will be restarted
-EOF
+case "x$panel" in
+	x|xno*)
+		;;
+	*)
 		$panel
 		ret=$?
-	done
-fi
+		while test $ret -ne 0; do
+			xmessage -center -file - -timeout 20 -title Error <<EOF
+A crash occured in the panel
+Please report this to the xfce4-dev@moongroup.com list
+Meanwhile the panel will be restarted
+EOF
+			cat >&2 <<EOF
+A crash occured in the panel
+Please report this to the xfce4-dev@moongroup.com list
+Meanwhile the panel will be restarted
+EOF
+			$panel
+			ret=$?
+		done
+		;;
+esac
+
 xsetroot -solid black -cursor_name watch
