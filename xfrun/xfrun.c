@@ -1,6 +1,7 @@
 /*  xfrun4
  *  Copyright (C) 2000, 2002 Olivier Fourdan (fourdan@xfce.org)
  *  Copyright (C) 2002 Jasper Huijsmans (huysmans@users.sourceforge.net)
+ *  Copyright (C) 2003 Eduard Roccatello (master@spine-group.org)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -58,9 +59,81 @@ XFCommand;
 
 GtkWidget *dialog;
 GtkWidget *checkbox;
+GCompletion *complete;
 GList *history = NULL;
+gint nComplete;
 char *fileman = NULL;
 
+gboolean run_completion (GtkWidget *widget,
+                         GdkEventKey *event,
+                         gpointer user_data);
+
+gboolean tabFocusStop   (GtkWidget *widget,
+                         GdkEventKey *event,
+                         gpointer user_data);
+gboolean
+run_completion (GtkWidget *widget,
+                GdkEventKey *event,
+                gpointer user_data)
+{
+    /* Check for GDK_Tab */
+    if (event->keyval == 0xff09) {
+        GList *similar = NULL;
+        const gchar *text = NULL;
+        const gchar *prefix = NULL;
+        gboolean selected = FALSE;
+        gint len, selstart, i;
+
+        g_signal_handlers_block_by_func (GTK_OBJECT (widget), run_completion, NULL);
+
+        text = gtk_entry_get_text(GTK_ENTRY(widget));
+        len = g_utf8_strlen(text, -1);
+        if (len!=0) {
+            /* seek for a selection */
+            if ((selected = gtk_editable_get_selection_bounds(GTK_EDITABLE(widget), &selstart, NULL)) && selstart != 0) {
+                nComplete++;
+                prefix = g_strndup(text, selstart);
+            }
+            else {
+                nComplete = 0;
+                prefix = text;
+            }
+
+            /* make the completion */
+            if ((similar = g_completion_complete(complete, prefix, NULL)) != NULL) {
+                if (selected && selstart != 0) {
+                    if (nComplete >= g_list_length(similar))
+                        nComplete = 0;
+                    for (i=0; i<nComplete; i++) {
+                        if (similar->next!=NULL)
+                            similar = similar->next;
+                    }
+                }
+                gtk_entry_set_text(GTK_ENTRY(widget), similar->data);
+                gtk_editable_select_region(GTK_EDITABLE(widget), (selstart == 0 ? len : selstart), -1);
+            }
+        }
+        else {
+            /* popup the combobox list if there's no text */
+            g_signal_emit_by_name((gpointer)widget, "activate", NULL);
+        }
+        g_signal_handlers_unblock_by_func (GTK_OBJECT (widget), run_completion, NULL);
+    }
+    /* Check for return hit and send GTK_RESPONSE_OK to the dialog */
+    else if (event->keyval == 0xff0d) {
+        g_signal_stop_emission_by_name (GTK_OBJECT (widget), "key-press-event");
+        gtk_dialog_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
+    }
+    return FALSE;
+}
+
+gboolean tabFocusStop   (GtkWidget *widget,
+                         GdkEventKey *event,
+                         gpointer user_data)
+{
+    g_signal_stop_emission_by_name (GTK_OBJECT (widget), "key-press-event");
+    return TRUE;
+}
 void set_history_checkbox(GtkList *list, GtkWidget *child)
 {
     gint ipos = gtk_list_child_position(list, child);
@@ -233,7 +306,9 @@ int main(int argc, char **argv)
     history = get_history();
 
     fileman = get_fileman();
-    
+
+    complete = g_completion_new(NULL);
+
     dialog = gtk_dialog_new_with_buttons(_("Run program"), NULL, GTK_DIALOG_NO_SEPARATOR, NULL);
     
     button = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
@@ -266,6 +341,7 @@ int main(int argc, char **argv)
 
     if (hstrings != NULL) {
         gtk_combo_set_popdown_strings(GTK_COMBO(combo), hstrings);
+        g_completion_add_items(complete, hstrings);
         g_list_free(hstrings);
     }
 
@@ -275,8 +351,7 @@ int main(int argc, char **argv)
     combo_entry = GTK_COMBO(combo)->entry;
     combo_list = GTK_COMBO(combo)->list;
 
-    gtk_combo_disable_activate(GTK_COMBO(combo));
-    g_object_set(G_OBJECT(combo_entry), "activates-default", TRUE, NULL);
+    g_object_set(G_OBJECT(combo_entry), "activates-default", FALSE, NULL);
 
     checkbox = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
     
@@ -285,24 +360,30 @@ int main(int argc, char **argv)
 				    current->in_terminal);
     }
 
-    gtk_widget_show(checkbox);
-    gtk_box_pack_start(GTK_BOX(vbox), checkbox, TRUE, TRUE, 0);
+	gtk_box_pack_start(GTK_BOX(vbox), checkbox, TRUE, TRUE, 0);
+	gtk_widget_show(checkbox);
 
     gtk_editable_select_region(GTK_EDITABLE(combo_entry), 0, -1);
     gtk_widget_grab_focus(combo_entry);
 
     g_signal_connect(G_OBJECT(combo_list), "select_child",
-		     G_CALLBACK(set_history_checkbox), NULL);
+            G_CALLBACK(set_history_checkbox), NULL);
 
-    for (;;) {
+    g_signal_connect(GTK_WIDGET(combo_entry), "key-press-event",
+            G_CALLBACK(run_completion), NULL);
+
+    g_signal_connect_after(GTK_WIDGET(combo_entry), "key-press-event",
+            G_CALLBACK(tabFocusStop), NULL);
+
+    while (1) {
 	    int response;
-	
+
 	    response = gtk_dialog_run(GTK_DIALOG(dialog));
 
 	    if (response == GTK_RESPONSE_OK) {
 	        const gchar *command;
 	        gboolean in_terminal;
-	    
+
 	        command = gtk_entry_get_text(GTK_ENTRY(combo_entry));
 
 	        in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(
@@ -316,8 +397,9 @@ int main(int argc, char **argv)
 	    else
 	        break;
     }
-    
+
     gtk_widget_destroy(dialog);
+    g_completion_free(complete);
     g_free(fileman);
 
     if (history != NULL) {
