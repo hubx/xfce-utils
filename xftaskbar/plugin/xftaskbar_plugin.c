@@ -507,6 +507,7 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->xftaskbar_dialog), "response", G_CALLBACK(cb_dialog_response), itf->mcs_plugin);
 
     g_signal_connect(G_OBJECT(itf->pos_top_radiobutton), "toggled", G_CALLBACK(cb_position_changed), itf);
+    g_signal_connect(G_OBJECT(itf->pos_bottom_radiobutton), "toggled", G_CALLBACK(cb_position_changed), itf);
     g_signal_connect(G_OBJECT(itf->align_left_button), "toggled", G_CALLBACK(cb_align_changed), itf);
     g_signal_connect(G_OBJECT(itf->align_center_button), "toggled", G_CALLBACK(cb_align_changed), itf);
     g_signal_connect(G_OBJECT(itf->align_right_button), "toggled", G_CALLBACK(cb_align_changed), itf);

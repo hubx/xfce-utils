@@ -215,6 +215,8 @@ static void taskbar_update_margins(Taskbar *taskbar)
 static void taskbar_position(Taskbar *taskbar)
 {
     g_return_if_fail (taskbar != NULL);
+    /* make sure to generate a size-allocate signal */
+    gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), -1, 1);
     gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), taskbar_get_width(taskbar), taskbar_get_height(taskbar));
     if (GTK_WIDGET_REALIZED (taskbar->win))
       taskbar_update_margins(taskbar);
@@ -335,6 +337,8 @@ static void taskbar_set_horiz_align(Taskbar *taskbar, int horiz_align)
     if (taskbar->horiz_align != horiz_align)
     {
         taskbar->horiz_align = horiz_align;
+        /* make sure to generate a size-allocate signal */
+        gtk_widget_set_size_request(GTK_WIDGET(taskbar->win), -1, 1);
         gtk_widget_set_size_request(GTK_WIDGET(taskbar->win),
                 taskbar_get_width(taskbar),
                 taskbar->height);
@@ -464,7 +468,7 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
 
     if(g_ascii_strcasecmp(CHANNEL, channel_name))
     {
-        g_message(_("This should not happen"));
+        g_message("This should not happen");
         return;
     }
 
