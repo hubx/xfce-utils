@@ -21,63 +21,10 @@
 
 #include <gmodule.h>
 #include <dbh.h>
+#include <xfce4-modules/constants.h>
+#include <xfce4-modules/combo.h>
 
-/* these should coincide with defined in xffm/libs/constants.h
- * so that the dbh files are shared...
- * */
-#define CURRENT_RUNFLAG "xffm.runflag.2.dbh"
-#define CURRENT_RUN_HISTORY "xffm.runlist.2.dbh"
-#define RUN_FLAG_FILE xfce_get_userdir(),"/xffm/",CURRENT_RUNFLAG
-#define RUN_DBH_FILE xfce_get_userdir(),"/xffm/",CURRENT_RUN_HISTORY
 
-/* These structures should be a verbatim copy of combo.h from the xfce4-modules
- * directory. It should be copied here to permit compilation if
- * xfce4-modules source directory is not available */
-typedef struct _xfc_combo_info_t xfc_combo_info_t;
-
-struct _xfc_combo_info_t{
-    GtkCombo 	*combo;  
-    GtkEntry 	*entry;  
-    gchar 	*active_dbh_file; 
-    gpointer	cancel_user_data; 
-    gpointer	activate_user_data;
-    void	(*cancel_func)(GtkEntry *entry,gpointer cancel_user_data);
-    void	(*activate_func)(GtkEntry *entry,gpointer activate_user_data);
-    GList	*list;
-    GList	*limited_list;
-    GList	*old_list;
-};
-
-typedef struct _xfc_combo_functions xfc_combo_functions;
-struct _xfc_combo_functions {
- /* exported: */
-    gboolean	(*xfc_is_in_history)(char *path2dbh_file,char *path2find);
-    gboolean	(*xfc_set_combo)(xfc_combo_info_t *combo_info, char *token);
-    void	(*xfc_set_blank)(xfc_combo_info_t *combo_info);
-    void	(*xfc_set_entry)(xfc_combo_info_t *combo_info,char *entry_string);
-    void	(*xfc_save_to_history)(char *path2dbh_file,char *path2save);
-    void	(*xfc_remove_from_history)(char *path2dbh_file,char *path2remove);
-    void	(*xfc_read_history)(xfc_combo_info_t *combo_info, gchar *path2dbh_file);
-    void 	(*xfc_clear_history)(xfc_combo_info_t *combo_info);
-    xfc_combo_info_t *(*xfc_init_combo)(GtkCombo *combo);
-    xfc_combo_info_t *(*xfc_destroy_combo)(xfc_combo_info_t *combo_info);
- /* imported (or null): */
-    int		(*extra_key_completion)(gpointer extra_key_data);
-    gpointer	extra_key_data;
-};
-
-/* These are convenience macros to allow calling a function
- * without keeping track of function pointers. */
-#define XFC_is_in_history (*(load_xfc()->xfc_is_in_history))
-#define XFC_set_combo (*(load_xfc()->xfc_set_combo))
-#define XFC_set_blank (*(load_xfc()->xfc_set_blank))
-#define XFC_set_entry (*(load_xfc()->xfc_set_entry))
-#define XFC_save_to_history (*(load_xfc()->xfc_save_to_history))
-#define XFC_remove_from_history (*(load_xfc()->xfc_remove_from_history))
-#define XFC_read_history (*(load_xfc()->xfc_read_history))
-#define XFC_clear_history (*(load_xfc()->xfc_clear_history))
-#define XFC_init_combo (*(load_xfc()->xfc_init_combo))
-#define XFC_destroy_combo (*(load_xfc()->xfc_destroy_combo))
 
 xfc_combo_functions *load_xfc(void);
 static void  save_flags(gchar *in_cmd, gboolean interm, gboolean hold);
@@ -106,7 +53,7 @@ int extra_key_completion(gpointer user_data)
 
 static void set_run_combo(xfc_combo_info_t *combo_info)
 {
-    gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
+    gchar *f=g_build_filename(RUN_DBH_FILE,NULL); 
 
     if (access(f,F_OK)!=0) return;
     
@@ -163,12 +110,12 @@ xfc_combo_functions *load_xfc(void){
 }
 
 
-/* XXX: these two functions should be module-loaded from xffm... */
+/* XXX: these two functions could be module-loaded from xffm... */
 static void  save_flags(gchar *in_cmd, gboolean interm, gboolean hold){
     DBHashTable *runflags;
     GString *gs;
     int *flags;
-    gchar *g=g_strconcat(RUN_FLAG_FILE,NULL);
+    gchar *g=g_build_filename(RUN_FLAG_FILE,NULL);
     if((runflags = DBH_open(g)) == NULL)
     {
 	if((runflags = DBH_create(g, 11)) == NULL){
@@ -195,7 +142,7 @@ static void  recover_flags(gchar *in_cmd,gboolean *interm,gboolean *hold){
     DBHashTable *runflags;
     GString *gs;
     int *flags;
-    gchar *g=g_strconcat(RUN_FLAG_FILE,NULL);
+    gchar *g=g_build_filename(RUN_FLAG_FILE,NULL);
     if((runflags = DBH_open(g)) == NULL)
     {
 #ifdef DEBUG
