@@ -17,6 +17,10 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * TODO:
+ *	- the locale stuff is really a hack for now. This will partially
+ *	  move to libxfce4util later.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -83,28 +87,61 @@ add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
 	char *path;
 	char *buf;
 	int n;
+#ifdef ENABLE_NLS
+	gchar lang[3];
+#endif
 
 	err = NULL;
 
 	label = gtk_label_new(name);
 	gtk_widget_show(label);
 
+#ifdef ENABLE_NLS
+	buf = setlocale(LC_MESSAGES, NULL);
+	strncpy(lang, buf, 2);
+	lang[2] = '\0';
+#endif
+
 #ifdef HAVE_LIBGTKHTML
+#ifdef ENABLE_NLS
+	hfilename = g_strdup_printf("%s.%s.html", filename, lang);
+	path = g_build_filename(DATADIR, hfilename, NULL);
+	g_free(hfilename);
+
+	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
+		usehtml = TRUE;
+		goto found;
+	}
+
+	g_free(path);
+#endif
+
 	hfilename = g_strconcat(filename, ".html", NULL);
 	path = g_build_filename(DATADIR, hfilename, NULL);
 	g_free(hfilename);
 
 	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
 		usehtml = TRUE;
+		goto found;
 	}
-	else {
 #endif
-		path = g_build_filename(DATADIR, filename, NULL);
-#ifdef HAVE_LIBGTKHTML
-		usehtml = FALSE;
+#ifdef ENABLE_NLS
+	hfilename = g_strdup_printf("%s.%s", filename, lang);
+	path = g_build_filename(DATADIR, hfilename, NULL);
+	g_free(hfilename);
+
+	if (g_file_test(path, G_FILE_TEST_IS_REGULAR)) {
+		goto found;
 	}
+
+	g_free(path);
+#endif
+	path = g_build_filename(DATADIR, filename, NULL);
+#ifdef HAVE_LIBGTKHTML
+	usehtml = FALSE;
 #endif
 
+found:
 	g_file_get_contents(path, &buf, &n, &err);
 
 	if (err != NULL) {

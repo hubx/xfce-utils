@@ -9,7 +9,7 @@ AC_INIT([xfrun/xfrun.c])
 
 AM_CONFIG_HEADER([config.h])
 
-AM_INIT_AUTOMAKE([xfce-utils], [0.2.1])
+AM_INIT_AUTOMAKE([xfce-utils], [0.2.2])
 
 AM_MAINTAINER_MODE
 
@@ -82,6 +82,7 @@ scripts/Makefile
 gdm/Makefile
 xfce4-about/Makefile
 xfce4-about/INFO
+xfce4-about/INFO.de.html
 xfce4-about/INFO.html
 ])
 

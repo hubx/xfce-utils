@@ -5,6 +5,7 @@ about_DATA =								\
 	AUTHORS.html							\
 	COPYING								\
 	INFO								\
+	INFO.de.html							\
 	INFO.html
 
 bin_PROGRAMS =  xfce4-about
