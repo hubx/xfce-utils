@@ -82,11 +82,6 @@ struct _Itf
     GtkWidget *hbox1;
     GtkWidget *hbox2;
     GtkWidget *height_scale;
-    GtkWidget *label1;
-    GtkWidget *label2;
-    GtkWidget *label3;
-    GtkWidget *label9;
-    GtkWidget *label13;
     GtkWidget *label14;
     GtkWidget *label15;
     GtkWidget *label16;
@@ -222,7 +217,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->vbox1);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox1, TRUE, TRUE, 0);
 
-    dialog->frame1 = gtk_frame_new (NULL);
+    dialog->frame1 = frame_box (_("Position"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame1);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame1, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame1), 3);
@@ -246,12 +241,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     dialog->pos_radiobutton_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dialog->pos_bottom_radiobutton));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->pos_bottom_radiobutton), !position);
 
-    dialog->label1 = gtk_label_new (_("Position"));
-    gtk_widget_show (dialog->label1);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame1), dialog->label1);
-    gtk_label_set_justify (GTK_LABEL (dialog->label1), GTK_JUSTIFY_LEFT);
-
-    dialog->frame3 = gtk_frame_new (NULL);
+    dialog->frame3 = frame_box (_("Autohide"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame3);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame3, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame3), 3);
@@ -261,12 +251,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_container_add (GTK_CONTAINER (dialog->frame3), dialog->autohide_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->autohide_checkbutton), autohide);
 
-    dialog->label9 = gtk_label_new (_("Autohide"));
-    gtk_widget_show (dialog->label9);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame3), dialog->label9);
-    gtk_label_set_justify (GTK_LABEL (dialog->label9), GTK_JUSTIFY_LEFT);
-
-    dialog->frame4 = gtk_frame_new (NULL);
+    dialog->frame4 = frame_box (_("Size"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame4);
     gtk_box_pack_start (GTK_BOX (dialog->vbox1), dialog->frame4, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame4), 3);
@@ -284,9 +269,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label14), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label14), 0, 0.5);
 
-    str = g_strdup_printf("<small><i>%s</i></small>", _("Small"));
-    dialog->label15 = gtk_label_new(str);
-    g_free(str);
+    dialog->label15 = small_label(_("Small"));
     gtk_widget_show (dialog->label15);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label15, 0, 1, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -295,9 +278,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_label_set_justify (GTK_LABEL (dialog->label15), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (dialog->label15), 1, 0.5);
 
-    str = g_strdup_printf("<small><i>%s</i></small>", _("Large"));
-    dialog->label16 = gtk_label_new(str);
-    g_free(str);
+    dialog->label16 = small_label(_("Large"));
     gtk_widget_show (dialog->label16);
     gtk_table_attach (GTK_TABLE (dialog->table3), dialog->label16, 2, 3, 1, 2,
                       (GtkAttachOptions) (GTK_FILL),
@@ -315,16 +296,11 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_scale_set_digits (GTK_SCALE (dialog->height_scale), 0);
     gtk_range_set_update_policy (GTK_RANGE (dialog->height_scale), GTK_UPDATE_DISCONTINUOUS);
 
-    dialog->label13 = gtk_label_new (_("Size"));
-    gtk_widget_show (dialog->label13);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame4), dialog->label13);
-    gtk_label_set_justify (GTK_LABEL (dialog->label13), GTK_JUSTIFY_LEFT);
-
     dialog->vbox2 = gtk_vbox_new (TRUE, 0);
     gtk_widget_show (dialog->vbox2);
     gtk_box_pack_start (GTK_BOX (dialog->hbox1), dialog->vbox2, TRUE, TRUE, 0);
 
-    dialog->frame5 = gtk_frame_new (NULL);
+    dialog->frame5 = frame_box (_("Tasks"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame5);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame5), 3);
@@ -334,12 +310,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_container_add (GTK_CONTAINER (dialog->frame5), dialog->alltasks_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
 
-    dialog->label3 = gtk_label_new (_("Tasks"));
-    gtk_widget_show (dialog->label3);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame5), dialog->label3);
-    gtk_label_set_justify (GTK_LABEL (dialog->label3), GTK_JUSTIFY_LEFT);
-
-    dialog->frame2 = gtk_frame_new (NULL);
+    dialog->frame2 = frame_box (_("Pager"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
@@ -349,12 +320,7 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->pager_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->pager_checkbutton), show_pager);
 
-    dialog->label2 = gtk_label_new (_("Pager"));
-    gtk_widget_show (dialog->label2);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame2), dialog->label2);
-    gtk_label_set_justify (GTK_LABEL (dialog->label2), GTK_JUSTIFY_LEFT);
-
-    dialog->frame2 = gtk_frame_new (NULL);
+    dialog->frame2 = frame_box (_("Notification area"), GTK_SHADOW_NONE);
     gtk_widget_show (dialog->frame2);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame2, TRUE, TRUE, 0);
     gtk_container_set_border_width (GTK_CONTAINER (dialog->frame2), 3);
@@ -363,11 +329,6 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->tray_checkbutton);
     gtk_container_add (GTK_CONTAINER (dialog->frame2), dialog->tray_checkbutton);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->tray_checkbutton), show_tray);
-
-    dialog->label2 = gtk_label_new (_("Notification area"));
-    gtk_widget_show (dialog->label2);
-    gtk_frame_set_label_widget (GTK_FRAME (dialog->frame2), dialog->label2);
-    gtk_label_set_justify (GTK_LABEL (dialog->label2), GTK_JUSTIFY_LEFT);
 
     dialog->dialog_action_area1 = GTK_DIALOG (dialog->xftaskbar_dialog)->action_area;
     gtk_widget_show (dialog->dialog_action_area1);
