@@ -1,0 +1,7 @@
+bin_PROGRAMS =  xfmouse
+
+xfmouse_SOURCES = xfmouse.c 
+
+xfmouse_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(datadir)/xfce4\" -DSYSCONFDIR=\"$(sysconfdir)/xfce4\" -DVERSION=\"@VERSION@\"  -I..
+xfmouse_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+

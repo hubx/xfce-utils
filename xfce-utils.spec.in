@@ -1,0 +1,36 @@
+Summary: 	Utilities for the XFce Desktop Environment
+Name: 		xfce-utils
+Version: 	@VERSION@
+Release: 	1
+License:	GPL
+URL: 		http://www.xfce.org/
+Source0: 	%{name}-%{version}.tar.gz
+Group: 		User Interface/Desktops
+BuildRoot: 	%{_tmppath}/%{name}-root
+Requires:	gtk2
+Requires:	libxml2
+BuildRequires: 	gtk2-devel >= 2.0.0
+
+%description
+xfce-utils contain utilities for the XFce Desktop Environment
+
+%prep
+%setup -q
+
+%build
+%configure
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+%doc example.xfce4rc README TODO ChangeLog NEWS INSTALL COPYING AUTHORS
+%{_bindir}/*
+%{_datadir}/xfce-utils/
+

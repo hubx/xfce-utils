@@ -1,0 +1,11 @@
+bin_PROGRAMS =  xfbd xfbdmgr
+
+xfbd_SOURCES = xfbd.c
+xfbdmgr_SOURCES = xfbdmgr.c xfbdmgr.h xfbdmgr_cb.c xfbdmgr_cb.h
+
+xfbd_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
+xfbd_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+
+xfbdmgr_CFLAGS = @CFLAGS@ @X_CFLAGS@ @BASE_DEPENDENCIES_CFLAGS@ -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DDATADIR=\"$(pkgdatadir)\" -DSYSCONFDIR=\"$(sysconfdir)\" -DVERSION=\"@VERSION@\"  -I..
+xfbdmgr_LDADD = @LIBS@ @X_LIBS@  @BASE_DEPENDENCIES_LIBS@
+

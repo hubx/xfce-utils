@@ -1,0 +1,42 @@
+.\" SCCS ID: xfbd.1 3.0.0 12/06/1999
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xfbd \- Backdrop manager for "The Cholesterol Free Desktop Environment"
+.SH SYNOPSYS
+.B xfbd
+[--display] [-i]
+.PP
+.BI \--display " host:dpy"
+specifies the server to connect to.
+.PP
+.TP 6
+.BI \-i 
+Starts up xfbd with its graphical user interface.
+.PP
+.SH DESCRIPTION
+xfbd is a very simple backdrop manager for XFce, The Cholesterol Free Desktop 
+Environment.
+xfbd can be started from xfwm configuration scripts and it silently applies user 
+selected backdrop on root window.
+.PP
+For the moment, xfbd only manages Xpm (X Pixmap) files.
+.PP
+If xfbd is started with the option 
+.I -i
+the graphical user interface of xfbd is displayed.
+.PP
+.SH FILES
+.PP
+.I ~/.xfbdrc
+contains the path to the user selected backdrop.
+.PP
+.SH ENVIRONMENT VARIABLE
+By default, xfbd looks for its data in the directory specified at compile time.
+This directory can be overridden with the environment variable XFCE_DATA.
+.PP
+.SH SEE ALSO
+xfce, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+.SH AUTHOR
+Olivier Fourdan (fourdan@xfce.org)
+.PP
