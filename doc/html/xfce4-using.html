@@ -13,7 +13,25 @@
       install from source, <tt>${sysconfdir}</tt> defaults to 
       <tt>/usr/local/etc</tt>; for binary packages it is often 
       set to <tt>/etc</tt>. 
-    </p></div><p> </p><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="xfce4-components"></a>XFce 4 components</h3></div></div><p>These manuals are available for the XFce 4 components:</p><div class="itemizedlist"><ul type="disc"><li>Window manager
+    </p><p>Of course, you can also make your own startup file 
+      (<tt>~/.xinitrc</tt> or <tt>~/.xsession</tt>
+      if you use a graphical login manager). For example this file could look
+      like this:
+    </p><table border="0" bgcolor="#E0E0E0" width="100%"><tr><td><pre class="programlisting"> 
+# window manager (go to background after initialization)
+xfwm4 --daemon
+
+# taskbar 
+xftaskbar4 &amp;
+
+# background, menu and other desktop settings 
+xfdesktop &amp;
+
+# finally, run the panel You can exit your session by choosing exit 
+# from the panel 
+exec xfce4-panel
+
+</pre></td></tr></table></div><p> </p><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="xfce4-components"></a>XFce 4 components</h3></div></div><p>These manuals are available for the XFce 4 components:</p><div class="itemizedlist"><ul type="disc"><li>Window manager
       </li><li><a href="xfce4-panel.html" target="_top">Panel</a></li><li>Desktop manager
       </li><li>File manager
       </li><li>Settings manager

@@ -168,6 +168,28 @@ maintainers, etc. Commented out by default.
       set to <filename>/etc</filename>. 
     </para>
 
+    <para>Of course, you can also make your own startup file 
+      (<filename>~/.xinitrc</filename> or <filename>~/.xsession</filename>
+      if you use a graphical login manager). For example this file could look
+      like this:
+    </para>
+
+<programlisting> 
+# window manager (go to background after initialization)
+xfwm4 --daemon
+
+# taskbar 
+xftaskbar4 &amp;
+
+# background, menu and other desktop settings 
+xfdesktop &amp;
+
+# finally, run the panel You can exit your session by choosing exit 
+# from the panel 
+exec xfce4-panel
+
+</programlisting>
+
   </sect2>
 
   <!-- extra space -->
