@@ -113,10 +113,12 @@ gdm/Makefile
 xfce4-about/Makefile
 xfce4-about/INFO
 xfce4-about/INFO.ca
+xfce4-about/INFO.es
 xfce4-about/INFO.fr
 xfce4-about/INFO.html
 xfce4-about/INFO.html.ca
 xfce4-about/INFO.html.de
+xfce4-about/INFO.html.es
 xfce4-about/INFO.html.fr
 ])
 

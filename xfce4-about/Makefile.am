@@ -5,6 +5,7 @@ about_DATA =								\
 	AUTHORS.az							\
 	AUTHORS.ca							\
 	AUTHORS.de							\
+	AUTHORS.es							\
 	AUTHORS.fr							\
 	AUTHORS.vi							\
 	AUTHORS.html.az							\
@@ -23,10 +24,12 @@ about_DATA =								\
 	GPL.html							\
 	INFO								\
 	INFO.ca								\
+	INFO.es								\
 	INFO.fr								\
 	INFO.vi								\
 	INFO.html.ca							\
 	INFO.html.de							\
+	INFO.html.es							\
 	INFO.html.fr							\
 	INFO.html
 

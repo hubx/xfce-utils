@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <h3><font size=5>XFce 4, versión 4.1.0</font></h3>
+
+    <i>... y los ratones vuelan ...</i>
+
+    <p>
+	XFce es una colección de programas que juntos proporcionan un entorno de escritorio lleno de características. Los siguientes programas son parte de XFce:
+	</p>
+
+    <ul>
+      <li><b><u>Gestor de Ventanas</u> (<i>xfwm4</i>)</b><br />
+        se encarga del emplazamiento de las ventanas en la pantalla</li>
+
+      <li><b><u>Panel</u> (<i>xfce4-panel</i>)</b><br />
+        lanzadores de programas, menús emergentes, reloj, cambiador de escritorio y más</li>
+
+      <li><b><u>Gestor de Escritorio</u> (<i>xfdesktop</i>)</b><br />
+        fija un color de fondo o una imagen y proporciona un menú cuando pincha en el fondo del escritorio</li>
+
+      <li><b><u>Administrador de archivos</u> (<i>xffm</i>)</b><br />
+        administrador de archivos rápido</li>
+
+      <li><b><u>Utilidades</u></b><br />
+          <i>xfprint4</i>: imprime archivos<br />
+          <i>xfrun4</i>: ejecuta programas<br />
+          <i>xftaskbar4</i>: muestra las aplicaciones minimizadas en una caja de iconos<br />
+        </li>
+    </ul>
+
+    <p>Gracias por su interés en XFce.</p>
+
+    <i>-- El Equipo de Desarrollo del XFce  --</i>
+  </body>
+<html>

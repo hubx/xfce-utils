@@ -144,16 +144,19 @@ static gint taskbar_get_height(Taskbar *taskbar)
 static void taskbar_update_margins(Taskbar *taskbar)
 {
     DesktopMargins margins;
-    guint height;
+    guint height, ythick;
 
     g_return_if_fail (taskbar != NULL);
+
+    ythick = taskbar_get_thickness (taskbar);
+    
     if (taskbar->autohide)
     {
-        height = (2 * taskbar_get_thickness(taskbar) + 1);
+        height = ythick;
     }
     else
     {
-        height = taskbar->height;
+        height = taskbar->height - ythick - 1;
     }
     
     margins.left = 0;
@@ -274,17 +277,21 @@ static void taskbar_change_size(Taskbar *taskbar, int height)
 static gboolean taskbar_size_allocate (GtkWidget *widget, GtkAllocation *allocation, gpointer data)
 {
     Taskbar *taskbar = (Taskbar *) data;
+    int ythick;
     
     g_assert (data != NULL);
+
+    ythick = taskbar_get_thickness (taskbar);
+    
     if ((allocation) && (widget == taskbar->win))
     {
         if (taskbar->position == TOP)
         {
-            taskbar->y = MyDisplayY(0, 0);
+            taskbar->y = MyDisplayY(0, 0) - ythick - 1;
         }
         else
         {
-            taskbar->y = MyDisplayMaxY(taskbar->dpy, taskbar->scr, 0, 0) - allocation->height;
+            taskbar->y = MyDisplayMaxY(taskbar->dpy, taskbar->scr, 0, 0) - allocation->height + ythick + 1;
         }
         gtk_window_move(GTK_WINDOW(taskbar->win), taskbar->x, taskbar->y);
     }
