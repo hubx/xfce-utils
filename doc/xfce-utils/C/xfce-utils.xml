@@ -1,8 +1,8 @@
 <?xml version='1.0'?> 
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
           "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY date "Sep 2003"> 
-  <!ENTITY appversion "4.0"> 
+  <!ENTITY date "Aug 2004"> 
+  <!ENTITY appversion "4.1.x"> 
   <!ENTITY app "<application>xfce-utils</application>"> 
 ]>
 
@@ -11,14 +11,14 @@
 <!-- Header --> 
 <articleinfo>
 
-  <title>XFce 4 Utilities and Scripts</title>
+  <title>Xfce 4 Utilities and Scripts</title>
   
   <copyright>
-    <year>2003</year> <holder>Jasper Huijsmans</holder>
+    <year>2004</year> <holder>Jasper Huijsmans</holder>
   </copyright>
 
   <copyright>
-    <year>2003</year> <holder>Benedikt Meurer</holder>
+    <year>2004</year> <holder>Benedikt Meurer</holder>
   </copyright>
 
 <!-- translators: uncomment this:
@@ -89,8 +89,8 @@ maintainers, etc. Commented out by default.
 <sect1 id="utils-intro">
   <title>Introduction</title>
 
-  <para>The &app; package provides a taskbar, the about dialog for XFce 4, a 
-    run dialog and several useful scripts that are also used by other XFce 4 
+  <para>The &app; package provides a taskbar, the about dialog for Xfce 4, a 
+    run dialog and several useful scripts that are also used by other Xfce 4 
     components such as the panel and the desktop menu.
   </para>
 
@@ -101,15 +101,53 @@ maintainers, etc. Commented out by default.
 <sect1 id="utils-taskbar">
   <title>Taskbar</title>
 
-  <para>The taskbar is either at the top or the bottom of the screen and shows 
-    all running programs. The behaviour of the taskbar can be changed from the
-    settings manager. Run <command>xfce-setting-show taskbar</command>, or
-    start the settings manager from the panel. In addition to the tasklist,
-    the taskbar also features a simple graphical pager and a notification area
-    (also known as the system tray). Both can be disabled from the settings
-    dialog.
+  <para>The taskbar shows all running programs. The behaviour of the taskbar 
+  can be changed from the settings manager. Run 
+  <command>xfce-setting-show taskbar</command>, or start the settings 
+  manager from the panel.
   </para>
-  
+    
+      <figure id="taskbar-settings-fig">
+    <title>Taskbar settings dialog</title> 
+    <screenshot>
+      <mediaobject>
+	<imageobject>
+	  <imagedata fileref="images/taskbar_settings.png" format="PNG"/>
+	</imageobject> 
+	<!-- 
+	<imageobject>
+	  <imagedata fileref="images/default_panel.eps" format="EPS"/>
+	</imageobject> 
+	--> 
+	<textobject>
+	  <phrase>Shows the taskbar settings dialog.
+	  </phrase>
+	</textobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+    
+    <para>From the settings dialog, your can select the taskbar 
+    	position, either at the top or at the bottom of the screen. You 
+    	can set the height and width of the taskbar using the two sliders, 
+    	and even select a left, centered or right alignment, if the width 
+    	of the taskbar is smaller than your screen. Another option 
+    	allows you to use the "Auto hide" feature.
+    </para>
+    
+    <para>The "Tasks" options allow you to customize the behaviour 
+    of the taskbar regarding the management of the opened 
+    applications. You can choose to show the tasks from all 
+    workspaces or only the current one, to always group tasks or 
+    only group tasks when the taskbar gets crowded, and to show 
+    applications names or only their icons.
+    </para>
+    
+    <para>In addition to the tasklist, the taskbar also features a simple graphical 
+    	pager and a notification area (also known as the system tray). Both can be 
+    	disabled from the settings dialog.
+    </para>
+
 </sect1>
 
 <para>&nbsp;</para>
@@ -137,8 +175,8 @@ maintainers, etc. Commented out by default.
     below).
   </para>
 
-  <para>In a default XFce 4 environment, the key combination
-    <keycombo>Alt-F2</keycombo> will open the run dialog.
+  <para>In a default Xfce 4 environment, the Alt+F2 key combination 
+  	will open the run dialog.
   </para>
 
 </sect1>
@@ -164,9 +202,9 @@ maintainers, etc. Commented out by default.
     </screenshot>
   </figure>
 
-  <para>The About Dialog is used to display information about XFce 4, 
+  <para>The About Dialog is used to display information about Xfce 4, 
     including a list of components, a credits page for all people who helped
-    to create XFce 4 and license information.
+    to create Xfce 4 and license information.
   </para>
 
 </sect1>
@@ -181,7 +219,7 @@ maintainers, etc. Commented out by default.
       <term>startxfce4</term>
       <listitem>
 	<para>The <application>startxfce4</application> is a convenient script
-	  to start an XFce 4 session from the console. It will give you a
+	  to start an Xfce 4 session from the console. It will give you a
 	  session with a taskbar and a panel and with the desktop manager and
 	  window manager running. 
 	</para>
@@ -205,7 +243,7 @@ maintainers, etc. Commented out by default.
     <varlistentry>
       <term>xfhelp4</term>
       <listitem>
-	<para>This script is used to open the local XFce 4 documentation in a
+	<para>This script is used to open the local Xfce 4 documentation in a
 	  browser. By default it will use <application>mozilla</application>,
 	  but you can change that by setting the $BROWSER environmental
 	  variable. For instance in your <filename>~/.bash_profile</filename> 
@@ -268,21 +306,21 @@ maintainers, etc. Commented out by default.
   <para>&app; was written by Jasper Huijsmans
     (<email>huysmans@users.sourceforge.net</email>), Olivier Fourdan 
     (<email>fourdan@xfce.org</email>) and Benedikt Meurer
-    (<email>benedikt.meurer@unix-ag.uni-siegen.de</email>).
+    (<email>benny@xfce.org</email>).
     To find more information, please visit the 
-    <ulink url="http://www.xfce.org" type="http">XFce web site</ulink>. 
+    <ulink url="http://www.xfce.org" type="http">Xfce web site</ulink>. 
   </para>
 
   <para>To report a bug or make a suggestion regarding this application or
     this manual, send an email to the 
-    <ulink url="http://www.xfce.org/mailman/listinfo/xfce4-dev/"
+    <ulink url="http://lunar-linux.org/mailman/listinfo/xfce"
       type="http">xfce4-dev</ulink> mailing list &mdash; this is the preferred
     method &mdash; or use the bug tracking system at the
-    <ulink url="http://sourceforge.net/projects/xfce" 
-      type="http">XFce SourceForge project site</ulink>. 
+    <ulink url="http://bugs.xfce.org/" 
+      type="http">http://bugs.xfce.org/</ulink>. 
     If you have questions about the use or installation of this package,
     please ask on the 
-    <ulink url="http://www.xfce.org/mailman/listinfo/xfce/"
+    <ulink url="http://lunar-linux.org/mailman/listinfo/xfce"
       type="http">xfce</ulink> mailing list. 
   </para>
     

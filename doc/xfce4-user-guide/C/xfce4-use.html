@@ -1,9 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Using XFce4</title><link rel="stylesheet" href="../xfce.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.62.4"><link rel="home" href="xfce4-user-guide.html" title="
-  The XFce 4 Desktop Environment
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Using Xfce4</title><link rel="stylesheet" href="../xfce.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.65.1"><link rel="home" href="xfce4-user-guide.html" title="
+  The Xfce 4 Desktop Environment
 "><link rel="up" href="xfce4-user-guide.html" title="
-  The XFce 4 Desktop Environment
-"><link rel="previous" href="xfce4-install.html" title="Installing XFce4"><link rel="next" href="xfce4-copyright.html" title="Copyright and Licences"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Using XFce4</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr></table><hr></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xfce4-use"></a>Using XFce4</h2></div></div><div></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="xfce4-getting-started"></a>Getting started</h3></div></div><div></div></div><p>Use <b class="application"><tt>startxfce4</tt></b> to start an XFce session,
-      which includes the panel, the window manager and the desktop manager. 
+  The Xfce 4 Desktop Environment
+"><link rel="previous" href="xfce4-install.html" title="Installing Xfce4"><link rel="next" href="xfce4-copyright.html" title="Copyright and Licences"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Using Xfce4</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr></table><hr></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xfce4-use"></a>Using Xfce4</h2></div></div><div></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="xfce4-getting-started"></a>Getting started</h3></div></div><div></div></div><p>Use <b class="application"><tt>startxfce4</tt></b> to start an Xfce session,
+      which includes the session manager, the panel, the taskbar, the window 
+      manager and the desktop manager. 
       All programs, or symbolic links to programs, in 
       <tt class="filename">~/Desktop/Autostart/</tt> will be run on startup.
     </p><p>
@@ -21,26 +22,28 @@
       Finally, the copied <tt class="filename">xinitrc</tt> file has to be made 
       executable:
       </p><table border="0" bgcolor="#E0E0E0" width="100%"><tr><td><pre class="programlisting">chmod u+x ~/.xfce4/xinitrc</pre></td></tr></table><p>
-    </p></div><p> </p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2449488"></a>The Default Desktop</h3></div></div><div></div></div><p>The XFce 4 Desktop Environment is not a single entity that provides
+    </p></div><p> </p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2520823"></a>The Default Desktop</h3></div></div><div></div></div><p>The Xfce 4 Desktop Environment is not a single entity that provides
       all funtionality, but rather it tries to adhere to the old UNIX
       tradition of small tools that do one job and do it well. A default 
-      XFce 4 desktop with no programs running is shown in 
-      <a href="xfce4-use.html#default-session-fig" title="Figure 1. Default XFce 4 session">Figure 1, &#8220;Default XFce 4 session&#8221;</a>.
-    </p><div class="figure"><a name="default-session-fig"></a><p class="title"><b>Figure 1. Default XFce 4 session</b></p><div class="screenshot"><div class="mediaobject"><img src="images/default-session.png" alt="Shows default XFce session, with background manager, panel 
+      Xfce 4 desktop with no programs running is shown in 
+      <a href="xfce4-use.html#default-session-fig" title="Figure 1. Default Xfce 4 session">Figure 1, &#8220;Default Xfce 4 session&#8221;</a>.
+    </p><div class="figure"><a name="default-session-fig"></a><p class="title"><b>Figure 1. Default Xfce 4 session</b></p><div class="screenshot"><div class="mediaobject"><img src="images/default-session.png" alt="Shows default Xfce session, with background manager, panel 
 	      and taskbar.
 	    "></div></div></div><p>When you run <b class="application"><tt>startxfce4</tt></b> several
       applications are started:
     </p><div class="variablelist"><dl><dt><span class="term">Taskbar</span></dt><dd><p>At the top of the screen you will see the taskbar. It shows
 	    the applications running on the current workspace. You can
 	    focus the application by clicking on the button in the taskbar.
-	    Clicking the button again will hide the application. The taskbar
+	    Clicking the button again will hide the application. Moreover, if click on the button 
+	    with the right button of the mouse, an menu will appear, allowing you to perform 
+	    several actions on the	    	    	     application window. The taskbar
 	    also contains a graphical pager showing a miniature view of all 
 	    your workspaces. You can even move windows to another workspace by
 	    draggin the miniwindow in the pager. Initially invisible is the
 	    notification area or system tray. This will only do something when
 	    an application uses a status icon. An example is the instant
 	    messaging application <b class="application"><tt>gaim</tt></b>.
-	  </p></dd><dt><span class="term">Panel</span></dt><dd><p>At the bottom of the screen is the XFce4 panel. It allows you
+	  </p></dd><dt><span class="term">Panel</span></dt><dd><p>At the bottom of the screen is the Xfce4 panel. It allows you
 	    to run applications and also contains a graphical pager, a clock
 	    and a mail checker. Some items have an associated panel menu that
 	    gives access to more applications. Panel menus are opened by
@@ -66,14 +69,14 @@
 	    maximize a window. Look at the <a href="xfwm4.html" target="_top">manual</a> for a full explanation of the window 
 	    manager.
 	  </p></dd><dt><span class="term">Settings Manager</span></dt><dd><p>The settings manager runs in the background and makes sure
-	    that all XFce 4 applications update their settings when the user 
+	    that all Xfce 4 applications update their settings when the user 
 	    changes something in the settings manager dialog (see following
 	    section) and takes care of reading the configuration from disk at 
 	    startup.	    
-	  </p></dd></dl></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2449711"></a>Common Tasks</h3></div></div><div></div></div><p>This section will explain how to perform several common tasks to 
-      quickly get you started working with XFce 4. Because that is what
-      XFce 4 is designed for, to allow you to get work done.
-    </p><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2449723"></a>Running programs</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">XFce 4 panel</span></dt><dd><p>The panel is designed to allow quick access to the most
+	  </p></dd></dl></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2521053"></a>Common Tasks</h3></div></div><div></div></div><p>This section will explain how to perform several common tasks to 
+      quickly get you started working with Xfce 4. Because that is what
+      Xfce 4 is designed for, to allow you to get work done.
+    </p><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2521062"></a>Running programs</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">Xfce 4 panel</span></dt><dd><p>The panel is designed to allow quick access to the most
 	      frequently used applications by putting them on the main panel.
 	      Less often used applications can be put in a panel menu. 
 	    </p></dd><dt><span class="term">Desktop menu</span></dt><dd><p>Another method for starting applications is from the desktop
@@ -81,11 +84,11 @@
 	      information on how to change the menu contents.
 	    </p></dd><dt><span class="term">Run dialog</span></dt><dd><p>If you know the name of a program and it is not on the panel
 	      or in the desktop menu you can use the run dialog. To open the
-	      dialog type  or choose the 'Run
+	      dialog type Alt-F2 or choose the 'Run
 	      program...' option from the desktop menu.
 	    </p><p>The dialog will remeber the 10 last commands that were
 	      successfully executed.
-	    </p></dd></dl></div></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2449807"></a>Managing windows and workspaces</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">Basic window operations</span></dt><dd><p>You can move windows around the screen by dragging their
+	    </p></dd></dl></div></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2521672"></a>Managing windows and workspaces</h4></div></div><div></div></div><div class="variablelist"><dl><dt><span class="term">Basic window operations</span></dt><dd><p>You can move windows around the screen by dragging their
 	      title bar. A window can be closed, hidden, maximized, shaded and
 	      made sticky &#8212; this means it will show up on all workspaces
 	      &#8212; by using the title bar buttons.
@@ -107,24 +110,23 @@
 	      The <b class="application"><tt>xfce4-iconbox</tt></b> application can 
 	      also be used to keep track of running applications.
 	    </p></dd><dt><span class="term">Workspaces</span></dt><dd><p>You can change workspaces by clicking on them in the
-	      graphical pager, either on the taskbar or on the panel. Pressing
-	       or 
-	       will cycle through the
+	      graphical pager, either on the taskbar or on the panel. Pressing 
+	      Ctrl-Alt-LeftArrow or Ctrl-Alt-RightArrow will cycle through the
 	      workspaces. Using the mousewheel over the pager or the desktop
 	      background will have the same effect.
 	    </p><p>To add or remove workspaces you can use the middle click
 	      desktop menu or the settings dialog (see below).
-	    </p></dd></dl></div></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2449929"></a>Using the settings manager dialog</h4></div></div><div></div></div><p>The settings manager dialog provides access to the global
-	preferences of many XFce 4 applications. You can run it by pressing 
+	    </p></dd></dl></div></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id2521746"></a>Using the settings manager dialog</h4></div></div><div></div></div><p>The settings manager dialog provides access to the global
+	preferences of many Xfce 4 applications. You can run it by pressing 
 	its laucher on the panel, from the right click menu on the panel
 	move handles or from the desktop mouse menu.
-      </p><p>Preference dialogs for many aspects of the XFce 4 desktop 
+      </p><p>Preference dialogs for many aspects of the Xfce 4 desktop 
 	environment are available. The available options are described in the 
-	manuals of each XFce 4 component. It may be interesting to have a quick
+	manuals of each Xfce 4 component. It may be interesting to have a quick
 	look at all the dialogs to see all options that allow you to create 
 	the best possible working environment.
-      </p></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2449953"></a>Further reading</h3></div></div><div></div></div><p>This user guide has only given a very general overview of the XFce 4
+      </p></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2521761"></a>Further reading</h3></div></div><div></div></div><p>This user guide has only given a very general overview of the Xfce 4
       Desktop Environment. More information is  available in the 
       <a href="index.html" target="_top">manuals</a> of the separate
-      components of XFce 4.
-    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="xfce4-user-guide.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Installing XFce4 </td><td width="20%" align="center"><a accesskey="h" href="xfce4-user-guide.html">Home</a></td><td width="40%" align="right" valign="top"> Copyright and Licences</td></tr></table></div></body></html>
+      components of Xfce 4.
+    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="xfce4-install.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="xfce4-user-guide.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="xfce4-copyright.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Installing Xfce4 </td><td width="20%" align="center"><a accesskey="h" href="xfce4-user-guide.html">Home</a></td><td width="40%" align="right" valign="top"> Copyright and Licences</td></tr></table></div></body></html>
