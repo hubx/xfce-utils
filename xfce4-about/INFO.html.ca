@@ -1,0 +1,43 @@
+<html lang="ca">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    <h3><font size=5>Xfce 4, versió @VERSION@</font></h3>
+
+    <i>... i vola amb el ratolí ...</i>
+
+    <p>Xfce és un conjunt de programes que, de forma conjunta, proporcionen un entorn
+    d'escriptori totalment funcional. Els següents programes formen part de Xfce:</p>
+
+    <ul>
+      <li><b><u>Gestor de finestres</u> (<i>xfwm4</i>)</b><br />
+        Encarregat del posicionament de les finestres a la pantalla.</li>
+
+      <li><b><u>Plafó</u> (<i>xfce4-panel</i>)</b><br />
+        Llançador de programes, menús emergents, rellotge, canvi d'escriptori 
+        i molt més.</li>
+
+      <li><b><u>Gestor de l'escriptori</u> (<i>xfdesktop</i>)</b><br />
+        Elecció del color o la imatge de fons i ofereix un menú quan es pitja
+        sobre el rerefons de l'escriptori.</li>
+
+      <li><b><u>Gestor de fitxers</u> (<i>xffm</i>)</b><br />
+        Gestor de fitxers realment ràpid.</li>
+
+      <li><b><u>Session manager</u> (<i>xfce4-session</i>)</b><br />
+        restores your session on startup and allows you to shutdown the
+        computer from Xfce</li>
+
+      <li><b><u>Utilitats</u></b><br />
+          <i>xfprint4</i>: Impressió de fitxers.<br />
+          <i>xfrun4</i>: Execució de programes.<br />
+          <i>xftaskbar4</i>: Barra de tasques simple amb, opcionalment, un paginador d'escriptoris i una safata de tasques.<br />
+        </li>
+    </ul>
+
+    <p>Gràcies per demostrar el vostre interès en Xfce.</p>
+
+    <i>-- L'equip de desenvolupament de Xfce --</i>
+  </body>
+</html>

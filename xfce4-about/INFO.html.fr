@@ -1,0 +1,44 @@
+<html>
+<body>
+<h3><font size="5">Xfce 4, version @VERSION@</font></h3>
+<i>... et les souris volent ...</i>
+<p>Xfce est un ensemble de logiciels qui forment un environnement
+complet. Les &eacute;l&eacute;ments suivants constituent Xfce4&nbsp;</p>
+<ul>
+  <li><b><u>Le gestionnaire de fen&ecirc;tres</u>&nbsp;(<i>xfwm4</i>)</b><br>
+g&egrave;re les fen&ecirc;tres &agrave; l'&eacute;cran.</li>
+  <li><b><u>Le panneau</u>&nbsp;(<i>xfce4-panel</i>)</b><br>
+lanceur d'applications, menu, horloge, changeur de bureaux et plus
+encore...</li>
+  <li><b><u>Le gestionnaire de bureau</u>&nbsp;(<i>xfdesktop</i>)</b><br>
+affiche une image ou une couleur sur le fond d'&eacute;cran et donne
+acc&egrave;s &agrave; un menu lorsqu'on clique dessus avec la souris.</li>
+  <li><b><u>Le gestionnaire de fichiers</u>&nbsp;(<i>xffm</i>)</b><br>
+un gestionnaire de fichiers rapide.</li>
+      <li><b><u>Session manager</u> (<i>xfce4-session</i>)</b><br />
+        restores your session on startup and allows you to shutdown the
+        computer from Xfce</li>
+
+  <li><b><u>Des utilisaires</u></b><br>
+    <i>xfprint4</i>&nbsp;: imprimer des fichiers<br>
+    <i>xfrun4</i>&nbsp;: ex&eacute;cuter des applications<br>
+    <i>xftaskbar4</i>&nbsp;: une barre des t&acirc;ches</li>
+    <i>xfce4-iconbox</i>&nbsp;: uune bo&icirc;te &agrave; ic&ocirc;nes pour les applications</li>
+</ul>
+<br>
+Xfce 4, c'est aussi une plate forme de d&eacute;veloppement qui
+renferme plusieurs librairies qui aident les d&eacute;veloppeurs
+&agrave; cr&eacute;er des applications qui s'int&egrave;grent
+naturellement dans l'environnement.<br>
+<br>
+Les composants de Xfce4 sont sous licence libre ou open source, GPL ou
+BSDL pour les applications, et LGPL ou BSDL pour les librairies.
+Consultez la documentation, le code source ou le site web (<a
+ href="http://www.xfce.org">http://www.xfce.org</a>) pour plus
+d'informations.<br>
+<br>
+Merci de votre int&eacute;r&ecirc;t dans Xfce.<br>
+<br>
+-- L'&eacute;quipe de d&eacute;veloppement de Xfce --
+</body>
+</html>
