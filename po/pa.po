@@ -1,85 +1,92 @@
-# Translation of xfce4-utils.po to Punjabi.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Supreet Sethi <supreet@linux-delhi.org>, 2004.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
-msgstr ""
-"Project-Id-Version: xfce4-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-29 12:33+0530\n"
-"PO-Revision-Date: 2004-09-29 12:33+0530\n"
-"Last-Translator: Supreet Sethi <supreet@linux-delhi.org>\n"
-"Language-Team: Punjabi Language Team <punjabi@linux-delhi.org>\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2004-08-06 16:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jaswinder Singh Phulewala<jaswinderphulewala@yahoo.com>\n"
+"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+msgstr ""
+"ਪਰਾਜਿਕਟ-Id-ਵਰਜ਼ਨ: PACKAGE VERSION\n"
+"POT-ਪੈਦਾ-ਮਿਤੀ: 2004-08-06 16:17+0200\n"
+"PO-ਦੁਹਰਾਈ-ਮਿਤੀ: YEAR-MO-DA HO:MI+ZONE\n"
+"ਆਖਰੀ-ਅਨੁਵਾਦਕ: ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ <jaswinderphulewala@yahoo.com>\n"
+"ਭਾਸ਼ਾ-ਟੀਮ: ਪੰਜਾਬੀ <fedora-trans-pa@redhat.com>\n"
+"MIME-ਵਰਜ਼ਨ: 1.0\n"
+"ਸੰਖੇਪ-ਕਿਸਮ: ਪਾਠ/ਸਮਤਲ; charset=CHARSET\n"
+"ਸੰਖੇਪ-ਸਥਾਨੰਤਰਨ-ਇੰਨਕੋਡਿੰਗ: 8bit\n"
 
 #: xfce4-about/info.c:253
 msgid "About Xfce 4"
-msgstr "Xfce ੪ ਦੇ ਬਾਰੇ ਵਿਚ "
+msgstr "ਐਕਸਫੇਸ ੪ ਬਾਰੇ"
 
 #: xfce4-about/info.c:268
 msgid "Xfce Desktop Environment"
-msgstr "Xfce ਵਿਹੜਾ ਵਾਤਾਵਰਨ"
+msgstr "ਐਕਸਫੇਸ ਵਿਹੜਾ ਵਾਤਾਵਰਣ"
 
 #: xfce4-about/info.c:269
 msgid "Copyright 2002-2004 by Olivier Fourdan"
-msgstr "Olivier Fourdan ਦਾ copyright 2002-2004 ਤਕ"
+msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਦੁਆਰਾ ਅਧਿਕਾਰ 2002-2004"
 
-#: xfce4-about/info.c:291
+#. add pages
+#: xfce4-about/info.c:288
 msgid "Info"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:289
 msgid "Credits"
 msgstr "ਮਾਣ"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:290
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "ਅਧਿਕਾਰ"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:291
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:292
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:293
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:280
+#: xfrun/xfrun.c:271
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: ਪਿਛਲੇ commands ਦਿ ਫਾਇਲ %s ਨਹੀਂ ਲਿਖਿ ਜਾ ਸਕਦਿ\n"
+msgstr "ਐਕਸਐਫ੪ਃ %s ਫਾਈਲ ਦਾ ਅਤੀਤ ਲਿਖ ਨਹੀਂ ਸਕਦਾ \n"
 
-#: xfrun/xfrun.c:391
+#: xfrun/xfrun.c:378
 #, c-format
 msgid "Open %s with what program?"
-msgstr "%s ਨੁ ਕਿਦੇ ਨਾਲ ਚਲਾਣਾ ਹੇ"
+msgstr "%s ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਨਾਲ ਖੋਲੋ?"
 
-#: xfrun/xfrun.c:392
+#: xfrun/xfrun.c:379
 msgid "Run program"
-msgstr "program ਚਲਾਔ"
+msgstr "ਪ੍ਰੋਗਰਾਮ ਚਲਾਓ"
 
-#: xfrun/xfrun.c:400
+#: xfrun/xfrun.c:387
 msgid "_Run"
-msgstr "_ਚਲਾਔ"
+msgstr "_ਚਲਾਓ"
 
-#: xfrun/xfrun.c:430
+#: xfrun/xfrun.c:417
 msgid "Run in _terminal"
-msgstr "_ਕਾਲਾ ਡਬਾ ਚਲਾਔ"
+msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:277
+#: xftaskbar/plugin/xftaskbar_plugin.c:284
 #: xftaskbar/plugin/xftaskbar_plugin.c:533
 msgid "Taskbar"
-msgstr "ਕੰਮ ਦਾ ਲੇਖਾ"
+msgstr "ਦਰਜਾ-ਪੱਟੀ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:298
 msgid "Position"
@@ -87,43 +94,43 @@ msgstr "ਸਥਿਤੀ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "_Top"
-msgstr "_ਉਤੇ"
+msgstr "_ਸਿਖਰ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
 msgid "_Bottom"
-msgstr "_ਥਲੇ"
+msgstr "_ਹੇਠਾਂ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
-msgstr "ਨਿਰਧਾਰਿਤ"
+msgstr "ਅਨੁਕੂਲਤਾ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr "_ਖਬਾ"
+msgstr "_ਖੱਬੇ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr "_ਵਿਚਕਾਰਲਾ"
+msgstr "_ਵਿਚਕਾਰ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr "_ਸਜਾ"
+msgstr "ਸੱਜੇ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
-msgstr "ਆਪਣੇ ਆਪ ਗੁਮ"
+msgstr "ਸਵੈ-ਲੁਕਵਾਂ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
 msgid "Auto _hide taskbar"
-msgstr "ਕੰਮ ਦਾ ਲੇਖਾ ਆਪਣੇ ਆਪ _ਗੁਮ ਕਰੋ "
+msgstr "ਸਵੈ ਲੁਕਵੀਂ ਦਰਜਾ ਪੱਟੀ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
-msgstr "ਅਕਾਰ"
+msgstr "ਆਕਾਰ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
-msgstr "ਉਚਾਈ:"
+msgstr "ਉਚਾਈ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:376
 #: xftaskbar/plugin/xftaskbar_plugin.c:413
@@ -133,69 +140,69 @@ msgstr "ਛੋਟਾ"
 #: xftaskbar/plugin/xftaskbar_plugin.c:385
 #: xftaskbar/plugin/xftaskbar_plugin.c:424
 msgid "Large"
-msgstr "ਵਡਾ"
+msgstr "ਵੱਡਾ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:403
 msgid "Width:"
-msgstr "ਚੌਡ਼ਾਈ:"
+msgstr "ਚੌੜਾਈ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:452
 msgid "Tasks"
-msgstr "ਕੰਮ"
+msgstr "ਕਾਰਜ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
 msgid "Show tasks from _all workspaces"
-msgstr "_ਸਾਰੇ workspaces ਦੇ ਕੰਮ ਵਿਖਾਔ"
+msgstr "ਸਾਰੇ ਵਰਕਸਪੇਸਾਂ ਵਿੱਚ ਕਾਰਜ ਵਿਖਾਓ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr "ਕੰਮਾ ਦੇ ਗਟ "
+msgstr "ਕਾਰਜਾਂ ਦੇ ਹਮੇਸ਼ਾ ਸਮੂਹ ਬਣਾਓ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
-msgstr "ਕੰਮਾ ਦੇ _ਨਾ ਵਿਖਾਔ"
+msgstr "ਕਾਰਜ _ਨਾਂ ਵਿਖਾਓ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
-msgstr "Pager"
+msgstr "ਪੇਜ਼ਰ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
 msgid "Show _pager in taskbar"
-msgstr "_pager taskbar ਵਿਚ ਦਿਖਾਔ"
+msgstr "ਦਰਜਾ-ਪੱਟੀ ਵਿੱਚ ਪੇਜ਼ਰ ਵਿਖਾਓ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
-msgstr "ਟਿੱਪਣੀ ਦਸਤੇ ਅਸਥਾਨ"
+msgstr "ਐਲਾਨ ਖੇਤਰ"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
 msgid "Show _system tray in taskbar"
-msgstr "_system tray taskbar ਵਿਚ ਦਿਖਾਔ"
+msgstr "ਦਰਜਾ-ਪੱਟੀ ਵਿੱਚ ਸਿਸਟਮ ਟਰੇ ਵਿਖਾਓ"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
-msgstr "ਸ਼ੁਰੂਆਤਿ ਸ਼ੈਲੀ ਨਹੀਂ ਮਿਲਿ"
+msgstr "ਸ਼ੁਰੂਆਤੀ ਸ਼ੈਲੀ ਪ੍ਰਾਪਤ ਨਹੀ ਕਰ ਸਕਿਆ"
 
 #: xftaskbar/xftaskbar.c:260
 msgid "There is already a system tray running on this screen"
-msgstr "system tray ਅੇਸ screen ਤੇ ਪੇਹਲੇ ਤੋ ਹੇ"
+msgstr "ਇਸ ਟਰੇ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਸਿਸਟਮ ਟਰੇ ਚੱਲ ਰਹੀ ਹੈ"
 
 #: xftaskbar/xftaskbar.c:268
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr "system tray %s ਸੂਚੀਬੱਧ ਨਹੀਂ ਹੋ ਰੇਹਾ "
+msgstr "ਸਿਸਟਮ ਟਰੇ ਰਜਿਸਟਰ ਕਰਨ ਵਿੱਚ ਅਯੋਗਃ %s"
 
 #: xftaskbar/xftaskbar.c:467
 msgid "This should not happen"
-msgstr "ਅੇ ਨਹੀਂ ਹੋਨਾ ਚਾਹਿਦਾ"
+msgstr "ਅਜਿਹਾ ਨਹੀਂਂ ਵਾਪਰਿਆ"
 
 #: xftaskbar/xftaskbar.c:592
 msgid "Cannot get default screen\n"
-msgstr "default screen ਨਹੀਂ ਦਿਸਦੀ ਪਅਈ\n"
+msgstr "ਮੂਲ ਪਰਦਾ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰ ਸਕਿਆ\n"
 
 #: xftaskbar/xftaskbar.c:681
 msgid "Cannot connect to session manager"
-msgstr "session manager ਨਾਲ ਮੇਲ ਨਹੀਂ ਹੋਆ"
+msgstr "ਅਜਲਾਸ ਮੈਨੇਜਰ ਨਾਲ ਜੁੜ ਨਹੀਂ ਸਕਿਆ"
 
 #: xftaskbar/xftaskbar.c:694
 msgid "Cannot create MCS client channel"
-msgstr "MCS client channel ਨਹੀਂ ਬਣਆ "
+msgstr "MCS ਕਲਾਂਈਟ ਚੈਨਲ ਬਣਾ ਨਹੀਂ ਸਕਿਆ"
