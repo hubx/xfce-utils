@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2003-07-30 09:13+0200\n"
-"PO-Revision-Date: 2003-05-22 23:35+0100\n"
+"PO-Revision-Date: 2003-08-10 00:31+0200\n"
 "Last-Translator: Yongtao Yang <yongtao.yang@telia.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -141,12 +141,12 @@ msgstr "无法获取初始风格"
 
 #: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
-msgstr ""
+msgstr "本屏幕已经有另外一个系统托盘正在运行"
 
 #: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
-msgstr ""
+msgstr "无法注册系统托盘: %s"
 
 #: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
