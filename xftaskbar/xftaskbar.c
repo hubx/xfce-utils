@@ -71,9 +71,8 @@ struct _Taskbar
     gboolean all_tasks;
     gboolean hidden;
     GtkWidget *win;
-    GtkWidget *vbox;
+    GtkWidget *frame;
     GtkWidget *hbox;
-    GtkWidget *align;
     GtkWidget *tasklist;
     GtkWidget *pager;
 
@@ -175,13 +174,13 @@ static void taskbar_toggle_autohide(Taskbar *taskbar)
     g_return_if_fail (taskbar != NULL);
     if (taskbar->autohide)
     {
-        gtk_widget_hide (taskbar->vbox);
+        gtk_widget_hide (taskbar->frame);
         taskbar->hidden = TRUE;
         taskbar_position(taskbar);
     }
     else
     {
-        gtk_widget_show (taskbar->vbox);
+        gtk_widget_show (taskbar->frame);
         taskbar->hidden = FALSE;
         taskbar_position(taskbar);
     }
@@ -296,7 +295,7 @@ static gboolean taskbar_unhide_timeout (Taskbar *taskbar)
 {
     g_return_val_if_fail (taskbar != NULL, FALSE);
 
-    gtk_widget_show (taskbar->vbox);
+    gtk_widget_show (taskbar->frame);
     taskbar->hidden = FALSE;
     taskbar_position(taskbar);
 
@@ -341,7 +340,7 @@ static gboolean taskbar_hide_timeout (Taskbar *taskbar)
 {
     g_return_val_if_fail (taskbar != NULL, FALSE);
 
-    gtk_widget_hide (taskbar->vbox);
+    gtk_widget_hide (taskbar->frame);
     taskbar->hidden = TRUE;
     taskbar_position(taskbar);
 
@@ -400,9 +399,6 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                 if (!strcmp(name, "Taskbar/Position"))
                 {
                     taskbar->position = setting->data.v_int ? TOP : BOTTOM;
-		    gtk_box_reorder_child (GTK_BOX (taskbar->vbox), 
-					   taskbar->align,
-					   taskbar->position == TOP ? 1 : 0);
                     taskbar_position(taskbar);
                     taskbar_update_margins(taskbar);
                 }
@@ -557,19 +553,13 @@ int main(int argc, char **argv)
     }
 #endif
 
-    taskbar->vbox = gtk_vbox_new(FALSE,0);
-    gtk_container_add(GTK_CONTAINER(taskbar->win), taskbar->vbox);
+    taskbar->frame = gtk_frame_new(NULL);
+    gtk_frame_set_shadow_type(GTK_FRAME(taskbar->frame), GTK_SHADOW_OUT);
+    gtk_container_add(GTK_CONTAINER(taskbar->win), taskbar->frame);
 
     taskbar->hbox = gtk_hbox_new (FALSE, 1);
-    gtk_box_pack_start (GTK_BOX(taskbar->vbox), taskbar->hbox, 
-			TRUE, TRUE, 0);
+    gtk_container_add (GTK_CONTAINER (taskbar->frame), taskbar->hbox);
 
-    taskbar->align = gtk_alignment_new(0,0,0,0);
-    gtk_widget_set_size_request (taskbar->align, 1, 1);
-    gtk_widget_show (taskbar->align);
-    gtk_box_pack_start (GTK_BOX(taskbar->vbox), taskbar->align, 
-			FALSE, FALSE, 0);
-    
     taskbar->iconbox = NULL;
 
     taskbar->tasklist = netk_tasklist_new(screen);
