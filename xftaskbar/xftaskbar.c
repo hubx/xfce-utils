@@ -240,7 +240,11 @@ static void taskbar_toggle_tray(Taskbar *taskbar)
 	    taskbar->tray_registered = FALSE;
 	}
 	
-        gtk_widget_destroy (taskbar->iconbox);
+	if (taskbar->iconbox) 
+	{
+            gtk_widget_destroy (taskbar->iconbox);
+	    taskbar->iconbox = NULL;
+	}
     }
 }
 
@@ -471,6 +475,8 @@ int main(int argc, char **argv)
 
     taskbar->hbox = gtk_hbox_new (FALSE, 1);
     gtk_container_add (GTK_CONTAINER (taskbar->frame), taskbar->hbox);
+
+    taskbar->iconbox = NULL;
 
     taskbar->tasklist = netk_tasklist_new(screen);
     netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), NETK_TASKLIST_AUTO_GROUP);
