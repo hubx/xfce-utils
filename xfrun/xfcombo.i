@@ -106,9 +106,7 @@ int extra_key_completion(gpointer user_data)
 
 static void set_run_combo(xfc_combo_info_t *combo_info)
 {
-    char *p;
     gchar *f=g_strconcat(RUN_DBH_FILE,NULL); 
-    gboolean interm;
 
     if (access(f,F_OK)!=0) return;
     
@@ -148,7 +146,7 @@ xfc_combo_functions *load_xfc(void){
 	return NULL;
     }
     
-    if (!g_module_symbol (xfc_cm, "module_init",(gpointer *) &(module_init)) ) {
+    if (!g_module_symbol (xfc_cm, "module_init",(gpointer) &(module_init)) ) {
 	g_error("g_module_symbol(module_init) != FALSE\n");
         exit(1);
     }
