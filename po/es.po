@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jaime Buffery <nestu@onlylinux.homelinux.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgstr "No se puede conectar con el administrador de sesiones"
 msgid "Cannot get desktop margins"
 msgstr "No se pueden obtener los márgenes del escritorio"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "No se puede crear el canal MCS cliente"
 

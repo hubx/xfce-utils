@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-06-06 21:50+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: 2003-07-18 00:27+0000\n"
 "Last-Translator: Poul Ionkin <wizzard@nmg.lv>\n"
 "Language-Team: Russian <none>\n"
@@ -15,40 +15,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2beta2\n"
 
-#: xfce4-about/info.c:206
+#: xfce4-about/info.c:230
 msgid "About XFce 4"
 msgstr "О XFce 4"
 
-#: xfce4-about/info.c:219
+#: xfce4-about/info.c:243
 msgid "XFce Desktop Environment"
 msgstr "Рабочая среда XFce"
 
-#: xfce4-about/info.c:220
+#: xfce4-about/info.c:244
 msgid "Copyright 2002-2003 by Olivier Fourdan"
 msgstr "Copyright 2002-2003 by Olivier Fourdan"
 
 #. add pages
-#: xfce4-about/info.c:239
+#: xfce4-about/info.c:263
 msgid "Info"
 msgstr "Информация"
 
-#: xfce4-about/info.c:240
+#: xfce4-about/info.c:264
 msgid "Credits"
 msgstr "Авторы"
 
-#: xfce4-about/info.c:241
+#: xfce4-about/info.c:265
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: xfce4-about/info.c:242
+#: xfce4-about/info.c:266
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:267
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:244
+#: xfce4-about/info.c:268
 msgid "GPL"
 msgstr "GPL"
 
@@ -57,110 +57,109 @@ msgstr "GPL"
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Ошибка записи файла истории %s\n"
 
-#: xfrun/xfrun.c:231
+#: xfrun/xfrun.c:237
 msgid "Run program"
 msgstr "Запустить программу"
 
-#: xfrun/xfrun.c:238
+#: xfrun/xfrun.c:244
 msgid "_Run"
 msgstr "Выполнить"
 
-#: xfrun/xfrun.c:275
+#: xfrun/xfrun.c:281
 msgid "Run in _terminal"
 msgstr "Запустить в терминале"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:206
-#: xftaskbar/plugin/xftaskbar_plugin.c:213
-#: xftaskbar/plugin/xftaskbar_plugin.c:409
+#: xftaskbar/plugin/xftaskbar_plugin.c:202
+#: xftaskbar/plugin/xftaskbar_plugin.c:208
+#: xftaskbar/plugin/xftaskbar_plugin.c:374
 msgid "Taskbar"
 msgstr "Панель задач"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:235
-msgid "Top"
-msgstr "Сверху"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:242
-msgid "Bottom"
-msgstr "Снизу"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:249
+#: xftaskbar/plugin/xftaskbar_plugin.c:222
 msgid "Position"
 msgstr "Расположение"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:259
-msgid "Auto hide taskbar"
-msgstr "Скрывать панель задач"
+#: xftaskbar/plugin/xftaskbar_plugin.c:230
+msgid "Top"
+msgstr "Сверху"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:264
+#: xftaskbar/plugin/xftaskbar_plugin.c:237
+msgid "Bottom"
+msgstr "Снизу"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:244
 msgid "Autohide"
 msgstr "Автоскрытие"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:279
-msgid "Height :"
-msgstr "Высота :"
+#: xftaskbar/plugin/xftaskbar_plugin.c:248
+msgid "Auto hide taskbar"
+msgstr "Скрывать панель задач"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:287
-msgid "Small"
-msgstr "Маленький"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Large"
-msgstr "Большой"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:318
+#: xftaskbar/plugin/xftaskbar_plugin.c:253
 msgid "Size"
 msgstr "Размер"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:332
-msgid "Show tasks from all workspaces"
-msgstr "Показывать задачи со всех рабочих областей"
+#: xftaskbar/plugin/xftaskbar_plugin.c:262
+msgid "Height :"
+msgstr "Высота :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:337
+#: xftaskbar/plugin/xftaskbar_plugin.c:270
+msgid "Small"
+msgstr "Маленький"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:279
+msgid "Large"
+msgstr "Большой"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:302
 msgid "Tasks"
 msgstr "Задачи"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:347
-msgid "Show pager in taskbar"
-msgstr "Показывать пейджер на панели задач"
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "Show tasks from all workspaces"
+msgstr "Показывать задачи со всех рабочих областей"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:352
+#: xftaskbar/plugin/xftaskbar_plugin.c:311
 msgid "Pager"
 msgstr "Пейджер"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:362
-msgid "Show system tray in taskbar"
-msgstr "Показывать системный лоток на панели задач"
+#: xftaskbar/plugin/xftaskbar_plugin.c:315
+msgid "Show pager in taskbar"
+msgstr "Показывать пейджер на панели задач"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:367
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Notification area"
 msgstr "Область уведомления"
 
-#: xftaskbar/xftaskbar.c:119
+#: xftaskbar/plugin/xftaskbar_plugin.c:324
+msgid "Show system tray in taskbar"
+msgstr "Показывать системный лоток на панели задач"
+
+#: xftaskbar/xftaskbar.c:129
 msgid "Cannot get initial style"
 msgstr "Ошибка получения начального стиля"
 
-#: xftaskbar/xftaskbar.c:199
+#: xftaskbar/xftaskbar.c:209
 msgid "There is already a system tray running on this screen"
 msgstr "Системный лоток уже запущен на этом экране"
 
-#: xftaskbar/xftaskbar.c:207
+#: xftaskbar/xftaskbar.c:217
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "Невозможно зарегистрировать системный лоток: %s"
 
-#: xftaskbar/xftaskbar.c:317
+#: xftaskbar/xftaskbar.c:385
 msgid "This should not happen"
 msgstr "Этого не должно было случиться"
 
-#: xftaskbar/xftaskbar.c:414
+#: xftaskbar/xftaskbar.c:475
 msgid "Cannot connect to session manager"
 msgstr "Ошибка подключения к менеджеру сессии"
 
-#: xftaskbar/xftaskbar.c:425
+#: xftaskbar/xftaskbar.c:488
 msgid "Cannot get desktop margins"
 msgstr "Ошибка определения полей рабочего стола"
 
-#: xftaskbar/xftaskbar.c:496
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "Ошибка создания канала для MCS клиента"
-

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: 2003-06-01 23:30--200\n"
 "Last-Translator: Ilkka Ollakka <ilkka.j.ollakka@students.oamk.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,6 +159,6 @@ msgstr "Istunnon hallintaan ei saatu yhteyttä"
 msgid "Cannot get desktop margins"
 msgstr "Työpöydän marginaaleja ei saatavilla"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "Ei voi luoda MCS-asiakas kanavaa"

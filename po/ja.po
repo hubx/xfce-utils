@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: 2003-05-27 11:30+0900\n"
 "Last-Translator: Zhao Ji <zhao-ji@awz.ne.jp>\n"
 "Language-Team: none <none@none>\n"
@@ -160,7 +160,7 @@ msgstr "セッション・マネージャと接続できません"
 msgid "Cannot get desktop margins"
 msgstr "デスクトップ・マージンを取得できません"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "MCSクライアント・チャネルを作成できません"
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,6 +160,6 @@ msgstr "Impossibile connettersi al gestore di sessione"
 msgid "Cannot get desktop margins"
 msgstr "Impossibile determinare i margini dello schermo"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "Impossibile creare canale client MCS"

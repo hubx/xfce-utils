@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tamil XFCE-UTILS 4\n"
-"POT-Creation-Date: 2003-07-16 11:30+0200\n"
+"POT-Creation-Date: 2003-07-30 09:13+0200\n"
 "PO-Revision-Date: 2003-05-14 22:08+0600\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil <tamilinix@yahoogroups.com>\n"
@@ -162,7 +162,7 @@ msgstr "«Á÷× §ÁÄ¡ÇÕ¼ý ­¨½ôÒ ¦¸¡ûÇ ÓÊÂÅ¢ø¨Ä"
 msgid "Cannot get desktop margins"
 msgstr "¸½¢§Á¨º ±ø¨Ä¸¨Ç ¦ÀÈÓÊÂÅ¢ø¨Ä"
 
-#: xftaskbar/xftaskbar.c:563
+#: xftaskbar/xftaskbar.c:564
 msgid "Cannot create MCS client channel"
 msgstr "MCS §º¨ÅôÀÂÉ÷ ¾¼õ À¨¼ì¸ ÓÊÂÅ¢ø¨Ä"
 
