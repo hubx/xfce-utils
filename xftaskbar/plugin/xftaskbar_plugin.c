@@ -64,6 +64,7 @@ static gboolean autohide = FALSE;
 static gboolean show_pager = TRUE;
 static gboolean show_tray = TRUE;
 static gboolean all_tasks = FALSE;
+static gboolean group_tasks = FALSE;
 static int height = DEFAULT_HEIGHT;
 static int width_percent = DEFAULT_WIDTH_PERCENT;
 static int horiz_align = DEFAULT_HORIZ_ALIGN;
@@ -76,7 +77,9 @@ struct _Itf
     GSList *pos_radiobutton_group;
 
     GtkWidget *xftaskbar_dialog;
+    GtkWidget *tasks_vbox;
     GtkWidget *alltasks_checkbutton;
+    GtkWidget *grouptasks_checkbutton;
     GtkWidget *autohide_checkbutton;
     GtkWidget *dialog_action_area1;
     GtkWidget *dialog_header;
@@ -188,6 +191,18 @@ static void cb_alltasks_changed(GtkWidget * dialog, gpointer user_data)
     all_tasks = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->alltasks_checkbutton));
 
     mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL, all_tasks ? 1 : 0);
+    mcs_manager_notify(mcs_plugin->manager, CHANNEL);
+    write_options(mcs_plugin);
+}
+
+static void cb_grouptasks_changed(GtkWidget * dialog, gpointer user_data)
+{
+    Itf *itf = (Itf *) user_data;
+    McsPlugin *mcs_plugin = itf->mcs_plugin;
+
+    group_tasks = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(itf->grouptasks_checkbutton));
+
+    mcs_manager_set_int(mcs_plugin->manager, "Taskbar/GroupTasks", CHANNEL, group_tasks ? 1 : 0);
     mcs_manager_notify(mcs_plugin->manager, CHANNEL);
     write_options(mcs_plugin);
 }
@@ -425,10 +440,19 @@ Itf *create_xftaskbar_dialog(McsPlugin * mcs_plugin)
     gtk_widget_show (dialog->frame5);
     gtk_box_pack_start (GTK_BOX (dialog->vbox2), dialog->frame5, TRUE, TRUE, 0);
 
+    dialog->tasks_vbox = gtk_vbox_new (TRUE, 0);
+    gtk_widget_show (dialog->tasks_vbox);
+    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame5), dialog->tasks_vbox);
+
     dialog->alltasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Show tasks from all workspaces"));
     gtk_widget_show (dialog->alltasks_checkbutton);
-    xfce_framebox_add (XFCE_FRAMEBOX (dialog->frame5), dialog->alltasks_checkbutton);
+    gtk_box_pack_start (GTK_BOX (dialog->tasks_vbox), dialog->alltasks_checkbutton, FALSE, FALSE, 0);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->alltasks_checkbutton), all_tasks);
+
+    dialog->grouptasks_checkbutton = gtk_check_button_new_with_mnemonic (_("Always group tasks"));
+    gtk_widget_show (dialog->grouptasks_checkbutton);
+    gtk_box_pack_start (GTK_BOX (dialog->tasks_vbox), dialog->grouptasks_checkbutton, FALSE, FALSE, 0);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->grouptasks_checkbutton), group_tasks);
 
     dialog->frame2 = xfce_framebox_new (_("Pager"), TRUE);
     gtk_widget_show (dialog->frame2);
@@ -471,6 +495,7 @@ static void setup_dialog(Itf * itf)
     g_signal_connect(G_OBJECT(itf->pager_checkbutton), "toggled", G_CALLBACK(cb_showpager_changed), itf);
     g_signal_connect(G_OBJECT(itf->tray_checkbutton), "toggled", G_CALLBACK(cb_showtray_changed), itf);
     g_signal_connect(G_OBJECT(itf->alltasks_checkbutton), "toggled", G_CALLBACK(cb_alltasks_changed), itf);
+    g_signal_connect(G_OBJECT(itf->grouptasks_checkbutton), "toggled", G_CALLBACK(cb_grouptasks_changed), itf);
     g_signal_connect(G_OBJECT(itf->autohide_checkbutton), "toggled", G_CALLBACK(cb_autohide_changed), itf);
     g_signal_connect(G_OBJECT(itf->height_scale), "value_changed", G_CALLBACK(cb_height_changed), itf);
     g_signal_connect(G_OBJECT(itf->width_scale), "value_changed", G_CALLBACK(cb_width_percent_changed), itf);
@@ -579,6 +604,17 @@ static void create_channel(McsPlugin * mcs_plugin)
     {
         all_tasks = FALSE;
         mcs_manager_set_int(mcs_plugin->manager, "Taskbar/ShowAllTasks", CHANNEL, all_tasks ? 1 : 0);
+    }
+
+    setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/GroupTasks", CHANNEL);
+    if(setting)
+    {
+        group_tasks = (setting->data.v_int ? TRUE : FALSE);
+    }
+    else
+    {
+        group_tasks = FALSE;
+        mcs_manager_set_int(mcs_plugin->manager, "Taskbar/GroupTasks", CHANNEL, group_tasks ? 1 : 0);
     }
 
     setting = mcs_manager_setting_lookup(mcs_plugin->manager, "Taskbar/Height", CHANNEL);

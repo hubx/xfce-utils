@@ -73,6 +73,7 @@ struct _Taskbar
     gboolean show_pager;
     gboolean show_tray;
     gboolean all_tasks;
+    gboolean group_tasks;
     gboolean hidden;
     GtkWidget *win;
     GtkWidget *frame;
@@ -468,6 +469,11 @@ static void notify_cb(const char *name, const char *channel_name, McsAction acti
                     taskbar->all_tasks = setting->data.v_int ? TRUE : FALSE;
                     netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
                 }
+                else if(!strcmp(name, "Taskbar/GroupTasks"))
+                {
+                    taskbar->group_tasks = setting->data.v_int ? TRUE : FALSE;
+                    netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), taskbar->group_tasks ? NETK_TASKLIST_ALWAYS_GROUP : NETK_TASKLIST_AUTO_GROUP);
+                }
                 else if (!strcmp(name, "Taskbar/Height"))
                 {
                     taskbar_change_size(taskbar, setting->data.v_int);
@@ -579,6 +585,7 @@ int main(int argc, char **argv)
     taskbar->show_pager = TRUE;
     taskbar->show_tray = TRUE;
     taskbar->all_tasks = FALSE;
+    taskbar->group_tasks = FALSE;
     taskbar->hidden = FALSE;
     taskbar->tray_registered = FALSE;
 
@@ -620,7 +627,7 @@ int main(int argc, char **argv)
     taskbar->iconbox = NULL;
 
     taskbar->tasklist = netk_tasklist_new(screen);
-    netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), NETK_TASKLIST_AUTO_GROUP);
+    netk_tasklist_set_grouping(NETK_TASKLIST(taskbar->tasklist), taskbar->group_tasks);
     netk_tasklist_set_include_all_workspaces(NETK_TASKLIST(taskbar->tasklist), taskbar->all_tasks);
     gtk_box_pack_start (GTK_BOX (taskbar->hbox), taskbar->tasklist, TRUE, TRUE, 0);
 
