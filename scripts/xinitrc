@@ -58,6 +58,14 @@ if test "$sshagent" -a "x$sshagent" != "xno"; then
 	eval `$sshagent`
 fi
 
+# Use dbus-launch if installed.
+if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
+	dbuslaunch=`which dbus-launch`
+	if test x"$dbuslaunch" != x"" -a x"$dbuslaunch" != x"no"; then
+		eval `$dbuslaunch --sh-syntax --exit-with-session`
+	fi
+fi
+
 # Run xfce4-session if installed
 xfcesm=`which xfce4-session`
 case "x$xfcesm" in
