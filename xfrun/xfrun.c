@@ -251,6 +251,7 @@ int main(int argc, char **argv)
     gtk_container_set_border_width(GTK_CONTAINER(vbox), 6);
 
     combo = gtk_combo_new();
+    gtk_combo_set_case_sensitive(GTK_COMBO(combo), TRUE);
     
     for (hitem = history, hstrings = NULL; hitem != NULL; hitem = hitem->next) {
 	    current = hitem->data;
