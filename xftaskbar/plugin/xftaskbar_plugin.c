@@ -370,6 +370,13 @@ static void setup_dialog(Itf * itf)
 
 McsPluginInitResult mcs_plugin_init(McsPlugin * mcs_plugin)
 {
+#ifdef ENABLE_NLS
+    /* This is required for UTF-8 at least - Please don't remove it */
+    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+#endif
+
     create_channel(mcs_plugin);
     mcs_plugin->plugin_name = g_strdup(PLUGIN_NAME);
     mcs_plugin->caption = g_strdup(_("Taskbar"));
