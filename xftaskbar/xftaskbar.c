@@ -188,15 +188,49 @@ static void taskbar_toggle_pager(Taskbar *taskbar)
     }
 }
 
+static gboolean
+register_tray(Taskbar *taskbar)
+{
+    GError *error = NULL;
+
+    if (xfce_system_tray_check_running(DefaultScreenOfDisplay(GDK_DISPLAY()))) 
+    {
+	    xfce_info(_("There is already a system tray running on this "
+			"screen"));
+	    return FALSE;
+    }
+    else if (!xfce_system_tray_register(taskbar->tray, 
+		DefaultScreenOfDisplay(GDK_DISPLAY()),
+		&error)) 
+    {
+        xfce_err(_("Unable to register system tray: %s"), error->message);
+        g_error_free(error);
+
+	return FALSE;
+    }
+
+    return TRUE;
+}
+
 static void taskbar_toggle_tray(Taskbar *taskbar)
 {
+    static gboolean registered = FALSE;
+    
     g_return_if_fail (taskbar != NULL);
+    
     if (taskbar->show_tray)
     {
+	registered = register_tray(taskbar);
         gtk_widget_show (taskbar->iconbox);
     }
     else
     {
+	if (registered)
+	{
+	    xfce_system_tray_unregister(taskbar->tray);
+	    registered = FALSE;
+	}
+	
         gtk_widget_hide (taskbar->iconbox);
     }
 }
@@ -344,7 +378,6 @@ int main(int argc, char **argv)
     DesktopMargins margins;
     NetkScreen *screen;
     Taskbar *taskbar;
-    GError *error;
     Display *dpy;
     int scr;
     int left, right;
@@ -433,17 +466,6 @@ int main(int argc, char **argv)
 
     g_signal_connect(taskbar->tray, "icon_docked", G_CALLBACK(icon_docked), taskbar->iconbox);
     g_signal_connect(taskbar->tray, "icon_undocked", G_CALLBACK(icon_undocked), taskbar->iconbox);
-
-    if (xfce_system_tray_check_running(DefaultScreenOfDisplay(dpy))) {
-	    xfce_info(_("There is already a system tray running on this "
-			"screen"));
-    }
-    else if (!xfce_system_tray_register(taskbar->tray, DefaultScreenOfDisplay(dpy),
-			    &error)) 
-    {
-        xfce_err(_("Unable to register system tray: %s"), error->message);
-        g_error_free(error);
-    }
 
     gtk_widget_show (taskbar->iconbox);
     gtk_widget_show (taskbar->tasklist);
