@@ -1,3 +1,131 @@
+2004-10-01 10:25  pollux
+
+	* configure, configure.ac, po/pa.gmo, po/pa.po: add PA translations
+	  from Supreet Sethi <supreet@linux-delhi.org>
+
+2004-09-30 17:48  pollux
+
+	* po/: it.gmo, it.po: updated Italian translations from Luca
+	  Marrocco <buildup@libero.it>
+
+2004-09-29 10:22  pollux
+
+	* po/: zh_TW.gmo, zh_TW.po: updated zh_TW translations from Ambrose
+	  Li <acli@ada.dhs.org>
+
+2004-09-29 09:59  pollux
+
+	* po/: zh_CN.gmo, zh_CN.po: updated zh_CN translations from yongtao
+	  yang <yongtao.yang@gmail.com>
+
+2004-09-27 19:54  jasper
+
+	* configure, configure.ac: Update version to 4.1.90
+
+2004-09-26 16:24  edscott
+
+	* xfrun/xfrun.c: Error dialog was showing up when arguments passed
+	  to command. Fixed that and allowed for paths relative to homedir
+	  to work as arguments for filemanager (that also worked before the
+	  error dialog introduction).
+
+2004-09-26 11:56  jasper
+
+	* doc/: xfce-utils/C/xfce-utils.html,
+	  xfce-utils/fr/xfce-utils.html, xfce-utils/it/xfce-utils.html,
+	  xfce4-user-guide/C/xfce4-install.html,
+	  xfce4-user-guide/C/xfce4-user-guide.html,
+	  xfce4-user-guide/fr/BSD.html, xfce4-user-guide/fr/GPL.html,
+	  xfce4-user-guide/fr/LGPL.html,
+	  xfce4-user-guide/fr/xfce4-copyright.html,
+	  xfce4-user-guide/fr/xfce4-install.html,
+	  xfce4-user-guide/fr/xfce4-intro.html,
+	  xfce4-user-guide/fr/xfce4-use.html,
+	  xfce4-user-guide/fr/xfce4-user-guide.html,
+	  xfce4-user-guide/it/BSD.html, xfce4-user-guide/it/GPL.html,
+	  xfce4-user-guide/it/LGPL.html,
+	  xfce4-user-guide/it/xfce4-copyright.html,
+	  xfce4-user-guide/it/xfce4-install.html,
+	  xfce4-user-guide/it/xfce4-intro.html,
+	  xfce4-user-guide/it/xfce4-use.html,
+	  xfce4-user-guide/it/xfce4-user-guide.html: Fix html target for
+	  docs. Not build by default.
+
+2004-09-26 09:50  jasper
+
+	* scripts/xfhelp4.in: Firefox needs this
+
+2004-09-25 16:35  edscott
+
+	* xfrun/xfrun.c: show error dialog if file not found
+	  (strerror(ENOENT)).
+
+2004-09-25 11:34  jasper
+
+	* doc/xfce4-user-guide/C/: xfce4-components.html,
+	  xfce4-install.html, xfce4-use.html, xfce4-user-guide.html,
+	  xfce4-user-guide.xml, images/default-session.png: Doc update
+
+2004-09-25 09:24  jasper
+
+	* xfrun/: xfcombo.i, xfrun.c: Check if run command succeeded and
+	  beep if not (no message because of string freeze).
+
+2004-09-24 23:47  jasper
+
+	* doc/: xfce.css, xfce4-user-guide/C/BSD.html,
+	  xfce4-user-guide/C/GPL.html, xfce4-user-guide/C/LGPL.html,
+	  xfce4-user-guide/C/Makefile.am, xfce4-user-guide/C/Makefile.in,
+	  xfce4-user-guide/C/xfce4-components.html,
+	  xfce4-user-guide/C/xfce4-copyright.html,
+	  xfce4-user-guide/C/xfce4-install.html,
+	  xfce4-user-guide/C/xfce4-intro.html,
+	  xfce4-user-guide/C/xfce4-use.html,
+	  xfce4-user-guide/C/xfce4-user-guide.html,
+	  xfce4-user-guide/C/xfce4-user-guide.xml: Update user guide to get
+	  rid of .xfce4/ reference
+
+2004-09-23 23:36  pollux
+
+	* configure, configure.ac, po/gu.gmo, po/gu.po: add Gujarati
+	  translations (GU) from Ankit Patel <ankit@redhat.com>
+
+2004-09-23 20:31  jasper
+
+	* doc/xfce.css: doc updates
+
+2004-09-23 11:09  jasper
+
+	* xftaskbar/plugin/xfce-taskbar-settings.desktop: Better
+	  translation
+
+2004-09-23 10:22  jasper
+
+	* gdm/xfce.desktop, xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  Add nl translations
+
+2004-09-22 05:18  kelnos
+
+	* xftaskbar/plugin/xfce-taskbar-settings.desktop: add GenericName
+	  tags to settings .desktop files
+
+2004-09-21 13:51  jasper
+
+	* po/: ar.gmo, ar.po, az.gmo, az.po, be.gmo, be.po, bg.gmo, bg.po,
+	  ca.gmo, ca.po, cs.gmo, cs.po, de.gmo, de.po, es.gmo, es.po,
+	  es_MX.gmo, es_MX.po, et.gmo, et.po, eu.gmo, eu.po, fa_IR.gmo,
+	  fa_IR.po, fi.gmo, fi.po, fr.gmo, fr.po, he.gmo, he.po, hi.gmo,
+	  hi.po, hu.gmo, hu.po, it.gmo, it.po, ja.gmo, ja.po, ko.gmo,
+	  ko.po, lt.gmo, lt.po, ms.gmo, ms.po, nl.gmo, nl.po, pl.gmo,
+	  pl.po, pt_BR.gmo, pt_BR.po, pt_PT.gmo, pt_PT.po, ru.gmo, ru.po,
+	  sk.gmo, sk.po, sv.gmo, sv.po, ta.gmo, ta.po, tr.gmo, tr.po,
+	  uk.gmo, uk.po, vi.gmo, vi.po, zh_CN.gmo, zh_CN.po, zh_TW.gmo,
+	  zh_TW.po: Run make update-po at Moe's request.
+
+2004-09-21 00:22  olivier
+
+	* ChangeLog, po/xfce-utils.pot: Update all ChangeLogs
+
 2004-09-19 23:02  jasper
 
 	* po/: de.gmo, nl.gmo, nl.po: nl translations fixes
