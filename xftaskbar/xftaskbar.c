@@ -47,7 +47,6 @@
 #define DEFAULT_HEIGHT	30
 
 static McsClient *client = NULL;
-static int mcs_initted = FALSE;
 
 typedef struct _Taskbar Taskbar;
 
