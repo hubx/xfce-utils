@@ -9,7 +9,7 @@ AC_INIT([xfrun/xfrun.c])
 
 AM_CONFIG_HEADER([config.h])
 
-AM_INIT_AUTOMAKE([xfce-utils], [0.2])
+AM_INIT_AUTOMAKE([xfce-utils], [0.2.1])
 
 AM_MAINTAINER_MODE
 
