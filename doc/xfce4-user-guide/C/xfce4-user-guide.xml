@@ -1,0 +1,455 @@
+<?xml version='1.0'?> 
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+          "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY copyright SYSTEM "copyright.xml"> 
+  <!ENTITY BSD SYSTEM "BSD.xml"> 
+  <!ENTITY GPL SYSTEM "GPL.xml"> 
+  <!ENTITY LGPL SYSTEM "LGPL.xml"> 
+  <!ENTITY manrevision "0.4"> 
+  <!ENTITY date "May 2003"> 
+]>
+
+<article id="xfce4-user-guide" lang="en">
+
+<!-- Header -->
+<articleinfo>
+
+<title>
+  The XFce 4 Desktop Environment
+</title>
+
+<subtitle>
+  <inlinegraphic fileref="images/link_xfce.jpg"/>
+  <emphasis>... and mice fly ...</emphasis>
+</subtitle>
+
+  <copyright>
+    <year>2003</year> 
+    <holder>Jasper Huijsmans</holder>
+  </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year> <holder>ME-THE-TRANSLATOR (Latin
+   translation)</holder>
+  </copyright>
+
+ -->
+
+<!-- I don't know about this
+  <legalnotice id="legalnotice">
+    <para>
+      This document is provided under the terms of the GNU GPL, version
+      2 or (at your option) any later version.
+    </para>
+  </legalnotice>
+-->
+  
+<authorgroup>
+
+<author>
+  <firstname>Jasper</firstname>
+  <surname>Huijsmans</surname>
+ 
+  <affiliation>
+    <address><email>huysmans@users.sourceforge.net</email></address>
+  </affiliation>
+</author>
+  
+</authorgroup>
+
+<revhistory>
+  <revision>
+    <revnumber>0.4</revnumber>
+    <date>May 2003</date>
+    <authorinitials>jbh</authorinitials>
+  </revision>
+<!--
+  <revision>
+    <revnumber>0.1</revnumber>
+    <date>2001-07-06</date>
+    <authorinitials>jbh</authorinitials>
+  </revision>
+-->
+</revhistory>
+
+</articleinfo>
+
+<!-- 
+
+  Outline of the XFce 4 User Guide
+  ================================
+
+  Preface
+  ~~~~~~~
+  This document gives an overview of the XFce 4 Desktop Environment and
+  explains how to perform several common tasks.
+
+  The latest version of this document can always be found at this location:
+  http://www.xfce.org/docs/xfce4-user-guide/
+
+
+  Introduction
+  ~~~~~~~~~~~~
+  - General info
+  - History
+  - Resources
+
+  Installation
+  ~~~~~~~~~~~~
+  - binary packages
+  - sources
+  - CVS
+
+  Using XFce 4
+  ~~~~~~~~~~~~
+  - Starting: startxfce4, customizing
+  - Default desktop: components
+  - How to: 
+	* start programs (panel and root menu)
+	* manage windows and workspaces (wm and taskbar)
+	* use the settings manager
+  
+  Other Documents
+  ~~~~~~~~~~~~~~~
+  - all module specific docs
+
+  Copyright and Licence
+  ~~~~~~~~~~~~~~~~~~~~~
+  - copyright
+  - BSD, GPL, LGPL
+
+-->
+
+<sect1 id="preface">
+  
+  <title>Preface</title>
+
+  <para>
+    This document gives an overview of the XFce 4 Desktop Environment and
+    explains how to perform several common tasks. It is meant to be a starting
+    point for anyone who wants to work with XFce 4 and also includes pointers
+    to other sources of information.
+  </para>
+
+  <para>
+    The latest version of this document can always be found at this location:
+    <ulink linkend="http://members.home.nl/jbhuijsmans/xfce4-user-guide/">
+      http://www.xfce.org/docs/xfce4-user-guide/</ulink>
+  </para>
+  
+</sect1>
+
+<sect1 id="xfce4-intro">
+  <title>Introduction</title>
+
+  <para>XFce is a lightweight desktop environment for unix-like operating
+    systems. XFce is all free software, released under GNU General Public 
+    License. It aims to be fast and lightweight, while still being visually 
+    appealing and easy to use. 
+  </para>
+
+  <para>XFce 4 is a complete rewrite of the previous version. It's based 
+    on the GTK+ toolkit version 2. XFce 4 has a radically different 
+    architecture from XFce 3. It embodies the traditional UNIX philosophy of 
+    modularity and re-usability. All of XFce 4's core components have been 
+    written from scratch in order to fit into the new architecture. Another 
+    priority of XFce 4 is adhereance to standards, specifically those defined 
+    at <ulink url="http://www.freedesktop.org">freedesktop.org</ulink>.
+  </para>
+
+  <para>XFce consists of a number of components that together provide the full
+    functionality of the desktop environment. They are packaged separately and
+    you can pick and choose from the available packages to create the best
+    personal working environment.
+  </para>
+
+  <sect2 id="xfce4-resources">
+    <title>Resources</title>
+
+    <para>If you are looking for specific information about XFce, chances are
+      you can obtain it from one of these resources:
+    </para>
+
+    <itemizedlist>
+      <listitem>The
+	<ulink url="http://www.xfce.org" type="http">XFce website</ulink>
+      </listitem>
+      <listitem>The XFce 
+	<ulink url="http://moongroup.com/mailman/listinfo/xfce" 
+	  type="http">mailing list</ulink>
+      </listitem>
+      <listitem>The XFce 4 development 
+	<ulink url="http://moongroup.com/mailman/listinfo/xfce4-dev" 
+	  type="http">mailing list</ulink>
+      </listitem>
+    </itemizedlist>
+
+  </sect2>
+  
+</sect1>
+
+<sect1 id="xfce4-install">
+  <title>Installing XFce4</title>
+
+  <para>The XFce 4 components are packaged separately. At the time of this
+    writing the following modules are available:
+  </para>
+
+  <variablelist>
+    
+    <varlistentry>
+      <term>libxfce4util</term>
+      <listitem><para>Library with non-graphical helper functions.</para>
+      </listitem>
+    </varlistentry>
+	  
+    <varlistentry>
+      <term>libxfcegui4</term>
+      <listitem><para>Widget library required by xfce4 and xfwm4.</para>
+      </listitem>
+    </varlistentry>
+	  
+    <varlistentry>
+      <term>libxfce4mcs</term>
+      <listitem><para>Settings management library required by xfce4 and 
+	  suposed to be used by all modules.</para>
+      </listitem>
+    </varlistentry>
+	  
+    <varlistentry>
+      <term>xfce-mcs-manager</term>
+      <listitem><para>Settings manager. Provides a control center for 
+	  settings manager plugins that are provided by other modules.</para>
+      </listitem>
+    </varlistentry>
+	  
+    <varlistentry>
+      <term>xfce-mcs-plugins</term>
+      <listitem><para>Settings manager plugins. The plugins provide settings
+	  dialogs for general items that are not part of a package, e.g. GTK 
+	  settings, mouse settings and keyboard settings.</para>
+      </listitem>
+    </varlistentry>
+	      
+    <varlistentry>
+      <term>xfwm4</term>
+      <listitem><para>The XFce 4 window mananger. Manages the placement of
+	  application windows on the screen, provides window decorations and
+	  manages workspaces or virtual desktops.</para>
+      </listitem>
+    </varlistentry>
+	      
+    <varlistentry>
+      <term>xfce4-panel</term>
+      <listitem><para>The XFce 4 panel. Provides program lauchers, a workspace
+	  switcher, a clock, subpanels and more.</para>
+      </listitem>
+    </varlistentry>
+	      
+    <varlistentry>
+      <term>xfdesktop</term>
+      <listitem><para>Desktop background manager. This program sets the 
+	  background image and provides a root window menu. The module also 
+	  provides two settings manager dialogs that allow you to change the 
+	  background and change number of workspaces.</para>
+      </listitem>
+    </varlistentry>
+	      
+    <varlistentry>
+      <term>xfce-utils</term>
+      <listitem><para>Essential utilities and scripts. Provides a taskbar, 
+	  an about dialog, a run dialog and several important scripts that are
+	  used by other packages including the panel. Also contains this user
+	  guide.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>xffm</term>
+      <listitem><para>File manager. Also allows you to browse samba network
+	  shares.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>xfprint</term>
+      <listitem><para>Print dialog. Provides a graphical frontend for printing.
+	  Includes <application>xfprint4</application> and 
+	  <application>xfprint-manager</application>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>xfce4-iconbox</term>
+      <listitem><para>An icon box that can be used as an alternative for the
+	  taskbar provided in the xfce-utils package.</para>
+      </listitem>
+    </varlistentry>
+	      
+    <varlistentry>
+      <term>gtk-xfce-engine-2</term>
+      <listitem><para>Theme engine for GTK2. Not required for the desktop, but
+	  it's a nice theme engine so you might just as well give it a try.
+	</para>
+      </listitem>
+    </varlistentry>
+	      
+  </variablelist>
+  
+  <sect2>
+    <title>Binary packages</title>
+
+    <para>Martin Loschwitz has prepared official packages for Debian unstable.
+      See his email <ulink 
+	url="http://moongroup.com/pipermail/xfce4-dev/2003-March/002417.html" 
+	type="html">here</ulink> for instructions on how to get them.
+    </para>
+
+    <para>RPM's for RedHat are available from our SourceForge repository:
+      <ulink url="http://sf.net/projects/xfce/files" 
+	type="html">http://sf.net/projects/xfce/files</ulink>.
+    </para>
+
+    <para>If you could not find binary packages for your OS, they may be 
+      available from your OS vendor or distributor, or you can install XFce 4
+      from source.
+    </para>
+   
+  </sect2>
+
+  <sect2>
+    <title>Building from source</title>
+
+    <para>Source tarballs are available from our SourceForge repository:
+      <ulink url="http://sf.net/projects/xfce/files" 
+	type="html">http://sf.net/projects/xfce/files</ulink>.
+    </para>
+
+    <para>Building the packages should be a simple matter of unpacking the
+      tarballs and, from the top source directory, type:
+    </para>
+    
+    <programlisting>./configure &amp;&amp; make &amp;&amp; make install</programlisting>
+
+    <para>Building XFce 4 depends on pkg-config, GTK+ >= 2.0.6 (also dev 
+      packages), libxml2 and, for xffm, on libdbh, which is available from
+      <ulink url="http://sf.net/projects/libdbh" 
+	type="html">SourceForge</ulink>.
+    </para>
+
+    <para>If you install into a different prefix from pkg-config, you have to
+      set the PKG_CONFIG_PATH variable to include the path to the *.pc files
+      installed by the XFce 4 libraries, which is ${prefix}/lib/pkgconfig. For
+      example:
+    </para>
+
+<programlisting>export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig</programlisting>
+    
+  </sect2>
+
+  <sect2>
+    <title>Using CVS</title>
+
+    <para>Look <ulink url="http://sourceforge.net/cvs/?group_id=19869"
+	type="html">here</ulink> for information on how to obtain the latest
+      development updates from CVS. You can also use the WebCVS link to browse 
+      the CVS tree.
+    </para>
+
+  </sect2>
+  
+</sect1>
+
+<sect1 id="xfce4-use">
+  <title>Using XFce4</title>
+
+  <sect2>
+    <title>Gettings started</title>
+
+    <para>Use <application>startxfce4</application> to start an XFce session; 
+      this includes the panel, the window manager and the desktop background 
+      manager. All programs, or symbolic links to programs, in 
+      <filename>~/Desktop/Autostart/</filename> will be run by 
+      <application>startxfce4</application> on startup.
+    </para>
+
+    <para>
+      To customize the behaviour of <application>startxfce4</application>, 
+      copy <filename>${sysconfdir}/xfce4/xinitrc</filename> to your personal 
+      <filename>~/.xfce4/</filename> directory and edit that file. If you 
+      install from source, <filename>${sysconfdir}</filename> defaults to 
+      <filename>/usr/local/etc</filename>; for binary packages it is often 
+      set to <filename>/etc</filename>. 
+    </para>
+
+    <!--
+    <para>Of course, you can also make your own startup file 
+      (<filename>~/.xinitrc</filename> or <filename>~/.xsession</filename>
+      if you use a graphical login manager). For example this file could look
+      like this:
+    </para>
+
+<programlisting># window manager (go to background after initialization)
+xfwm4 - -daemon
+
+# taskbar 
+xftaskbar4 &amp;
+
+# background, menu and other desktop settings 
+xfdesktop &amp;
+
+# finally, run the panel You can exit your session by choosing exit 
+# from the panel 
+exec xfce4-panel
+</programlisting>
+-->
+  </sect2>
+
+  <sect2>
+    <title>The Default Desktop</title>
+
+    <figure id="default-session-fig">
+      <title>Typical XFce session</title> 
+      <screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="images/default-session.png" format="PNG"/>
+	  </imageobject> 
+	  <!-- 
+	  <imageobject>
+	    <imagedata fileref="images/default-session.eps" format="EPS"/>
+	  </imageobject> 
+	  --> 
+	  <textobject>
+	    <phrase>Shows typical XFce session. Contains the panel, the file
+	      manager, and several settings dialogs open.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Explanation of the important desktop components</para>
+
+  </sect2>
+
+  <sect2>
+    <title>Common Tasks</title>
+
+    <para>Running programs</para>
+
+    <para>Managing windows and worlspaces</para>
+
+    <para>Using the settings manager</para>
+
+  </sect2>
+  
+</sect1>
+
+&copyright;
+
+</article>
+
+

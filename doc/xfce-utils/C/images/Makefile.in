@@ -20,7 +20,7 @@ VPATH = @srcdir@
 pkgdatadir = $(datadir)/@PACKAGE@
 pkglibdir = $(libdir)/@PACKAGE@
 pkgincludedir = $(includedir)/@PACKAGE@
-top_builddir = ..
+top_builddir = ../../../..
 
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = @INSTALL@
@@ -159,39 +159,23 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-scripts = \
-	 xfterm4 \
-	 xflock4 \
-	 xfmountdev4
+imagesdir = $(datadir)/xfce4/doc/C/images
+
+images_DATA = \
+	about-dialog.png						\
+	run-dialog.png
 
 
-bin_SCRIPTS = \
-	     $(scripts) \
-	     startxfce4 \
-	     xfhelp4
+EXTRA_DIST = \
+	$(images_DATA)
 
-
-# cannot be set from configure, because ${prefix} is not expanded
-edit = sed \
-        -e 's,@datadir\@,$(datadir),g' \
-        -e 's,@sysconfdir\@,$(sysconfdir),g'
-
-
-conffilesdir = @sysconfdir@/xfce4
-conffiles_DATA = \
-	xinitrc
-
-
-EXTRA_DIST = $(scripts) $(conffiles_DATA) startxfce4.in xfhelp4.in
-subdir = scripts
+subdir = doc/xfce-utils/C/images
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-SCRIPTS = $(bin_SCRIPTS)
-
 DIST_SOURCES =
-DATA = $(conffiles_DATA)
+DATA = $(images_DATA)
 
 DIST_COMMON = Makefile.am Makefile.in
 all: all-am
@@ -199,29 +183,9 @@ all: all-am
 .SUFFIXES:
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configure.ac $(ACLOCAL_M4)
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign  scripts/Makefile
+	  $(AUTOMAKE) --foreign  doc/xfce-utils/C/images/Makefile
 Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)
-binSCRIPT_INSTALL = $(INSTALL_SCRIPT)
-install-binSCRIPTS: $(bin_SCRIPTS)
-	@$(NORMAL_INSTALL)
-	$(mkinstalldirs) $(DESTDIR)$(bindir)
-	@list='$(bin_SCRIPTS)'; for p in $$list; do \
-	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
-	  if test -f $$d$$p; then \
-	    f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
-	    echo " $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f"; \
-	    $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f; \
-	  else :; fi; \
-	done
-
-uninstall-binSCRIPTS:
-	@$(NORMAL_UNINSTALL)
-	@list='$(bin_SCRIPTS)'; for p in $$list; do \
-	  f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
-	  echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
-	  rm -f $(DESTDIR)$(bindir)/$$f; \
-	done
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -232,23 +196,23 @@ clean-libtool:
 distclean-libtool:
 	-rm -f libtool
 uninstall-info-am:
-conffilesDATA_INSTALL = $(INSTALL_DATA)
-install-conffilesDATA: $(conffiles_DATA)
+imagesDATA_INSTALL = $(INSTALL_DATA)
+install-imagesDATA: $(images_DATA)
 	@$(NORMAL_INSTALL)
-	$(mkinstalldirs) $(DESTDIR)$(conffilesdir)
-	@list='$(conffiles_DATA)'; for p in $$list; do \
+	$(mkinstalldirs) $(DESTDIR)$(imagesdir)
+	@list='$(images_DATA)'; for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  f="`echo $$p | sed -e 's|^.*/||'`"; \
-	  echo " $(conffilesDATA_INSTALL) $$d$$p $(DESTDIR)$(conffilesdir)/$$f"; \
-	  $(conffilesDATA_INSTALL) $$d$$p $(DESTDIR)$(conffilesdir)/$$f; \
+	  echo " $(imagesDATA_INSTALL) $$d$$p $(DESTDIR)$(imagesdir)/$$f"; \
+	  $(imagesDATA_INSTALL) $$d$$p $(DESTDIR)$(imagesdir)/$$f; \
 	done
 
-uninstall-conffilesDATA:
+uninstall-imagesDATA:
 	@$(NORMAL_UNINSTALL)
-	@list='$(conffiles_DATA)'; for p in $$list; do \
+	@list='$(images_DATA)'; for p in $$list; do \
 	  f="`echo $$p | sed -e 's|^.*/||'`"; \
-	  echo " rm -f $(DESTDIR)$(conffilesdir)/$$f"; \
-	  rm -f $(DESTDIR)$(conffilesdir)/$$f; \
+	  echo " rm -f $(DESTDIR)$(imagesdir)/$$f"; \
+	  rm -f $(DESTDIR)$(imagesdir)/$$f; \
 	done
 tags: TAGS
 TAGS:
@@ -258,7 +222,7 @@ CTAGS:
 
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 
-top_distdir = ..
+top_distdir = ../../../..
 distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
 
 distdir: $(DISTFILES)
@@ -290,10 +254,10 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(SCRIPTS) $(DATA)
+all-am: Makefile $(DATA)
 
 installdirs:
-	$(mkinstalldirs) $(DESTDIR)$(bindir) $(DESTDIR)$(conffilesdir)
+	$(mkinstalldirs) $(DESTDIR)$(imagesdir)
 
 install: install-am
 install-exec: install-exec-am
@@ -325,8 +289,7 @@ clean-am: clean-generic clean-libtool mostlyclean-am
 
 distclean: distclean-am
 
-distclean-am: clean-am distclean-generic distclean-libtool \
-	distclean-local
+distclean-am: clean-am distclean-generic distclean-libtool
 
 dvi: dvi-am
 
@@ -336,9 +299,9 @@ info: info-am
 
 info-am:
 
-install-data-am: install-conffilesDATA
+install-data-am: install-imagesDATA
 
-install-exec-am: install-binSCRIPTS
+install-exec-am:
 
 install-info: install-info-am
 
@@ -362,33 +325,18 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-binSCRIPTS uninstall-conffilesDATA \
-	uninstall-info-am
+uninstall-am: uninstall-imagesDATA uninstall-info-am
 
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
-	distclean distclean-generic distclean-libtool distclean-local \
-	distdir dvi dvi-am info info-am install install-am \
-	install-binSCRIPTS install-conffilesDATA install-data \
-	install-data-am install-exec install-exec-am install-info \
-	install-info-am install-man install-strip installcheck \
-	installcheck-am installdirs maintainer-clean \
+	distclean distclean-generic distclean-libtool distdir dvi \
+	dvi-am info info-am install install-am install-data \
+	install-data-am install-exec install-exec-am install-imagesDATA \
+	install-info install-info-am install-man install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-generic \
 	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
-	uninstall-binSCRIPTS uninstall-conffilesDATA uninstall-info-am
+	uninstall-imagesDATA uninstall-info-am
 
-
-startxfce4: Makefile $(srcdir)/startxfce4.in
-	rm -f startxfce4 startxfce4.tmp
-	$(edit) $(srcdir)/startxfce4.in >startxfce4.tmp
-	mv startxfce4.tmp startxfce4
-
-xfhelp4: Makefile $(srcdir)/xfhelp4.in
-	rm -f xfhelp4 xfhelp4.tmp
-	$(edit) $(srcdir)/xfhelp4.in >xfhelp4.tmp
-	mv xfhelp4.tmp xfhelp4
-
-distclean-local:
-	rm -f xfhelp4 startxfce4
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:

@@ -3,6 +3,7 @@
 #  gxfce
 #
 #  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
+#  Copyright (C) 2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -24,7 +25,7 @@ then
   BROWSER=mozilla
 fi
 
-HELP_DIR="@datadir@/xfce4/doc"
+HELP_DIR="@datadir@/xfce4/doc/"
 
 if [ ! "x$1" = "x" ]; then
     HELP_FILE="$1"
@@ -32,14 +33,14 @@ else
     HELP_FILE="index.html"
 fi
 
-if [ -r "$HELP_DIR/html.$LANG/$HELP_FILE" ]
+if [ -r "$HELP_DIR/$LANG/$HELP_FILE" ]
 then
-  URL="$HELP_DIR/html.$LANG/$HELP_FILE"
-elif [ -r "$HELP_DIR/html/$HELP_FILE" ]
+  URL="$HELP_DIR/$LANG/$HELP_FILE"
+elif [ -r "$HELP_DIR/C/$HELP_FILE" ]
 then
-  URL="$HELP_DIR/html/$HELP_FILE"
+  URL="$HELP_DIR/C/$HELP_FILE"
 else 
-  URL="$HELP_DIR/html/index.html"
+  URL="$HELP_DIR/C/index.html"
 fi
 
 case $BROWSER in

@@ -1573,7 +1573,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE=xfce-utils
- VERSION=0.2.3
+ VERSION=3.90
 
 
 cat >>confdefs.h <<_ACEOF
@@ -4677,7 +4677,7 @@ irix5* | irix6*)
 # This must be Linux ELF.
 linux-gnu*)
   case $host_cpu in
-  alpha* | hppa* | i*86 | powerpc* | sparc* | ia64* )
+  alpha* | hppa* | i*86 | mips | mipsel | powerpc* | sparc* | ia64* )
     lt_cv_deplibs_check_method=pass_all ;;
   *)
     # glibc up to 2.1.1 does not perform some relocations on ARM
@@ -8574,7 +8574,7 @@ echo "${ECHO_T}yes" >&6
   fi
 
 
-                                                                                                                                                                ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/images/Makefile doc/html/Makefile doc/xml/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.html xfce4-about/INFO.html.de"
+                                                                                                                                                                                                                  ac_config_files="$ac_config_files xfce-utils.spec Makefile po/Makefile.in doc/Makefile doc/index/Makefile doc/index/C/Makefile doc/xfce-utils/Makefile doc/xfce-utils/C/Makefile doc/xfce-utils/C/images/Makefile doc/xfce4-user-guide/Makefile doc/xfce4-user-guide/C/Makefile doc/xfce4-user-guide/C/images/Makefile xfrun/Makefile xftaskbar/Makefile xftaskbar/plugin/Makefile scripts/Makefile gdm/Makefile xfce4-about/Makefile xfce4-about/INFO xfce4-about/INFO.html xfce4-about/INFO.html.de"
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -9142,9 +9142,14 @@ do
   "Makefile" ) CONFIG_FILES="$CONFIG_FILES Makefile" ;;
   "po/Makefile.in" ) CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
   "doc/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
-  "doc/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/images/Makefile" ;;
-  "doc/html/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/html/Makefile" ;;
-  "doc/xml/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xml/Makefile" ;;
+  "doc/index/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/index/Makefile" ;;
+  "doc/index/C/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/index/C/Makefile" ;;
+  "doc/xfce-utils/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce-utils/Makefile" ;;
+  "doc/xfce-utils/C/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce-utils/C/Makefile" ;;
+  "doc/xfce-utils/C/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce-utils/C/images/Makefile" ;;
+  "doc/xfce4-user-guide/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/Makefile" ;;
+  "doc/xfce4-user-guide/C/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/C/Makefile" ;;
+  "doc/xfce4-user-guide/C/images/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/xfce4-user-guide/C/images/Makefile" ;;
   "xfrun/Makefile" ) CONFIG_FILES="$CONFIG_FILES xfrun/Makefile" ;;
   "xftaskbar/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/Makefile" ;;
   "xftaskbar/plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES xftaskbar/plugin/Makefile" ;;

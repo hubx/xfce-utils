@@ -9,7 +9,7 @@ AC_INIT([xfrun/xfrun.c])
 
 AM_CONFIG_HEADER([config.h])
 
-AM_INIT_AUTOMAKE([xfce-utils], [0.2.3])
+AM_INIT_AUTOMAKE([xfce-utils], [3.90])
 
 AM_MAINTAINER_MODE
 
@@ -74,9 +74,14 @@ xfce-utils.spec
 Makefile
 po/Makefile.in
 doc/Makefile
-doc/images/Makefile
-doc/html/Makefile
-doc/xml/Makefile
+doc/index/Makefile
+doc/index/C/Makefile
+doc/xfce-utils/Makefile
+doc/xfce-utils/C/Makefile
+doc/xfce-utils/C/images/Makefile
+doc/xfce4-user-guide/Makefile
+doc/xfce4-user-guide/C/Makefile
+doc/xfce4-user-guide/C/images/Makefile
 xfrun/Makefile
 xftaskbar/Makefile
 xftaskbar/plugin/Makefile
