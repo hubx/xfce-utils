@@ -46,8 +46,8 @@
 
 #include "xfce-logo-icon.h"
 
-#define SEARCHPATH	(DATADIR G_DIR_SEPARATOR_S "%F.%L:"\
-                         DATADIR G_DIR_SEPARATOR_S "%F.%l:"\
+#define SEARCHPATH	(DATADIR G_DIR_SEPARATOR_S "%F.%L:"	\
+                         DATADIR G_DIR_SEPARATOR_S "%F.%l:"	\
                          DATADIR G_DIR_SEPARATOR_S "%F")
 
 #define XFCE_COPYRIGHT	"COPYING"
@@ -62,144 +62,154 @@
 static GtkWidget *info;
 
 static void
-info_help_cb(GtkWidget *w, gpointer data)
+info_help_cb (GtkWidget * w, gpointer data)
 {
-	exec_command("xfhelp4");
+    exec_command ("xfhelp4");
 }
 
 #ifdef HAVE_LIBGTKHTML
 static void
-link_clicked(HtmlDocument *htmldoc, const gchar *url, gpointer data)
+link_clicked (HtmlDocument * htmldoc, const gchar * url, gpointer data)
 {
-	const gchar *browser;
-	gchar command[2048];
+    const gchar *browser;
+    gchar command[2048];
 
-	/*
-	 * launch the browser
-	 *
-	 * XXX - We should probably have something like xfbrowser4, or even
-	 * better: Have the browser configurable through the settings
-	 * manager.
-	 */
-	if ((browser = g_getenv("BROWSER")) != NULL)
-		g_snprintf(command, sizeof(command), "%s \"%s\"", browser, url);
+    /*
+     * launch the browser
+     *
+     * XXX - We should probably have something like xfbrowser4, or even
+     * better: Have the browser configurable through the settings
+     * manager.
+     */
+    if ((browser = g_getenv ("BROWSER")) != NULL)
+	g_snprintf (command, sizeof (command), "%s \"%s\"", browser, url);
+    else
+	g_snprintf (command, sizeof (command),
+		    "ns-remote -remote \"openURL(%s)\"", url);
+
+    exec_command (command);
+}
+#endif
+
+static void
+add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename,
+	  gboolean hscrolling)
+{
+#ifdef HAVE_LIBGTKHTML
+    HtmlDocument *htmldoc;
+    gboolean usehtml;
+#endif
+    gchar buffer[PATH_MAX + 1];
+    GtkTextBuffer *textbuffer;
+    GtkWidget *textview;
+    GtkWidget *label;
+    GtkWidget *view;
+    GtkWidget *sw;
+    GError *err;
+    gchar *path;
+    gchar *hfilename;
+    gchar *buf;
+    int n;
+
+    err = NULL;
+
+    label = gtk_label_new (name);
+    gtk_widget_show (label);
+
+#ifdef HAVE_LIBGTKHTML
+    /* try to find a html file first */
+    hfilename =
+	g_strconcat (DATADIR, G_DIR_SEPARATOR_S, filename, ".html", NULL);
+    path = xfce_get_file_localized (hfilename);
+    /* xfce_get_path_localized(buffer, sizeof(buffer), SEARCHPATH,
+       hfilename, G_FILE_TEST_IS_REGULAR); */
+    g_free (hfilename);
+
+    if (path != NULL)
+    {
+	usehtml = TRUE;
+    }
+    else
+    {
+	/* fallback to plain text files */
+	usehtml = FALSE;
+#endif
+
+	hfilename = g_strconcat (DATADIR, G_DIR_SEPARATOR_S, filename, NULL);
+	path = xfce_get_file_localized (hfilename);
+	g_free (hfilename);
+	/* xfce_get_path_localized(buffer, sizeof(buffer),
+	   SEARCHPATH, filename, G_FILE_TEST_IS_REGULAR); */
+#ifdef HAVE_LIBGTKHTML
+    }
+#endif
+
+    g_file_get_contents (path, &buf, &n, &err);
+    g_free (path);
+
+    if (err != NULL)
+    {
+	xfce_err ("%s", err->message);
+	g_error_free (err);
+    }
+    else
+    {
+	view = gtk_frame_new (NULL);
+	gtk_container_set_border_width (GTK_CONTAINER (view), BORDER);
+	gtk_frame_set_shadow_type (GTK_FRAME (view), GTK_SHADOW_IN);
+	gtk_widget_show (view);
+
+	sw = gtk_scrolled_window_new (NULL, NULL);
+	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
+					hscrolling ? GTK_POLICY_AUTOMATIC :
+					GTK_POLICY_NEVER,
+					GTK_POLICY_AUTOMATIC);
+	gtk_widget_show (sw);
+	gtk_container_add (GTK_CONTAINER (view), sw);
+
+#ifdef HAVE_LIBGTKHTML
+	if (usehtml)
+	{
+	    htmldoc = html_document_new ();
+	    html_document_open_stream (htmldoc, "text/html");
+	    html_document_write_stream (htmldoc, buf, n);
+	    html_document_close_stream (htmldoc);
+
+	    textview = html_view_new ();
+	    html_view_set_document (HTML_VIEW (textview), htmldoc);
+
+	    /* connect callbacks */
+	    g_signal_connect (G_OBJECT (htmldoc), "link_clicked",
+			      G_CALLBACK (link_clicked), NULL);
+
+	    /* resize window */
+	    gtk_window_set_default_size (GTK_WINDOW (info), 615, 530);
+	}
 	else
-		g_snprintf(command, sizeof(command),
-			   "ns-remote -remote \"openURL(%s)\"", url);
-
-	exec_command(command);
-}
+	{
 #endif
+	    textbuffer = gtk_text_buffer_new (NULL);
+	    gtk_text_buffer_set_text (textbuffer, buf, n);
 
-static void
-add_page(GtkNotebook *notebook, const gchar *name, const gchar *filename,
-	 gboolean hscrolling)
-{
-#ifdef HAVE_LIBGTKHTML
-	HtmlDocument *htmldoc;
-	gchar *hfilename;
-	gboolean usehtml;
-#endif
-	gchar buffer[PATH_MAX + 1];
-	GtkTextBuffer *textbuffer;
-	GtkWidget *textview;
-	GtkWidget *label;
-	GtkWidget *view;
-	GtkWidget *sw;
-	GError *err;
-	gchar *path;
-	gchar *buf;
-	int n;
-
-	err = NULL;
-
-	label = gtk_label_new(name);
-	gtk_widget_show(label);
-
-#ifdef HAVE_LIBGTKHTML
-	/* try to find a html file first */
-	hfilename = g_strconcat(filename, ".html", NULL);
-	path = xfce_get_path_localized(buffer, sizeof(buffer), SEARCHPATH,
-			hfilename, G_FILE_TEST_IS_REGULAR);
-	g_free(hfilename);
-
-	if (path != NULL) {
-		usehtml = TRUE;
-	}
-	else {
-		/* fallback to plain text files */
-		usehtml = FALSE;
-#endif
-		path = xfce_get_path_localized(buffer, sizeof(buffer),
-				SEARCHPATH, filename, G_FILE_TEST_IS_REGULAR);
+	    textview = gtk_text_view_new_with_buffer (textbuffer);
+	    gtk_text_view_set_editable (GTK_TEXT_VIEW (textview), FALSE);
+	    gtk_text_view_set_left_margin (GTK_TEXT_VIEW (textview), BORDER);
+	    gtk_text_view_set_right_margin (GTK_TEXT_VIEW (textview), BORDER);
 #ifdef HAVE_LIBGTKHTML
 	}
 #endif
 
-	g_file_get_contents(path, &buf, &n, &err);
+	gtk_widget_show (textview);
+	gtk_container_add (GTK_CONTAINER (sw), textview);
 
-	if (err != NULL) {
-		xfce_err("%s", err->message);
-		g_error_free(err);
-	}
-	else {
-		view = gtk_frame_new(NULL);
-		gtk_container_set_border_width(GTK_CONTAINER(view), BORDER);
-		gtk_frame_set_shadow_type(GTK_FRAME(view), GTK_SHADOW_IN);
-		gtk_widget_show(view);
+	gtk_notebook_append_page (notebook, view, label);
 
-		sw = gtk_scrolled_window_new(NULL, NULL);
-		gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(sw), 
-			hscrolling ? GTK_POLICY_AUTOMATIC : GTK_POLICY_NEVER,
-			GTK_POLICY_AUTOMATIC);
-		gtk_widget_show(sw);
-		gtk_container_add(GTK_CONTAINER(view), sw);
-
-#ifdef HAVE_LIBGTKHTML
-		if (usehtml) {
-			htmldoc = html_document_new();
-			html_document_open_stream(htmldoc, "text/html");
-			html_document_write_stream(htmldoc, buf, n);
-			html_document_close_stream(htmldoc);
-
-			textview = html_view_new();
-			html_view_set_document(HTML_VIEW(textview), htmldoc);
-
-			/* connect callbacks */
-			g_signal_connect(G_OBJECT(htmldoc), "link_clicked",
-					G_CALLBACK(link_clicked), NULL);
-
-			/* resize window */
-			gtk_window_set_default_size(GTK_WINDOW(info),
-					615, 530);
-		}
-		else {
-#endif
-			textbuffer = gtk_text_buffer_new(NULL);
-			gtk_text_buffer_set_text(textbuffer, buf, n);
-
-			textview = gtk_text_view_new_with_buffer(textbuffer);
-			gtk_text_view_set_editable(GTK_TEXT_VIEW(textview),
-					FALSE);
-			gtk_text_view_set_left_margin(GTK_TEXT_VIEW(textview),
-					BORDER);
-			gtk_text_view_set_right_margin(GTK_TEXT_VIEW(
-						textview), BORDER);
-#ifdef HAVE_LIBGTKHTML
-		}
-#endif
-
-		gtk_widget_show(textview);
-		gtk_container_add(GTK_CONTAINER(sw), textview);
-
-		gtk_notebook_append_page(notebook, view, label);
-
-		g_free(buf);
-	}
+	g_free (buf);
+    }
 }
 
 int
-main(int argc, char **argv)
+main (int argc, char **argv)
 {
     GtkWidget *header;
     GtkWidget *vbox, *vbox2;
@@ -210,94 +220,84 @@ main(int argc, char **argv)
     GdkPixbuf *logo_pb;
     char *text;
 
-#if 0
-#ifdef ENABLE_NLS
-    /* This is required for UTF-8 at least - Please don't remove it */
-    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-#ifdef HAVE_BIND_TEXTDOMAIN_CODESET
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-#endif
-    textdomain (GETTEXT_PACKAGE);
-#endif
-#else
-    xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
-#endif
+    xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
-    gtk_init(&argc, &argv);
+    gtk_init (&argc, &argv);
 
     /* XXX - We could use a GtkDialog instead here, since this is
      * really a simple dialog.
      */
-    info = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(info), _("About XFce 4"));
-    gtk_window_stick(GTK_WINDOW(info));
+    info = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title (GTK_WINDOW (info), _("About XFce 4"));
+    gtk_window_stick (GTK_WINDOW (info));
 
-    logo_pb = inline_icon_at_size(xfce_logo_data, 48, 48);
-    gtk_window_set_icon(GTK_WINDOW(info), logo_pb);
-    
-    vbox2 = gtk_vbox_new(FALSE, 0);
-    gtk_widget_show(vbox2);
-    gtk_container_add(GTK_CONTAINER(info), vbox2);
+    logo_pb = inline_icon_at_size (xfce_logo_data, 48, 48);
+    gtk_window_set_icon (GTK_WINDOW (info), logo_pb);
+
+    vbox2 = gtk_vbox_new (FALSE, 0);
+    gtk_widget_show (vbox2);
+    gtk_container_add (GTK_CONTAINER (info), vbox2);
 
     /* header with logo */
-    text = g_strdup_printf(
-		    "%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
-		    _("XFce Desktop Environment"), 
-		    _("Copyright 2002-2003 by Olivier Fourdan"));
-    header = create_header(logo_pb, text);
-    gtk_widget_show(header);
-    gtk_box_pack_start(GTK_BOX(vbox2), header, FALSE, FALSE, 0);
-    g_free(text);
-    g_object_unref(logo_pb);
+    text =
+	g_strdup_printf
+	("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
+	 _("XFce Desktop Environment"),
+	 _("Copyright 2002-2003 by Olivier Fourdan"));
+    header = create_header (logo_pb, text);
+    gtk_widget_show (header);
+    gtk_box_pack_start (GTK_BOX (vbox2), header, FALSE, FALSE, 0);
+    g_free (text);
+    g_object_unref (logo_pb);
 
-    vbox = gtk_vbox_new(FALSE, BORDER);
-    gtk_container_set_border_width(GTK_CONTAINER(vbox), BORDER);
-    gtk_widget_show(vbox);
-    gtk_box_pack_start(GTK_BOX(vbox2), vbox, TRUE, TRUE, 0);
+    vbox = gtk_vbox_new (FALSE, BORDER);
+    gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER);
+    gtk_widget_show (vbox);
+    gtk_box_pack_start (GTK_BOX (vbox2), vbox, TRUE, TRUE, 0);
 
     /* the notebook */
-    notebook = gtk_notebook_new();
-    gtk_widget_show(notebook);
-    gtk_widget_set_size_request(notebook, -1, 300);
-    gtk_box_pack_start(GTK_BOX(vbox), notebook, TRUE, TRUE, 0);
+    notebook = gtk_notebook_new ();
+    gtk_widget_show (notebook);
+    gtk_widget_set_size_request (notebook, -1, 300);
+    gtk_box_pack_start (GTK_BOX (vbox), notebook, TRUE, TRUE, 0);
 
     /* add pages */
-    add_page(GTK_NOTEBOOK(notebook), _("Info"), XFCE_INFO, FALSE);
-    add_page(GTK_NOTEBOOK(notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-    add_page(GTK_NOTEBOOK(notebook), _("Copyright"), XFCE_COPYRIGHT, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("BSDL"), XFCE_BSDL, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("LGPL"), XFCE_LGPL, TRUE);
-    add_page(GTK_NOTEBOOK(notebook), _("GPL"), XFCE_GPL, TRUE);
+    add_page (GTK_NOTEBOOK (notebook), _("Info"), XFCE_INFO, FALSE);
+    add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+    add_page (GTK_NOTEBOOK (notebook), _("Copyright"), XFCE_COPYRIGHT, TRUE);
+    add_page (GTK_NOTEBOOK (notebook), _("BSDL"), XFCE_BSDL, TRUE);
+    add_page (GTK_NOTEBOOK (notebook), _("LGPL"), XFCE_LGPL, TRUE);
+    add_page (GTK_NOTEBOOK (notebook), _("GPL"), XFCE_GPL, TRUE);
 
     /* buttons */
-    buttonbox = gtk_hbutton_box_new();
-    gtk_widget_show(buttonbox);
-    gtk_box_pack_start(GTK_BOX(vbox), buttonbox, FALSE, FALSE, BORDER);
+    buttonbox = gtk_hbutton_box_new ();
+    gtk_widget_show (buttonbox);
+    gtk_box_pack_start (GTK_BOX (vbox), buttonbox, FALSE, FALSE, BORDER);
 
-    info_ok_button = gtk_button_new_from_stock(GTK_STOCK_CLOSE);
-    gtk_widget_show(info_ok_button);
-    gtk_box_pack_start(GTK_BOX(buttonbox), info_ok_button, FALSE, FALSE, 0);
+    info_ok_button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
+    gtk_widget_show (info_ok_button);
+    gtk_box_pack_start (GTK_BOX (buttonbox), info_ok_button, FALSE, FALSE, 0);
 
-    info_help_button = gtk_button_new_from_stock(GTK_STOCK_HELP);
-    gtk_widget_show(info_help_button);
-    gtk_box_pack_start(GTK_BOX(buttonbox), info_help_button, FALSE, FALSE, 0);
+    info_help_button = gtk_button_new_from_stock (GTK_STOCK_HELP);
+    gtk_widget_show (info_help_button);
+    gtk_box_pack_start (GTK_BOX (buttonbox), info_help_button, FALSE, FALSE,
+			0);
 
-    gtk_button_box_set_child_secondary(GTK_BUTTON_BOX(buttonbox),
-                                       info_ok_button, TRUE);
+    gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (buttonbox),
+					info_ok_button, TRUE);
 
-    g_signal_connect(info, "delete-event", 
-	    	     G_CALLBACK(gtk_main_quit), NULL);
-    g_signal_connect(info, "destroy-event", 
-	    	     G_CALLBACK(gtk_main_quit), NULL);
-    g_signal_connect(info_ok_button, "clicked", 
-	    	     G_CALLBACK(gtk_main_quit), NULL);
-    g_signal_connect(info_help_button, "clicked", 
-	    	     G_CALLBACK(info_help_cb), NULL);
+    g_signal_connect (info, "delete-event", G_CALLBACK (gtk_main_quit), NULL);
+    g_signal_connect (info, "destroy-event",
+		      G_CALLBACK (gtk_main_quit), NULL);
+    g_signal_connect (info_ok_button, "clicked",
+		      G_CALLBACK (gtk_main_quit), NULL);
+    g_signal_connect (info_help_button, "clicked",
+		      G_CALLBACK (info_help_cb), NULL);
 
-    gtk_window_set_position(GTK_WINDOW(info), GTK_WIN_POS_CENTER);
-    gtk_widget_show(info);
+    gtk_window_set_position (GTK_WINDOW (info), GTK_WIN_POS_CENTER);
+    gtk_widget_show (info);
 
-    gtk_main();
+    gtk_main ();
 
-    return(EXIT_SUCCESS);
+    return (EXIT_SUCCESS);
 }
