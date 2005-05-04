@@ -1,0 +1,1367 @@
+2005-04-12 14:00  jasper
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/autogen.sh, xfce-utils/trunk/compile,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.h.in,
+	  xfce-utils/trunk/config.sub, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/depcomp, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/index/fr/Makefile.in,
+	  xfce-utils/trunk/doc/index/it/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/fr/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/fr/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/it/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/it/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/fr/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/fr/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/it/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/it/images/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in,
+	  xfce-utils/trunk/icons/48x48/Makefile.in,
+	  xfce-utils/trunk/icons/Makefile.in,
+	  xfce-utils/trunk/icons/scalable/Makefile.in,
+	  xfce-utils/trunk/install-sh, xfce-utils/trunk/ltmain.sh,
+	  xfce-utils/trunk/missing, xfce-utils/trunk/mkinstalldirs,
+	  xfce-utils/trunk/po/Makefile.in.in, xfce-utils/trunk/po/ar.gmo,
+	  xfce-utils/trunk/po/az.gmo, xfce-utils/trunk/po/be.gmo,
+	  xfce-utils/trunk/po/bg.gmo, xfce-utils/trunk/po/ca.gmo,
+	  xfce-utils/trunk/po/cs.gmo, xfce-utils/trunk/po/de.gmo,
+	  xfce-utils/trunk/po/en_GB.gmo, xfce-utils/trunk/po/es.gmo,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/et.gmo,
+	  xfce-utils/trunk/po/eu.gmo, xfce-utils/trunk/po/fa.gmo,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fr.gmo,
+	  xfce-utils/trunk/po/gu.gmo, xfce-utils/trunk/po/he.gmo,
+	  xfce-utils/trunk/po/hi.gmo, xfce-utils/trunk/po/hu.gmo,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/ja.gmo,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/lt.gmo,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/nl.gmo,
+	  xfce-utils/trunk/po/pa.gmo, xfce-utils/trunk/po/pl.gmo,
+	  xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_PT.gmo,
+	  xfce-utils/trunk/po/ro.gmo, xfce-utils/trunk/po/ru.gmo,
+	  xfce-utils/trunk/po/sk.gmo, xfce-utils/trunk/po/sv.gmo,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/tr.gmo,
+	  xfce-utils/trunk/po/uk.gmo, xfce-utils/trunk/po/vi.gmo,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_TW.gmo,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in: Move remaining modules to use
+	  dev tools and remove generated files
+
+2005-03-26 11:21  pollux
+
+	* xfce-utils/trunk/po/ko.po: update KO translations
+
+2005-02-21 08:39  pollux
+
+	* xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS: update JA translations
+
+2005-02-13 12:38  pollux
+
+	* xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po: update KO
+	  translations (with a big delay)
+
+2005-01-22 12:22  pollux
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/fi.gmo,
+	  xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.fi,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.fi,
+	  xfce-utils/trunk/xfce4-about/INFO.fi,
+	  xfce-utils/trunk/xfce4-about/INFO.html.fi,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: update FI translations
+
+2005-01-08 15:04  pollux
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/ru.gmo,
+	  xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/xfce4-about/INFO.html.ru,
+	  xfce-utils/trunk/xfce4-about/INFO.ru,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: update RU translations
+
+2005-01-08 10:04  jasper
+
+	* xfce-utils/trunk/Makefile.am, xfce-utils/trunk/Makefile.in,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/POTFILES.in,
+	  xfce-utils/trunk/scripts/Makefile.am,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/scripts/xfbrowser4.in,
+	  xfce-utils/trunk/scripts/xfhelp4.in, xfce-utils/trunk/xftaskbar:
+	  Big reorganization for 4.3: * move taskbar and iconbox to panel *
+	  panel config files in separate directory * add panel library *
+	  remove generated files. autogen.sh is now required to build from
+	  CVS. * add time to taskbar * use XfcePanelWindow widget for panel
+	  and taskbar (fixes bug #367 ;-) * iconbox not functional yet
+	  (needs rewrite).
+
+2005-01-06 19:24  pollux
+
+	* xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/po/uk.gmo,
+	  xfce-utils/trunk/po/uk.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.uk,
+	  xfce-utils/trunk/xfce4-about/INFO.uk,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: update UK translations
+
+2005-01-05 16:01  pollux
+
+	* xfce-utils/trunk/po/he.gmo, xfce-utils/trunk/po/he.po: update HE
+	  translations
+
+2005-01-02 12:51  olivier
+
+	* xfce-utils/trunk/ChangeLog, xfce-utils/trunk/Makefile.in,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/po/xfce-utils.pot:
+	  Update version and changelog
+
+2004-12-23 21:24  pollux
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/et.gmo,
+	  xfce-utils/trunk/po/et.po,
+	  xfce-utils/trunk/xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  update ET translations
+
+2004-12-22 20:41  benny
+
+	* xfce-utils/trunk/ChangeLog, xfce-utils/trunk/po/cs.gmo,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.am,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Update ChangeLog.
+	  Fix make distcheck.
+
+2004-12-21 09:03  kelnos
+
+	* xfce-utils/trunk/po/cs.po: add/update czech translations
+
+2004-12-19 20:49  pollux
+
+	* xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po: update KO
+	  translations
+
+2004-12-15 18:56  pollux
+
+	* xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_BR.po:
+	  update pt_BR translations
+
+2004-12-14 20:33  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ro.gmo, xfce-utils/trunk/po/ro.po: add RO
+	  translations
+
+2004-12-11 17:51  olivier
+
+	* xfce-utils/trunk/po/xfce-utils.pot: Various changes and small
+	  fixes
+
+2004-12-05 21:20  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/en_GB.gmo, xfce-utils/trunk/po/en_GB.po: add
+	  en_GB translations
+
+2004-12-05 20:50  pollux
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/ko.gmo,
+	  xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  update KO translations and add screenshots in xfprint doc
+
+2004-11-28 18:01  pollux
+
+	* xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: update TR
+	  translations
+
+2004-11-26 19:06  pollux
+
+	* xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po: update KO
+	  translations
+
+2004-11-21 21:45  olivier
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/po/xfce-utils.pot:
+	  Update version
+
+2004-10-30 14:00  pollux
+
+	* xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po: update LT
+	  translations
+
+2004-10-28 11:55  pollux
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/he.gmo,
+	  xfce-utils/trunk/po/he.po,
+	  xfce-utils/trunk/xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  update HE translations
+
+2004-10-20 22:06  pollux
+
+	* xfce-utils/trunk/po/et.gmo, xfce-utils/trunk/po/et.po: update ET
+	  translations
+
+2004-10-17 20:28  pollux
+
+	* xfce-utils/trunk/po/ar.gmo, xfce-utils/trunk/po/az.gmo,
+	  xfce-utils/trunk/po/be.gmo, xfce-utils/trunk/po/bg.gmo,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/cs.gmo,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/es.gmo,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/et.gmo,
+	  xfce-utils/trunk/po/eu.gmo, xfce-utils/trunk/po/fi.gmo,
+	  xfce-utils/trunk/po/fi.po, xfce-utils/trunk/po/fr.gmo,
+	  xfce-utils/trunk/po/gu.gmo, xfce-utils/trunk/po/he.gmo,
+	  xfce-utils/trunk/po/hi.gmo, xfce-utils/trunk/po/hu.gmo,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/ja.gmo,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/lt.gmo,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/nl.gmo,
+	  xfce-utils/trunk/po/pa.gmo, xfce-utils/trunk/po/pl.gmo,
+	  xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_PT.gmo,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/sk.gmo,
+	  xfce-utils/trunk/po/sv.gmo, xfce-utils/trunk/po/ta.gmo,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/uk.gmo,
+	  xfce-utils/trunk/po/vi.gmo, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_TW.gmo: update FI translations
+
+2004-10-11 16:30  benny
+
+	* xfce-utils/trunk/po/ar.po, xfce-utils/trunk/po/az.po,
+	  xfce-utils/trunk/po/be.po, xfce-utils/trunk/po/bg.po,
+	  xfce-utils/trunk/po/ca.po, xfce-utils/trunk/po/cs.po,
+	  xfce-utils/trunk/po/de.po, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.po, xfce-utils/trunk/po/et.po,
+	  xfce-utils/trunk/po/eu.po, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.po, xfce-utils/trunk/po/gu.po,
+	  xfce-utils/trunk/po/he.po, xfce-utils/trunk/po/hi.po,
+	  xfce-utils/trunk/po/hu.po, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.po, xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/po/lt.po, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.po, xfce-utils/trunk/po/pa.po,
+	  xfce-utils/trunk/po/pl.po, xfce-utils/trunk/po/pt_BR.po,
+	  xfce-utils/trunk/po/pt_PT.po, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/sk.po, xfce-utils/trunk/po/sv.po,
+	  xfce-utils/trunk/po/ta.po, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/uk.po, xfce-utils/trunk/po/vi.po,
+	  xfce-utils/trunk/po/zh_CN.po, xfce-utils/trunk/po/zh_TW.po:
+	  update-po for Moe.
+
+2004-10-10 11:52  pollux
+
+	* xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es_MX.gmo,
+	  xfce-utils/trunk/po/pt_PT.gmo, xfce-utils/trunk/po/pt_PT.po:
+	  update pt_PT translations
+
+2004-10-10 02:02  edscott
+
+	* xfce-utils/trunk/po/es.po, xfce-utils/trunk/po/es_MX.po: correct
+	  another spelling mistake
+
+2004-10-09 14:20  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/fa.gmo, xfce-utils/trunk/po/fa.po,
+	  xfce-utils/trunk/po/fa_IR.gmo, xfce-utils/trunk/po/fa_IR.po:
+	  update FA translations
+
+2004-10-09 13:48  pollux
+
+	* xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/pa.gmo, xfce-utils/trunk/po/pa.po: Punjabi
+	  translations update from jaswinderlinux@netscape.net
+
+2004-10-08 13:43  edscott
+
+	* xfce-utils/trunk/po/es.po, xfce-utils/trunk/po/es_MX.po:
+	  translation updates.
+
+2004-10-03 16:14  pollux
+
+	* xfce-utils/trunk/po/pa.gmo, xfce-utils/trunk/po/pa.po: Punjabi
+	  translations (PA) from jaswinderlinux@netscape.net
+
+2004-10-02 13:28  olivier
+
+	* xfce-utils/trunk/ChangeLog, xfce-utils/trunk/ltmain.sh,
+	  xfce-utils/trunk/po/xfce-utils.pot: Update all files for 4.2 beta
+	  1
+
+2004-10-01 08:25  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/pa.gmo, xfce-utils/trunk/po/pa.po: add PA
+	  translations from Supreet Sethi <supreet@linux-delhi.org>
+
+2004-09-30 15:48  pollux
+
+	* xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po: updated
+	  Italian translations from Luca Marrocco <buildup@libero.it>
+
+2004-09-29 08:22  pollux
+
+	* xfce-utils/trunk/po/zh_TW.gmo, xfce-utils/trunk/po/zh_TW.po:
+	  updated zh_TW translations from Ambrose Li <acli@ada.dhs.org>
+
+2004-09-29 07:59  pollux
+
+	* xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po:
+	  updated zh_CN translations from yongtao yang
+	  <yongtao.yang@gmail.com>
+
+2004-09-23 21:36  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/gu.gmo, xfce-utils/trunk/po/gu.po: add
+	  Gujarati translations (GU) from Ankit Patel <ankit@redhat.com>
+
+2004-09-21 11:51  jasper
+
+	* xfce-utils/trunk/po/ar.gmo, xfce-utils/trunk/po/ar.po,
+	  xfce-utils/trunk/po/az.gmo, xfce-utils/trunk/po/az.po,
+	  xfce-utils/trunk/po/be.gmo, xfce-utils/trunk/po/be.po,
+	  xfce-utils/trunk/po/bg.gmo, xfce-utils/trunk/po/bg.po,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/cs.gmo, xfce-utils/trunk/po/cs.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/et.gmo, xfce-utils/trunk/po/et.po,
+	  xfce-utils/trunk/po/eu.gmo, xfce-utils/trunk/po/eu.po,
+	  xfce-utils/trunk/po/fa_IR.gmo, xfce-utils/trunk/po/fa_IR.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/he.gmo, xfce-utils/trunk/po/he.po,
+	  xfce-utils/trunk/po/hi.gmo, xfce-utils/trunk/po/hi.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_BR.po,
+	  xfce-utils/trunk/po/pt_PT.gmo, xfce-utils/trunk/po/pt_PT.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/sk.gmo, xfce-utils/trunk/po/sk.po,
+	  xfce-utils/trunk/po/sv.gmo, xfce-utils/trunk/po/sv.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/uk.gmo, xfce-utils/trunk/po/uk.po,
+	  xfce-utils/trunk/po/vi.gmo, xfce-utils/trunk/po/vi.po,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/po/zh_TW.gmo, xfce-utils/trunk/po/zh_TW.po: Run
+	  make update-po at Moe's request.
+
+2004-09-20 22:22  olivier
+
+	* xfce-utils/trunk/ChangeLog, xfce-utils/trunk/po/xfce-utils.pot:
+	  Update all ChangeLogs
+
+2004-09-19 21:02  jasper
+
+	* xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/nl.gmo,
+	  xfce-utils/trunk/po/nl.po: nl translations fixes
+
+2004-09-19 19:50  moe
+
+	* xfce-utils/trunk/po/de.po: Fixing translations .. hopefully
+
+2004-09-18 17:21  moe
+
+	* xfce-utils/trunk/po/de.po: Eat this fuzzy!
+
+2004-09-18 16:41  pollux
+
+	* xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/eu.gmo,
+	  xfce-utils/trunk/po/eu.po: update EU translations
+
+2004-09-18 00:02  moe
+
+	* xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.de: Updating these for
+	  alpha release. Not yet finished .. but I'm just too tired to
+	  continue. Needs extensive spell checking and approvement (Note to
+	  myself: Write mail to the list!).
+
+2004-09-16 22:10  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/be.gmo, xfce-utils/trunk/po/be.po: add BE
+	  translations from Ales Nyakhaychyk <nab@mail.by>
+
+2004-09-10 20:49  pollux
+
+	* xfce-utils/trunk/po/he.gmo, xfce-utils/trunk/po/he.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.he,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: HE translations update
+	  from Yuval Tanny <tanai@int.gov.il>
+
+2004-09-09 18:51  pollux
+
+	* xfce-utils/trunk/po/vi.gmo, xfce-utils/trunk/po/vi.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.vi,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.vi,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: update VI translations
+
+2004-09-06 14:08  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/et.gmo, xfce-utils/trunk/po/et.po: ET
+	  translations from Peeter Vois <Peeter.Vois@proekspert.ee>
+
+2004-08-29 16:03  pollux
+
+	* xfce-utils/trunk/po/az.gmo, xfce-utils/trunk/po/az.po: AZ
+	  translations update from Metin Amiroff <metin@karegen.com>
+
+2004-08-28 19:20  pollux
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/sk.gmo,
+	  xfce-utils/trunk/po/sk.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.sk,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.sk,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: add Slovak translations
+	  from Juraj Brosz <Juraj.Brosz@pobox.sk>
+
+2004-08-26 13:15  dannym
+
+	* xfce-utils/trunk/po/nl.po: add missing newline so that make works
+
+2004-08-25 18:34  jasper
+
+	* xfce-utils/trunk/po/nl.po: Update dutch translations, only po
+	  files for now
+
+2004-08-24 10:04  pollux
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/po/ru.gmo,
+	  xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.ru,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.ru,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: RU translations update
+	  from Anthony Ivanoff <a-i@bk.ru>
+
+2004-08-15 19:39  olivier
+
+	* xfce-utils/trunk/gdm/xfce.desktop, xfce-utils/trunk/po/ar.gmo,
+	  xfce-utils/trunk/po/ar.po, xfce-utils/trunk/po/az.gmo,
+	  xfce-utils/trunk/po/az.po, xfce-utils/trunk/po/bg.gmo,
+	  xfce-utils/trunk/po/bg.po, xfce-utils/trunk/po/ca.gmo,
+	  xfce-utils/trunk/po/ca.po, xfce-utils/trunk/po/cs.gmo,
+	  xfce-utils/trunk/po/cs.po, xfce-utils/trunk/po/de.gmo,
+	  xfce-utils/trunk/po/de.po, xfce-utils/trunk/po/es.gmo,
+	  xfce-utils/trunk/po/es.po, xfce-utils/trunk/po/es_MX.gmo,
+	  xfce-utils/trunk/po/es_MX.po, xfce-utils/trunk/po/eu.gmo,
+	  xfce-utils/trunk/po/eu.po, xfce-utils/trunk/po/fa_IR.gmo,
+	  xfce-utils/trunk/po/fa_IR.po, xfce-utils/trunk/po/fi.gmo,
+	  xfce-utils/trunk/po/fi.po, xfce-utils/trunk/po/fr.gmo,
+	  xfce-utils/trunk/po/fr.po, xfce-utils/trunk/po/hi.gmo,
+	  xfce-utils/trunk/po/hi.po, xfce-utils/trunk/po/hu.gmo,
+	  xfce-utils/trunk/po/hu.po, xfce-utils/trunk/po/it.gmo,
+	  xfce-utils/trunk/po/it.po, xfce-utils/trunk/po/ja.gmo,
+	  xfce-utils/trunk/po/ja.po, xfce-utils/trunk/po/ko.gmo,
+	  xfce-utils/trunk/po/ko.po, xfce-utils/trunk/po/lt.gmo,
+	  xfce-utils/trunk/po/lt.po, xfce-utils/trunk/po/ms.gmo,
+	  xfce-utils/trunk/po/ms.po, xfce-utils/trunk/po/nl.gmo,
+	  xfce-utils/trunk/po/nl.po, xfce-utils/trunk/po/pl.gmo,
+	  xfce-utils/trunk/po/pl.po, xfce-utils/trunk/po/pt_BR.gmo,
+	  xfce-utils/trunk/po/pt_BR.po, xfce-utils/trunk/po/pt_PT.gmo,
+	  xfce-utils/trunk/po/pt_PT.po, xfce-utils/trunk/po/ru.gmo,
+	  xfce-utils/trunk/po/ru.po, xfce-utils/trunk/po/sv.gmo,
+	  xfce-utils/trunk/po/sv.po, xfce-utils/trunk/po/ta.gmo,
+	  xfce-utils/trunk/po/ta.po, xfce-utils/trunk/po/tr.gmo,
+	  xfce-utils/trunk/po/tr.po, xfce-utils/trunk/po/uk.gmo,
+	  xfce-utils/trunk/po/uk.po, xfce-utils/trunk/po/vi.gmo,
+	  xfce-utils/trunk/po/vi.po, xfce-utils/trunk/po/xfce-utils.pot,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/po/zh_TW.gmo, xfce-utils/trunk/po/zh_TW.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.lt,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.vi,
+	  xfce-utils/trunk/xftaskbar/plugin/xfce-taskbar-settings.desktop:
+	  Resync with repository, most notably: - libxfcegui4 fixes with gtk
+	  2.2 - xfwm4 updates - Present panel plugins in alphabetical order
+	  - Fix add plugin dialog being placed over the panel when using SM
+	  - French po updates - Other various small bug fixes
+
+2004-08-14 19:43  pollux
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/po/he.gmo,
+	  xfce-utils/trunk/po/he.po, xfce-utils/trunk/xfce4-about/AUTHORS,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.lt,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.vi: Hebrew translations from
+	  Yuval Tanny <tanai@int.gov.il>
+
+2004-06-13 21:18  pollux
+
+	* xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.lt: Updated lt translations
+	  from Mantas Zapolskas
+
+2004-06-05 22:25  benny
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.sub,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/index/fr/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/fr/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/fr/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/fr/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/fr/images/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/install-sh,
+	  xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/mkinstalldirs,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/INFO.ca.in,
+	  xfce-utils/trunk/xfce4-about/INFO.es.in,
+	  xfce-utils/trunk/xfce4-about/INFO.eu.in,
+	  xfce-utils/trunk/xfce4-about/INFO.fr.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.ca.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.de.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.es.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.eu.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.fr.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.it.in,
+	  xfce-utils/trunk/xfce4-about/INFO.in,
+	  xfce-utils/trunk/xfce4-about/INFO.it.in,
+	  xfce-utils/trunk/xfce4-about/INFO.vi,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/info.c,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xfrun/xfrun.c,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/xftaskbar_plugin.c,
+	  xfce-utils/trunk/xftaskbar/xftaskbar.c: Replace Xfce version at
+	  runtime instead of compile time using the xfce-utils version.
+	  Don't use deprecated functions. replaced XFce -> Xfce.
+
+2004-04-25 09:56  jasper
+
+	* xfce-utils/trunk/po/ar.gmo, xfce-utils/trunk/po/ar.po,
+	  xfce-utils/trunk/po/az.gmo, xfce-utils/trunk/po/az.po,
+	  xfce-utils/trunk/po/bg.gmo, xfce-utils/trunk/po/bg.po,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/cs.gmo, xfce-utils/trunk/po/cs.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/eu.gmo, xfce-utils/trunk/po/eu.po,
+	  xfce-utils/trunk/po/fa_IR.gmo, xfce-utils/trunk/po/fa_IR.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/hi.gmo, xfce-utils/trunk/po/hi.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ko.po, xfce-utils/trunk/po/lt.gmo,
+	  xfce-utils/trunk/po/lt.po, xfce-utils/trunk/po/ms.gmo,
+	  xfce-utils/trunk/po/ms.po, xfce-utils/trunk/po/nl.gmo,
+	  xfce-utils/trunk/po/nl.po, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_BR.po,
+	  xfce-utils/trunk/po/pt_PT.gmo, xfce-utils/trunk/po/pt_PT.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/sv.gmo, xfce-utils/trunk/po/sv.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/uk.gmo, xfce-utils/trunk/po/uk.po,
+	  xfce-utils/trunk/po/vi.gmo, xfce-utils/trunk/po/vi.po,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/po/zh_TW.gmo, xfce-utils/trunk/po/zh_TW.po:
+	  Update copyright years
+
+2004-04-12 20:26  olivier
+
+	* xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po/it.gmo,
+	  xfce-utils/trunk/po/it.po: Danny => autogen.sh
+
+2004-03-17 23:38  olivier
+
+	* xfce-utils/branches/xfce_4_0/gdm/Makefile.am,
+	  xfce-utils/branches/xfce_4_0/gdm/Makefile.in,
+	  xfce-utils/trunk/po/xfce-utils.pot: Misplaced file in makefile was
+	  removed by distclean
+
+2004-03-15 07:36  olivier
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ar.gmo, xfce-utils/trunk/po/ar.po,
+	  xfce-utils/trunk/po/bg.gmo, xfce-utils/trunk/po/bg.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.az,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.es,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.fr,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.it,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.vi,
+	  xfce-utils/trunk/xfce4-about/INFO.html.it.in,
+	  xfce-utils/trunk/xfce4-about/INFO.it.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: Add/update i18n for:
+	  Bulgarian from Miroslav Yordanov <miordanov@i-space.org> and Peter
+	  Slavov <peshka@i-space.org> Italian from Alex Dupre
+	  <ale@FreeBSD.org> Arabic from Saleh Hathal <hathalsal@hotmail.com>
+
+2004-02-17 19:36  jasper
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po: Update
+	  Malay translations
+
+2004-02-11 20:44  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/po/eu.gmo,
+	  xfce-utils/trunk/po/eu.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.eu,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.eu.html,
+	  xfce-utils/trunk/xfce4-about/INFO.eu.in,
+	  xfce-utils/trunk/xfce4-about/INFO.html.eu.in: Add Basque (eu)
+	  translations
+
+2004-01-29 15:51  jasper
+
+	* xfce-utils/trunk/po/fa_IR.gmo, xfce-utils/trunk/po/fa_IR.po:
+	  Update Persian translations
+
+2004-01-21 13:44  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/fa_IR.gmo, xfce-utils/trunk/po/fa_IR.po,
+	  xfce-utils/trunk/po/pt_BR.gmo, xfce-utils/trunk/po/pt_BR.po,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po:
+	  Translations added/updated for spanish, persian, japanese, korean,
+	  brasilian and chinese
+
+2004-01-03 20:23  olivier
+
+	* xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po: Update
+	  Polish translation from Daniel Mr&#65533;&#65533;z <beorn@alpha.pl>
+
+2003-12-27 19:46  jasper
+
+	* xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/pl.gmo,
+	  xfce-utils/trunk/po/pl.po: Update Polish translations
+
+2003-12-15 20:56  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/az.gmo, xfce-utils/trunk/po/az.po: Add
+	  Azerbaijani translations
+
+2003-11-23 13:40  moe
+
+	* xfce-utils/trunk/po/de.po: Updating german translation.
+
+2003-11-16 08:45  jasper
+
+	* xfce-utils/trunk/po/cs.gmo, xfce-utils/trunk/po/cs.po: Update
+	  Czech translations
+
+2003-11-09 19:22  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/cs.gmo, xfce-utils/trunk/po/cs.po: Add Check
+	  translations
+
+2003-11-03 18:06  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/uk.gmo, xfce-utils/trunk/po/uk.po: Add
+	  Ukranian translations
+
+2003-11-02 08:22  olivier
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/hi.gmo, xfce-utils/trunk/po/hi.po: Add hi.po
+
+2003-10-24 22:20  jasper
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/vi.gmo, xfce-utils/trunk/po/vi.po: Add
+	  vietnamese translations by Lam Vinh Nien <nienvl@yahoo.ca>.
+
+2003-10-17 15:37  jasper
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/po/sv.gmo,
+	  xfce-utils/trunk/po/sv.po: Add/update swedish translations
+
+2003-10-15 11:20  jasper
+
+	* xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po: Update
+	  korean translations
+
+2003-09-27 12:37  huysmans
+
+	* xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po: Update
+	  tamil translation
+
+2003-09-22 20:33  huysmans
+
+	* xfce-utils/trunk/doc/xfce4-user-guide/C/images/default-session.png,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/pt_PT.gmo, xfce-utils/trunk/po/pt_PT.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po, xfce-utils/trunk/po/zh_TW.gmo,
+	  xfce-utils/trunk/po/zh_TW.po: Update version numbers and po files
+	  for release
+
+2003-09-15 20:55  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/pt_PT.gmo, xfce-utils/trunk/po/pt_PT.po: Big
+	  portugese translation update
+
+2003-09-10 07:39  huysmans
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/zh_TW.po: Update version numbers and po files
+	  for release
+
+2003-09-08 06:25  huysmans
+
+	* xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po: Update
+	  russian translations
+
+2003-09-02 06:48  huysmans
+
+	* xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po: Update
+	  malaysian translations
+
+2003-08-30 12:49  huysmans
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/po/zh_TW.Big5.gmo,
+	  xfce-utils/trunk/po/zh_TW.Big5.po, xfce-utils/trunk/po/zh_TW.gmo,
+	  xfce-utils/trunk/po/zh_TW.po: Rename zh_TW.Big5 -> zh_TW
+
+2003-08-30 08:58  huysmans
+
+	* xfce-utils/trunk/po/zh_TW.Big5.gmo,
+	  xfce-utils/trunk/po/zh_TW.Big5.po: Add traditional chinese
+	  translations
+
+2003-08-26 07:12  huysmans
+
+	* xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po:
+	  Update version numbers and po files for release
+
+2003-08-17 11:36  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/lt.gmo, xfce-utils/trunk/po/lt.po: Add
+	  lithuanian translations
+
+2003-08-14 19:09  xfce
+
+	* xfce-utils/trunk/po/xfce-utils.pot: Resync with cvs
+
+2003-08-10 19:54  huysmans
+
+	* xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po:
+	  Update chinese translations
+
+2003-08-05 05:54  xfce
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ko.gmo, xfce-utils/trunk/po/ko.po,
+	  xfce-utils/trunk/po/xfce-utils.pot: Add Korean translation by
+	  ByungHyun Choi <byunghyunchoi@hotmail.com>
+
+2003-07-30 08:05  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po: Update version numbers and po files
+	  for release
+
+2003-07-29 06:28  huysmans
+
+	* xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po: Update
+	  russian translations
+
+2003-07-24 06:26  huysmans
+
+	* xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po: Update
+	  finnish translations
+
+2003-07-19 08:59  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: Update
+	  version numbers and po files for release
+
+2003-07-18 10:56  huysmans
+
+	* xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po: Update
+	  hungarian translations
+
+2003-07-18 07:46  huysmans
+
+	* xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: Update
+	  turkish translations
+
+2003-07-16 18:01  huysmans
+
+	* xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po: Update
+	  dutch translations
+
+2003-07-16 09:57  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/hu.gmo, xfce-utils/trunk/po/hu.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.ca,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html.de: Add hungarian
+	  translations
+
+2003-07-16 08:22  huysmans
+
+	* xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po: Update
+	  catalan translations
+
+2003-07-13 08:31  huysmans
+
+	* xfce-utils/trunk/po/xfce-utils.pot: Update pot's before release
+
+2003-07-11 06:55  huysmans
+
+	* xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po:
+	  Update Chinese translations
+
+2003-07-10 09:24  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/es_MX.gmo, xfce-utils/trunk/po/es_MX.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/ru.gmo, xfce-utils/trunk/po/ru.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po: Bump version numbers for release and
+	  update po files
+
+2003-07-07 21:18  huysmans
+
+	* xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po: Update
+	  catalan translations
+
+2003-07-04 23:37  xfce
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/ltcf-c.sh,
+	  xfce-utils/trunk/po/es_MX.gmo: libttol update and all
+
+2003-07-04 20:30  edscott
+
+	* xfce-utils/trunk/po/es_MX.po: *** empty log message ***
+
+2003-07-03 18:16  edscott
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.h.in, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/ltmain.sh,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: spanish tranlation
+	  updates for 4.0 release.
+
+2003-06-24 20:40  xfce
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/ltcf-c.sh,
+	  xfce-utils/trunk/ltconfig, xfce-utils/trunk/ltmain.sh,
+	  xfce-utils/trunk/po/it.gmo, xfce-utils/trunk/po/it.po: Add italian
+	  locale
+
+2003-06-24 06:35  xfce
+
+	* xfce-utils/trunk/po/xfce-utils.pot: Sync
+
+2003-06-20 23:57  xfce
+
+	* xfce-utils/trunk/po/xfce-utils.pot,
+	  xfce-utils/trunk/scripts/xinitrc: Put some changes suggested by
+	  Matthew Weier OPhinney <matthew-lists@weierophinney.net> regarding
+	  xinitrc startup sequence
+
+2003-06-08 14:29  huysmans
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.h.in, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po/ru.gmo,
+	  xfce-utils/trunk/po/ru.po, xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Add russian
+	  translation and fix xfdesktop not reading a new local menu
+
+2003-06-06 21:36  xfce
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.h.in, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in,
+	  xfce-utils/trunk/po/xfce-utils.pot,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Versionning scheme
+
+2003-06-05 07:28  huysmans
+
+	* xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: Updated
+	  translations and multiple file drop on backdrop list manager
+
+2003-06-01 21:25  huysmans
+
+	* xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/xfce-utils.spec.in: Update fi translations and
+	  specfile fix
+
+2003-06-01 16:29  huysmans
+
+	* xfce-utils/trunk/po/ca.gmo, xfce-utils/trunk/po/ca.po,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/ta.gmo, xfce-utils/trunk/po/ta.po,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po: po-file fixes
+
+2003-05-31 11:10  huysmans
+
+	* xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: Update
+	  turkish translations
+
+2003-05-30 20:36  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/es.gmo, xfce-utils/trunk/po/es.po,
+	  xfce-utils/trunk/po/ms.gmo, xfce-utils/trunk/po/ms.po: Add malayan
+	  translations
+
+2003-05-30 08:50  huysmans
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in,
+	  xfce-utils/trunk/po/Makefile.in.in,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Small tweaks to
+	  build files
+
+2003-05-29 12:35  huysmans
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/config.guess,
+	  xfce-utils/trunk/config.h.in, xfce-utils/trunk/config.sub,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/depcomp, xfce-utils/trunk/install-sh,
+	  xfce-utils/trunk/mkinstalldirs, xfce-utils/trunk/po/ca.gmo,
+	  xfce-utils/trunk/po/ca.po: Update catalan translations
+
+2003-05-29 09:58  huysmans
+
+	* xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po:
+	  Translations update
+
+2003-05-27 21:29  xfce
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.h.in,
+	  xfce-utils/trunk/config.sub, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/depcomp,
+	  xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/install-sh,
+	  xfce-utils/trunk/ltcf-c.sh, xfce-utils/trunk/ltconfig,
+	  xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/mkinstalldirs,
+	  xfce-utils/trunk/po/ja.gmo, xfce-utils/trunk/po/ja.po,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Add Japanese
+	  translation by Zhao-Ji <zhao-ji at awz dot ne dot jp>
+
+2003-05-21 21:42  huysmans
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/tr.gmo, xfce-utils/trunk/po/tr.po: Add Turkish
+	  translations
+
+2003-05-16 18:32  huysmans
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.sub,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/index/C/Makefile.in,
+	  xfce-utils/trunk/doc/index/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce-utils/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/C/images/Makefile.in,
+	  xfce-utils/trunk/doc/xfce4-user-guide/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po/ta.gmo,
+	  xfce-utils/trunk/po/ta.po, xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/INFO.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/info.c,
+	  xfce-utils/trunk/xfce4-about/xfce-logo-icon.h,
+	  xfce-utils/trunk/xfce4-about/xfce-logo.jpg,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Add tamil
+	  translations
+
+2003-05-05 07:08  huysmans
+
+	* xfce-utils/trunk/Makefile.am, xfce-utils/trunk/Makefile.in,
+	  xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/config.guess,
+	  xfce-utils/trunk/config.sub, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/html/Makefile.in,
+	  xfce-utils/trunk/doc/images/Makefile.in,
+	  xfce-utils/trunk/doc/xml/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po/ChangeLog,
+	  xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/fi.gmo, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/fr.gmo, xfce-utils/trunk/po/fr.po,
+	  xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/pl.gmo, xfce-utils/trunk/po/pl.po,
+	  xfce-utils/trunk/po/xfce-utils.pot, xfce-utils/trunk/po/zh_CN.gmo,
+	  xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce-utils.spec.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Fixes for rpm and
+	  distcheck targets
+
+2003-05-03 22:02  xfce
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.sub,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/html/Makefile.in,
+	  xfce-utils/trunk/doc/images/Makefile.in,
+	  xfce-utils/trunk/doc/xml/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po/fr.gmo,
+	  xfce-utils/trunk/po/fr.po, xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Various fixes,
+	  added french translation, fixed desktop switching in xfwm4
+
+2003-05-03 10:23  huysmans
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.guess, xfce-utils/trunk/config.sub,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/html/Makefile.in,
+	  xfce-utils/trunk/doc/images/Makefile.in,
+	  xfce-utils/trunk/doc/xml/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/ltcf-c.sh,
+	  xfce-utils/trunk/ltconfig, xfce-utils/trunk/ltmain.sh,
+	  xfce-utils/trunk/po/zh_CN.gmo, xfce-utils/trunk/po/zh_CN.po,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in: Add Chinese
+	  translations
+
+2003-05-01 14:04  bmeurer
+
+	* xfce-utils/trunk/po/pl.gmo: added missing pl.gmo file.
+
+2003-05-01 05:55  huysmans
+
+	* xfce-utils/trunk/po/de.gmo, xfce-utils/trunk/po/fi.gmo: Add
+	  missing gmo files
+
+2003-04-27 20:16  bmeurer
+
+	* xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/po/pl.po, xfce-utils/trunk/xfce4-about/AUTHORS,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de.html,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.html: Added polish
+	  translations.
+
+2003-04-26 11:59  huysmans
+
+	* xfce-utils/trunk/po/nl.po~: Remove backup file
+
+2003-04-26 11:23  huysmans
+
+	* xfce-utils/trunk/po/nl.gmo, xfce-utils/trunk/po/nl.po,
+	  xfce-utils/trunk/po/nl.po~: Add Dutch translations
+
+2003-04-25 21:31  huysmans
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/configure, xfce-utils/trunk/configure.ac,
+	  xfce-utils/trunk/ltcf-c.sh, xfce-utils/trunk/ltconfig,
+	  xfce-utils/trunk/ltmain.sh, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/fi.po, xfce-utils/trunk/po/xfce-utils.pot: Add
+	  Dutch translations
+
+2003-04-25 21:03  bmeurer
+
+	* xfce-utils/trunk/po/de.po, xfce-utils/trunk/po/fi.po,
+	  xfce-utils/trunk/po/xfce-utils.pot,
+	  xfce-utils/trunk/xftaskbar/plugin/xftaskbar_plugin.c: Do not
+	  translate strings with tags. Fixed two other issues.
+
+2003-04-25 20:42  bmeurer
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de,
+	  xfce-utils/trunk/xfce4-about/AUTHORS.de.html,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in: I18n updates again.
+	  Thanks to Moritz.
+
+2003-04-25 17:26  bmeurer
+
+	* xfce-utils/trunk/aclocal.m4, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/po/fi.po: Added
+	  finish translations.
+
+2003-04-24 22:51  bmeurer
+
+	* xfce-utils/trunk/po/de.po: Updated german translation. Thanks to
+	  Moritz Heiber.
+
+2003-04-24 22:14  bmeurer
+
+	* xfce-utils/trunk/Makefile.in, xfce-utils/trunk/NOTES,
+	  xfce-utils/trunk/TODO, xfce-utils/trunk/aclocal.m4,
+	  xfce-utils/trunk/config.h.in, xfce-utils/trunk/configure,
+	  xfce-utils/trunk/configure.ac, xfce-utils/trunk/doc/Makefile.in,
+	  xfce-utils/trunk/doc/html/Makefile.in,
+	  xfce-utils/trunk/doc/images/Makefile.in,
+	  xfce-utils/trunk/doc/xml/Makefile.in,
+	  xfce-utils/trunk/gdm/Makefile.in, xfce-utils/trunk/po,
+	  xfce-utils/trunk/po/Makefile.in.in,
+	  xfce-utils/trunk/po/POTFILES.in, xfce-utils/trunk/po/de.po,
+	  xfce-utils/trunk/po/xfce-utils.pot,
+	  xfce-utils/trunk/scripts/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/Makefile.am,
+	  xfce-utils/trunk/xfce4-about/Makefile.in,
+	  xfce-utils/trunk/xfce4-about/info.c,
+	  xfce-utils/trunk/xfrun/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/Makefile.am,
+	  xfce-utils/trunk/xftaskbar/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.am,
+	  xfce-utils/trunk/xftaskbar/plugin/Makefile.in,
+	  xfce-utils/trunk/xftaskbar/xftaskbar.c: Added gettext framework.
+
