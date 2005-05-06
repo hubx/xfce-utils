@@ -71,9 +71,9 @@ if test x"$enable_gdm" = x"yes"; then
 fi
 
 dnl Check for i18n support
-BM_I18N([xfce-utils], [ar az be bg ca cs de en_GB es es_MX et eu fa fi fr gu he
-		       hi hu it ja ko lt mr ms nl pa pl pt_BR pt_PT ro ru sk
-		       sv ta tr uk vi zh_CN zh_TW])
+BM_I18N([xfce-utils], [ar az be bg bn_IN ca cs de en_GB es es_MX et eu fa
+                       fi fr gu he hi hu it ja ko lt mr ms nl pa pl pt_BR
+		       pt_PT ro ru sk sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
 BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.2.0])
