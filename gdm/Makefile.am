@@ -23,9 +23,6 @@ Xclients.xfce4 : $(srcdir)/Xclients.xfce4.in
 install-data-local :
 	test no = @USE_GDM@ || $(MAKE) install-gdm
 
-install-data-local :
-	test no = @USE_GDM@ || $(MAKE) install-gdm
-
 install-gdm: $(xfce_FILES)
 	$(mkinstalldirs) $(DESTDIR)$(switchdesk_prefix)
 	$(mkinstalldirs) $(DESTDIR)$(wmsession_prefix)
