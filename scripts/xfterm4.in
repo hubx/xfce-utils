@@ -1,10 +1,23 @@
 #!/bin/sh
-# Xfterm script revsed in order to make it easier to expand and to be 
+# Xfterm script revised in order to make it easier to expand and to be 
 # more compatible with applications such as gnome-terminal
 
 if [ "x$TERMCMD" = "x" ]; then
-	TERMCMD=xterm
+	for term in @TERMINAL_DEFAULT@ Terminal xterminal xterm aterm rxvt
+	do
+	    if which "$term" > /dev/null 2>&1 ; then
+		TERMCMD=$term
+	    break;
+	fi
+	done
 fi
+
+if [ "x$TERMCMD" = "x" ]; then
+	echo " *** Error ***: xfterm4: Could not find terminal to use."
+	echo "                Please set the TERMCMD variable."
+	exit 1
+fi
+
 
 if [ "$1" = "-e" ]; then
 	if [ -n "$2" ]; then

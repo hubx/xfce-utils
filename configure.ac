@@ -48,6 +48,16 @@ BROWSER_DEFAULT=$with_browser
 AC_SUBST([BROWSER_DEFAULT])
 AC_MSG_RESULT([$with_browser])
 
+dnl Check for default terminal to use
+AC_MSG_CHECKING([what terminal to use by default])
+AC_ARG_WITH([terminal],
+AC_HELP_STRING([--with-terminal=TERMINAL], 
+	       [What should be the default terminal?]),
+	       [], [with_terminal=""])
+TERMINAL_DEFAULT=$with_terminal
+AC_SUBST([TERMINAL_DEFAULT])
+AC_MSG_RESULT([$with_terminal])
+
 dnl enable GDM-specific startup files?
 AC_MSG_CHECKING([whether to install GDM specific files])
 AC_ARG_ENABLE([gdm],
