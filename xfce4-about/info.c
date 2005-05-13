@@ -432,7 +432,7 @@ main (int argc, char **argv)
   text =
     g_strdup_printf
     ("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
-     _("Xfce Desktop Environment"), _("Copyright 2002-2004 by Olivier Fourdan"));
+     _("Xfce Desktop Environment"), _("Copyright 2002-2005 by Olivier Fourdan"));
   header = xfce_create_header (logo_pb, text);
   gtk_widget_show (header);
   gtk_box_pack_start (GTK_BOX (vbox2), header, FALSE, FALSE, 0);
