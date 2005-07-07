@@ -38,6 +38,9 @@ Xft.hintstyle: hintmedium
 EOF
 fi
 
+# merge in X cursor settings
+test -r $BASEDIR/Xcursor.xrdb && cat $BASEDIR/Xcursor.xrdb >> $XRESOURCES
+
 # ~/.Xresources contains overrides to the above
 test -r $HOME/.Xresources && cat $HOME/.Xresources >> $XRESOURCES
 
