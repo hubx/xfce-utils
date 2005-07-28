@@ -1,5 +1,5 @@
-# Japanese translation for xfce-utils.
-# Copyright (C) 2003-2005 Olivier Fourdan.
+# Japanese translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Zhao Ji <zhao-ji@awz.ne.jp>, 2003-2004.
 # Daichi Kawahata <daichik@users.sourceforge.net>, 2005.
@@ -7,190 +7,110 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
-"Report-Msgid-Bugs-To: xfce-i18n@xfce.org\n"
-"POT-Creation-Date: 2005-01-02 11:06+0100\n"
-"PO-Revision-Date: 2005-02-17 21:33+0900\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-07-20 14:20+0900\n"
+"PO-Revision-Date: 2005-05-15 01:11+0900\n"
 "Last-Translator: Daichi Kawahata <daichik@users.sourceforge.net>\n"
-"Language-Team: Japanese <xfce-i18n@xfce.org>\n"
+"Language-Team: xfce-users-jp <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:262
+# FIXME: C
+#: xfce4-about/info.c:136
+msgid "Unable to load "
+msgstr "次のファイルを読込めません "
+
+#. Project lead
+#: xfce4-about/info.c:165
+msgid "Project Lead"
+msgstr "プロジェクトリーダ"
+
+#. Core developers
+#: xfce4-about/info.c:195
+msgid "Core developers"
+msgstr "中心開発者"
+
+#. Contributors
+#: xfce4-about/info.c:226
+msgid "Contributors"
+msgstr "貢献者"
+
+#: xfce4-about/info.c:258
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr "ウェブホスティングとメーリングリストの提供"
+
+#. Translators
+#: xfce4-about/info.c:283
+msgid "Translators"
+msgstr "翻訳者"
+
+# FIXME: C
+#: xfce4-about/info.c:314
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+"リストから漏れている人をご存知なら、私達に知らせて下さい。\n"
+"連絡先は <"
+
+#: xfce4-about/info.c:318
+msgid "Thanks to all who helped making this software available."
+msgstr "Xfce 4 を利用できるよう手助けして下さった方全てに感謝します。"
+
+#: xfce4-about/info.c:420
 msgid "About Xfce 4"
 msgstr "Xfce 4 について"
 
-#: xfce4-about/info.c:277
+#: xfce4-about/info.c:435
 msgid "Xfce Desktop Environment"
 msgstr "Xfce デスクトップ環境"
 
-#: xfce4-about/info.c:278
-msgid "Copyright 2002-2004 by Olivier Fourdan"
-msgstr "著作権 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:435
+msgid "Copyright 2002-2005 by Olivier Fourdan"
+msgstr "Copyright (C) 2002-2005 Olivier Fourdan"
 
-#: xfce4-about/info.c:300
+#: xfce4-about/info.c:457
 msgid "Info"
 msgstr "情報"
 
-#: xfce4-about/info.c:301
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:459
 msgid "Credits"
-msgstr "クレジット"
+msgstr "提供"
 
-#: xfce4-about/info.c:302
+#: xfce4-about/info.c:460
 msgid "Copyright"
 msgstr "著作権"
 
-#: xfce4-about/info.c:303
+#: xfce4-about/info.c:461
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:304
+#: xfce4-about/info.c:462
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:305
+#: xfce4-about/info.c:463
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: 履歴をファイル %s へ書込めませんでした\n"
+msgstr "xfrun4: ファイル %s へコマンドの履歴を書込めませんでした\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
-msgstr "どのプログラムで %s を開きますか?"
+msgstr "どのプログラムで %s を開きますか？"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
-msgstr "プログラム実行"
+msgstr "プログラムを実行します"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "実行(_R)"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
-msgstr "ターミナルで実行(_T)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:534
-msgid "Taskbar"
-msgstr "タスクバー"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "位置"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "_Top"
-msgstr "最上部(_T)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
-msgid "_Bottom"
-msgstr "最下部(_B)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr "配置"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr "左側(_L)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr "中央(_C)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr "右側(_R)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "自動的に隠す"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
-msgid "Auto _hide taskbar"
-msgstr "タスクバーを自動的に隠す(_H)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "大きさ"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr "縦幅 :"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "小さい"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "大きい"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr "横幅:"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "タスク"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
-msgid "Show tasks from _all workspaces"
-msgstr "全てのワークスペースのタスクを表示(_A)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr "常にタスクをまとめる(_G)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr "アプリケーション名を表示(_N)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "ページャ"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
-msgid "Show _pager in taskbar"
-msgstr "タスクバーにページャを表示(_P)"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "通知エリア"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
-msgid "Show _system tray in taskbar"
-msgstr "タスクバーにシステムトレイを表示(_S)"
-
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "初期スタイルを取得できません"
-
-#: xftaskbar/xftaskbar.c:267
-msgid "There is already a system tray running on this screen"
-msgstr "この画面では既にシステムトレイが動作しています"
-
-#: xftaskbar/xftaskbar.c:275
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "システムトレイに登録できません: %s"
-
-#: xftaskbar/xftaskbar.c:603
-msgid "Cannot get default screen\n"
-msgstr "デフォルトの画面を取得できません\n"
-
-#: xftaskbar/xftaskbar.c:692
-msgid "Cannot connect to session manager"
-msgstr "セッションマネージャへ接続できません"
-
-#: xftaskbar/xftaskbar.c:705
-msgid "Cannot create MCS client channel"
-msgstr "MCS クライアントのチャンネルを作成できません"
+msgstr "ターミナルで実行する(_T)"
