@@ -1,0 +1,196 @@
+# translation of xfce-utils.hy.po to 
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils.hy\n"
+"Report-Msgid-Bugs-To: norik@oric.org\n"
+"POT-Creation-Date: 2005-05-10 22:16+0200\n"
+"PO-Revision-Date: 2005-08-04 17:56+0500\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: xfce4-about/info.c:262
+msgid "About Xfce 4"
+msgstr "Xfce4 միջավայրի մասին"
+
+#: xfce4-about/info.c:277
+msgid "Xfce Desktop Environment"
+msgstr "Xfce աշխատանքային միջավայր"
+
+#: xfce4-about/info.c:278
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Հեղինակային իրավունք 2002-2004 by Օլիվեր Ֆուրդան"
+
+#: xfce4-about/info.c:300
+msgid "Info"
+msgstr "Տեղեկություններ"
+
+#: xfce4-about/info.c:301
+msgid "Credits"
+msgstr "Երախտիք"
+
+#: xfce4-about/info.c:302
+msgid "Copyright"
+msgstr "Հեղինակային իրավունք"
+
+#: xfce4-about/info.c:303
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:304
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:305
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:337
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Հնարավոր չք գրելպատմության մատյանը ֆայլի մեջ՝ %s\n"
+
+#: xfrun/xfrun.c:442
+#, c-format
+msgid "Open %s with what program?"
+msgstr "Ո՞ր ծրագրով բացել %s"
+
+#: xfrun/xfrun.c:443
+msgid "Run program"
+msgstr "Աշխատացնել ծրագիր"
+
+#: xfrun/xfrun.c:451
+msgid "_Run"
+msgstr "_Աշխատացնել"
+
+#: xfrun/xfrun.c:481
+msgid "Run in _terminal"
+msgstr "Աշխատացնել _տերմինալի մեջ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
+msgid "Taskbar"
+msgstr "Վահանակ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "Դիրք"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_Կատար"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_Հատակ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "Տողաշտկում"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_Ձախ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_Կենտրոն"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_Աջ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "Ինքնաշխատ թաքցնել"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "Ինքնաշխատ _թաքցնել վահանակը"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "Չափ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "Հասակ՝ "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "Փոքրիկ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "Խոշոր"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "Լայնք՝ "
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "Առաջադրանքներ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "Ցուցադրել _բոլոր գրասեղանների առաջադրանքները"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "Միշտ _խմբավորել առաջադրանքները"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "Ցուցադրել ծրագրերի _անունները"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Փեյջեր"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "Ցուցադրել _փեյջերը վահանակի վրա"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "Ծանուցման տիրույթ"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "Ցուցադրել _համակարգի թրեյը վահանակի վրա"
+
+#: xftaskbar/xftaskbar.c:140
+msgid "Cannot get initial style"
+msgstr "Հնարավոր չէ ստանալ սկզբնական ոճը"
+
+#: xftaskbar/xftaskbar.c:270
+msgid "There is already a system tray running on this screen"
+msgstr "Այս էկրանի վրա արդեն աշխատում է թրեյ"
+
+#: xftaskbar/xftaskbar.c:278
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Հնարավոր չէ գրանցել համակարգի թրեյ՝ %s"
+
+#: xftaskbar/xftaskbar.c:605
+msgid "Cannot get default screen\n"
+msgstr "Հնարավոր չէ գտնել հիմնական էկրանը\n"
+
+#: xftaskbar/xftaskbar.c:724
+msgid "Cannot connect to session manager"
+msgstr "Հնարավոր չէ կպնելնիստի կարավարչին"
+
+#: xftaskbar/xftaskbar.c:737
+msgid "Cannot create MCS client channel"
+msgstr "Հնարավոր չէ ստեղծել MCS հաճախորդ ուղի"
+
