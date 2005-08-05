@@ -1,0 +1,198 @@
+# translation of xfce-utils.po to Afrikaans
+# Petri Jooste <petri.jooste@gmail.com>, 2005.
+# Afrikaans translations for xfce-utils package.
+# Copyright (C) 2003-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2005-08-01 08:32-0500\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: xfce-utils 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Petri Jooste <petri.jooste@gmail.com>\n"
+"Language-Team: Afrikaans\n"
+"POT-Creation-Date: 2005-01-02 11:06+0100\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"MIME-Version: 1.0\n"
+
+#: xfce4-about/info.c:262
+msgid "About Xfce 4"
+msgstr "Aangaande Xfce 4"
+
+#: xfce4-about/info.c:277
+msgid "Xfce Desktop Environment"
+msgstr "Xfce Werkskerm-omgewing"
+
+#: xfce4-about/info.c:278
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Kopiereg 2002-2004 deur Olivier Fourdan"
+
+#: xfce4-about/info.c:300
+msgid "Info"
+msgstr "Inligting"
+
+#: xfce4-about/info.c:301
+msgid "Credits"
+msgstr "Erkenning"
+
+#: xfce4-about/info.c:302
+msgid "Copyright"
+msgstr "Kopiereg"
+
+#: xfce4-about/info.c:303
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:304
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:305
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:323
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Kon nie geskiedenis na lêer %s skryf nie\n"
+
+#: xfrun/xfrun.c:428
+#, c-format
+msgid "Open %s with what program?"
+msgstr "Maak %s met watter program oop?"
+
+#: xfrun/xfrun.c:429
+msgid "Run program"
+msgstr "Loop program"
+
+#: xfrun/xfrun.c:437
+msgid "_Run"
+msgstr "_Loop"
+
+#: xfrun/xfrun.c:467
+msgid "Run in _terminal"
+msgstr "Loop in _terminaal"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
+msgid "Taskbar"
+msgstr "Taakbalk"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "Posisie"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_Bokant"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_Onderkant"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "Belyning"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_Links"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_Middel"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_Regs"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "Outoversteek"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "Outo_versteek taakbalk"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "Grootte"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "Hoogte :"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "Klein"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "Groot"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "Wydte:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "Take"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "Wys take van _alle werkareas"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "_Groepeer take altyd"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "Wys program_name"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Blaaier"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "Wys _blaaier in taakbalk"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "Kennisgewingarea"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "Wys _stelselmandjie in taakbalk"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "Kan nie aanvanklike styl kry nie"
+
+#: xftaskbar/xftaskbar.c:267
+msgid "There is already a system tray running on this screen"
+msgstr "Daar is reeds 'n stelselmandjie op hierdie skerm"
+
+#: xftaskbar/xftaskbar.c:275
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Kan nie stelselmandjie registreer nie: %s"
+
+#: xftaskbar/xftaskbar.c:603
+msgid "Cannot get default screen\n"
+msgstr "Kan verstekskerm nie kry nie\n"
+
+#: xftaskbar/xftaskbar.c:692
+msgid "Cannot connect to session manager"
+msgstr "Kan nie aan sessiebestuurder koppel nie"
+
+#: xftaskbar/xftaskbar.c:705
+msgid "Cannot create MCS client channel"
+msgstr "Kan nie 'n MCS-klientkanaal skep nie"
+
