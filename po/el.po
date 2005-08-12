@@ -1,0 +1,198 @@
+# translation of el_GR.po to Ελληνικά
+# translation of xfce-utils.po to Ελληνικά
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Stavros Giannouris <StavrosG2002@freemail.gr>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: el_GR\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-02 11:06+0100\n"
+"PO-Revision-Date: 2005-08-12 17:59+0200\n"
+"Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
+"Language-Team: Ελληνικά\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: xfce4-about/info.c:262
+msgid "About Xfce 4"
+msgstr "Περί του Xfce 4"
+
+#: xfce4-about/info.c:277
+msgid "Xfce Desktop Environment"
+msgstr "Περιβάλλον Εργασίας Xfce"
+
+#: xfce4-about/info.c:278
+msgid "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
+
+#: xfce4-about/info.c:300
+msgid "Info"
+msgstr "Πληροφορίες"
+
+#: xfce4-about/info.c:301
+msgid "Credits"
+msgstr "Μνεία"
+
+#: xfce4-about/info.c:302
+msgid "Copyright"
+msgstr "Copyright"
+
+#: xfce4-about/info.c:303
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:304
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:305
+msgid "GPL"
+msgstr "GPL"
+
+#: xfrun/xfrun.c:323
+#, c-format
+msgid "xfrun4: Could not write history to file %s\n"
+msgstr "xfrun4: Αδύνατη η εγγραφή του ιστορικού στο αρχείο  %s\n"
+
+#: xfrun/xfrun.c:428
+#, c-format
+msgid "Open %s with what program?"
+msgstr "Άνοιγμα του %s με ποιό πρόγραμμα;"
+
+#: xfrun/xfrun.c:429
+msgid "Run program"
+msgstr "Εκτέλεση προγράμματος"
+
+#: xfrun/xfrun.c:437
+msgid "_Run"
+msgstr "_Εκτέλεση"
+
+#: xfrun/xfrun.c:467
+msgid "Run in _terminal"
+msgstr "Εκτέλεση σε _τερματικό"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:278
+#: xftaskbar/plugin/xftaskbar_plugin.c:285
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
+msgid "Taskbar"
+msgstr "Μπάρα εργασιών"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:298
+msgid "Position"
+msgstr "Θέση"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:306
+msgid "_Top"
+msgstr "_Επάνω"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:313
+msgid "_Bottom"
+msgstr "_Κάτω"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:320
+msgid "Alignment"
+msgstr "Στοίχιση"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:329
+msgid "_Left"
+msgstr "_Αριστερά"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:336
+msgid "_Center"
+msgstr "_Κέντρο"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:343
+msgid "_Right"
+msgstr "_Δεξιά"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:350
+msgid "Autohide"
+msgstr "Αυτόματη απόκρυψη"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:354
+msgid "Auto _hide taskbar"
+msgstr "Αυτόματη απόκ_ρυψη μπάρας εργασιών"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:359
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:368
+msgid "Height :"
+msgstr "Ύψος:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:376
+#: xftaskbar/plugin/xftaskbar_plugin.c:413
+msgid "Small"
+msgstr "Μικρό"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:385
+#: xftaskbar/plugin/xftaskbar_plugin.c:424
+msgid "Large"
+msgstr "Μεγάλο"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:403
+msgid "Width:"
+msgstr "Πλάτος:"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:452
+msgid "Tasks"
+msgstr "Εργασίες"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:460
+msgid "Show tasks from _all workspaces"
+msgstr "Προβολή εργασιών από ό_λους τους χώρους εργασίας"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:465
+msgid "Always _group tasks"
+msgstr "Πάντα _ομαδοποίηση των εργασιών"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:470
+msgid "Show application _names"
+msgstr "Προβολή ο_νομάτων εφαρμογών"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:475
+msgid "Pager"
+msgstr "Ειδοποιητής"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:479
+msgid "Show _pager in taskbar"
+msgstr "Προβολή ειδο_ποιητή στην μπάρα εργασιών"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:484
+msgid "Notification area"
+msgstr "Περιοχή ειδοποιήσεων"
+
+#: xftaskbar/plugin/xftaskbar_plugin.c:488
+msgid "Show _system tray in taskbar"
+msgstr "Προβολή του πίνακα _συστήματος στην μπάρα συστήματος"
+
+#: xftaskbar/xftaskbar.c:137
+msgid "Cannot get initial style"
+msgstr "Αδυναμία πρόσληψης του αρχικού στυλ"
+
+#: xftaskbar/xftaskbar.c:267
+msgid "There is already a system tray running on this screen"
+msgstr "Τρέχει ήδη ένας πίνακας συστήματος σε αυτή την οθόνη"
+
+#: xftaskbar/xftaskbar.c:275
+#, c-format
+msgid "Unable to register system tray: %s"
+msgstr "Αδυναμία καταχώρησης του πίνακα συστήματος: %s"
+
+#: xftaskbar/xftaskbar.c:603
+msgid "Cannot get default screen\n"
+msgstr "Αδυναμία λήψης της προκαθορισμένης οθόνης\n"
+
+#: xftaskbar/xftaskbar.c:692
+msgid "Cannot connect to session manager"
+msgstr "Αδυναμία σύνδεσης στον διαχειριστή συνεδρίας"
+
+#: xftaskbar/xftaskbar.c:705
+msgid "Cannot create MCS client channel"
+msgstr "Αδύνατη η δημιουργία καναλιού πελάτη MCS"
+
