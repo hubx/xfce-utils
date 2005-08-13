@@ -1,59 +1,59 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translation of xfce-utils into Finnish.
+# This file is distributed under the same license as the xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce Development Team
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
-"PO-Revision-Date: 2005-01-21 15:52+0200\n"
+"POT-Creation-Date: 2005-01-02 11:06+0100\n"
+"PO-Revision-Date: 2005-08-11 19:32+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:262
 msgid "About Xfce 4"
-msgstr "Tietoja XFce4:stä"
+msgstr "Tietoja Xfce 4:stä"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:277
 msgid "Xfce Desktop Environment"
 msgstr "Xfce-työpöytäympäristö"
 
-#: xfce4-about/info.c:269
+#: xfce4-about/info.c:278
 msgid "Copyright 2002-2004 by Olivier Fourdan"
 msgstr "Tekijänoikeus 2002-2004 Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:300
 msgid "Info"
 msgstr "Tietoja"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:301
 msgid "Credits"
 msgstr "Tekijät"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:302
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:303
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:304
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:305
 msgid "GPL"
 msgstr "GPL"
 
 #: xfrun/xfrun.c:323
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Komentohistoriaa ei voitu kirjoittaa tiedostoon %s\n"
+msgstr "xfrun4: Historiaa ei voitu kirjoittaa tiedostoon %s\n"
 
 #: xfrun/xfrun.c:428
 #, c-format
@@ -70,11 +70,11 @@ msgstr "_Suorita"
 
 #: xfrun/xfrun.c:467
 msgid "Run in _terminal"
-msgstr "Suoritä pää_tteessä"
+msgstr "Suoritä _päätteessä"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:278
 #: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
+#: xftaskbar/plugin/xftaskbar_plugin.c:534
 msgid "Taskbar"
 msgstr "Tehtäväpalkki"
 
@@ -84,11 +84,11 @@ msgstr "Sijainti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:306
 msgid "_Top"
-msgstr "Yläreuna"
+msgstr "_Yläreuna"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:313
 msgid "_Bottom"
-msgstr "Alareuna"
+msgstr "_Alareuna"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:320
 msgid "Alignment"
@@ -96,15 +96,15 @@ msgstr "Tasaa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:329
 msgid "_Left"
-msgstr "Vasemmalle"
+msgstr "_Vasemmalle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:336
 msgid "_Center"
-msgstr "Keskelle"
+msgstr "_Keskelle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:343
 msgid "_Right"
-msgstr "Oikealle"
+msgstr "_Oikealle"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:350
 msgid "Autohide"
@@ -112,7 +112,7 @@ msgstr "Piilota automaattisesti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:354
 msgid "Auto _hide taskbar"
-msgstr "Piilota te_htäväpalkki automaattisesti"
+msgstr "_Piilota tehtäväpalkki automaattisesti"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:359
 msgid "Size"
@@ -120,7 +120,7 @@ msgstr "Koko"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:368
 msgid "Height :"
-msgstr "Korkeus :"
+msgstr "Korkeus:"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:376
 #: xftaskbar/plugin/xftaskbar_plugin.c:413
@@ -142,11 +142,11 @@ msgstr "Tehtävät"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:460
 msgid "Show tasks from _all workspaces"
-msgstr "Näytä k_aikkien työpöytien tehtävät"
+msgstr "Näytä _kaikkien työpöytien tehtävät"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:465
 msgid "Always _group tasks"
-msgstr "Ryhmitä tehtävät aina"
+msgstr "_Ryhmitä tehtävät aina"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:470
 msgid "Show application _names"
@@ -154,11 +154,11 @@ msgstr "Näytä sovellusten _nimet"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:475
 msgid "Pager"
-msgstr "Työpöydän vaihtaja"
+msgstr "Työpöydänvaihtaja"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:479
 msgid "Show _pager in taskbar"
-msgstr "Näytä työ_pöydän vaihtaja tehtäväpalkissa"
+msgstr "Näytä työpöydän_vaihtaja tehtäväpalkissa"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:484
 msgid "Notification area"
@@ -166,34 +166,29 @@ msgstr "Muistutusalue"
 
 #: xftaskbar/plugin/xftaskbar_plugin.c:488
 msgid "Show _system tray in taskbar"
-msgstr "Näytä järje_stelmälokero tehtäväpalkissa"
+msgstr "Näytä _järjestelmälokero tehtäväpalkissa"
 
 #: xftaskbar/xftaskbar.c:137
 msgid "Cannot get initial style"
 msgstr "Pohjatyyliä ei saatavilla"
 
-#: xftaskbar/xftaskbar.c:260
+#: xftaskbar/xftaskbar.c:267
 msgid "There is already a system tray running on this screen"
-msgstr "Näytöllä on jo järjestelmälokero toiminnassa"
+msgstr "Näytöllä on jo järjestelmälokero"
 
-#: xftaskbar/xftaskbar.c:268
+#: xftaskbar/xftaskbar.c:275
 #, c-format
 msgid "Unable to register system tray: %s"
 msgstr "järjestelmälokeron rekisteröinti ei onnistu: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Näin ei pitäisi tapahtua"
-
-#: xftaskbar/xftaskbar.c:592
+#: xftaskbar/xftaskbar.c:603
 msgid "Cannot get default screen\n"
 msgstr "Oletusnäytön selvittäminen ei onnistu\n"
 
-#: xftaskbar/xftaskbar.c:681
+#: xftaskbar/xftaskbar.c:692
 msgid "Cannot connect to session manager"
 msgstr "Istunnonhallintaan yhdistäminen ei onnistu"
 
-#: xftaskbar/xftaskbar.c:694
+#: xftaskbar/xftaskbar.c:705
 msgid "Cannot create MCS client channel"
 msgstr "Ei voi luoda MCS-asiakaskanavaa"
-
