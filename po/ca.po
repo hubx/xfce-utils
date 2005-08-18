@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2005-08-18 21:22+0200\n"
 "PO-Revision-Date: 2005-08-17 21:13+0900\n"
 "Last-Translator: Carles MuNoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -15,194 +15,186 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:171
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:200
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:204
+msgid "Core developers"
+msgstr ""
+
+#. Contributors
+#: xfce4-about/info.c:208
+msgid "Contributors"
+msgstr ""
+
+#: xfce4-about/info.c:213
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:243
+msgid "Server maintained by"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:247
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:251
+msgid "Translators"
+msgstr ""
+
+#: xfce4-about/info.c:282
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:286
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:388
 #, fuzzy
 msgid "About Xfce 4"
 msgstr "Sobre XFce 4"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:403
 #, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "Entorn d'escriptori XFce"
 
-#: xfce4-about/info.c:269
-msgid "Copyright 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:403
+#, fuzzy
+msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "Informació"
 
-#: xfce4-about/info.c:292
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Crèdits"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: No es pot escriure el fitxer històric %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "Executar programa"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "E_xecutar"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Executar en un _terminal"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
-msgid "Taskbar"
-msgstr "Barra de tasques"
+#~ msgid "Taskbar"
+#~ msgstr "Barra de tasques"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "Posició"
+#~ msgid "Position"
+#~ msgstr "Posició"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
 #, fuzzy
-msgid "_Top"
-msgstr "A dalt"
+#~ msgid "_Top"
+#~ msgstr "A dalt"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
 #, fuzzy
-msgid "_Bottom"
-msgstr "A baix"
+#~ msgid "_Bottom"
+#~ msgstr "A baix"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr ""
+#~ msgid "Autohide"
+#~ msgstr "Ocultar automàticament"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "Ocultar automàticament"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
 #, fuzzy
-msgid "Auto _hide taskbar"
-msgstr "Ocultar automàticament la barra de tasques"
+#~ msgid "Auto _hide taskbar"
+#~ msgstr "Ocultar automàticament la barra de tasques"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "Mida"
+#~ msgid "Size"
+#~ msgstr "Mida"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr "Alçada:"
+#~ msgid "Height :"
+#~ msgstr "Alçada:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "Menut"
+#~ msgid "Small"
+#~ msgstr "Menut"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "Gran"
+#~ msgid "Large"
+#~ msgstr "Gran"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr ""
+#~ msgid "Tasks"
+#~ msgstr "Tasques"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "Tasques"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
 #, fuzzy
-msgid "Show tasks from _all workspaces"
-msgstr "Mostra les tasques de totes les àrees de treball"
+#~ msgid "Show tasks from _all workspaces"
+#~ msgstr "Mostra les tasques de totes les àrees de treball"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr ""
+#~ msgid "Pager"
+#~ msgstr "Paginador"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "Paginador"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
 #, fuzzy
-msgid "Show _pager in taskbar"
-msgstr "Mostra el paginador en la barra de tasques"
+#~ msgid "Show _pager in taskbar"
+#~ msgstr "Mostra el paginador en la barra de tasques"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "Àrea de notificacions"
+#~ msgid "Notification area"
+#~ msgstr "Àrea de notificacions"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
 #, fuzzy
-msgid "Show _system tray in taskbar"
-msgstr "Mostra la safata del sistema a la barra de tasques"
+#~ msgid "Show _system tray in taskbar"
+#~ msgstr "Mostra la safata del sistema a la barra de tasques"
 
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "No es pot obtenir l'estil inicial"
+#~ msgid "Cannot get initial style"
+#~ msgstr "No es pot obtenir l'estil inicial"
 
-#: xftaskbar/xftaskbar.c:260
-msgid "There is already a system tray running on this screen"
-msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
+#~ msgid "There is already a system tray running on this screen"
+#~ msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
 
-#: xftaskbar/xftaskbar.c:268
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "No es por registrar la safata del sistema: %s"
+#~ msgid "Unable to register system tray: %s"
+#~ msgstr "No es por registrar la safata del sistema: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Això no hauria de succeir"
+#~ msgid "This should not happen"
+#~ msgstr "Això no hauria de succeir"
 
-#: xftaskbar/xftaskbar.c:592
 #, fuzzy
-msgid "Cannot get default screen\n"
-msgstr "No es pot obtenir els marges de l'escriptori"
+#~ msgid "Cannot get default screen\n"
+#~ msgstr "No es pot obtenir els marges de l'escriptori"
 
-#: xftaskbar/xftaskbar.c:681
-msgid "Cannot connect to session manager"
-msgstr "No es pot connectar al gestor de sessions"
+#~ msgid "Cannot connect to session manager"
+#~ msgstr "No es pot connectar al gestor de sessions"
 
-#: xftaskbar/xftaskbar.c:694
-msgid "Cannot create MCS client channel"
-msgstr "No es pot crear el canal del client MCS"
+#~ msgid "Cannot create MCS client channel"
+#~ msgstr "No es pot crear el canal del client MCS"

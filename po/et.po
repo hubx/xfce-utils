@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2005-08-18 21:22+0200\n"
 "PO-Revision-Date: 2004-12-09 01:17+0300\n"
 "Last-Translator: Mart Tõnso <mart.tonso@ttu.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -14,186 +14,198 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:171
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:200
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:204
+msgid "Core developers"
+msgstr ""
+
+#. Contributors
+#: xfce4-about/info.c:208
+msgid "Contributors"
+msgstr ""
+
+#: xfce4-about/info.c:213
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:243
+msgid "Server maintained by"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:247
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:251
+msgid "Translators"
+msgstr ""
+
+#: xfce4-about/info.c:282
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:286
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:388
 msgid "About Xfce 4"
 msgstr "Xfce4 info"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Xfce töölaua keskkond"
 
-#: xfce4-about/info.c:269
-msgid "Copyright 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:403
+#, fuzzy
+msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "Autoriõigus 2002-2004 Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "Info"
 
-#: xfce4-about/info.c:292
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Tiitrid"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "Autoriõigused"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Ei suutnud salvestada ajalugu faili %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Ava %s mis programmi abil?"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "Käivita programm"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "_Käivita"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Käivita _terminalis"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
-msgid "Taskbar"
-msgstr "Tegumiriba"
+#~ msgid "Taskbar"
+#~ msgstr "Tegumiriba"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "Asukoht"
+#~ msgid "Position"
+#~ msgstr "Asukoht"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "_Top"
-msgstr "_Üleval"
+#~ msgid "_Top"
+#~ msgstr "_Üleval"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
-msgid "_Bottom"
-msgstr "_All"
+#~ msgid "_Bottom"
+#~ msgstr "_All"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr "Asetus"
+#~ msgid "Alignment"
+#~ msgstr "Asetus"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr "_Vasakul"
+#~ msgid "_Left"
+#~ msgstr "_Vasakul"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr "_Keskel"
+#~ msgid "_Center"
+#~ msgstr "_Keskel"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr "_Paremal"
+#~ msgid "_Right"
+#~ msgstr "_Paremal"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "Automaatne varjamine"
+#~ msgid "Autohide"
+#~ msgstr "Automaatne varjamine"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
-msgid "Auto _hide taskbar"
-msgstr "_Varja tegumiriba automaatselt"
+#~ msgid "Auto _hide taskbar"
+#~ msgstr "_Varja tegumiriba automaatselt"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "Suurus"
+#~ msgid "Size"
+#~ msgstr "Suurus"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr "Kõrgus :"
+#~ msgid "Height :"
+#~ msgstr "Kõrgus :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "Väike"
+#~ msgid "Small"
+#~ msgstr "Väike"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "Suur"
+#~ msgid "Large"
+#~ msgstr "Suur"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr "Laius:"
+#~ msgid "Width:"
+#~ msgstr "Laius:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "Rakendused"
+#~ msgid "Tasks"
+#~ msgstr "Rakendused"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
-msgid "Show tasks from _all workspaces"
-msgstr "Näita kõigi tööruumide rakendusi."
+#~ msgid "Show tasks from _all workspaces"
+#~ msgstr "Näita kõigi tööruumide rakendusi."
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr "_Grupita rakendusi alati"
+#~ msgid "Always _group tasks"
+#~ msgstr "_Grupita rakendusi alati"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr "Näita rakenduste _nimesid"
+#~ msgid "Show application _names"
+#~ msgstr "Näita rakenduste _nimesid"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "Lehitseja"
+#~ msgid "Pager"
+#~ msgstr "Lehitseja"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
-msgid "Show _pager in taskbar"
-msgstr "Näita _lehitsejat tegumiribal"
+#~ msgid "Show _pager in taskbar"
+#~ msgstr "Näita _lehitsejat tegumiribal"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "Teadete ala"
+#~ msgid "Notification area"
+#~ msgstr "Teadete ala"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
-msgid "Show _system tray in taskbar"
-msgstr "Näita süsteemi _teateala tegumiribal"
+#~ msgid "Show _system tray in taskbar"
+#~ msgstr "Näita süsteemi _teateala tegumiribal"
 
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "Ei suutnud võtta algstiili"
+#~ msgid "Cannot get initial style"
+#~ msgstr "Ei suutnud võtta algstiili"
 
-#: xftaskbar/xftaskbar.c:260
-msgid "There is already a system tray running on this screen"
-msgstr "Sellel ekraanil juba töötab süsteemi teateala"
+#~ msgid "There is already a system tray running on this screen"
+#~ msgstr "Sellel ekraanil juba töötab süsteemi teateala"
 
-#: xftaskbar/xftaskbar.c:268
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "Ei suutnud süsteemi teateala registreerida: %s"
+#~ msgid "Unable to register system tray: %s"
+#~ msgstr "Ei suutnud süsteemi teateala registreerida: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Seda ei tohiks juhtuda"
+#~ msgid "This should not happen"
+#~ msgstr "Seda ei tohiks juhtuda"
 
-#: xftaskbar/xftaskbar.c:592
-msgid "Cannot get default screen\n"
-msgstr "Ei suuda võtta vaikimisi ekraani\n"
+#~ msgid "Cannot get default screen\n"
+#~ msgstr "Ei suuda võtta vaikimisi ekraani\n"
 
-#: xftaskbar/xftaskbar.c:681
-msgid "Cannot connect to session manager"
-msgstr "Ei suutnud ühenduda sessioonihalduriga"
+#~ msgid "Cannot connect to session manager"
+#~ msgstr "Ei suutnud ühenduda sessioonihalduriga"
 
-#: xftaskbar/xftaskbar.c:694
-msgid "Cannot create MCS client channel"
-msgstr "Ei suutnud luua MCS kliendi kanalit"
-
+#~ msgid "Cannot create MCS client channel"
+#~ msgstr "Ei suutnud luua MCS kliendi kanalit"

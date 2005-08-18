@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2005-08-18 21:22+0200\n"
 "PO-Revision-Date: 2005-08-17 21:17+0900\n"
 "Last-Translator: Edscott Wilson Garcia <edscott@edscott.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -15,185 +15,198 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:171
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:200
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:204
+msgid "Core developers"
+msgstr ""
+
+#. Contributors
+#: xfce4-about/info.c:208
+msgid "Contributors"
+msgstr ""
+
+#: xfce4-about/info.c:213
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:243
+msgid "Server maintained by"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:247
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:251
+msgid "Translators"
+msgstr ""
+
+#: xfce4-about/info.c:282
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:286
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:388
 msgid "About Xfce 4"
 msgstr "Acerca de XFce 4"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Entorno de Escritorio XFce"
 
-#: xfce4-about/info.c:269
-msgid "Copyright 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:403
+#, fuzzy
+msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "Copyright 2002-2004 Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "Información"
 
-#: xfce4-about/info.c:292
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Créditos"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "Derechos de autor"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: No se pudo escribir historia al archivo %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
 msgstr "¿Abrir %s con qué programa?"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "Ejecutar Programa"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "_Ejecutar"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Ejecutar en _terminal"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
-msgid "Taskbar"
-msgstr "Barra de Tareas"
+#~ msgid "Taskbar"
+#~ msgstr "Barra de Tareas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "Posición"
+#~ msgid "Position"
+#~ msgstr "Posición"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "_Top"
-msgstr "Arriba"
+#~ msgid "_Top"
+#~ msgstr "Arriba"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
-msgid "_Bottom"
-msgstr "Abajo"
+#~ msgid "_Bottom"
+#~ msgstr "Abajo"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr "Alineación"
+#~ msgid "Alignment"
+#~ msgstr "Alineación"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr "Izquierda"
+#~ msgid "_Left"
+#~ msgstr "Izquierda"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr "Centro"
+#~ msgid "_Center"
+#~ msgstr "Centro"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr "Derecha"
+#~ msgid "_Right"
+#~ msgstr "Derecha"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "Esconder automáticamente"
+#~ msgid "Autohide"
+#~ msgstr "Esconder automáticamente"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
-msgid "Auto _hide taskbar"
-msgstr "Esconder automáticamente la barra de tareas"
+#~ msgid "Auto _hide taskbar"
+#~ msgstr "Esconder automáticamente la barra de tareas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "Tamaño"
+#~ msgid "Size"
+#~ msgstr "Tamaño"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr "Altura :"
+#~ msgid "Height :"
+#~ msgstr "Altura :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "Pequeño"
+#~ msgid "Small"
+#~ msgstr "Pequeño"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "Grande"
+#~ msgid "Large"
+#~ msgstr "Grande"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr "Ancho:"
+#~ msgid "Width:"
+#~ msgstr "Ancho:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "Tareas"
+#~ msgid "Tasks"
+#~ msgstr "Tareas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
-msgid "Show tasks from _all workspaces"
-msgstr "Mostrar tareas de todos los escritorios virtuales"
+#~ msgid "Show tasks from _all workspaces"
+#~ msgstr "Mostrar tareas de todos los escritorios virtuales"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr "Siempre agrupar tareas"
+#~ msgid "Always _group tasks"
+#~ msgstr "Siempre agrupar tareas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr "Mostrar nombres de aplicaciones"
+#~ msgid "Show application _names"
+#~ msgstr "Mostrar nombres de aplicaciones"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "Paginador"
+#~ msgid "Pager"
+#~ msgstr "Paginador"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
-msgid "Show _pager in taskbar"
-msgstr "Mostrar paginador en la barra de tareas"
+#~ msgid "Show _pager in taskbar"
+#~ msgstr "Mostrar paginador en la barra de tareas"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "Área de notificación"
+#~ msgid "Notification area"
+#~ msgstr "Área de notificación"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
-msgid "Show _system tray in taskbar"
-msgstr "Mostrar la bandeja de sistema en la barra de tareas"
+#~ msgid "Show _system tray in taskbar"
+#~ msgstr "Mostrar la bandeja de sistema en la barra de tareas"
 
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "No se puede obtener el estilo inicial"
+#~ msgid "Cannot get initial style"
+#~ msgstr "No se puede obtener el estilo inicial"
 
-#: xftaskbar/xftaskbar.c:260
-msgid "There is already a system tray running on this screen"
-msgstr "Ya hay una bandeja de iconos funcionando en esta pantalla"
+#~ msgid "There is already a system tray running on this screen"
+#~ msgstr "Ya hay una bandeja de iconos funcionando en esta pantalla"
 
-#: xftaskbar/xftaskbar.c:268
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "Es imposible registrar la bandeja de iconos: %s"
+#~ msgid "Unable to register system tray: %s"
+#~ msgstr "Es imposible registrar la bandeja de iconos: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Esto no debiera ocurrir"
+#~ msgid "This should not happen"
+#~ msgstr "Esto no debiera ocurrir"
 
-#: xftaskbar/xftaskbar.c:592
-msgid "Cannot get default screen\n"
-msgstr "No se puede obtener la pantalla preestablecida\n"
+#~ msgid "Cannot get default screen\n"
+#~ msgstr "No se puede obtener la pantalla preestablecida\n"
 
-#: xftaskbar/xftaskbar.c:681
-msgid "Cannot connect to session manager"
-msgstr "No se puede conectar con el administrador de sesiones"
+#~ msgid "Cannot connect to session manager"
+#~ msgstr "No se puede conectar con el administrador de sesiones"
 
-#: xftaskbar/xftaskbar.c:694
-msgid "Cannot create MCS client channel"
-msgstr "No se puede crear el canal MCS cliente"
+#~ msgid "Cannot create MCS client channel"
+#~ msgstr "No se puede crear el canal MCS cliente"

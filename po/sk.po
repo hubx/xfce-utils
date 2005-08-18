@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2005-08-18 21:22+0200\n"
 "PO-Revision-Date: 2004-08-26 20:55+0200\n"
 "Last-Translator: Juraj Brosz <Juraj.Brosz@pobox.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -16,185 +16,198 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:171
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:200
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:204
+msgid "Core developers"
+msgstr ""
+
+#. Contributors
+#: xfce4-about/info.c:208
+msgid "Contributors"
+msgstr ""
+
+#: xfce4-about/info.c:213
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:243
+msgid "Server maintained by"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:247
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:251
+msgid "Translators"
+msgstr ""
+
+#: xfce4-about/info.c:282
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:286
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:388
 msgid "About Xfce 4"
 msgstr "O Xfce4"
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Grafické prostredie Xfce"
 
-#: xfce4-about/info.c:269
-msgid "Copyright 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:403
+#, fuzzy
+msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "Informácie"
 
-#: xfce4-about/info.c:292
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Zásluhy"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Nemôžem zapísať históriu do súboru %s\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
 msgstr "S ktorým programom otvoriť %s?"
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "Spustiť aplikáciu"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "_Spustiť"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Spustiť v _termináli"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
-msgid "Taskbar"
-msgstr "Panel úloh"
+#~ msgid "Taskbar"
+#~ msgstr "Panel úloh"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "Pozícia"
+#~ msgid "Position"
+#~ msgstr "Pozícia"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
-msgid "_Top"
-msgstr "_Hore"
+#~ msgid "_Top"
+#~ msgstr "_Hore"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
-msgid "_Bottom"
-msgstr "_Dole"
+#~ msgid "_Bottom"
+#~ msgstr "_Dole"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr "Zarovnanie"
+#~ msgid "Alignment"
+#~ msgstr "Zarovnanie"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr "_Vľavo"
+#~ msgid "_Left"
+#~ msgstr "_Vľavo"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr "V _strede"
+#~ msgid "_Center"
+#~ msgstr "V _strede"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr "Vp_ravo"
+#~ msgid "_Right"
+#~ msgstr "Vp_ravo"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "Automatické skrývanie"
+#~ msgid "Autohide"
+#~ msgstr "Automatické skrývanie"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
-msgid "Auto _hide taskbar"
-msgstr "Automatické s_krývanie panelu úloh"
+#~ msgid "Auto _hide taskbar"
+#~ msgstr "Automatické s_krývanie panelu úloh"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "Veľkosť"
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr "Výška :"
+#~ msgid "Height :"
+#~ msgstr "Výška :"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "Malá"
+#~ msgid "Small"
+#~ msgstr "Malá"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "Veľká"
+#~ msgid "Large"
+#~ msgstr "Veľká"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr "Šírka:"
+#~ msgid "Width:"
+#~ msgstr "Šírka:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "Úlohy"
+#~ msgid "Tasks"
+#~ msgstr "Úlohy"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
-msgid "Show tasks from _all workspaces"
-msgstr "Zobraziť úlohy zo všetkých _plôch"
+#~ msgid "Show tasks from _all workspaces"
+#~ msgstr "Zobraziť úlohy zo všetkých _plôch"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr "Vždy spájať podobné úlohy do_hromady"
+#~ msgid "Always _group tasks"
+#~ msgstr "Vždy spájať podobné úlohy do_hromady"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr "Zobraziť _názvy aplikácií"
+#~ msgid "Show application _names"
+#~ msgstr "Zobraziť _názvy aplikácií"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "Prepínač plôch"
+#~ msgid "Pager"
+#~ msgstr "Prepínač plôch"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
-msgid "Show _pager in taskbar"
-msgstr "Zobraziť pr_epínač plôch v panely úloh"
+#~ msgid "Show _pager in taskbar"
+#~ msgstr "Zobraziť pr_epínač plôch v panely úloh"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "Upozorňovacia oblasť"
+#~ msgid "Notification area"
+#~ msgstr "Upozorňovacia oblasť"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
-msgid "Show _system tray in taskbar"
-msgstr "Zobraziť sys_témovú lištu v panely úloh"
+#~ msgid "Show _system tray in taskbar"
+#~ msgstr "Zobraziť sys_témovú lištu v panely úloh"
 
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "Nemôžem získať východzí štýl"
+#~ msgid "Cannot get initial style"
+#~ msgstr "Nemôžem získať východzí štýl"
 
-#: xftaskbar/xftaskbar.c:260
-msgid "There is already a system tray running on this screen"
-msgstr "Na tejto obrazovke už jedna systémová lišta beží"
+#~ msgid "There is already a system tray running on this screen"
+#~ msgstr "Na tejto obrazovke už jedna systémová lišta beží"
 
-#: xftaskbar/xftaskbar.c:268
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "Nemôžem registrovať systémovú lištu: %s"
+#~ msgid "Unable to register system tray: %s"
+#~ msgstr "Nemôžem registrovať systémovú lištu: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "Nemusí sa to podariť"
+#~ msgid "This should not happen"
+#~ msgstr "Nemusí sa to podariť"
 
-#: xftaskbar/xftaskbar.c:592
-msgid "Cannot get default screen\n"
-msgstr "Nemôžem získať prednastavenú obrazovku\n"
+#~ msgid "Cannot get default screen\n"
+#~ msgstr "Nemôžem získať prednastavenú obrazovku\n"
 
-#: xftaskbar/xftaskbar.c:681
-msgid "Cannot connect to session manager"
-msgstr "Nemôžem sa pripojiť ku správcovi sedení"
+#~ msgid "Cannot connect to session manager"
+#~ msgstr "Nemôžem sa pripojiť ku správcovi sedení"
 
-#: xftaskbar/xftaskbar.c:694
-msgid "Cannot create MCS client channel"
-msgstr "Nemôžem vytvoriť kanál MCS klienta"
+#~ msgid "Cannot create MCS client channel"
+#~ msgstr "Nemôžem vytvoriť kanál MCS klienta"

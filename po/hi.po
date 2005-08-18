@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils.hi.po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"POT-Creation-Date: 2005-08-18 21:22+0200\n"
 "PO-Revision-Date: 2003-11-01 18:20+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-group@lists.sourceforge.net>\n"
@@ -15,196 +15,188 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:171
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:200
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:204
+msgid "Core developers"
+msgstr ""
+
+#. Contributors
+#: xfce4-about/info.c:208
+msgid "Contributors"
+msgstr ""
+
+#: xfce4-about/info.c:213
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:243
+msgid "Server maintained by"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:247
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:251
+msgid "Translators"
+msgstr ""
+
+#: xfce4-about/info.c:282
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:286
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:388
 #, fuzzy
 msgid "About Xfce 4"
 msgstr "एक्सएफसीई 4 (XFce 4) के बारे में "
 
-#: xfce4-about/info.c:268
+#: xfce4-about/info.c:403
 #, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "एक्सएफसीई डेस्कटॉप वातावरण"
 
-#: xfce4-about/info.c:269
-msgid "Copyright 2002-2004 by Olivier Fourdan"
+#: xfce4-about/info.c:403
+#, fuzzy
+msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "स्वत्वाधिकार 2002-2004 ओलिवियर फोरदन द्वारा"
 
-#: xfce4-about/info.c:291
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "जानकारी"
 
-#: xfce4-about/info.c:292
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "श्रेय"
 
-#: xfce4-about/info.c:293
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "स्वत्वाधिकार"
 
-#: xfce4-about/info.c:294
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:295
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "एलजीपीएल"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "जीपीएल"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "एक्सएफरन4 (xfrun4): फाइल %s में हिस्ट्री नहीं लिख सका\n"
 
-#: xfrun/xfrun.c:428
+#: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:429
+#: xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "प्रोग्राम चलाएं"
 
-#: xfrun/xfrun.c:437
+#: xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "चलाएँ (_R)"
 
-#: xfrun/xfrun.c:467
+#: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "टर्मिनल में चलाएं (_t)"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:278
-#: xftaskbar/plugin/xftaskbar_plugin.c:285
-#: xftaskbar/plugin/xftaskbar_plugin.c:533
-msgid "Taskbar"
-msgstr "टास्कबार"
+#~ msgid "Taskbar"
+#~ msgstr "टास्कबार"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:298
-msgid "Position"
-msgstr "स्थिति"
+#~ msgid "Position"
+#~ msgstr "स्थिति"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:306
 #, fuzzy
-msgid "_Top"
-msgstr "ऊपर"
+#~ msgid "_Top"
+#~ msgstr "ऊपर"
 
 # #-#-#-#-#  libgnomeprintui.HEAD.hi.po (libgnomeprintui )  #-#-#-#-#
 # libgnomeprintui/gnome-print-paper-selector.c:2013
-#: xftaskbar/plugin/xftaskbar_plugin.c:313
 #, fuzzy
-msgid "_Bottom"
-msgstr "नीचे"
+#~ msgid "_Bottom"
+#~ msgstr "नीचे"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:320
-msgid "Alignment"
-msgstr ""
+#~ msgid "Autohide"
+#~ msgstr "स्वतः छुपें"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:329
-msgid "_Left"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:336
-msgid "_Center"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:343
-msgid "_Right"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:350
-msgid "Autohide"
-msgstr "स्वतः छुपें"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:354
 #, fuzzy
-msgid "Auto _hide taskbar"
-msgstr "टास्कबार को स्वतः छुपाएँ "
+#~ msgid "Auto _hide taskbar"
+#~ msgstr "टास्कबार को स्वतः छुपाएँ "
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:359
-msgid "Size"
-msgstr "आकार"
+#~ msgid "Size"
+#~ msgstr "आकार"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:368
-msgid "Height :"
-msgstr " ऊँचाई:"
+#~ msgid "Height :"
+#~ msgstr " ऊँचाई:"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:376
-#: xftaskbar/plugin/xftaskbar_plugin.c:413
-msgid "Small"
-msgstr "छोटा"
+#~ msgid "Small"
+#~ msgstr "छोटा"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:385
-#: xftaskbar/plugin/xftaskbar_plugin.c:424
-msgid "Large"
-msgstr "विशाल"
+#~ msgid "Large"
+#~ msgstr "विशाल"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:403
-msgid "Width:"
-msgstr ""
+#~ msgid "Tasks"
+#~ msgstr "टास्कस"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:452
-msgid "Tasks"
-msgstr "टास्कस"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:460
 #, fuzzy
-msgid "Show tasks from _all workspaces"
-msgstr "सभी कार्यस्थान से टास्क दिखाएं"
+#~ msgid "Show tasks from _all workspaces"
+#~ msgstr "सभी कार्यस्थान से टास्क दिखाएं"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:465
-msgid "Always _group tasks"
-msgstr ""
+#~ msgid "Pager"
+#~ msgstr "पेजर"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:470
-msgid "Show application _names"
-msgstr ""
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:475
-msgid "Pager"
-msgstr "पेजर"
-
-#: xftaskbar/plugin/xftaskbar_plugin.c:479
 #, fuzzy
-msgid "Show _pager in taskbar"
-msgstr "टास्कबार में पेजर दिखाएं"
+#~ msgid "Show _pager in taskbar"
+#~ msgstr "टास्कबार में पेजर दिखाएं"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:484
-msgid "Notification area"
-msgstr "नोटिफिकेशन क्षेत्र"
+#~ msgid "Notification area"
+#~ msgstr "नोटिफिकेशन क्षेत्र"
 
-#: xftaskbar/plugin/xftaskbar_plugin.c:488
 #, fuzzy
-msgid "Show _system tray in taskbar"
-msgstr "टास्कबार में सिस्टम ट्रे दिखाएं"
+#~ msgid "Show _system tray in taskbar"
+#~ msgstr "टास्कबार में सिस्टम ट्रे दिखाएं"
 
-#: xftaskbar/xftaskbar.c:137
-msgid "Cannot get initial style"
-msgstr "आरंभिक स्टाइल प्राप्त नहीं कर सका!"
+#~ msgid "Cannot get initial style"
+#~ msgstr "आरंभिक स्टाइल प्राप्त नहीं कर सका!"
 
-#: xftaskbar/xftaskbar.c:260
-msgid "There is already a system tray running on this screen"
-msgstr "इस स्क्रीन पर पहले से ही सिस्टम ट्रे चल रहा है"
+#~ msgid "There is already a system tray running on this screen"
+#~ msgstr "इस स्क्रीन पर पहले से ही सिस्टम ट्रे चल रहा है"
 
-#: xftaskbar/xftaskbar.c:268
-#, c-format
-msgid "Unable to register system tray: %s"
-msgstr "सिस्टम ट्रे रजिस्टर करने में अक्षम: %s"
+#~ msgid "Unable to register system tray: %s"
+#~ msgstr "सिस्टम ट्रे रजिस्टर करने में अक्षम: %s"
 
-#: xftaskbar/xftaskbar.c:467
-msgid "This should not happen"
-msgstr "ऐसा होना नहीं चाहिए"
+#~ msgid "This should not happen"
+#~ msgstr "ऐसा होना नहीं चाहिए"
 
-#: xftaskbar/xftaskbar.c:592
 #, fuzzy
-msgid "Cannot get default screen\n"
-msgstr "डेस्कटॉप हाशिया प्राप्त नहीं कर सका"
+#~ msgid "Cannot get default screen\n"
+#~ msgstr "डेस्कटॉप हाशिया प्राप्त नहीं कर सका"
 
-#: xftaskbar/xftaskbar.c:681
-msgid "Cannot connect to session manager"
-msgstr "सत्र प्रबंधक से जुड़ नहीं सकता"
+#~ msgid "Cannot connect to session manager"
+#~ msgstr "सत्र प्रबंधक से जुड़ नहीं सकता"
 
-#: xftaskbar/xftaskbar.c:694
-msgid "Cannot create MCS client channel"
-msgstr " MCS क्लाएंट चैनल नहीं बना सकता"
+#~ msgid "Cannot create MCS client channel"
+#~ msgstr " MCS क्लाएंट चैनल नहीं बना सकता"
