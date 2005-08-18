@@ -30,7 +30,15 @@ Tobias Henle;tobias@page23.de
 Xavier Maillard;zedek@fxgsproject.org
 
 [Hosting]
-Remco Lubbers - WebAdept (www.web-adept.nl - remco at web-adept.nl)
+Remco Lubbers - WebAdept;http://www.web-adept.nl/;remco@web-adept.nl
+
+[Server administration]
+Auke Kok;sofar@lunar-linux.org
+Tchan;tchan@lunar-linux.org
+
+[Translations supervision]
+Daichi Kawahata;daichi@xfce.org
+Jean-François Wauthy;pollux@xfce.org
 
 [Translators]
 af;Petri Jooste;petri.jooste@gmail.com
@@ -56,7 +64,7 @@ hi;Ravi Shrivastava;raviratlami@yahoo.com
 he;Dotan Kamber;kamberd@yahoo.com
 he;Jonatan Perry;Jonatan443@walla.co.il
 he;Yuval Tanny;tanai@int.gov.il
-hy:Asprayama N;asprayama@yahoo.com
+hy;Asprayama N;asprayama@yahoo.com
 it;Alex Dupre;ale@FreeBSD.org
 it;Luca Marrocco;buildup@liber.it
 ja;Daichi Kawahata;daichi.k@aioros.ocn.ne.jp

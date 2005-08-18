@@ -274,8 +274,73 @@ add_credits_page (GtkNotebook * notebook, const gchar * name, gboolean hscrollin
     author = g_strsplit (buf, ";", 0);
 
     gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[0], -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " <", -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[1], -1, "email", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " - ", -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[2], -1, "email", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, ">", -1, "author", NULL);
     gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
 
+    g_strfreev (author);
+  }
+
+  /* Server admins */
+  gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, _("Server maintained by"), -1, "title", NULL);
+  gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
+  while (fgets (buf, sizeof (buf), file_authors)) {
+    g_strstrip (buf);
+    if (strcmp (buf, "[Server administration]") == 0)
+      break;
+  }
+  if (feof (file_authors) != 0)
+    g_error ("%s file is corrupted !", authors_filename);
+  while (fgets (buf, sizeof (buf), file_authors)) {
+    gchar **author = NULL;
+    gchar *text = NULL;
+
+    g_strstrip (buf);
+    if (strlen (buf) == 0)
+      break;
+
+    author = g_strsplit (buf, ";", 0);
+
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[0], -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " <", -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[1], -1, "email", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, ">", -1, "author", NULL);
+    gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
+
+    g_free (text);
+    g_strfreev (author);
+  }
+
+  /* Translations supervision */
+  gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, _("Translations supervision"), -1, "title", NULL);
+  gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
+  while (fgets (buf, sizeof (buf), file_authors)) {
+    g_strstrip (buf);
+    if (strcmp (buf, "[Translations supervision]") == 0)
+      break;
+  }
+  if (feof (file_authors) != 0)
+    g_error ("%s file is corrupted !", authors_filename);
+  while (fgets (buf, sizeof (buf), file_authors)) {
+    gchar **author = NULL;
+    gchar *text = NULL;
+
+    g_strstrip (buf);
+    if (strlen (buf) == 0)
+      break;
+
+    author = g_strsplit (buf, ";", 0);
+
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[0], -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " <", -1, "author", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[1], -1, "email", NULL);
+    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, ">", -1, "author", NULL);
+    gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
+
+    g_free (text);
     g_strfreev (author);
   }
 
