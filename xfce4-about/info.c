@@ -317,7 +317,7 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename, gb
   gchar *path;
   gchar *hfilename;
   gchar *buf;
-  int n;
+  gsize n;
 
   err = NULL;
 
