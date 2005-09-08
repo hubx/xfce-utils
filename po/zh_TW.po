@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the xfce-utils package.
 # umm <umm@pchome.com.tw>, 2003.
 # Minor updates by Ambrose Li <acli@ada.dhs.org>, 2004.
+#iHydonsingore Cia <hydonsingore@mail.educities.edu.tw>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2003-08-29 21:19+0800\n"
-"Last-Translator: Ambrose Li <acli@ada.dhs.org>\n"
+"PO-Revision-Date: 2005-09-08 22:40+0800\n"
+"Last-Translator: Hydonsingore Cia <hydonsingore@mail.educities.edu.tw>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -17,49 +18,49 @@ msgstr ""
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "無法載入"
 
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "計劃領導"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "核心開發者"
 
 #. Contributors
 #: xfce4-about/info.c:208
 msgid "Contributors"
-msgstr ""
+msgstr "貢獻者"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "網站主機及郵件列表提供"
 
 #. Server admins
 #: xfce4-about/info.c:243
 msgid "Server maintained by"
-msgstr ""
+msgstr "伺服器維護"
 
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "翻譯監督"
 
 #. Translators
 #: xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "翻譯者"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "如果您知道這份清單有任何遺失，請讓我們知道"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "感謝所有幫忙讓此軟體能用的人"
 
 #: xfce4-about/info.c:388
 msgid "About Xfce 4"
@@ -70,15 +71,13 @@ msgid "Xfce Desktop Environment"
 msgstr "Xfce 桌面環境"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "版權所有 2002-2004 Olivier Fourdan"
+msgstr "版權所有 2002-2005 Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
 msgstr "資訊"
 
-#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "工作人員"
