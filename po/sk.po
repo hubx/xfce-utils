@@ -1,77 +1,75 @@
 # translation of xfce-utils.po to Slovak
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Juraj Brosz <Juraj.Brosz@pobox.sk>, 2004.
+# Juraj Brosz <juro@jurajbrosz.info>, 2004, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-08-26 20:55+0200\n"
-"Last-Translator: Juraj Brosz <Juraj.Brosz@pobox.sk>\n"
+"POT-Creation-Date: 2005-01-02 11:06+0100\n"
+"PO-Revision-Date: 2005-09-16 23:18+0100\n"
+"Last-Translator: Juraj Brosz <juro@jurajbrosz.info>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "Nie je možné načítať"
 
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "Vedúci projektu"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "Hlavní vývojári"
 
 #. Contributors
 #: xfce4-about/info.c:208
 msgid "Contributors"
-msgstr ""
+msgstr "Prispievatelia"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Poskytnutie web hostingu a konferencií"
 
 #. Server admins
 #: xfce4-about/info.c:243
 msgid "Server maintained by"
-msgstr ""
+msgstr "Správa serveru"
 
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "Dohľad nad prekladmi"
 
 #. Translators
 #: xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "Prekladatelia"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Ak poznáte niekoho, kto chýba na tomto zozname, tak nám prosím dajte vedieť na <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Poďakovanie všetkým, ktorí pomáhajú robiť tento softvér dostupnejším."
 
 #: xfce4-about/info.c:388
 msgid "About Xfce 4"
-msgstr "O Xfce4"
+msgstr "O Xfce 4"
 
 #: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
-msgstr "Grafické prostredie Xfce"
+msgstr "Pracovné prostredie Xfce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
 msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
@@ -108,7 +106,7 @@ msgstr "xfrun4: Nemôžem zapísať históriu do súboru %s\n"
 #: xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
-msgstr "S ktorým programom otvoriť %s?"
+msgstr "S ktorou aplikáciou mám otvoriť %s?"
 
 #: xfrun/xfrun.c:444
 msgid "Run program"
@@ -122,92 +120,3 @@ msgstr "_Spustiť"
 msgid "Run in _terminal"
 msgstr "Spustiť v _termináli"
 
-#~ msgid "Taskbar"
-#~ msgstr "Panel úloh"
-
-#~ msgid "Position"
-#~ msgstr "Pozícia"
-
-#~ msgid "_Top"
-#~ msgstr "_Hore"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Dole"
-
-#~ msgid "Alignment"
-#~ msgstr "Zarovnanie"
-
-#~ msgid "_Left"
-#~ msgstr "_Vľavo"
-
-#~ msgid "_Center"
-#~ msgstr "V _strede"
-
-#~ msgid "_Right"
-#~ msgstr "Vp_ravo"
-
-#~ msgid "Autohide"
-#~ msgstr "Automatické skrývanie"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Automatické s_krývanie panelu úloh"
-
-#~ msgid "Size"
-#~ msgstr "Veľkosť"
-
-#~ msgid "Height :"
-#~ msgstr "Výška :"
-
-#~ msgid "Small"
-#~ msgstr "Malá"
-
-#~ msgid "Large"
-#~ msgstr "Veľká"
-
-#~ msgid "Width:"
-#~ msgstr "Šírka:"
-
-#~ msgid "Tasks"
-#~ msgstr "Úlohy"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Zobraziť úlohy zo všetkých _plôch"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Vždy spájať podobné úlohy do_hromady"
-
-#~ msgid "Show application _names"
-#~ msgstr "Zobraziť _názvy aplikácií"
-
-#~ msgid "Pager"
-#~ msgstr "Prepínač plôch"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Zobraziť pr_epínač plôch v panely úloh"
-
-#~ msgid "Notification area"
-#~ msgstr "Upozorňovacia oblasť"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Zobraziť sys_témovú lištu v panely úloh"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Nemôžem získať východzí štýl"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Na tejto obrazovke už jedna systémová lišta beží"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Nemôžem registrovať systémovú lištu: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Nemusí sa to podariť"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Nemôžem získať prednastavenú obrazovku\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Nemôžem sa pripojiť ku správcovi sedení"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Nemôžem vytvoriť kanál MCS klienta"
