@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XFce4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-03-21 12:32+0100\n"
-"Last-Translator: Luca Marrocco <buildup@libero.it>\n"
+"POT-Creation-Date: 2004-10-02 10:39+0200\n"
+"PO-Revision-Date: 2005-09-20 22:00+0100\n"
+"Last-Translator: Alex Dupre <ale@FreeBSD.org>\n"
 "Language-Team: GUFI <traduzioni@gufi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +22,12 @@ msgstr ""
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "Capo Progetto"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "Sviluppatori principali"
 
 #. Contributors
 #: xfce4-about/info.c:208
@@ -46,12 +46,12 @@ msgstr ""
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervisione dei traduttori"
 
 #. Translators
 #: xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "Traduttori"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
@@ -62,19 +62,16 @@ msgid "Thanks to all who helped making this software available."
 msgstr ""
 
 #: xfce4-about/info.c:388
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "Info su XFce 4"
+msgstr "Info su Xfce 4"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "XFce Desktop Environment"
+msgstr "Ambiente Desktop Xfce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2005 di Olivier Fourdan"
 
 #  add pages
 #: xfce4-about/info.c:425
@@ -124,96 +121,3 @@ msgstr "_Esegui"
 msgid "Run in _terminal"
 msgstr "Esegui in un _terminale"
 
-#~ msgid "Taskbar"
-#~ msgstr "Barra dei Processi"
-
-#~ msgid "Position"
-#~ msgstr "Posizione"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "Alto"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "Basso"
-
-#~ msgid "Alignment"
-#~ msgstr "Allineamento"
-
-#, fuzzy
-#~ msgid "_Left"
-#~ msgstr "Sinistra"
-
-#, fuzzy
-#~ msgid "_Center"
-#~ msgstr "Centro"
-
-#, fuzzy
-#~ msgid "_Right"
-#~ msgstr "Destra"
-
-#~ msgid "Autohide"
-#~ msgstr "Nascondimento automatico"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Nascondimento automatico barra dei processi"
-
-#~ msgid "Size"
-#~ msgstr "Dimensione"
-
-#~ msgid "Height :"
-#~ msgstr "Altezza :"
-
-#~ msgid "Small"
-#~ msgstr "Piccolo"
-
-#~ msgid "Large"
-#~ msgstr "Largo"
-
-#~ msgid "Width:"
-#~ msgstr "Larghezza:"
-
-#~ msgid "Tasks"
-#~ msgstr "Processi"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Mostra i processi di tutti gli ambienti di lavoro"
-
-#~ msgid "Pager"
-#~ msgstr "Pager"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Mostra il pager nella barra dei processi"
-
-#~ msgid "Notification area"
-#~ msgstr "Area di notifica"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Mostra la barra di sistema nella barra dei processi"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Impossibile caricare lo stile iniziale"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Barra di sitema già presente su questo schermo"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Impossibile registrare la barra di sistema: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Ciò non avrebbe dovuto verificarsi"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Impossibile determinare i bordi dello schermo"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Impossibile connettersi al gestore di sessione"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Impossibile creare canale client MCS"
