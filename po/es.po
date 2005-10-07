@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
 "PO-Revision-Date: 2005-08-17 21:15+0900\n"
 "Last-Translator: Edscott Wilson Garcia <edscott@edscott.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -120,93 +120,3 @@ msgstr "_Ejecutar"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Ejecutar en _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Barra de Tareas"
-
-#~ msgid "Position"
-#~ msgstr "Posición"
-
-#~ msgid "_Top"
-#~ msgstr "Arriba"
-
-#~ msgid "_Bottom"
-#~ msgstr "Abajo"
-
-#~ msgid "Alignment"
-#~ msgstr "Alineación"
-
-#~ msgid "_Left"
-#~ msgstr "Izquierda"
-
-#~ msgid "_Center"
-#~ msgstr "Centro"
-
-#~ msgid "_Right"
-#~ msgstr "Derecha"
-
-#~ msgid "Autohide"
-#~ msgstr "Esconder automáticamente"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Esconder automáticamente la barra de tareas"
-
-#~ msgid "Size"
-#~ msgstr "Tamaño"
-
-#~ msgid "Height :"
-#~ msgstr "Altura :"
-
-#~ msgid "Small"
-#~ msgstr "Pequeño"
-
-#~ msgid "Large"
-#~ msgstr "Grande"
-
-#~ msgid "Width:"
-#~ msgstr "Ancho:"
-
-#~ msgid "Tasks"
-#~ msgstr "Tareas"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Mostrar tareas de todos los escritorios virtuales"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Siempre agrupar tareas"
-
-#~ msgid "Show application _names"
-#~ msgstr "Mostrar nombres de aplicaciones"
-
-#~ msgid "Pager"
-#~ msgstr "Paginador"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Mostrar paginador en la barra de tareas"
-
-#~ msgid "Notification area"
-#~ msgstr "Área de notificación"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Mostrar la bandeja de sistema en la barra de tareas"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "No se puede obtener el estilo inicial"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Ya hay una bandeja de iconos funcionando en esta pantalla"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Es imposible registrar la bandeja de iconos: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Esto no debiera ocurrir"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "No se puede obtener la pantalla preestablecida\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "No se puede conectar con el administrador de sesiones"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "No se puede crear el canal MCS cliente"

@@ -1,16 +1,16 @@
-# xfce-utils for XFCE
-# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfwm4 package.
+# Vietnamese translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfwm4 1.0.0\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-09-08 15:40+9\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:35+0900\n"
 "Last-Translator: Lâm Vĩnh Niên <nienvl@yahoo.ca>\n"
-"Language-Team: none <LL@li.org>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,93 +120,3 @@ msgstr "_Chạy"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Chạy trong _trạm cuối"
-
-#~ msgid "Taskbar"
-#~ msgstr "Thanh tác vụ"
-
-#~ msgid "Position"
-#~ msgstr "Vị trí"
-
-#~ msgid "_Top"
-#~ msgstr "Đỉ_nh"
-
-#~ msgid "_Bottom"
-#~ msgstr "Đá_y"
-
-#~ msgid "Alignment"
-#~ msgstr "Canh hàng"
-
-#~ msgid "_Left"
-#~ msgstr "T_rái"
-
-#~ msgid "_Center"
-#~ msgstr "Giữ_a"
-
-#~ msgid "_Right"
-#~ msgstr "_Phải"
-
-#~ msgid "Autohide"
-#~ msgstr "Tự động ẩn"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Tự động ẩn t_hanh tác vụ"
-
-#~ msgid "Size"
-#~ msgstr "Kích thước"
-
-#~ msgid "Height :"
-#~ msgstr "Chiều cao :"
-
-#~ msgid "Small"
-#~ msgstr "Nhỏ"
-
-#~ msgid "Large"
-#~ msgstr "To"
-
-#~ msgid "Width:"
-#~ msgstr "Bề rộng:"
-
-#~ msgid "Tasks"
-#~ msgstr "Tác vụ"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Hiển thị các tác vụ từ _mọi không gian làm việc"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Luôn luôn _nhóm các tác vụ"
-
-#~ msgid "Show application _names"
-#~ msgstr "Hiển thị _tên ứng dụng"
-
-#~ msgid "Pager"
-#~ msgstr "Trình chuyển trang"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Hiển thị trình chu_yển trang trên thanh tác vụ"
-
-#~ msgid "Notification area"
-#~ msgstr "Vùng thông báo"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Hiển thị _khay hệ thống trên thanh tác vụ"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Không thể lấy kiểu khởi đầu"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Có sẵn khay hệ thống đang chạy trên màn hình này"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Không thể đăng kí khay hệ thống: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Điều này không nên xảy ra"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Không thể lấy được màn hình mặc định\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Không thể nối vào trình quản lí phiên"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Không thể tạo kênh khách MCS"

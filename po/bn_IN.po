@@ -1,14 +1,14 @@
 # translation of xfce-utils.po to Bangla INDIA
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Copyright (C) 2005 Free Software Foundation.
 # Runa Bhattacharjee <runab@redhat.com>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-04-06 18:26+0530\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:15+0900\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla INDIA <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -121,90 +121,3 @@ msgstr "আরম্ভ করুন (_R)"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "টার্মিনালে আরম্ভ করুন (_t)"
-
-#~ msgid "Taskbar"
-#~ msgstr "টাস্কবার"
-
-#~ msgid "Position"
-#~ msgstr "অবস্থান"
-
-#~ msgid "_Top"
-#~ msgstr "উপরে (_T)"
-
-#~ msgid "_Bottom"
-#~ msgstr "নীচে (_B)"
-
-#~ msgid "Alignment"
-#~ msgstr "দিশা"
-
-#~ msgid "_Left"
-#~ msgstr "বাঁদিক (_L)"
-
-#~ msgid "_Center"
-#~ msgstr "কেন্দ্রস্থিত (_C)"
-
-#~ msgid "_Right"
-#~ msgstr "ডানদিকে (_R)"
-
-#~ msgid "Autohide"
-#~ msgstr "অটোহাইড"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "টাস্কবার অটোহাইড করা হবে (_h)"
-
-#~ msgid "Size"
-#~ msgstr "মাপ"
-
-#~ msgid "Height :"
-#~ msgstr "উচ্চতা :"
-
-#~ msgid "Small"
-#~ msgstr "ক্ষুদ্র"
-
-#~ msgid "Large"
-#~ msgstr "বৃহত্‍"
-
-#~ msgid "Width:"
-#~ msgstr "প্রস্থ:"
-
-#~ msgid "Tasks"
-#~ msgstr "কর্ম"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "সমস্ত ওয়ার্ক-স্পেসের কর্ম প্রদর্শন করা হবে (_a)"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "কর্ম সর্বদা দলভুক্ত করা হবে (_g)"
-
-#~ msgid "Show application _names"
-#~ msgstr "অ্যাপ্লিকেশনের নাম প্রদর্শন করা হবে (_n)"
-
-#~ msgid "Pager"
-#~ msgstr "পেজার"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "টাস্কবারে পেজার প্রদর্শন করা হবে (_p)"
-
-#~ msgid "Notification area"
-#~ msgstr "বিজ্ঞপ্তি প্রদর্শনের অঞ্চল"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "টাস্কবারে সিস্টেম ট্রে প্রদর্শিত হবে (_s)"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "প্রারম্ভিক বিন্যাশ প্রাপ্ত করা যায়নি"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "এই পর্দায় বর্তমানে একটি চলমান সিস্টেম ট্রে উপস্থিত রয়েছে"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "সিস্টেম ট্রে রেজিস্টার করা যায়নি: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "ডিফল্ট পর্দা প্রাপ্ত করা যায়নি\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "সেশান নিয়ন্ত্রকের সাথে সংযোগ করা যায়নি"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS ক্লায়েন্ট চ্যানেল নির্মাণ করা যায়নি"

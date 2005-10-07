@@ -1,15 +1,16 @@
 # Translation of xfce-utils into Finnish.
 # This file is distributed under the same license as the xfce-utils package.
-# Copyright (C) 2002-2005 The Xfce Development Team
+# Copyright (C) 2002-2005 The Xfce Development Team.
+# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 1.0.0\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-08-11 19:32+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:24+0900\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
-"Language-Team: \n"
+"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -119,90 +120,3 @@ msgstr "_Suorita"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Suoritä _päätteessä"
-
-#~ msgid "Taskbar"
-#~ msgstr "Tehtäväpalkki"
-
-#~ msgid "Position"
-#~ msgstr "Sijainti"
-
-#~ msgid "_Top"
-#~ msgstr "_Yläreuna"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Alareuna"
-
-#~ msgid "Alignment"
-#~ msgstr "Tasaa"
-
-#~ msgid "_Left"
-#~ msgstr "_Vasemmalle"
-
-#~ msgid "_Center"
-#~ msgstr "_Keskelle"
-
-#~ msgid "_Right"
-#~ msgstr "_Oikealle"
-
-#~ msgid "Autohide"
-#~ msgstr "Piilota automaattisesti"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "_Piilota tehtäväpalkki automaattisesti"
-
-#~ msgid "Size"
-#~ msgstr "Koko"
-
-#~ msgid "Height :"
-#~ msgstr "Korkeus:"
-
-#~ msgid "Small"
-#~ msgstr "Pieni"
-
-#~ msgid "Large"
-#~ msgstr "Suuri"
-
-#~ msgid "Width:"
-#~ msgstr "Leveys:"
-
-#~ msgid "Tasks"
-#~ msgstr "Tehtävät"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Näytä _kaikkien työpöytien tehtävät"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "_Ryhmitä tehtävät aina"
-
-#~ msgid "Show application _names"
-#~ msgstr "Näytä sovellusten _nimet"
-
-#~ msgid "Pager"
-#~ msgstr "Työpöydänvaihtaja"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Näytä työpöydän_vaihtaja tehtäväpalkissa"
-
-#~ msgid "Notification area"
-#~ msgstr "Muistutusalue"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Näytä _järjestelmälokero tehtäväpalkissa"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Pohjatyyliä ei saatavilla"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Näytöllä on jo järjestelmälokero"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "järjestelmälokeron rekisteröinti ei onnistu: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Oletusnäytön selvittäminen ei onnistu\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Istunnonhallintaan yhdistäminen ei onnistu"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Ei voi luoda MCS-asiakaskanavaa"

@@ -1,17 +1,17 @@
 # British English translations for xfce4-utils package.
-# Copyright (C) 2004 Zuza Software Foundation (Translate.org.za)
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce4-utils package.
 #
 # Zuza Software Foundation (Translate.org.za), 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-12-03 18:06+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:22+0900\n"
 "Last-Translator: Translate.org.za <info@translate.org.za>\n"
-"Language-Team: \n"
+"Language-Team: British English <en_gb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -122,93 +122,3 @@ msgstr "_Run"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Run in _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Taskbar"
-
-#~ msgid "Position"
-#~ msgstr "Position"
-
-#~ msgid "_Top"
-#~ msgstr "_Top"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Bottom"
-
-#~ msgid "Alignment"
-#~ msgstr "Alignment"
-
-#~ msgid "_Left"
-#~ msgstr "_Left"
-
-#~ msgid "_Center"
-#~ msgstr "_Centre"
-
-#~ msgid "_Right"
-#~ msgstr "_Right"
-
-#~ msgid "Autohide"
-#~ msgstr "Autohide"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Auto _hide taskbar"
-
-#~ msgid "Size"
-#~ msgstr "Size"
-
-#~ msgid "Height :"
-#~ msgstr "Height :"
-
-#~ msgid "Small"
-#~ msgstr "Small"
-
-#~ msgid "Large"
-#~ msgstr "Large"
-
-#~ msgid "Width:"
-#~ msgstr "Width:"
-
-#~ msgid "Tasks"
-#~ msgstr "Tasks"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Show tasks from _all workspaces"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Always _group tasks"
-
-#~ msgid "Show application _names"
-#~ msgstr "Show application _names"
-
-#~ msgid "Pager"
-#~ msgstr "Pager"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Show _pager in taskbar"
-
-#~ msgid "Notification area"
-#~ msgstr "Notification area"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Show _system tray in taskbar"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Cannot get initial style"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "There is already a system tray running on this screen"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Unable to register system tray: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "This should not happen"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Cannot get default screen\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Cannot connect to session manager"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Cannot create MCS client channel"

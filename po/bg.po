@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
 "PO-Revision-Date: 2005-08-17 21:11+0900\n"
 "Last-Translator: Miroslav Yordanov <miordanov@i-space.org>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -122,79 +122,3 @@ msgstr "_Стартира"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Стартира в терминал"
-
-#~ msgid "Taskbar"
-#~ msgstr "Лента за задачи"
-
-#~ msgid "Position"
-#~ msgstr "Позиция"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "Горе"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "Долу"
-
-#~ msgid "Autohide"
-#~ msgstr "Автоматично скриване"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Автоматично скриване на лентата със задачи"
-
-#~ msgid "Size"
-#~ msgstr "Размер"
-
-#~ msgid "Height :"
-#~ msgstr "Широчина :"
-
-#~ msgid "Small"
-#~ msgstr "Малък"
-
-#~ msgid "Large"
-#~ msgstr "Голям"
-
-#~ msgid "Tasks"
-#~ msgstr "Задачи"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Показва задачите от всички работни места"
-
-#~ msgid "Pager"
-#~ msgstr "Пейджър"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Показва пейджъра на лентата със задачи"
-
-#~ msgid "Notification area"
-#~ msgstr "Област за известяване"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Показва панел с икони в панела с задачите"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Не мога да взема първоначалния стил"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Вече има панел със задачи стартиран в този екран"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Не мога да регистрирам панела с задачите: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Това не трябва да се случва"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Не мога да взема границите на десктопа"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Не мога да се свържа с мениджъра на сесии"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Не мога да създам канала на клиента MCS"

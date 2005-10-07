@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
 "PO-Revision-Date: 2005-08-17 21:19+0900\n"
 "Last-Translator: Jasper Huijsmans <jasper@xfce.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -120,96 +120,3 @@ msgstr "_Uitvoeren"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "in _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Taakbalk"
-
-#~ msgid "Position"
-#~ msgstr "Positie"
-
-#~ msgid "_Top"
-#~ msgstr "_Boven"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Onder"
-
-#~ msgid "Alignment"
-#~ msgstr "Uitlijning"
-
-#~ msgid "_Left"
-#~ msgstr "_Links"
-
-#~ msgid "_Center"
-#~ msgstr "_Midden"
-
-#~ msgid "_Right"
-#~ msgstr "_Rechts"
-
-#~ msgid "Autohide"
-#~ msgstr "Automatisch verbergen"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Taakbalk automatisch _verbergen"
-
-#~ msgid "Size"
-#~ msgstr "Grootte"
-
-#~ msgid "Height :"
-#~ msgstr "Hoogte:"
-
-#~ msgid "Small"
-#~ msgstr "Klein"
-
-#~ msgid "Large"
-#~ msgstr "Groot"
-
-#~ msgid "Width:"
-#~ msgstr "Breedte:"
-
-#~ msgid "Tasks"
-#~ msgstr "Taken"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Taken van _alle bureaubladen tonen"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Taken altijd _groeperen"
-
-#~ msgid "Show application _names"
-#~ msgstr "Toon programmatitels"
-
-#~ msgid "Pager"
-#~ msgstr "Pager"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "_Pager tonen in taakbalk"
-
-#~ msgid "Notification area"
-#~ msgstr "Status pictogrammen"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Toon _statuspictogrammen"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Kan initiële stijl niet vinden"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Er is al een system tray actief op dit scherm"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Kan system tray niet registreren: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Dit zou niet moeten gebeuren"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Kan standaard scherm niet vinden\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Sessiebeheer niet beschikbaar"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Kan MCS client kanaal niet aanmaken"
-
-#~ msgid "License"
-#~ msgstr "Licentie"

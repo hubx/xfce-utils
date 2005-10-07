@@ -1,16 +1,15 @@
 # Korean translations for xfce-utils package.
-# Copyright (C) 2002-2005 The Xfce development team
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # ByungHyun Choi <byunghyun.choi@gmail.com>, 2005.
 #
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils trunk\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-07-02 00:25:02+0900\n"
-"Last-Translator: ByungHyun Choi<byunghyunchoi@rtlinux.or.kr>\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:29+0900\n"
+"Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
 "net>\n"
 "MIME-Version: 1.0\n"
@@ -122,90 +121,3 @@ msgstr "실행(_R)"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "터미널에서 실행(_t)"
-
-#~ msgid "Taskbar"
-#~ msgstr "태스크바"
-
-#~ msgid "Position"
-#~ msgstr "위치"
-
-#~ msgid "_Top"
-#~ msgstr "위(_T)"
-
-#~ msgid "_Bottom"
-#~ msgstr "아래(_B)"
-
-#~ msgid "Alignment"
-#~ msgstr "배치"
-
-#~ msgid "_Left"
-#~ msgstr "왼쪽(_L)"
-
-#~ msgid "_Center"
-#~ msgstr "가운데(_C)"
-
-#~ msgid "_Right"
-#~ msgstr "오른쪽(_R)"
-
-#~ msgid "Autohide"
-#~ msgstr "자동 숨기기"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "태스크바 자동 숨김(_h)"
-
-#~ msgid "Size"
-#~ msgstr "크기"
-
-#~ msgid "Height :"
-#~ msgstr "높이 :"
-
-#~ msgid "Small"
-#~ msgstr "작게"
-
-#~ msgid "Large"
-#~ msgstr "크게"
-
-#~ msgid "Width:"
-#~ msgstr "폭:"
-
-#~ msgid "Tasks"
-#~ msgstr "태스크"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "모든 작업공간의 태스크 보이기(_a)"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "같은 태스크는 한 군데로 모으기(_g) "
-
-#~ msgid "Show application _names"
-#~ msgstr "프로그램 이름 보이기(_n)"
-
-#~ msgid "Pager"
-#~ msgstr "페이저"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "태스크바에 페이저 보이기(_p)"
-
-#~ msgid "Notification area"
-#~ msgstr "알림 영역"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "태스크바에 시스템 트레이 보이기(_s)"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "초기화 스타일을 못 찾겠습니다."
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "이 화면에는 시스템 트레이가 이미 동작 중입니다."
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "시스템 트레이에 %s를(을) 등록하지 못 했습니다."
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "화면 여백을 확보하지 못 했습니다.\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "세션 관리도구와 연결하지 못 했습니다."
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS 클라이언트 채널을 생성하지 못 했습니다."

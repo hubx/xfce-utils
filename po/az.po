@@ -1,16 +1,14 @@
-# translation of xfce-utils.po to Azerbaijani
-# translation of az.po to Azerbaijani Turkish
 # Azerbaijani Turkish translation of xfce-utils.
-# Copyright (C) 2003 THE xfce-utils'S COPYRIGHT HOLDER
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Mətin Əmirov <metin@karegen.com>, 2003, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-08-18 21:56+0300\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:14+0900\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
 "Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -123,93 +121,3 @@ msgstr "_Başlat"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "_Terminalda başlat"
-
-#~ msgid "Taskbar"
-#~ msgstr "Vəzifə çubuğu"
-
-#~ msgid "Position"
-#~ msgstr "Mövqe"
-
-#~ msgid "_Top"
-#~ msgstr "Ü_st"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Alt"
-
-#~ msgid "Alignment"
-#~ msgstr "Tərəfləmə"
-
-#~ msgid "_Left"
-#~ msgstr "_Sol"
-
-#~ msgid "_Center"
-#~ msgstr "_Orta"
-
-#~ msgid "_Right"
-#~ msgstr "_Sağ"
-
-#~ msgid "Autohide"
-#~ msgstr "Avtomatik gizlət"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Vəzifə çubuğunu avtomatik _gizlət"
-
-#~ msgid "Size"
-#~ msgstr "Böyüklük"
-
-#~ msgid "Height :"
-#~ msgstr "Hündürlük :"
-
-#~ msgid "Small"
-#~ msgstr "Kiçik"
-
-#~ msgid "Large"
-#~ msgstr "Geniş"
-
-#~ msgid "Width:"
-#~ msgstr "En:"
-
-#~ msgid "Tasks"
-#~ msgstr "Vəzifələr"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "_Bütün iş sahələrindəki vəzifələri göstər"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Vəzifələri həmişə _qrupla"
-
-#~ msgid "Show application _names"
-#~ msgstr "Proqram _adlarını göstər"
-
-#~ msgid "Pager"
-#~ msgstr "Peycer"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Vəzifə çubuğunda _peyceri göstər"
-
-#~ msgid "Notification area"
-#~ msgstr "Bildiriş sahəsi"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Vəzifə çubuğunda _bildiriş sahəsini göstər"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Başlanğıc tərzi alına bilmir"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Hazırkı ekranda onsuzda bir bildiriş sahəsi mövcuddur"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Bildiriş sahəsi qeyd edilə bilmədi: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Bu olmamalıdır"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Ön quröulu ekran alına bilmir\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "İclas idarəçisinə bağlana bilmir"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS alıcı kanalı yaradıla bilmir"

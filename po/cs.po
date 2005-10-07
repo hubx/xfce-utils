@@ -1,18 +1,17 @@
-# translation of cs.po to Czech
-# Czech translation for xfce-utils
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Czech translation for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Lukáš Konarovský <daeltar@daeltar.org>, 2003.
 # Alois Nespor <Alois.Nespor@seznam.cz>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cs\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-10-28 00:19+0000\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:16+0900\n"
 "Last-Translator: Alois Nespor <Alois.Nespor@seznam.cz>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -123,93 +122,3 @@ msgstr "_Spustit"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Spustit v _terminálu"
-
-#~ msgid "Taskbar"
-#~ msgstr "Panel úloh"
-
-#~ msgid "Position"
-#~ msgstr "Pozice"
-
-#~ msgid "_Top"
-#~ msgstr "_Nahoře"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Dole"
-
-#~ msgid "Alignment"
-#~ msgstr "Zarovnat"
-
-#~ msgid "_Left"
-#~ msgstr "_Vlevo"
-
-#~ msgid "_Center"
-#~ msgstr "_Na střed"
-
-#~ msgid "_Right"
-#~ msgstr "_Napravo"
-
-#~ msgid "Autohide"
-#~ msgstr "Automatické skrývání "
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Automatické skrývání panelu úloh"
-
-#~ msgid "Size"
-#~ msgstr "Velikost"
-
-#~ msgid "Height :"
-#~ msgstr "Výška"
-
-#~ msgid "Small"
-#~ msgstr "Menší"
-
-#~ msgid "Large"
-#~ msgstr "Větší"
-
-#~ msgid "Width:"
-#~ msgstr "Šířka:"
-
-#~ msgid "Tasks"
-#~ msgstr "Úlohy"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Ukazovat úlohy ze všech pracovních ploch"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Vždy _seskupovat úkoly"
-
-#~ msgid "Show application _names"
-#~ msgstr "Ukázat _jména aplikací"
-
-#~ msgid "Pager"
-#~ msgstr "Přepínač ploch"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Zobrazit přepínač ploch v panelu úloh"
-
-#~ msgid "Notification area"
-#~ msgstr "Upozorňovací oblast"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Ukázat systémový panel v panelu úloh"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Nemohu získat výchozí styl"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Na této obrazovce již jedna upozorňovací oblast běží"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Nelze vložit do systémového panelu: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Toto se nemělo stát"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Nemohu získat standartní obraz\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Nemohu se připojit ke správci sezení"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Nelze vytvořit kanál MCS klienta"

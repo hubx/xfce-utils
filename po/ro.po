@@ -1,15 +1,15 @@
 # Romanian translation of xfce-utils.
-# Copyright (C) 2004 Free Software Foundation.
-# This file is distributed under the same license as the xfwm4 package.
-# Mişu Moldovan <dumol@go.ro>, 2004.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Mişu Moldovan <dumol@gnome.ro>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.2 rc1\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-11-14 19:01+0200\n"
-"Last-Translator: Mişu Moldovan <dumol@go.ro>\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:32+0900\n"
+"Last-Translator: Mişu Moldovan <dumol@gnome.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -121,93 +121,3 @@ msgstr "_Porneşte"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "În _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Bară aplicaţii"
-
-#~ msgid "Position"
-#~ msgstr "Poziţie"
-
-#~ msgid "_Top"
-#~ msgstr "_Sus"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Jos"
-
-#~ msgid "Alignment"
-#~ msgstr "Aliniere"
-
-#~ msgid "_Left"
-#~ msgstr "Stân_ga"
-
-#~ msgid "_Center"
-#~ msgstr "Cen_tru"
-
-#~ msgid "_Right"
-#~ msgstr "_Dreapta"
-
-#~ msgid "Autohide"
-#~ msgstr "Ascundere"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Ascunde automat bara aplicaţiilor"
-
-#~ msgid "Size"
-#~ msgstr "Mărime"
-
-#~ msgid "Height :"
-#~ msgstr "Înălţime:"
-
-#~ msgid "Small"
-#~ msgstr "Mică"
-
-#~ msgid "Large"
-#~ msgstr "Mare"
-
-#~ msgid "Width:"
-#~ msgstr "Lăţime:"
-
-#~ msgid "Tasks"
-#~ msgstr "Aplicaţii"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "_Arată aplicaţiile din toate spaţiile de lucru"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "_Grupează întotdeauna aplicaţiilor"
-
-#~ msgid "Show application _names"
-#~ msgstr "Arată _numele programelor"
-
-#~ msgid "Pager"
-#~ msgstr "Comutator"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Arată c_omutatorul spaţiilor de lucru"
-
-#~ msgid "Notification area"
-#~ msgstr "Zonă de notificare"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Arată _zona sistem de notificare"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Nu am reuşit să obţin stilul iniţial"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Există deja o zonă sistem de notificare în acest ecran"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Nu am reuşit să înregistrez zona sistem de notificare: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Aceasta nu ar trebui să se întâmple"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Nu am reuşit să obţin ecranul implicit\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Nu am reuşit să mă conectez la administratorul sesiunii"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Nu am reuşit să creez canalul clientului MCS"

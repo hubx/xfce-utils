@@ -1,13 +1,15 @@
 # Estonian translation of xfce-utils.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # peeter <Peeter.Vois@mail.ee>, 2004.
+# Mart Tõnso <mart.tonso@ttu.ee>, 2004.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils VERSION\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-12-09 01:17+0300\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:23+0900\n"
 "Last-Translator: Mart Tõnso <mart.tonso@ttu.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -119,93 +121,3 @@ msgstr "_Käivita"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Käivita _terminalis"
-
-#~ msgid "Taskbar"
-#~ msgstr "Tegumiriba"
-
-#~ msgid "Position"
-#~ msgstr "Asukoht"
-
-#~ msgid "_Top"
-#~ msgstr "_Üleval"
-
-#~ msgid "_Bottom"
-#~ msgstr "_All"
-
-#~ msgid "Alignment"
-#~ msgstr "Asetus"
-
-#~ msgid "_Left"
-#~ msgstr "_Vasakul"
-
-#~ msgid "_Center"
-#~ msgstr "_Keskel"
-
-#~ msgid "_Right"
-#~ msgstr "_Paremal"
-
-#~ msgid "Autohide"
-#~ msgstr "Automaatne varjamine"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "_Varja tegumiriba automaatselt"
-
-#~ msgid "Size"
-#~ msgstr "Suurus"
-
-#~ msgid "Height :"
-#~ msgstr "Kõrgus :"
-
-#~ msgid "Small"
-#~ msgstr "Väike"
-
-#~ msgid "Large"
-#~ msgstr "Suur"
-
-#~ msgid "Width:"
-#~ msgstr "Laius:"
-
-#~ msgid "Tasks"
-#~ msgstr "Rakendused"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Näita kõigi tööruumide rakendusi."
-
-#~ msgid "Always _group tasks"
-#~ msgstr "_Grupita rakendusi alati"
-
-#~ msgid "Show application _names"
-#~ msgstr "Näita rakenduste _nimesid"
-
-#~ msgid "Pager"
-#~ msgstr "Lehitseja"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Näita _lehitsejat tegumiribal"
-
-#~ msgid "Notification area"
-#~ msgstr "Teadete ala"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Näita süsteemi _teateala tegumiribal"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Ei suutnud võtta algstiili"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Sellel ekraanil juba töötab süsteemi teateala"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Ei suutnud süsteemi teateala registreerida: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Seda ei tohiks juhtuda"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Ei suuda võtta vaikimisi ekraani\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Ei suutnud ühenduda sessioonihalduriga"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Ei suutnud luua MCS kliendi kanalit"

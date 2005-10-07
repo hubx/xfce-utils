@@ -1,17 +1,16 @@
-# translation of xfce-utils.po to Afrikaans
-# Petri Jooste <petri.jooste@gmail.com>, 2005.
 # Afrikaans translations for xfce-utils package.
 # Copyright (C) 2003-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
+# Petri Jooste <petri.jooste@gmail.com>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.2\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-08-01 08:32-0500\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:08+0900\n"
 "Last-Translator: Petri Jooste <petri.jooste@gmail.com>\n"
-"Language-Team: Afrikaans\n"
+"Language-Team: Afrikaans <i18n@af.org.za>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -122,90 +121,3 @@ msgstr "_Loop"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Loop in _terminaal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Taakbalk"
-
-#~ msgid "Position"
-#~ msgstr "Posisie"
-
-#~ msgid "_Top"
-#~ msgstr "_Bokant"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Onderkant"
-
-#~ msgid "Alignment"
-#~ msgstr "Belyning"
-
-#~ msgid "_Left"
-#~ msgstr "_Links"
-
-#~ msgid "_Center"
-#~ msgstr "_Middel"
-
-#~ msgid "_Right"
-#~ msgstr "_Regs"
-
-#~ msgid "Autohide"
-#~ msgstr "Outoversteek"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Outo_versteek taakbalk"
-
-#~ msgid "Size"
-#~ msgstr "Grootte"
-
-#~ msgid "Height :"
-#~ msgstr "Hoogte :"
-
-#~ msgid "Small"
-#~ msgstr "Klein"
-
-#~ msgid "Large"
-#~ msgstr "Groot"
-
-#~ msgid "Width:"
-#~ msgstr "Wydte:"
-
-#~ msgid "Tasks"
-#~ msgstr "Take"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Wys take van _alle werkareas"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "_Groepeer take altyd"
-
-#~ msgid "Show application _names"
-#~ msgstr "Wys program_name"
-
-#~ msgid "Pager"
-#~ msgstr "Blaaier"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Wys _blaaier in taakbalk"
-
-#~ msgid "Notification area"
-#~ msgstr "Kennisgewingarea"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Wys _stelselmandjie in taakbalk"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Kan nie aanvanklike styl kry nie"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Daar is reeds 'n stelselmandjie op hierdie skerm"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Kan nie stelselmandjie registreer nie: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Kan verstekskerm nie kry nie\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Kan nie aan sessiebestuurder koppel nie"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Kan nie 'n MCS-klientkanaal skep nie"

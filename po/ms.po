@@ -1,14 +1,14 @@
-# Xfce-utils Malay translation.
-# Copyright (C) 2003 Olivier Fourdan
+# Malay translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Harun Musa <mharun@gmx.net>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce-utils 4.0.3\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-02-07 13:12+0800\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:30+0900\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -122,79 +122,3 @@ msgstr "_Lari"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Lari dalam _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Taskbar"
-
-#~ msgid "Position"
-#~ msgstr "Posisi"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "Atas"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "Bawah"
-
-#~ msgid "Autohide"
-#~ msgstr "Autosembunyi"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Auto sembunyi taskbar"
-
-#~ msgid "Size"
-#~ msgstr "Saiz"
-
-#~ msgid "Height :"
-#~ msgstr "Ketinggian :"
-
-#~ msgid "Small"
-#~ msgstr "Kecil"
-
-#~ msgid "Large"
-#~ msgstr "Besar"
-
-#~ msgid "Tasks"
-#~ msgstr "Tasks"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Lihat tasks dari semua ruangkerja"
-
-#~ msgid "Pager"
-#~ msgstr "Pager"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Lihat pager dalam taskbar"
-
-#~ msgid "Notification area"
-#~ msgstr "Kawasan notifikasi"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Lihat tray sistem dalam taskbar"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Tak boleh dapat stail pemula"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Tray sistem telah sedia ada berlari diatas skrin"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Tak boleh daftar tray sistem: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Ini tidak sepatutnya berlaku"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Tak boleh dapat margin meja"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Tak boleh sambung ke pengurus sessi"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Tak boleh cipta saluran klien MCS"

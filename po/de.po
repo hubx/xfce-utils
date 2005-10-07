@@ -1,16 +1,16 @@
-# Xfce4-utils German translation
-# Copyright (C) 2003 Olivier Fourdan
+# German translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-mcs-manager package.
-# Moritz Heiber <moe@lunar-linux.org>, 2003
+# Moritz Heiber <moe@xfce.org>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 1.0.0\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-09-19 21:50+0100\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:16+0900\n"
 "Last-Translator: Moritz Heiber <moe@xfce.org>\n"
-"Language-Team: none <none@none>\n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,93 +120,3 @@ msgstr "_Ausführen"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "In _Terminal ausführen"
-
-#~ msgid "Taskbar"
-#~ msgstr "Taskbar"
-
-#~ msgid "Position"
-#~ msgstr "Position"
-
-#~ msgid "_Top"
-#~ msgstr "_Oben"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Unten"
-
-#~ msgid "Alignment"
-#~ msgstr "Ausrichtung"
-
-#~ msgid "_Left"
-#~ msgstr "_Links"
-
-#~ msgid "_Center"
-#~ msgstr "_Mittig"
-
-#~ msgid "_Right"
-#~ msgstr "_Rechts"
-
-#~ msgid "Autohide"
-#~ msgstr "Ausblenden"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Taskbar _automatisch ausblenden"
-
-#~ msgid "Size"
-#~ msgstr "Größe"
-
-#~ msgid "Height :"
-#~ msgstr "Höhe :"
-
-#~ msgid "Small"
-#~ msgstr "Klein"
-
-#~ msgid "Large"
-#~ msgstr "Groß"
-
-#~ msgid "Width:"
-#~ msgstr "Breite:"
-
-#~ msgid "Tasks"
-#~ msgstr "Tasks"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Sämtliche Tasks _anzeigen"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Tasks _immer gruppieren"
-
-#~ msgid "Show application _names"
-#~ msgstr "Programmnamen _anzeigen"
-
-#~ msgid "Pager"
-#~ msgstr "Pager"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "_Pager in Taskbar anzeigen"
-
-#~ msgid "Notification area"
-#~ msgstr "Status Icons"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "_Systemtray in Taskbar anzeigen"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Kann Eingangsstil nicht finden"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Es läuft bereits ein Systemtray"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Konnte Systemtray nicht registrieren: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Das sollte nicht passieren"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Kann Desktop nicht finden\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Keinen Sitzungsmanager gefunden"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Kann MCS Kanal nicht erstellen"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
 "PO-Revision-Date: 2005-08-17 21:32+0900\n"
 "Last-Translator: Olivier Fourdan <fourdan@xfce.org>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -120,104 +120,3 @@ msgstr "_Lancer"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Lancer dans un _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Barre des tâches"
-
-#~ msgid "Position"
-#~ msgstr "Position"
-
-#~ msgid "_Top"
-#~ msgstr "_Haut"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Bas"
-
-#~ msgid "Alignment"
-#~ msgstr "Alignement"
-
-#~ msgid "_Left"
-#~ msgstr "_Gauche"
-
-#~ msgid "_Center"
-#~ msgstr "_Centre"
-
-#~ msgid "_Right"
-#~ msgstr "_Droite"
-
-#~ msgid "Autohide"
-#~ msgstr "Masquer automatiquement"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr ""
-#~ "_Masquer automatiquement\n"
-#~ "la barre des tâches"
-
-#~ msgid "Size"
-#~ msgstr "Taille"
-
-#~ msgid "Height :"
-#~ msgstr "Hauteur :"
-
-#~ msgid "Small"
-#~ msgstr "Petit"
-
-#~ msgid "Large"
-#~ msgstr "Grand"
-
-#~ msgid "Width:"
-#~ msgstr "Largeur :"
-
-#~ msgid "Tasks"
-#~ msgstr "Tâches"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr ""
-#~ "Afficher les tâches de\n"
-#~ "_tous les espaces de travail"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Toujours re_grouper les tâches"
-
-#~ msgid "Show application _names"
-#~ msgstr "Afficher le _nom des applications"
-
-#~ msgid "Pager"
-#~ msgstr "Bureaux"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr ""
-#~ "Afficher les _bureaux dans\n"
-#~ "la barre des tâches"
-
-#~ msgid "Notification area"
-#~ msgstr "Zone de notification"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr ""
-#~ "Afficher les icônes _systèmes\n"
-#~ "dans la barre des tâches"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Impossible de récupérer le style initial"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Il y a déjà une zone de notification système active pour cet écran"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Impossible d'activer le système de notification: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Ça ne devrait pas se produire"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Impossible de déterminer l'écran par défaut\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Impossible de se connecter au gestionnaire de session"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Impossible de créer le canal pour le client MCS"
-
-#~ msgid "License"
-#~ msgstr "License"

@@ -1,14 +1,14 @@
-# Tamil translation of Tamil XFCE-UTILS.
-# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Tamil translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Tamil XFCE-UTILS 4\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2003-09-24 17:29-0500\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:34+0900\n"
 "Last-Translator: Dinesh Nadarajah <n_dinesh@yahoo.com>\n"
 "Language-Team: Tamil <tamilinix@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -122,84 +122,3 @@ msgstr "_இயக்குக"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "முனையத்தில் þயக்குக"
-
-#~ msgid "Taskbar"
-#~ msgstr "வேலைப் பட்டை"
-
-#~ msgid "Position"
-#~ msgstr "இடம்"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "மேல்"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "கீழ்"
-
-#~ msgid "Autohide"
-#~ msgstr "தானாகவே மறைக்கவும்"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "வேலைப்பட்டையை தானாகவே மறைக்கவும்"
-
-#~ msgid "Size"
-#~ msgstr "அளவு"
-
-#~ msgid "Height :"
-#~ msgstr "உயரம்:"
-
-#~ msgid "Small"
-#~ msgstr "சிறிது"
-
-#~ msgid "Large"
-#~ msgstr "பெரிது"
-
-#~ msgid "Tasks"
-#~ msgstr "வேலைகள்"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr ""
-#~ "அனைத்து வேலை þடங்களில்\n"
-#~ "உள்ள செயல்களையும் காண்பிக்கவும்"
-
-#~ msgid "Pager"
-#~ msgstr "பயனழையம்"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "பயனழையத்தை வேலைப்பட்டையில் காண்பிக்கவும்"
-
-#~ msgid "Notification area"
-#~ msgstr "அறிவிப்பு þடம்"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "வேலைப்பட்டையில் அமைப்பு தட்டு காண்பிக்கவும்"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "தொடக்க பாணியை பெறமுடியவில்லை"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "þத்திரையில் ஏற்கனவே ஓர் அமைப்புத் தட்டு இயங்குகிறது"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "அமைப்பு தட்டு பதிவு செய்யமுடியவில்லை: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "þது நடைபெறக்கூடாது"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "கணிமேசை எல்லைகளை பெறமுடியவில்லை"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "அமர்வு மேலாளருடன் இணைப்பு கொள்ள முடியவில்லை"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS சேவைப்பயனர் தடம் படைக்க முடியவில்லை"
-
-#~ msgid "License"
-#~ msgstr "ஒப்பந்தம்"

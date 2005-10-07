@@ -1,16 +1,16 @@
-# translation of xfce-utils.po to 
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# root <root@Phulewala>, 2004.
+# Punjabi translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-10-04 05:00+0530\n"
-"Last-Translator: root <root@Phulewala>\n"
-"Language-Team:  <pa@li.org>\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:31+0900\n"
+"Last-Translator: Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>\n"
+"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,93 +121,3 @@ msgstr "_ਚਲਾਓ"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ"
-
-#~ msgid "Taskbar"
-#~ msgstr "ਦਰਜਾ-ਪੱਟੀ"
-
-#~ msgid "Position"
-#~ msgstr "ਸਥਿਤੀ"
-
-#~ msgid "_Top"
-#~ msgstr "_ਸਿਖਰ"
-
-#~ msgid "_Bottom"
-#~ msgstr "_ਹੇਠਾਂ"
-
-#~ msgid "Alignment"
-#~ msgstr "ਅਨੁਕੂਲਤਾ"
-
-#~ msgid "_Left"
-#~ msgstr "_ਖੱਬੇ"
-
-#~ msgid "_Center"
-#~ msgstr "_ਵਿਚਕਾਰ"
-
-#~ msgid "_Right"
-#~ msgstr "ਸੱਜੇ"
-
-#~ msgid "Autohide"
-#~ msgstr "ਸਵੈ-ਲੁਕਵਾਂ"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "ਸਵੈ ਲੁਕਵੀਂ ਦਰਜਾ ਪੱਟੀ"
-
-#~ msgid "Size"
-#~ msgstr "ਆਕਾਰ"
-
-#~ msgid "Height :"
-#~ msgstr "ਉਚਾਈਃ"
-
-#~ msgid "Small"
-#~ msgstr "ਛੋਟਾ"
-
-#~ msgid "Large"
-#~ msgstr "ਵੱਡਾ"
-
-#~ msgid "Width:"
-#~ msgstr "ਚੌੜਾਈਃ"
-
-#~ msgid "Tasks"
-#~ msgstr "ਕਾਰਜ"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "ਸਾਰੇ ਵਰਕਸਪੇਸਾਂ ਵਿੱਚ ਕਾਰਜ ਵਿਖਾਓ"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "ਕਾਰਜਾਂ ਦੇ ਹਮੇਸ਼ਾ ਸਮੂਹ ਬਣਾਓ"
-
-#~ msgid "Show application _names"
-#~ msgstr "ਕਾਰਜ _ਨਾਂ ਵਿਖਾਓ"
-
-#~ msgid "Pager"
-#~ msgstr "ਪੇਜ਼ਰ"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "ਦਰਜਾ-ਪੱਟੀ ਵਿੱਚ ਪੇਜ਼ਰ ਵਿਖਾਓ"
-
-#~ msgid "Notification area"
-#~ msgstr "ਐਲਾਨ ਖੇਤਰ"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "ਦਰਜਾ-ਪੱਟੀ ਵਿੱਚ ਸਿਸਟਮ ਟਰੇ ਵਿਖਾਓ"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "ਸ਼ੁਰੂਆਤੀ ਸ਼ੈਲੀ ਪ੍ਰਾਪਤ ਨਹੀ ਕਰ ਸਕਿਆ"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "ਇਸ ਟਰੇ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਸਿਸਟਮ ਟਰੇ ਚੱਲ ਰਹੀ ਹੈ"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "ਸਿਸਟਮ ਟਰੇ ਰਜਿਸਟਰ ਕਰਨ ਵਿੱਚ ਅਯੋਗਃ %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "ਅਜਿਹਾ ਨਹੀਂ ਵਾਪਰਨਾ ਚਾਹੀਦਾਆ"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "ਮੂਲ ਪਰਦਾ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰ ਸਕਿਆ\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "ਅਜਲਾਸ ਮੈਨੇਜਰ ਨਾਲ ਜੁੜ ਨਹੀਂ ਸਕਿਆ"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS ਕਲਾਂਈਟ ਚੈਨਲ ਬਣਾ ਨਹੀਂ ਸਕਿਆ"

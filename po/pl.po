@@ -1,9 +1,9 @@
-# Translation file for XFce4's utils.
-# Copyright (C) 2003 Olivier Fourdan <fourdan@xfce.org>
-# This file is distributed under the same license as the XFce4.
-# Paweł Pastuła <pastulap@poczta.onet.pl>, 2003
+# Polish translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Paweł Pastuła <pastulap@poczta.onet.pl>, 2003.
 # --
-# Daniel 'Beorn' Mróz <beorn@alpha.pl>, 2003
+# Daniel 'Beorn' Mróz <beorn@alpha.pl>, 2003.
 #
 #     Changes:
 #        - completion
@@ -11,12 +11,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 1.0.0\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2003-12-25 20:40+0100\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:31+0900\n"
 "Last-Translator: Daniel 'Beorn' Mróz <beorn@alpha.pl\n"
-"Language-Team: none <none@none>\n"
+"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -127,85 +127,3 @@ msgstr "_Uruchom"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Uruchom w _terminalu"
-
-#~ msgid "Taskbar"
-#~ msgstr "Pasek zadań"
-
-#~ msgid "Position"
-#~ msgstr "Pozycja"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "Góra"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "Dół"
-
-#~ msgid "Autohide"
-#~ msgstr "Automatyczne ukrywanie"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Automatycznie chowaj pasek zadań"
-
-#~ msgid "Size"
-#~ msgstr "Rozmiar"
-
-#~ msgid "Height :"
-#~ msgstr "Wysokość :"
-
-#~ msgid "Small"
-#~ msgstr "Mała"
-
-#~ msgid "Large"
-#~ msgstr "Duża"
-
-#~ msgid "Tasks"
-#~ msgstr "Zadania"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Pokaż zadania ze wszystkich obszarów roboczych"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Pokaż pager na pasku zadań"
-
-#~ msgid "Notification area"
-#~ msgstr "Obszar powiadamiania"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Pokaż panel systemowy na pasku zadań"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Nie mogę pobrać wstępnego stylu"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Panel systemowy jest już uruchomiony"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Nie można zarejestrować panelu systemowego: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "To nie powinno się wydarzyć"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Nie mogę pobrać marginesów obszaru roboczego"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Nie mogę się połączyć z menadżerem sesji"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Nie mogę utworzyć kanału klienta MCS"
-
-#~ msgid "License"
-#~ msgstr "Licencja"
-
-#~ msgid "<small><i>Small</i></small>"
-#~ msgstr "<small><i>Mały</i></small>"
-
-#~ msgid "<small><i>Large</i></small>"
-#~ msgstr "<small><i>Duży</i></small>"

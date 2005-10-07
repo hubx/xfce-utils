@@ -1,14 +1,14 @@
-# Lithuania translation of xfce-utils
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Lithuanian translation of xfce-utils.
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Mantas <zaz@xxx.lt>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 3.99.2\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-08-17 00:40+0900\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:29+0900\n"
 "Last-Translator: Mantas <zaz@xxx.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -120,93 +120,3 @@ msgstr "_Paleisti"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Paleisti _terminale"
-
-#~ msgid "Taskbar"
-#~ msgstr "Užduočių juosta"
-
-#~ msgid "Position"
-#~ msgstr "Pozicija"
-
-#~ msgid "_Top"
-#~ msgstr "_Viršus"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Apačia"
-
-#~ msgid "Alignment"
-#~ msgstr "Išdėstymas"
-
-#~ msgid "_Left"
-#~ msgstr "_Kairė"
-
-#~ msgid "_Center"
-#~ msgstr "_Centras"
-
-#~ msgid "_Right"
-#~ msgstr "_Dešinė"
-
-#~ msgid "Autohide"
-#~ msgstr "Autopaslėpimas"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Automatiškai _paslėpti užduočių juostą"
-
-#~ msgid "Size"
-#~ msgstr "Dydis"
-
-#~ msgid "Height :"
-#~ msgstr "Aukštis :"
-
-#~ msgid "Small"
-#~ msgstr "Mažas"
-
-#~ msgid "Large"
-#~ msgstr "Didelis"
-
-#~ msgid "Width:"
-#~ msgstr "Plotis:"
-
-#~ msgid "Tasks"
-#~ msgstr "Užduotys"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Rodyti užduotis iš _visų darbalaukių"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Visada _grupuoti užduotis"
-
-#~ msgid "Show application _names"
-#~ msgstr "Rodyti progr_amų pavadinimus"
-
-#~ msgid "Pager"
-#~ msgstr "Pageris"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Rodyti _pagerį užduočių juostoje"
-
-#~ msgid "Notification area"
-#~ msgstr "Pranešimų sritis"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Rodyti _sisteminį skydelį užduočių juostoje"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Neįmanoma gauti pradinio stiliaus"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Sisteminis skydelis jau paleistas šiame ekrane"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Neįmanoma užregistruoti sisteminio skydelio : %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Taip neturėtų įvykti"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Neįmanoma gauti pagrindinio ekrano\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Neįmanoma susijungti su sesijų tvarkykle"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Neįmanoma sukurti MCS kliento kanalo"

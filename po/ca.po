@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-08-17 21:13+0900\n"
-"Last-Translator: Carles MuNoz Gorriz <carlesmu@internautas.org>\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:15+0900\n"
+"Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -122,79 +122,3 @@ msgstr "E_xecutar"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Executar en un _terminal"
-
-#~ msgid "Taskbar"
-#~ msgstr "Barra de tasques"
-
-#~ msgid "Position"
-#~ msgstr "Posició"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "A dalt"
-
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "A baix"
-
-#~ msgid "Autohide"
-#~ msgstr "Ocultar automàticament"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Ocultar automàticament la barra de tasques"
-
-#~ msgid "Size"
-#~ msgstr "Mida"
-
-#~ msgid "Height :"
-#~ msgstr "Alçada:"
-
-#~ msgid "Small"
-#~ msgstr "Menut"
-
-#~ msgid "Large"
-#~ msgstr "Gran"
-
-#~ msgid "Tasks"
-#~ msgstr "Tasques"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Mostra les tasques de totes les àrees de treball"
-
-#~ msgid "Pager"
-#~ msgstr "Paginador"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Mostra el paginador en la barra de tasques"
-
-#~ msgid "Notification area"
-#~ msgstr "Àrea de notificacions"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Mostra la safata del sistema a la barra de tasques"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "No es pot obtenir l'estil inicial"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Ja hi ha una safata del sistema executant-se a la pantalla"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "No es por registrar la safata del sistema: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Això no hauria de succeir"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "No es pot obtenir els marges de l'escriptori"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "No es pot connectar al gestor de sessions"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "No es pot crear el canal del client MCS"

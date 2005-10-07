@@ -1,16 +1,16 @@
-# Ukrainian translation for xfce-utils.
-# Copyright (C) Free Software Foundation
-# This file is distributed under the same license as the PACKAGE package.
+# Ukrainian translation for xfce-utils package.
+# Copyright (C) The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Maxim Dziumanenko <mvd@mylinux.com.ua>, 2003-2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-01-05 8:44+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:35+0900\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,90 +120,3 @@ msgstr "_Запустити"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Запустити у _терміналі"
-
-#~ msgid "Taskbar"
-#~ msgstr "Панель задач"
-
-#~ msgid "Position"
-#~ msgstr "Розташування"
-
-#~ msgid "_Top"
-#~ msgstr "Зг_ори"
-
-#~ msgid "_Bottom"
-#~ msgstr "З_низу"
-
-#~ msgid "Alignment"
-#~ msgstr "Вирівнювання"
-
-#~ msgid "_Left"
-#~ msgstr "З_ліва"
-
-#~ msgid "_Center"
-#~ msgstr "По _центру"
-
-#~ msgid "_Right"
-#~ msgstr "С_права"
-
-#~ msgid "Autohide"
-#~ msgstr "Автоматичне приховування"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Автоматично прих_овувати панель задач"
-
-#~ msgid "Size"
-#~ msgstr "Розмір"
-
-#~ msgid "Height :"
-#~ msgstr "Висота:"
-
-#~ msgid "Small"
-#~ msgstr "Маленька"
-
-#~ msgid "Large"
-#~ msgstr "Велика"
-
-#~ msgid "Width:"
-#~ msgstr "Ширина:"
-
-#~ msgid "Tasks"
-#~ msgstr "Програми"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Показувати _програми усіх робочих стільниць"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Завжди г_рупувати програми"
-
-#~ msgid "Show application _names"
-#~ msgstr "Показувати _назви програм"
-
-#~ msgid "Pager"
-#~ msgstr "Графічний пейджер"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Показувати п_ейджер на панелі задач"
-
-#~ msgid "Notification area"
-#~ msgstr "Область сповіщення"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Показувати _системний лоток на панелі задач"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Помилка отримання початкового стилю"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Системний лоток вже зареєстрований на цьому екрані"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Не вдається зареєструвати системний лоток: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Неможливо визначити типовий екран\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Помилка підключення до менеджера сеансів"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Неможливо створити канал до MCS клієнта"

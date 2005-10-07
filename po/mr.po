@@ -1,14 +1,14 @@
-# Marathi Translation of  xfce-utisls
+# Marathi Translation of xfce-utisls.
+# Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utisls package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Pallavi Nikam <pallavi_edu@rediffmail.com>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utisls\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-04-20 20:29+0530\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:30+0900\n"
 "Last-Translator: Pallavi Nikam <pallavi_edu@rediffmail.com>\n"
 "Language-Team: Marathi <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -121,90 +121,3 @@ msgstr "सुरु करा (_R)"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "टर्मिनलमध्ये सुरु करा (_t)"
-
-#~ msgid "Taskbar"
-#~ msgstr "कार्य दांडा"
-
-#~ msgid "Position"
-#~ msgstr "जागा"
-
-#~ msgid "_Top"
-#~ msgstr "शिखर (_T)"
-
-#~ msgid "_Bottom"
-#~ msgstr "तळ (_B)"
-
-#~ msgid "Alignment"
-#~ msgstr "माडंणी"
-
-#~ msgid "_Left"
-#~ msgstr "डावा (_L)"
-
-#~ msgid "_Center"
-#~ msgstr "मध्य (_C)"
-
-#~ msgid "_Right"
-#~ msgstr "उजवा (_R)"
-
-#~ msgid "Autohide"
-#~ msgstr "स्वयंमलुप्त"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "स्वयंमलुप्त कार्य दांडा"
-
-#~ msgid "Size"
-#~ msgstr "आकार"
-
-#~ msgid "Height :"
-#~ msgstr "उंची:"
-
-#~ msgid "Small"
-#~ msgstr "लहान"
-
-#~ msgid "Large"
-#~ msgstr "मोठे"
-
-#~ msgid "Width:"
-#~ msgstr "रुंदी:"
-
-#~ msgid "Tasks"
-#~ msgstr "कार्ये"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "सर्व वर्कस्पेसेसमधील कार्ये दाखवा (_a)"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "नेहमी संघ कार्ये (_g)"
-
-#~ msgid "Show application _names"
-#~ msgstr "ऍप्लिकेशनची नावे दाखवा (_n)"
-
-#~ msgid "Pager"
-#~ msgstr "पेजर"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "कार्य दांड्यामध्ये पेजर दाखवा (_p)"
-
-#~ msgid "Notification area"
-#~ msgstr "सूचना भाग"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "कार्य दांड्यामध्ये प्रणाली ट्रे दाखवा (_s) "
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "प्रार्थमिक शैली मिळू शकत नाही"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "या पडद्यावर आगोदरच एक प्रणाली ट्रे सुरु आहे"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "प्रणाली ट्रे कार्यरत करु शकत नाही: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "मुळ पडदा मिळू शकत नाही\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "सत्र व्यवस्थापक जोडला जाऊ शकत नाही"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS क्लाइअण्ट चॅनेल तयार करु शकत नाही"

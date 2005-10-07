@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Hindi translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils.hi.po\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2003-11-01 18:20+0530\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:26+0900\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-group@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -122,81 +122,3 @@ msgstr "चलाएँ (_R)"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "टर्मिनल में चलाएं (_t)"
-
-#~ msgid "Taskbar"
-#~ msgstr "टास्कबार"
-
-#~ msgid "Position"
-#~ msgstr "स्थिति"
-
-#, fuzzy
-#~ msgid "_Top"
-#~ msgstr "ऊपर"
-
-# #-#-#-#-#  libgnomeprintui.HEAD.hi.po (libgnomeprintui )  #-#-#-#-#
-# libgnomeprintui/gnome-print-paper-selector.c:2013
-#, fuzzy
-#~ msgid "_Bottom"
-#~ msgstr "नीचे"
-
-#~ msgid "Autohide"
-#~ msgstr "स्वतः छुपें"
-
-#, fuzzy
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "टास्कबार को स्वतः छुपाएँ "
-
-#~ msgid "Size"
-#~ msgstr "आकार"
-
-#~ msgid "Height :"
-#~ msgstr " ऊँचाई:"
-
-#~ msgid "Small"
-#~ msgstr "छोटा"
-
-#~ msgid "Large"
-#~ msgstr "विशाल"
-
-#~ msgid "Tasks"
-#~ msgstr "टास्कस"
-
-#, fuzzy
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "सभी कार्यस्थान से टास्क दिखाएं"
-
-#~ msgid "Pager"
-#~ msgstr "पेजर"
-
-#, fuzzy
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "टास्कबार में पेजर दिखाएं"
-
-#~ msgid "Notification area"
-#~ msgstr "नोटिफिकेशन क्षेत्र"
-
-#, fuzzy
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "टास्कबार में सिस्टम ट्रे दिखाएं"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "आरंभिक स्टाइल प्राप्त नहीं कर सका!"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "इस स्क्रीन पर पहले से ही सिस्टम ट्रे चल रहा है"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "सिस्टम ट्रे रजिस्टर करने में अक्षम: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "ऐसा होना नहीं चाहिए"
-
-#, fuzzy
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "डेस्कटॉप हाशिया प्राप्त नहीं कर सका"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "सत्र प्रबंधक से जुड़ नहीं सकता"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr " MCS क्लाएंट चैनल नहीं बना सकता"

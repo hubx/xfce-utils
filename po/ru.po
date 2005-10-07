@@ -1,18 +1,17 @@
-# translation of xfce-utils.po to Russian
-# translation of ru.po to Russian
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Russian translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Poul Ionkin <wizzard@nmg.lv>, 2003.
 # Anthony Ivanoff <a-i@bk.ru>, 2004, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-01-08 12:41+0500\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:33+0900\n"
 "Last-Translator: Anthony Ivanoff <a-i@bk.ru>\n"
-"Language-Team: Russian\n"
+"Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,90 +124,3 @@ msgstr "Выполнить"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Запустить в терминале"
-
-#~ msgid "Taskbar"
-#~ msgstr "Панель задач"
-
-#~ msgid "Position"
-#~ msgstr "Расположение"
-
-#~ msgid "_Top"
-#~ msgstr "Сверху"
-
-#~ msgid "_Bottom"
-#~ msgstr "Снизу"
-
-#~ msgid "Alignment"
-#~ msgstr "Выравнивание"
-
-#~ msgid "_Left"
-#~ msgstr "Слева"
-
-#~ msgid "_Center"
-#~ msgstr "По центру"
-
-#~ msgid "_Right"
-#~ msgstr "Справа"
-
-#~ msgid "Autohide"
-#~ msgstr "Автоскрытие"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Автоматически скрывать панель задач"
-
-#~ msgid "Size"
-#~ msgstr "Размер"
-
-#~ msgid "Height :"
-#~ msgstr "Высота:"
-
-#~ msgid "Small"
-#~ msgstr "Маленькая"
-
-#~ msgid "Large"
-#~ msgstr "Большая"
-
-#~ msgid "Width:"
-#~ msgstr "Ширина:"
-
-#~ msgid "Tasks"
-#~ msgstr "Приложения"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Показывать приложения всех рабочих столов"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Всегда группировать приложения"
-
-#~ msgid "Show application _names"
-#~ msgstr "Показывать имена приложений"
-
-#~ msgid "Pager"
-#~ msgstr "Графический пейджер"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Показывать пейджер на панели задач"
-
-#~ msgid "Notification area"
-#~ msgstr "Область уведомления"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Показывать системный лоток на панели задач"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Ошибка получения начального стиля"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Системный лоток  на этом экране уже запущен"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Невозможно зарегистрировать системный лоток: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Невозможно определить экран по умолчанию\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Ошибка подключения к диспетчеру сеансов"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Невозможно создать канал для MCS-клиента"

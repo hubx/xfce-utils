@@ -1,15 +1,16 @@
-# translation of he.po to Hebrew
-# This file is distributed under the same license as the PACKAGE package.
+# Hebrew translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Dotan Kamber <kamberd@yahoo.com>, 2004.
 # Jonatan Perry <Jonatan443@walla.co.il>, 2004.
 # Yuval Tanny <tanai@int.gov.il>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: he\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-12-31 16:55+0200\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:26+0900\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
 "Language-Team: Hebrew Team <xfce2004@yahoo.com>\n"
 "MIME-Version: 1.0\n"
@@ -122,90 +123,3 @@ msgstr "_הרץ"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "הרץ ב_מסוף"
-
-#~ msgid "Taskbar"
-#~ msgstr "שורת המשימות"
-
-#~ msgid "Position"
-#~ msgstr "מיקום"
-
-#~ msgid "_Top"
-#~ msgstr "_עליון"
-
-#~ msgid "_Bottom"
-#~ msgstr "_תחתון"
-
-#~ msgid "Alignment"
-#~ msgstr "יישור"
-
-#~ msgid "_Left"
-#~ msgstr "_שמאל"
-
-#~ msgid "_Center"
-#~ msgstr "_אמצע"
-
-#~ msgid "_Right"
-#~ msgstr "_מין"
-
-#~ msgid "Autohide"
-#~ msgstr "הסתרה אוטומטית"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "_הסתרה אוטומטית של שורת המשימות"
-
-#~ msgid "Size"
-#~ msgstr "גודל"
-
-#~ msgid "Height :"
-#~ msgstr "גובה:"
-
-#~ msgid "Small"
-#~ msgstr "קטן"
-
-#~ msgid "Large"
-#~ msgstr "גדול"
-
-#~ msgid "Width:"
-#~ msgstr "רוחב:"
-
-#~ msgid "Tasks"
-#~ msgstr "משימות"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "הצג משימות מ_כל סביבות העבודה"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "תמיד _קבץ משימות"
-
-#~ msgid "Show application _names"
-#~ msgstr "הצג _שמות של יישומים"
-
-#~ msgid "Pager"
-#~ msgstr "מחליף סביבות עבודה"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "הצג _מחליף סביבות עבודה בשורת המשימות"
-
-#~ msgid "Notification area"
-#~ msgstr "איזור התראה"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "הצג את _מגש המערכת בשורת המשימות"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "סגנון הפתיחה אינו זמין"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "מגש המערכת כבר פתוח בחלון זה"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "אין אפשרות לרשום את מגש המערכת: %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "אין אפשרות לקבל את מסך ברירת המחדל\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "אין אפשרות להתחבר למנהל ההפעלה"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "אין אפשרות ליצור ערוץ לקוח MCS"

@@ -1,19 +1,16 @@
-# translation of xfce-utils-fa.po to Persian
-# translation of fa_IR.po to Persian
-# translation of xfce-utils.po to Persian
 # Persian translation of xfce-utils.
-# Copyright (C) 2003 THE xfce-utils'S COPYRIGHT HOLDER
+# Copyright (C) 2002-2005 The Xfce development team
 # This file is distributed under the same license as the xfce-utils package.
 # Abbas Izad <abbasizad@hotmail.com>, 2003, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils-fa\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-09-29 17:37+0330\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:24+0900\n"
 "Last-Translator: Abbas Izad <abbasizad@hotmail.com>\n"
-"Language-Team: Persian\n"
+"Language-Team: Persian <translation-team-fa@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -124,93 +121,3 @@ msgstr "ا_جرا کردن"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "اجرا کردن در _پایانه"
-
-#~ msgid "Taskbar"
-#~ msgstr "نوارکاری"
-
-#~ msgid "Position"
-#~ msgstr "موقعیت"
-
-#~ msgid "_Top"
-#~ msgstr "_بالا"
-
-#~ msgid "_Bottom"
-#~ msgstr "_پایین"
-
-#~ msgid "Alignment"
-#~ msgstr "همترازی"
-
-#~ msgid "_Left"
-#~ msgstr "_چپ"
-
-#~ msgid "_Center"
-#~ msgstr "_مرکز"
-
-#~ msgid "_Right"
-#~ msgstr "_راست"
-
-#~ msgid "Autohide"
-#~ msgstr "پنهان‌سازی خودکار"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "_پنهان‌سازی خودکار نوارکاری"
-
-#~ msgid "Size"
-#~ msgstr "اندازه"
-
-#~ msgid "Height :"
-#~ msgstr "ارتفاع :"
-
-#~ msgid "Small"
-#~ msgstr "کوچک"
-
-#~ msgid "Large"
-#~ msgstr "بزرگ"
-
-#~ msgid "Width:"
-#~ msgstr "پهنا:"
-
-#~ msgid "Tasks"
-#~ msgstr "کارها"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "نشان دادن کارها از _همه‌ی فضاهای کاری"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "همیشه کارهای _گروه"
-
-#~ msgid "Show application _names"
-#~ msgstr "نشان دادن _نام‌های برنامه"
-
-#~ msgid "Pager"
-#~ msgstr "صفحه‌نما"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "نشان دادن _صفحه‌نما در نوارکار"
-
-#~ msgid "Notification area"
-#~ msgstr "ناحیه‌ی یادآوری"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "نشان دادن _سینی سیستم در نوارکاری"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "نمی‌توان سبک آغازین را دریافت کرد"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "سینی سیستمی از قبل بر روی این پرده در حال اجراست"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "نمیتوان سینی سیستم را ثبت کرد: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "این نمی‌بایست اتفاق می‌افتاد"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "نمی‌توان صفحه پیش‌فرض را دریافت کرد\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "نمی‌توان به مدیر نشست متصل شد "
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "نمی‌توان کانال کارگیر MCS را ایجاد کرد"

@@ -1,14 +1,14 @@
 # Беларускі пераклад xfce-utils.
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
 # Ales Nyakhaychyk <nab@mail.by>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-09-12 12:35+0300\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:14+0900\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
@@ -120,93 +120,3 @@ msgstr "Запусьц_іць"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Выконваць у _тэрмінале"
-
-#~ msgid "Taskbar"
-#~ msgstr "Панэля задач"
-
-#~ msgid "Position"
-#~ msgstr "Становішча"
-
-#~ msgid "_Top"
-#~ msgstr "У_гары"
-
-#~ msgid "_Bottom"
-#~ msgstr "До_лу"
-
-#~ msgid "Alignment"
-#~ msgstr "Выроўніваньне"
-
-#~ msgid "_Left"
-#~ msgstr "_Леваруч"
-
-#~ msgid "_Center"
-#~ msgstr "Па_сярэдзіне"
-
-#~ msgid "_Right"
-#~ msgstr "_Праваруч"
-
-#~ msgid "Autohide"
-#~ msgstr "Аўтахаваньне"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Аўтаматычна _хаваць панэлю задач"
-
-#~ msgid "Size"
-#~ msgstr "Памер"
-
-#~ msgid "Height :"
-#~ msgstr "Вышыня:"
-
-#~ msgid "Small"
-#~ msgstr "Маленькі"
-
-#~ msgid "Large"
-#~ msgstr "Вялікі"
-
-#~ msgid "Width:"
-#~ msgstr "Шырыня:"
-
-#~ msgid "Tasks"
-#~ msgstr "Задачы"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Паказваць задачы з _усіх працоўных прастораў"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Заўсёды _групаваць задачы"
-
-#~ msgid "Show application _names"
-#~ msgstr "Паказваць назвы дас_тасаваньняў"
-
-#~ msgid "Pager"
-#~ msgstr "Пераключальнік прастораў"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Паказваць перакл_ючальнік прастораў на панэлі задач"
-
-#~ msgid "Notification area"
-#~ msgstr "Прастора паведамленьняў"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Паказваць прастору пав_едамленьняў на панэлі задач"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Немагчыма атрымаць пачатковы стыль"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "На гэтым экране ўжо прысутнічае сыстэмная прастора паведамленьняў"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Немагчыма зарэгістраваць прастору паведамленьняў: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Гэта непавінна было здарыцца"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Немагчыма атрымаць дапомны экран\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Немагчыма далучыцца да кіраўніка сэансаў"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Немагчыма стварыць канал для кліента MCS"

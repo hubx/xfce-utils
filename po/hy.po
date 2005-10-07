@@ -1,15 +1,16 @@
-# translation of xfce-utils.hy.po to 
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+# Armenian translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Norayr Chilingaryan <norik@freenet.am>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils.hy\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2005-08-04 17:56+0500\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:28+0900\n"
+"Last-Translator: Norayr Chilingaryan <norik@freenet.am>\n"
+"Language-Team: Armenian <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,90 +121,3 @@ msgstr "_Աշխատացնել"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Աշխատացնել _տերմինալի մեջ"
-
-#~ msgid "Taskbar"
-#~ msgstr "Վահանակ"
-
-#~ msgid "Position"
-#~ msgstr "Դիրք"
-
-#~ msgid "_Top"
-#~ msgstr "_Կատար"
-
-#~ msgid "_Bottom"
-#~ msgstr "_Հատակ"
-
-#~ msgid "Alignment"
-#~ msgstr "Տողաշտկում"
-
-#~ msgid "_Left"
-#~ msgstr "_Ձախ"
-
-#~ msgid "_Center"
-#~ msgstr "_Կենտրոն"
-
-#~ msgid "_Right"
-#~ msgstr "_Աջ"
-
-#~ msgid "Autohide"
-#~ msgstr "Ինքնաշխատ թաքցնել"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Ինքնաշխատ _թաքցնել վահանակը"
-
-#~ msgid "Size"
-#~ msgstr "Չափ"
-
-#~ msgid "Height :"
-#~ msgstr "Հասակ՝ "
-
-#~ msgid "Small"
-#~ msgstr "Փոքրիկ"
-
-#~ msgid "Large"
-#~ msgstr "Խոշոր"
-
-#~ msgid "Width:"
-#~ msgstr "Լայնք՝ "
-
-#~ msgid "Tasks"
-#~ msgstr "Առաջադրանքներ"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "Ցուցադրել _բոլոր գրասեղանների առաջադրանքները"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Միշտ _խմբավորել առաջադրանքները"
-
-#~ msgid "Show application _names"
-#~ msgstr "Ցուցադրել ծրագրերի _անունները"
-
-#~ msgid "Pager"
-#~ msgstr "Փեյջեր"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Ցուցադրել _փեյջերը վահանակի վրա"
-
-#~ msgid "Notification area"
-#~ msgstr "Ծանուցման տիրույթ"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Ցուցադրել _համակարգի թրեյը վահանակի վրա"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Հնարավոր չէ ստանալ սկզբնական ոճը"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Այս էկրանի վրա արդեն աշխատում է թրեյ"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Հնարավոր չէ գրանցել համակարգի թրեյ՝ %s"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Հնարավոր չէ գտնել հիմնական էկրանը\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Հնարավոր չէ կպնելնիստի կարավարչին"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "Հնարավոր չէ ստեղծել MCS հաճախորդ ուղի"

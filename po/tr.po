@@ -1,16 +1,16 @@
-# translation of xfce-utils.po to Turkish
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# Erçin EKER <ercin.eker@linux.org.tr>, 2004
+# Turkish translations for xfce-utils package.
+# Copyright (C) 2002-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Erçin EKER <ercin.eker@linux.org.tr>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-18 21:22+0200\n"
-"PO-Revision-Date: 2004-10-18 16:40+0300\n"
+"POT-Creation-Date: 2005-10-07 23:17+0900\n"
+"PO-Revision-Date: 2005-10-07 23:35+0900\n"
 "Last-Translator: Erçin EKER <ercin.eker@linux.org.tr>\n"
-"Language-Team: Turkish <tr@li.org>\n"
+"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,93 +120,3 @@ msgstr "_Çalıştır"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "_Terminalde çalıştır"
-
-#~ msgid "Taskbar"
-#~ msgstr "Görev çubuğu"
-
-#~ msgid "Position"
-#~ msgstr "Konum"
-
-#~ msgid "_Top"
-#~ msgstr "Ü_st"
-
-#~ msgid "_Bottom"
-#~ msgstr "A_lt"
-
-#~ msgid "Alignment"
-#~ msgstr "Hizalama"
-
-#~ msgid "_Left"
-#~ msgstr "_Sol"
-
-#~ msgid "_Center"
-#~ msgstr "_Merkez"
-
-#~ msgid "_Right"
-#~ msgstr "S_ağ"
-
-#~ msgid "Autohide"
-#~ msgstr "Otomatik gizle"
-
-#~ msgid "Auto _hide taskbar"
-#~ msgstr "Görev çubuğunu Oto. _gizle"
-
-#~ msgid "Size"
-#~ msgstr "Boyut"
-
-#~ msgid "Height :"
-#~ msgstr "Yükseklik:"
-
-#~ msgid "Small"
-#~ msgstr "Küçük"
-
-#~ msgid "Large"
-#~ msgstr "Büyük"
-
-#~ msgid "Width:"
-#~ msgstr "Genişlik:"
-
-#~ msgid "Tasks"
-#~ msgstr "Görevler"
-
-#~ msgid "Show tasks from _all workspaces"
-#~ msgstr "_Tüm masaüstlerindeki görevleri göster"
-
-#~ msgid "Always _group tasks"
-#~ msgstr "Göreleri _her zaman grupla"
-
-#~ msgid "Show application _names"
-#~ msgstr "Uygulama _isimlerini göster"
-
-#~ msgid "Pager"
-#~ msgstr "Sayfalayıcı"
-
-#~ msgid "Show _pager in taskbar"
-#~ msgstr "Görev çubuğunda _sayfalayıcıyı göster"
-
-#~ msgid "Notification area"
-#~ msgstr "Bilgilendirme bölümü"
-
-#~ msgid "Show _system tray in taskbar"
-#~ msgstr "Sis_tem çekmecesini görev çubuğunda göster"
-
-#~ msgid "Cannot get initial style"
-#~ msgstr "Stil elde edilemiyor"
-
-#~ msgid "There is already a system tray running on this screen"
-#~ msgstr "Bu ekranda zaten çalışan bir sistem çekmecesi var"
-
-#~ msgid "Unable to register system tray: %s"
-#~ msgstr "Sistem çekmecesi kaydedilemiyor: %s"
-
-#~ msgid "This should not happen"
-#~ msgstr "Bu gerçekleşmeyecek"
-
-#~ msgid "Cannot get default screen\n"
-#~ msgstr "Öntanımlı ekran belirlenemiyor\n"
-
-#~ msgid "Cannot connect to session manager"
-#~ msgstr "Oturum yöneticisine bağlanılamıyor"
-
-#~ msgid "Cannot create MCS client channel"
-#~ msgstr "MCS istemci kanalı oluşturulamıyor"
