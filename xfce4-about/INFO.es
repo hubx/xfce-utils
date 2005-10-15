@@ -1,4 +1,4 @@
-Entorno de Escritorio Xfce 4 
+Entorno de Escritorio Xfce 4
 versión @VERSION@
 
 Xfce es una colección de programas que juntos proporcionan un
@@ -9,11 +9,11 @@ o Gestor de Ventanas (xfwm4)
    se encarga del emplazamiento de las ventanas en la pantalla
 
 o Panel (xfce4-panel)
-   Lanzadores de programas, menús emergentes, reloj, cambiador de 
+   Lanzadores de programas, menús emergentes, reloj, cambiador de
    escritorio y más
 
 o Gestor de Escritorio (xfdesktop)
-   fija un color de fondo o una imagen y proporciona un menú cuando pincha 
+   fija un color de fondo o una imagen y proporciona un menú cuando pincha
    en el fondo del escritorio
 
 o Administrador de archivos (xffm)
@@ -31,7 +31,7 @@ o Utilidades
 
 
 Xfce4 también es una plataforma de desarrollo que proporciona varias librerías que
-ayuda a los programadores a crear aplicaciones que encajarán bien con el 
+ayuda a los programadores a crear aplicaciones que encajarán bien con el
 entorno de escritorio.
 
 Los componentes del Xfce4 están licenciados bajo licencias libres o abiertas, GPL

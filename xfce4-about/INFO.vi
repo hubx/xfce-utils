@@ -1,18 +1,18 @@
 Môi trường Desktop Xfce 4
 phiên bản @VERSION@
 
-Xfce là tập hợp các chương trình cùng nhau cung cấp một môi trường 
+Xfce là tập hợp các chương trình cùng nhau cung cấp một môi trường
 desktop đầy đủ tính năng. Các chương trình sau là bộ phận của Xfce:
 
 o Trình quản lí cửa sổ (xfwm4)
    quản lí việc xếp đặt các cửa sổ trên màn hình
 
 o Panel (xfce4-panel)
-   các trình gọi, trình đơn tắt, đồng hồ, trình chuyển desktop và các chương 
+   các trình gọi, trình đơn tắt, đồng hồ, trình chuyển desktop và các chương
    trình khác
 
 o Trình quản lí desktop (xfdesktop)
-   thiết lập màu nền hoặc ảnh nền và cung cấp trình đơn khi nhấp chuột vào 
+   thiết lập màu nền hoặc ảnh nền và cung cấp trình đơn khi nhấp chuột vào
    nền desktop
 
 o Trình quản lí tập tin (xffm)
@@ -25,17 +25,17 @@ o Session manager (xfce4-session)
 o Các tiện ích
    xfprint4: in tập tin
    xfrun4: chạy chương trình
-   xftaskbar4: thanh tác vụ đơn giản với trình chuyển trang tuỳ chọn và khay 
+   xftaskbar4: thanh tác vụ đơn giản với trình chuyển trang tuỳ chọn và khay
    hệ thống
    xfce4-iconbox: hiển thị các ứng dụng được thu nhỏ trong hộp biểu tượng
 
 
-Xfce 4 còn là một môi trường phát triển cung cấp một số thư viện, giúp các 
+Xfce 4 còn là một môi trường phát triển cung cấp một số thư viện, giúp các
 nhà lập trình tạo các ứng dụng chạy tối ưu trên môi trường desktop này.
 
-Các thành phần của Xfce 4 được cấp phép theo các giấy phép mã nguồn mở 
-hoặc tự do, GPL hoặc BSDL cho các ứng dụng và LGPL hoặc BSDL cho các 
-thư viện. Tham khảo các tài liệu, mã nguồn hoặc trang web của xfce 
+Các thành phần của Xfce 4 được cấp phép theo các giấy phép mã nguồn mở
+hoặc tự do, GPL hoặc BSDL cho các ứng dụng và LGPL hoặc BSDL cho các
+thư viện. Tham khảo các tài liệu, mã nguồn hoặc trang web của xfce
 (http://www.xfce.org) để biết thêm thông tin.
 
 
