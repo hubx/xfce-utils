@@ -2,128 +2,123 @@
 # Copyright (C) 2002-2005 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Paweł Pastuła <pastulap@poczta.onet.pl>, 2003.
-# --
 # Daniel 'Beorn' Mróz <beorn@alpha.pl>, 2003.
-#
-#     Changes:
-#        - completion
-#        - few minor fixes
+# Piotr Maliński <admin@rk.edu.pl>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-17 06:59+0900\n"
-"PO-Revision-Date: 2005-10-07 23:31+0900\n"
-"Last-Translator: Daniel 'Beorn' Mróz <beorn@alpha.pl\n"
+"POT-Creation-Date: 2005-10-21 17:31+0900\n"
+"PO-Revision-Date: 2005-10-08 04:20+0900\n"
+"Last-Translator: Piotr Maliński <admin@rk.edu.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:171
+#: ../xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "Nie można załadować"
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: ../xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "Kierownictwo Projektu"
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: ../xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "Główni Programiści"
 
 #. Contributors
-#: xfce4-about/info.c:208
+#: ../xfce4-about/info.c:208
 msgid "Contributors"
-msgstr ""
+msgstr "Wspierający"
 
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Dostawca Usług Hostingowych"
 
 #. Server admins
-#: xfce4-about/info.c:243
+#: ../xfce4-about/info.c:243
 msgid "Server maintained by"
-msgstr ""
+msgstr "Serwer zarządzany przez"
 
 #. Translations supervision
-#: xfce4-about/info.c:247
+#: ../xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "Zarządzanie tłumaczeniami"
 
 #. Translators
-#: xfce4-about/info.c:251
+#: ../xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "Tłumacze"
 
-#: xfce4-about/info.c:282
+#: ../xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Jeżeli kogoś brakuje skontaktuj się z nami - <"
 
-#: xfce4-about/info.c:286
+#: ../xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Podziękowania wszystkim, którzy stworzyli niniejszą aplikację"
 
-#: xfce4-about/info.c:388
-#, fuzzy
+#: ../xfce4-about/info.c:388
 msgid "About Xfce 4"
 msgstr "O XFce 4"
 
-#: xfce4-about/info.c:403
-#, fuzzy
+#: ../xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Środowisko XFce"
 
-#: xfce4-about/info.c:403
+#: ../xfce4-about/info.c:403
+#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr ""
+msgstr "Copyright 2002-2004 by Olivier Fourdan"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "Info"
 msgstr "Informacja"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Autorzy"
 
-#: xfce4-about/info.c:428
+#: ../xfce4-about/info.c:428
 msgid "Copyright"
-msgstr ""
+msgstr "Licencja"
 
-#: xfce4-about/info.c:429
+#: ../xfce4-about/info.c:429
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
-#: xfce4-about/info.c:430
+#: ../xfce4-about/info.c:430
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
-#: xfce4-about/info.c:431
+#: ../xfce4-about/info.c:431
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: ../xfrun/xfrun.c:338
 #, c-format
 msgid "xfrun4: Could not write history to file %s\n"
 msgstr "xfrun4: Nie mógę zapisać historii do pliku %s\n"
 
-#: xfrun/xfrun.c:443
+#: ../xfrun/xfrun.c:443
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Otwórz %s za pomocą programu?"
 
-#: xfrun/xfrun.c:444
+#: ../xfrun/xfrun.c:444
 msgid "Run program"
 msgstr "Uruchom program"
 
-#: xfrun/xfrun.c:452
+#: ../xfrun/xfrun.c:452
 msgid "_Run"
 msgstr "_Uruchom"
 
-#: xfrun/xfrun.c:482
+#: ../xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Uruchom w _terminalu"
