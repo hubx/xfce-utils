@@ -71,9 +71,14 @@ elif [ -f "$*" ]; then
 	ESTRING="`which less`"
 	MSTRING="$*"
 elif [ "`echo $* | grep "http:/"`" -o "`echo $* | grep "ftp:"`" ]; then
-	# This requires lynx. If you don't have it, don't drop URLs.
-	TSTRING="Lynx: $*"
-	ESTRING="`which lynx`"
+	# This requires lynx or links. If you don't have it, don't drop URLs.
+	if which lynx >/dev/null 2>&1; then
+		TSTRING="Lynx: $*"
+		ESTRING="`which lynx`"
+	elif which links >/dev/null 2>&1; then
+		TSTRING="Links: $*"
+		ESTRING="`which links`"
+	fi
 	MSTRING="$*"
 else
 	exec $TERMCMD $@
