@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-17 06:59+0900\n"
-"PO-Revision-Date: 2005-10-07 23:29+0900\n"
+"PO-Revision-Date: 2005-11-01 01:29+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
 "net>\n"
@@ -18,49 +18,49 @@ msgstr ""
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "읽어 들이지 못 했습니다."
 
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "프로젝트 진행"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "개발하신 분들"
 
 #. Contributors
 #: xfce4-about/info.c:208
 msgid "Contributors"
-msgstr ""
+msgstr "도와주신 분들"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "웹 호스팅 및 메일링 리스트 제공"
 
 #. Server admins
 #: xfce4-about/info.c:243
 msgid "Server maintained by"
-msgstr ""
+msgstr "서버 관리 "
 
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "번역 관리"
 
 #. Translators
 #: xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "번역하신 분들"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "리스트에서 빠진 분이 있으면 알려 주시기 바랍니다.<"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "이 소프트웨어가 동작하는 데 도와주신 모든 분들께 감사드립니다."
 
 #: xfce4-about/info.c:388
 msgid "About Xfce 4"
@@ -71,9 +71,8 @@ msgid "Xfce Desktop Environment"
 msgstr "XFce 데스크탑 환경"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2005 by Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
