@@ -1,16 +1,17 @@
 [Lead]
 Olivier Fourdan;fourdan@xfce.org
-  
+
 [Core]
 Benedikt Meurer;benny@xfce.org
-Biju Chacko;botsie@myrealbox.com
-Brian Tarricone;bjt23@cornell.edu
-Danny Milosavljevic;danny_milo@yahoo.com
-Edscott Wilson Garcia;edscott@imp.mx
+Biju Chacko;botsie@xfce.org
+Brian J. Tarricone;kelnos@xfce.org
+Danny Milosavljevic;dannym@xfce.org
+Edscott Wilson García;edscott@xfce.org
 Eduard Roccatello;eduard@xfce.org
 François Le Clainche;fleclainche@wanadoo.fr
 Jasper Huijsmans;jasper@xfce.org
 Jean-François Wauthy;pollux@xfce.org
+Mickaël 'Korbinus' Graf;korbinus@xfce.org
 Olivier Fourdan;fourdan@xfce.org
 
 [Contributors]
@@ -24,7 +25,6 @@ Joakim Andreasson;joakim.andreasson@gmx.net
 Karsten Luetkewitz;phrep@plskthx.org
 Martin Loschwitz;madkiss@debian.org
 Michael Mosier;michael@spyonit.com
-Mickael Graf;korbinus@linux.se
 Thomas Leonard;tal00r@ecs.soton.ac.uk
 Tobias Henle;tobias@page23.de
 Xavier Maillard;zedek@fxgsproject.org
@@ -33,8 +33,8 @@ Xavier Maillard;zedek@fxgsproject.org
 Remco Lubbers - WebAdept;http://www.web-adept.nl/;remco@web-adept.nl
 
 [Server administration]
-Auke Kok;sofar@lunar-linux.org
-Tchan;tchan@lunar-linux.org
+Auke Kok;sofar@foo-projects.org
+Brian J. Tarricone;kelnos@xfce.org
 
 [Translations supervision]
 Daichi Kawahata;daichi@xfce.org
@@ -42,48 +42,59 @@ Jean-François Wauthy;pollux@xfce.org
 
 [Translators]
 af;Petri Jooste;petri.jooste@gmail.com
+ar;Saleh Alhathal;hathalsal@hotmail.com
 az;Metin Amiroff;metin@karegen.com
 be;Ales Nyakhaychyk;nab@mail.by
+bg;Miroslav Yordanov;miordanov@i-space.org
+bn_IN;Runa Bhattacharjee;runabh@gmail.com
+ca;Pau Rul·lan Ferragut;paurullan@bulma.net
 cs;Alois Nespor;Alois.Nespor@seznam.cz
+da;Jesper Berth;big@santaz.dk
+de;Fabian Nowak;timystery@arcor.de
 de;Moritz Heiber;moe@xfce.org
+el;Stavros Giannouris;stavrosg2002@freemail.gr
 en_GB;Dwayne Bailey;dwayne@translate.org.za
 eo;Sylvain Vedrenne;sylvain.vedrenne@free.fr
 es;Jaime Buffery;nestu@lunar-linux.org
-es_MX;Edscott Wilson Garcia;edscott@imp.mx
-et;Peeter Vois;peeter.vois@proekspert.ee
+es;Pablo Hernandez-M. Saiz;homeless3d@gmail.com
+es_MX;Edscott Wilson García;edscott@xfce.org
 et;Mart Tõnso;Mart.Tonso@ttu.ee
 eu;Piarres Beobide Egaña;pi@beobide.net
 fa;Abbas Izad;abbasizad@hotmail.com
-fi;Ilkka Ollakka;ilkka.j.ollakka@students.oamk.fi
-fi;Juha Kautto;kautto.juha@kolumbus.fi
-fr;Mickal Graf;korbinus@linux.se
+fi;Jari Rahkonen;jari.rahkonen@pp1.inet.fi
 fr;Olivier Fourdan;fourdan@xfce.org
-fr;Jean-François Wauthy;pollux@xfce.org
-gu;Ankit Patel;ankit@redhat.com
-hi;Ravi Shrivastava;raviratlami@yahoo.com
+gu;Ankitkumar Rameshchandra Patel;ankit@redhat.com
 he;Dotan Kamber;kamberd@yahoo.com
-he;Jonatan Perry;Jonatan443@walla.co.il
 he;Yuval Tanny;tanai@int.gov.il
-hy;Asprayama N;asprayama@yahoo.com
+hi;Ravishankar Shrivastava;raviratlami@yahoo.com
+hu;Szervác Attila;sas@321.hu
+hy;Norayr Chilingaryan;norik@oric.org
 it;Alex Dupre;ale@FreeBSD.org
-it;Luca Marrocco;buildup@liber.it
-ja;Daichi Kawahata;daichi.k@aioros.ocn.ne.jp
-ja;Zhao Ji;zhao-ji@awz.ne.jp
+it;Gabriele Modena;rnd@email.it
+ja;Daichi Kawahata;daichi@xfce.org
 ko;ByungHyun Choi;byunghyun.choi@gmail.com
+ku;Erdal Ronahi;erdal.ronahi@gmail.com
 lt;Mantas Zapolskas;mantaz@users.sf.net
+lt;Rimas Kudelis;rq@akl.lt
+mr;Pallavi Nikam;pallavi_edu@rediffmail.com
+ms;Harun Musa;mharun@gmx.net
 nb_NO;Eskild Hustvedt;zerodogg@skolelinux.no
 nl;Jasper Huijsmans;jasper@xfce.org
-pa;Amanpreet Singh Alam;aalam@redhat.com
+pa;Jaswinder Singh Phulewala;jaswinderphulewala@yahoo.com
+pl;Marek Piechut;mco@o2.pl
+pl;Wit Wiliński;wit.wilinski@gmail.com
 pt_BR;Felix da Silva Costa;felix@online.eti.br
+pt_BR;Tomas Schertel;tschertel@gmail.com
 pt_PT;Nuno Donato;nunodonato@zmail.pt
-ro;Mişu Moldovan;dumol@go.ro
+ro;Mişu Moldovan;dumol@gnome.ro
 ru;Anthony Ivanoff;a-i@bk.ru
-sk;Juraj Brosz;Juraj.Brosz@pobox.sk
+sk;Juraj Brosz;juro@jurajbrosz.info
+sk;Roman Moravcik;morgan@pobox.sk
+sv;Magnus Berg;berg.magnus@bredband.net
 ta;Dinesh Nadarajah;dinesh_list@sbcglobal.net
 tr;Erçin EKER;erc.caldera@gmx.net
 uk;Maxim V. Dziumanenko;mvd@mylinux.com.ua
 vi;Lâm Vĩnh Niên;nienvl@yahoo.ca
 zh_CN;Yongtao Yang;yongtao.yang@telia.com
 zh_TW;Hydonsingore Cia;hydonsingore@mail.educities.edu.tw
-
 
