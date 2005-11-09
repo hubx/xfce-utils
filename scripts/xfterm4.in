@@ -21,8 +21,8 @@ fi
 
 if [ "$1" = "-e" ]; then
 	if [ -n "$2" ]; then
-		ESTRING="$2"
-		shift; shift
+		shift
+		ESTRING="$@"
 	else
 		shift
 	fi
