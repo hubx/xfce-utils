@@ -14,10 +14,9 @@ test -r $HOME/.Xdefaults && cat $HOME/.Xdefaults >> $XRESOURCES
 # Check if the user wants to override the above defaults (set by
 # mcs ui plugin)
 if test "x$XDG_CONFIG_HOME" = "x" ; then
-  BASEDIR=$HOME/.config/xfce4
-else
-  BASEDIR=$XDG_CONFIG_HOME/xfce4
+  XDG_CONFIG_HOME=$HOME/.config
 fi
+BASEDIR=$XDG_CONFIG_HOME/xfce4
 
 if test -r $BASEDIR/Xft.xrdb; then
   cat $BASEDIR/Xft.xrdb >> $XRESOURCES
@@ -108,9 +107,30 @@ xsetroot -solid black -cursor_name watch
 xfce-mcs-manager
 xfwm4 --daemon
 
-# Start-up stuff from ~/Desktop/Autostart directory, if it exists
-# (as it seems to be the new standard)
-if test -d "$HOME/Desktop/Autostart"; then
+# start up stuff in $XDG_CONFIG_HOME/autostart/, as that looks to be
+# the new standard.  if that directory doesn't exist, try the old
+# ~/Desktop/Autostart method.  we're not going to do any migration here.
+if test -d "$XDG_CONFIG_HOME/autostart"; then
+  for i in ${XDG_CONFIG_HOME}/autostart/*.desktop; do
+    grep -q -E "^Hidden=true" "$i" && continue
+    if grep -q -E "^OnlyShowIn=" "$i"; then
+      # need to test twice, as lack of the line entirely means we still run it
+      grep -E "^OnlyShowIn=" "$i" | grep -q 'XFCE;' || continue
+    fi
+    grep -E "^NotShowIn=" "$i" | grep -q 'XFCE;' && continue
+    
+    # check for TryExec
+    trycmd=`grep -E "^TryExec=" "$i" | cut -d'=' -f2`
+    if test "$trycmd"; then
+      type "$trycmd" >/dev/null 2>&1 || continue
+    fi
+    
+    cmd=`grep -E "^Exec=" "$i" | cut -d'=' -f2`
+    if test "$cmd" && type "$cmd" >/dev/null 2>&1; then
+      $cmd &
+    fi
+  done
+elif test -d "$HOME/Desktop/Autostart"; then
   for i in `ls -1 -L ${HOME}/Desktop/Autostart/ 2>/dev/null`; do
     if test -x $HOME/Desktop/Autostart/$i; then
       $HOME/Desktop/Autostart/$i &
