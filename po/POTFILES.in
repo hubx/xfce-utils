@@ -1,2 +1,4 @@
+# List of source files containing translatable strings.
+
 xfce4-about/info.c
 xfrun/xfrun.c
