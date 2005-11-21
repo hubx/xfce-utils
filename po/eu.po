@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-17 06:59+0900\n"
+"POT-Creation-Date: 2005-11-22 00:15+0900\n"
 "PO-Revision-Date: 2005-10-27 21:12+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale.org <librezale@librezale.org>\n"
@@ -59,7 +59,8 @@ msgstr "Itzultzaileak"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Zerrenda honetan falta den bati berri jakin ezkero mesedez berri eman hona <"
+msgstr ""
+"Zerrenda honetan falta den bati berri jakin ezkero mesedez berri eman hona <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
@@ -123,4 +124,3 @@ msgstr "_Abiarazi"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Abiarazi terminalean"
-
