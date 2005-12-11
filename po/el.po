@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-22 00:15+0900\n"
-"PO-Revision-Date: 2005-10-07 23:21+0900\n"
+"PO-Revision-Date: 2005-12-11 18:33+0200\n"
 "Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -37,8 +37,7 @@ msgstr "Συντεεστές"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
-"Φιλοξενία στον Ιστό και Λίστες Ηλεκτρονικού Ταχυδρομείου παρέχονται από"
+msgstr "Φιλοξενία στον Ιστό και Λίστες Ηλεκτρονικού Ταχυδρομείου παρέχονται από"
 
 #. Server admins
 #: xfce4-about/info.c:243
@@ -57,8 +56,7 @@ msgstr "Μεταφραστές"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
+msgstr "Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
@@ -66,16 +64,15 @@ msgstr "Ευχαριστούμε όσους βοήθησαν να γίνει α�
 
 #: xfce4-about/info.c:388
 msgid "About Xfce 4"
-msgstr "Περί του Xfce 4"
+msgstr "Περί Xfce 4"
 
 #: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Περιβάλλον Εργασίας Xfce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2005 από τον Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -123,3 +120,4 @@ msgstr "_Εκτέλεση"
 #: xfrun/xfrun.c:482
 msgid "Run in _terminal"
 msgstr "Εκτέλεση σε _τερματικό"
+
