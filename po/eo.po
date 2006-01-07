@@ -1,5 +1,5 @@
 # Esperanto translations for the xfce-utils package.
-# Copyright (C) 2002-2005 The Xfce development team.
+# Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Sylvain Vedrenne <gnu_sylvain@xfce.org>, 2005.
 #

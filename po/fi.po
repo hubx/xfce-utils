@@ -1,6 +1,6 @@
 # Translation of xfce-utils into Finnish.
 # This file is distributed under the same license as the xfce-utils package.
-# Copyright (C) 2002-2005 The Xfce Development Team.
+# Copyright (C) 2002-2006 The Xfce Development Team.
 # Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005.
 #
 msgid ""

@@ -1,13 +1,13 @@
 # translation of eu.po to librezale.org
 # Euskara translations for xfce-utila package.
-# Copyright (C) 2002-2005 The Xfce development team.
+# Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Jon Latorre Martinez <patataman@airtel.net>, 2003.
 # Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-22 00:15+0900\n"
 "PO-Revision-Date: 2005-10-27 21:12+0200\n"

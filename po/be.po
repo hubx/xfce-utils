@@ -1,5 +1,5 @@
 # Беларускі пераклад xfce-utils.
-# Copyright (C) 2002-2005 The Xfce development team.
+# Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Ales Nyakhaychyk <nab@mail.by>, 2004.
 #

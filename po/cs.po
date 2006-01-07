@@ -1,5 +1,5 @@
 # Czech translation for xfce-utils package.
-# Copyright (C) 2002-2005 The Xfce development team.
+# Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Lukáš Konarovský <daeltar@daeltar.org>, 2003.
 # Alois Nespor <Alois.Nespor@seznam.cz>, 2004.
