@@ -2,7 +2,7 @@
 
 if [ "x$BROWSER" = "x" ]
 then
-  for b in @BROWSER_DEFAULT@ firefox epiphany galeon mozilla konqueror dillo
+  for b in exo-open @BROWSER_DEFAULT@ firefox epiphany galeon mozilla konqueror dillo
   do
     if which "$b" > /dev/null 2>&1
     then

@@ -3,12 +3,12 @@
 # more compatible with applications such as gnome-terminal
 
 if [ "x$TERMCMD" = "x" ]; then
-	for term in @TERMINAL_DEFAULT@ Terminal xterminal xterm aterm rxvt
+	for term in exo-open @TERMINAL_DEFAULT@ Terminal xterminal xterm aterm rxvt
 	do
 	    if which "$term" > /dev/null 2>&1 ; then
 		TERMCMD=$term
-	    break;
-	fi
+	    	break;
+	    fi
 	done
 fi
 
@@ -43,6 +43,11 @@ case "$TERMCMD" in
 	"Eterm")
 		EXEC="-e "
 		TITLE="-T "
+		;;
+	"exo-open")
+		EXEC=""
+		TITLE=""
+		TERMCMD="$TERMCMD --launch TerminalEmulator"
 		;;
 	*)
 		EXEC="-e "
@@ -88,7 +93,9 @@ fi
 # Ugly, why can't they just make all terms work the same way?
 # Note that you cannot feed this script with a text file which
 # contains spaces in its name and/or path if your $TERMCMD = powershell
-if [ "$TERMCMD" = "powershell" ]; then
+if [ x"$TITLE" = x"" -o x"$EXEC" = x"" ]; then
+	exec $TERMCMD $ESTRING
+elif [ "$TERMCMD" = "powershell" ]; then
  	exec $TERMCMD $TITLE"$TSTRING" $EXEC"$ESTRING $MSTRING"
 elif [ "x$MSTRING" = "x" ]; then
 	exec $TERMCMD $TITLE"$TSTRING" $EXEC$ESTRING
