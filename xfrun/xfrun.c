@@ -297,7 +297,7 @@ main(int argc,
     g_signal_connect(G_OBJECT(win), "key-press-event",
                      G_CALLBACK(xfrun_key_press), NULL);
     
-    vbox = gtk_vbox_new(FALSE, 8);
+    vbox = gtk_vbox_new(FALSE, BORDER/2);
     gtk_container_set_border_width(GTK_CONTAINER(vbox), BORDER);
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(win), vbox);
@@ -325,6 +325,7 @@ main(int argc,
     
     bbox = gtk_hbutton_box_new();
     gtk_button_box_set_layout(GTK_BUTTON_BOX(bbox), GTK_BUTTONBOX_END);
+    gtk_box_set_spacing(GTK_BOX(bbox), BORDER);
     gtk_widget_show(bbox);
     gtk_box_pack_end(GTK_BOX(vbox), bbox, FALSE, FALSE, 0);
     
@@ -334,7 +335,7 @@ main(int argc,
     g_signal_connect(G_OBJECT(btn), "clicked",
                      G_CALLBACK(gtk_main_quit), NULL);
     
-    btn = xfce_create_mixed_button(GTK_STOCK_OK, _("_Run"));
+    btn = xfce_create_mixed_button(GTK_STOCK_EXECUTE, _("_Run"));
     gtk_widget_show(btn);
     gtk_box_pack_end(GTK_BOX(bbox), btn, FALSE, FALSE, 0);
     GTK_WIDGET_SET_FLAGS(btn, GTK_CAN_DEFAULT);
