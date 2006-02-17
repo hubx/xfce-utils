@@ -23,6 +23,7 @@
 #endif
 
 #include <stdio.h>
+#include <string.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
@@ -59,7 +60,7 @@ static gchar **
 xfrun_get_histfile_content()
 {
     gchar **lines = NULL, *histfile, *contents = NULL;
-    gint length = 0;
+    gsize length = 0;
     
     histfile = xfce_resource_lookup(XFCE_RESOURCE_CACHE, "xfce4/xfrun4/history");
     if(histfile && g_file_get_contents(histfile, &contents, &length, NULL)) {
@@ -308,6 +309,7 @@ main(int argc,
     gtk_entry_completion_set_text_column(completion, XFRUN_COL_COMMAND);
     gtk_entry_completion_set_popup_completion(completion, TRUE);
     gtk_entry_completion_set_inline_completion(completion, TRUE);
+    gtk_entry_completion_set_popup_completion(completion, TRUE);
     g_signal_connect(G_OBJECT(completion), "match-selected",
                      G_CALLBACK(xfrun_match_selected), &xfrun_dialog);
     
