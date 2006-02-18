@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-02-18 21:56+0900\n"
-"PO-Revision-Date: 2005-12-31 00:53+0900\n"
+"PO-Revision-Date: 2006-02-18 22:55+0900\n"
 "Last-Translator: Daichi Kawahata <daichi@xfce.org>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
@@ -108,12 +108,11 @@ msgstr "GPL"
 #: xfrun/xfrun.c:204
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "コマンド「%s」の実行に失敗しました:"
 
 #: xfrun/xfrun.c:206
-#, fuzzy
 msgid "Run Error"
-msgstr "実行するプログラムを入力して下さい"
+msgstr "実行エラー"
 
 #: xfrun/xfrun.c:286
 #, c-format
@@ -131,6 +130,3 @@ msgstr "ターミナルで実行する(_T)"
 #: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "実行(_R)"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: ファイル %s へコマンドの履歴を書込めませんでした\n"
