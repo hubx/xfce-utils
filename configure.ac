@@ -8,9 +8,10 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-AC_INIT([xfrun/xfrun.c])
+m4_define([xfce_utils_version], [4.3.0])
 
-AM_INIT_AUTOMAKE([xfce-utils], [4.3.0])
+AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
+AM_INIT_AUTOMAKE([dist-bzip2])
 
 AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.3 UNSTABLE"], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
@@ -36,8 +37,11 @@ AC_C_INLINE
 
 dnl Check for standard header files
 AC_HEADER_STDC
+AC_CHECK_HEADERS([unistd.h])
+AC_CHECK_FUNCS([setsid])
+
 dnl Check for X11 installed
-BM_LIBX11_REQUIRE
+XDT_CHECK_LIBX11_REQUIRE
 
 dnl Check for default browser to use
 AC_MSG_CHECKING([what browser to use by default])
@@ -81,25 +85,21 @@ if test x"$enable_gdm" = x"yes"; then
 fi
 
 dnl Check for i18n support
-BM_I18N([xfce-utils], [af ar az be bg bn_IN ca cs de el en_GB eo es es_MX
-                       et eu fa fi fr gu he hi hu hy it ja ko lt mr ms nl
-		       pa pl pt_BR pt_PT ro ru sk sv ta tr uk vi zh_CN zh_TW])
+XDT_I18N([af ar az be bg bn_IN ca cs de el en_GB eo es es_MX \ 
+          et eu fa fi fr gu he hi hu hy it ja ko lt mr ms nl \
+          pa pl pt_BR pt_PT ro ru sk sv ta tr uk vi zh_CN zh_TW])
 
 dnl Check for required packages
-BM_DEPEND([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.2.0])
-BM_DEPEND([LIBXFCEGUI4], [libxfcegui4-1.0], [4.2.0])
+XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.6.0])
+XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.3.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.3.0])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.3.0])
 
 dnl configure the mcs plugin
-XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.2.0])
-
-dnl Check for dbh installed
-BM_DEPEND_CHECK([LIBDBH], [dbh-1.0], [1.0],
-  [dbh], [DBH library], [yes])
-
-
+XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.3.0])
 
 dnl Check for debugging support
-BM_DEBUG_SUPPORT
+XDT_FEATURE_DEBUG
 
 dnl Check for vendor specific information
 AC_MSG_CHECKING([for additional vendor info])

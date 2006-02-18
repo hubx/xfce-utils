@@ -23,7 +23,6 @@
 #endif
 
 #include <stdio.h>
-#include <string.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
@@ -33,7 +32,6 @@
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/libxfcegui4.h>
 
 #define BORDER       8
 #define MAX_ENTRIES 20
@@ -57,11 +55,185 @@ enum
     XFRUN_N_COLS,
 };
 
+
+/* this stuff is here so i don't have to link to libxfcegui4 */
+
+static void
+xfrun_gtk_window_center_on_monitor_with_pointer(GtkWindow *window)
+{
+    GtkWidget *widget = GTK_WIDGET(window);
+    GdkScreen *gscreen = NULL;
+    gint ptr_x, ptr_y, new_x, new_y;
+    GdkModifierType mask;
+    gint i, nmonitors, monitor = -1;
+    GdkRectangle geom;
+    GtkRequisition req;
+    
+    g_return_if_fail(GTK_IS_WINDOW(window));
+    
+    gdk_display_get_pointer(gdk_display_get_default(), &gscreen,
+                            &ptr_x, &ptr_y, &mask);
+    g_return_if_fail(GDK_IS_SCREEN(gscreen));
+    gtk_window_set_screen(window, gscreen);
+    
+    nmonitors = gdk_screen_get_n_monitors(gscreen);
+    for(i = 0; i < nmonitors; ++i) {
+        gdk_screen_get_monitor_geometry(gscreen, i, &geom);
+        if(ptr_x >= geom.x && ptr_x < geom.x + geom.width
+           && ptr_y >= geom.y && ptr_y < geom.y + geom.height)
+        {
+            monitor = i;
+            break;
+        }
+    }
+    
+    g_return_if_fail(monitor >= 0);
+    
+    if(!GTK_WIDGET_REALIZED(widget))
+        gtk_widget_realize(widget);
+    
+    gtk_widget_size_request(widget, &req);
+    
+    //g_print("geom.x=%d, geom.y=%d, geom.width=%d
+    
+    new_x = geom.x + (geom.width - widget->allocation.width) / 2;
+    new_y = geom.y + (geom.height - widget->allocation.height) / 2;
+    
+    gtk_window_move(window, new_x, new_y);
+}
+
+static void
+xfrun_exec_child_setup(gpointer data)
+{
+#if !defined(G_OS_WIN32) && defined(HAVE_SETSID)
+    setsid();
+#endif
+}
+
+static gboolean
+xfrun_exec_on_screen(GdkScreen *screen,
+                     const gchar *command,
+                     gboolean in_terminal,
+                     GError **error)
+{
+    gboolean ret = FALSE, do_freev = FALSE;
+    gint argc = 0;
+    gchar **argv = NULL;
+    
+    if(in_terminal) {
+        argv = g_new(gchar *, 4);
+        argv[0] = "xfterm4";
+        argv[1] = "-e";
+        argv[2] = (gchar *)command;
+        argv[3] = NULL;
+    } else {
+        g_shell_parse_argv(command, &argc, &argv, error);
+        do_freev = TRUE;
+    }
+    
+    if(argv
+       && gdk_spawn_on_screen(screen, NULL, argv, NULL, G_SPAWN_SEARCH_PATH,
+                              xfrun_exec_child_setup, NULL, NULL, error))
+    {
+        ret = TRUE;
+    }
+    
+    if(do_freev)
+        g_strfreev(argv);
+    else
+        g_free(argv);
+    
+    return ret;
+}
+
+GtkWidget *
+xfrun_create_mixed_button(const gchar *stock_id,
+                          const gchar *label)
+{
+    GtkWidget *btn, *align, *hbox, *img, *lbl;
+    gint w, h;
+    
+    btn = gtk_button_new();
+    
+    align = gtk_alignment_new(0.5, 0.5, 0.0, 0.0);
+    gtk_widget_show(align);
+    gtk_container_add(GTK_CONTAINER(btn), align);
+    
+    hbox = gtk_hbox_new(FALSE, BORDER/4);
+    gtk_widget_show(hbox);
+    gtk_container_add(GTK_CONTAINER(align), hbox);
+    
+    img = gtk_image_new_from_stock(stock_id, GTK_ICON_SIZE_BUTTON);
+    gtk_widget_show(img);
+    gtk_box_pack_start(GTK_BOX(hbox), img, FALSE, FALSE, 0);
+    
+    lbl = gtk_label_new_with_mnemonic(label);
+    gtk_widget_show(lbl);
+    gtk_box_pack_start(GTK_BOX(hbox), lbl, FALSE, FALSE, 0);
+    gtk_label_set_mnemonic_widget(GTK_LABEL(lbl), btn);
+    
+    return btn;
+}
+
+void
+xfrun_simple_message_dialog(GtkWindow *parent,
+                            const gchar *title,
+                            const gchar *icon_id,
+                            const gchar *primary_text,
+                            const gchar *secondary_text)
+{
+    GtkWidget  *tophbox, *vbox, *dlg, *lbl, *spacer, *img;
+    gchar *primary_text_escaped, *markup;
+    
+    dlg = gtk_dialog_new_with_buttons(title, parent, GTK_DIALOG_NO_SEPARATOR,
+                                      GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT,
+                                      NULL);
+    gtk_window_set_resizable(GTK_WINDOW(dlg), FALSE);
+    
+    tophbox = gtk_hbox_new(FALSE, BORDER);
+    gtk_container_set_border_width(GTK_CONTAINER(tophbox), BORDER);
+    gtk_widget_show(tophbox);
+    gtk_box_pack_start(GTK_BOX(GTK_DIALOG(dlg)->vbox), tophbox, TRUE, TRUE, 0);
+    
+    vbox = gtk_vbox_new(FALSE, BORDER);
+    gtk_widget_show(vbox);
+    gtk_box_pack_start(GTK_BOX(tophbox), vbox, FALSE, FALSE, 0);
+    
+    img = gtk_image_new_from_stock(icon_id, GTK_ICON_SIZE_DIALOG);
+    gtk_widget_show(img);
+    gtk_box_pack_start(GTK_BOX(vbox), img, FALSE, FALSE, 0);
+    
+    spacer = gtk_alignment_new(0.0, 0.0, 1.0, 1.0);
+    gtk_widget_show(spacer);
+    gtk_box_pack_start(GTK_BOX(vbox), spacer, TRUE, TRUE, 0);
+    
+    primary_text_escaped = g_markup_escape_text(primary_text,
+                                                g_utf8_strlen(primary_text, -1));
+    markup = g_strdup_printf("<span size='larger' weight='bold'>%s</span>\n\n%s",
+                             primary_text_escaped, secondary_text);
+    
+    lbl = gtk_label_new("");
+    gtk_label_set_markup(GTK_LABEL(lbl), markup);
+    gtk_label_set_use_markup(GTK_LABEL(lbl), TRUE);
+    gtk_label_set_line_wrap(GTK_LABEL(lbl), TRUE);
+    gtk_misc_set_alignment(GTK_MISC(lbl), 0.0, 0.0);
+    gtk_widget_show(lbl);
+    gtk_box_pack_start(GTK_BOX(tophbox), lbl, TRUE, TRUE, 0);
+    
+    gtk_dialog_run(GTK_DIALOG(dlg));
+    gtk_widget_destroy(dlg);
+    
+    g_free(primary_text_escaped);
+    g_free(markup);
+}
+
+/* end libxfcegui4 semi-duplication */
+
 static gchar **
 xfrun_get_histfile_content()
 {
     gchar **lines = NULL, *histfile, *contents = NULL;
-    gsize length = 0;
+    gint length = 0;
     
     histfile = xfce_resource_lookup(XFCE_RESOURCE_CACHE, "xfce4/xfrun4/history");
     if(histfile && g_file_get_contents(histfile, &contents, &length, NULL)) {
@@ -294,6 +466,7 @@ xfrun_run_clicked(GtkWidget *widget,
     XfrunDialog *xfrun_dialog = (XfrunDialog *)user_data;
     gchar *entry_str, *command;
     gboolean in_terminal;
+    GdkScreen *gscreen;
     GError *error = NULL;
     
     entry_str = gtk_editable_get_chars(GTK_EDITABLE(xfrun_dialog->entry), 0, -1);
@@ -306,16 +479,17 @@ xfrun_run_clicked(GtkWidget *widget,
     } else
         command = entry_str;
     
-    if(xfce_exec(command, in_terminal, FALSE, &error)) {
+    gscreen = gtk_widget_get_screen(widget);
+    if(xfrun_exec_on_screen(gscreen, command, in_terminal, &error)) {
         xfrun_add_to_history(command, in_terminal);
         gtk_main_quit();
     } else {
         gchar *primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
                                          command);
-        xfce_message_dialog(GTK_WINDOW(xfrun_dialog->window), _("Run Error"),
-                            GTK_STOCK_DIALOG_ERROR,
-                            primary, error->message,
-                            GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
+        xfrun_simple_message_dialog(GTK_WINDOW(xfrun_dialog->window),
+                                    _("Run Error"),
+                                    GTK_STOCK_DIALOG_ERROR,
+                                    primary, error->message);
         g_free(primary);
         g_error_free(error);
     }
@@ -401,7 +575,7 @@ main(int argc,
     
     xfrun_dialog.window = win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title(GTK_WINDOW(win), title);
-    gtk_window_set_default_size(GTK_WINDOW(win), 400, 10);
+    gtk_widget_set_size_request(win, 400, -1);
     g_signal_connect(G_OBJECT(win), "delete-event",
                      G_CALLBACK(gtk_main_quit), NULL);
     g_signal_connect(G_OBJECT(win), "key-press-event",
@@ -460,7 +634,7 @@ main(int argc,
     g_signal_connect(G_OBJECT(btn), "clicked",
                      G_CALLBACK(gtk_main_quit), NULL);
     
-    btn = xfce_create_mixed_button(GTK_STOCK_EXECUTE, _("_Run"));
+    btn = xfrun_create_mixed_button(GTK_STOCK_EXECUTE, _("_Run"));
     gtk_widget_show(btn);
     gtk_box_pack_end(GTK_BOX(bbox), btn, FALSE, FALSE, 0);
     GTK_WIDGET_SET_FLAGS(btn, GTK_CAN_DEFAULT);
@@ -468,9 +642,9 @@ main(int argc,
     g_signal_connect(G_OBJECT(btn), "clicked",
                      G_CALLBACK(xfrun_run_clicked), &xfrun_dialog);
     
-    gtk_widget_realize(win);
-    xfce_gtk_window_center_on_monitor_with_pointer(GTK_WINDOW(win));
+    xfrun_gtk_window_center_on_monitor_with_pointer(GTK_WINDOW(win));
     gtk_widget_show(win);
+    gtk_widget_set_size_request(win, -1, -1);
     
     gtk_main();
     
