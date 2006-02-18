@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2005-10-07 23:36+0900\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@mail.educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -100,24 +100,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: 無法將歷史記錄寫入檔案 %s\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "執行程式"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "使用那個程式開啟「%s」？"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "執行程式"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+msgid "Run in _terminal"
+msgstr "在終端機中執行(_T)"
+
+#: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "執行(_R)"
 
-#: xfrun/xfrun.c:482
-msgid "Run in _terminal"
-msgstr "在終端機中執行(_T)"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: 無法將歷史記錄寫入檔案 %s\n"

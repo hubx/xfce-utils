@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2005-11-01 01:29+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
@@ -99,24 +99,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: 화일 %s에 사용이력를 기록할 수 없습니다.\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "프로그램 실행"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s을(를) 어떤 프로그램으로 열어 볼까요?"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "프로그램 실행"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+msgid "Run in _terminal"
+msgstr "터미널에서 실행(_t)"
+
+#: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "실행(_R)"
 
-#: xfrun/xfrun.c:482
-msgid "Run in _terminal"
-msgstr "터미널에서 실행(_t)"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: 화일 %s에 사용이력를 기록할 수 없습니다.\n"

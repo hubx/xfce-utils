@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2005-12-11 18:33+0200\n"
 "Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -101,24 +101,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Αδύνατη η εγγραφή του ιστορικού στο αρχείο  %s\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "Εκτέλεση προγράμματος"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Άνοιγμα του %s με ποιό πρόγραμμα;"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "Εκτέλεση προγράμματος"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+msgid "Run in _terminal"
+msgstr "Εκτέλεση σε _τερματικό"
+
+#: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "_Εκτέλεση"
 
-#: xfrun/xfrun.c:482
-msgid "Run in _terminal"
-msgstr "Εκτέλεση σε _τερματικό"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: Αδύνατη η εγγραφή του ιστορικού στο αρχείο  %s\n"

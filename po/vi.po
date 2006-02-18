@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2006-02-12 02:43+0300\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi@vnlinux.org>\n"
 "Language-Team: Vietnamese <none@li.org>\n"
@@ -57,7 +57,8 @@ msgstr "Người dịch"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
+msgstr ""
+"Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
@@ -100,25 +101,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Không thể viết lịch sử vào tập tin %s\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "Chạy chương trình"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Mở %s với chương trình nào?"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "Chạy chương trình"
 
-#: xfrun/xfrun.c:452
-msgid "_Run"
-msgstr "_Chạy"
-
-#: xfrun/xfrun.c:482
+#: xfrun/xfrun.c:323
 msgid "Run in _terminal"
 msgstr "Chạy trong _trạm cuối"
 
+#: xfrun/xfrun.c:339
+msgid "_Run"
+msgstr "_Chạy"
+
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: Không thể viết lịch sử vào tập tin %s\n"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2006-01-08 21:51+0100\n"
 "Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
 "Language-Team: catalan\n"
@@ -118,27 +118,36 @@ msgstr "LGPL "
 msgid "GPL"
 msgstr "GPL "
 
-#: xfrun/xfrun.c:338
-#, fuzzy, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: No es pot escriure el fitxer històric %s\n"
+#: xfrun/xfrun.c:204
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "Eexecuta el programa"
+
+#: xfrun/xfrun.c:286
 #, fuzzy, c-format
 msgid "Open %s with what program?"
 msgstr "Obrir %s amb quin programa?"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 #, fuzzy
 msgid "Run program"
 msgstr "Eexecuta el programa"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+#, fuzzy
+msgid "Run in _terminal"
+msgstr "Executa en un _terminal"
+
+#: xfrun/xfrun.c:339
 #, fuzzy
 msgid "_Run"
 msgstr "_Executa"
 
-#: xfrun/xfrun.c:482
 #, fuzzy
-msgid "Run in _terminal"
-msgstr "Executa en un _terminal"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: No es pot escriure el fitxer històric %s\n"

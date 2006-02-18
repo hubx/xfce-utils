@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2005-10-07 23:16+0900\n"
 "Last-Translator: Alois Nespor <Alois.Nespor@seznam.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -101,24 +101,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: Nemohu zapsat historii do souboru %s\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "Spustit program"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Otevřít %s s tímto programem?"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "Spustit program"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+msgid "Run in _terminal"
+msgstr "Spustit v _terminálu"
+
+#: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "_Spustit"
 
-#: xfrun/xfrun.c:482
-msgid "Run in _terminal"
-msgstr "Spustit v _terminálu"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: Nemohu zapsat historii do souboru %s\n"

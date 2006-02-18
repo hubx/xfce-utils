@@ -9,13 +9,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2006-02-17 00:10+0800\n"
 "Last-Translator: Huang Huan <unicon221@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
@@ -100,25 +100,32 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: 无法将历史记录写入文件 %s \n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "运行程序"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "用什么程序打开 %s ?"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "运行程序"
 
-#: xfrun/xfrun.c:452
-msgid "_Run"
-msgstr "运行(_R)"
-
-#: xfrun/xfrun.c:482
+#: xfrun/xfrun.c:323
 msgid "Run in _terminal"
 msgstr "在终端中运行(_t)"
 
+#: xfrun/xfrun.c:339
+msgid "_Run"
+msgstr "运行(_R)"
+
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: 无法将历史记录写入文件 %s \n"

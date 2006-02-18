@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 00:15+0900\n"
+"POT-Creation-Date: 2006-02-18 21:56+0900\n"
 "PO-Revision-Date: 2005-10-07 23:24+0900\n"
 "Last-Translator: Abbas Izad <abbasizad@hotmail.com>\n"
 "Language-Team: Persian <translation-team-fa@lists.sourceforge.net>\n"
@@ -100,24 +100,32 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:338
+#: xfrun/xfrun.c:204
 #, c-format
-msgid "xfrun4: Could not write history to file %s\n"
-msgstr "xfrun4: نمی‌توان تاریخچه را به پرونده‌ی %s نوشت\n"
+msgid "The command \"%s\" failed to run:"
+msgstr ""
 
-#: xfrun/xfrun.c:443
+#: xfrun/xfrun.c:206
+#, fuzzy
+msgid "Run Error"
+msgstr "اجرا کردن برنامه"
+
+#: xfrun/xfrun.c:286
 #, c-format
 msgid "Open %s with what program?"
 msgstr "با کدام برنامه %s باز شود؟"
 
-#: xfrun/xfrun.c:444
+#: xfrun/xfrun.c:289
 msgid "Run program"
 msgstr "اجرا کردن برنامه"
 
-#: xfrun/xfrun.c:452
+#: xfrun/xfrun.c:323
+msgid "Run in _terminal"
+msgstr "اجرا کردن در _پایانه"
+
+#: xfrun/xfrun.c:339
 msgid "_Run"
 msgstr "ا_جرا کردن"
 
-#: xfrun/xfrun.c:482
-msgid "Run in _terminal"
-msgstr "اجرا کردن در _پایانه"
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: نمی‌توان تاریخچه را به پرونده‌ی %s نوشت\n"
