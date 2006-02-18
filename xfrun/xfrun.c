@@ -24,6 +24,10 @@
 
 #include <stdio.h>
 
+#ifdef HAVE_STRING_H
+#include <string.h>
+#endif
+
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
 #endif
@@ -151,8 +155,7 @@ xfrun_create_mixed_button(const gchar *stock_id,
                           const gchar *label)
 {
     GtkWidget *btn, *align, *hbox, *img, *lbl;
-    gint w, h;
-    
+
     btn = gtk_button_new();
     
     align = gtk_alignment_new(0.5, 0.5, 0.0, 0.0);
@@ -233,7 +236,7 @@ static gchar **
 xfrun_get_histfile_content()
 {
     gchar **lines = NULL, *histfile, *contents = NULL;
-    gint length = 0;
+    gsize length = 0;
     
     histfile = xfce_resource_lookup(XFCE_RESOURCE_CACHE, "xfce4/xfrun4/history");
     if(histfile && g_file_get_contents(histfile, &contents, &length, NULL)) {
@@ -520,8 +523,7 @@ xfrun_create_completion_model(XfrunDialog *xfrun_dialog)
 {
     GtkListStore *ls;
     gchar **lines = NULL;
-    gchar *histfile = NULL, *contents = NULL;
-    gint length = 0;
+    gchar *histfile = NULL;
     
     ls = gtk_list_store_new(XFRUN_N_COLS, G_TYPE_STRING, G_TYPE_BOOLEAN);
     
@@ -529,7 +531,6 @@ xfrun_create_completion_model(XfrunDialog *xfrun_dialog)
     if(lines) {
         GtkTreeIter itr;
         gint i;
-        gchar *p;
         
         for(i = 0; lines[i]; ++i) {
             if(strlen(lines[i]) < 3 || lines[i][1] != ':')

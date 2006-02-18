@@ -37,7 +37,7 @@ AC_C_INLINE
 
 dnl Check for standard header files
 AC_HEADER_STDC
-AC_CHECK_HEADERS([unistd.h])
+AC_CHECK_HEADERS([unistd.h string.h])
 AC_CHECK_FUNCS([setsid])
 
 dnl Check for X11 installed
