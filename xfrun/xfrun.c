@@ -42,6 +42,7 @@ typedef struct
 {
     GtkWidget *window;
     GtkWidget *entry;
+    GtkWidget *arrow_btn;
     GtkWidget *terminal_chk;
     GtkTreeModel *completion_model;
     const gchar *run_argument;
@@ -125,6 +126,114 @@ xfrun_entry_focus_out(GtkWidget *widget,
     xfrun_dialog->entry_val_tmp = NULL;
     
     return FALSE;
+}
+
+static void
+xfrun_menu_item_activated(GtkWidget *widget,
+                          gpointer user_data)
+{
+    XfrunDialog *xfrun_dialog = (XfrunDialog *)user_data;
+    GtkWidget *lbl;
+    const gchar *command;
+    gboolean in_terminal;
+    
+    lbl = gtk_bin_get_child(GTK_BIN(widget));
+    g_return_if_fail(GTK_IS_LABEL(lbl));
+    
+    command = gtk_label_get_text(GTK_LABEL(lbl));
+    gtk_entry_set_text(GTK_ENTRY(xfrun_dialog->entry), command);
+    
+    in_terminal = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget),
+                                                     "--xfrun-in-terminal"));
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(xfrun_dialog->terminal_chk),
+                                 in_terminal);
+}
+
+static gboolean
+xfrun_populate_menu(GtkTreeModel *model,
+                    GtkTreePath *path,
+                    GtkTreeIter *iter,
+                    gpointer data)
+{
+    GtkWidget *menu = GTK_WIDGET(data), *mi;
+    XfrunDialog *xfrun_dialog = g_object_get_data(G_OBJECT(menu), 
+                                                  "--xfrun-dialog");
+    gchar *command = NULL;
+    gboolean in_terminal = FALSE;
+    
+    gtk_tree_model_get(model, iter,
+                       XFRUN_COL_COMMAND, &command,
+                       XFRUN_COL_IN_TERMINAL, &in_terminal,
+                       -1);
+    
+    mi = gtk_menu_item_new_with_label(command);
+    g_object_set_data(G_OBJECT(mi), "--xfrun-in-terminal",
+                      GINT_TO_POINTER(in_terminal));
+    gtk_widget_show(mi);
+    gtk_menu_shell_append(GTK_MENU_SHELL(menu), mi);
+    g_signal_connect(G_OBJECT(mi), "activate",
+                     G_CALLBACK(xfrun_menu_item_activated), xfrun_dialog);
+    
+    g_free(command);
+    
+    return FALSE;
+}
+
+static void
+xfrun_menu_position(GtkMenu *menu,
+                    gint *x,
+                    gint *y,
+                    gboolean *push_in,
+                    gpointer user_data)
+{
+    XfrunDialog *xfrun_dialog = (XfrunDialog *)user_data;
+    GtkAllocation *entry_al = &xfrun_dialog->entry->allocation;
+    GtkAllocation *btn_al = &xfrun_dialog->arrow_btn->allocation;
+    gint entry_x, entry_y;
+    
+    gdk_window_get_origin(xfrun_dialog->entry->window, &entry_x, &entry_y);
+    
+    *x = entry_x;
+    *y = entry_y + entry_al->height;
+    *push_in = FALSE;
+    
+    gtk_widget_set_size_request(GTK_WIDGET(menu),
+                                btn_al->x - entry_al->x + btn_al->width, -1);
+}
+
+static gboolean
+xfrun_menu_destroy_idled(gpointer user_data)
+{
+    gtk_widget_destroy(GTK_WIDGET(user_data));
+    return FALSE;
+}
+
+static void
+xfrun_menu_destroy(GtkWidget *widget,
+                   gpointer user_data)
+{
+    g_idle_add(xfrun_menu_destroy_idled, widget);
+}
+
+static void
+xfrun_menu_button_clicked(GtkWidget *widget,
+                          gpointer user_data)
+{
+    XfrunDialog *xfrun_dialog = (XfrunDialog *)user_data;
+    GtkWidget *menu;
+    
+    menu = gtk_menu_new();
+    g_object_set_data(G_OBJECT(menu), "--xfrun-dialog", xfrun_dialog);
+    gtk_widget_show(menu);
+    g_signal_connect(G_OBJECT(menu), "deactivate",
+                     G_CALLBACK(xfrun_menu_destroy), menu);
+    
+    gtk_tree_model_foreach(xfrun_dialog->completion_model,
+                           xfrun_populate_menu, menu);
+    
+    gtk_menu_popup(GTK_MENU(menu), NULL, NULL,
+                   xfrun_menu_position, xfrun_dialog,
+                   1, gtk_get_current_event_time());
 }
 
 static void
@@ -274,7 +383,7 @@ main(int argc,
 {
     XfrunDialog xfrun_dialog;
     gchar title[8192];
-    GtkWidget *win, *entry, *chk, *btn, *vbox, *bbox;
+    GtkWidget *win, *entry, *chk, *btn, *vbox, *bbox, *hbox, *arrow;
     GtkEntryCompletion *completion;
     GtkTreeModel *completion_model;
     
@@ -303,6 +412,10 @@ main(int argc,
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(win), vbox);
     
+    hbox = gtk_hbox_new(FALSE, BORDER/4);
+    gtk_widget_show(hbox);
+    gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 0);
+    
     completion = gtk_entry_completion_new();
     xfrun_dialog.completion_model = completion_model = xfrun_create_completion_model(&xfrun_dialog);
     gtk_entry_completion_set_model(completion, completion_model);
@@ -316,9 +429,20 @@ main(int argc,
     gtk_entry_set_completion(GTK_ENTRY(entry), completion);
     gtk_entry_set_activates_default(GTK_ENTRY(entry), TRUE);
     gtk_widget_show(entry);
-    gtk_box_pack_start(GTK_BOX(vbox), entry, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(hbox), entry, TRUE, TRUE, 0);
     g_signal_connect(G_OBJECT(entry), "focus-out-event",
                      G_CALLBACK(xfrun_entry_focus_out), &xfrun_dialog);
+    
+    xfrun_dialog.arrow_btn = btn = gtk_button_new();
+    gtk_container_set_border_width(GTK_CONTAINER(btn), 0);
+    gtk_widget_show(btn);
+    gtk_box_pack_start(GTK_BOX(hbox), btn, FALSE, FALSE, 0);
+    g_signal_connect(G_OBJECT(btn), "clicked",
+                     G_CALLBACK(xfrun_menu_button_clicked), &xfrun_dialog);
+    
+    arrow = gtk_arrow_new(GTK_ARROW_DOWN, GTK_SHADOW_NONE);
+    gtk_widget_show(arrow);
+    gtk_container_add(GTK_CONTAINER(btn), arrow);
     
     xfrun_dialog.terminal_chk = chk = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
     gtk_widget_show(chk);
