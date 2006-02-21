@@ -2,14 +2,15 @@
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Juraj Brosz <juro@jurajbrosz.info>, 2004, 2005.
-#
+# Roman Moravcik <roman.moravcik@gmail.com> 2006.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-18 21:56+0900\n"
-"PO-Revision-Date: 2005-10-07 23:33+0900\n"
-"Last-Translator: Juraj Brosz <juro@jurajbrosz.info>\n"
+"POT-Creation-Date: 2006-02-20 02:20+0900\n"
+"PO-Revision-Date: 2006-02-19 11:59+0100\n"
+"Last-Translator: Roman Moravcik <roman.moravcik@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,32 +101,28 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:204
+#: xfrun/xfrun.c:490
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Chyba spúšťania príkazu \"%s\":"
 
-#: xfrun/xfrun.c:206
-#, fuzzy
+#: xfrun/xfrun.c:493
 msgid "Run Error"
-msgstr "Spustiť aplikáciu"
+msgstr "Chyba pri spúštaní programu"
 
-#: xfrun/xfrun.c:286
+#: xfrun/xfrun.c:570
 #, c-format
 msgid "Open %s with what program?"
 msgstr "S ktorou aplikáciou mám otvoriť %s?"
 
-#: xfrun/xfrun.c:289
+#: xfrun/xfrun.c:573
 msgid "Run program"
 msgstr "Spustiť aplikáciu"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:622
 msgid "Run in _terminal"
 msgstr "Spustiť v _termináli"
 
-#: xfrun/xfrun.c:339
+#: xfrun/xfrun.c:638
 msgid "_Run"
 msgstr "_Spustiť"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Nemôžem zapísať históriu do súboru %s\n"
