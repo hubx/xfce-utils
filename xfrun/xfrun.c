@@ -557,10 +557,11 @@ main(int argc,
      char **argv)
 {
     XfrunDialog xfrun_dialog;
-    gchar title[8192];
+    gchar title[8192], *first_item;
     GtkWidget *win, *entry, *chk, *btn, *vbox, *bbox, *hbox, *arrow;
     GtkEntryCompletion *completion;
     GtkTreeModel *completion_model;
+    GtkTreeIter itr;
     
     xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
     
@@ -607,6 +608,16 @@ main(int argc,
     gtk_box_pack_start(GTK_BOX(hbox), entry, TRUE, TRUE, 0);
     g_signal_connect(G_OBJECT(entry), "focus-out-event",
                      G_CALLBACK(xfrun_entry_focus_out), &xfrun_dialog);
+    
+    if(gtk_tree_model_get_iter_first(completion_model, &itr)) {
+        gtk_tree_model_get(completion_model, &itr,
+                           XFRUN_COL_COMMAND, &first_item,
+                           -1);
+        if(first_item) {
+            gtk_entry_set_text(GTK_ENTRY(entry), first_item);
+            g_free(first_item);
+        }
+    }
     
     xfrun_dialog.arrow_btn = btn = gtk_button_new();
     gtk_container_set_border_width(GTK_CONTAINER(btn), 0);
