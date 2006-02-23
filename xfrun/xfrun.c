@@ -186,7 +186,7 @@ xfrun_simple_message_dialog(GtkWindow *parent,
                             const gchar *secondary_text)
 {
     GtkWidget  *tophbox, *vbox, *dlg, *lbl, *spacer, *img;
-    gchar *primary_text_escaped, *markup;
+    gchar *primary_text_escaped, *secondary_text_escaped, *markup;
     
     dlg = gtk_dialog_new_with_buttons(title, parent, GTK_DIALOG_NO_SEPARATOR,
                                       GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT,
@@ -211,9 +211,13 @@ xfrun_simple_message_dialog(GtkWindow *parent,
     gtk_box_pack_start(GTK_BOX(vbox), spacer, TRUE, TRUE, 0);
     
     primary_text_escaped = g_markup_escape_text(primary_text,
-                                                g_utf8_strlen(primary_text, -1));
+                                                g_utf8_strlen(primary_text,
+                                                              -1));
+    secondary_text_escaped = g_markup_escape_text(secondary_text,
+                                                  g_utf8_strlen(secondary_text,
+                                                                -1));
     markup = g_strdup_printf("<span size='larger' weight='bold'>%s</span>\n\n%s",
-                             primary_text_escaped, secondary_text);
+                             primary_text_escaped, secondary_text_escaped);
     
     lbl = gtk_label_new("");
     gtk_label_set_markup(GTK_LABEL(lbl), markup);
@@ -227,6 +231,7 @@ xfrun_simple_message_dialog(GtkWindow *parent,
     gtk_widget_destroy(dlg);
     
     g_free(primary_text_escaped);
+    g_free(secondary_text_escaped);
     g_free(markup);
 }
 
