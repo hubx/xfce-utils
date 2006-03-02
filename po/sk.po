@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-20 02:20+0900\n"
+"POT-Creation-Date: 2006-03-02 22:06+0900\n"
 "PO-Revision-Date: 2006-02-19 11:59+0100\n"
 "Last-Translator: Roman Moravcik <roman.moravcik@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -101,28 +101,28 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:490
+#: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Chyba spúšťania príkazu \"%s\":"
 
-#: xfrun/xfrun.c:493
+#: xfrun/xfrun.c:498
 msgid "Run Error"
 msgstr "Chyba pri spúštaní programu"
 
-#: xfrun/xfrun.c:570
+#: xfrun/xfrun.c:576
 #, c-format
 msgid "Open %s with what program?"
 msgstr "S ktorou aplikáciou mám otvoriť %s?"
 
-#: xfrun/xfrun.c:573
+#: xfrun/xfrun.c:579
 msgid "Run program"
 msgstr "Spustiť aplikáciu"
 
-#: xfrun/xfrun.c:622
+#: xfrun/xfrun.c:638
 msgid "Run in _terminal"
 msgstr "Spustiť v _termináli"
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Spustiť"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-18 21:56+0900\n"
+"POT-Creation-Date: 2006-03-02 22:06+0900\n"
 "PO-Revision-Date: 2006-02-17 00:10+0800\n"
 "Last-Translator: Huang Huan <unicon221@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -100,30 +100,30 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:204
+#: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:206
+#: xfrun/xfrun.c:498
 #, fuzzy
 msgid "Run Error"
 msgstr "运行程序"
 
-#: xfrun/xfrun.c:286
+#: xfrun/xfrun.c:576
 #, c-format
 msgid "Open %s with what program?"
 msgstr "用什么程序打开 %s ?"
 
-#: xfrun/xfrun.c:289
+#: xfrun/xfrun.c:579
 msgid "Run program"
 msgstr "运行程序"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:638
 msgid "Run in _terminal"
 msgstr "在终端中运行(_t)"
 
-#: xfrun/xfrun.c:339
+#: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "运行(_R)"
 

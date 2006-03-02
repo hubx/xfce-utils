@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-18 21:56+0900\n"
+"POT-Creation-Date: 2006-03-02 22:06+0900\n"
 "PO-Revision-Date: 2005-10-07 23:14+0900\n"
 "Last-Translator: Saleh Alhathal <hathalsal@hotmail.com>\n"
 "Language-Team: Arabic <lumina@silverpen.de>\n"
@@ -101,30 +101,30 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:204
+#: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:206
+#: xfrun/xfrun.c:498
 #, fuzzy
 msgid "Run Error"
 msgstr "نفذ برنامج"
 
-#: xfrun/xfrun.c:286
+#: xfrun/xfrun.c:576
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:289
+#: xfrun/xfrun.c:579
 msgid "Run program"
 msgstr "نفذ برنامج"
 
-#: xfrun/xfrun.c:323
+#: xfrun/xfrun.c:638
 msgid "Run in _terminal"
 msgstr "نفذ في _سطر اﻷوامر"
 
-#: xfrun/xfrun.c:339
+#: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_نفذ"
 
