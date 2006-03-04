@@ -127,6 +127,3 @@ msgstr "Chạy trong _trạm cuối"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Chạy"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Không thể viết lịch sử vào tập tin %s\n"

@@ -126,6 +126,3 @@ msgstr "Lanĉu en _terminalo"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Lanĉu"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Ne povas skribi la historion en dosieron %s\n"

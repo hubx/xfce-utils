@@ -126,6 +126,3 @@ msgstr "在终端中运行(_t)"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "运行(_R)"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: 无法将历史记录写入文件 %s \n"

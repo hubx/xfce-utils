@@ -125,6 +125,3 @@ msgstr "Выконваць у _тэрмінале"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "Запусьц_іць"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: немагчыма запісаць гісторыю ў файл %s\n"

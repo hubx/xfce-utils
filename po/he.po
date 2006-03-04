@@ -128,6 +128,3 @@ msgstr "הרץ ב_מסוף"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_הרץ"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4 -אין אפשרות לכתוב היסוריה לקובץ %s\n"

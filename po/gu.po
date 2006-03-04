@@ -130,6 +130,3 @@ msgstr "ટર્મિનલમાં ચલાવો (_t)"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "ચલાવો (_R)"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: ઈતિહાસને ફાઈલ %s માં લખી શક્યા નહિં\n"

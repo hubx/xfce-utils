@@ -126,6 +126,3 @@ msgstr "_Terminalda başlat"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Başlat"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: %s keçmiş faylına yazıla bilmədi\n"

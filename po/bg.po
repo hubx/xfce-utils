@@ -127,6 +127,3 @@ msgstr "Стартира в терминал"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Стартира"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4:·не мога да запиша историята във файла·%s\n"

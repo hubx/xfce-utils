@@ -127,6 +127,3 @@ msgstr "_Terminálban futtatás"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Futtatás"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Nem sikerült a(z) %s fájlba a naplót beírni\n"

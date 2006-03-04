@@ -126,6 +126,3 @@ msgstr "টার্মিনালে আরম্ভ করুন (_t)"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "আরম্ভ করুন (_R)"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: পূর্ববর্তী তথ্য সংক্রান্ত ফাইল %s লেখা যায়নি\n"

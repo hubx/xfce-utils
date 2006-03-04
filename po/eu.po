@@ -129,6 +129,3 @@ msgstr "Abiarazi terminalean"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Abiarazi"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: ezen izan da histororioa idatzi %s fitxateguian\n"

@@ -126,6 +126,3 @@ msgstr "Esegui in un _terminale"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Esegui"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Impossibile scrivere l'history nel file %s\n"

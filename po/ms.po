@@ -127,6 +127,3 @@ msgstr "Lari dalam _terminal"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Lari"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Tak boleh tulis sejarah ke file %s\n"

@@ -126,6 +126,3 @@ msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_ਚਲਾਓ"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4ਃ %s ਫਾਈਲ ਦਾ ਅਤੀਤ ਲਿਖ ਨਹੀਂ ਸਕਦਾ \n"

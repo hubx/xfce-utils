@@ -127,6 +127,3 @@ msgstr "Kör i _terminal"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Kör"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Kunde inte skriva historia till fil %s\n"

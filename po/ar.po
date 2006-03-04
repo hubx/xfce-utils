@@ -127,6 +127,3 @@ msgstr "نفذ في _سطر اﻷوامر"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_نفذ"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: لم يتمكن من كتابة اﻷحداث في الملف %s\n"

@@ -125,6 +125,3 @@ msgstr "Paleisti _terminale"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Paleisti"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Neįmanoma įrašyti į failą %s\n"

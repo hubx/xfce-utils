@@ -126,6 +126,3 @@ msgstr "Suorita p_äätteessä"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Suorita"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Historiaa ei voitu kirjoittaa tiedostoon %s\n"

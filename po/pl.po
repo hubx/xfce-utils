@@ -127,6 +127,3 @@ msgstr "Uruchom w _terminalu"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Uruchom"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: Nie mógę zapisać historii do pliku %s\n"

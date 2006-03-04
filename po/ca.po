@@ -147,7 +147,3 @@ msgstr "Executa en un _terminal"
 #, fuzzy
 msgid "_Run"
 msgstr "_Executa"
-
-#, fuzzy
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: No es pot escriure el fitxer històric %s\n"

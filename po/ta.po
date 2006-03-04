@@ -127,6 +127,3 @@ msgstr "முனையத்தில் þயக்குக"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_இயக்குக"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: கோப்பு %s க்கு வரலாறு எழுத முடியவில்லை\n"

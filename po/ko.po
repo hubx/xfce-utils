@@ -125,6 +125,3 @@ msgstr "터미널에서 실행(_t)"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "실행(_R)"
-
-#~ msgid "xfrun4: Could not write history to file %s\n"
-#~ msgstr "xfrun4: 화일 %s에 사용이력를 기록할 수 없습니다.\n"
