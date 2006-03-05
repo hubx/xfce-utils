@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2006-02-02 22:06+0200\n"
+"PO-Revision-Date: 2006-03-05 11:35+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -103,12 +103,11 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Komennon \"%s\" suoritus epäonnistui:"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Suorita ohjelma"
+msgstr "Suoritusvirhe"
 
 #: xfrun/xfrun.c:576
 #, c-format
