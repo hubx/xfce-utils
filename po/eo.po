@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: Sylvain Vedrenne <gnu_sylvain@xfce.org>\n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2005-10-29 20:58+0200\n"
+"PO-Revision-Date: 2006-03-05 18:04+0100\n"
 "Last-Translator: Sylvain Vedrenne <gnu_sylvain@xfce.org>\n"
 "Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr "Ne povas ŝargi"
+msgstr "Ne povas ŝargi "
 
 #. Project lead
 #: xfce4-about/info.c:200
@@ -56,8 +56,7 @@ msgstr "Tradukantoj"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Se vi konas iun kiu mankas en tiu ĉi listo, bonvolu komuniki tiun al ni "
+msgstr "Se vi konas iun kiu mankas en tiu-ĉi listo, bonvolu komuniki tion al ni ĉe "
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
@@ -69,7 +68,7 @@ msgstr "Pri Xfce 4"
 
 #: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
-msgstr "Xfce-a Labortabla Medio"
+msgstr "Xfce Labortabla Medio"
 
 #: xfce4-about/info.c:403
 msgid "Copyright 2002-2005 by Olivier Fourdan"
@@ -86,7 +85,7 @@ msgstr "Kreditoj"
 
 #: xfce4-about/info.c:428
 msgid "Copyright"
-msgstr "Aŭtorrajto (C)"
+msgstr "Aŭtorrajto"
 
 #: xfce4-about/info.c:429
 msgid "BSDL"
@@ -103,12 +102,11 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Malsukcesis lanĉi la komandon \"%s\":"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Lanĉu programon"
+msgstr "Lanĉa Eraro"
 
 #: xfrun/xfrun.c:576
 #, c-format
