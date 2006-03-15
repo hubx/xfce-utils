@@ -39,6 +39,9 @@ case $BROWSER in
     	$BROWSER -remote openURL\($URL,new-window\) || \
 		$BROWSER $URL
 	;;
+	exo-open)
+	    $BROWSER --launch WebBrowser $URL
+	;;
     *)
     	$BROWSER $URL
 	;;
