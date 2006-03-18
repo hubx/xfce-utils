@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2006-01-08 21:51+0100\n"
+"PO-Revision-Date: 2006-03-18 18:40+0100\n"
 "Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
 "Language-Team: catalan\n"
 "MIME-Version: 1.0\n"
@@ -18,132 +18,110 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:171
-#, fuzzy
 msgid "Unable to load "
-msgstr "a  càrrega "
+msgstr "No s'ha pogut carregar"
 
 #. Project lead
 #: xfce4-about/info.c:200
-#, fuzzy
 msgid "Project Lead"
-msgstr "Projecte"
+msgstr "Cap de projecte"
 
 #. Core developers
 #: xfce4-about/info.c:204
-#, fuzzy
 msgid "Core developers"
-msgstr "Principals"
+msgstr "Desenvolupadors principals"
 
 #. Contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Contributors"
 msgstr "Col·laboradors"
 
 #: xfce4-about/info.c:213
-#, fuzzy
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Web i per"
+msgstr "Hostatjament de la plana web i de les llistes de correu per"
 
 #. Server admins
 #: xfce4-about/info.c:243
-#, fuzzy
 msgid "Server maintained by"
-msgstr "Servidor per"
+msgstr "Servidor mantingut per"
 
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervisors de traduccions"
 
 #. Translators
 #: xfce4-about/info.c:251
-#, fuzzy
 msgid "Translators"
 msgstr "Traductors"
 
 #: xfce4-about/info.c:282
-#, fuzzy
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Si tu de de aquest llista on"
+msgstr "Si sabeu d'algú que hauria d'apareixar a aquest llista, si us plau faciu saber a"
 
 #: xfce4-about/info.c:286
-#, fuzzy
 msgid "Thanks to all who helped making this software available."
-msgstr "Agraïments a  all aquest disponible."
+msgstr "Moltes gràcies a tothom que ha ajudat a fer aquest programa realitat."
 
 #: xfce4-about/info.c:388
-#, fuzzy
 msgid "About Xfce 4"
 msgstr "Quant a Xfce 4"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "Entorn d'escriptori Xfce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright  per"
+msgstr "Copyright 2002-2005 per Olivier Fourdan"
 
 #: xfce4-about/info.c:425
-#, fuzzy
 msgid "Info"
 msgstr "Informació"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: xfce4-about/info.c:427
-#, fuzzy
 msgid "Credits"
 msgstr "Crèdits"
 
 #: xfce4-about/info.c:428
-#, fuzzy
 msgid "Copyright"
 msgstr "Copyright "
 
 #: xfce4-about/info.c:429
-#, fuzzy
 msgid "BSDL"
 msgstr "BSDL "
 
 #: xfce4-about/info.c:430
-#, fuzzy
 msgid "LGPL"
 msgstr "LGPL "
 
 #: xfce4-about/info.c:431
-#, fuzzy
 msgid "GPL"
 msgstr "GPL "
 
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "L'ordre \"%s\" no s'ha pogut executar:"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Eexecuta el programa"
+msgstr "Error d'execució"
 
 #: xfrun/xfrun.c:576
-#, fuzzy, c-format
+#, c-format
 msgid "Open %s with what program?"
-msgstr "Obrir %s amb quin programa?"
+msgstr "Amb quin programa voleu obrir %s?"
 
 #: xfrun/xfrun.c:579
-#, fuzzy
 msgid "Run program"
-msgstr "Eexecuta el programa"
+msgstr "Executa el programa"
 
 #: xfrun/xfrun.c:638
-#, fuzzy
 msgid "Run in _terminal"
-msgstr "Executa en un _terminal"
+msgstr "Executa a un _terminal"
 
 #: xfrun/xfrun.c:654
-#, fuzzy
 msgid "_Run"
 msgstr "_Executa"
