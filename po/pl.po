@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Paweł Pastuła <pastulap@poczta.onet.pl>, 2003.
 # Daniel 'Beorn' Mróz <beorn@alpha.pl>, 2003.
-# Piotr Maliński <admin@rk.edu.pl>, 2005.
+# Piotr Maliński <admin@rk.edu.pl>, 2005, 2006.
 #
 msgid ""
 msgstr ""
@@ -104,7 +104,7 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Polecenie \"%s\" nie powiodło się:"
 
 #: xfrun/xfrun.c:498
 #, fuzzy
