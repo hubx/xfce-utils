@@ -2,14 +2,15 @@
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Stavros Giannouris <StavrosG2002@freemail.gr>, 2005.
+# Stathis Kamperis <ekamperi@auth.gr>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.0\n"
+"Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2005-12-11 18:33+0200\n"
-"Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
+"POT-Creation-Date: 2006-04-01 06:26+0300\n"
+"PO-Revision-Date: 2006-03-30 15:10+0300\n"
+"Last-Translator: Stathis Kamperis <ekamperi@auth.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr "Αδυναμία φόρτωσης"
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr "Επίβλεψη Έργου"
+msgstr "Επίβλεψη έργου"
 
 #. Core developers
 #: xfce4-about/info.c:204
@@ -33,12 +34,12 @@ msgstr "Κύριοι προγραμματιστές"
 #. Contributors
 #: xfce4-about/info.c:208
 msgid "Contributors"
-msgstr "Συντεεστές"
+msgstr "Συντελεστές"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr ""
-"Φιλοξενία στον Ιστό και Λίστες Ηλεκτρονικού Ταχυδρομείου παρέχονται από"
+"Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
 
 #. Server admins
 #: xfce4-about/info.c:243
@@ -70,7 +71,7 @@ msgstr "Περί Xfce 4"
 
 #: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
-msgstr "Περιβάλλον Εργασίας Xfce"
+msgstr "Περιβάλλον εργασίας Xfce"
 
 #: xfce4-about/info.c:403
 msgid "Copyright 2002-2005 by Olivier Fourdan"
@@ -104,17 +105,16 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Απέτυχε η εκτέλεση της εντολής \"%s\":"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Εκτέλεση προγράμματος"
+msgstr "Σφάλμα εκτέλεσης"
 
 #: xfrun/xfrun.c:576
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Άνοιγμα του %s με ποιό πρόγραμμα;"
+msgstr "Άνοιγμα του %s με ποιο πρόγραμμα;"
 
 #: xfrun/xfrun.c:579
 msgid "Run program"
