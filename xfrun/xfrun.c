@@ -308,6 +308,21 @@ xfrun_entry_focus_out(GtkWidget *widget,
     return FALSE;
 }
 
+static gboolean
+xfrun_entry_key_press(GtkWidget *widget,
+                      GdkEventKey *evt,
+                      gpointer user_data)
+{
+    XfrunDialog *xfrun_dialog = (XfrunDialog *)user_data;
+    
+    if(evt->keyval == GDK_Down || evt->keyval == GDK_KP_Down) {
+        gtk_button_clicked(GTK_BUTTON(xfrun_dialog->arrow_btn));
+        return TRUE;
+    }
+    
+    return FALSE;
+}
+
 static void
 xfrun_menu_item_activated(GtkWidget *widget,
                           gpointer user_data)
@@ -613,6 +628,8 @@ main(int argc,
     gtk_box_pack_start(GTK_BOX(hbox), entry, TRUE, TRUE, 0);
     g_signal_connect(G_OBJECT(entry), "focus-out-event",
                      G_CALLBACK(xfrun_entry_focus_out), &xfrun_dialog);
+    g_signal_connect(G_OBJECT(entry), "key-press-event",
+                     G_CALLBACK(xfrun_entry_key_press), &xfrun_dialog);
     
     if(gtk_tree_model_get_iter_first(completion_model, &itr)) {
         gtk_tree_model_get(completion_model, &itr,
