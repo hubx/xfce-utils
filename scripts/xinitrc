@@ -138,9 +138,8 @@ elif test -d "$HOME/Desktop/Autostart"; then
   done
 fi
 
-xftaskbar4&
 xfdesktop&
-xfcalendar &
+orage &
 
 panel=`which xfce4-panel`
 case "x$panel" in
