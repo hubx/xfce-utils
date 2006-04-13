@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2005-10-14 18:34+0900\n"
-"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
+"PO-Revision-Date: 2006-04-13 14:26+0100\n"
+"Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -104,12 +104,11 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "\"%s\" parancs futása meghiúsult:"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Program futtatása"
+msgstr "Futási hiba"
 
 #: xfrun/xfrun.c:576
 #, c-format
@@ -127,3 +126,4 @@ msgstr "_Terminálban futtatás"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Futtatás"
+
