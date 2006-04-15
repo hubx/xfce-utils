@@ -7,7 +7,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.0\n"
+"Project-Id-Version: xfce-utils 4.3.90.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
 "PO-Revision-Date: 2006-03-18 18:40+0100\n"
@@ -57,7 +57,9 @@ msgstr "Traductors"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Si sabeu d'algú que hauria d'apareixar a aquest llista, si us plau faciu saber a"
+msgstr ""
+"Si sabeu d'algú que hauria d'apareixar a aquest llista, si us plau faciu "
+"saber a"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
