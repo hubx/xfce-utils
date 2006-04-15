@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2005-11-01 01:29+0900\n"
+"PO-Revision-Date: 2006-04-15 05:15+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
 "net>\n"
@@ -102,12 +102,11 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "\"%s\"라는 명령을 실행시키기 못 했습니다:"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "프로그램 실행"
+msgstr "실행 오류"
 
 #: xfrun/xfrun.c:576
 #, c-format
