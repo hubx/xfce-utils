@@ -1,13 +1,3 @@
-How to choose a browser for displaying the Online Help?
--------------------------------------------------------
-
-By default xfce-utils uses mozilla to display the online help. You might
-want to use another browser to display the help. To do so, you can
-either add --with-browser=<my-favourite-browser> to configure or you
-can set the BROWSER environment variable to your favourite browser
-prior to running startxfce4, e.g. in your .xsession or .xinitrc file.
-
-
 What is this --enable-gtkhtml option good for?
 ----------------------------------------------
 
@@ -15,11 +5,3 @@ If you have libgtkhtml2 installed, you may want to use it to have nice
 looking HTML info pages in the about dialog instead of the plain text
 ones. Give it a try.
 
-
-What about Xinerama/XRandR support in xftaskbar?
-------------------------------------------------
-
-The Xinerama and XRandR X extensions are highly incompatible, that says
-you can only use one of them at a time. xftaskbar first checks if Xinerama
-is used on the display and if so, it will not make use of the XRandR
-extension.

@@ -126,4 +126,3 @@ msgstr "_Terminálban futtatás"
 #: xfrun/xfrun.c:654
 msgid "_Run"
 msgstr "_Futtatás"
-

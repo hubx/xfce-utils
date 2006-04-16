@@ -1,6 +1,6 @@
 dnl $Id$
 dnl
-dnl Copyright (c) 2002-2004
+dnl Copyright (c) 2002-2006
 dnl         The Xfce development team. All rights reserved.
 dnl
 dnl Written for Xfce by Olivier Fourdan <fourdan@xfce.org>, Jasper
@@ -8,12 +8,12 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-m4_define([xfce_utils_version], [4.3.0])
+m4_define([xfce_utils_version], [4.3.90.1])
 
 AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.3 UNSTABLE"], [Optional release plain name])
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.4 BETA1"], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
@@ -91,12 +91,12 @@ XDT_I18N([af ar az be bg bn_IN ca cs de el en_GB eo es es_MX \
 
 dnl Check for required packages
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.6.0])
-XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.3.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.3.0])
-XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.3.0])
+XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.3.90.1])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.3.90.1])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.3.90.1])
 
 dnl configure the mcs plugin
-XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.3.0])
+XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.3.90.1])
 
 dnl Check for debugging support
 XDT_FEATURE_DEBUG
