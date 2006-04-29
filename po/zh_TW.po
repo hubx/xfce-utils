@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
-"PO-Revision-Date: 2005-10-07 23:36+0900\n"
+"PO-Revision-Date: 2006-04-29 07:46+0800\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@mail.educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -103,17 +103,16 @@ msgstr "GPL"
 #: xfrun/xfrun.c:495
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "指令 \"%s\" 無法執行："
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "執行程式"
+msgstr "執行錯誤"
 
 #: xfrun/xfrun.c:576
 #, c-format
 msgid "Open %s with what program?"
-msgstr "使用那個程式開啟「%s」？"
+msgstr "使用那個程式開啟 %s？"
 
 #: xfrun/xfrun.c:579
 msgid "Run program"
