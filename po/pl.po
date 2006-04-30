@@ -72,9 +72,8 @@ msgid "Xfce Desktop Environment"
 msgstr "Środowisko XFce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 by Olivier Fourdan"
+msgstr "Copyright 2002-2005 by Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -107,9 +106,8 @@ msgid "The command \"%s\" failed to run:"
 msgstr "Polecenie \"%s\" nie powiodło się:"
 
 #: xfrun/xfrun.c:498
-#, fuzzy
 msgid "Run Error"
-msgstr "Uruchom program"
+msgstr "Błąd uruchamiania"
 
 #: xfrun/xfrun.c:576
 #, c-format
