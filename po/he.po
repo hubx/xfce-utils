@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: he\n"
+"Project-Id-Version: xfce-utils 4.3.90.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-02 22:06+0900\n"
 "PO-Revision-Date: 2006-04-18 20:23+0300\n"
