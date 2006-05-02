@@ -1,3 +1,4 @@
+;; -*- mode: Emacs-Lisp; coding: utf-8; -*-
 [Lead]
 Olivier Fourdan;fourdan@xfce.org
 
@@ -92,6 +93,7 @@ nl;Vincent Tunru;imnotb@gmail.com
 pa;Jaswinder Singh Phulewala;jaswinderphulewala@yahoo.com
 pl;Marek Piechut;mco@o2.pl
 pl;Piotr Maliński;admin@rk.edu.pl
+pl;Szymon Kałasz;szymon_maestro@gazeta.pl
 pl;Wit Wiliński;wit.wilinski@gmail.com
 pt_BR;Adriano Winter Bess;awbess@gmail.com
 pt_BR;Felix da Silva Costa;felix@online.eti.br
