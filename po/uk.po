@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-26 12:47+0300\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: 2005-10-07 23:35+0900\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.ua>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -15,113 +15,113 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:171
+#: xfce4-about/info.c:171
 msgid "Unable to load "
 msgstr "Не вдається завантажити"
 
 #. Project lead
-#: ../xfce4-about/info.c:200
+#: xfce4-about/info.c:200
 msgid "Project Lead"
 msgstr "Лідер проекту"
 
 #. Core developers
-#: ../xfce4-about/info.c:204
+#: xfce4-about/info.c:204
 msgid "Core developers"
 msgstr "Головні розробники"
 
 #. Contributors
-#: ../xfce4-about/info.c:208
+#: xfce4-about/info.c:208
 msgid "Contributors"
 msgstr "Помічники"
 
-#: ../xfce4-about/info.c:213
+#: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Веб-хостінг та списки розсилки надані"
 
 #. Server admins
-#: ../xfce4-about/info.c:243
+#: xfce4-about/info.c:243
 msgid "Server maintained by"
 msgstr "Сервер підтримується"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:247
+#: xfce4-about/info.c:247
 msgid "Translations supervision"
 msgstr "Координація перекладів"
 
 #. Translators
-#: ../xfce4-about/info.c:251
+#: xfce4-about/info.c:251
 msgid "Translators"
 msgstr "Перекладачі"
 
-#: ../xfce4-about/info.c:282
+#: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, "
 "дайте нам знати за адресою <"
 
-#: ../xfce4-about/info.c:286
+#: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
 msgstr "Дякуємо усім, хто допоміг зробити це програмне забезпечення."
 
-#: ../xfce4-about/info.c:388
+#: xfce4-about/info.c:388
 msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
-#: ../xfce4-about/info.c:403
+#: xfce4-about/info.c:403
 msgid "Xfce Desktop Environment"
 msgstr "Робоче середовище XFce"
 
-#: ../xfce4-about/info.c:403
+#: xfce4-about/info.c:403
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Авторське право 2002-2006, Olivier Fourdan"
 
-#: ../xfce4-about/info.c:425
+#: xfce4-about/info.c:425
 msgid "Info"
 msgstr "Інформація"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:427
+#: xfce4-about/info.c:427
 msgid "Credits"
 msgstr "Подяки"
 
-#: ../xfce4-about/info.c:428
+#: xfce4-about/info.c:428
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: ../xfce4-about/info.c:429
+#: xfce4-about/info.c:429
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:430
+#: xfce4-about/info.c:430
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:431
+#: xfce4-about/info.c:431
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfrun/xfrun.c:510
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Помилка запуску команди \"%s\":"
 
-#: ../xfrun/xfrun.c:513
+#: xfrun/xfrun.c:513
 msgid "Run Error"
 msgstr "Помилка запуску"
 
-#: ../xfrun/xfrun.c:591
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Якою програмою відкрити %s?"
 
-#: ../xfrun/xfrun.c:594
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr "Запуск програми"
 
-#: ../xfrun/xfrun.c:655
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr "Запустити у _терміналі"
 
-#: ../xfrun/xfrun.c:671
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "_Запустити"

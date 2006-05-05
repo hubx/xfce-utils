@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: 2005-10-07 23:25+0900\n"
 "Last-Translator: Ankit Patel <ankit644@yahoo.com>\n"
 "Language-Team: Gujarati <indianoss-gujarati@lists.sourceforge.net>\n"
@@ -76,8 +76,8 @@ msgid "Xfce Desktop Environment"
 msgstr "Xfce ડેસ્કટોપ પર્યાવરણ"
 
 #: xfce4-about/info.c:403
-msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2005 by Olivier Fourdan"
+msgid "Copyright 2002-2006 by Olivier Fourdan"
+msgstr "Copyright 2002-2006 by Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -104,29 +104,29 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:495
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:498
+#: xfrun/xfrun.c:513
 #, fuzzy
 msgid "Run Error"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun.c:576
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s ને કયા કાર્યક્રમ સાથે ખોલવું છે?"
 
-#: xfrun/xfrun.c:579
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr "ટર્મિનલમાં ચલાવો (_t)"
 
-#: xfrun/xfrun.c:654
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "ચલાવો (_R)"

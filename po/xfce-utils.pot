@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgid "Xfce Desktop Environment"
 msgstr ""
 
 #: xfce4-about/info.c:403
-msgid "Copyright 2002-2005 by Olivier Fourdan"
+msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr ""
 
 #: xfce4-about/info.c:425
@@ -99,28 +99,28 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:495
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:498
+#: xfrun/xfrun.c:513
 msgid "Run Error"
 msgstr ""
 
-#: xfrun/xfrun.c:576
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:579
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr ""
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr ""
 
-#: xfrun/xfrun.c:654
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr ""

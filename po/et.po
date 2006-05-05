@@ -6,9 +6,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: 2006-02-28 16:15+0200\n"
 "Last-Translator: Peeter Vois <Peeter.Vois@proekspert.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -71,8 +71,8 @@ msgid "Xfce Desktop Environment"
 msgstr "Xfce töölaua keskkond"
 
 #: xfce4-about/info.c:403
-msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Autoriõigus 2002-2005 Olivier Fourdan"
+msgid "Copyright 2002-2006 by Olivier Fourdan"
+msgstr "Autoriõigus 2002-2006 Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -99,28 +99,28 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:495
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Käsklus \"%s\" ei käivitunind:"
 
-#: xfrun/xfrun.c:498
+#: xfrun/xfrun.c:513
 msgid "Run Error"
 msgstr "Käivituse viga"
 
-#: xfrun/xfrun.c:576
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Ava %s mis programmi abil?"
 
-#: xfrun/xfrun.c:579
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr "Käivita programm"
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr "Käivita _terminalis"
 
-#: xfrun/xfrun.c:654
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "_Käivita"

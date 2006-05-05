@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: 2006-03-18 18:40+0100\n"
 "Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
 "Language-Team: catalan\n"
@@ -74,8 +74,8 @@ msgid "Xfce Desktop Environment"
 msgstr "Entorn d'escriptori Xfce"
 
 #: xfce4-about/info.c:403
-msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2005 per Olivier Fourdan"
+msgid "Copyright 2002-2006 by Olivier Fourdan"
+msgstr "Copyright 2002-2006 per Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -102,28 +102,28 @@ msgstr "LGPL "
 msgid "GPL"
 msgstr "GPL "
 
-#: xfrun/xfrun.c:495
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "L'ordre \"%s\" no s'ha pogut executar:"
 
-#: xfrun/xfrun.c:498
+#: xfrun/xfrun.c:513
 msgid "Run Error"
 msgstr "Error d'execució"
 
-#: xfrun/xfrun.c:576
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Amb quin programa voleu obrir %s?"
 
-#: xfrun/xfrun.c:579
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr "Executa el programa"
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr "Executa a un _terminal"
 
-#: xfrun/xfrun.c:654
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "_Executa"

@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-02 22:06+0900\n"
+"POT-Creation-Date: 2006-05-06 04:17+0900\n"
 "PO-Revision-Date: 2005-08-17 21:22+0900\n"
 "Last-Translator: Joakim Andreasson <joakim.andreasson@gmx.net>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -72,9 +72,8 @@ msgid "Xfce Desktop Environment"
 msgstr "Skrivbordsmiljön XFce"
 
 #: xfce4-about/info.c:403
-#, fuzzy
-msgid "Copyright 2002-2005 by Olivier Fourdan"
-msgstr "Copyright 2002-2004 Olivier Fourdan"
+msgid "Copyright 2002-2006 by Olivier Fourdan"
+msgstr "Copyright 2002-2006 Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
@@ -101,29 +100,29 @@ msgstr ""
 msgid "GPL"
 msgstr ""
 
-#: xfrun/xfrun.c:495
+#: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:498
+#: xfrun/xfrun.c:513
 #, fuzzy
 msgid "Run Error"
 msgstr "Kör program"
 
-#: xfrun/xfrun.c:576
+#: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:579
+#: xfrun/xfrun.c:594
 msgid "Run program"
 msgstr "Kör program"
 
-#: xfrun/xfrun.c:638
+#: xfrun/xfrun.c:655
 msgid "Run in _terminal"
 msgstr "Kör i _terminal"
 
-#: xfrun/xfrun.c:654
+#: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "_Kör"
