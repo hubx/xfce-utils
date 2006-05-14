@@ -26,7 +26,12 @@ else
   BASEDIR=$XDG_CONFIG_HOME/xfce4
 fi
 
-XDG_DATA_DIRS="@datadir@:"${XDG_DATA_DIRS-/usr/local/share/:/usr/share/}
+if test x"XDG_DATA_DIRS" = x""
+then
+  XDG_DATA_DIRS="/usr/share:/usr/local/share:@datadir@"
+else
+  XDG_DATA_DIRS="$XDG_DATA_DIRS:@datadir@"
+fi
 export XDG_DATA_DIRS
 
 if test x"$DISPLAY" = x""
