@@ -231,8 +231,10 @@ add_credits_page (GtkNotebook * notebook, const gchar * name, gboolean hscrollin
     gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[0], -1, "author", NULL);
     gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " <", -1, "author", NULL);
     gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[1], -1, "email", NULL);
-    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " - ", -1, "author", NULL);
-    gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[2], -1, "email", NULL);
+    if (author[2]) {
+      gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, " - ", -1, "author", NULL);
+      gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, author[2], -1, "email", NULL);
+    }
     gtk_text_buffer_insert_with_tags_by_name (textbuffer, &iter, ">", -1, "author", NULL);
     gtk_text_buffer_insert (textbuffer, &iter, "\n", -1);
 
