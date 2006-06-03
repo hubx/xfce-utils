@@ -2,14 +2,15 @@
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Joakim Andreasson <joakim.andreasson@gmx.net>, 2003-2004.
+# Jens Hagerman <godhet@gmail.com>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-06 04:17+0900\n"
-"PO-Revision-Date: 2005-08-17 21:22+0900\n"
-"Last-Translator: Joakim Andreasson <joakim.andreasson@gmx.net>\n"
+"PO-Revision-Date: 2006-05-26 17:45+0100\n"
+"Last-Translator: Jens Hagerman <godhet@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,59 +18,57 @@ msgstr ""
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "Kunde inte ladda"
 
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "Projektledning"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "Ledande utvecklare"
 
 #. Contributors
 #: xfce4-about/info.c:208
 msgid "Contributors"
-msgstr ""
+msgstr "Medverkande"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Webhosting och mailinglistor tillhandahålls av"
 
 #. Server admins
 #: xfce4-about/info.c:243
 msgid "Server maintained by"
-msgstr ""
+msgstr "Servern underhålls av"
 
 #. Translations supervision
 #: xfce4-about/info.c:247
 msgid "Translations supervision"
-msgstr ""
+msgstr "Översättningsansvariga"
 
 #. Translators
 #: xfce4-about/info.c:251
 msgid "Translators"
-msgstr ""
+msgstr "Översättare"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Om du vet någon som saknas i den här listan, låt oss få veta på <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Tack till alla som hjälpte till att göra denna mjukvara tillgänglig."
 
 #: xfce4-about/info.c:388
-#, fuzzy
 msgid "About Xfce 4"
-msgstr "Om XFce 4"
+msgstr "Om Xfce 4"
 
 #: xfce4-about/info.c:403
-#, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "Skrivbordsmiljön XFce"
+msgstr "Skrivbordsmiljön Xfce"
 
 #: xfce4-about/info.c:403
 msgid "Copyright 2002-2006 by Olivier Fourdan"
@@ -77,7 +76,7 @@ msgstr "Copyright 2002-2006 Olivier Fourdan"
 
 #: xfce4-about/info.c:425
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: xfce4-about/info.c:427
@@ -86,34 +85,33 @@ msgstr "Tack"
 
 #: xfce4-about/info.c:428
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: xfce4-about/info.c:429
 msgid "BSDL"
-msgstr ""
+msgstr "BSDL"
 
 #: xfce4-about/info.c:430
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: xfce4-about/info.c:431
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: xfrun/xfrun.c:510
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Kommandot \"%s\" misslyckades:"
 
 #: xfrun/xfrun.c:513
-#, fuzzy
 msgid "Run Error"
-msgstr "Kör program"
+msgstr "Fel vid körning"
 
 #: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Öppna %s med vilket program?"
 
 #: xfrun/xfrun.c:594
 msgid "Run program"
@@ -126,3 +124,6 @@ msgstr "Kör i _terminal"
 #: xfrun/xfrun.c:671
 msgid "_Run"
 msgstr "_Kör"
+
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: Kunde inte skriva historia till fil %s\n"
