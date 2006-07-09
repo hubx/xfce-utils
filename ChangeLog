@@ -1,3 +1,812 @@
+2006-06-12 14:26  hydonsingore
+
+	* libxfcegui4/trunk/po/ChangeLog, libxfcegui4/trunk/po/zh_TW.po,
+	  mousepad/trunk/po/ChangeLog, mousepad/trunk/po/zh_TW.po,
+	  terminal/trunk/po/ChangeLog, terminal/trunk/po/zh_TW.po,
+	  thunar/trunk/po/ChangeLog, thunar/trunk/po/zh_TW.po,
+	  xfcalendar/trunk/po/ChangeLog, xfcalendar/trunk/po/zh_TW.po,
+	  xfce-mcs-manager/trunk/po/ChangeLog,
+	  xfce-mcs-manager/trunk/po/zh_TW.po,
+	  xfce-mcs-plugins/trunk/po/ChangeLog,
+	  xfce-mcs-plugins/trunk/po/zh_TW.po, po/ChangeLog, po/zh_TW.po,
+	  xfce4-appfinder/trunk/po/ChangeLog,
+	  xfce4-appfinder/trunk/po/zh_TW.po,
+	  xfce4-icon-theme/trunk/po/ChangeLog,
+	  xfce4-icon-theme/trunk/po/zh_TW.po,
+	  xfce4-mailwatch-plugin/trunk/po/ChangeLog,
+	  xfce4-mailwatch-plugin/trunk/po/zh_TW.po,
+	  xfce4-mixer/trunk/po/ChangeLog, xfce4-mixer/trunk/po/zh_TW.po,
+	  xfce4-panel/trunk/po/ChangeLog, xfce4-panel/trunk/po/zh_TW.po,
+	  xfce4-session/trunk/po/ChangeLog,
+	  xfce4-session/trunk/po/zh_TW.po,
+	  xfce4-trigger-launcher/trunk/po/ChangeLog,
+	  xfce4-trigger-launcher/trunk/po/zh_TW.po,
+	  xfdesktop/trunk/po/ChangeLog, xfdesktop/trunk/po/zh_TW.po,
+	  xfmedia/trunk/po/ChangeLog, xfmedia/trunk/po/zh_TW.po,
+	  xfprint/trunk/po/ChangeLog, xfprint/trunk/po/zh_TW.po,
+	  xfwm4/trunk/po/ChangeLog, xfwm4/trunk/po/zh_TW.po: Update
+	  traditional Chinese translations; Modify personal e-mail address.
+
+2006-06-04 08:12  eulex
+
+	* libexo/trunk/po/ChangeLog, libxfcegui4/trunk/po/ChangeLog,
+	  terminal/trunk/po/ChangeLog, thunar/trunk/po/ChangeLog,
+	  xfcalendar/trunk/po/ChangeLog,
+	  xfce-mcs-manager/trunk/po/ChangeLog,
+	  xfce-mcs-plugins/trunk/po/ChangeLog, po/ChangeLog,
+	  xfce4-appfinder/trunk/po/ChangeLog,
+	  xfce4-mixer/trunk/po/ChangeLog, xfce4-panel/trunk/po/ChangeLog,
+	  xfce4-session/trunk/po/ChangeLog,
+	  xfce4-trigger-launcher/trunk/po/ChangeLog,
+	  xfdesktop/trunk/po/ChangeLog, xfwm4/trunk/po/ChangeLog:
+	  Changelogs for appfinder, exo, utils, mcs-plugins, mcs-manager,
+	  xfce4-session, xfce4-mixer, thunar, libgui, xfwm4, the panel,
+	  orage, trigger-launcher and terminal updated.
+	  Also couldn't resist to fix a small error in the xfce4-mixer
+	  Changelog.
+	  Didn't updated the changelog of xfprint, because I discovered
+	  that that translation wasn't updated, it had just slipped through
+	  the commit by mistake.
+
+2006-06-04 00:10  eulex
+
+	* libxfcegui4/trunk/po/sv.po, thunar/trunk/po/sv.po,
+	  xfcalendar/trunk/po/sv.po, xfce-mcs-plugins/trunk/po/sv.po,
+	  po/sv.po, xfce4-panel/trunk/po/sv.po,
+	  xfce4-session/trunk/po/sv.po, xfdesktop/trunk/po/sv.po,
+	  xfprint/trunk/po/sv.po, xfwm4/trunk/po/sv.po: obsolete strings
+	  in the swedish translations removed
+
+2006-06-03 23:44  eulex
+
+	* libexo/trunk/po/LINGUAS, libexo/trunk/po/sv.po,
+	  libxfcegui4/trunk/po/sv.po, terminal/trunk/po/LINGUAS,
+	  terminal/trunk/po/sv.po, thunar/trunk/po/sv.po,
+	  xfcalendar/trunk/po/sv.po, xfce-mcs-manager/trunk/po/sv.po,
+	  xfce-mcs-plugins/trunk/po/sv.po, po/sv.po,
+	  xfce4-appfinder/trunk/po/sv.po, xfce4-mixer/trunk/po/sv.po,
+	  xfce4-panel/trunk/po/sv.po, xfce4-session/trunk/po/sv.po,
+	  xfce4-trigger-launcher/trunk/po/sv.po, xfdesktop/trunk/po/sv.po,
+	  xfprint/trunk/po/sv.po, xfwm4/trunk/po/sv.po: Merged Swedish
+	  translations (by me and Jens Hagerman) into the xfce svn.
+	  This includes updated translations of appfinder, xfce-utils,
+	  mcs-plugins,
+	  xfprint, xfce4-session, xfce4-mixer, thunar, libxfcegui4, xfwm4,
+	  xfce4-panel, xfdesktop, orage, xfce4-trigger-launcher and
+	  mcs-manager,
+	  and added translations for libexo and terminal.
+	  The appropriate LINGUAS files were also updated.
+
+2006-05-28 20:51  pollux
+
+	* po/fr.po: updated FR translations from Gerald Barre
+	  <g.barre@free.fr>
+
+2006-05-27 16:04  daichi
+
+	* xfcalendar/trunk/po/LINGUAS, xfce-mcs-manager/trunk/po/LINGUAS,
+	  po/LINGUAS, xfce4-appfinder/trunk/po/LINGUAS,
+	  xfce4-session/trunk/po/LINGUAS,
+	  xfce4-trigger-launcher/trunk/po/LINGUAS, xfwm4/trunk/po/LINGUAS:
+	  * xfcalendar/trunk/po/LINGUAS, xfce-utils/trunk/po/LINGUAS,
+	  xfce4-appfinder/trunk/po/LINGUAS,
+	  xfce4-session/trunk/po/LINGUAS:
+	  Added a newline at the end of file.
+	  * xfce-mcs-manager/trunk/po/LINGUAS: Removed an extra white
+	  space.
+	  * xfce4-trigger-launcher/trunk/po/LINGUAS,
+	  xfwm4/trunk/po/LINGUAS:
+	  Removed an extra white line.
+
+2006-05-26 19:20  pollux
+
+	* xfce4-about/AUTHORS, xfce4-about/info.c: oups we forgot our
+	  webhosting university in the credits
+
+2006-05-24 21:57  pollux
+
+	* autogen.sh, configure.ac, configure.in.in, po/LINGUAS: add
+	  support for LINGUAS
+
+2006-05-23 03:35  daichi
+
+	* xfce4-about/AUTHORS: Added a translator credit.
+
+2006-05-23 02:45  daichi
+
+	* libexo/trunk/po/ChangeLog, libexo/trunk/po/fi.po,
+	  libxfce4util/trunk/po/ChangeLog, libxfce4util/trunk/po/fi.po,
+	  libxfcegui4/branches/xfce_4_2/po/ChangeLog,
+	  libxfcegui4/branches/xfce_4_2/po/fi.po,
+	  libxfcegui4/trunk/po/ChangeLog, libxfcegui4/trunk/po/fi.po,
+	  mousepad/trunk/po/ChangeLog, mousepad/trunk/po/fi.po,
+	  terminal/trunk/po/ChangeLog, terminal/trunk/po/fi.po,
+	  thunar/trunk/po/ChangeLog, thunar/trunk/po/fi.po,
+	  xfcalendar/branches/xfce_4_2/po/ChangeLog,
+	  xfcalendar/trunk/po/ChangeLog, xfcalendar/trunk/po/fi.po,
+	  xfce-mcs-manager/branches/xfce_4_2/po/ChangeLog,
+	  xfce-mcs-manager/branches/xfce_4_2/po/fi.po,
+	  xfce-mcs-manager/trunk/po/ChangeLog,
+	  xfce-mcs-manager/trunk/po/fi.po,
+	  xfce-mcs-plugins/branches/xfce_4_2/po/ChangeLog,
+	  xfce-mcs-plugins/branches/xfce_4_2/po/fi.po,
+	  xfce-mcs-plugins/trunk/po/ChangeLog,
+	  xfce-mcs-plugins/trunk/po/fi.po,
+	  xfce-utils/branches/xfce_4_2/po/ChangeLog,
+	  xfce-utils/branches/xfce_4_2/po/fi.po,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.az,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.ca,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.de,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.es,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.eu,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.fi,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.fr,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.he,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.az,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.ca,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.de,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.es,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.eu,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.fi,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.fr,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.it,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.ja,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.lt,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.ro,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.ru,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.sk,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.vi,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.html.zh_TW,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.it,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.ja,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.lt,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.ro,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.ru,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.sk,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.uk,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.vi,
+	  xfce-utils/branches/xfce_4_2/xfce4-about/AUTHORS.zh_TW,
+	  po/ChangeLog, po/fi.po, xfce4-about/AUTHORS,
+	  xfce4-appfinder/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-appfinder/branches/xfce_4_2/po/fi.po,
+	  xfce4-appfinder/trunk/po/ChangeLog,
+	  xfce4-appfinder/trunk/po/fi.po,
+	  xfce4-icon-theme/trunk/po/ChangeLog,
+	  xfce4-icon-theme/trunk/po/fi.po,
+	  xfce4-iconbox/branches/xfce_4_2/po/fi.po,
+	  xfce4-mailwatch-plugin/trunk/po/fi.po,
+	  xfce4-mixer/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-mixer/branches/xfce_4_2/po/fi.po,
+	  xfce4-mixer/trunk/po/ChangeLog, xfce4-mixer/trunk/po/fi.po,
+	  xfce4-panel/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-panel/branches/xfce_4_2/po/fi.po,
+	  xfce4-panel/trunk/po/ChangeLog, xfce4-panel/trunk/po/fi.po,
+	  xfce4-session/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-session/branches/xfce_4_2/po/fi.po,
+	  xfce4-session/trunk/po/ChangeLog, xfce4-session/trunk/po/fi.po,
+	  xfce4-toys/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-toys/branches/xfce_4_2/po/fi.po,
+	  xfce4-trigger-launcher/branches/xfce_4_2/po/ChangeLog,
+	  xfce4-trigger-launcher/branches/xfce_4_2/po/fi.po,
+	  xfce4-trigger-launcher/trunk/po/ChangeLog,
+	  xfce4-trigger-launcher/trunk/po/fi.po,
+	  xfdesktop/branches/xfce_4_2/po/ChangeLog,
+	  xfdesktop/branches/xfce_4_2/po/fi.po,
+	  xfdesktop/trunk/po/ChangeLog, xfdesktop/trunk/po/fi.po,
+	  xffm/branches/xfce_4_2/po/ChangeLog,
+	  xffm/branches/xfce_4_2/po/fi.po, xfmedia/trunk/po/fi.po,
+	  xfprint/branches/xfce_4_2/po/ChangeLog,
+	  xfprint/branches/xfce_4_2/po/fi.po, xfprint/trunk/po/ChangeLog,
+	  xfprint/trunk/po/fi.po, xfwm4/branches/xfce_4_2/po/ChangeLog,
+	  xfwm4/branches/xfce_4_2/po/fi.po, xfwm4/trunk/po/ChangeLog,
+	  xfwm4/trunk/po/fi.po: Changed an address.
+
+2006-05-14 19:20  olivier
+
+	* scripts/startxfce4.in: Duh, thanksfully there are the commit
+	  logs.
+
+2006-05-14 19:17  olivier
+
+	* scripts/startxfce4.in: I'm not 100% sure the previous definition
+	  was portable.
+
+2006-05-14 08:19  olivier
+
+	* scripts/startxfce4.in: If XDG_DATA_DIRS is set, we loose default
+	  values, set them back whatsoever.
+
+2006-05-13 05:42  daichi
+
+	* libexo/trunk/po/ChangeLog, libexo/trunk/po/cs.po,
+	  thunar/trunk/po/ChangeLog, thunar/trunk/po/cs.po,
+	  xfburn/trunk/configure.ac, xfburn/trunk/po/ChangeLog,
+	  xfburn/trunk/po/cs.po, po/ChangeLog, po/cs.po,
+	  xfce4-mailwatch-plugin/trunk/configure.ac,
+	  xfce4-mailwatch-plugin/trunk/po/ChangeLog,
+	  xfce4-mailwatch-plugin/trunk/po/cs.po,
+	  xfce4-trigger-launcher/trunk/po/cs.po: Added/Updated Czech
+	  translations by Michal Varady <miko.vaji@gmail.com>.
+
+2006-05-11 19:42  olivier
+
+	* scripts/startxfce4.in: Try to address the issue with icons not
+	  shown when xfce is installed in a separate location from the
+	  rest of the applications.
+
+2006-05-07 08:26  sas
+
+	* libexo/trunk/po/hu.po, po/hu.po: hu trunk: exo & utils updates
+
+2006-05-05 21:01  daichi
+
+	* libxfcegui4/trunk/po/be.po, libxfcegui4/trunk/po/bn_IN.po,
+	  libxfcegui4/trunk/po/ca.po, libxfcegui4/trunk/po/cs.po,
+	  libxfcegui4/trunk/po/de.po, libxfcegui4/trunk/po/el.po,
+	  libxfcegui4/trunk/po/en_GB.po, libxfcegui4/trunk/po/eo.po,
+	  libxfcegui4/trunk/po/es.po, libxfcegui4/trunk/po/et.po,
+	  libxfcegui4/trunk/po/eu.po, libxfcegui4/trunk/po/fa.po,
+	  libxfcegui4/trunk/po/fi.po, libxfcegui4/trunk/po/fr.po,
+	  libxfcegui4/trunk/po/gu.po, libxfcegui4/trunk/po/he.po,
+	  libxfcegui4/trunk/po/hu.po, libxfcegui4/trunk/po/hy.po,
+	  libxfcegui4/trunk/po/it.po, libxfcegui4/trunk/po/ja.po,
+	  libxfcegui4/trunk/po/ko.po,
+	  libxfcegui4/trunk/po/libxfcegui4.pot,
+	  libxfcegui4/trunk/po/lt.po, libxfcegui4/trunk/po/mr.po,
+	  libxfcegui4/trunk/po/nl.po, libxfcegui4/trunk/po/pa.po,
+	  libxfcegui4/trunk/po/pl.po, libxfcegui4/trunk/po/pt_BR.po,
+	  libxfcegui4/trunk/po/ro.po, libxfcegui4/trunk/po/ru.po,
+	  libxfcegui4/trunk/po/sk.po, libxfcegui4/trunk/po/sv.po,
+	  libxfcegui4/trunk/po/ta.po, libxfcegui4/trunk/po/uk.po,
+	  libxfcegui4/trunk/po/zh_CN.po, libxfcegui4/trunk/po/zh_TW.po,
+	  xfcalendar/trunk/po/ar.po, xfcalendar/trunk/po/az.po,
+	  xfcalendar/trunk/po/be.po, xfcalendar/trunk/po/bg.po,
+	  xfcalendar/trunk/po/bn_IN.po, xfcalendar/trunk/po/ca.po,
+	  xfcalendar/trunk/po/cs.po, xfcalendar/trunk/po/de.po,
+	  xfcalendar/trunk/po/el.po, xfcalendar/trunk/po/en_GB.po,
+	  xfcalendar/trunk/po/eo.po, xfcalendar/trunk/po/es.po,
+	  xfcalendar/trunk/po/et.po, xfcalendar/trunk/po/eu.po,
+	  xfcalendar/trunk/po/fa.po, xfcalendar/trunk/po/fi.po,
+	  xfcalendar/trunk/po/fr.po, xfcalendar/trunk/po/gu.po,
+	  xfcalendar/trunk/po/he.po, xfcalendar/trunk/po/hi.po,
+	  xfcalendar/trunk/po/hu.po, xfcalendar/trunk/po/hy.po,
+	  xfcalendar/trunk/po/it.po, xfcalendar/trunk/po/ja.po,
+	  xfcalendar/trunk/po/ko.po, xfcalendar/trunk/po/lt.po,
+	  xfcalendar/trunk/po/mr.po, xfcalendar/trunk/po/ms.po,
+	  xfcalendar/trunk/po/nb_NO.po, xfcalendar/trunk/po/nl.po,
+	  xfcalendar/trunk/po/orage.pot, xfcalendar/trunk/po/pa.po,
+	  xfcalendar/trunk/po/pl.po, xfcalendar/trunk/po/pt_BR.po,
+	  xfcalendar/trunk/po/pt_PT.po, xfcalendar/trunk/po/ro.po,
+	  xfcalendar/trunk/po/ru.po, xfcalendar/trunk/po/sk.po,
+	  xfcalendar/trunk/po/sv.po, xfcalendar/trunk/po/ta.po,
+	  xfcalendar/trunk/po/tr.po, xfcalendar/trunk/po/uk.po,
+	  xfcalendar/trunk/po/vi.po, xfcalendar/trunk/po/zh_CN.po,
+	  xfcalendar/trunk/po/zh_TW.po, xfce-mcs-manager/trunk/po/ar.po,
+	  xfce-mcs-manager/trunk/po/az.po,
+	  xfce-mcs-manager/trunk/po/be.po,
+	  xfce-mcs-manager/trunk/po/bg.po,
+	  xfce-mcs-manager/trunk/po/bn_IN.po,
+	  xfce-mcs-manager/trunk/po/ca.po,
+	  xfce-mcs-manager/trunk/po/cs.po,
+	  xfce-mcs-manager/trunk/po/el.po,
+	  xfce-mcs-manager/trunk/po/en_GB.po,
+	  xfce-mcs-manager/trunk/po/eo.po,
+	  xfce-mcs-manager/trunk/po/es.po,
+	  xfce-mcs-manager/trunk/po/es_MX.po,
+	  xfce-mcs-manager/trunk/po/et.po,
+	  xfce-mcs-manager/trunk/po/eu.po,
+	  xfce-mcs-manager/trunk/po/fa.po,
+	  xfce-mcs-manager/trunk/po/fi.po,
+	  xfce-mcs-manager/trunk/po/fr.po,
+	  xfce-mcs-manager/trunk/po/gu.po,
+	  xfce-mcs-manager/trunk/po/he.po,
+	  xfce-mcs-manager/trunk/po/hi.po,
+	  xfce-mcs-manager/trunk/po/hu.po,
+	  xfce-mcs-manager/trunk/po/it.po,
+	  xfce-mcs-manager/trunk/po/ja.po,
+	  xfce-mcs-manager/trunk/po/ko.po,
+	  xfce-mcs-manager/trunk/po/lt.po,
+	  xfce-mcs-manager/trunk/po/mr.po,
+	  xfce-mcs-manager/trunk/po/ms.po,
+	  xfce-mcs-manager/trunk/po/nb_NO.po,
+	  xfce-mcs-manager/trunk/po/nl.po,
+	  xfce-mcs-manager/trunk/po/pa.po,
+	  xfce-mcs-manager/trunk/po/pl.po,
+	  xfce-mcs-manager/trunk/po/pt_BR.po,
+	  xfce-mcs-manager/trunk/po/pt_PT.po,
+	  xfce-mcs-manager/trunk/po/ro.po,
+	  xfce-mcs-manager/trunk/po/ru.po,
+	  xfce-mcs-manager/trunk/po/sk.po,
+	  xfce-mcs-manager/trunk/po/sv.po,
+	  xfce-mcs-manager/trunk/po/ta.po,
+	  xfce-mcs-manager/trunk/po/tr.po,
+	  xfce-mcs-manager/trunk/po/uk.po,
+	  xfce-mcs-manager/trunk/po/vi.po,
+	  xfce-mcs-manager/trunk/po/zh_CN.po,
+	  xfce-mcs-manager/trunk/po/zh_TW.po,
+	  xfce-mcs-plugins/trunk/po/ar.po,
+	  xfce-mcs-plugins/trunk/po/az.po,
+	  xfce-mcs-plugins/trunk/po/be.po,
+	  xfce-mcs-plugins/trunk/po/bg.po,
+	  xfce-mcs-plugins/trunk/po/bn_IN.po,
+	  xfce-mcs-plugins/trunk/po/ca.po,
+	  xfce-mcs-plugins/trunk/po/cs.po,
+	  xfce-mcs-plugins/trunk/po/de.po,
+	  xfce-mcs-plugins/trunk/po/el.po,
+	  xfce-mcs-plugins/trunk/po/en_GB.po,
+	  xfce-mcs-plugins/trunk/po/eo.po,
+	  xfce-mcs-plugins/trunk/po/es.po,
+	  xfce-mcs-plugins/trunk/po/es_MX.po,
+	  xfce-mcs-plugins/trunk/po/et.po,
+	  xfce-mcs-plugins/trunk/po/eu.po,
+	  xfce-mcs-plugins/trunk/po/fa.po,
+	  xfce-mcs-plugins/trunk/po/fi.po,
+	  xfce-mcs-plugins/trunk/po/fr.po,
+	  xfce-mcs-plugins/trunk/po/gu.po,
+	  xfce-mcs-plugins/trunk/po/he.po,
+	  xfce-mcs-plugins/trunk/po/hi.po,
+	  xfce-mcs-plugins/trunk/po/hu.po,
+	  xfce-mcs-plugins/trunk/po/it.po,
+	  xfce-mcs-plugins/trunk/po/ja.po,
+	  xfce-mcs-plugins/trunk/po/ko.po,
+	  xfce-mcs-plugins/trunk/po/lt.po,
+	  xfce-mcs-plugins/trunk/po/mr.po,
+	  xfce-mcs-plugins/trunk/po/ms.po,
+	  xfce-mcs-plugins/trunk/po/nl.po,
+	  xfce-mcs-plugins/trunk/po/pa.po,
+	  xfce-mcs-plugins/trunk/po/pl.po,
+	  xfce-mcs-plugins/trunk/po/pt_BR.po,
+	  xfce-mcs-plugins/trunk/po/pt_PT.po,
+	  xfce-mcs-plugins/trunk/po/ro.po,
+	  xfce-mcs-plugins/trunk/po/ru.po,
+	  xfce-mcs-plugins/trunk/po/sk.po,
+	  xfce-mcs-plugins/trunk/po/sv.po,
+	  xfce-mcs-plugins/trunk/po/ta.po,
+	  xfce-mcs-plugins/trunk/po/tr.po,
+	  xfce-mcs-plugins/trunk/po/uk.po,
+	  xfce-mcs-plugins/trunk/po/vi.po,
+	  xfce-mcs-plugins/trunk/po/zh_CN.po,
+	  xfce-mcs-plugins/trunk/po/zh_TW.po, po/af.po, po/ar.po,
+	  po/az.po, po/be.po, po/bg.po, po/bn_IN.po, po/ca.po, po/cs.po,
+	  po/de.po, po/el.po, po/en_GB.po, po/eo.po, po/es.po,
+	  po/es_MX.po, po/et.po, po/eu.po, po/fa.po, po/fi.po, po/fr.po,
+	  po/gu.po, po/he.po, po/hi.po, po/hu.po, po/hy.po, po/it.po,
+	  po/ja.po, po/ko.po, po/lt.po, po/mr.po, po/ms.po, po/nl.po,
+	  po/pa.po, po/pl.po, po/pt_BR.po, po/pt_PT.po, po/ro.po,
+	  po/ru.po, po/sk.po, po/sv.po, po/ta.po, po/tr.po, po/uk.po,
+	  po/vi.po, po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po,
+	  xfce4-appfinder/trunk/po/be.po,
+	  xfce4-appfinder/trunk/po/bn_IN.po,
+	  xfce4-appfinder/trunk/po/ca.po, xfce4-appfinder/trunk/po/cs.po,
+	  xfce4-appfinder/trunk/po/de.po, xfce4-appfinder/trunk/po/el.po,
+	  xfce4-appfinder/trunk/po/en_GB.po,
+	  xfce4-appfinder/trunk/po/es.po,
+	  xfce4-appfinder/trunk/po/es_MX.po,
+	  xfce4-appfinder/trunk/po/et.po, xfce4-appfinder/trunk/po/eu.po,
+	  xfce4-appfinder/trunk/po/fa.po, xfce4-appfinder/trunk/po/fi.po,
+	  xfce4-appfinder/trunk/po/fr.po, xfce4-appfinder/trunk/po/gu.po,
+	  xfce4-appfinder/trunk/po/he.po, xfce4-appfinder/trunk/po/hu.po,
+	  xfce4-appfinder/trunk/po/hy.po, xfce4-appfinder/trunk/po/it.po,
+	  xfce4-appfinder/trunk/po/ja.po, xfce4-appfinder/trunk/po/ko.po,
+	  xfce4-appfinder/trunk/po/lt.po, xfce4-appfinder/trunk/po/mr.po,
+	  xfce4-appfinder/trunk/po/nl.po, xfce4-appfinder/trunk/po/pa.po,
+	  xfce4-appfinder/trunk/po/pl.po,
+	  xfce4-appfinder/trunk/po/pt_BR.po,
+	  xfce4-appfinder/trunk/po/pt_PT.po,
+	  xfce4-appfinder/trunk/po/ro.po, xfce4-appfinder/trunk/po/ru.po,
+	  xfce4-appfinder/trunk/po/sk.po, xfce4-appfinder/trunk/po/sv.po,
+	  xfce4-appfinder/trunk/po/tr.po, xfce4-appfinder/trunk/po/uk.po,
+	  xfce4-appfinder/trunk/po/zh_CN.po,
+	  xfce4-appfinder/trunk/po/zh_TW.po,
+	  xfce4-icon-theme/trunk/po/ca.po,
+	  xfce4-icon-theme/trunk/po/de.po,
+	  xfce4-icon-theme/trunk/po/el.po,
+	  xfce4-icon-theme/trunk/po/et.po,
+	  xfce4-icon-theme/trunk/po/fi.po,
+	  xfce4-icon-theme/trunk/po/hu.po,
+	  xfce4-icon-theme/trunk/po/ja.po,
+	  xfce4-icon-theme/trunk/po/ko.po,
+	  xfce4-icon-theme/trunk/po/pl.po,
+	  xfce4-icon-theme/trunk/po/ru.po,
+	  xfce4-icon-theme/trunk/po/sk.po,
+	  xfce4-icon-theme/trunk/po/uk.po,
+	  xfce4-icon-theme/trunk/po/zh_CN.po,
+	  xfce4-icon-theme/trunk/po/zh_TW.po,
+	  xfce4-mailwatch-plugin/trunk/po/ca.po,
+	  xfce4-mailwatch-plugin/trunk/po/de.po,
+	  xfce4-mailwatch-plugin/trunk/po/el.po,
+	  xfce4-mailwatch-plugin/trunk/po/eu.po,
+	  xfce4-mailwatch-plugin/trunk/po/fi.po,
+	  xfce4-mailwatch-plugin/trunk/po/fr.po,
+	  xfce4-mailwatch-plugin/trunk/po/gu.po,
+	  xfce4-mailwatch-plugin/trunk/po/he.po,
+	  xfce4-mailwatch-plugin/trunk/po/ja.po,
+	  xfce4-mailwatch-plugin/trunk/po/pt_BR.po,
+	  xfce4-mailwatch-plugin/trunk/po/ru.po,
+	  xfce4-mailwatch-plugin/trunk/po/uk.po,
+	  xfce4-mailwatch-plugin/trunk/po/vi.po,
+	  xfce4-mailwatch-plugin/trunk/po/xfce4-mailwatch-plugin.pot,
+	  xfce4-mailwatch-plugin/trunk/po/zh_TW.po,
+	  xfce4-mixer/trunk/po/ar.po, xfce4-mixer/trunk/po/az.po,
+	  xfce4-mixer/trunk/po/be.po, xfce4-mixer/trunk/po/bg.po,
+	  xfce4-mixer/trunk/po/bn_IN.po, xfce4-mixer/trunk/po/ca.po,
+	  xfce4-mixer/trunk/po/cs.po, xfce4-mixer/trunk/po/de.po,
+	  xfce4-mixer/trunk/po/el.po, xfce4-mixer/trunk/po/en_GB.po,
+	  xfce4-mixer/trunk/po/es.po, xfce4-mixer/trunk/po/es_MX.po,
+	  xfce4-mixer/trunk/po/et.po, xfce4-mixer/trunk/po/eu.po,
+	  xfce4-mixer/trunk/po/fa.po, xfce4-mixer/trunk/po/fi.po,
+	  xfce4-mixer/trunk/po/fr.po, xfce4-mixer/trunk/po/gu.po,
+	  xfce4-mixer/trunk/po/he.po, xfce4-mixer/trunk/po/hi.po,
+	  xfce4-mixer/trunk/po/hu.po, xfce4-mixer/trunk/po/hy.po,
+	  xfce4-mixer/trunk/po/it.po, xfce4-mixer/trunk/po/ja.po,
+	  xfce4-mixer/trunk/po/ko.po, xfce4-mixer/trunk/po/lt.po,
+	  xfce4-mixer/trunk/po/mr.po, xfce4-mixer/trunk/po/ms.po,
+	  xfce4-mixer/trunk/po/nb_NO.po, xfce4-mixer/trunk/po/nl.po,
+	  xfce4-mixer/trunk/po/pa.po, xfce4-mixer/trunk/po/pl.po,
+	  xfce4-mixer/trunk/po/pt_BR.po, xfce4-mixer/trunk/po/pt_PT.po,
+	  xfce4-mixer/trunk/po/ro.po, xfce4-mixer/trunk/po/ru.po,
+	  xfce4-mixer/trunk/po/sk.po, xfce4-mixer/trunk/po/sv.po,
+	  xfce4-mixer/trunk/po/ta.po, xfce4-mixer/trunk/po/tr.po,
+	  xfce4-mixer/trunk/po/uk.po, xfce4-mixer/trunk/po/vi.po,
+	  xfce4-mixer/trunk/po/xfce4-mixer.pot,
+	  xfce4-mixer/trunk/po/zh_CN.po, xfce4-mixer/trunk/po/zh_TW.po,
+	  xfce4-panel/trunk/po/ar.po, xfce4-panel/trunk/po/az.po,
+	  xfce4-panel/trunk/po/be.po, xfce4-panel/trunk/po/bg.po,
+	  xfce4-panel/trunk/po/bn_IN.po, xfce4-panel/trunk/po/ca.po,
+	  xfce4-panel/trunk/po/cs.po, xfce4-panel/trunk/po/de.po,
+	  xfce4-panel/trunk/po/el.po, xfce4-panel/trunk/po/en_GB.po,
+	  xfce4-panel/trunk/po/eo.po, xfce4-panel/trunk/po/es.po,
+	  xfce4-panel/trunk/po/es_MX.po, xfce4-panel/trunk/po/et.po,
+	  xfce4-panel/trunk/po/eu.po, xfce4-panel/trunk/po/fa.po,
+	  xfce4-panel/trunk/po/fi.po, xfce4-panel/trunk/po/fr.po,
+	  xfce4-panel/trunk/po/gu.po, xfce4-panel/trunk/po/he.po,
+	  xfce4-panel/trunk/po/hi.po, xfce4-panel/trunk/po/hu.po,
+	  xfce4-panel/trunk/po/hy.po, xfce4-panel/trunk/po/it.po,
+	  xfce4-panel/trunk/po/ja.po, xfce4-panel/trunk/po/ko.po,
+	  xfce4-panel/trunk/po/lt.po, xfce4-panel/trunk/po/mr.po,
+	  xfce4-panel/trunk/po/ms.po, xfce4-panel/trunk/po/nb_NO.po,
+	  xfce4-panel/trunk/po/nl.po, xfce4-panel/trunk/po/pa.po,
+	  xfce4-panel/trunk/po/pl.po, xfce4-panel/trunk/po/pt_BR.po,
+	  xfce4-panel/trunk/po/pt_PT.po, xfce4-panel/trunk/po/ro.po,
+	  xfce4-panel/trunk/po/ru.po, xfce4-panel/trunk/po/sk.po,
+	  xfce4-panel/trunk/po/sv.po, xfce4-panel/trunk/po/ta.po,
+	  xfce4-panel/trunk/po/tr.po, xfce4-panel/trunk/po/uk.po,
+	  xfce4-panel/trunk/po/vi.po,
+	  xfce4-panel/trunk/po/xfce4-panel.pot,
+	  xfce4-panel/trunk/po/zh_CN.po, xfce4-panel/trunk/po/zh_TW.po,
+	  xfce4-session/trunk/po/ar.po, xfce4-session/trunk/po/az.po,
+	  xfce4-session/trunk/po/be.po, xfce4-session/trunk/po/bn_IN.po,
+	  xfce4-session/trunk/po/ca.po, xfce4-session/trunk/po/cs.po,
+	  xfce4-session/trunk/po/de.po, xfce4-session/trunk/po/el.po,
+	  xfce4-session/trunk/po/en_GB.po, xfce4-session/trunk/po/eo.po,
+	  xfce4-session/trunk/po/es.po, xfce4-session/trunk/po/es_MX.po,
+	  xfce4-session/trunk/po/et.po, xfce4-session/trunk/po/eu.po,
+	  xfce4-session/trunk/po/fa.po, xfce4-session/trunk/po/fi.po,
+	  xfce4-session/trunk/po/fr.po, xfce4-session/trunk/po/gu.po,
+	  xfce4-session/trunk/po/hi.po, xfce4-session/trunk/po/hu.po,
+	  xfce4-session/trunk/po/it.po, xfce4-session/trunk/po/ja.po,
+	  xfce4-session/trunk/po/ko.po, xfce4-session/trunk/po/lt.po,
+	  xfce4-session/trunk/po/mr.po, xfce4-session/trunk/po/ms.po,
+	  xfce4-session/trunk/po/nb_NO.po, xfce4-session/trunk/po/nl.po,
+	  xfce4-session/trunk/po/pa.po, xfce4-session/trunk/po/pl.po,
+	  xfce4-session/trunk/po/pt_BR.po,
+	  xfce4-session/trunk/po/pt_PT.po, xfce4-session/trunk/po/ro.po,
+	  xfce4-session/trunk/po/ru.po, xfce4-session/trunk/po/sk.po,
+	  xfce4-session/trunk/po/sv.po, xfce4-session/trunk/po/ta.po,
+	  xfce4-session/trunk/po/tr.po, xfce4-session/trunk/po/uk.po,
+	  xfce4-session/trunk/po/vi.po,
+	  xfce4-session/trunk/po/xfce4-session.pot,
+	  xfce4-session/trunk/po/zh_CN.po,
+	  xfce4-session/trunk/po/zh_TW.po,
+	  xfce4-trigger-launcher/trunk/po/ar.po,
+	  xfce4-trigger-launcher/trunk/po/az.po,
+	  xfce4-trigger-launcher/trunk/po/be.po,
+	  xfce4-trigger-launcher/trunk/po/bg.po,
+	  xfce4-trigger-launcher/trunk/po/bn_IN.po,
+	  xfce4-trigger-launcher/trunk/po/ca.po,
+	  xfce4-trigger-launcher/trunk/po/cs.po,
+	  xfce4-trigger-launcher/trunk/po/de.po,
+	  xfce4-trigger-launcher/trunk/po/el.po,
+	  xfce4-trigger-launcher/trunk/po/en_GB.po,
+	  xfce4-trigger-launcher/trunk/po/eo.po,
+	  xfce4-trigger-launcher/trunk/po/es.po,
+	  xfce4-trigger-launcher/trunk/po/es_MX.po,
+	  xfce4-trigger-launcher/trunk/po/et.po,
+	  xfce4-trigger-launcher/trunk/po/eu.po,
+	  xfce4-trigger-launcher/trunk/po/fa.po,
+	  xfce4-trigger-launcher/trunk/po/fi.po,
+	  xfce4-trigger-launcher/trunk/po/fr.po,
+	  xfce4-trigger-launcher/trunk/po/gu.po,
+	  xfce4-trigger-launcher/trunk/po/hi.po,
+	  xfce4-trigger-launcher/trunk/po/hu.po,
+	  xfce4-trigger-launcher/trunk/po/it.po,
+	  xfce4-trigger-launcher/trunk/po/ja.po,
+	  xfce4-trigger-launcher/trunk/po/ko.po,
+	  xfce4-trigger-launcher/trunk/po/lt.po,
+	  xfce4-trigger-launcher/trunk/po/mr.po,
+	  xfce4-trigger-launcher/trunk/po/ms.po,
+	  xfce4-trigger-launcher/trunk/po/nl.po,
+	  xfce4-trigger-launcher/trunk/po/pa.po,
+	  xfce4-trigger-launcher/trunk/po/pl.po,
+	  xfce4-trigger-launcher/trunk/po/pt_BR.po,
+	  xfce4-trigger-launcher/trunk/po/pt_PT.po,
+	  xfce4-trigger-launcher/trunk/po/ro.po,
+	  xfce4-trigger-launcher/trunk/po/ru.po,
+	  xfce4-trigger-launcher/trunk/po/sk.po,
+	  xfce4-trigger-launcher/trunk/po/sv.po,
+	  xfce4-trigger-launcher/trunk/po/ta.po,
+	  xfce4-trigger-launcher/trunk/po/tr.po,
+	  xfce4-trigger-launcher/trunk/po/uk.po,
+	  xfce4-trigger-launcher/trunk/po/vi.po,
+	  xfce4-trigger-launcher/trunk/po/zh_CN.po,
+	  xfce4-trigger-launcher/trunk/po/zh_TW.po,
+	  xfdesktop/trunk/po/ar.po, xfdesktop/trunk/po/az.po,
+	  xfdesktop/trunk/po/be.po, xfdesktop/trunk/po/bg.po,
+	  xfdesktop/trunk/po/bn_IN.po, xfdesktop/trunk/po/ca.po,
+	  xfdesktop/trunk/po/cs.po, xfdesktop/trunk/po/de.po,
+	  xfdesktop/trunk/po/el.po, xfdesktop/trunk/po/en_GB.po,
+	  xfdesktop/trunk/po/eo.po, xfdesktop/trunk/po/es.po,
+	  xfdesktop/trunk/po/es_MX.po, xfdesktop/trunk/po/et.po,
+	  xfdesktop/trunk/po/eu.po, xfdesktop/trunk/po/fa.po,
+	  xfdesktop/trunk/po/fi.po, xfdesktop/trunk/po/fr.po,
+	  xfdesktop/trunk/po/gu.po, xfdesktop/trunk/po/he.po,
+	  xfdesktop/trunk/po/hi.po, xfdesktop/trunk/po/hu.po,
+	  xfdesktop/trunk/po/hy.po, xfdesktop/trunk/po/it.po,
+	  xfdesktop/trunk/po/ja.po, xfdesktop/trunk/po/ko.po,
+	  xfdesktop/trunk/po/lt.po, xfdesktop/trunk/po/mr.po,
+	  xfdesktop/trunk/po/ms.po, xfdesktop/trunk/po/nb_NO.po,
+	  xfdesktop/trunk/po/nl.po, xfdesktop/trunk/po/pa.po,
+	  xfdesktop/trunk/po/pl.po, xfdesktop/trunk/po/pt_BR.po,
+	  xfdesktop/trunk/po/pt_PT.po, xfdesktop/trunk/po/ro.po,
+	  xfdesktop/trunk/po/ru.po, xfdesktop/trunk/po/sk.po,
+	  xfdesktop/trunk/po/sv.po, xfdesktop/trunk/po/ta.po,
+	  xfdesktop/trunk/po/tr.po, xfdesktop/trunk/po/uk.po,
+	  xfdesktop/trunk/po/vi.po, xfdesktop/trunk/po/xfdesktop.pot,
+	  xfdesktop/trunk/po/zh_CN.po, xfdesktop/trunk/po/zh_TW.po,
+	  xfprint/trunk/po/ar.po, xfprint/trunk/po/az.po,
+	  xfprint/trunk/po/be.po, xfprint/trunk/po/bg.po,
+	  xfprint/trunk/po/bn_IN.po, xfprint/trunk/po/ca.po,
+	  xfprint/trunk/po/cs.po, xfprint/trunk/po/de.po,
+	  xfprint/trunk/po/el.po, xfprint/trunk/po/en_GB.po,
+	  xfprint/trunk/po/es.po, xfprint/trunk/po/es_MX.po,
+	  xfprint/trunk/po/et.po, xfprint/trunk/po/eu.po,
+	  xfprint/trunk/po/fa.po, xfprint/trunk/po/fi.po,
+	  xfprint/trunk/po/fr.po, xfprint/trunk/po/gu.po,
+	  xfprint/trunk/po/he.po, xfprint/trunk/po/hi.po,
+	  xfprint/trunk/po/hu.po, xfprint/trunk/po/it.po,
+	  xfprint/trunk/po/ja.po, xfprint/trunk/po/ko.po,
+	  xfprint/trunk/po/lt.po, xfprint/trunk/po/mr.po,
+	  xfprint/trunk/po/ms.po, xfprint/trunk/po/nl.po,
+	  xfprint/trunk/po/pa.po, xfprint/trunk/po/pl.po,
+	  xfprint/trunk/po/pt_BR.po, xfprint/trunk/po/pt_PT.po,
+	  xfprint/trunk/po/ro.po, xfprint/trunk/po/ru.po,
+	  xfprint/trunk/po/sk.po, xfprint/trunk/po/sv.po,
+	  xfprint/trunk/po/ta.po, xfprint/trunk/po/tr.po,
+	  xfprint/trunk/po/uk.po, xfprint/trunk/po/vi.po,
+	  xfprint/trunk/po/zh_CN.po, xfprint/trunk/po/zh_TW.po: Bump.
+
+2006-05-05 06:11  daichi
+
+	* xfcalendar/trunk/po/ChangeLog, xfcalendar/trunk/po/ja.po,
+	  po/ChangeLog, po/ja.po, xfce4-mixer/trunk/po/ChangeLog,
+	  xfce4-mixer/trunk/po/ja.po, xfce4-panel/trunk/po/ChangeLog,
+	  xfce4-panel/trunk/po/ja.po, xfce4-session/trunk/po/ChangeLog,
+	  xfce4-session/trunk/po/ja.po, xfdesktop/trunk/po/ChangeLog,
+	  xfdesktop/trunk/po/ja.po, xfwm4/trunk/po/ChangeLog,
+	  xfwm4/trunk/po/ja.po: Updated Japanese translations.
+
+2006-05-04 13:22  daichi
+
+	* mousepad/trunk/po/ChangeLog, xfce4-about/AUTHORS: Changed the
+	  address by the request.
+
+2006-05-02 16:06  daichi
+
+	* libxfcegui4/trunk/po/ChangeLog, xfburn/trunk/po/ChangeLog,
+	  xfcalendar/trunk/po/ChangeLog,
+	  xfce-mcs-manager/trunk/po/ChangeLog,
+	  xfce-mcs-plugins/trunk/po/ChangeLog, po/ChangeLog,
+	  xfce4-appfinder/trunk/po/ChangeLog,
+	  xfce4-icon-theme/trunk/po/ChangeLog,
+	  xfce4-mailwatch-plugin/trunk/po/ChangeLog,
+	  xfce4-mixer/trunk/po/ChangeLog, xfce4-panel/trunk/po/ChangeLog,
+	  xfce4-trigger-launcher/trunk/po/ChangeLog,
+	  xfdesktop/trunk/po/ChangeLog, xffm/trunk/fgr/po/ChangeLog,
+	  xffm/trunk/libxffm/po/ChangeLog,
+	  xffm/trunk/plugins/xfapps/po/ChangeLog,
+	  xffm/trunk/plugins/xfbook/po/ChangeLog,
+	  xffm/trunk/plugins/xffstab/po/ChangeLog,
+	  xffm/trunk/plugins/xflocate/po/ChangeLog,
+	  xffm/trunk/plugins/xfproc/po/ChangeLog,
+	  xffm/trunk/plugins/xfrecent/po/ChangeLog,
+	  xffm/trunk/plugins/xfsamba/po/ChangeLog,
+	  xffm/trunk/plugins/xftrash/po/ChangeLog,
+	  xffm/trunk/scramble/po/ChangeLog,
+	  xffm/trunk/xfdiff/po/ChangeLog,
+	  xffm/trunk/xffm-gui/po/ChangeLog,
+	  xffm/trunk/xfmime-edit/po/ChangeLog, xfmedia/trunk/po/ChangeLog,
+	  xfprint/trunk/po/ChangeLog, xfwm4/trunk/po/ChangeLog: Removed
+	  timestamps so that a translator isn't bothered:
+	  "Then, what time is it now in UTC?"
+
+2006-05-02 13:11  daichi
+
+	* xfce4-about/AUTHORS: Added a translator credit.
+
+2006-05-01 07:04  daichi
+
+	* libexo/trunk/po/eu.po, libexo/trunk/po/fi.po,
+	  libexo/trunk/po/he.po, libexo/trunk/po/hu.po,
+	  libxfce4util/trunk/po/de.po, libxfce4util/trunk/po/fi.po,
+	  libxfce4util/trunk/po/he.po, libxfce4util/trunk/po/pt_BR.po,
+	  libxfce4util/trunk/po/uk.po, mousepad/trunk/po/eu.po,
+	  thunar/trunk/po/et.po, thunar/trunk/po/zh_TW.po,
+	  xfburn/trunk/po/de.po, xfburn/trunk/po/he.po,
+	  xfburn/trunk/po/uk.po, xfce-mcs-manager/trunk/po/uk.po,
+	  xfce-mcs-plugins/trunk/po/hu.po, po/he.po,
+	  xfce4-icon-theme/trunk/po/he.po,
+	  xfce4-icon-theme/trunk/po/uk.po,
+	  xfce4-mailwatch-plugin/trunk/po/uk.po,
+	  xfce4-mixer/trunk/po/ar.po, xfce4-mixer/trunk/po/az.po,
+	  xfce4-mixer/trunk/po/be.po, xfce4-mixer/trunk/po/bg.po,
+	  xfce4-mixer/trunk/po/bn_IN.po, xfce4-mixer/trunk/po/ca.po,
+	  xfce4-mixer/trunk/po/cs.po, xfce4-mixer/trunk/po/de.po,
+	  xfce4-mixer/trunk/po/el.po, xfce4-mixer/trunk/po/en_GB.po,
+	  xfce4-mixer/trunk/po/es.po, xfce4-mixer/trunk/po/es_MX.po,
+	  xfce4-mixer/trunk/po/et.po, xfce4-mixer/trunk/po/eu.po,
+	  xfce4-mixer/trunk/po/fa.po, xfce4-mixer/trunk/po/fi.po,
+	  xfce4-mixer/trunk/po/fr.po, xfce4-mixer/trunk/po/gu.po,
+	  xfce4-mixer/trunk/po/he.po, xfce4-mixer/trunk/po/hi.po,
+	  xfce4-mixer/trunk/po/hu.po, xfce4-mixer/trunk/po/hy.po,
+	  xfce4-mixer/trunk/po/it.po, xfce4-mixer/trunk/po/ja.po,
+	  xfce4-mixer/trunk/po/ko.po, xfce4-mixer/trunk/po/lt.po,
+	  xfce4-mixer/trunk/po/mr.po, xfce4-mixer/trunk/po/ms.po,
+	  xfce4-mixer/trunk/po/nb_NO.po, xfce4-mixer/trunk/po/nl.po,
+	  xfce4-mixer/trunk/po/pa.po, xfce4-mixer/trunk/po/pl.po,
+	  xfce4-mixer/trunk/po/pt_BR.po, xfce4-mixer/trunk/po/pt_PT.po,
+	  xfce4-mixer/trunk/po/ro.po, xfce4-mixer/trunk/po/ru.po,
+	  xfce4-mixer/trunk/po/sk.po, xfce4-mixer/trunk/po/sv.po,
+	  xfce4-mixer/trunk/po/ta.po, xfce4-mixer/trunk/po/tr.po,
+	  xfce4-mixer/trunk/po/uk.po, xfce4-mixer/trunk/po/vi.po,
+	  xfce4-mixer/trunk/po/xfce4-mixer.pot,
+	  xfce4-mixer/trunk/po/zh_CN.po, xfce4-mixer/trunk/po/zh_TW.po,
+	  xfce4-panel/trunk/po/ar.po, xfce4-panel/trunk/po/az.po,
+	  xfce4-panel/trunk/po/be.po, xfce4-panel/trunk/po/bg.po,
+	  xfce4-panel/trunk/po/bn_IN.po, xfce4-panel/trunk/po/ca.po,
+	  xfce4-panel/trunk/po/de.po, xfce4-panel/trunk/po/el.po,
+	  xfce4-panel/trunk/po/en_GB.po, xfce4-panel/trunk/po/eo.po,
+	  xfce4-panel/trunk/po/es.po, xfce4-panel/trunk/po/es_MX.po,
+	  xfce4-panel/trunk/po/et.po, xfce4-panel/trunk/po/eu.po,
+	  xfce4-panel/trunk/po/fa.po, xfce4-panel/trunk/po/fi.po,
+	  xfce4-panel/trunk/po/fr.po, xfce4-panel/trunk/po/gu.po,
+	  xfce4-panel/trunk/po/he.po, xfce4-panel/trunk/po/hi.po,
+	  xfce4-panel/trunk/po/hu.po, xfce4-panel/trunk/po/hy.po,
+	  xfce4-panel/trunk/po/it.po, xfce4-panel/trunk/po/ja.po,
+	  xfce4-panel/trunk/po/ko.po, xfce4-panel/trunk/po/lt.po,
+	  xfce4-panel/trunk/po/mr.po, xfce4-panel/trunk/po/ms.po,
+	  xfce4-panel/trunk/po/nb_NO.po, xfce4-panel/trunk/po/nl.po,
+	  xfce4-panel/trunk/po/pa.po, xfce4-panel/trunk/po/pt_BR.po,
+	  xfce4-panel/trunk/po/pt_PT.po, xfce4-panel/trunk/po/ro.po,
+	  xfce4-panel/trunk/po/ru.po, xfce4-panel/trunk/po/sk.po,
+	  xfce4-panel/trunk/po/sv.po, xfce4-panel/trunk/po/ta.po,
+	  xfce4-panel/trunk/po/tr.po, xfce4-panel/trunk/po/uk.po,
+	  xfce4-panel/trunk/po/vi.po, xfce4-panel/trunk/po/zh_CN.po,
+	  xfce4-panel/trunk/po/zh_TW.po, xfce4-session/trunk/po/ar.po,
+	  xfce4-session/trunk/po/az.po, xfce4-session/trunk/po/be.po,
+	  xfce4-session/trunk/po/bn_IN.po, xfce4-session/trunk/po/ca.po,
+	  xfce4-session/trunk/po/cs.po, xfce4-session/trunk/po/de.po,
+	  xfce4-session/trunk/po/el.po, xfce4-session/trunk/po/en_GB.po,
+	  xfce4-session/trunk/po/eo.po, xfce4-session/trunk/po/es.po,
+	  xfce4-session/trunk/po/es_MX.po, xfce4-session/trunk/po/et.po,
+	  xfce4-session/trunk/po/eu.po, xfce4-session/trunk/po/fa.po,
+	  xfce4-session/trunk/po/fi.po, xfce4-session/trunk/po/fr.po,
+	  xfce4-session/trunk/po/gu.po, xfce4-session/trunk/po/he.po,
+	  xfce4-session/trunk/po/hi.po, xfce4-session/trunk/po/hu.po,
+	  xfce4-session/trunk/po/it.po, xfce4-session/trunk/po/ja.po,
+	  xfce4-session/trunk/po/ko.po, xfce4-session/trunk/po/lt.po,
+	  xfce4-session/trunk/po/mr.po, xfce4-session/trunk/po/ms.po,
+	  xfce4-session/trunk/po/nb_NO.po, xfce4-session/trunk/po/nl.po,
+	  xfce4-session/trunk/po/pa.po, xfce4-session/trunk/po/pl.po,
+	  xfce4-session/trunk/po/pt_BR.po,
+	  xfce4-session/trunk/po/pt_PT.po, xfce4-session/trunk/po/ro.po,
+	  xfce4-session/trunk/po/ru.po, xfce4-session/trunk/po/sk.po,
+	  xfce4-session/trunk/po/sv.po, xfce4-session/trunk/po/ta.po,
+	  xfce4-session/trunk/po/tr.po, xfce4-session/trunk/po/uk.po,
+	  xfce4-session/trunk/po/vi.po,
+	  xfce4-session/trunk/po/xfce4-session.pot,
+	  xfce4-session/trunk/po/zh_CN.po,
+	  xfce4-session/trunk/po/zh_TW.po,
+	  xfce4-trigger-launcher/trunk/po/hu.po,
+	  xfce4-trigger-launcher/trunk/po/uk.po, xfdesktop/trunk/po/eu.po,
+	  xfdesktop/trunk/po/hu.po, xfdesktop/trunk/po/uk.po,
+	  xfwm4/trunk/po/hu.po: Updated.
+
+2006-04-30 16:00  daichi
+
+	* mousepad/trunk/po/ChangeLog, mousepad/trunk/po/pl.po,
+	  thunar/trunk/po/ChangeLog, thunar/trunk/po/pl.po,
+	  xfcalendar/trunk/po/pl.po, xfce-mcs-plugins/trunk/po/pl.po,
+	  po/pl.po, xfce4-appfinder/trunk/po/pl.po,
+	  xfce4-panel/trunk/po/pl.po, xfdesktop/trunk/po/pl.po,
+	  xfmedia/trunk/po/pl.po, xfprint/trunk/po/pl.po,
+	  xfwm4/trunk/po/pl.po: Updated Polish translations by Piotr
+	  Malinski <admin@rk.edu.pl>.
+
+2006-04-30 06:24  daichi
+
+	* xfce4-about/AUTHORS: Added a translator credit.
+
+2006-04-29 00:01  hydonsingore
+
+	* po/ChangeLog, po/zh_TW.po, xfce4-appfinder/trunk/po/ChangeLog,
+	  xfce4-appfinder/trunk/po/zh_TW.po,
+	  xfce4-panel/trunk/po/ChangeLog, xfce4-panel/trunk/po/zh_TW.po:
+	  Update traditional Chinese translations for several packages.
+
+2006-04-26 09:48  mvd
+
+	* po/uk.po: 2006-04-26 Maxim Dziumanenko <mvd@mylinux.ua>
+	  
+	  * Updated Ukrainian translation.
+
+2006-04-23 11:56  daichi
+
+	* libexo/trunk/po/ChangeLog, libexo/trunk/po/ru.po,
+	  mousepad/trunk/po/ChangeLog, mousepad/trunk/po/ru.po,
+	  terminal/trunk/po/ChangeLog, terminal/trunk/po/ru.po,
+	  thunar/trunk/po/ChangeLog, thunar/trunk/po/ru.po,
+	  xfburn/trunk/po/ru.po, xfcalendar/trunk/po/ru.po,
+	  xfce-mcs-plugins/trunk/po/ru.po, po/ru.po,
+	  xfce4-appfinder/trunk/po/ru.po,
+	  xfce4-mailwatch-plugin/trunk/po/ru.po,
+	  xfce4-panel/trunk/po/ru.po, xfce4-session/trunk/po/ru.po,
+	  xfce4-trigger-launcher/trunk/po/ru.po, xfdesktop/trunk/po/ru.po,
+	  xffm/trunk/libxffm/po/ru.po, xffm/trunk/plugins/xfbook/po/ru.po,
+	  xffm/trunk/plugins/xffstab/po/ru.po,
+	  xffm/trunk/plugins/xflocate/po/ru.po,
+	  xffm/trunk/plugins/xfproc/po/ru.po,
+	  xffm/trunk/plugins/xfrecent/po/ru.po,
+	  xffm/trunk/plugins/xfsamba/po/ru.po,
+	  xffm/trunk/xfmime-edit/po/ru.po, xfmedia/trunk/po/ru.po,
+	  xfprint/trunk/po/ru.po, xfwm4/trunk/po/ru.po: Updated Russian
+	  translations by Sergey Fedoseev <fedoseev.sergey@gmail.com>.
+
+2006-04-22 09:53  daichi
+
+	* mousepad/trunk/po/ChangeLog, mousepad/trunk/po/zh_CN.po,
+	  xfce-mcs-plugins/trunk/po/zh_CN.po, po/zh_CN.po,
+	  xfce4-appfinder/trunk/po/zh_CN.po,
+	  xfce4-mixer/trunk/po/zh_CN.po, xfce4-panel/trunk/po/zh_CN.po,
+	  xfmedia/trunk/po/zh_CN.po: Updated Simplified Chinese by Jick
+	  Nan <jick.nan@gmail.com>.
+
+2006-04-21 21:58  yuvaltanny
+
+	* terminal/trunk/po/he.po, xfcalendar/trunk/po/he.po,
+	  xfce-mcs-plugins/trunk/po/he.po, po/he.po,
+	  xfce4-icon-theme/trunk/po/he.po,
+	  xfce4-mailwatch-plugin/trunk/configure.ac,
+	  xfce4-mailwatch-plugin/trunk/po/he.po,
+	  xfce4-mixer/trunk/po/he.po, xfce4-panel/trunk/po/he.po,
+	  xfce4-trigger-launcher/trunk/po/he.po, xfdesktop/trunk/po/he.po,
+	  xfprint/trunk/po/he.po: Hebrew translations update
+
+2006-04-19 15:01  jari
+
+	* po/fi.po: Updated Finnish translations.
+
+2006-04-16 09:46  benny
+
+	* Makefile.am, NOTES, README, configure.ac, icons/Makefile.am,
+	  po/el.po, po/hu.po, po/vi.po, xfce-utils.spec.in,
+	  xfce4-about/info.c: Update for 4.4beta1.
+
+2006-04-15 17:37  olivier
+
+	* ChangeLog: Update ChangeLog
+
 2006-04-15 12:10  daichi
 
 	* libexo/trunk/po/ca.po, libexo/trunk/po/el.po,
