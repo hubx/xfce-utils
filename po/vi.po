@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-06 04:17+0900\n"
+"POT-Creation-Date: 2006-07-09 16:00+0200\n"
 "PO-Revision-Date: 2006-03-30 02:31+0300\n"
 "Last-Translator: Phan Vinh Thinh <teppi@vnlinux.org>\n"
 "Language-Team: Vietnamese <none@li.org>\n"
@@ -41,63 +41,63 @@ msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Trang Web và danh sách thư cung cấp bởi"
 
 #. Server admins
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "Server maintained by"
 msgstr "Điều hành máy chủ"
 
 #. Translations supervision
-#: xfce4-about/info.c:247
+#: xfce4-about/info.c:249
 msgid "Translations supervision"
 msgstr "Giám sát dịch"
 
 #. Translators
-#: xfce4-about/info.c:251
+#: xfce4-about/info.c:253
 msgid "Translators"
 msgstr "Người dịch"
 
-#: xfce4-about/info.c:282
+#: xfce4-about/info.c:284
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
-#: xfce4-about/info.c:286
+#: xfce4-about/info.c:288
 msgid "Thanks to all who helped making this software available."
 msgstr "Cảm ơn các bạn đã giúp đỡ cho phần mềm này."
 
-#: xfce4-about/info.c:388
+#: xfce4-about/info.c:390
 msgid "About Xfce 4"
 msgstr "Giới thiệu XFce 4"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 msgid "Xfce Desktop Environment"
 msgstr "Môi trường Desktop Xfce"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Bản quyền 2002-2006 thuộc về Olivier Fourdan"
 
-#: xfce4-about/info.c:425
+#: xfce4-about/info.c:427
 msgid "Info"
 msgstr "Thông tin"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:429
 msgid "Credits"
 msgstr "Ghi công"
 
-#: xfce4-about/info.c:428
+#: xfce4-about/info.c:430
 msgid "Copyright"
 msgstr "Bản quyền"
 
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:431
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:432
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:433
 msgid "GPL"
 msgstr "GPL"
 

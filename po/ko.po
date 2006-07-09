@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-06 04:17+0900\n"
+"POT-Creation-Date: 2006-07-09 16:00+0200\n"
 "PO-Revision-Date: 2006-04-15 05:15+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
@@ -40,62 +40,62 @@ msgid "Web Hosting and Mailing Lists provided by"
 msgstr "웹 호스팅 및 메일링 리스트 제공"
 
 #. Server admins
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "Server maintained by"
 msgstr "서버 관리 "
 
 #. Translations supervision
-#: xfce4-about/info.c:247
+#: xfce4-about/info.c:249
 msgid "Translations supervision"
 msgstr "번역 관리"
 
 #. Translators
-#: xfce4-about/info.c:251
+#: xfce4-about/info.c:253
 msgid "Translators"
 msgstr "번역하신 분들"
 
-#: xfce4-about/info.c:282
+#: xfce4-about/info.c:284
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "리스트에서 빠진 분이 있으면 알려 주시기 바랍니다.<"
 
-#: xfce4-about/info.c:286
+#: xfce4-about/info.c:288
 msgid "Thanks to all who helped making this software available."
 msgstr "이 소프트웨어가 동작하는 데 도와주신 모든 분들께 감사드립니다."
 
-#: xfce4-about/info.c:388
+#: xfce4-about/info.c:390
 msgid "About Xfce 4"
 msgstr "XFce 4란..."
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 msgid "Xfce Desktop Environment"
 msgstr "XFce 데스크탑 환경"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 by Olivier Fourdan"
 
-#: xfce4-about/info.c:425
+#: xfce4-about/info.c:427
 msgid "Info"
 msgstr "정보"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:429
 msgid "Credits"
 msgstr "만든 사람들..."
 
-#: xfce4-about/info.c:428
+#: xfce4-about/info.c:430
 msgid "Copyright"
 msgstr "저작권"
 
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:431
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:432
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:433
 msgid "GPL"
 msgstr "GPL"
 

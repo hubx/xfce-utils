@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-06 04:17+0900\n"
+"POT-Creation-Date: 2006-07-09 16:00+0200\n"
 "PO-Revision-Date: 2005-10-07 23:30+0900\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
@@ -39,64 +39,64 @@ msgid "Web Hosting and Mailing Lists provided by"
 msgstr ""
 
 #. Server admins
-#: xfce4-about/info.c:243
+#: xfce4-about/info.c:245
 msgid "Server maintained by"
 msgstr ""
 
 #. Translations supervision
-#: xfce4-about/info.c:247
+#: xfce4-about/info.c:249
 msgid "Translations supervision"
 msgstr ""
 
 #. Translators
-#: xfce4-about/info.c:251
+#: xfce4-about/info.c:253
 msgid "Translators"
 msgstr ""
 
-#: xfce4-about/info.c:282
+#: xfce4-about/info.c:284
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 
-#: xfce4-about/info.c:286
+#: xfce4-about/info.c:288
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 
-#: xfce4-about/info.c:388
+#: xfce4-about/info.c:390
 #, fuzzy
 msgid "About Xfce 4"
 msgstr "Perihal XFce 4"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 #, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "Sekitaran Meja XFce"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:405
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Hakcipta 2002-2006 oleh Olivier Fourdan"
 
-#: xfce4-about/info.c:425
+#: xfce4-about/info.c:427
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:429
 msgid "Credits"
 msgstr "Kredit"
 
-#: xfce4-about/info.c:428
+#: xfce4-about/info.c:430
 msgid "Copyright"
 msgstr "Hakcipta"
 
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:431
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:432
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:433
 msgid "GPL"
 msgstr "GPL"
 
