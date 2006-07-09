@@ -1,7 +1,7 @@
 # Esperanto translations for the xfce-utils package.
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Sylvain Vedrenne <gnu_sylvain@xfce.org>, 2005.
+# Sylvain Vedrenne <gnu_sylvain@xfce.org>, 2005-2006.
 #
 msgid ""
 msgstr ""
@@ -56,12 +56,11 @@ msgstr "Tradukantoj"
 
 #: xfce4-about/info.c:282
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Se vi konas iun kiu mankas en tiu-ĉi listo, bonvolu komuniki tion al ni ĉe "
+msgstr "Se vi konas iun kiu mankas en tiu-ĉi listo, bonvolu komuniki tion al ni ĉe <"
 
 #: xfce4-about/info.c:286
 msgid "Thanks to all who helped making this software available."
-msgstr "Dankon al ĉiuj kiuj helpis disponebligi tiun programaron."
+msgstr "Dankon al ĉiuj kiuj helpis disponebligi tiun programon."
 
 #: xfce4-about/info.c:388
 msgid "About Xfce 4"
@@ -112,7 +111,7 @@ msgstr "Lanĉa Eraro"
 #: xfrun/xfrun.c:591
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Ĉu malfermu %s kun tiu programo?"
+msgstr "Per kiu programo malfermi %s?"
 
 #: xfrun/xfrun.c:594
 msgid "Run program"
