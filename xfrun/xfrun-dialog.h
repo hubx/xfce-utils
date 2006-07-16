@@ -49,6 +49,8 @@ struct _XfrunDialogClass
     void (*closed)(XfrunDialog *dialog);
 };
 
+GType xfrun_dialog_get_type                        () G_GNUC_CONST;
+
 GtkWidget *xfrun_dialog_new                        (const gchar *run_argument);
 
 void xfrun_dialog_set_run_argument                 (XfrunDialog *dialog,
@@ -58,6 +60,11 @@ G_CONST_RETURN gchar *xfrun_dialog_get_run_argument(XfrunDialog *dialog);
 void xfrun_dialog_set_destroy_on_close             (XfrunDialog *dialog,
                                                     gboolean destroy_on_close);
 gboolean xfrun_dialog_get_destroy_on_close         (XfrunDialog *dialog);
+
+void xfrun_dialog_set_working_directory            (XfrunDialog *dialog,
+                                                    const gchar *working_directory);
+G_CONST_RETURN gchar *xfrun_dialog_get_working_directory
+                                                   (XfrunDialog *dialog);
 
 G_END_DECLS
 
