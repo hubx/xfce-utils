@@ -22,20 +22,14 @@
 #include <config.h>
 #endif
 
-#include <stdio.h>
-
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
 
-#ifdef HAVE_UNISTD_H
-#include <unistd.h>
-#endif
-
-#include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
+#include <libxfcegui4/libxfcegui4.h>
 
 #include "xfrun-dialog.h"
 
@@ -43,8 +37,6 @@ int
 main(int argc,
      char **argv)
 {
-    XfrunDialog xfrun_dialog;
-    gchar title[8192], *first_item;
     GtkWidget *dialog;
     const gchar *run_argument = NULL;
     
