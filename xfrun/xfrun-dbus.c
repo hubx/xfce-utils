@@ -1,9 +1,9 @@
 /*
  * xfrun - a simple quick run dialog with saved history and completion
- *                    Jannis Pohlmann <jannis@xfce.org>
- *                    Jani Monoses <jani.monoses@gmail.com>
  *
  * Copyright (c) 2006 Brian J. Tarricone <bjt23@cornell.edu>
+ *                    Jannis Pohlmann <jannis@xfce.org>
+ *                    Jani Monoses <jani.monoses@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
