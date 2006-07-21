@@ -288,6 +288,7 @@ xfrun_show_dialog(const gchar *run_argument)
     }
     
     dbus_message_unref(result);
+    dbus_connection_unref(connection);
     
     return TRUE;
 }
@@ -314,15 +315,24 @@ xfrun_send_quit()
     dbus_message_unref(method);
     if(result)
         dbus_message_unref(result);
+    
+    dbus_connection_unref(connection);
 }
 
 int
 main(int argc,
      char **argv)
 {
+    gboolean have_gtk = gtk_init_check(&argc, &argv);
+    
     if(argc > 1 && !strcmp(argv[1], "--quit"))
         xfrun_send_quit();
     else if(argc > 1 && !strcmp(argv[1], "--daemon")) {
+        if(!have_gtk) {
+            g_critical("GTK is not available, failing.");
+            return 1;
+        }
+        
         if(argc == 2 || strcmp(argv[2], "--no-detach")) {  /* for debugging purposes... */
 #ifdef HAVE_DAEMON
             if(daemon(1, 1)) {
@@ -356,8 +366,6 @@ main(int argc,
 #endif
         }
         
-        gtk_init(&argc, &argv);
-        
         static_dialog = xfrun_dialog_new(NULL);
         xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(static_dialog), FALSE);
         g_signal_connect(G_OBJECT(static_dialog), "closed",
@@ -368,9 +376,23 @@ main(int argc,
         
         gtk_main();
     } else {
-        gdk_init(&argc, &argv);
+        if(!have_gtk) {
+            g_critical("GTK is not available, failing.");
+            return 1;
+        }
         
-        xfrun_show_dialog(argc > 1 ? argv[1] : NULL);
+        if(!xfrun_show_dialog(argc > 1 ? argv[1] : NULL)) {
+            GtkWidget *fallback_dialog = xfrun_dialog_new(argc > 1
+                                                          ? argv[1]
+                                                          : NULL);
+            xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(fallback_dialog),
+                                              TRUE);
+            g_signal_connect(G_OBJECT(fallback_dialog), "destroy",
+                             G_CALLBACK(gtk_main_quit), NULL);
+            gtk_widget_show(fallback_dialog);
+            
+            gtk_main();
+        }
     }
     
     return 0;

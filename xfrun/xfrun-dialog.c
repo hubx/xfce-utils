@@ -320,8 +320,12 @@ xfrun_dialog_delete_event(GtkWidget *widget,
     
     if(dialog->priv->destroy_on_close)
         gtk_widget_destroy(widget);
-    else
+    else {
+        /* assume we're going to use this again */
+        xfrun_setup_entry_completion(dialog);
+        gtk_widget_grab_focus(dialog->priv->entry);
         gtk_widget_hide(widget);
+    }
     
     return TRUE;
 }
@@ -630,11 +634,6 @@ xfrun_run_clicked(GtkWidget *widget,
                                 xfrun_spawn_child_setup, NULL, NULL, &error))
     {
         xfrun_add_to_history(entry_str, in_terminal);
-        if(!dialog->priv->destroy_on_close) {
-            /* assume we're going to use this again */
-            xfrun_setup_entry_completion(dialog);
-            gtk_widget_grab_focus(dialog->priv->entry);
-        }
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
     } else {
         gchar *primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
