@@ -607,46 +607,66 @@ xfrun_run_clicked(GtkWidget *widget,
                   gpointer user_data)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    gchar *entry_str, **argv;
+    gchar *cmdline, **argv = NULL;
     gboolean in_terminal;
     GdkScreen *gscreen;
     GError *error = NULL;
-    gint i = 0;
+    gint argc;
     
-    entry_str = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
+    cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
     in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk));
     
     gscreen = gtk_widget_get_screen(widget);
     
-    argv = g_new0(gchar *, 5);
+    if(dialog->priv->run_argument) {
+        gchar *new_cmdline, *run_arg_quoted;
+        
+        run_arg_quoted = g_shell_quote(dialog->priv->run_argument);
+        new_cmdline = g_strconcat(cmdline, " ", run_arg_quoted, NULL);
+        
+        g_free(run_arg_quoted);
+        g_free(cmdline);
+        cmdline = new_cmdline;
+    }
     
     if(in_terminal) {
+        gint i = 0;
+        
+        argv = g_new0(gchar *, 4);
         argv[i++] = "xfterm4";
         argv[i++] = "-e";
+        argv[i++] = cmdline;
+        argv[i++] = NULL;
+    } else {
+        /* error is handled below */
+        g_shell_parse_argv(cmdline, &argc, &argv, &error);
     }
-    argv[i++] = entry_str;
-    if(dialog->priv->run_argument)
-        argv[i++] = dialog->priv->run_argument;
-    argv[i++] = NULL;
     
-    if(xfce_gdk_spawn_on_screen(gscreen, dialog->priv->working_directory,
-                                argv, NULL, G_SPAWN_SEARCH_PATH,
-                                xfrun_spawn_child_setup, NULL, NULL, &error))
+    if(argv && xfce_gdk_spawn_on_screen(gscreen,
+                                        dialog->priv->working_directory,
+                                        argv, NULL, G_SPAWN_SEARCH_PATH,
+                                        xfrun_spawn_child_setup, NULL, NULL,
+                                        &error))
     {
-        xfrun_add_to_history(entry_str, in_terminal);
+        xfrun_add_to_history(cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
     } else {
         gchar *primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
-                                         entry_str);
+                                         cmdline);
         xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
-                            GTK_STOCK_DIALOG_ERROR, primary, error->message,
+                            GTK_STOCK_DIALOG_ERROR, primary,
+                            error ? error->message : _("Unknown Error"),
                             GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
         g_free(primary);
-        g_error_free(error);
+        if(error)
+            g_error_free(error);
     }
     
-    g_free(entry_str);
-    g_free(argv);
+    g_free(cmdline);
+    if(in_terminal)
+        g_free(argv);
+    else
+        g_strfreev(argv);
 }
 
 static gboolean

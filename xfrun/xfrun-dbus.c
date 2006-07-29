@@ -97,6 +97,7 @@ xfrun_find_or_open_display(const gchar *display_name)
     
     gdpy = g_hash_table_lookup(open_displays, display_name);
     if(!gdpy) {
+        DBG("couldn't find display '%s'; opening a new one", display_name);
         gdpy = gdk_display_open(display_name);
         if(gdpy)
             g_hash_table_insert(open_displays, g_strdup(display_name), gdpy);
@@ -389,6 +390,7 @@ main(int argc,
                                               TRUE);
             g_signal_connect(G_OBJECT(fallback_dialog), "destroy",
                              G_CALLBACK(gtk_main_quit), NULL);
+            xfce_gtk_window_center_on_monitor_with_pointer(GTK_WINDOW(fallback_dialog));
             gtk_widget_show(fallback_dialog);
             
             gtk_main();
