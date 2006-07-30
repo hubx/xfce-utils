@@ -127,6 +127,8 @@ xfrun_dialog_class_init(XfrunDialogClass *klass)
     GObjectClass *gobject_class = (GObjectClass *)klass;
     GtkWidgetClass *widget_class = (GtkWidgetClass *)klass;
     
+    g_type_class_add_private(klass, sizeof(XfrunDialogPrivate));
+    
     gobject_class->set_property = xfrun_dialog_set_property;
     gobject_class->get_property = xfrun_dialog_get_property;
     gobject_class->finalize = xfrun_dialog_finalize;
@@ -164,7 +166,8 @@ xfrun_dialog_init(XfrunDialog *dialog)
     GtkTreeIter itr;
     gchar *first_item = NULL;
     
-    dialog->priv = g_new0(XfrunDialogPrivate, 1);
+    dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, XFRUN_TYPE_DIALOG,
+                                               XfrunDialogPrivate);
     GTK_WINDOW(dialog)->type = GTK_WINDOW_TOPLEVEL;
     
     gtk_widget_set_size_request(GTK_WIDGET(dialog), 400, -1);
@@ -295,7 +298,7 @@ xfrun_dialog_finalize(GObject *object)
     if(dialog->priv->completion_model)
         g_object_unref(G_OBJECT(dialog->priv->completion_model));
     
-    g_free(dialog->priv);
+    G_OBJECT_CLASS(xfrun_dialog_parent_class)->finalize(object);
 }
 
 static gboolean
