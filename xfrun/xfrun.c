@@ -45,7 +45,7 @@ main(int argc,
     gtk_init(&argc, &argv);
     
     if(argc > 1) {
-        if(!strcmp(argv[1], "--daemon")) {
+        if(!strcmp(argv[1], "--daemon") || !strcmp(argv[1], "--quit")) {
             /* we don't support daemon mode */
             xfce_message_dialog(NULL, _("Daemon Mode"),
                                 GTK_STOCK_DIALOG_ERROR,
