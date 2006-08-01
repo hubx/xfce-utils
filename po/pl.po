@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-09 16:00+0200\n"
+"POT-Creation-Date: 2006-07-31 19:26-0700\n"
 "PO-Revision-Date: 2005-10-08 04:20+0900\n"
 "Last-Translator: Piotr Maliński <admin@rk.edu.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -100,28 +100,65 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:510
+#. we don't support daemon mode
+#: xfrun/xfrun.c:50
+msgid "Daemon Mode"
+msgstr ""
+
+#: xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr ""
+
+#: xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:141
+#, fuzzy, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "Nie można załadować"
+
+#: xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr ""
+
+#. failed
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+msgid "System Error"
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+msgid "Unable to fork to background:"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:216
+msgid "Run in _terminal"
+msgstr "Uruchom w _terminalu"
+
+#: xfrun/xfrun-dialog.c:232
+msgid "_Run"
+msgstr "_Uruchom"
+
+#: xfrun/xfrun-dialog.c:657
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Polecenie \"%s\" nie powiodło się:"
 
-#: xfrun/xfrun.c:513
+#: xfrun/xfrun-dialog.c:659
 msgid "Run Error"
 msgstr "Błąd uruchamiania"
 
-#: xfrun/xfrun.c:591
+#: xfrun/xfrun-dialog.c:661
+#, fuzzy
+msgid "Unknown Error"
+msgstr "Błąd uruchamiania"
+
+#: xfrun/xfrun-dialog.c:748
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Otwórz %s za pomocą programu?"
 
-#: xfrun/xfrun.c:594
+#: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Uruchom program"
-
-#: xfrun/xfrun.c:655
-msgid "Run in _terminal"
-msgstr "Uruchom w _terminalu"
-
-#: xfrun/xfrun.c:671
-msgid "_Run"
-msgstr "_Uruchom"
