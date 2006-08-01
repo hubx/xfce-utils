@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-07-31 19:26-0700\n"
-"PO-Revision-Date: 2006-05-07 10:25+0100\n"
+"PO-Revision-Date: 2006-08-01 09:24+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -104,34 +104,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Démon mód"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "A démon mód nem támogatott."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Az Xfrun-t D-BUS támogatással kell fordítani a démon módhoz."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Nem tölthető be"
+msgstr "\"%s\" képernyő nem nyitható meg."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "A D-BUS üzenetbusz levált. Kilépek ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Rendszer hiba"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Nem tudok a háttérbe forkolni:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -151,9 +153,8 @@ msgid "Run Error"
 msgstr "Futási hiba"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Futási hiba"
+msgstr "Ismeretlen hiba"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -163,3 +164,4 @@ msgstr "Melyik programmal nyissuk meg ezt: %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Program futtatása"
+
