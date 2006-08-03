@@ -8,11 +8,11 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-07-31 19:26-0700\n"
-"PO-Revision-Date: 2006-05-28 19:51+0100\n"
-"Last-Translator: Gerald Barre <g.barre@free.fr>\n"
-"Language-Team: French <traduc@traduc.org>\n"
+"PO-Revision-Date: 2006-08-01 17:54+0100\n"
+"Last-Translator: Maximilian Schleiss <maxschleiss@bluewin.ch>\n"
+"Language-Team: French <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:171
@@ -55,9 +55,7 @@ msgstr "Traducteurs"
 
 #: xfce4-about/info.c:284
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Si vous pensez à qu'une personne devrait figurer sur cette liste, s'il vous "
-"plaît faites le nous savoir à <"
+msgstr "Si vous pensez à qu'une personne devrait figurer sur cette liste, s'il vous plaît faites le nous savoir à <"
 
 #: xfce4-about/info.c:288
 msgid "Thanks to all who helped making this software available."
@@ -103,34 +101,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Mode daemon"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Le mode daemon n'est pas supporté"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun doit être compilé avec le support D-BUS pour activer le mode daemon."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Incapable de charger"
+msgstr "Échec à l'ouverture de l'affichage \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Bus de messages D-BUS déconnecté. Fermeture ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Erreur système"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Échec de passage au fond d'écran:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -150,9 +150,8 @@ msgid "Run Error"
 msgstr "Erreur d' exécution"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Erreur d' exécution"
+msgstr "Erreur inconnue"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -162,3 +161,4 @@ msgstr "Quelle application utiliser pour ouvrir %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Exécuter un programme"
+
