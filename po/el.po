@@ -9,13 +9,14 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-07-31 19:26-0700\n"
-"PO-Revision-Date: 2006-03-30 15:10+0300\n"
-"Last-Translator: Stathis Kamperis <ekamperi@auth.gr>\n"
+"PO-Revision-Date: 2006-08-04 20:15+0200\n"
+"Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Bookmarks: -1,-1,-1,-1,-1,-1,-1,-1,23,-1\n"
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
@@ -38,8 +39,7 @@ msgstr "Συντελεστές"
 
 #: xfce4-about/info.c:213
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
-"Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
+msgstr "Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
 
 #. Server admins
 #: xfce4-about/info.c:245
@@ -58,8 +58,7 @@ msgstr "Μεταφραστές"
 
 #: xfce4-about/info.c:284
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
+msgstr "Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
 
 #: xfce4-about/info.c:288
 msgid "Thanks to all who helped making this software available."
@@ -105,34 +104,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Υπηρεσία συστήματος"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Η λειτουργία ως υπηρεσία δεν υποστηρίζεται."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Πρέπει να περιλάβετε την υποστήριξη D-BUS στο Xfrun για να ενεργοποιήσετε τη λειτουργία ως υπηρεσία."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Αδυναμία φόρτωσης"
+msgstr "Δεν ήταν δυνατό το άνοιγμα της οθόνης \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Ο δίαυλος μηνυμάτων D-BUS έχει αποσυνδεθεί. Έξοδος...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Σφάλμα συστήματος"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Δεν είναι δυνατή η μετάβαση στο παρασκήνιο:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -152,9 +153,8 @@ msgid "Run Error"
 msgstr "Σφάλμα εκτέλεσης"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Σφάλμα εκτέλεσης"
+msgstr "Άγνωστο σφάλμα"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -164,3 +164,4 @@ msgstr "Άνοιγμα του %s με ποιο πρόγραμμα;"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Εκτέλεση προγράμματος"
+
