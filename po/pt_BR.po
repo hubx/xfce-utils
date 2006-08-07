@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-31 19:26-0700\n"
+"POT-Creation-Date: 2006-08-07 23:37+0200\n"
 "PO-Revision-Date: 2006-02-24 00:29-0300\n"
 "Last-Translator: Adriano Winter Bess <awbess@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -30,74 +30,81 @@ msgstr "Coordenador do Projeto"
 msgid "Core developers"
 msgstr "Principais desenvolvedores"
 
-#. Contributors
+#. Active contributors
 #: xfce4-about/info.c:208
-msgid "Contributors"
+#, fuzzy
+msgid "Active contributors"
 msgstr "Contribuidores"
 
-#: xfce4-about/info.c:213
+#. Previous contributors
+#: xfce4-about/info.c:212
+#, fuzzy
+msgid "Previous contributors"
+msgstr "Contribuidores"
+
+#: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Hospedagem Web e Listas de E-mail providenciadas por "
 
 #. Server admins
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:249
 msgid "Server maintained by"
 msgstr "Servidor mantido por"
 
 #. Translations supervision
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:253
 msgid "Translations supervision"
 msgstr "Supervisão das traduções"
 
 #. Translators
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:257
 msgid "Translators"
 msgstr "Tradutores"
 
-#: xfce4-about/info.c:284
+#: xfce4-about/info.c:288
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Se você sabe de alguém que está faltando nesta lista, por favor faça-nos "
 "saber em <"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "Thanks to all who helped making this software available."
 msgstr "Obrigado a todos que ajudaram a fazer este software disponível."
 
-#: xfce4-about/info.c:390
+#: xfce4-about/info.c:394
 msgid "About Xfce 4"
 msgstr "Sobre o Xfce 4"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Xfce Desktop Environment"
 msgstr "Ambiente de Trabalho Xfce"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 por Olivier Fourdan"
 
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:431
 msgid "Info"
 msgstr "Informações"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:433
 msgid "Credits"
 msgstr "Créditos"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:434
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:432
+#: xfce4-about/info.c:436
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "GPL"
 msgstr "GPL"
 

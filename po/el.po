@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-31 19:26-0700\n"
+"POT-Creation-Date: 2006-08-07 23:37+0200\n"
 "PO-Revision-Date: 2006-08-04 20:15+0200\n"
 "Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -32,72 +32,81 @@ msgstr "Επίβλεψη έργου"
 msgid "Core developers"
 msgstr "Κύριοι προγραμματιστές"
 
-#. Contributors
+#. Active contributors
 #: xfce4-about/info.c:208
-msgid "Contributors"
+#, fuzzy
+msgid "Active contributors"
 msgstr "Συντελεστές"
 
-#: xfce4-about/info.c:213
+#. Previous contributors
+#: xfce4-about/info.c:212
+#, fuzzy
+msgid "Previous contributors"
+msgstr "Συντελεστές"
+
+#: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
+msgstr ""
+"Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
 
 #. Server admins
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:249
 msgid "Server maintained by"
 msgstr "Διαχείριση διακομιστή"
 
 #. Translations supervision
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:253
 msgid "Translations supervision"
 msgstr "Συντονισμός μεταφράσεων"
 
 #. Translators
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:257
 msgid "Translators"
 msgstr "Μεταφραστές"
 
-#: xfce4-about/info.c:284
-msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
-
 #: xfce4-about/info.c:288
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+"Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
+
+#: xfce4-about/info.c:292
 msgid "Thanks to all who helped making this software available."
 msgstr "Ευχαριστούμε όσους βοήθησαν να γίνει αυτό το λογισμικό διαθέσιμο."
 
-#: xfce4-about/info.c:390
+#: xfce4-about/info.c:394
 msgid "About Xfce 4"
 msgstr "Περί Xfce 4"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Xfce Desktop Environment"
 msgstr "Περιβάλλον εργασίας Xfce"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 από τον Olivier Fourdan"
 
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:431
 msgid "Info"
 msgstr "Πληροφορίες"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:433
 msgid "Credits"
 msgstr "Μνεία"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:434
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:432
+#: xfce4-about/info.c:436
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "GPL"
 msgstr "GPL"
 
@@ -112,7 +121,9 @@ msgstr "Η λειτουργία ως υπηρεσία δεν υποστηρίζ�
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Πρέπει να περιλάβετε την υποστήριξη D-BUS στο Xfrun για να ενεργοποιήσετε τη λειτουργία ως υπηρεσία."
+msgstr ""
+"Πρέπει να περιλάβετε την υποστήριξη D-BUS στο Xfrun για να ενεργοποιήσετε τη "
+"λειτουργία ως υπηρεσία."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -125,13 +136,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Ο δίαυλος μηνυμάτων D-BUS έχει αποσυνδεθεί. Έξοδος...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Σφάλμα συστήματος"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Δεν είναι δυνατή η μετάβαση στο παρασκήνιο:"
 
@@ -164,4 +173,3 @@ msgstr "Άνοιγμα του %s με ποιο πρόγραμμα;"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Εκτέλεση προγράμματος"
-

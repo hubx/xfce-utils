@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-31 19:26-0700\n"
+"POT-Creation-Date: 2006-08-07 23:37+0200\n"
 "PO-Revision-Date: 2006-04-20 19:52+0600\n"
 "Last-Translator: Sergey Fedoseev <fedoseev.sergey@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -33,74 +33,81 @@ msgstr "Лидер проекта"
 msgid "Core developers"
 msgstr "Основные разработчики"
 
-#. Contributors
+#. Active contributors
 #: xfce4-about/info.c:208
-msgid "Contributors"
+#, fuzzy
+msgid "Active contributors"
 msgstr "Внесли вклад"
 
-#: xfce4-about/info.c:213
+#. Previous contributors
+#: xfce4-about/info.c:212
+#, fuzzy
+msgid "Previous contributors"
+msgstr "Внесли вклад"
+
+#: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Веб-хостинг и списки рассылки предоставлены"
 
 #. Server admins
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:249
 msgid "Server maintained by"
 msgstr "Сервер поддерживается"
 
 #. Translations supervision
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:253
 msgid "Translations supervision"
 msgstr "Координация переводов"
 
 #. Translators
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:257
 msgid "Translators"
 msgstr "Переводчики"
 
-#: xfce4-about/info.c:284
+#: xfce4-about/info.c:288
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Если вы знаете кого-то ещё, кто должен присутствовать в этом списке, "
 "пожалуйста, дайте нам знать по адресу <"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "Thanks to all who helped making this software available."
 msgstr "Спасибо всем, кто помог нам сделать это программное обеспечение."
 
-#: xfce4-about/info.c:390
+#: xfce4-about/info.c:394
 msgid "About Xfce 4"
 msgstr "Об Xfce 4"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Xfce Desktop Environment"
 msgstr "Рабочая среда Xfce"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 by Olivier Fourdan"
 
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:431
 msgid "Info"
 msgstr "Информация"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:433
 msgid "Credits"
 msgstr "Авторы"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:434
 msgid "Copyright"
 msgstr "Авторское право"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:432
+#: xfce4-about/info.c:436
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "GPL"
 msgstr "GPL"
 

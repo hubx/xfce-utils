@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-31 19:26-0700\n"
+"POT-Creation-Date: 2006-08-07 23:37+0200\n"
 "PO-Revision-Date: 2005-10-07 23:28+0900\n"
 "Last-Translator: Alex Dupre <ale@FreeBSD.org>\n"
 "Language-Team: GUFI <traduzioni@gufi.org>\n"
@@ -30,73 +30,78 @@ msgstr "Capo Progetto"
 msgid "Core developers"
 msgstr "Sviluppatori principali"
 
-#. Contributors
+#. Active contributors
 #: xfce4-about/info.c:208
-msgid "Contributors"
+msgid "Active contributors"
 msgstr ""
 
-#: xfce4-about/info.c:213
+#. Previous contributors
+#: xfce4-about/info.c:212
+msgid "Previous contributors"
+msgstr ""
+
+#: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr ""
 
 #. Server admins
-#: xfce4-about/info.c:245
+#: xfce4-about/info.c:249
 msgid "Server maintained by"
 msgstr ""
 
 #. Translations supervision
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:253
 msgid "Translations supervision"
 msgstr "Supervisione dei traduttori"
 
 #. Translators
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:257
 msgid "Translators"
 msgstr "Traduttori"
 
-#: xfce4-about/info.c:284
+#: xfce4-about/info.c:288
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 
-#: xfce4-about/info.c:390
+#: xfce4-about/info.c:394
 msgid "About Xfce 4"
 msgstr "Info su Xfce 4"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Xfce Desktop Environment"
 msgstr "Ambiente Desktop Xfce"
 
-#: xfce4-about/info.c:405
+#: xfce4-about/info.c:409
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 di Olivier Fourdan"
 
 #  add pages
-#: xfce4-about/info.c:427
+#: xfce4-about/info.c:431
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:433
 msgid "Credits"
 msgstr "Riconoscimenti"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:434
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:432
+#: xfce4-about/info.c:436
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "GPL"
 msgstr "GPL"
 

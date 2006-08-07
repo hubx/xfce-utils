@@ -3,7 +3,7 @@
  *                2002 Xavier MAILLARD (zedek@fxgsproject.org)
  *                2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
  *                2003,2006 Benedikt Meurer (benny@xfce.org)
- *                2005 Jean-François Wauthy (pollux@xfce.org)
+ *                2005,2006 Jean-François Wauthy (pollux@xfce.org)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -204,8 +204,12 @@ add_credits_page (GtkNotebook * notebook, const gchar * name, gboolean hscrollin
   if (!add_author (file_authors, textbuffer, &iter, "[Core]", _("Core developers")))
     g_error ("%s file is corrupted !", authors_filename);
 
-  /* Contributors */
-  if (!add_author (file_authors, textbuffer, &iter, "[Contributors]", _("Contributors")))
+  /* Active contributors */
+  if (!add_author (file_authors, textbuffer, &iter, "[Active contributors]", _("Active contributors")))
+    g_error ("%s file is corrupted !", authors_filename);
+
+  /* Previous contributors */
+  if (!add_author (file_authors, textbuffer, &iter, "[Previous contributors]", _("Previous contributors")))
     g_error ("%s file is corrupted !", authors_filename);
 
   /* Hosting */
