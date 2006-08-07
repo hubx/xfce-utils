@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-07 23:37+0200\n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-02-02 17:31+0100\n"
 "Last-Translator: Vincent Tunru <imnotb@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -54,63 +54,69 @@ msgstr "Web hosting en <mailinglists> verzorgd door"
 msgid "Server maintained by"
 msgstr "Server onderhouden door"
 
-#. Translations supervision
+#. Goodies supervision
 #: xfce4-about/info.c:253
+#, fuzzy
+msgid "Goodies supervision"
+msgstr "Vertalingen supervisie"
+
+#. Translations supervision
+#: xfce4-about/info.c:257
 #, fuzzy
 msgid "Translations supervision"
 msgstr "Vertalingen supervisie"
 
 #. Translators
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:261
 msgid "Translators"
 msgstr "Vertalers"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Als u iemand weet die op  deze lijst had moeten staan, laat het ons "
 "alstublieft weten op <"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 "Bedankt iedereen die geholpen heeft bij het ontwikkelen van deze software."
 
-#: xfce4-about/info.c:394
+#: xfce4-about/info.c:398
 msgid "About Xfce 4"
 msgstr "Over Xfce 4"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 #, fuzzy
 msgid "Xfce Desktop Environment"
 msgstr "Xfce Desktop Environment"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 Olivier Fourdan"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "Credits"
 msgstr "Dankwoord"
 
-#: xfce4-about/info.c:434
+#: xfce4-about/info.c:438
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:439
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:436
+#: xfce4-about/info.c:440
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:441
 msgid "GPL"
 msgstr "GPL"
 

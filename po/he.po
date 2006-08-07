@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-07 23:37+0200\n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-04-18 20:23+0300\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
 "Language-Team: Hebrew\n"
@@ -54,58 +54,64 @@ msgstr "שירותי רשת ורשימות תפוצה מסופקים על ידי
 msgid "Server maintained by"
 msgstr "השרת מתוחזק על ידי"
 
-#. Translations supervision
+#. Goodies supervision
 #: xfce4-about/info.c:253
+#, fuzzy
+msgid "Goodies supervision"
+msgstr "פיקוח על תרגומים"
+
+#. Translations supervision
+#: xfce4-about/info.c:257
 msgid "Translations supervision"
 msgstr "פיקוח על תרגומים"
 
 #. Translators
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:261
 msgid "Translators"
 msgstr "מתרגמים"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "אם ידוע לכם אל מישהו שנעדר מהרשימה נא ידעו אותנו דרך <"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
 msgstr "תודות לכל מי שעזר ביצירת התוכנה "
 
-#: xfce4-about/info.c:394
+#: xfce4-about/info.c:398
 msgid "About Xfce 4"
 msgstr "אודות Xfce 4"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Xfce Desktop Environment"
 msgstr "סביבת העבודה Xfce"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "זכויות יוצרים 2002-2006 שמורות לאוליבר פורדאן (Oliver Fourdan)"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "Info"
 msgstr "מידע"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "Credits"
 msgstr "תודות"
 
-#: xfce4-about/info.c:434
+#: xfce4-about/info.c:438
 msgid "Copyright"
 msgstr "זכויות יוצרים"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:439
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:436
+#: xfce4-about/info.c:440
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:441
 msgid "GPL"
 msgstr "GPL"
 

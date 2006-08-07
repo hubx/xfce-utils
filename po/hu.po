@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-07 23:37+0200\n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-08-01 09:24+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
@@ -53,58 +53,64 @@ msgstr "Webhoszt és levelező listák:"
 msgid "Server maintained by"
 msgstr "Szerverkarbantartó:"
 
-#. Translations supervision
+#. Goodies supervision
 #: xfce4-about/info.c:253
+#, fuzzy
+msgid "Goodies supervision"
+msgstr "Fordításfelügyelet"
+
+#. Translations supervision
+#: xfce4-about/info.c:257
 msgid "Translations supervision"
 msgstr "Fordításfelügyelet"
 
 #. Translators
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:261
 msgid "Translators"
 msgstr "Fordítók"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "Ha bárki lemaradt, tudasd rögtön itt <"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
 msgstr "Köszönet mindenkinek, aki segítette e szoftver létrejöttét"
 
-#: xfce4-about/info.c:394
+#: xfce4-about/info.c:398
 msgid "About Xfce 4"
 msgstr "Az Xfce 4 névjegye"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Xfce Desktop Environment"
 msgstr "Xfce Munkakörnyezet"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006, Olivier Fourdan"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "Info"
 msgstr "Névjegy"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "Credits"
 msgstr "Stáb"
 
-#: xfce4-about/info.c:434
+#: xfce4-about/info.c:438
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:439
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:436
+#: xfce4-about/info.c:440
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:441
 msgid "GPL"
 msgstr "GPL"
 

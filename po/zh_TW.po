@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-07 23:37+0200\n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-06-12 22:03+0800\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -52,58 +52,64 @@ msgstr "網站主機及郵件列表提供"
 msgid "Server maintained by"
 msgstr "伺服器維護"
 
-#. Translations supervision
+#. Goodies supervision
 #: xfce4-about/info.c:253
+#, fuzzy
+msgid "Goodies supervision"
+msgstr "翻譯監督"
+
+#. Translations supervision
+#: xfce4-about/info.c:257
 msgid "Translations supervision"
 msgstr "翻譯監督"
 
 #. Translators
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:261
 msgid "Translators"
 msgstr "翻譯者"
 
-#: xfce4-about/info.c:288
+#: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "如果您知道這份清單有任何遺失，請讓我們知道"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
 msgstr "感謝所有幫忙讓此軟體能用的人"
 
-#: xfce4-about/info.c:394
+#: xfce4-about/info.c:398
 msgid "About Xfce 4"
 msgstr "關於 Xfce 4"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Xfce Desktop Environment"
 msgstr "Xfce 桌面環境"
 
-#: xfce4-about/info.c:409
+#: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "版權所有 2002-2006 Olivier Fourdan"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:435
 msgid "Info"
 msgstr "資訊"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:433
+#: xfce4-about/info.c:437
 msgid "Credits"
 msgstr "工作人員"
 
-#: xfce4-about/info.c:434
+#: xfce4-about/info.c:438
 msgid "Copyright"
 msgstr "版權"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:439
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:436
+#: xfce4-about/info.c:440
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:441
 msgid "GPL"
 msgstr "GPL"
 

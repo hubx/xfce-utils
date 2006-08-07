@@ -249,6 +249,10 @@ add_credits_page (GtkNotebook * notebook, const gchar * name, gboolean hscrollin
   if (!add_author (file_authors, textbuffer, &iter, "[Server administration]", _("Server maintained by")))
     g_error ("%s file is corrupted !", authors_filename);
 
+  /* Goodies supervision */
+  if (!add_author (file_authors, textbuffer, &iter, "[Goodies supervision]", _("Goodies supervision")))
+    g_error ("%s file is corrupted !", authors_filename);
+
   /* Translations supervision */
   if (!add_author (file_authors, textbuffer, &iter, "[Translations supervision]", _("Translations supervision")))
     g_error ("%s file is corrupted !", authors_filename);
