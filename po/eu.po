@@ -35,15 +35,13 @@ msgstr "Muin Garatzaileak"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
 msgstr "Laguntzaileak"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Laguntzaileak"
+msgstr "Laguntzaile Oihak"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -56,9 +54,8 @@ msgstr "Zerbitzari mantenua: "
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Itzulpen gainbegiratzea"
+msgstr "Goodie gainbegiratzea"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -119,38 +116,38 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Deabru Modua"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Ez da deabru modua onartzen."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun D-BUS onarpenarekin konpilatu ebhar da deabru modua gaitzeko."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Ezin da kargatu "
+msgstr "Ezin da  \"%s\" ireki. "
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS mezu hilara deskonektatua. Irteten ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Sistema Errorea"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Ezin da atzeko planora pasa:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
-msgstr "Abiarazi terminalean"
+msgstr "Abiarazi _terminalean"
 
 #: xfrun/xfrun-dialog.c:232
 msgid "_Run"
@@ -166,9 +163,8 @@ msgid "Run Error"
 msgstr "Abiarazte Errorea"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Abiarazte Errorea"
+msgstr "Errore Ezezaguna"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
