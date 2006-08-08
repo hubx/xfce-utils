@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-08-01 09:24+0100\n"
+"PO-Revision-Date: 2006-08-08 08:33+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -34,15 +34,13 @@ msgstr "Fő fejlesztők"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Közreműködők"
+msgstr "Aktív közreműködők"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Közreműködők"
+msgstr "Korábbi közreműködők"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -55,14 +53,13 @@ msgstr "Szerverkarbantartó:"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Fordításfelügyelet"
+msgstr "Cukik felügyelete"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
 msgid "Translations supervision"
-msgstr "Fordításfelügyelet"
+msgstr "Fordítások felügyelete"
 
 #. Translators
 #: xfce4-about/info.c:261
@@ -138,11 +135,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "A D-BUS üzenetbusz levált. Kilépek ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Rendszer hiba"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nem tudok a háttérbe forkolni:"
 
@@ -175,3 +174,4 @@ msgstr "Melyik programmal nyissuk meg ezt: %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Program futtatása"
+
