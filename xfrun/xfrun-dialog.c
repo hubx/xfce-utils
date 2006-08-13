@@ -326,6 +326,7 @@ xfrun_dialog_delete_event(GtkWidget *widget,
     else {
         /* assume we're going to use this again */
         xfrun_setup_entry_completion(dialog);
+        gtk_editable_select_region(GTK_EDITABLE(dialog->priv->entry), 0, -1);
         gtk_widget_grab_focus(dialog->priv->entry);
         gtk_widget_hide(widget);
     }
