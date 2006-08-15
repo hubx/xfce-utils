@@ -33,15 +33,13 @@ msgstr "Główni Programiści"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Wspierający"
+msgstr "Aktywni przyjaciele projektu"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Wspierający"
+msgstr "Byli przyjaciele projektu"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -54,9 +52,8 @@ msgstr "Serwer zarządzany przez"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Zarządzanie tłumaczeniami"
+msgstr "Zarządzanie XFCE Goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -116,34 +113,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Tryb Daemona"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Tryb Daemona nie wspierany"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun musi być skompilowane ze wsparciem dla D-BUS dla trybu daemona."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Nie można załadować"
+msgstr "Nie można otworzyć ekranu \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Połączenie z D-BUS przerwane. Zamykam...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Błąd Systemu"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Nie mogę przejść do działania w tle:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -163,9 +160,8 @@ msgid "Run Error"
 msgstr "Błąd uruchamiania"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Błąd uruchamiania"
+msgstr "Nieznany Błąd"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
