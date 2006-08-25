@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-08-04 20:15+0200\n"
+"PO-Revision-Date: 2006-08-08 17:29+0200\n"
 "Last-Translator: Stavros Giannouris <stavrosg2002@freemail.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -34,20 +34,17 @@ msgstr "Κύριοι προγραμματιστές"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Συντελεστές"
+msgstr "Ενεργοί συντελεστές"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Συντελεστές"
+msgstr "Προηγούμενοι συντελεστές"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
-"Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
+msgstr "Φιλοξενία στον ιστό και λίστες ηλεκτρονικού ταχυδρομείου παρέχονται από"
 
 #. Server admins
 #: xfce4-about/info.c:249
@@ -56,9 +53,8 @@ msgstr "Διαχείριση διακομιστή"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Συντονισμός μεταφράσεων"
+msgstr "Συντονισμός goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -72,8 +68,7 @@ msgstr "Μεταφραστές"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
+msgstr "Εάν γνωρίζετε κάποιον που λείπει από αυτή τη λίστα, ενημερώστε μας στο <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -127,9 +122,7 @@ msgstr "Η λειτουργία ως υπηρεσία δεν υποστηρίζ�
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Πρέπει να περιλάβετε την υποστήριξη D-BUS στο Xfrun για να ενεργοποιήσετε τη "
-"λειτουργία ως υπηρεσία."
+msgstr "Πρέπει να περιλάβετε την υποστήριξη D-BUS στο Xfrun για να ενεργοποιήσετε τη λειτουργία ως υπηρεσία."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -142,11 +135,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Ο δίαυλος μηνυμάτων D-BUS έχει αποσυνδεθεί. Έξοδος...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Σφάλμα συστήματος"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Δεν είναι δυνατή η μετάβαση στο παρασκήνιο:"
 
@@ -179,3 +174,4 @@ msgstr "Άνοιγμα του %s με ποιο πρόγραμμα;"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Εκτέλεση προγράμματος"
+
