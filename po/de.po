@@ -2,14 +2,15 @@
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-mcs-manager package.
 # Moritz Heiber <moe@xfce.org>, 2003.
+# Fabian Nowak <timystery@aarcor.de>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.90.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2005-10-07 23:16+0900\n"
-"Last-Translator: Moritz Heiber <moe@xfce.org>\n"
+"PO-Revision-Date: 2006-06-27 18:14+0200\n"
+"Last-Translator: Fabian Nowak <timystery@aarcor.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,59 +18,61 @@ msgstr ""
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr ""
+msgstr "Kann nicht laden"
 
 #. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
-msgstr ""
+msgstr "Projektleitung"
 
 #. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
-msgstr ""
+msgstr "Hauptentwickler"
 
 #. Active contributors
 #: xfce4-about/info.c:208
 msgid "Active contributors"
-msgstr ""
+msgstr "Aktive Mitentwickler"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
 msgid "Previous contributors"
-msgstr ""
+msgstr "Frühere Mitentwickler"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Webhosting und Mailinglisten verfügbar gemacht von"
 
 #. Server admins
 #: xfce4-about/info.c:249
 msgid "Server maintained by"
-msgstr ""
+msgstr "Server gewartet von"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Koordination der Goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
 msgid "Translations supervision"
-msgstr ""
+msgstr "Koordination der Übersetzungen"
 
 #. Translators
 #: xfce4-about/info.c:261
 msgid "Translators"
-msgstr ""
+msgstr "Übersetzer"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
+"Falls Sie jemanden kennen, der auf dieser Liste fehlt, lassen Sie es uns "
+"bitte wissen."
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen."
 
 #: xfce4-about/info.c:398
 msgid "About Xfce 4"
@@ -77,7 +80,7 @@ msgstr "Über Xfce 4"
 
 #: xfce4-about/info.c:413
 msgid "Xfce Desktop Environment"
-msgstr "Xfce Desktop Umgebung"
+msgstr "Xfce Desktopumgebung"
 
 #: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
@@ -111,34 +114,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Daemon-Modus"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Daemon-Modus wird nicht unterstützt."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
+"Xfrun muss mit Unterstützung für D-BUS erzeugt werden, um den Daemon-Modus "
+"zu unterstützen."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Kann Anzeige »%s« nicht öffnen."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Verbindung zum Nachrichtenbus D-BUS abgebaut. Beende ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Systemfehler"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Kann Prozess nicht in den Hintergrund setzen:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -151,17 +156,16 @@ msgstr "_Ausführen"
 #: xfrun/xfrun-dialog.c:657
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Der Befehl »%s« konnte nicht ausgeführt werden:"
 
 #: xfrun/xfrun-dialog.c:659
-#, fuzzy
 msgid "Run Error"
-msgstr "Programm ausführen"
+msgstr "Programmfehler"
 
 #: xfrun/xfrun-dialog.c:661
 #, fuzzy
 msgid "Unknown Error"
-msgstr "Programm ausführen"
+msgstr "Unbekannter Fehler"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -171,3 +175,6 @@ msgstr "Öffne %s mit welchem Programm?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Programm ausführen"
+
+#~ msgid "xfrun4: Could not write history to file %s\n"
+#~ msgstr "xfrun4: Konnte Verlauf nicht in Datei %s schreiben\n"
