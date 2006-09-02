@@ -2,22 +2,22 @@
 # Hebrew translations for xfce-utils package.
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
+#
 # Dotan Kamber <kamberd@yahoo.com>, 2004, 2006.
 # Jonatan Perry <Jonatan443@walla.co.il>, 2004.
 # Yuval Tanny <tanai@int.gov.il>, 2004, 2006.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-04-18 20:23+0300\n"
+"PO-Revision-Date: 2006-09-02 04:50+0300\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
@@ -35,15 +35,13 @@ msgstr "מפתחי הליבה"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "תורמים"
+msgstr "תורמים פעילים"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "תורמים"
+msgstr "תורמים קודמים"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -56,9 +54,8 @@ msgstr "השרת מתוחזק על ידי"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "פיקוח על תרגומים"
+msgstr "פיקוח על ה-Goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -118,34 +115,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "מצב שירות רקע"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "מצב שירות רק לא נתמך."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "צריך להדר את Xfrun עם D-BUS כדי לאפשר תמיכה במצב שירות רקע."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "כשל בטעינה "
+msgstr "אין אפשרות לפתוח את תצוגה \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "ערוץ ההודעות של D-BUS לא מחובר. יוצא... \n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "שגיאת מערכת"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "לתהליך אין אפשרות להתפצל לרקע:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -165,9 +162,8 @@ msgid "Run Error"
 msgstr "שגיאת הרצה"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "שגיאת הרצה"
+msgstr "שגיאה לא ידועה"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -177,3 +173,4 @@ msgstr "עם איזו תוכנה לפתוח את %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "הרץ תוכנית"
+
