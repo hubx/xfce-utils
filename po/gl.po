@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-utils\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2006-05-20 13:46+0000\n"
+"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-08-17 19:29+0000\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -20,106 +20,155 @@ msgstr ""
 msgid "Unable to load "
 msgstr "Non foi posible cargar "
 
+#. Project lead
 #: xfce4-about/info.c:200
 msgid "Project Lead"
 msgstr ""
 
+#. Core developers
 #: xfce4-about/info.c:204
 msgid "Core developers"
 msgstr ""
 
+#. Active contributors
 #: xfce4-about/info.c:208
-msgid "Contributors"
+msgid "Active contributors"
 msgstr ""
 
-#: xfce4-about/info.c:213
+#. Previous contributors
+#: xfce4-about/info.c:212
+msgid "Previous contributors"
+msgstr ""
+
+#: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr ""
 
-#: xfce4-about/info.c:243
+#. Server admins
+#: xfce4-about/info.c:249
 msgid "Server maintained by"
 msgstr "Servidor mantido por"
 
-#: xfce4-about/info.c:247
+#. Goodies supervision
+#: xfce4-about/info.c:253
+msgid "Goodies supervision"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:257
 msgid "Translations supervision"
 msgstr ""
 
-#: xfce4-about/info.c:251
+#. Translators
+#: xfce4-about/info.c:261
 msgid "Translators"
 msgstr "Tradutores"
 
-#: xfce4-about/info.c:282
+#: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 
-#: xfce4-about/info.c:286
+#: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 "Grazas a tódolos que axudaron a facer que este software estea dispoñible."
 
-#: xfce4-about/info.c:388
+#: xfce4-about/info.c:398
 msgid "About Xfce 4"
 msgstr "Acerca de Xfce 4"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:413
 msgid "Xfce Desktop Environment"
 msgstr "Ambiente de Escritorio Xfce"
 
-#: xfce4-about/info.c:403
+#: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 de Olivier Fourdan"
 
-#: xfce4-about/info.c:425
+#: xfce4-about/info.c:435
 msgid "Info"
 msgstr ""
 
-#: xfce4-about/info.c:427
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:437
 msgid "Credits"
 msgstr "Créditos"
 
-#: xfce4-about/info.c:428
+#: xfce4-about/info.c:438
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:429
+#: xfce4-about/info.c:439
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:430
+#: xfce4-about/info.c:440
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:431
+#: xfce4-about/info.c:441
 msgid "GPL"
 msgstr "GPL"
 
-#: xfrun/xfrun.c:194
-#, c-format
-msgid "D-BUS message bus disconnected, exiting...\n"
+#. we don't support daemon mode
+#: xfrun/xfrun.c:50
+msgid "Daemon Mode"
 msgstr ""
 
-#: xfrun/xfrun.c:687
+#: xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr ""
+
+#: xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:141
+#, fuzzy, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "Non foi posible cargar "
+
+#: xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr ""
+
+#. failed
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+msgid "System Error"
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+msgid "Unable to fork to background:"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:216
+msgid "Run in _terminal"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:232
+msgid "_Run"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:657
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun.c:690
+#: xfrun/xfrun-dialog.c:659
 msgid "Run Error"
 msgstr "Erro de Execución"
 
-#: xfrun/xfrun.c:764
+#: xfrun/xfrun-dialog.c:661
+#, fuzzy
+msgid "Unknown Error"
+msgstr "Erro de Execución"
+
+#: xfrun/xfrun-dialog.c:748
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun.c:767
+#: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Executar programa"
-
-#: xfrun/xfrun.c:829
-msgid "Run in _terminal"
-msgstr ""
-
-#: xfrun/xfrun.c:845
-msgid "_Run"
-msgstr ""

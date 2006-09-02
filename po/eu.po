@@ -7,7 +7,7 @@
 # Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-03-07 23:01+0100\n"

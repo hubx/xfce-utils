@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-08-08 17:42+0100\n"
@@ -65,7 +65,9 @@ msgstr "Traducteurs"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Si vous pensez qu'une personne devrait figurer sur cette liste, s'il vous plaît faites le nous savoir à <"
+msgstr ""
+"Si vous pensez qu'une personne devrait figurer sur cette liste, s'il vous "
+"plaît faites le nous savoir à <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -119,7 +121,8 @@ msgstr "Le mode daemon n'est pas supporté"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun doit être compilé avec le support D-BUS pour activer le mode daemon."
+msgstr ""
+"Xfrun doit être compilé avec le support D-BUS pour activer le mode daemon."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -132,13 +135,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Bus de messages D-BUS déconnecté. Fermeture ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Erreur système"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Impossible de passer le processus en arrière-plan :"
 
@@ -171,4 +172,3 @@ msgstr "Quelle application utiliser pour ouvrir %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Exécuter un programme"
-

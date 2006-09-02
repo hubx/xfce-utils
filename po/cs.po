@@ -7,7 +7,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-08-18 22:18+0100\n"
@@ -68,7 +68,8 @@ msgstr "Překladatelé"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
+msgstr ""
+"Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -122,7 +123,8 @@ msgstr "Mód démon není podporován."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Pro použití módu démon musí být aplikace Xfrun zkompilována s podporou D-BUS."
+msgstr ""
+"Pro použití módu démon musí být aplikace Xfrun zkompilována s podporou D-BUS."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -135,13 +137,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Sběrnice zpráv D-BUS byla odpojena. Ukončuji...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Systémová chyba"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nelze vytvořit proces na pozadí:"
 
@@ -174,4 +174,3 @@ msgstr "Ve kterém programu bude otevřeno %s?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Spustit program"
-

@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
-"POT-Creation-Date: \n"
+"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-08 00:54+0200\n"
 "PO-Revision-Date: 2006-08-24 23:47+0400\n"
 "Last-Translator: Dimitri Gogelia <delphi.knight@gmail.com>\n"
 "Language-Team: Georgian <delphi.knight@gmail.com>\n"
@@ -128,13 +129,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr ""
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr ""
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr ""
 
@@ -167,4 +166,3 @@ msgstr ""
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr ""
-
