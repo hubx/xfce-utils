@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-02-24 00:29-0300\n"
-"Last-Translator: Adriano Winter Bess <awbess@gmail.com>\n"
+"PO-Revision-Date: 2006-09-03 15:05-0300\n"
+"Last-Translator: Rodrigo Coacci <rcoacci@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,15 +32,13 @@ msgstr "Principais desenvolvedores"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Contribuidores"
+msgstr "Contribuidores ativos"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Contribuidores"
+msgstr "Contribuidores anteriores"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -53,9 +51,8 @@ msgstr "Servidor mantido por"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Supervisão das traduções"
+msgstr "Supervisão dos \"Goodies\""
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -69,9 +66,7 @@ msgstr "Tradutores"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Se você sabe de alguém que está faltando nesta lista, por favor faça-nos "
-"saber em <"
+msgstr "Se você sabe de alguém que está faltando nesta lista, por favor faça-nos saber em <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -117,34 +112,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Modo Daemon"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "O modo daemon não é suportado."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "O Xfrun precisa ser compilado com suporte ao D-BUS para habilitar o modo daemon."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Não é possível carregar "
+msgstr "Não é possível abrir o display \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "O barramento de mensagens do D-BUS foi desconectado. Saindo...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Erro de Sistema"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Não foi possível fazer fork para segundo plano:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -164,9 +161,8 @@ msgid "Run Error"
 msgstr "Erro de Execução"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Erro de Execução"
+msgstr "Erro Desconhecido"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -176,3 +172,4 @@ msgstr "Abrir %s com qual programa?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Executar programa"
+
