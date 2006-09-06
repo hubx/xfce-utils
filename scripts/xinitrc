@@ -2,7 +2,11 @@
 
 # fix broken $UID on some system...
 if test "x$UID" = "x"; then
-	UID=`id -u`
+	if test -x /usr/xpg4/bin/id; then
+		UID=`/usr/xpg4/bin/id -u`;
+	else
+		UID=`id -u`;
+	fi
 fi
 
 # create temp file for X resources
