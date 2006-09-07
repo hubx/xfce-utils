@@ -1,25 +1,27 @@
 # Vietnamese translations for xfce-utils package.
 # Copyright (C) 2002-2006 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
+#
 # Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2004.
 # Phan Vĩnh Thịnh <teppi@vnlinux.org>, 2006.
-#
+# Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Project-Id-Version: xfce-utils 4.3.90.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-03-30 02:31+0300\n"
-"Last-Translator: Phan Vinh Thinh <teppi@vnlinux.org>\n"
-"Language-Team: Vietnamese <none@li.org>\n"
+"PO-Revision-Date: 2006-09-05 02:40+0400\n"
+"Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=1; nplural=0\n"
 
 #: xfce4-about/info.c:171
 msgid "Unable to load "
-msgstr "Không nạp được"
+msgstr "Không nạp được "
 
 #. Project lead
 #: xfce4-about/info.c:200
@@ -33,15 +35,13 @@ msgstr "Nhà phát triển chính"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Cộng tác viên"
+msgstr "Cộng tác viên tích cực"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Cộng tác viên"
+msgstr "Cộng tác viên trước đây"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -54,9 +54,8 @@ msgstr "Điều hành máy chủ"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Giám sát dịch"
+msgstr "Giám sát goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -70,8 +69,7 @@ msgstr "Người dịch"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
+msgstr "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -117,34 +115,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Chế dộ daemon"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Chế độ daemon không được hỗ trợ."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun phải được biên dịch với hỗ trợ D-BUS để dùng chế độ daemon."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Không nạp được"
+msgstr "Không mở được màn hình \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Đã dừng kết nối rãnh thông báo D-BUS. Đang thoát ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Lỗi hệ thống"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Không thể phân nhánh vào nền sau:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -164,9 +162,8 @@ msgid "Run Error"
 msgstr "Lỗi chạy chương trình"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Lỗi chạy chương trình"
+msgstr "Lỗi không rõ"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
@@ -176,3 +173,4 @@ msgstr "Mở %s với chương trình nào?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Chạy chương trình"
+
