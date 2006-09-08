@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-03-05 18:04+0100\n"
+"PO-Revision-Date: 2006-09-08 22:53+0200\n"
 "Last-Translator: Sylvain Vedrenne <gnu_sylvain@xfce.org>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,15 +32,13 @@ msgstr "Ĉefaj programistoj"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Partoprenantoj"
+msgstr "Aktivaj partoprenantoj"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Partoprenantoj"
+msgstr "Antauxaj partoprenantoj"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -53,9 +51,8 @@ msgstr "Servilo administrita de"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Tradukada administrado"
+msgstr "'Goodies' administrado"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -116,34 +113,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Demona modo"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "La demona modo ne estas subtenata."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun devas esti kompilita kun D-BUS ebleco por ebligi la demonan modon."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Ne povas ŝargi "
+msgstr "Ne povas malfermi la ekranon \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS mesaĝa buso dekonektita. Adiaŭi...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Sistema eraro"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Ne eblas el-lanĉi en la fono:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -163,9 +160,8 @@ msgid "Run Error"
 msgstr "Lanĉa Eraro"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Lanĉa Eraro"
+msgstr "Nekonata Eraro"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
