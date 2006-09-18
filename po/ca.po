@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-03-18 18:40+0100\n"
+"PO-Revision-Date: 2006-09-18 22:57+0200\n"
 "Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
 "Language-Team: catalan\n"
 "MIME-Version: 1.0\n"
@@ -33,15 +33,13 @@ msgstr "Desenvolupadors principals"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Col·laboradors"
+msgstr "Coŀlaboradors actius"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Col·laboradors"
+msgstr "Antics coŀlaboradors"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -54,9 +52,8 @@ msgstr "Servidor mantingut per"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Supervisors de traduccions"
+msgstr "Supervisors de les extensions"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -118,34 +115,34 @@ msgstr "GPL "
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Mode dimoni"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "El mode dimoni no està suportat"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "No s'ha pogut carregar"
+msgstr "No s’ha pogut obrir la pantalla «%s»,"
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Bus de missatges D-BUS desconnectat. S’està sortint…\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Error del sistema"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "No s’ha pogut crear un nou procés al rerefons:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -165,9 +162,8 @@ msgid "Run Error"
 msgstr "Error d'execució"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Error d'execució"
+msgstr "Error desconegut"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
