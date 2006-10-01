@@ -94,7 +94,7 @@ fi
 # Note that you cannot feed this script with a text file which
 # contains spaces in its name and/or path if your $TERMCMD = powershell
 if [ x"$TITLE" = x"" -o x"$EXEC" = x"" ]; then
-	exec $TERMCMD $ESTRING
+	exec $TERMCMD "$ESTRING"
 elif [ "$TERMCMD" = "powershell" ]; then
  	exec $TERMCMD $TITLE"$TSTRING" $EXEC"$ESTRING $MSTRING"
 elif [ "x$MSTRING" = "x" ]; then
