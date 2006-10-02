@@ -4,14 +4,15 @@
 # Poul Ionkin <wizzard@nmg.lv>, 2003.
 # Anthony Ivanoff <a-i@bk.ru>, 2004, 2005.
 # Sergey Fedoseev <fedoseev.sergey@gmail.com>, 2006.
+# Andrey Fedoseev <andrey.fedoseev@gmail.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-04-20 19:52+0600\n"
-"Last-Translator: Sergey Fedoseev <fedoseev.sergey@gmail.com>\n"
+"PO-Revision-Date: 2006-08-13 17:39+0600\n"
+"Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,15 +36,13 @@ msgstr "Основные разработчики"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "Внесли вклад"
+msgstr "Активные помощники"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Внесли вклад"
+msgstr "Ранее внесли свой вклад"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -56,9 +55,8 @@ msgstr "Сервер поддерживается"
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Координация переводов"
+msgstr "Координация разработки дополнений"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -90,7 +88,7 @@ msgstr "Рабочая среда Xfce"
 
 #: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 by Olivier Fourdan"
+msgstr "Авторское право: Olivier Fourdan, 2002-2006"
 
 #: xfce4-about/info.c:435
 msgid "Info"
@@ -120,42 +118,43 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Режим демона"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Режим демона не поддерживается"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
+"Xfrun должна быть собрана с поддержкой D-BUS для использования режима демона."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Невозможно загрузить"
+msgstr "Невозможно открыть экран \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Канал сообщений D-BUS разсоединён. Выход ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Системная ошибка"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Невозможно переместить процесс в фоновый режим:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
-msgstr "Запустить в терминале"
+msgstr "Запустить в _терминале"
 
 #: xfrun/xfrun-dialog.c:232
 msgid "_Run"
-msgstr "Выполнить"
+msgstr "_Выполнить"
 
 #: xfrun/xfrun-dialog.c:657
 #, c-format
@@ -167,9 +166,8 @@ msgid "Run Error"
 msgstr "Ошибка при выполнении"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Ошибка при выполнении"
+msgstr "Неизвестная ошибка"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
