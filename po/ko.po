@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-08 00:54+0200\n"
-"PO-Revision-Date: 2006-04-15 05:15+0900\n"
-"Last-Translator: ByungHyun Choi <byunghyunchoi@rtlinux.or.kr>\n"
+"PO-Revision-Date: 2006-10-09 16:28+0900\n"
+"Last-Translator: ByungHyun Choi <byunghyun.choi@gmail.com>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
 "net>\n"
 "MIME-Version: 1.0\n"
@@ -32,15 +32,13 @@ msgstr "개발하신 분들"
 
 #. Active contributors
 #: xfce4-about/info.c:208
-#, fuzzy
 msgid "Active contributors"
-msgstr "도와주신 분들"
+msgstr "도와주신 분들(현재 활동 중)"
 
 #. Previous contributors
 #: xfce4-about/info.c:212
-#, fuzzy
 msgid "Previous contributors"
-msgstr "도와주신 분들"
+msgstr "이전에 도와주신 분들"
 
 #: xfce4-about/info.c:217
 msgid "Web Hosting and Mailing Lists provided by"
@@ -53,9 +51,8 @@ msgstr "서버 관리 "
 
 #. Goodies supervision
 #: xfce4-about/info.c:253
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "번역 관리"
+msgstr "Goodies 관리"
 
 #. Translations supervision
 #: xfce4-about/info.c:257
@@ -115,34 +112,33 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "데몬 모드"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "데몬 모드를 지원하지 않습니다."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "데몬 모드를 사용하려면 D-BUS를 지원하도록 컴파일해야 합니다."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "읽어 들이지 못 했습니다."
+msgstr "화면 \"%s\"를(을) 열지 못 했습니다."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS 메시지 버스와 연결이 끊어졌습니다. 종료합니다...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "시스템 오류"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "백그라운드로 진입하지 못 했습니다:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -162,9 +158,8 @@ msgid "Run Error"
 msgstr "실행 오류"
 
 #: xfrun/xfrun-dialog.c:661
-#, fuzzy
 msgid "Unknown Error"
-msgstr "실행 오류"
+msgstr "모르는 오류"
 
 #: xfrun/xfrun-dialog.c:748
 #, c-format
