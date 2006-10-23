@@ -123,7 +123,8 @@ msgstr "El mode dimoni no està suportat"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
+msgstr ""
+"Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format

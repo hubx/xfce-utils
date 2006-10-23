@@ -69,7 +69,8 @@ msgstr "Người dịch"
 
 #: xfce4-about/info.c:292
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
+msgstr ""
+"Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
 #: xfce4-about/info.c:296
 msgid "Thanks to all who helped making this software available."
@@ -173,4 +174,3 @@ msgstr "Mở %s với chương trình nào?"
 #: xfrun/xfrun-dialog.c:753
 msgid "Run program"
 msgstr "Chạy chương trình"
-

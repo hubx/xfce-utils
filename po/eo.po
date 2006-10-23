@@ -121,7 +121,8 @@ msgstr "La demona modo ne estas subtenata."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun devas esti kompilita kun D-BUS ebleco por ebligi la demonan modon."
+msgstr ""
+"Xfrun devas esti kompilita kun D-BUS ebleco por ebligi la demonan modon."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format

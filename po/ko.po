@@ -123,6 +123,7 @@ msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "데몬 모드를 사용하려면 D-BUS를 지원하도록 컴파일해야 합니다."
 
 #: xfrun/xfrun-dbus.c:141
+#, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "화면 \"%s\"를(을) 열지 못 했습니다."
 

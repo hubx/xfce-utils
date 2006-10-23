@@ -1,18 +1,19 @@
 scripts= \
-	 xflock4 \
-	 xfmountdev4
+	xfterm4 \
+	xflock4 \
+	xfmountdev4
 
 bin_SCRIPTS= \
-	     $(scripts) \
-	     xfterm4 \
-	     xfbrowser4 \
-	     startxfce4 \
-	     xfhelp4
+	$(scripts) \
+	xfterm4 \
+	xfbrowser4 \
+	startxfce4 \
+	xfhelp4
 
 # cannot be set from configure, because ${prefix} is not expanded
 edit = sed \
-        -e 's,@datadir\@,$(datadir),g' \
-        -e 's,@sysconfdir\@,$(sysconfdir),g' \
+	-e 's,@datadir\@,$(datadir),g' \
+	-e 's,@sysconfdir\@,$(sysconfdir),g' \
 	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g' \
 	-e 's,@TERMINAL_DEFAULT\@,@TERMINAL_DEFAULT@,g'
 
@@ -36,11 +37,11 @@ conffiles_DATA=\
 	xinitrc
 
 EXTRA_DIST = \
-	     $(scripts) \
-	     $(conffiles_DATA) \
-	     xfbrowser4.in \
-	     startxfce4.in \
-	     xfhelp4.in
+	$(scripts) \
+	$(conffiles_DATA) \
+	xfbrowser4.in \
+	startxfce4.in \
+	xfhelp4.in
 
 distclean-local:
 	rm -f xfhelp4 startxfce4 xfbrowser4
