@@ -16,11 +16,6 @@ edit = sed \
 	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g' \
 	-e 's,@TERMINAL_DEFAULT\@,@TERMINAL_DEFAULT@,g'
 
-xfterm4: Makefile $(srcdir)/xfterm4.in
-	rm -f xfterm4 xfterm4.tmp
-	$(edit) $(srcdir)/xfterm4.in >xfterm4.tmp
-	mv xfterm4.tmp xfterm4
-
 xfbrowser4: Makefile $(srcdir)/xfbrowser4.in
 	rm -f xfbrowser4 xfbrowser4.tmp
 	$(edit) $(srcdir)/xfbrowser4.in >xfbrowser4.tmp
@@ -43,11 +38,10 @@ conffiles_DATA=\
 EXTRA_DIST = \
 	     $(scripts) \
 	     $(conffiles_DATA) \
-	     xfterm4.in \
 	     xfbrowser4.in \
 	     startxfce4.in \
 	     xfhelp4.in
 
 distclean-local:
-	rm -f xfhelp4 startxfce4 xfbrowser4 xfterm4
+	rm -f xfhelp4 startxfce4 xfbrowser4
 
