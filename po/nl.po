@@ -83,7 +83,7 @@ msgstr "Over Xfce 4"
 #: xfce4-about/info.c:413
 #, fuzzy
 msgid "Xfce Desktop Environment"
-msgstr "Xfce Desktop Environment"
+msgstr "Xfce Bureaublad Omgeving"
 
 #: xfce4-about/info.c:413
 msgid "Copyright 2002-2006 by Olivier Fourdan"
@@ -130,7 +130,7 @@ msgstr "Xfrun moet zijn gecompiled met D-BUS ondersteuning om daemon modus te ac
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Fout bij het openen van display \"%s\""
+msgstr "Fout bij het openen van display \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
