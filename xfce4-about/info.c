@@ -115,7 +115,8 @@ create_tags (GtkTextBuffer * buffer)
 }
 
 static gboolean
-add_author (FILE * file_authors, GtkTextBuffer *textbuffer, GtkTextIter *iter, const gchar *category, const gchar * title)
+add_author (FILE * file_authors, GtkTextBuffer * textbuffer, GtkTextIter * iter, const gchar * category,
+            const gchar * title)
 {
   gchar buf[80];
 
@@ -381,46 +382,31 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename, gb
 int
 main (int argc, char **argv)
 {
-  GtkWidget *header;
-  GtkWidget *vbox, *vbox2;
+  GtkWidget *vbox;
   GtkWidget *notebook;
   GtkWidget *buttonbox;
   GtkWidget *info_ok_button;
   GtkWidget *info_help_button;
   GdkPixbuf *logo_pb;
-  char *text;
 
   xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
   gtk_init (&argc, &argv);
 
-  info = gtk_dialog_new ();
+  info = xfce_titled_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (info), _("About Xfce 4"));
+  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (info), _("Copyright 2002-2006 by Olivier Fourdan"));
   gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
   gtk_window_stick (GTK_WINDOW (info));
 
   logo_pb = xfce_themed_icon_load ("xfce4-logo", 48);
   gtk_window_set_icon (GTK_WINDOW (info), logo_pb);
-
-  vbox2 = gtk_vbox_new (FALSE, 0);
-  gtk_widget_show (vbox2);
-  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (info)->vbox), vbox2, TRUE, TRUE, 0);
-
-  /* header with logo */
-  text =
-    g_strdup_printf
-    ("%s\n<span size=\"smaller\" style=\"italic\">%s</span>",
-     _("Xfce Desktop Environment"), _("Copyright 2002-2006 by Olivier Fourdan"));
-  header = xfce_create_header (logo_pb, text);
-  gtk_widget_show (header);
-  gtk_box_pack_start (GTK_BOX (vbox2), header, FALSE, FALSE, 0);
-  g_free (text);
   g_object_unref (logo_pb);
 
   vbox = gtk_vbox_new (FALSE, BORDER);
   gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER);
   gtk_widget_show (vbox);
-  gtk_box_pack_start (GTK_BOX (vbox2), vbox, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (info)->vbox), vbox, TRUE, TRUE, 0);
 
   /* the notebook */
   notebook = gtk_notebook_new ();
