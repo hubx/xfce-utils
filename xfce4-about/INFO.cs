@@ -15,7 +15,7 @@ o Správce plochy (xfdesktop)
    nastavuje barvu nebo obrázek pozadí a poskytuje přístup do menu při
    kliknutí na plochu
 
-o Správce souborů (xffm)
+o Správce souborů (thunar)
    rychlý správce souborů
 
 o Správce sezení (xfce4-session)
@@ -24,9 +24,6 @@ o Správce sezení (xfce4-session)
 o Nástroje
    xfprint4: tisk souborů
    xfrun4: spouštění programů
-   xftaskbar4: jednoduchý panel úloh s volitelným přepínačem ploch
-               a systémovou oblastí
-   xfce4-iconbox: zobrazuje minimalizované aplikace v oblasti pro ikony
 
 
 Xfce 4 je také vývojová platforma, poskytující mnoho knihoven, které

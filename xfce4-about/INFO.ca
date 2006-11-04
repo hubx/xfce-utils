@@ -15,7 +15,7 @@ o Gestor de l'escriptori (xfdesktop)
    Elecció del color o la imatge de fons i ofereix un menú quan es pitja
    sobre el rerefons de l'escriptori.
 
-o Gestor de fitxers (xffm)
+o Gestor de fitxers (thunar)
    Gestor de fitxers realment ràpid.
 
 o Session manager (xfce4-session)
@@ -25,9 +25,6 @@ o Session manager (xfce4-session)
 o Utilitats:
    xfprint4     : Impressió de fitxers.
    xfrun4       : Execució de programes.
-   xftaskbar4   : Barra de tasques simple amb, opcionalment, un paginador
-                  d'escriptoris i una safata de tasques.
-   xfce4-iconbox: Mostra les aplicacions com icones en l'escriptori.
 
 
 Xfce 4, és també una plataforma de desenvolupament amb força llibreries, que

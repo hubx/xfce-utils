@@ -13,7 +13,7 @@ o Paneeli (xfce4-panel)
 o Työpöytämanageri (xfdesktop)
    asettaa taustavärin tai -kuvan ja tarjoaa valikon napsauttaessasi työpöytää
 
-o Tiedostonhallinta (xffm)
+o Tiedostonhallinta (thunar)
    vauhdikas tiedostonhallinta
 
 o Istunnonhallinta (xfce4-session)
@@ -23,9 +23,6 @@ o Istunnonhallinta (xfce4-session)
 o Apuohjelmat
    xfprint4: tulostaa tiedostoja
    xfrun4: käynnistää sovelluksia
-   xftaskbar4: yksinkertainen tehtäväpalkki valinnaisella työpöydän
-               vaihtajalla ja järjestelmälokerolla
-   xfce4-iconbox: näyttää pienennetyt sovellukset kuvakelaatikossa
 
 
 Xfce 4 on myös kehitysalusta tarjoten useita kirjastoja, jotka auttavat

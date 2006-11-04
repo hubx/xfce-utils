@@ -14,7 +14,7 @@ o un gestore del desktop (xfdesktop)
    stabilisce un colore o un'immagine di sfondo e fornisce un menu quando
    si clicca sullo sfondo del desktop
 
-o un gestore di file (xffm)
+o un gestore di file (thunar)
    un veloce gestore di file
 
 o Session manager (xfce4-session)
@@ -24,8 +24,6 @@ o Session manager (xfce4-session)
 o alcuni programmi di utilità
    xfprint4: stampa i file
    xfrun4: avvia i programmi
-   xftaskbar4: semplice barra dei processi con pager e barra di sistema a scelta
-   xfce4-iconbox: mostra in un riquadro le icone delle applicazioni minimizzate
 
 
 Xfce 4 è anche una piattaforma di sviluppo con molte librerie e ciò aiuta i

@@ -14,7 +14,7 @@ o Desktop manager (xfdesktop)
    sets a background color or image and provides a menu when you click on
    the desktop background
 
-o File manager (xffm)
+o File manager (thunar)
    fast file manager
 
 o Session manager (xfce4-session)
@@ -24,8 +24,6 @@ o Session manager (xfce4-session)
 o Utilities
    xfprint4: print files
    xfrun4: run programs
-   xftaskbar4: simple taskbar with optional pager and system tray
-   xfce4-iconbox: show minimized apps in an icon box
 
 
 Xfce 4 is also a development platform providing several libraries, that help

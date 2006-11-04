@@ -15,7 +15,7 @@ o Trình quản lí desktop (xfdesktop)
    thiết lập màu nền hoặc ảnh nền và cung cấp trình đơn khi nhấp chuột vào
    nền desktop
 
-o Trình quản lí tập tin (xffm)
+o Trình quản lí tập tin (thunar)
    trình quản lí tập tin nhanh
 
 o Session manager (xfce4-session)
@@ -25,9 +25,6 @@ o Session manager (xfce4-session)
 o Các tiện ích
    xfprint4: in tập tin
    xfrun4: chạy chương trình
-   xftaskbar4: thanh tác vụ đơn giản với trình chuyển trang tuỳ chọn và khay
-   hệ thống
-   xfce4-iconbox: hiển thị các ứng dụng được thu nhỏ trong hộp biểu tượng
 
 
 Xfce 4 còn là một môi trường phát triển cung cấp một số thư viện, giúp các
