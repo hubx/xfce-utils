@@ -7,9 +7,9 @@
 # Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.90.2\n"
+"Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-08 00:54+0200\n"
+"POT-Creation-Date: 2006-11-04 19:05+0100\n"
 "PO-Revision-Date: 2006-09-05 02:40+0400\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -19,97 +19,93 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: nplurals=1; nplural=0\n"
 
-#: xfce4-about/info.c:171
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "Không nạp được "
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Lãnh đạo dự án"
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Nhà phát triển chính"
 
 #. Active contributors
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "Cộng tác viên tích cực"
 
 #. Previous contributors
-#: xfce4-about/info.c:212
+#: xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "Cộng tác viên trước đây"
 
-#: xfce4-about/info.c:217
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Trang Web và danh sách thư cung cấp bởi"
 
 #. Server admins
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Điều hành máy chủ"
 
 #. Goodies supervision
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "Giám sát goodies"
 
 #. Translations supervision
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Giám sát dịch"
 
 #. Translators
-#: xfce4-about/info.c:261
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Người dịch"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Cảm ơn các bạn đã giúp đỡ cho phần mềm này."
 
-#: xfce4-about/info.c:398
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Giới thiệu XFce 4"
 
-#: xfce4-about/info.c:413
-msgid "Xfce Desktop Environment"
-msgstr "Môi trường Desktop Xfce"
-
-#: xfce4-about/info.c:413
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Bản quyền 2002-2006 thuộc về Olivier Fourdan"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "Thông tin"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Ghi công"
 
-#: xfce4-about/info.c:438
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Bản quyền"
 
-#: xfce4-about/info.c:439
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:440
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:441
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
@@ -153,24 +149,27 @@ msgstr "Chạy trong _trạm cuối"
 msgid "_Run"
 msgstr "_Chạy"
 
-#: xfrun/xfrun-dialog.c:657
+#: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Lỗi chạy lệnh \"%s\":"
 
-#: xfrun/xfrun-dialog.c:659
+#: xfrun/xfrun-dialog.c:660
 msgid "Run Error"
 msgstr "Lỗi chạy chương trình"
 
-#: xfrun/xfrun-dialog.c:661
+#: xfrun/xfrun-dialog.c:662
 msgid "Unknown Error"
 msgstr "Lỗi không rõ"
 
-#: xfrun/xfrun-dialog.c:748
+#: xfrun/xfrun-dialog.c:749
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Mở %s với chương trình nào?"
 
-#: xfrun/xfrun-dialog.c:753
+#: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "Chạy chương trình"
+
+#~ msgid "Xfce Desktop Environment"
+#~ msgstr "Môi trường Desktop Xfce"

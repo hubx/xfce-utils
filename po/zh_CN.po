@@ -8,9 +8,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-08 00:54+0200\n"
+"POT-Creation-Date: 2006-11-04 19:05+0100\n"
 "PO-Revision-Date: 2006-03-17 14:56+0800\n"
 "Last-Translator: Jick Nan <jick.nan@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -18,99 +18,95 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:171
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "无法加载"
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "项目领导"
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "核心开发者"
 
 #. Active contributors
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:209
 #, fuzzy
 msgid "Active contributors"
 msgstr "贡献者"
 
 #. Previous contributors
-#: xfce4-about/info.c:212
+#: xfce4-about/info.c:213
 #, fuzzy
 msgid "Previous contributors"
 msgstr "贡献者"
 
-#: xfce4-about/info.c:217
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "网站和邮件列表提供"
 
 #. Server admins
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "服务器维护者"
 
 #. Goodies supervision
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:254
 #, fuzzy
 msgid "Goodies supervision"
 msgstr "翻译管理"
 
 #. Translations supervision
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "翻译管理"
 
 #. Translators
-#: xfce4-about/info.c:261
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "翻译者"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "如果你知道本列表上有漏掉的任何信息，请告诉我们<"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "谢谢所有帮助这个软件发展的人。"
 
-#: xfce4-about/info.c:398
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "关于Xfce 4 "
 
-#: xfce4-about/info.c:413
-msgid "Xfce Desktop Environment"
-msgstr "Xfce 桌面环境"
-
-#: xfce4-about/info.c:413
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "版权所有2002-2006 Olivier Fourdan"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "信息"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "光荣榜"
 
-#: xfce4-about/info.c:438
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "版权"
 
-#: xfce4-about/info.c:439
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:440
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:441
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
@@ -154,25 +150,28 @@ msgstr "在终端中运行(_t)"
 msgid "_Run"
 msgstr "运行(_R)"
 
-#: xfrun/xfrun-dialog.c:657
+#: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "命令 \"%s\" 运行失败："
 
-#: xfrun/xfrun-dialog.c:659
+#: xfrun/xfrun-dialog.c:660
 msgid "Run Error"
 msgstr "运行错误"
 
-#: xfrun/xfrun-dialog.c:661
+#: xfrun/xfrun-dialog.c:662
 #, fuzzy
 msgid "Unknown Error"
 msgstr "运行错误"
 
-#: xfrun/xfrun-dialog.c:748
+#: xfrun/xfrun-dialog.c:749
 #, c-format
 msgid "Open %s with what program?"
 msgstr "用什么程序打开 %s ?"
 
-#: xfrun/xfrun-dialog.c:753
+#: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "运行程序"
+
+#~ msgid "Xfce Desktop Environment"
+#~ msgstr "Xfce 桌面环境"

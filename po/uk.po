@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-08 00:54+0200\n"
+"POT-Creation-Date: 2006-11-04 19:05+0100\n"
 "PO-Revision-Date: 2005-10-07 23:35+0900\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.ua>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -15,101 +15,97 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:171
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "Не вдається завантажити"
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Лідер проекту"
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Головні розробники"
 
 #. Active contributors
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:209
 #, fuzzy
 msgid "Active contributors"
 msgstr "Помічники"
 
 #. Previous contributors
-#: xfce4-about/info.c:212
+#: xfce4-about/info.c:213
 #, fuzzy
 msgid "Previous contributors"
 msgstr "Помічники"
 
-#: xfce4-about/info.c:217
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Веб-хостінг та списки розсилки надані"
 
 #. Server admins
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Сервер підтримується"
 
 #. Goodies supervision
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:254
 #, fuzzy
 msgid "Goodies supervision"
 msgstr "Координація перекладів"
 
 #. Translations supervision
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Координація перекладів"
 
 #. Translators
-#: xfce4-about/info.c:261
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Перекладачі"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, "
 "дайте нам знати за адресою <"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Дякуємо усім, хто допоміг зробити це програмне забезпечення."
 
-#: xfce4-about/info.c:398
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
-#: xfce4-about/info.c:413
-msgid "Xfce Desktop Environment"
-msgstr "Робоче середовище XFce"
-
-#: xfce4-about/info.c:413
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Авторське право 2002-2006, Olivier Fourdan"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "Інформація"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Подяки"
 
-#: xfce4-about/info.c:438
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: xfce4-about/info.c:439
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:440
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:441
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
@@ -153,25 +149,28 @@ msgstr "Запустити у _терміналі"
 msgid "_Run"
 msgstr "_Запустити"
 
-#: xfrun/xfrun-dialog.c:657
+#: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Помилка запуску команди \"%s\":"
 
-#: xfrun/xfrun-dialog.c:659
+#: xfrun/xfrun-dialog.c:660
 msgid "Run Error"
 msgstr "Помилка запуску"
 
-#: xfrun/xfrun-dialog.c:661
+#: xfrun/xfrun-dialog.c:662
 #, fuzzy
 msgid "Unknown Error"
 msgstr "Помилка запуску"
 
-#: xfrun/xfrun-dialog.c:748
+#: xfrun/xfrun-dialog.c:749
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Якою програмою відкрити %s?"
 
-#: xfrun/xfrun-dialog.c:753
+#: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "Запуск програми"
+
+#~ msgid "Xfce Desktop Environment"
+#~ msgstr "Робоче середовище XFce"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-08 00:54+0200\n"
+"POT-Creation-Date: 2006-11-04 19:05+0100\n"
 "PO-Revision-Date: 2006-08-24 23:47+0400\n"
 "Last-Translator: Dimitri Gogelia <delphi.knight@gmail.com>\n"
 "Language-Team: Georgian <delphi.knight@gmail.com>\n"
@@ -12,96 +12,92 @@ msgstr ""
 "X-Poedit-Language: Georgian\n"
 "X-Poedit-Country: GEORGIA\n"
 
-#: xfce4-about/info.c:171
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr ""
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr ""
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr ""
 
 #. Active contributors
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr ""
 
 #. Previous contributors
-#: xfce4-about/info.c:212
+#: xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr ""
 
-#: xfce4-about/info.c:217
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr ""
 
 #. Server admins
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr ""
 
 #. Goodies supervision
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr ""
 
 #. Translations supervision
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr ""
 
 #. Translators
-#: xfce4-about/info.c:261
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "თარგმანები"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 
-#: xfce4-about/info.c:398
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Xfce 4-ის შესახებ"
 
-#: xfce4-about/info.c:413
-msgid "Xfce Desktop Environment"
-msgstr ""
-
-#: xfce4-about/info.c:413
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr ""
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "ინფორმაცია"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "მადლობები"
 
-#: xfce4-about/info.c:438
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "საავტორო უფლებები"
 
-#: xfce4-about/info.c:439
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr ""
 
-#: xfce4-about/info.c:440
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr ""
 
-#: xfce4-about/info.c:441
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr ""
 
@@ -145,24 +141,24 @@ msgstr ""
 msgid "_Run"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:657
+#: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:659
+#: xfrun/xfrun-dialog.c:660
 msgid "Run Error"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:661
+#: xfrun/xfrun-dialog.c:662
 msgid "Unknown Error"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:748
+#: xfrun/xfrun-dialog.c:749
 #, c-format
 msgid "Open %s with what program?"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:753
+#: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr ""

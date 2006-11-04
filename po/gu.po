@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.1\n"
+"Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-08 00:54+0200\n"
+"POT-Creation-Date: 2006-11-04 19:05+0100\n"
 "PO-Revision-Date: 2005-10-07 23:25+0900\n"
 "Last-Translator: Ankit Patel <ankit644@yahoo.com>\n"
 "Language-Team: Gujarati <indianoss-gujarati@lists.sourceforge.net>\n"
@@ -19,101 +19,97 @@ msgstr ""
 "\n"
 "\n"
 
-#: xfce4-about/info.c:171
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "લાવવામાં અસમર્થ "
 
 #. Project lead
-#: xfce4-about/info.c:200
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "પ્રોજેક્ટ આગેવાન"
 
 #. Core developers
-#: xfce4-about/info.c:204
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "મૂળ વિકાસકર્તાઓ"
 
 #. Active contributors
-#: xfce4-about/info.c:208
+#: xfce4-about/info.c:209
 #, fuzzy
 msgid "Active contributors"
 msgstr "ફાળો આપનારાઓ"
 
 #. Previous contributors
-#: xfce4-about/info.c:212
+#: xfce4-about/info.c:213
 #, fuzzy
 msgid "Previous contributors"
 msgstr "ફાળો આપનારાઓ"
 
-#: xfce4-about/info.c:217
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "વેબ હોસ્ટીંગ અને મેઈલિગ યાદીઓ આના દ્વારા પૂરી પડાયેલ છે"
 
 #. Server admins
-#: xfce4-about/info.c:249
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "સર્વરની જાણવણી આના દ્વારા થયેલ છે"
 
 #. Goodies supervision
-#: xfce4-about/info.c:253
+#: xfce4-about/info.c:254
 #, fuzzy
 msgid "Goodies supervision"
 msgstr "ભાષાંતરોનું સુપરવિઝન"
 
 #. Translations supervision
-#: xfce4-about/info.c:257
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "ભાષાંતરોનું સુપરવિઝન"
 
 #. Translators
-#: xfce4-about/info.c:261
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "અનુવાદકો"
 
-#: xfce4-about/info.c:292
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "જો તમે જાણતા હોવ કે આ યાદીમાંથી કોઈપણ ગુમ થયેલ છે, તો મહેરબાની કરીને અમને આના પર "
 "જણાવો <"
 
-#: xfce4-about/info.c:296
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "આ સોફ્ટવેર ઉપલબ્ધ કરાવવામાં મદદ કરનાર બધાને આભાર."
 
-#: xfce4-about/info.c:398
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Xfce 4 વિશે"
 
-#: xfce4-about/info.c:413
-msgid "Xfce Desktop Environment"
-msgstr "Xfce ડેસ્કટોપ પર્યાવરણ"
-
-#: xfce4-about/info.c:413
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2006 by Olivier Fourdan"
 msgstr "Copyright 2002-2006 by Olivier Fourdan"
 
-#: xfce4-about/info.c:435
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "જાણકારી"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:437
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "યશો"
 
-#: xfce4-about/info.c:438
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "મુદ્રણાધિકાર"
 
-#: xfce4-about/info.c:439
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:440
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:441
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
@@ -157,26 +153,29 @@ msgstr "ટર્મિનલમાં ચલાવો (_t)"
 msgid "_Run"
 msgstr "ચલાવો (_R)"
 
-#: xfrun/xfrun-dialog.c:657
+#: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:659
+#: xfrun/xfrun-dialog.c:660
 #, fuzzy
 msgid "Run Error"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun-dialog.c:661
+#: xfrun/xfrun-dialog.c:662
 #, fuzzy
 msgid "Unknown Error"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun-dialog.c:748
+#: xfrun/xfrun-dialog.c:749
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s ને કયા કાર્યક્રમ સાથે ખોલવું છે?"
 
-#: xfrun/xfrun-dialog.c:753
+#: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "કાર્યક્રમ ચલાવો"
+
+#~ msgid "Xfce Desktop Environment"
+#~ msgstr "Xfce ડેસ્કટોપ પર્યાવરણ"
