@@ -43,13 +43,36 @@ else
   prog=/bin/sh
 fi
 
+if test ! x"$*" = x""
+then
+  OPT=$*
+  if test x"${OPT#*--}" = x"${OPT}"
+  then
+    CLIENTRC=${OPT}
+  else
+    SERVERRC=${OPT#*-- }
+    CLIENTRC=${OPT% --*}
+  fi
+fi
+
+if [ -f "$HOME/.xserverrc" ]; then
+  SERVERRC="$HOME/.xserverrc $SERVERRC"
+elif [ -f /etc/X11/xinit/xserverrc ]; then
+  SERVERRC="/etc/X11/xinit/xserverrc $SERVERRC"
+fi
+
+if ! test x"$SERVERRC" = x""
+then
+  SERVERRC="-- $SERVERRC"
+fi
+
 if [ -f $BASEDIR/xinitrc ]; then
-  exec $prog $BASEDIR/xinitrc $*
+  exec $prog $BASEDIR/xinitrc $CLIENTRC $SERVERRC
 elif [ -f $HOME/.xfce4/xinitrc ]; then
   mkdir -p $BASEDIR
   cp $HOME/.xfce4/xinitrc $BASEDIR/
-  exec $prog $BASEDIR/xinitrc $*
+  exec $prog $BASEDIR/xinitrc $CLIENTRC $SERVERRC
 else
-  exec $prog @sysconfdir@/xdg/xfce4/xinitrc $*
+  exec $prog @sysconfdir@/xdg/xfce4/xinitrc $CLIENTRC $SERVERRC
 fi  
 
