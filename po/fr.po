@@ -17,12 +17,12 @@ msgstr ""
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr "Impossible de charger"
+msgstr "Impossible de charger "
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr "Tête du Projet"
+msgstr "Direction du Projet"
 
 #. Core developers
 #: xfce4-about/info.c:205
@@ -66,12 +66,12 @@ msgstr "Traducteurs"
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
-"Si vous pensez qu'une personne devrait figurer sur cette liste, s'il vous "
-"plaît faites le nous savoir à <"
+"Si vous pensez qu'une personne devrait figurer sur cette liste, merci "
+"de nous l'indiquer à <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr "Merci à tous ceux qui ont aidé à rendre ce logiciel utilisable."
+msgstr "Merci à tous ceux qui ont aidés à la réalisation de ce logiciel."
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
