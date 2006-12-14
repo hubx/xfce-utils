@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-04 19:05+0100\n"
-"PO-Revision-Date: 2005-10-07 23:29+0900\n"
+"PO-Revision-Date: 2006-12-14 08:47+0300\n"
 "Last-Translator: Mantas Zapolskas <mantaz@users.sf.net>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -17,59 +17,60 @@ msgstr ""
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Neįmanoma įkelti"
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Projekto Vadovas"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Pagrindiniai kūrėjai"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Dabartiniai bendradarbiai"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Ankstesni bendradarbiai"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Tinklapio talpinimas ir elektroninio pašto grupių paslaugų talpinimas"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Serverių priežiūra"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
+#, fuzzy
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodies supervision"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Vertimų priežiūra"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Vertėjai"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Praneškite, jeigu ką nors pamiršome"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Ačiū visiems, padėjusiems kurti šią programinę įrangą"
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
@@ -107,34 +108,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Tarnybos veiksena"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Tarnybos veiksena nepalaikoma."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Norėdami įjungti tarnybos veikseną, turite Xfrun sukompiliuoti su D-BUS palaikymu."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Neįmanoma atidaryti ekrano \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS message bus disconnected. Exiting ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Sisteminė klaida"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Unable to fork to background:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -147,17 +148,15 @@ msgstr "_Paleisti"
 #: xfrun/xfrun-dialog.c:658
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Komanda \"%s\" nepasileido:"
 
 #: xfrun/xfrun-dialog.c:660
-#, fuzzy
 msgid "Run Error"
-msgstr "Paleisti programą"
+msgstr "Paleisties klaida"
 
 #: xfrun/xfrun-dialog.c:662
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Paleisti programą"
+msgstr "Nežinoma klaida"
 
 #: xfrun/xfrun-dialog.c:749
 #, c-format
@@ -167,6 +166,3 @@ msgstr "Su kokia programa atidaryti %s?"
 #: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "Paleisti programą"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "XFce Aplinka"
