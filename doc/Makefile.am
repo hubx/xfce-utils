@@ -11,6 +11,7 @@ cssdir = $(datadir)/xfce4/doc
 
 css_DATA = \
 	xfce.css \
+	xfce-chunk.css \
 	xfce-mouse.png
 
 EXTRA_DIST = $(noinst_DATA) $(css_DATA)
@@ -18,4 +19,3 @@ EXTRA_DIST = $(noinst_DATA) $(css_DATA)
 html: Makefile
 	make -C xfce4-user-guide html; \
 	make -C xfce-utils html
-	

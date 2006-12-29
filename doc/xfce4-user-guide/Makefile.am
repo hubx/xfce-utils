@@ -1,9 +1,5 @@
 SUBDIRS = \
-	C \
-	fr \
-	it 
-	
+	C
+
 html: Makefile
 	make -C C html
-	make -C fr html
-	make -C it html
