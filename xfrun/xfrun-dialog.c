@@ -534,6 +534,9 @@ xfrun_menu_button_clicked(GtkWidget *widget,
     
     gtk_tree_model_foreach(dialog->priv->completion_model,
                            xfrun_populate_menu, menu);
+                           
+    gtk_menu_set_screen(GTK_MENU(menu),
+                        gtk_widget_get_screen (widget));
     
     gtk_menu_popup(GTK_MENU(menu), NULL, NULL,
                    xfrun_menu_position, dialog,
