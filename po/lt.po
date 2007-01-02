@@ -116,7 +116,9 @@ msgstr "Tarnybos veiksena nepalaikoma."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Norėdami įjungti tarnybos veikseną, turite Xfrun sukompiliuoti su D-BUS palaikymu."
+msgstr ""
+"Norėdami įjungti tarnybos veikseną, turite Xfrun sukompiliuoti su D-BUS "
+"palaikymu."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format

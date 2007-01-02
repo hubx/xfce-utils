@@ -169,4 +169,3 @@ msgstr "%s ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਨਾਲ ਖੋਲੋ?"
 #: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "ਪ੍ਰੋਗਰਾਮ ਚਲਾਓ"
-

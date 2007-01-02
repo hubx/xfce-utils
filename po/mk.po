@@ -116,7 +116,9 @@ msgstr "Режимот на демон не е поддржан."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun мора да биде искомпајлиран D-BUS поддршка за да се овозможи режимот на демон."
+msgstr ""
+"Xfrun мора да биде искомпајлиран D-BUS поддршка за да се овозможи режимот на "
+"демон."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -166,4 +168,3 @@ msgstr "Со која програма да го отворам %s?"
 #: xfrun/xfrun-dialog.c:754
 msgid "Run program"
 msgstr "Изврши програма"
-
