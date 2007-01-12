@@ -1,6 +1,6 @@
 # translation of eu.po to librezale
 # Euskara translations for xfce-utila package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 #
 # Jon Latorre Martinez <patataman@airtel.net>, 2003.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-03-07 23:01+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
@@ -81,8 +81,9 @@ msgid "About Xfce 4"
 msgstr "XFce 4-ri buruz "
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -149,25 +150,25 @@ msgstr "Abiarazi _terminalean"
 msgid "_Run"
 msgstr "_Abiarazi"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "\"%s\" komandoa huts egn du abiaraztean:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "Abiarazte Errorea"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "Errore Ezezaguna"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Zein programekin ireki %s?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Programa abiarazi"
 

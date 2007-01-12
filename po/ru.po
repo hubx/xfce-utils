@@ -1,5 +1,5 @@
 # Russian translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Poul Ionkin <wizzard@nmg.lv>, 2003.
 # Anthony Ivanoff <a-i@bk.ru>, 2004, 2005.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-08-13 17:39+0600\n"
 "Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -83,8 +83,9 @@ msgid "About Xfce 4"
 msgstr "Об Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Авторское право: Olivier Fourdan, 2002-2006"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Авторское право: Olivier Fourdan, 2002-2007"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -152,25 +153,25 @@ msgstr "Запустить в _терминале"
 msgid "_Run"
 msgstr "_Выполнить"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Не удалось выполнить команду \"%s\":"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "Ошибка при выполнении"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "Неизвестная ошибка"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Какой программой открыть %s?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Запуск программы"
 

@@ -1,5 +1,5 @@
 # British English translations for xfce4-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce4-utils package.
 #
 # Zuza Software Foundation (Translate.org.za), 2004.
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2005-10-07 23:22+0900\n"
 "Last-Translator: Translate.org.za <info@translate.org.za>\n"
 "Language-Team: British English <en_gb@li.org>\n"
@@ -78,8 +78,9 @@ msgid "About Xfce 4"
 msgstr "About Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 by Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -146,27 +147,27 @@ msgstr "Run in _terminal"
 msgid "_Run"
 msgstr "_Run"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 #, fuzzy
 msgid "Run Error"
 msgstr "Run program"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 #, fuzzy
 msgid "Unknown Error"
 msgstr "Run program"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Open %s with what program?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Run program"
 

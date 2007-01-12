@@ -1,5 +1,5 @@
 # Korean translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # ByungHyun Choi <byunghyun.choi@gmail.com>, 2005.
 #
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-10-09 16:28+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyun.choi@gmail.com>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
@@ -77,8 +77,9 @@ msgid "About Xfce 4"
 msgstr "XFce 4란..."
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 by Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -145,25 +146,25 @@ msgstr "터미널에서 실행(_t)"
 msgid "_Run"
 msgstr "실행(_R)"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "\"%s\"라는 명령을 실행시키기 못 했습니다:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "실행 오류"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "모르는 오류"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s을(를) 어떤 프로그램으로 열어 볼까요?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "프로그램 실행"
 

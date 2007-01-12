@@ -1,6 +1,6 @@
 # translation of pa.po to Punjabi
 # Punjabi translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 #
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2004.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-12-20 06:53+0530\n"
 "Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -80,8 +80,9 @@ msgid "About Xfce 4"
 msgstr "ਐਕਸਫੇਸ ੪ ਬਾਰੇ"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਦੁਆਰਾ ਅਧਿਕਾਰ 2002-2006"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਦੁਆਰਾ ਅਧਿਕਾਰ 2002-2007"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -148,24 +149,24 @@ msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ"
 msgid "_Run"
 msgstr "_ਚਲਾਓ"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "ਕਮਾਂਡ \"%s\" ਚਲਾਉਣ ਲਈ ਅਸਫ਼ਲ:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "ਚੱਲਣ ਗਲਤੀ"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਨਾਲ ਖੋਲੋ?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "ਪ੍ਰੋਗਰਾਮ ਚਲਾਓ"

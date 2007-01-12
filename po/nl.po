@@ -1,5 +1,5 @@
 # Dutch translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Jasper Huijsmans <jasper@xfce.org>, 2004.
 # Vincent Tunru <imnotb@gmail.com>, 2006.
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-02-02 17:31+0100\n"
 "Last-Translator: Stephan Arts <psybsd@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -81,8 +81,9 @@ msgid "About Xfce 4"
 msgstr "Over Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -152,25 +153,25 @@ msgstr "in _opdrachtprompt uitvoeren"
 msgid "_Run"
 msgstr "_Uitvoeren"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Het commando \"%s\" kon niet worden uitgevoerd:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "Uitvoer Fout"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "Onbekende Fout"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Open %s met welk programma?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Programma uitvoeren"
 

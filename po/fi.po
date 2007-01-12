@@ -1,13 +1,13 @@
 # Translation of xfce-utils into Finnish.
 # This file is distributed under the same license as the xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce Development Team.
+# Copyright (C) 2002-2007 The Xfce Development Team.
 # Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-08-08 10:25+0300\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -78,8 +78,9 @@ msgid "About Xfce 4"
 msgstr "Tietoja Xfce 4:stä"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Tekijänoikeus 2002-2006 Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Tekijänoikeus 2002-2007 Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -146,25 +147,25 @@ msgstr "Suorita p_äätteessä"
 msgid "_Run"
 msgstr "_Suorita"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Komennon \"%s\" suoritus epäonnistui:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "Suoritusvirhe"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "Tuntematon virhe"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Suorita ohjelma"
 

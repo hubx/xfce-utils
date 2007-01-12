@@ -77,8 +77,8 @@ msgid "About Xfce 4"
 msgstr "За Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Авторски права 2002-2006 на Olivier Fourdan"
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Авторски права 2002-2007 на Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"

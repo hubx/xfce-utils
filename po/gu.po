@@ -1,5 +1,5 @@
 # Gujarati translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Ankit Patel <ankit644@yahoo.com>, 2004-2005.
 #
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2005-10-07 23:25+0900\n"
 "Last-Translator: Ankit Patel <ankit644@yahoo.com>\n"
 "Language-Team: Gujarati <indianoss-gujarati@lists.sourceforge.net>\n"
@@ -85,8 +85,9 @@ msgid "About Xfce 4"
 msgstr "Xfce 4 વિશે"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "Copyright 2002-2006 by Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -153,27 +154,27 @@ msgstr "ટર્મિનલમાં ચલાવો (_t)"
 msgid "_Run"
 msgstr "ચલાવો (_R)"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 #, fuzzy
 msgid "Run Error"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 #, fuzzy
 msgid "Unknown Error"
 msgstr "કાર્યક્રમ ચલાવો"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s ને કયા કાર્યક્રમ સાથે ખોલવું છે?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "કાર્યક્રમ ચલાવો"
 

@@ -1,5 +1,5 @@
 # translation of xfce-utils.po to Bangla INDIA
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Runa Bhattacharjee <runab@redhat.com>, 2005.
 #
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2005-10-07 23:15+0900\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla INDIA <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr "Xfce 4 পরিচিতি"
 
 #: xfce4-about/info.c:398
 #, fuzzy
-msgid "Copyright 2002-2006 by Olivier Fourdan"
+msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "সত্ত্বাধিকার ২০০২-২০০৪ অলিভার ফোর্ডেন"
 
 #: xfce4-about/info.c:421
@@ -146,27 +146,27 @@ msgstr "টার্মিনালে আরম্ভ করুন (_t)"
 msgid "_Run"
 msgstr "আরম্ভ করুন (_R)"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 #, fuzzy
 msgid "Run Error"
 msgstr "প্রোগ্রাম আরম্ভ করুন"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 #, fuzzy
 msgid "Unknown Error"
 msgstr "প্রোগ্রাম আরম্ভ করুন"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s কোন প্রোগ্রামের সাথে খোলা হবে?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "প্রোগ্রাম আরম্ভ করুন"
 

@@ -1,5 +1,5 @@
 # Traditional Chinese translations for xfce-utils package.
-# Copyrsght (C) 2002-2006 The Xfce development team.
+# Copyrsght (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # umm <umm@pchome.com.tw>, 2003.
 # Minor updates by Ambrose Li <acli@ada.dhs.org>, 2004.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-08-12 11:19+0800\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -78,8 +78,9 @@ msgid "About Xfce 4"
 msgstr "關於 Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "版權所有 2002-2006 Olivier Fourdan"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "版權所有 2002-2007 Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -146,25 +147,25 @@ msgstr "在終端機中執行(_T)"
 msgid "_Run"
 msgstr "執行(_R)"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "指令 \"%s\" 無法執行："
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "執行錯誤"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "未知的錯誤"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "使用那個程式開啟 %s？"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "執行程式"
 

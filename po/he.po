@@ -1,6 +1,6 @@
 # translation of he.po to Hebrew
 # Hebrew translations for xfce-utils package.
-# Copyright (C) 2002-2006 The Xfce development team.
+# Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 #
 # Dotan Kamber <kamberd@yahoo.com>, 2004, 2006.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-04 19:05+0100\n"
+"POT-Creation-Date: 2007-01-12 21:01+0100\n"
 "PO-Revision-Date: 2006-09-02 04:50+0300\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
 "Language-Team: Hebrew\n"
@@ -80,8 +80,9 @@ msgid "About Xfce 4"
 msgstr "אודות Xfce 4"
 
 #: xfce4-about/info.c:398
-msgid "Copyright 2002-2006 by Olivier Fourdan"
-msgstr "זכויות יוצרים 2002-2006 שמורות לאוליבר פורדאן (Oliver Fourdan)"
+#, fuzzy
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "זכויות יוצרים 2002-2007 שמורות לאוליבר פורדאן (Oliver Fourdan)"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -148,25 +149,25 @@ msgstr "הרץ ב_מסוף"
 msgid "_Run"
 msgstr "_הרץ"
 
-#: xfrun/xfrun-dialog.c:658
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "הפקודה \"%s\" נכשלה בהרצה:"
 
-#: xfrun/xfrun-dialog.c:660
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "שגיאת הרצה"
 
-#: xfrun/xfrun-dialog.c:662
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "שגיאה לא ידועה"
 
-#: xfrun/xfrun-dialog.c:749
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "עם איזו תוכנה לפתוח את %s?"
 
-#: xfrun/xfrun-dialog.c:754
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "הרץ תוכנית"
 
