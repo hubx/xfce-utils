@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-12 21:01+0100\n"
-"PO-Revision-Date: 2005-10-07 23:14+0900\n"
-"Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
+"PO-Revision-Date: 2007-01-16 02:14+0300\n"
+"Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,66 +17,65 @@ msgstr ""
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Немагчыма загрузіць"
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Лідэр праекту"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Асноўныя распрацоўнікі"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Актыўныя ўкладальнікі"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Ранейшыя ўкладальнікі"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Гостынг і паштовыя сьпісы абслугоўваюцца"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Паслужнік падтрымліваецца"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Адказны за Goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Адказны за пераклады"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Перакладальнікі"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Калі вы ведаеце каго-небудзь, хто прапушчаны ў гэтым сьпісе, калі ласка, паведаміце на <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Дзякуй усім, хто дапамог зьявіцца гэтаму праграмнаму забесьпячэньню."
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
-msgstr "Аб Xfce 4"
+msgstr "Пра Xfce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Аўтарскія правы 2002-2007 належаць Olivier Fourdan"
 
@@ -108,34 +107,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Рэжым службы"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Рэжым службы не падтрымліваецца."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun мусіць быць скампіляваны з падтрымкай D-BUS, каб дзейнічаў рэжым службы."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Немагчыма адкрыць дысплэй \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Шына D-BUS адключана. Завяршэньне працы...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Сыстэмная памылка"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Немагчыма зрабіць нашчадка для фонавага рэжыму:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -148,17 +149,15 @@ msgstr "Запусьц_іць"
 #: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Немагчыма выканаць загад \"%s\":"
 
 #: xfrun/xfrun-dialog.c:663
-#, fuzzy
 msgid "Run Error"
-msgstr "Запуск праграмы"
+msgstr "Памылка запуску"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Запуск праграмы"
+msgstr "Невядомая памылка"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
@@ -171,3 +170,4 @@ msgstr "Запуск праграмы"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Працоўнае асяродзьдзе Xfce"
+
