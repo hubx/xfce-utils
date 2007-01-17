@@ -81,7 +81,6 @@ msgid "About Xfce 4"
 msgstr "XFce 4-ri buruz "
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 Olivier Fourdan"
 
