@@ -1,3 +1,8 @@
+2007-01-18 19:52  nick
+
+	* AUTHORS: Add Gérald Barré.
+	* INFO.fr: Update French translations outside the po directory.
+
 2006-06-12 14:26  hydonsingore
 
 	* libxfcegui4/trunk/po/ChangeLog, libxfcegui4/trunk/po/zh_TW.po,

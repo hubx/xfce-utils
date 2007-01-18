@@ -12,14 +12,14 @@ o Le panneau (xfce4-panel)
 
 o Le gestionnaire de bureau (xfdesktop)
    affiche une image ou une couleur sur le fond d'écran et donne accès
-   à un menu lorsqu'on clique dessus avec la souris.
+   à un menu lorsque l'on clique dessus avec la souris.
 
 o Le gestionnaire de fichiers (thunar)
-   un gestionnaire de fichiers rapide.
+   un gestionnaire de fichiers rapide et simple d'emploi.
 
 o Session manager (xfce4-session)
-   restores your session on startup and allows you to shutdown the computer
-   from Xfce
+   restaure les sessions au démarrage et permet d'éteindre l'ordinateur
+   depuis Xfce
 
 o Des utilitaires
    xfprint4     : imprimer des fichiers
@@ -35,7 +35,7 @@ pour les applications, et LGPL ou BSDL pour les librairies. Consultez la
 documentation, le code source ou le site web (http://www.xfce.org) pour
 plus d'informations.
 
-Merci de votre intérêt dans Xfce.
+Merci pour votre intérêt dans Xfce.
 
                 -- L'équipe de développement de Xfce --
 
