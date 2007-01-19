@@ -8,12 +8,12 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-m4_define([xfce_utils_version], [4.3.99.2])
+m4_define([xfce_utils_version], [4.4.0])
 
 AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.4 RC2"], [Optional release plain name])
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.4.0"], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
@@ -89,15 +89,15 @@ XDT_I18N([@LINGUAS@])
 
 dnl Check for required packages
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.6.0])
-XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.3.99.2])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.3.99.2])
-XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.3.99.2])
+XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.4.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.4.0])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.4.0])
 
 XDT_CHECK_OPTIONAL_PACKAGE([DBUS], [dbus-glib-1], 
                            [0.33], [dbus], [D-BUS support])
 
 dnl configure the mcs plugin
-XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.3.99.2])
+XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.4.0])
 AM_CONDITIONAL([HAVE_DBUS], [test "x$DBUS_FOUND" = "xyes"])
 
 dnl Check for debugging support
