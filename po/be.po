@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.2\n"
+"Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-12 21:01+0100\n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
 "PO-Revision-Date: 2007-01-16 02:14+0300\n"
 "Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -65,7 +65,9 @@ msgstr "Перакладальнікі"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Калі вы ведаеце каго-небудзь, хто прапушчаны ў гэтым сьпісе, калі ласка, паведаміце на <"
+msgstr ""
+"Калі вы ведаеце каго-небудзь, хто прапушчаны ў гэтым сьпісе, калі ласка, "
+"паведаміце на <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -115,7 +117,9 @@ msgstr "Рэжым службы не падтрымліваецца."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun мусіць быць скампіляваны з падтрымкай D-BUS, каб дзейнічаў рэжым службы."
+msgstr ""
+"Xfrun мусіць быць скампіляваны з падтрымкай D-BUS, каб дзейнічаў рэжым "
+"службы."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -128,13 +132,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Шына D-BUS адключана. Завяршэньне працы...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Сыстэмная памылка"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Немагчыма зрабіць нашчадка для фонавага рэжыму:"
 
@@ -170,4 +172,3 @@ msgstr "Запуск праграмы"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Працоўнае асяродзьдзе Xfce"
-

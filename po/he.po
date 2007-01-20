@@ -8,9 +8,9 @@
 # Yuval Tanny <tanai@int.gov.il>, 2004, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.2\n"
+"Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-12 21:01+0100\n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
 "PO-Revision-Date: 2006-09-02 04:50+0300\n"
 "Last-Translator: Yuval Tanny <tanai@int.gov.il>\n"
 "Language-Team: Hebrew\n"

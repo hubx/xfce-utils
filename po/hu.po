@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.2\n"
+"Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-12 21:01+0100\n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
 "PO-Revision-Date: 2007-01-19 19:54+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
@@ -133,13 +133,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "A D-BUS üzenet-busz levált. Kilépek ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Rendszer hiba"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nem tudok a háttérbe forkolni:"
 
@@ -175,4 +173,3 @@ msgstr "Program futtatása"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce Munkakörnyezet"
-

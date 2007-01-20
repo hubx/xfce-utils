@@ -7,9 +7,9 @@
 # Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.3.99.2\n"
+"Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-12 21:01+0100\n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
 "PO-Revision-Date: 2006-03-07 23:01+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
