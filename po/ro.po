@@ -1,85 +1,85 @@
 # Romanian translation of xfce-utils.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Mişu Moldovan <dumol@gnome.ro>, 2004.
+# Mişu Moldovan <dumol@gnome.ro>, 2004-2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2005-10-07 23:32+0900\n"
+"PO-Revision-Date: 2007-01-20 23:50+0200\n"
 "Last-Translator: Mişu Moldovan <dumol@gnome.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(n==0||((n%100)>0&&(n%100)<20))?1:2)\n"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Nu se poate încărca "
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Dezvoltator principal"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Dezvoltatori"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Contributori activi"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Contributori inactivi"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Găzduire web şi liste de mail"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Server administrat de"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervizare „goodies”"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervizare localizare"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Traducători"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să "
+"ne daţi de ştire la <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Mulţumim tuturor celor ce au sprijinit acest proiect software."
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Despre Xfce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
-msgstr "Drepturi de autor 2002 - 2004, Olivier Fourdan"
+msgstr "Drepturi de autor 2002-2007, Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -109,34 +109,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Mod demon"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Modul demon nu este suportat."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun trebuie compilat cu suport D-BUS pentru activarea modului demon."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Nu se poate deschide ecranul „%s”."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Deconectare de la magistrala D-BUS. Ieşire...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Eroare de sistem"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Nu se poate face fork în fundal:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -149,26 +149,22 @@ msgstr "_Porneşte"
 #: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Comanda „%s” a eşuat la executare:"
 
 #: xfrun/xfrun-dialog.c:663
-#, fuzzy
 msgid "Run Error"
-msgstr "Pornire programe"
+msgstr "Eroare la pornire"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Pornire programe"
+msgstr "Eroare necunoscută"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Cu ce program deschid %s?"
+msgstr "Cu ce program să fie deschis %s?"
 
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Pornire programe"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Mediul Desktop Xfce"
