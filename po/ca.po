@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2006-09-18 22:57+0200\n"
+"PO-Revision-Date: 2007-02-05 13:08+0100\n"
 "Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
 "Language-Team: catalan\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,6 @@ msgid "About Xfce 4"
 msgstr "Quant a Xfce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 per Olivier Fourdan"
 
@@ -171,6 +170,3 @@ msgstr "Amb quin programa voleu obrir %s?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Executa el programa"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Entorn d'escriptori Xfce"
