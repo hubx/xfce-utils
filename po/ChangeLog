@@ -1,3 +1,7 @@
+2007-02-06  Stavros Giannouris <stavrosg@hellug.gr>
+
+	* el.po: Updated Greek translation.
+
 2007-02-05  Pau Rul-lan Ferragut <paurullan@bulma.net>
 
         * ca.po: Update Catalan translation
@@ -92,7 +96,7 @@
 	* de.po: Updated German translations
 	* ka.po: Add Georgian translations
 
-2006-08-26  Stavros Giannouris <stavrosg@serverhive.com>
+2006-08-26  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Updated Greek translations
 
@@ -126,7 +130,7 @@
 
 	* eu.po: Basque translation update
 
-2006-08-04  Stavros Giannouris <stavrosg@serverhive.com>
+2006-08-04  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Greek translation update.
 
@@ -139,7 +143,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2006-07-20  Stavros Giannouris <stavrosg@serverhive.com>
+2006-07-20  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Greek translation update.
 
@@ -198,7 +202,7 @@
 
 	* ChangeLog: Updated.
 
-2005-12-11  Stavros Giannouris <stavrosg@serverhive.com>
+2005-12-11  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Updated Greek translations.
 
@@ -287,11 +291,11 @@
 	  vi.po, zh_CN.po, zh_TW.po: Modified initial header/comment
 	  strings. Discarded obsolete translations.
 
-2005-10-05  Stavros Giannouris <stavrosg@serverhive.com>
+2005-10-05  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Fixed a build error
 
-2005-10-04  Stavros Giannouris <stavrosg@serverhive.com>
+2005-10-04  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Minor changes and updates in el translations
 
@@ -358,7 +362,7 @@
 	* fi.po: Updated Finnish translations by Jari Rahkonen
 	  <jari.rahkonen@pp2.inet.fi>.
 
-2005-08-12  Stavros Giannouris <stavrosg@serverhive.com>
+2005-08-12  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Add initial Greek translations in trunk for xfce-utils.
 
