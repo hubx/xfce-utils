@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2006-10-09 16:28+0900\n"
+"PO-Revision-Date: 2007-02-20 09:47+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyun.choi@gmail.com>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
 "net>\n"
@@ -77,7 +77,6 @@ msgid "About Xfce 4"
 msgstr "XFce 4란..."
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
@@ -167,6 +166,3 @@ msgstr "%s을(를) 어떤 프로그램으로 열어 볼까요?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "프로그램 실행"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "XFce 데스크탑 환경"
