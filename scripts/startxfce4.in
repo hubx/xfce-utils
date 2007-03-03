@@ -19,14 +19,14 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-if test x"$XDG_CONFIG_HOME" = x""
+if test "x$XDG_CONFIG_HOME" = "x"
 then
-  BASEDIR=$HOME/.config/xfce4/
+  BASEDIR="$HOME/.config/xfce4/"
 else
-  BASEDIR=$XDG_CONFIG_HOME/xfce4
+  BASEDIR="$XDG_CONFIG_HOME/xfce4"
 fi
 
-if test x"$XDG_DATA_DIRS" = x""
+if test "x$XDG_DATA_DIRS" = "x"
 then
   XDG_DATA_DIRS="/usr/share:/usr/local/share:@datadir@"
 else
@@ -34,7 +34,7 @@ else
 fi
 export XDG_DATA_DIRS
 
-if test x"$DISPLAY" = x""
+if test "x$DISPLAY" = "x"
 then
   echo "$0: Starting X server"
   prog=xinit
@@ -43,10 +43,10 @@ else
   prog=/bin/sh
 fi
 
-if test ! x"$*" = x""
+if test ! "x$*" = "x"
 then
   OPT=$*
-  if test x"${OPT#*--}" = x"${OPT}"
+  if test "x${OPT#*--}" = "x${OPT}"
   then
     CLIENTRC=${OPT}
   else
@@ -61,7 +61,7 @@ elif [ -f /etc/X11/xinit/xserverrc ]; then
   SERVERRC="/etc/X11/xinit/xserverrc $SERVERRC"
 fi
 
-if ! test x"$SERVERRC" = x""
+if ! test "x$SERVERRC" = "x"
 then
   SERVERRC="-- $SERVERRC"
 fi
