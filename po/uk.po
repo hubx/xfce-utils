@@ -1,15 +1,15 @@
 # Ukrainian translation for xfce-utils package.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Maxim Dziumanenko <mvd@mylinux.ua>, 2003-2006.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003-2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2005-10-07 23:35+0900\n"
-"Last-Translator: Maxim Dziumanenko <mvd@mylinux.ua>\n"
+"PO-Revision-Date: 2007-03-03 23:35+0900\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,15 +31,13 @@ msgstr "Головні розробники"
 
 #. Active contributors
 #: xfce4-about/info.c:209
-#, fuzzy
 msgid "Active contributors"
-msgstr "Помічники"
+msgstr "Активні помічники"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Помічники"
+msgstr "Попередні помічники"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
@@ -52,9 +50,8 @@ msgstr "Сервер підтримується"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Координація перекладів"
+msgstr "Координація розробки доповнень"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
@@ -81,7 +78,6 @@ msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Авторське право 2002-2007, Olivier Fourdan"
 
@@ -113,34 +109,35 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Режим служби"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Режим служби не підтримується."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
+"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Не вдається завантажити"
+msgstr "Неможливо відкрити екран \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Канал повідомлень D-BUS роз'єднаний. Вихід ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Системна помилка"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Не вдається перемістити процес у фоновий режим:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -160,9 +157,8 @@ msgid "Run Error"
 msgstr "Помилка запуску"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Помилка запуску"
+msgstr "Невідома помилка"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
@@ -172,6 +168,3 @@ msgstr "Якою програмою відкрити %s?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Запуск програми"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Робоче середовище XFce"
