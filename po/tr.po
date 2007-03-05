@@ -2,83 +2,83 @@
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Erçin EKER <ercin.eker@linux.org.tr>, 2004.
-#
+# Eren Türkay <turkay.eren@gmail.com> 2007
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2005-10-07 23:35+0900\n"
-"Last-Translator: Erçin EKER <ercin.eker@linux.org.tr>\n"
-"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2007-03-05 18:17+0200\n"
+"Last-Translator: Eren Türkay <turkay.eren@gmail.com>\n"
+"Language-Team: Turkish <turkce@pardus.org.tr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Yüklenemiyor"
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Proje Lideri"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Ana geliştiriciler"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Aktif katkıcılar"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Önceki katkıcılar"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Web barındırma ve Mail Listesi servisini sağlayan"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Sunucu hizmetini sağlayan"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodies sorumlusu"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Çeviri sorumlusu"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Çevirmenler"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Bu listede birilerinin eksik olduğunu düşünüyorsanız lütfen bizi bilgilendirin <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Bu yazılıma yardım eden ve emeği geçen herkese teşekkürler."
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Xfce 4 Hakkında"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
-msgstr "Kopya hakkı 2002-2007 Oliver Fourdan"
+msgstr "Telif Hakkı 2002-2007, Olivier·Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -108,34 +108,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Arkaplan Kipi"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Arkaplan kipi desteklenmiyor."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Arkaplan kipinin etkin olabilmesi için Xfrun uygulamasının D-BUS ile birlikte derlenmesi gerekir."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "\"%s\" görüntüsü açılamıyor."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS mesaj soketi bağlantıyı kesi. Çıkılıyor ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Sistem Hatası"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Arkaplanda çalışılamıyor:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -148,17 +148,15 @@ msgstr "_Çalıştır"
 #: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "\"%s\" komutu çalıştırılamadı:"
 
 #: xfrun/xfrun-dialog.c:663
-#, fuzzy
 msgid "Run Error"
-msgstr "Uygulama çalıştır"
+msgstr "Çalıştırma Hatası"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Uygulama çalıştır"
+msgstr "Bilinmeyen Hata"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
