@@ -139,7 +139,7 @@ msgstr "Arkaplanda çalışılamıyor:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
-msgstr "_Terminalde çalıştır"
+msgstr "T_erminalde çalıştır"
 
 #: xfrun/xfrun-dialog.c:232
 msgid "_Run"
