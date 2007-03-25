@@ -1,6 +1,10 @@
+2007-03-25  Daichi Kawahata <daichi@xfce.org>
+
+	* mk.po: Removed executable attribute.
+
 2007-03-18  Eren Turkay <erenturkay@xfce.org>
- 
-    * tr.po: Updated the Turkish translation.
+
+	* tr.po: Updated the Turkish translation.
 
 2007-03-03 Maxim Dziumanenko <dziumanenko@gmail.com>
 
@@ -19,8 +23,8 @@
 2007-02-09  Mohamed Magdy <mohamed.m.k@gmail.com>
 
 	* ar.po: initial commit.
-    *LINGUAS: adding ar language code
-	
+	* LINGUAS: adding ar language code
+
 2007-02-07  Maximilian Schleiss <maxschleiss@bluewin.ch>
 
 	* zh_CN.po: Updated the Chinese (Simplified) translation by
@@ -29,7 +33,7 @@
 2007-02-06  Stavros Giannouris <stavrosg@hellug.gr>
 
 	* el.po: Updated Greek translation.
-	
+
 2007-02-05  Pau Rul-lan Ferragut <paurullan@bulma.net>
 
 	* ca.po: Update Catalan translation
@@ -60,7 +64,7 @@
 
 2007-01-17  Piarres Beobide <pi@beobide.net>
 
-        * eu.po: Basque translation update
+	* eu.po: Basque translation update
 
 2007-01-16  Jari Rahkonen <jari.rahkonen@pp1.inet.fi>
 
@@ -97,12 +101,12 @@
 
 	* ko.po: Updated Korean ByungHyun Choi
 	<byunghyun.choi@gmail.com>
-	
+
 2006-10-02  Pau Rul-lan Ferragut <paurullan@bulma.net>
 
 	* ru.po: Updated Russian translations by Andrey Fedoseev
 	<andrey.fedoseev@gmail.com>
-	
+
 2006-09-18  Pau Rul-lan Ferragut <paurullan@bulma.net>
 
 	* ca.po: Updated Catalan translations
@@ -166,7 +170,7 @@
 
 	* fr.po: Updated French translations by Maximilian Schleiss
 	<maxschleiss@bluewin.ch>
-	
+
 2006-08-01  Jari Rahkonen <jari.rahkonen@pp1.inet.fi>
 
 	* fi.po: Updated Finnish translation.
