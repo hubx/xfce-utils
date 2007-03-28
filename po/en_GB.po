@@ -1,84 +1,84 @@
 # British English translations for xfce4-utils package.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce4-utils package.
-#
 # Zuza Software Foundation (Translate.org.za), 2004.
-#
+# Translate.org.za <info@translate.org.za>, 2007.
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2005-10-07 23:22+0900\n"
-"Last-Translator: Translate.org.za <info@translate.org.za>\n"
-"Language-Team: British English <en_gb@li.org>\n"
+"PO-Revision-Date: 2007-03-25 11:27+1000\n"
+"Last-Translator: Jeff Bailes <thepizzaking@gmail.com>\n"
+"Language-Team: English/GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Unable to load "
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Project Lead"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Core developers"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Active contributors"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Previous contributors"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Web Hosting and Mailing Lists provided by"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Server maintained by"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodies supervision"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Translations supervision"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Translators"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "If you know of anyone missing from this list, please let us know on <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Thanks to all who helped making this software available."
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "About Xfce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
@@ -110,34 +110,34 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Daemon Mode"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Daemon mode is not supported."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun must be compiled with D-BUS support to enable daemon mode."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Unable to open display \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS message bus disconnected. Exiting ...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "System Error"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Unable to fork to background:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -150,17 +150,15 @@ msgstr "_Run"
 #: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "The command \"%s\" failed to run:"
 
 #: xfrun/xfrun-dialog.c:663
-#, fuzzy
 msgid "Run Error"
-msgstr "Run program"
+msgstr "Run Error"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Run program"
+msgstr "Unknown Error"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
