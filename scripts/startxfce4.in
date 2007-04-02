@@ -61,7 +61,7 @@ elif [ -f /etc/X11/xinit/xserverrc ]; then
   SERVERRC="/etc/X11/xinit/xserverrc $SERVERRC"
 fi
 
-if ! test "x$SERVERRC" = "x"
+if test ! "x$SERVERRC" = "x"
 then
   SERVERRC="-- $SERVERRC"
 fi
