@@ -4,10 +4,8 @@ Olivier Fourdan;fourdan@xfce.org
 
 [Core]
 Benedikt Meurer;benny@xfce.org
-Biju Chacko;botsie@xfce.org
 Brian J. Tarricone;kelnos@xfce.org
 Danny Milosavljevic;dannym@xfce.org
-Edscott Wilson García;edscott@xfce.org
 Eduard Roccatello;eduard@xfce.org
 Erik Harrison;erikharrison@xfce.org
 François Le Clainche;fleclainche@wanadoo.fr
@@ -24,7 +22,9 @@ Stephan Arts;stephan@xfce.org
 
 [Previous contributors]
 Bernhard Walle;Bernhard.Walle@gmx.de
+Biju Chacko;botsie@xfce.org
 Craig Betts;craig.betts@dfrc.nasa.gov
+Edscott Wilson García;edscott@xfce.org
 Ejvend Nielsen;prophet@sphere-x.net
 Erik Touve;etouve@earthlink.net
 Jens Guballa;j.guballa@t-online.de
@@ -49,90 +49,73 @@ Jannis Pohlmann;jannis@xfce.org
 
 [Translations supervision]
 Daichi Kawahata;daichi@xfce.org
-Maximilian Schleiss;maxschleiss@bluewin.ch
+Maximilian Schleiss;maxschleiss@solnet.ch
 Pau Rul·lan Ferragut;paurullan@bulma.net
 
 [Translators]
-af;Petri Jooste;petri.jooste@gmail.com
-ar;Saleh Alhathal;hathalsal@hotmail.com
-az;Metin Amiroff;metin@karegen.com
-be;Ales Nyakhaychyk;nab@mail.by
-bg;Miroslav Yordanov;miordanov@i-space.org
-bn_IN;Runa Bhattacharjee;runabh@gmail.com
+ar;Arabeyes Team;http://wiki.arabeyes.org/Xfce
+be;Alexander Nyakhaychyk;nyakhaychyk@gmail.com
+ca;Carles Muñoz Gorriz;carlesmu@internautas.org
 ca;Pau Rul·lan Ferragut;paurullan@bulma.net
-cs;Alois Nespor;Alois.Nespor@seznam.cz
 cs;Michal Várady;miko.vaji@gmail.com
-da;Jesper Berth;big@santaz.dk
+de;Benedikt Meurer;benny@xfce.org
+de;Borja Schwember;mail@borja.de
+de;Enrico Tröger;enrico.troeger@uvena.de
 de;Fabian Nowak;timystery@arcor.de
 de;Moritz Heiber;moe@xfce.org
+de;Nico Schümann;nico@nico22.de
 dz;Tenzin Dendup;tdendup@dit.gov.bt
 el;Stathis Kamperis;ekamperi@auth.gr
-el;Stavros Giannouris;stavrosg@serverhive.com
-en_GB;Dwayne Bailey;dwayne@translate.org.za
+el;Stavros Giannouris;stavrosg@hellug.gr
+en_GB;Jeff Bailes;thepizzaking@gmail.com
 eo;Antono Vasiljev;antono.vasiljev@gmail.com
-eo;Jarbas Araujo de Oliveira Jr;jarbasaraujojr@yahoo.com.br
+eo;Jarbas Araujo;jarbasaraujojr@yahoo.com.br
 eo;Sylvain Vedrenne;gnu_sylvain@xfce.org
-es;Jaime Buffery;nestu@lunar-linux.org
-es;Pablo Hernandez-M. Saiz;homeless3d@gmail.com
 es;Rudy Godoy;rudy@stone-head.org
-es_MX;Edscott Wilson García;edscott@xfce.org
-et;Mart Tõnso;Mart.Tonso@ttu.ee
 et;Peeter Vois;Peeter.Vois@mail.ee
 eu;Piarres Beobide Egaña;pi@beobide.net
-fa;Abbas Izad;abbasizad@hotmail.com
 fi;Jari Rahkonen;jari.rahkonen@pp1.inet.fi
-fr;Collet Etienne;xanaxlnx@gmail.com
 fr;Gérald Barré;g.barre@free.fr
-fr;Maximilian Schleiss;maxschleiss@bluewin.ch
+fr;Jean-François Wauthy;pollux@xfce.org
+fr;Maximilian Schleiss;maxschleiss@solnet.ch
+fr;Mike Massonnet;mmassonnet@gmail.com
 fr;Olivier Fourdan;fourdan@xfce.org
-fr;Stephane Roy;sroy@j2n.net
 gl;Leandro Regueiro;leandro.regueiro@gmail.com
-gu;Ankitkumar Rameshchandra Patel;ankit@redhat.com
 he;Dotan Kamber;kamberd@yahoo.com
 he;Yuval Tanny;tanai@int.gov.il
-hi;Ravishankar Shrivastava;raviratlami@yahoo.com
 hu;Szervác Attila;sas@321.hu
-hy;Norayr Chilingaryan;norik@oric.org
-it;Alex Dupre;ale@FreeBSD.org
-it;Gabriele Modena;rnd@email.it
+it;Fabio Riga;usul@aruba.it
 it;Roberto Pariset;r.pariset@gmail.com
 ja;Daichi Kawahata;daichi@xfce.org
+ja;Moue Hirotaka;admin@mail.dayomon.net
 ka;Dimitri Gogelia;delphi.knight@gmail.com
 ko;ByungHyun Choi;byunghyun.choi@gmail.com
-ko;Kibum Han;yui@yui.pe.kr
-ku;Erdal Ronahi;erdal.ronahi@gmail.com
 lt;Mantas Zapolskas;mantaz@users.sf.net
-lt;Rimas Kudelis;rq@akl.lt
-mr;Pallavi Nikam;pallavi_edu@rediffmail.com
-ms;Harun Musa;mharun@gmx.net
-nb_NO;Eskild Hustvedt;zerodogg@skolelinux.no
 nl;Jasper Huijsmans;jasper@xfce.org
-nl;Stephan Arts;psybsd@gmail.com
+nl;Stephan Arts;stephan@xfce.org
 nl;Vincent Tunru;imnotb@gmail.com
-pa;Jaswinder Singh Phulewala;jaswinderphulewala@yahoo.com
-pl;Marek Piechut;mco@o2.pl
-pl;Piotr Maliński;admin@rk.edu.pl
+pa;Amanpreet Singh Alam;aalam@users.sf.net
+pl;Piotr Maliński;riklaunim@gmail.com
 pl;Szymon Kałasz;szymon_maestro@gazeta.pl
-pl;Wit Wiliński;wit.wilinski@gmail.com
 pt_BR;Adriano Winter Bess;awbess@gmail.com
-pt_BR;Felix da Silva Costa;felix@online.eti.br
-pt_BR;Joao Pedrosa;joaopedrosa@gmail.com
 pt_BR;Rodrigo Coacci;rcoacci@gmail.com
-pt_BR;Tomas Schertel;tschertel@gmail.com
-pt_PT;Nuno Donato;nunodonato@zmail.pt
 ro;Mişu Moldovan;dumol@gnome.ro
 ru;Andrey Fedoseev;andrey.fedoseev@gmail.com
-ru;Anthony Ivanoff;a-i@bk.ru
+ru;Maxim Zenin;webmechanics@gmail.com
 ru;Sergey Fedoseev;fedoseev.sergey@gmail.com
-sk;Juraj Brosz;juro@jurajbrosz.info
 sk;Roman Moravcik;roman.moravcik@gmail.com
+sq;Besnik Bleta;besnik@programeshqip.org
+sv;Alexander Toresson;alexander.toresson@gmail.com
 sv;Daniel Nylander;po@danielnylander.se
-sv;Magnus Berg;berg.magnus@bredband.net
-ta;Dinesh Nadarajah;dinesh_list@sbcglobal.net
-tr;Erçin EKER;erc.caldera@gmx.net
+tr;Cem Ünal;admincemunal@gmail.com
+tr;Eren Türkay;turkay.eren@gmail.com
+tr;Türker Sezer;turkersezer@tsdesign.info
+uk;Dmitry Nikitin;luckas_fb@mail.ru
 uk;Maxim V. Dziumanenko;mvd@mylinux.com.ua
-vi;Lâm Vĩnh Niên;nien.lam@gmail.com
+vi;Phan Vĩnh Thịnh;teppi82@gmail.com
 zh_CN;Huang Huan;unicon221@gmail.com
+zh_CN;Jick Nan;jick.nan@gmail.com
+zh_CN;Wu Li;wurisky@gmail.com
 zh_CN;Yongtao Yang;yongtao.yang@telia.com
 zh_TW;Cosmo Chene;cosmolax@gmail.com
 zh_TW;Hydonsingore Cia;hydonsingore@mail.educities.edu.tw
