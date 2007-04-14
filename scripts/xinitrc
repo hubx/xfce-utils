@@ -53,7 +53,13 @@ cat /dev/null $XRESOURCES | xrdb -nocpp -merge -
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Launch xscreensaver (if available), but only as non-root user
-test $UID -gt 0 -a -z "$VNCSESSION" && xscreensaver -no-splash &
+if test $UID -gt 0 -a -z "$VNCSESSION"; then 
+    if test x"`which xscreensaver 2>/dev/null`" != x""; then
+        xscreensaver -no-splash &
+    elif test x"`which gnome-screensaver 2>/dev/null`" != x""; then
+        gnome-screensaver &
+    fi
+fi 
 
 # Use ssh-agent if installed and not already running.  Run it separately
 # so it populates the environment here, so we can clean it up later.
