@@ -29,7 +29,8 @@ fi
 XRESOURCES=""
 
 # Has to go prior to merging Xft.xrdb, as its the "Defaults" file
-test -r $HOME/.Xdefaults && XRESOURCES=$HOME/.Xdefaults
+test -r "@sysconfdir@/xdg/xfce4/Xft.xrdb" && XRESOURCES="$XRESOURCES @sysconfdir@/xdg/xfce4/Xft.xrdb"
+test -r $HOME/.Xdefaults && XRESOURCES="$XRESOURCES $HOME/.Xdefaults"
 
 BASEDIR=$XDG_CONFIG_HOME/xfce4
 if test -r "$BASEDIR/Xft.xrdb"; then

@@ -32,17 +32,24 @@ xfhelp4: Makefile $(srcdir)/xfhelp4.in
 	$(edit) $(srcdir)/xfhelp4.in >xfhelp4.tmp
 	mv xfhelp4.tmp xfhelp4
 
+xinitrc: Makefile $(srcdir)/xinitrc.in
+	rm -f xinitrc xinitrc.tmp
+	$(edit) $(srcdir)/xinitrc.in >xinitrc.tmp
+	mv xinitrc.tmp xinitrc
+
 conffilesdir=@sysconfdir@/xdg/xfce4
 conffiles_DATA=\
-	xinitrc
+	xinitrc \
+	Xft.xrdb
 
 EXTRA_DIST = \
 	$(scripts) \
 	$(conffiles_DATA) \
 	xfbrowser4.in \
 	startxfce4.in \
-	xfhelp4.in
+	xfhelp4.in \
+	xinitrc.in
 
 distclean-local:
-	rm -f xfhelp4 startxfce4 xfbrowser4
+	rm -f xfhelp4 startxfce4 xfbrowser4 xinitrc
 
