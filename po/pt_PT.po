@@ -8,75 +8,74 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2005-10-07 23:32+0900\n"
-"Last-Translator: Nuno Donato <nunodonato@gmail.com>\n"
-"Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2007-06-16 22:21+0100\n"
+"Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr ""
+msgstr "Incapaz de carregar"
 
 #. Project lead
 #: xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr ""
+msgstr "Líder de Projecto"
 
 #. Core developers
 #: xfce4-about/info.c:205
 msgid "Core developers"
-msgstr ""
+msgstr "Desenvolvedores"
 
 #. Active contributors
 #: xfce4-about/info.c:209
 msgid "Active contributors"
-msgstr ""
+msgstr "Colaboradores activos"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr ""
+msgstr "Colaboradores anteriores"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Espaço Web e Lista de Mail fornecidas por"
 
 #. Server admins
 #: xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr ""
+msgstr "Servidor mantido por"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervisão de Goodies"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervisão de tradução"
 
 #. Translators
 #: xfce4-about/info.c:262
 msgid "Translators"
-msgstr ""
+msgstr "Tradutores"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
+msgstr "Se sabe de alguém omisso da lista, faça-nos saber <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
+msgstr "Obrigado a todos os que ajudaram"
 
 #: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Sobre o XFce 4"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 por Olivier Fourdan"
 
@@ -108,34 +107,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Modo Daemon"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "Modo Daemon não suportado."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun tem de ser compilado com suporte D-BUS para ligar o modo daemon."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Impossível abrir ecrã \"%s\"."
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS desligou. Saindo ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Erro de Sistema"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Incapaz de derivar para segundo plano:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -148,17 +149,15 @@ msgstr "_Executar"
 #: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "Comando \"%s\" falhou ao executar:"
 
 #: xfrun/xfrun-dialog.c:663
-#, fuzzy
 msgid "Run Error"
-msgstr "Executar Programa"
+msgstr "Erro ao Executar"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Executar Programa"
+msgstr "Erro Desconhecido"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
@@ -169,5 +168,3 @@ msgstr "Abrir %s com que programa?"
 msgid "Run program"
 msgstr "Executar Programa"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Ambiente de Trabalho Xfce"
