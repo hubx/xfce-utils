@@ -4,14 +4,14 @@
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Zhao Ji <zhao-ji@awz.ne.jp>, 2003.
-# Daichi Kawahata <daichi@xfce.org>, 2005-2006.
+# Daichi Kawahata <daichi@xfce.org>, 2005-2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-20 17:58+0100\n"
-"PO-Revision-Date: 2006-05-05 14:27+0900\n"
+"PO-Revision-Date: 2007-03-25 22:45+0900\n"
 "Last-Translator: Daichi Kawahata <daichi@xfce.org>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
@@ -35,15 +35,13 @@ msgstr "中心開発者"
 
 #. Active contributors
 #: xfce4-about/info.c:209
-#, fuzzy
 msgid "Active contributors"
-msgstr "協力者"
+msgstr "現在の協力者"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
-#, fuzzy
 msgid "Previous contributors"
-msgstr "協力者"
+msgstr "以前の協力者"
 
 #: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
@@ -56,9 +54,8 @@ msgstr "サーバーの管理"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "翻訳の監修"
+msgstr "Goodies の監修"
 
 #. Translations supervision
 #: xfce4-about/info.c:258
@@ -86,9 +83,8 @@ msgid "About Xfce 4"
 msgstr "Xfce 4 について"
 
 #: xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
-msgstr "Copyright (C) 2002-2007 Olivier Fourdan"
+msgstr "Copyright 2002-2007 Olivier Fourdan"
 
 #: xfce4-about/info.c:421
 msgid "Info"
@@ -118,35 +114,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "デーモンモード"
 
 #: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "デーモンモードはサポートされていません。"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
+"デーモンモードを有効にするには D-BUS サポートで Xfrun をコンパイルする必要が"
+"あります。"
 
-# FIXME: needs C format string
 #: xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "次のファイルを読込めません "
+msgstr "ディスプレイ「%s」を開けません。"
 
 #: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS メッセージバスが切断されました。終了します...\n"
 
 #. failed
 #: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "システムエラー"
 
 #: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "fork() できません:"
 
 #: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
@@ -166,9 +163,8 @@ msgid "Run Error"
 msgstr "実行エラー"
 
 #: xfrun/xfrun-dialog.c:665
-#, fuzzy
 msgid "Unknown Error"
-msgstr "実行エラー"
+msgstr "不明なエラー"
 
 #: xfrun/xfrun-dialog.c:752
 #, c-format
@@ -178,6 +174,3 @@ msgstr "どのプログラムで「%s」を開きますか？"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "実行するプログラムを入力してください"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Xfce デスクトップ環境"
