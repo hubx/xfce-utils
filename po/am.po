@@ -1,0 +1,170 @@
+# Amharic translation to xfce-utils.
+# Copyright (C) 2002-2007 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Tegegne Tefera <tefera@mekuria.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils 4.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"PO-Revision-Date: 2007-07-07 10:42+0100\n"
+"Last-Translator: tegegne tefera <tefera@mekuria.com>\n"
+"Language-Team: Amharic <l10n-am@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: xfce4-about/info.c:172
+msgid "Unable to load "
+msgstr "መጫን አልተቻለም"
+
+#. Project lead
+#: xfce4-about/info.c:201
+msgid "Project Lead"
+msgstr "የመርሃግብር መሪ"
+
+#. Core developers
+#: xfce4-about/info.c:205
+msgid "Core developers"
+msgstr "ዋና ደራሲዎች"
+
+#. Active contributors
+#: xfce4-about/info.c:209
+msgid "Active contributors"
+msgstr "በየጊዜው  አስተዋጺዎች"
+
+#. Previous contributors
+#: xfce4-about/info.c:213
+msgid "Previous contributors"
+msgstr "የቀድሞ አስትዋጺዎች"
+
+#: xfce4-about/info.c:218
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr "መረብ ገጽና የመልዕክት መቀባበያ የተሰጠው በ"
+
+#. Server admins
+#: xfce4-about/info.c:250
+msgid "Server maintained by"
+msgstr "ተጠሪ አስተዳዳሪ"
+
+#. Goodies supervision
+#: xfce4-about/info.c:254
+msgid "Goodies supervision"
+msgstr "ጥሩጥሩን ተቆጣጣሪ"
+
+#. Translations supervision
+#: xfce4-about/info.c:258
+msgid "Translations supervision"
+msgstr "ትርጉም ተቆጣጣሪ"
+
+#. Translators
+#: xfce4-about/info.c:262
+msgid "Translators"
+msgstr "ተርጓሚዎች"
+
+#: xfce4-about/info.c:293
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr "ከዚህ ዝርዝር ውስጥ ያልተጠቀሰ የሚያውቁት ሰው ካለ እባክዎ ያስታውቁን  <"
+
+#: xfce4-about/info.c:297
+msgid "Thanks to all who helped making this software available."
+msgstr "ይህንን ስልት በመድረስ ለረዱ ሁሉ ምስጋና ይግባቸው።"
+
+#: xfce4-about/info.c:397
+msgid "About Xfce 4"
+msgstr "ስለ ሸፍሲ 4"
+
+#: xfce4-about/info.c:398
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2007 by Olivier Fourdan"
+
+#: xfce4-about/info.c:421
+msgid "Info"
+msgstr "መረጃ"
+
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:423
+msgid "Credits"
+msgstr "አስተዋጺ"
+
+#: xfce4-about/info.c:424
+msgid "Copyright"
+msgstr "የቅጂ መብት"
+
+#: xfce4-about/info.c:425
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:426
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:427
+msgid "GPL"
+msgstr "GPL"
+
+#. we don't support daemon mode
+#: xfrun/xfrun.c:50
+msgid "Daemon Mode"
+msgstr "የአሰናጅ ሞድ"
+
+#: xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr "የአሰናጅ ሞድ አልተደገፈም"
+
+#: xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr "Xfrun must be compiled with D-BUS support to enable daemon mode."
+
+#: xfrun/xfrun-dbus.c:141
+#, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "ማሳያ \"%s\" መክፈት አልተቻለም።"
+
+#: xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr "D-BUS message bus disconnected. Exiting ...\n"
+
+#. failed
+#: xfrun/xfrun-dbus.c:340
+#: xfrun/xfrun-dbus.c:351
+msgid "System Error"
+msgstr "የስርዓት ስህተት"
+
+#: xfrun/xfrun-dbus.c:342
+#: xfrun/xfrun-dbus.c:353
+msgid "Unable to fork to background:"
+msgstr "Unable to fork to background:"
+
+#: xfrun/xfrun-dialog.c:216
+msgid "Run in _terminal"
+msgstr "ተርሚናል አስኪድ _t"
+
+#: xfrun/xfrun-dialog.c:232
+msgid "_Run"
+msgstr "አስኪድ _R"
+
+#: xfrun/xfrun-dialog.c:661
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr "ትዕዛዝ \"%s\"ን ማስኬድ አልተሳካም፦"
+
+#: xfrun/xfrun-dialog.c:663
+msgid "Run Error"
+msgstr "የማስኬድ ስህተት"
+
+#: xfrun/xfrun-dialog.c:665
+msgid "Unknown Error"
+msgstr "ያልታወቀ ስህተት"
+
+#: xfrun/xfrun-dialog.c:752
+#, c-format
+msgid "Open %s with what program?"
+msgstr "%s  በምን ፕሮግራም ይከፈት?"
+
+#: xfrun/xfrun-dialog.c:757
+msgid "Run program"
+msgstr "ፕሮግራምን አስኪድ"
+
