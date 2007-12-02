@@ -1,16 +1,22 @@
+2007-12-02	Maximilian Schleiss <maximilian@xfce.org>
+
+	* de.po: German translation update
+	by Fabian Nowak <timstery@arcor.de>
+
 2007-11-15	Mike Massonnet <mmassonnet@xfce.org>
 
-	* ur.po, LINGUAS: Add Urdu translation by ﻢﺤﻣﺩ ﻊﻠﻳ ﺎﻠﻤﻜﻳ
-	makki.ma@gmail.com
+	* ur.po, LINGUAS: Add Urdu translation
+	by ﻢﺤﻣﺩ ﻊﻠﻳ ﺎﻠﻤﻜﻳ <makki.ma@gmail.com>
 
-2007-11-11  Mike Massonnet <mmassonnet@xfce.org>
+2007-11-11	Mike Massonnet <mmassonnet@xfce.org>
 
-	* lv.po: Update translations by RPrieditis <RPrieditis@inbox.lv>
+	* lv.po: Update translations
+	by RPrieditis <RPrieditis@inbox.lv>
 
-2007-09-24  Mike Massonnet <mmassonnet@xfce.org>
+2007-09-24	Mike Massonnet <mmassonnet@xfce.org>
 
-	* LINGUAS, lv.po: Add Latvian translation by RPrieditis
-	<RPrieditis@inbox.lv>
+	* LINGUAS, lv.po: Add Latvian translation
+	by RPrieditis <RPrieditis@inbox.lv>
 
 2007-09-06  Maximilian Schleiss <maximilian@xfce.org>
 

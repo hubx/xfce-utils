@@ -166,7 +166,7 @@ msgstr "Unbekannter Fehler"
 #: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Öffne %s mit welchem Programm?"
+msgstr "Öffne »%s« mit welchem Programm?"
 
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
