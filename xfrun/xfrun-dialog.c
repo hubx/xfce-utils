@@ -2,17 +2,18 @@
  * xfrun - a simple quick run dialog with saved history and completion
  *
  * Copyright (c) 2006 Brian J. Tarricone <bjt23@cornell.edu>
+ * Copyright (c) 2008 Stefan Stuhr <xfce4devlist@sstuhr.dk>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
@@ -44,8 +45,8 @@
 
 struct _XfrunDialogPrivate
 {
+    GtkWidget *comboboxentry;
     GtkWidget *entry;
-    GtkWidget *arrow_btn;
     GtkWidget *terminal_chk;
     GtkTreeModel *completion_model;
     
@@ -94,17 +95,14 @@ static gboolean xfrun_dialog_key_press_event(GtkWidget *widget,
 static gboolean xfrun_dialog_delete_event(GtkWidget *widget,
                                           GdkEventAny *evt);
 
+static gboolean xfrun_comboboxentry_changed(GtkComboBoxEntry *comboboxentry,
+                                            gpointer user_data);
 static gboolean xfrun_entry_check_match(GtkTreeModel *model,
                                         GtkTreePath *path,
                                         GtkTreeIter *iter,
                                         gpointer data);
 static gboolean xfrun_entry_focus_out(GtkWidget *widget,
                                       GdkEventFocus *evt,
-                                      gpointer user_data);
-static gboolean xfrun_entry_key_press(GtkWidget *widget,
-                                      GdkEventKey *evt,
-                                      gpointer user_data);
-static void xfrun_menu_button_clicked(GtkWidget *widget,
                                       gpointer user_data);
 static void xfrun_run_clicked(GtkWidget *widget,
                               gpointer user_data);
@@ -162,9 +160,8 @@ xfrun_dialog_class_init(XfrunDialogClass *klass)
 static void
 xfrun_dialog_init(XfrunDialog *dialog)
 {
-    GtkWidget *entry, *chk, *btn, *vbox, *bbox, *hbox, *arrow;
+    GtkWidget *entry, *comboboxentry, *chk, *btn, *vbox, *bbox;
     GtkTreeIter itr;
-    gchar *first_item = NULL;
     
     dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, XFRUN_TYPE_DIALOG,
                                                XfrunDialogPrivate);
@@ -177,45 +174,25 @@ xfrun_dialog_init(XfrunDialog *dialog)
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(dialog), vbox);
     
-    hbox = gtk_hbox_new(FALSE, BORDER/4);
-    gtk_widget_show(hbox);
-    gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 0);
-    
-    
-    dialog->priv->entry = entry = gtk_entry_new();
+    dialog->priv->comboboxentry = comboboxentry = gtk_combo_box_entry_new();
+    dialog->priv->entry = entry = gtk_bin_get_child(GTK_BIN(comboboxentry));
     gtk_entry_set_activates_default(GTK_ENTRY(entry), TRUE);
     xfrun_setup_entry_completion(dialog);
-    gtk_widget_show(entry);
-    gtk_box_pack_start(GTK_BOX(hbox), entry, TRUE, TRUE, 0);
+    gtk_widget_show(comboboxentry);
+    gtk_box_pack_start(GTK_BOX(vbox), comboboxentry, FALSE, FALSE, 0);
+    g_signal_connect(G_OBJECT(comboboxentry), "changed",
+                     G_CALLBACK(xfrun_comboboxentry_changed), dialog);
     g_signal_connect(G_OBJECT(entry), "focus-out-event",
                      G_CALLBACK(xfrun_entry_focus_out), dialog);
-    g_signal_connect(G_OBJECT(entry), "key-press-event",
-                     G_CALLBACK(xfrun_entry_key_press), dialog);
-    
-    if(gtk_tree_model_get_iter_first(dialog->priv->completion_model, &itr)) {
-        gtk_tree_model_get(dialog->priv->completion_model, &itr,
-                           XFRUN_COL_COMMAND, &first_item,
-                           -1);
-        if(first_item) {
-            gtk_entry_set_text(GTK_ENTRY(entry), first_item);
-            g_free(first_item);
-        }
-    }
-    
-    dialog->priv->arrow_btn = btn = gtk_button_new();
-    gtk_container_set_border_width(GTK_CONTAINER(btn), 0);
-    gtk_widget_show(btn);
-    gtk_box_pack_start(GTK_BOX(hbox), btn, FALSE, FALSE, 0);
-    g_signal_connect(G_OBJECT(btn), "clicked",
-                     G_CALLBACK(xfrun_menu_button_clicked), dialog);
-    
-    arrow = gtk_arrow_new(GTK_ARROW_DOWN, GTK_SHADOW_NONE);
-    gtk_widget_show(arrow);
-    gtk_container_add(GTK_CONTAINER(btn), arrow);
     
     dialog->priv->terminal_chk = chk = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
     gtk_widget_show(chk);
     gtk_box_pack_start(GTK_BOX(vbox), chk, FALSE, FALSE, 0);
+    
+    if(gtk_tree_model_get_iter_first(dialog->priv->completion_model, &itr)) {
+        gtk_combo_box_set_active_iter(GTK_COMBO_BOX(comboboxentry), &itr);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(chk), FALSE);
+    }
     
     bbox = gtk_hbutton_box_new();
     gtk_button_box_set_layout(GTK_BUTTON_BOX(bbox), GTK_BUTTONBOX_END);
@@ -337,15 +314,20 @@ xfrun_dialog_delete_event(GtkWidget *widget,
 static void
 xfrun_setup_entry_completion(XfrunDialog *dialog)
 {
+    GtkComboBoxEntry *comboboxentry = GTK_COMBO_BOX_ENTRY(dialog->priv->comboboxentry);
     GtkEntryCompletion *completion = gtk_entry_completion_new();
     GtkTreeModel *completion_model;
     
     /* clear out the old completion and resources, if any */
     gtk_entry_set_completion(GTK_ENTRY(dialog->priv->entry), NULL);
+    gtk_combo_box_set_model(GTK_COMBO_BOX(comboboxentry), NULL);
     if(dialog->priv->completion_model)
         g_object_unref(dialog->priv->completion_model);
     
     dialog->priv->completion_model = completion_model = xfrun_create_completion_model(dialog);
+    gtk_combo_box_set_model(GTK_COMBO_BOX(comboboxentry), completion_model);
+    gtk_combo_box_entry_set_text_column(comboboxentry, XFRUN_COL_COMMAND);
+    
     gtk_entry_completion_set_model(completion, completion_model);
     gtk_entry_completion_set_text_column(completion, XFRUN_COL_COMMAND);
     gtk_entry_completion_set_popup_completion(completion, TRUE);
@@ -375,6 +357,27 @@ xfrun_get_histfile_content()
 }
 
 static gboolean
+xfrun_comboboxentry_changed(GtkComboBoxEntry *comboboxentry,
+                            gpointer user_data)
+{
+    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
+    GtkTreeModel *model;
+    GtkTreeIter iter;
+    gboolean in_terminal = FALSE;
+    
+    if(gtk_combo_box_get_active_iter(GTK_COMBO_BOX(comboboxentry), &iter)) {
+        model = gtk_combo_box_get_model(GTK_COMBO_BOX(comboboxentry));
+        gtk_tree_model_get(model, &iter,
+                           XFRUN_COL_IN_TERMINAL, &in_terminal,
+                           -1);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk),
+                                     in_terminal);
+    }
+    
+    return FALSE;
+}
+
+static gboolean
 xfrun_entry_check_match(GtkTreeModel *model,
                         GtkTreePath *path,
                         GtkTreeIter *iter,
@@ -390,8 +393,8 @@ xfrun_entry_check_match(GtkTreeModel *model,
                        -1);
     
     if(!g_utf8_collate(command, dialog->priv->entry_val_tmp)) {
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk),
-                                     in_terminal);
+        gtk_combo_box_set_active_iter(GTK_COMBO_BOX(dialog->priv->comboboxentry),
+                                      iter);
         ret = TRUE;
     }
     
@@ -407,140 +410,16 @@ xfrun_entry_focus_out(GtkWidget *widget,
 {
     XfrunDialog *dialog = XFRUN_DIALOG(user_data);
     
-    dialog->priv->entry_val_tmp = gtk_editable_get_chars(GTK_EDITABLE(widget),
-                                                         0, -1);
-    gtk_tree_model_foreach(dialog->priv->completion_model,
-                           xfrun_entry_check_match, dialog);
-    g_free(dialog->priv->entry_val_tmp);
-    dialog->priv->entry_val_tmp = NULL;
-    
-    return FALSE;
-}
-
-static gboolean
-xfrun_entry_key_press(GtkWidget *widget,
-                      GdkEventKey *evt,
-                      gpointer user_data)
-{
-    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    
-    if(evt->keyval == GDK_Down || evt->keyval == GDK_KP_Down) {
-        gtk_button_clicked(GTK_BUTTON(dialog->priv->arrow_btn));
-        return TRUE;
+    if(gtk_combo_box_get_active(GTK_COMBO_BOX(dialog->priv->comboboxentry)) < 0) {
+        dialog->priv->entry_val_tmp = gtk_editable_get_chars(GTK_EDITABLE(widget),
+                                                             0, -1);
+        gtk_tree_model_foreach(dialog->priv->completion_model,
+                               xfrun_entry_check_match, dialog);
+        g_free(dialog->priv->entry_val_tmp);
+        dialog->priv->entry_val_tmp = NULL;
     }
     
     return FALSE;
-}
-
-static void
-xfrun_menu_item_activated(GtkWidget *widget,
-                          gpointer user_data)
-{
-    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    GtkWidget *lbl;
-    const gchar *command;
-    gboolean in_terminal;
-    
-    lbl = gtk_bin_get_child(GTK_BIN(widget));
-    g_return_if_fail(GTK_IS_LABEL(lbl));
-    
-    command = gtk_label_get_text(GTK_LABEL(lbl));
-    gtk_entry_set_text(GTK_ENTRY(dialog->priv->entry), command);
-    
-    in_terminal = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget),
-                                                     "--xfrun-in-terminal"));
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk),
-                                 in_terminal);
-}
-
-static gboolean
-xfrun_populate_menu(GtkTreeModel *model,
-                    GtkTreePath *path,
-                    GtkTreeIter *iter,
-                    gpointer data)
-{
-    GtkWidget *menu = GTK_WIDGET(data), *mi;
-    XfrunDialog *dialog = g_object_get_data(G_OBJECT(menu), 
-                                                  "--xfrun-dialog");
-    gchar *command = NULL;
-    gboolean in_terminal = FALSE;
-    
-    gtk_tree_model_get(model, iter,
-                       XFRUN_COL_COMMAND, &command,
-                       XFRUN_COL_IN_TERMINAL, &in_terminal,
-                       -1);
-    
-    mi = gtk_menu_item_new_with_label(command);
-    g_object_set_data(G_OBJECT(mi), "--xfrun-in-terminal",
-                      GINT_TO_POINTER(in_terminal));
-    gtk_widget_show(mi);
-    gtk_menu_shell_append(GTK_MENU_SHELL(menu), mi);
-    g_signal_connect(G_OBJECT(mi), "activate",
-                     G_CALLBACK(xfrun_menu_item_activated), dialog);
-    
-    g_free(command);
-    
-    return FALSE;
-}
-
-static void
-xfrun_menu_position(GtkMenu *menu,
-                    gint *x,
-                    gint *y,
-                    gboolean *push_in,
-                    gpointer user_data)
-{
-    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    GtkAllocation *entry_al = &dialog->priv->entry->allocation;
-    GtkAllocation *btn_al = &dialog->priv->arrow_btn->allocation;
-    gint entry_x, entry_y;
-    
-    gdk_window_get_origin(dialog->priv->entry->window, &entry_x, &entry_y);
-    
-    *x = entry_x;
-    *y = entry_y + entry_al->height;
-    *push_in = FALSE;
-    
-    gtk_widget_set_size_request(GTK_WIDGET(menu),
-                                btn_al->x - entry_al->x + btn_al->width, -1);
-}
-
-static gboolean
-xfrun_menu_destroy_idled(gpointer user_data)
-{
-    gtk_widget_destroy(GTK_WIDGET(user_data));
-    return FALSE;
-}
-
-static void
-xfrun_menu_destroy(GtkWidget *widget,
-                   gpointer user_data)
-{
-    g_idle_add(xfrun_menu_destroy_idled, widget);
-}
-
-static void
-xfrun_menu_button_clicked(GtkWidget *widget,
-                          gpointer user_data)
-{
-    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    GtkWidget *menu;
-    
-    menu = gtk_menu_new();
-    g_object_set_data(G_OBJECT(menu), "--xfrun-dialog", dialog);
-    gtk_widget_show(menu);
-    g_signal_connect(G_OBJECT(menu), "deactivate",
-                     G_CALLBACK(xfrun_menu_destroy), menu);
-    
-    gtk_tree_model_foreach(dialog->priv->completion_model,
-                           xfrun_populate_menu, menu);
-                           
-    gtk_menu_set_screen(GTK_MENU(menu),
-                        gtk_widget_get_screen (widget));
-    
-    gtk_menu_popup(GTK_MENU(menu), NULL, NULL,
-                   xfrun_menu_position, dialog,
-                   1, gtk_get_current_event_time());
 }
 
 static void
