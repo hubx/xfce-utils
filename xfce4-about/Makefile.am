@@ -7,6 +7,7 @@ about_DATA =								\
 	GPL								\
 	INFO								\
 	INFO.ca								\
+	INFO.de								\
 	INFO.es								\
 	INFO.fi								\
 	INFO.fr								\
@@ -15,7 +16,7 @@ about_DATA =								\
 	INFO.ru								\
 	INFO.uk								\
 	INFO.vi								\
-	LGPL								
+	LGPL
 
 bin_PROGRAMS =  xfce4-about
 
