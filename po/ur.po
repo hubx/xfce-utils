@@ -68,7 +68,9 @@ msgstr "مترجمین"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "اگر آپ سمجھتے ہیں کہ کوئی اس فہرست میں شامل ہونے سے رہ گیا ہے تو ہمیں مطلع کریں <"
+msgstr ""
+"اگر آپ سمجھتے ہیں کہ کوئی اس فہرست میں شامل ہونے سے رہ گیا ہے تو ہمیں مطلع "
+"کریں <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -118,7 +120,9 @@ msgstr "ڈیمون موڈ کی معاونت نہیں ہے"
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "ڈیمون موڈ فعال کرنے کے لیے لازم ہے کہ Xfrun کو D-BUS معاونت کے ساتھ کمپائل کیا جائے."
+msgstr ""
+"ڈیمون موڈ فعال کرنے کے لیے لازم ہے کہ Xfrun کو D-BUS معاونت کے ساتھ کمپائل "
+"کیا جائے."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format
@@ -131,13 +135,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS پیغام bus منقطع ہوگیا. برخاست کیا جارہا ہے ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "نظام غلطی"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "پس منظر کو fork نہیں کیا جاسکا:"
 
@@ -170,4 +172,3 @@ msgstr "%s کو کس پروگرام میں کھولا جائے؟"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "پروگرام چلائیں"
-

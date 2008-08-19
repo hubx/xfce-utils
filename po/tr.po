@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Erçin EKER <ercin.eker@linux.org.tr>, 2004.
 # Eren Türkay <turkay.eren@gmail.com> 2007
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
@@ -66,7 +66,9 @@ msgstr "Çevirmenler"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Bu listede birilerinin eksik olduğunu düşünüyorsanız lütfen bizi bilgilendirin <"
+msgstr ""
+"Bu listede birilerinin eksik olduğunu düşünüyorsanız lütfen bizi "
+"bilgilendirin <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -116,7 +118,9 @@ msgstr "Arkaplan kipi desteklenmiyor."
 
 #: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Arkaplan kipinin etkin olabilmesi için Xfrun uygulamasının D-BUS ile birlikte derlenmesi gerekir."
+msgstr ""
+"Arkaplan kipinin etkin olabilmesi için Xfrun uygulamasının D-BUS ile "
+"birlikte derlenmesi gerekir."
 
 #: xfrun/xfrun-dbus.c:141
 #, c-format

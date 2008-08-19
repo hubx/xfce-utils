@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
@@ -69,7 +70,8 @@ msgstr "Tulkotāji"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Ja, Jums ir zināms, kāds, kurš nav minēts sarakstā, lūdzu, dodiet ziņu <"
+msgstr ""
+"Ja, Jums ir zināms, kāds, kurš nav minēts sarakstā, lūdzu, dodiet ziņu <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -132,13 +134,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS ziņu kopne atvienota. Izeju ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Sistēmas kļūda"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nevarēja fonā sazaroties:"
 
@@ -171,4 +171,3 @@ msgstr "Ar kuru programmu atvērt  %s?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Izpildīt programmu"
-

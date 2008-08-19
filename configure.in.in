@@ -67,10 +67,8 @@ AC_MSG_CHECKING([whether to install GDM specific files])
 AC_ARG_ENABLE([gdm],
 AC_HELP_STRING([--enable-gdm], [enable the installation of GDM specific files])
 AC_HELP_STRING([--disable-gdm], [do not install GDM specific files (default)]),
-	[], [enable_gdm=no])
-USE_GDM=$enable_gdm
-AC_SUBST([USE_GDM])
-AC_MSG_RESULT([$enable_gdm])
+	[enable_gdm=$enableval], [enable_gdm=no])
+AM_CONDITIONAL([USE_GDM], [test "x$enable_gdm" = "xyes"])
 
 dnl Check where to install GDM session files
 if test x"$enable_gdm" = x"yes"; then

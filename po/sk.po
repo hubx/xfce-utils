@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Juraj Brosz <juro@jurajbrosz.info>, 2004, 2005.
 # Roman Moravcik <roman.moravcik@gmail.com> 2006.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"

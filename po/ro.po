@@ -14,7 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3;plural=(n==1?0:(n==0||((n%100)>0&&(n%100)<20))?1:2)\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(n==0||((n%100)>0&&(n%100)<20))?"
+"1:2)\n"
 
 #: xfce4-about/info.c:172
 msgid "Unable to load "
@@ -66,8 +67,9 @@ msgstr "Traducători"
 
 #: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să "
-"ne daţi de ştire la <"
+msgstr ""
+"Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să ne daţi de "
+"ştire la <"
 
 #: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -167,4 +169,3 @@ msgstr "Cu ce program să fie deschis %s?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Pornire programe"
-

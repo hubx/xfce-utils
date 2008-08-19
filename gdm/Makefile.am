@@ -1,9 +1,10 @@
+if USE_GDM
 
 gdm_prefix = @GDM_PREFIX@
-switchdesk_prefix = "/usr/share/apps/switchdesk"
-wmsession_prefix  = "$(gdm_prefix)/wmsession.d"
-dmsession_prefix  = "$(gdm_prefix)/dm/Sessions"
-gdmsession_prefix = "$(gdm_prefix)/gdm/Sessions"
+switchdesk_prefix = /usr/share/apps/switchdesk
+wmsession_prefix  = $(gdm_prefix)/wmsession.d
+dmsession_prefix  = $(gdm_prefix)/dm/Sessions
+gdmsession_prefix = $(gdm_prefix)/gdm/Sessions
 
 noinst_DATA = $(xfce_FILES)
 xfce_SOURCE = XFce4.in Xclients.xfce4.in 10XFce4.in xfce.desktop
@@ -49,3 +50,4 @@ uninstall-gdm:
 	rm -f $(DESTDIR)$(switchdesk_prefix)/Xclients.xfce4
 	rm -f $(DESTDIR)$(wmsession_prefix)/10XFce4
 
+endif

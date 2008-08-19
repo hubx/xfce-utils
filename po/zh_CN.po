@@ -34,13 +34,11 @@ msgstr "核心开发者"
 
 #. Active contributors
 #: xfce4-about/info.c:209
-#, 
 msgid "Active contributors"
 msgstr "活跃贡献者"
 
 #. Previous contributors
 #: xfce4-about/info.c:213
-#, 
 msgid "Previous contributors"
 msgstr "先前贡献者"
 
@@ -55,7 +53,6 @@ msgstr "服务器维护者"
 
 #. Goodies supervision
 #: xfce4-about/info.c:254
-#, 
 msgid "Goodies supervision"
 msgstr "Goodies 管理"
 
@@ -82,7 +79,6 @@ msgid "About Xfce 4"
 msgstr "关于Xfce 4 "
 
 #: xfce4-about/info.c:398
-#, 
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "版权所有2002-2007 Olivier Fourdan"
 
@@ -125,7 +121,7 @@ msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "xfrun必须在编译时加入 D-BUS 支持才能启用 daemon 模式"
 
 #: xfrun/xfrun-dbus.c:141
-#, , c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "无法打开显示  \"%s\" 。"
 
@@ -161,7 +157,6 @@ msgid "Run Error"
 msgstr "运行错误"
 
 #: xfrun/xfrun-dialog.c:665
-#, 
 msgid "Unknown Error"
 msgstr "未知错误"
 

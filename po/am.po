@@ -128,13 +128,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS message bus disconnected. Exiting ...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340
-#: xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "የስርዓት ስህተት"
 
-#: xfrun/xfrun-dbus.c:342
-#: xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Unable to fork to background:"
 
@@ -167,4 +165,3 @@ msgstr "%s  በምን ፕሮግራም ይከፈት?"
 #: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "ፕሮግራምን አስኪድ"
-
