@@ -8,7 +8,7 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-m4_define([xfce_utils_version], [4.4.0])
+m4_define([xfce_utils_version], [4.5.80])
 
 AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
