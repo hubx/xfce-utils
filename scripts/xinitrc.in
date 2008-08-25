@@ -113,7 +113,7 @@ xsetroot -solid black -cursor_name watch
 
 # or use old-fashioned startup script otherwise
 
-xfce-mcs-manager
+xfsettingsd &
 xfwm4 --daemon
 
 # start up stuff in $XDG_CONFIG_HOME/autostart/, as that looks to be
