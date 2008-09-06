@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-02 21:44+0200\n"
+"POT-Creation-Date: 2008-09-06 22:45+0200\n"
 "PO-Revision-Date: 2007-01-16 09:38+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -167,6 +167,14 @@ msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "Suorita ohjelma"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr ""
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr ""
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce-työpöytäympäristö"

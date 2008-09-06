@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-02 21:44+0200\n"
+"POT-Creation-Date: 2008-09-06 22:45+0200\n"
 "PO-Revision-Date: 2006-10-25 15:38+0530\n"
 "Last-Translator: sonam rinchen <somindruk@druknet.bt>\n"
 "Language-Team: dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -172,6 +172,14 @@ msgstr "ལས་རིམ་ག་ཅི་གཅིག་ཁར་ %s ཁ་�
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "ལས་རིམ་གཡོག་བཀོལ།"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr ""
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr ""
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་ཌིཀསི་ཊོཔ་མཐའ་འཁོར།"

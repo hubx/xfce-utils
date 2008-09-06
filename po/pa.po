@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-02 21:44+0200\n"
+"POT-Creation-Date: 2008-09-06 22:45+0200\n"
 "PO-Revision-Date: 2007-02-23 21:31+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
@@ -170,3 +170,11 @@ msgstr "%s ਨੂੰ ਕਿਸ ਪ੍ਰੋਗਰਾਮ ਨਾਲ ਖੋਲ੍�
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "ਪ੍ਰੋਗਰਾਮ ਚਲਾਓ"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr ""
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr ""

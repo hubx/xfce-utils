@@ -1,4 +1,4 @@
-# $Id$
+
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec TODO
 
@@ -15,9 +15,22 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 EXTRA_DIST = \
-	$(desktop_in_files)
+	$(desktop_in_files) \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in \
+	AUTHORS \
+	COPYING \
+	ChangeLog \
+	INSTALL \
+	NEWS \
+	README
+
 
 DISTCLEANFILES = \
+	intltool-extract \
+	intltool-merge \
+	intltool-update \
 	xfce.desktop
 
 DISTCHECK_CONFIGURE_FLAGS = 						\
