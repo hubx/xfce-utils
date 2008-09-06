@@ -2,20 +2,25 @@
 
 EXTRA_DIST = xfce-utils.spec xfce-utils.spec TODO
 
-SUBDIRS = doc icons xfrun scripts gdm xfce4-about po
+SUBDIRS = doc icons xfrun scripts xfce4-about po
 
 AUTOMAKE_OPTIONS =							\
 	1.8								\
 	dist-bzip2
 
-distclean-local:
-	rm -rf xfce-utils.spec *.cache *~
+desktopdir = $(XSESSION_PREFIX)/share/xsessions
+desktop_in_files = xfce.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
-rpm: dist
-	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz
-	@rm -f $(PACKAGE)-$(VERSION).tar.gz
+@INTLTOOL_DESKTOP_RULE@
 
-html: Makefile
-	make -C doc html
+EXTRA_DIST = \
+	$(desktop_in_files)
+
+DISTCLEANFILES = \
+	xfce.desktop
+
+DISTCHECK_CONFIGURE_FLAGS = 						\
+	--with-xsession-prefix=/tmp/$(PACKAGE)-distcheck
 
 # vi:set ts=8 sw=8 noet ai nocindent:

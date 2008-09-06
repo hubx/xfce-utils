@@ -4,3 +4,4 @@ xfce4-about/info.c
 xfrun/xfrun.c
 xfrun/xfrun-dbus.c
 xfrun/xfrun-dialog.c
+xfce.desktop.in

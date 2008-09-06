@@ -1,6 +1,0 @@
-NAME=xfce4
-ICON=None
-DESC=XFce4 Desktop Environment
-EXEC=BIN_DIR/startxfce4
-SCRIPT:
-exec BIN_DIR/startxfce4

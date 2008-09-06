@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-09-02 21:44+0200\n"
 "PO-Revision-Date: 2006-09-08 22:53+0200\n"
 "Last-Translator: Sylvain Vedrenne <gnu_sylvain@xfce.org>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
@@ -16,157 +16,157 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "Ne povas ŝargi "
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Projekta Kondukanto"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Ĉefaj programistoj"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "Aktivaj partoprenantoj"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "Antauxaj partoprenantoj"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Retaj Hejmpaĵejo kaj Listoj disponigitaj de"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Servilo administrita de"
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "'Goodies' administrado"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Tradukada administrado"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Tradukantoj"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Se vi konas iun kiu mankas en tiu-ĉi listo, bonvolu komuniki tion al ni ĉe <"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Dankon al ĉiuj kiuj helpis disponebligi tiun programon."
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Pri Xfce 4"
 
-#: xfce4-about/info.c:398
+#: ../xfce4-about/info.c:398
 #, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Aŭtorrajto (C) 2002-2007 de Olivier Fourdan"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:421
 msgid "Info"
 msgstr "Informo"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Kreditoj"
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Aŭtorrajto"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "Demona modo"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "La demona modo ne estas subtenata."
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "Xfrun devas esti kompilita kun D-BUS ebleco por ebligi la demonan modon."
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Ne povas malfermi la ekranon \"%s\"."
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS mesaĝa buso dekonektita. Adiaŭi...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Sistema eraro"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Ne eblas el-lanĉi en la fono:"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "Lanĉu en _terminalo"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "_Lanĉu"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Malsukcesis lanĉi la komandon \"%s\":"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "Lanĉa Eraro"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "Nekonata Eraro"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Per kiu programo malfermi %s?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "Lanĉu programon"
 

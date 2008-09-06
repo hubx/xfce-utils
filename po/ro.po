@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-09-02 21:44+0200\n"
 "PO-Revision-Date: 2007-01-20 23:50+0200\n"
 "Last-Translator: Mişu Moldovan <dumol@gnome.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
@@ -17,155 +17,155 @@ msgstr ""
 "Plural-Forms: nplurals=3;plural=(n==1?0:(n==0||((n%100)>0&&(n%100)<20))?"
 "1:2)\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "Nu se poate încărca "
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Dezvoltator principal"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Dezvoltatori"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "Contributori activi"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "Contributori inactivi"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Găzduire web şi liste de mail"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Server administrat de"
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "Supervizare „goodies”"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Supervizare localizare"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Traducători"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să ne daţi de "
 "ştire la <"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Mulţumim tuturor celor ce au sprijinit acest proiect software."
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Despre Xfce 4"
 
-#: xfce4-about/info.c:398
+#: ../xfce4-about/info.c:398
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Drepturi de autor 2002-2007, Olivier Fourdan"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:421
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Credit"
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "Mod demon"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "Modul demon nu este suportat."
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "Xfrun trebuie compilat cu suport D-BUS pentru activarea modului demon."
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Nu se poate deschide ecranul „%s”."
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Deconectare de la magistrala D-BUS. Ieşire...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Eroare de sistem"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nu se poate face fork în fundal:"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "În _terminal"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "_Porneşte"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Comanda „%s” a eşuat la executare:"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "Eroare la pornire"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "Eroare necunoscută"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Cu ce program să fie deschis %s?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "Pornire programe"

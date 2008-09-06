@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-09-02 21:44+0200\n"
 "PO-Revision-Date: 2007-02-20 09:47+0900\n"
 "Last-Translator: ByungHyun Choi <byunghyun.choi@gmail.com>\n"
 "Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge."
@@ -16,153 +16,153 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "읽어 들이지 못 했습니다."
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "프로젝트 진행"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "개발하신 분들"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "도와주신 분들(현재 활동 중)"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "이전에 도와주신 분들"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "웹 호스팅 및 메일링 리스트 제공"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "서버 관리 "
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "Goodies 관리"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "번역 관리"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:262
 msgid "Translators"
 msgstr "번역하신 분들"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "리스트에서 빠진 분이 있으면 알려 주시기 바랍니다.<"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "이 소프트웨어가 동작하는 데 도와주신 모든 분들께 감사드립니다."
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "XFce 4란..."
 
-#: xfce4-about/info.c:398
+#: ../xfce4-about/info.c:398
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:421
 msgid "Info"
 msgstr "정보"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:423
 msgid "Credits"
 msgstr "만든 사람들..."
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "저작권"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "데몬 모드"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "데몬 모드를 지원하지 않습니다."
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "데몬 모드를 사용하려면 D-BUS를 지원하도록 컴파일해야 합니다."
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "화면 \"%s\"를(을) 열지 못 했습니다."
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS 메시지 버스와 연결이 끊어졌습니다. 종료합니다...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "시스템 오류"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "백그라운드로 진입하지 못 했습니다:"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "터미널에서 실행(_t)"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "실행(_R)"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "\"%s\"라는 명령을 실행시키기 못 했습니다:"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "실행 오류"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "모르는 오류"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "%s을(를) 어떤 프로그램으로 열어 볼까요?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "프로그램 실행"

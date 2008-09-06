@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-09-02 21:44+0200\n"
 "PO-Revision-Date: 2007-01-16 02:14+0300\n"
 "Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -15,158 +15,158 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "Немагчыма загрузіць"
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Лідэр праекту"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Асноўныя распрацоўнікі"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "Актыўныя ўкладальнікі"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "Ранейшыя ўкладальнікі"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Гостынг і паштовыя сьпісы абслугоўваюцца"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Паслужнік падтрымліваецца"
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "Адказны за Goodies"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Адказны за пераклады"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Перакладальнікі"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Калі вы ведаеце каго-небудзь, хто прапушчаны ў гэтым сьпісе, калі ласка, "
 "паведаміце на <"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Дзякуй усім, хто дапамог зьявіцца гэтаму праграмнаму забесьпячэньню."
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Пра Xfce 4"
 
-#: xfce4-about/info.c:398
+#: ../xfce4-about/info.c:398
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Аўтарскія правы 2002-2007 належаць Olivier Fourdan"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:421
 msgid "Info"
 msgstr "Зьвесткі"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Падзякі"
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Правы"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "Рэжым службы"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "Рэжым службы не падтрымліваецца."
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "Xfrun мусіць быць скампіляваны з падтрымкай D-BUS, каб дзейнічаў рэжым "
 "службы."
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Немагчыма адкрыць дысплэй \"%s\"."
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Шына D-BUS адключана. Завяршэньне працы...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Сыстэмная памылка"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Немагчыма зрабіць нашчадка для фонавага рэжыму:"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "Выконваць у _тэрмінале"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "Запусьц_іць"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Немагчыма выканаць загад \"%s\":"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "Памылка запуску"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "Невядомая памылка"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Адчыніць %s з гэтай праграмай?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "Запуск праграмы"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-09-02 21:44+0200\n"
 "PO-Revision-Date: 2006-10-25 15:38+0530\n"
 "Last-Translator: sonam rinchen <somindruk@druknet.bt>\n"
 "Language-Team: dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -19,157 +19,157 @@ msgstr ""
 "X-Poedit-Country: bhutan\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "མངོན་གསལ་འབད་མི་ཚུགས།"
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "ལས་འགུལ་འགོ་ཁྲིད།"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "ནང་སྙིང་བཟོ་མི་ཚུ།"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "ཤུགས་ལྡན་ཕན་འདེབས་པ་ཚུ།"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "ཧེ་མའི་ཕན་འདེབས་པ་ཚུ།"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "གིས་བྱིན་ཏེ་ཡོད་མི་ཝེབ་ཧོསཊི་ཊིང་དང་ཡིག་འཕྲིན་གཏང་ནིའི་ཐོ་ཡིག་ཚུ།"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "གིས་རྒྱུན་སྐྱོང་འབད་ཡོད་པའི་སར་བར།"
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "གུ་ཌིསི་ལྟ་རྟོག།"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "སྐད་སྒྱུར་ཚུའི་ལྟ་རྟོག།"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:262
 msgid "Translators"
 msgstr "སྐད་བསྒྱུར་པ་ཚུ།"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "ཁྱོད་ཀྱིས་ཐོ་ཡིག་འདི་ལས་གང་རུང་ཅིག་བརླག་སྟོར་ཞུགསཔ་ཨིནམ་ཤེས་པ་ཅིན་ ང་བཅས་ལུ་སླབ་གནང་ <"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "མཉེན་ཆས་འདི་འཐོབ་ཚུགསཔ་བཟོ་མི་ཆ་མཉམ་ལུ་བཀྲིན་ཆེ།"
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་༤གི་སྐོར་ལས།"
 
-#: xfce4-about/info.c:398
+#: ../xfce4-about/info.c:398
 #, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "ཨོ་ལི་བར་ཕོར་ཌེན་གིས་འདྲ་བཤུས་དབང་ཆ་༢༠༠༢-༢༠༠༦"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:421
 msgid "Info"
 msgstr "བརྡ་དོན།"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:423
 msgid "Credits"
 msgstr "ངོ་བསྟོད་ཚུ།"
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "འདྲ་བཤུས་དབང་ཆ།"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "བི་ཨེསི་ཌི་ཨེལ།"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "ཨེལ་ཇི་པི་ཨེལ།"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:427
 msgid "GPL"
 msgstr "ཇི་པི་ཨེལ།"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "ཌེ་མཱོན་ཐབས་ལམ།"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "ཌེ་མཱོན་ཐབས་ལམ་འདི་རྒྱབ་སྐྱོར་མ་འབད་བས།"
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "ཌེ་མཱོན་ཐབས་ལམ་ལཽགས་ཅན་བཟོ་ནི་ལུ་ཨེཀསི་ཨེཕ་ཨར་ཡུ་ཨེན་འདི་ཌི་-བི་ཡུ་ཨེསི་གཅིག་ཁར་ངེས་པར་ཕྱོགས་སྒྲིག་"
 "འབད་དགོ།"
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "\"%s\" བཀྲམ་སྟོན་ཁ་ཕྱེ་མི་ཚུགས།"
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "ཌི་-བི་ཡུ་ཨེསི་ འཕྲིན་དོན་བརྡ་རྟགས་འགྲུལ་ལམ་མཐུད་ལམ་བཏོག་ཡོདཔ། ཡོད་བཞིན་པའི་...\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "རིམ་ལུགས་འཛོལ་བ།"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "རྒྱབ་གཞི་ལུ་ཁ་སྤེལ་མི་ཚུགས།"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "ཊར་མི་ནཱལ་ནང་གཡོག་བཀོལ།(_t)"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "གཡོག་བཀོལ།(_R)"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "བརྡ་བཀོད་ \"%s\" གཡོག་བཀོལ་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོདཔ་:"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "གཡོག་བཀོལ་ནི་འཛོལ་བ།"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "མ་ཤེསཔ་འཛོལ་བ།"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "ལས་རིམ་ག་ཅི་གཅིག་ཁར་ %s ཁ་ཕྱེ?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "ལས་རིམ་གཡོག་བཀོལ།"
 
