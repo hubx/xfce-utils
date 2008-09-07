@@ -16,7 +16,19 @@ sub xfconf_set
 {
     my ($chan,$prop,$type,$val) = @_;
     $val =~ s/'/'\\''/g;
-    my $cmd = qq(xfconf-query -n -c $chan -p $prop -t $type -s '$val');
+    my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t $type -s '$val');
+    if($debug) {
+        print $cmd."\n";
+    }
+    system($cmd);
+}
+
+sub xfconf_set_keybind
+{
+    my ($chan,$prop,$command) = @_;
+    $command =~ s/'/'\\''/g;
+    my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t string -t string );
+    $cmd .= qq(-s execute -s '$command');
     if($debug) {
         print $cmd."\n";
     }
@@ -30,7 +42,7 @@ sub xfconf_set_color
     if($val =~ /\s*(\d+),\s*(\d+),\s*(\d+),\s*(\d+)/) {
         my ($r,$g,$b) = ($1,$2,$3);
 
-        my $cmd = "xfconf-query -n -c $chan -p $prop ";
+        my $cmd = "xfconf-query -n -c $chan -p '$prop' ";
         $cmd .= "-t uint16 -t uint16 -t uint16 -t uint16 ";
         $cmd .= "-s $r -s $g -s $b -s 65535";
 
@@ -487,12 +499,55 @@ sub migrate_xfprint
     my $mcs = 'xfprint';
 
     my $ref = parse_mcs_xml_file($mcs);
-    return if(!defined($ref));
+    return undef if(!defined($ref));
 
     my $chan = 'xfprint';
     
     save_xfconf_prop($ref, $chan, 'XfPrint/system',
                      '/printing-system', 'string');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_keyboard_shortcuts
+{
+    my $mcs = 'shortcuts';
+    my $chan = 'xfce4-keyboard-shortcuts';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    return undef if(!defined(${$ref}{'Xfce4/ShortcutThemeFile'}));
+    my $file = ${$ref}{'Xfce4/ShortcutThemeFile'}->{'value'};
+    return undef if(!defined($file) || ! -f $file);
+
+    my $p = XML::Parser->new(Style => 'Tree');
+    my $sref = $p->parsefile($file);
+    return undef if(!defined($sref));
+
+    my @toparr = @{$sref};
+    return undef if($toparr[0] ne 'shortcuts-theme');
+
+    my @list = @{$toparr[1]};
+    my $i = 1;
+    while(defined($list[$i])) {
+        next if($list[$i++] ne 'shortcut');
+
+        my %sc = %{$list[$i++][0]};
+        my $keys = $sc{'keys'};
+        my $command = $sc{'command'};
+        next if(!defined($keys) || !defined($command));
+
+        my $str = '/';
+        $str .= '<Shift>' if($keys =~ /Shift\+/);
+        $str .= '<Control>' if($keys =~ /Control\+/);
+        $str .= '<Alt>' if($keys =~ /Alt\+/);
+        $str .= '<Mod4>' if($keys =~ /Mod4\+/ || $keys =~ /Super\+/);
+        if($keys =~ /(^|\+)([A-Za-z0-9_])+$/) {
+            $str .= $2;
+            xfconf_set_keybind($chan, $str, $command);
+        }
+    }
 
     return $mcs.'.xml';
 }
@@ -510,6 +565,7 @@ push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_wmtweaks)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard_shortcuts)));
 
 disable_autostart_file;
 write_info_file(@migrated);
