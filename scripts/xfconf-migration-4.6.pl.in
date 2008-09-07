@@ -1,0 +1,517 @@
+#!@PERL@ -w
+
+use XML::Parser;
+use strict;
+
+my $debug = 0;
+
+sub setup_env
+{
+    if(!defined($ENV{'XDG_CONFIG_HOME'})) {
+        $ENV{'XDG_CONFIG_HOME'} = $ENV{'HOME'}.'/.config';
+    }
+}
+
+sub xfconf_set
+{
+    my ($chan,$prop,$type,$val) = @_;
+    $val =~ s/'/'\\''/g;
+    my $cmd = qq(xfconf-query -n -c $chan -p $prop -t $type -s '$val');
+    if($debug) {
+        print $cmd."\n";
+    }
+    system($cmd);
+}
+
+sub xfconf_set_color
+{
+    my ($chan,$prop,$val) = @_;
+
+    if($val =~ /\s*(\d+),\s*(\d+),\s*(\d+),\s*(\d+)/) {
+        my ($r,$g,$b) = ($1,$2,$3);
+
+        my $cmd = "xfconf-query -n -c $chan -p $prop ";
+        $cmd .= "-t uint16 -t uint16 -t uint16 -t uint16 ";
+        $cmd .= "-s $r -s $g -s $b -s 65535";
+
+        if($debug) {
+            print $cmd."\n";
+        }
+        system($cmd);
+    } else {
+        print STDERR "Couldn't parse color \"$val\"";
+    }
+}
+
+sub tobool
+{
+    my $val = shift;
+    return ($val == 0 || lc($val) eq 'false' ? 'false' : 'true');
+}
+
+sub parse_mcs_xml_file
+{
+    my ($mcs_channel) =  @_;
+    my $file = $ENV{'XDG_CONFIG_HOME'}."/xfce4/mcs_settings/$mcs_channel.xml";
+
+    return undef if(! -f $file);
+
+    my $p = XML::Parser->new(Style => 'Tree');
+    my $mcs = $p->parsefile($file) or do {
+        print STDERR "Failed to parse $mcs_channel.xml: $!\n";
+        return undef;
+    };
+
+    my $mcs_option_element = -1;
+    for(my $i = 0; $i < scalar(@{$mcs}); $i++) {
+        if(${$mcs}[$i] eq 'mcs-option') {
+            $mcs_option_element = $i;
+            last;
+        }
+    }
+
+    my @mcs_option = @{${$mcs}[$mcs_option_element+1]};
+    my %options = ();
+    for(my $i = 0; $i < scalar(@mcs_option); $i++) {
+        if($mcs_option[$i] eq 'option') {
+            $options{${${$mcs_option[$i+1]}[0]}{'name'}} = ${$mcs_option[$i+1]}[0];
+        }
+    }
+
+    return \%options;
+}
+
+sub disable_autostart_file
+{
+    my $autostart_file = $ENV{'XDG_CONFIG_HOME'}.'/autostart/xfconf-migration-4.6.desktop';
+
+    open(DOUT, '>'.$autostart_file) and do {
+        print DOUT "[Desktop Entry]\n";
+        print DOUT "Hidden=true\n";
+        close(DOUT);
+    } or warn("Unable to write local autostart file: $!");
+}
+
+sub write_info_file
+{
+    my $file = $ENV{'XDG_CONFIG_HOME'}.'/xfce4/mcs_settings/THESE_FILES_ARE_OBSOLETE.txt';
+
+    open(F, '>'.$file) and do {
+        print F "The following files in this directory have been migrated to the new\n";
+        print F "Xfconf configuration system and can be safely deleted if you so desire:\n";
+        print F "\n";
+        foreach my $f (sort @_) {
+            print F "    $f\n";
+        }
+        print F "\n";
+        print F "Other files have not been migrated and the applications previously using\n";
+        print F "them may need to be reconfigured manually.\n";
+        close(F);
+    };
+}
+
+sub save_xfconf_prop
+{
+    my ($ref,$chan,$opt,$prop,$type) = @_;
+    my %opts = %{$ref};
+
+    return undef if(!defined($opts{$opt}));
+
+    my $val = $opts{$opt}->{'value'};
+    $val = tobool($val) if($type eq 'bool');
+
+    if($type eq 'color') {
+        xfconf_set_color($chan, $prop, $val);
+    } else {
+        xfconf_set($chan, $prop, $type, $val);
+    }
+    1;
+}
+
+sub migrate_xfdesktop
+{
+    my $mcs = 'desktop';
+    my $chan = 'xfce4-desktop';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    save_xfconf_prop($ref, $chan, 'managedesktop-show-warning',
+                     '/manage-desktop/show-warning-off', 'bool');
+    save_xfconf_prop($ref, $chan, 'managedesktop-show-warning-on',
+                     '/manage-desktop/show-warning-on', 'bool');
+    save_xfconf_prop($ref, $chan, 'desktopiconstyle',
+                     '/desktop-icons/style', 'int');
+    save_xfconf_prop($ref, $chan, 'icons_font_size',
+                     '/desktop-icons/font-size', 'double');
+    save_xfconf_prop($ref, $chan, 'icons_icon_size',
+                     '/desktop-icons/icon-size', 'uint');
+    # the sense on this one has been reversed
+    if(defined(${$ref}{'icons_use_system_font_size'})) {
+        ${$ref}{'icons_use_system_font_size'}->{'value'} = !(${$ref}{'icons_use_system_font_size'}->{'value'});
+    }
+    save_xfconf_prop($ref, $chan, 'icons_use_system_font_size',
+                     '/desktop-icons/use-custom-font-size', 'bool');
+    save_xfconf_prop($ref, $chan, 'showdm',
+                     '/desktop-menu/show', 'bool');
+    save_xfconf_prop($ref, $chan, 'showdmi',
+                     '/desktop-menu/show-icons', 'bool');
+    save_xfconf_prop($ref, $chan, 'showwl',
+                     '/windowlist-menu/show', 'bool');
+    save_xfconf_prop($ref, $chan, 'wl_show_ws_names',
+                     '/windowlist-menu/show-workspace-names', 'bool');
+    save_xfconf_prop($ref, $chan, 'wl_sticky_once',
+                     '/windowlist-menu/show-sticky-once', 'bool');
+    save_xfconf_prop($ref, $chan, 'wl_submenus',
+                     '/windowlist-menu/show-submenus', 'bool');
+
+    # this is a bit overkill.  attempt up to 8 screens, 8 monitors
+    for(my $s = 0; $s < 8; $s++) {
+        for(my $m = 0; $m < 8; $m++) {
+            my $suf = '_'.$s.'_'.$m;
+            my $p = "/backdrop/screen$s/monitor$m";
+
+            # do a test to see if we're likely to have anything on
+            # this screen/monitor combo
+            next if(!defined(${$ref}{'showimage'.$suf}));
+
+            # this is a crappy non-screen-numbered setting; we'll just
+            # apply it to all screens that exist
+            save_xfconf_prop($ref, $chan, 'xineramastretch',
+                             "/backdrop/screen$s/xinerama-stretch", 'bool');
+
+            save_xfconf_prop($ref, $chan, 'brightness'.$suf,
+                             "$p/brightness", 'int');
+            save_xfconf_prop($ref, $chan, 'color1'.$suf,
+                             "$p/color1", 'color');
+            save_xfconf_prop($ref, $chan, 'color2'.$suf,
+                             "$p/color2", 'color');
+            save_xfconf_prop($ref, $chan, 'colorstyle'.$suf,
+                             "$p/color-style", 'int');
+            save_xfconf_prop($ref, $chan, 'imagepath'.$suf,
+                             "$p/image-path", 'string');
+            save_xfconf_prop($ref, $chan, 'imagestyle'.$suf,
+                             "$p/image-style", 'int');
+            save_xfconf_prop($ref, $chan, 'showimage'.$suf,
+                             "$p/image-show", 'bool');
+        }
+    }
+
+    # 'hidden' options
+    open(RCFILE, '<'.$ENV{'XDG_CONFIG_HOME'}.'/xfce4/desktop/xfdesktoprc') and do {
+        while(<RCFILE>) {
+            my ($key, $val) = split(/\s*=\s*/, $_, 2);
+            if(defined($key) && ($key eq 'show-filesystem' || $key eq 'show-home'
+               || $key eq 'show-trash' || $key eq 'show-removable')
+               && defined($val))
+            {
+                xfconf_set($chan, "/desktop-icons/file-icons/$key", 'bool',
+                           tobool($val));
+            }
+        }
+        close(RCFILE);
+        unlink($ENV{'XDG_CONFIG_HOME'}.'/xfce4/desktop/xfdesktoprc');
+    };
+
+    return $mcs.'.xml';
+}
+
+sub migrate_xsettings
+{
+    my $mcs = 'gtk';
+    my $chan = 'xsettings';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+    
+    save_xfconf_prop($ref, $chan, 'Gtk/CanChangeAccels',
+                     '/Gtk/CanChangeAccels', 'bool');
+    save_xfconf_prop($ref, $chan, 'Gtk/CursorThemeName',
+                     '/Gtk/CursorThemeName', 'string');
+    save_xfconf_prop($ref, $chan, 'Gtk/CursorThemeSize',
+                     '/Gtk/CursorThemeSize', 'int');
+    save_xfconf_prop($ref, $chan, 'Gtk/FontName',
+                     '/Gtk/FontName', 'string');
+    save_xfconf_prop($ref, $chan, 'Gtk/KeyThemeName',
+                     '/Gtk/KeyThemeName', 'string');
+    save_xfconf_prop($ref, $chan, 'Gtk/ToolbarStyle',
+                     '/Gtk/ToolbarStyle', 'string');
+
+    save_xfconf_prop($ref, $chan, 'Net/CursorBlink',
+                     '/Net/CursorBlink', 'bool');
+    save_xfconf_prop($ref, $chan, 'Net/CursorBlinkTime',
+                     '/Net/CursorBlinkTime', 'int');
+    save_xfconf_prop($ref, $chan, 'Net/DndDragThreshold',
+                     '/Net/DndDragThreshold', 'int');
+    save_xfconf_prop($ref, $chan, 'Net/IconThemeName',
+                     '/Net/IconThemeName', 'string');
+    save_xfconf_prop($ref, $chan, 'Net/ThemeName',
+                     '/Net/ThemeName', 'string');
+
+    # DPI setting needs to be special-cased
+    if(defined(${$ref}{'Xfce/XftDPI'})
+       && ${$ref}{'Xfce/XftDPI'}->{'value'} == 0)
+    {
+        ${$ref}{'Xfce/XftDPI'}->{'value'} = -1;
+    }
+    save_xfconf_prop($ref, $chan, 'Xfce/XftDPI',
+                     '/Xft/DPI', 'int');
+    save_xfconf_prop($ref, $chan, 'Xft/Antialias',
+                     '/Xft/AntiAlias', 'int');
+    save_xfconf_prop($ref, $chan, 'Xft/HintStyle',
+                     '/Xft/HintStyle', 'string');
+    save_xfconf_prop($ref, $chan, 'Xft/Hinting',
+                     '/Xft/Hinting', 'int');
+    save_xfconf_prop($ref, $chan, 'Xft/RGBA',
+                     '/Xft/RGBA', 'string');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_keyboard
+{
+    my $mcs = 'keyboard';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'accessibility';
+    save_xfconf_prop($ref, $chan, 'Key/BounceKeys',
+                     '/BounceKeys', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/DeBounceDelay',
+                     '/BounceKeys/Delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/MouseKeys',
+                     '/MouseKeys', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/MouseKeysDelay',
+                     '/MouseKeys/Delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/MouseKeysInterval',
+                     '/MouseKeys/Interval', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/MouseKeysMaxSpeed',
+                     '/MouseKeys/MaxSpeed', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/MouseKeysTimeToMax',
+                     '/MouseKeys/TimeToMax', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/SlowKeys',
+                     '/SlowKeys', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/SlowKeysDelay',
+                     '/SlowKeys/Delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/StickyKeys',
+                     '/StickyKeys', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/StickyKeysLatchToLock',
+                     '/StickyKeys/LatchToLock', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/StickyKeysTwoKeysDisable',
+                     '/StickyKeys/TwoKeysDisable', 'bool');
+
+    $chan = 'keyboards';
+    save_xfconf_prop($ref, $chan, 'Key/RepeatDelay',
+                     '/Default/KeyRepeat/Delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Key/RepeatKey',
+                     '/Default/KeyRepeat', 'bool');
+    save_xfconf_prop($ref, $chan, 'Key/RepeatRate',
+                     '/Default/KeyRepeat/Rate', 'int');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_mouse
+{
+    my $mcs = 'mouse';
+
+    # see if we have 'xinput'
+    (system("xinput version >/dev/null 2>&1") == 0) or do {
+        warn("Can't run 'xinput' ($!); unable to migrate mouse settings");
+        return;
+    };
+    my $op = `xinput list --short`;
+    my @lines = grep { /X(Extension)?Pointer/ && ! /Virtual core pointer/ } split(/\n/, $op);
+    my @pointers = ();
+    foreach my $l (@lines) {
+        if($l =~ /^"(.*?)"\s+/) {
+            my $name = $1;
+            $name =~ s/ /_/g;
+            push(@pointers , $name);
+        }
+    }
+
+    return undef if(!scalar(@pointers));
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'pointers';
+
+    foreach my $p (@pointers) {
+        save_xfconf_prop($ref, $chan, 'Mouse/Acceleration',
+                         "/$p/Acceleration", 'int');
+        save_xfconf_prop($ref, $chan, 'Mouse/RightHanded',
+                         "/$p/RightHanded", 'bool');
+        save_xfconf_prop($ref, $chan, 'Mouse/Threshold',
+                         "/$p/Threshold", 'int');
+    }
+
+    return $mcs.'.xml';
+}
+
+sub migrate_xfwm4
+{
+    my $mcs = 'xfwm4';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'xfwm4';
+
+    save_xfconf_prop($ref, $chan, 'Xfwm/BoxMove',
+                     '/general/box_move', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/BoxResize',
+                     '/general/box_resize', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ButtonLayout',
+                     '/general/button_layout', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ClickToFocus',
+                     '/general/click_to_focus', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/DblClickAction',
+                     '/general/double_click_action', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/FocusDelay',
+                     '/general/focus_delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/FocusNewWindow',
+                     '/general/focus_new', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/FocusRaise',
+                     '/general/raise_on_focus', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/RaiseDelay',
+                     '/general/raise_delay', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/SnapToBorder',
+                     '/general/snap_to_border', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/SnapToWindows',
+                     '/general/snap_to_windows', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/SnapWidth',
+                     '/general/snap_width', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ThemeName',
+                     '/general/theme', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/TitleAlign',
+                     '/general/title_alignment', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/TitleFont',
+                     '/general/title_font', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/WrapResistance',
+                     '/general/wrap_resistance', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/WrapWorkspaces',
+                     '/general/wrap_workspaces', 'bool');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_wmtweaks
+{
+    my $mcs = 'wmtweaks';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'xfwm4';
+
+    save_xfconf_prop($ref, $chan, 'Xfwm/ActivateAction',
+                     '/general/activate_action', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/BorderlessMaximize',
+                     '/general/borderless_maximize', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/CycleHidden',
+                     '/general/cycle_hidden', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/CycleMinimum',
+                     '/general/cycle_minimum', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/CycleWorkspaces',
+                     '/general/cycle_workspaces', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/EasyClick',
+                     '/general/easy_click', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/FocusHint',
+                     '/general/focus_hint', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/FrameOpacity',
+                     '/general/frame_opacity', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/InactiveOpacity',
+                     '/general/inactive_opacity', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/MoveOpacity',
+                     '/general/move_opacity', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/PlacementMode',
+                     '/general/placement_mode', 'string');
+    save_xfconf_prop($ref, $chan, 'Xfwm/PlacementRatio',
+                     '/general/placement_ratio', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/PopupOpacity',
+                     '/general/popup_opacity', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/PreventFocusStealing',
+                     '/general/prevent_focus_stealing', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/RaiseWithAnyButton',
+                     '/general/raise_with_any_button', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ResizeOpacity',
+                     '/general/resize_opacity', 'int');
+    save_xfconf_prop($ref, $chan, 'Xfwm/RestoreOnMove',
+                     '/general/restore_on_move', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ScrollWorkspaces',
+                     '/general/scroll_workspaces', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ShowDockShadow',
+                     '/general/show_dock_shadow', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ShowFrameShadow',
+                     '/general/show_frame_shadow', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ShowPopupShadow',
+                     '/general/show_popup_shadow', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/SnapResist',
+                     '/general/snap_resist', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/ToggleWorkspaces',
+                     '/general/toggle_workspaces', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/UnredirectOverlays',
+                     '/general/unredirect_overlays', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/UseCompositing',
+                     '/general/use_compositing', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/WrapCycle',
+                     '/general/wrap_cycle', 'bool');
+    save_xfconf_prop($ref, $chan, 'Xfwm/WrapLayout',
+                     '/general/wrap_layout', 'bool');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_workspaces
+{
+    my $mcs = 'workspaces';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'xfwm4';
+
+    save_xfconf_prop($ref, $chan, 'Xfwm/WorkspaceCount',
+                     '/general/workspace_count', 'int');
+    save_xfconf_prop($ref, $chan, 'names',
+                     '/general/workspace_names', 'string');
+
+    return $mcs.'.xml';
+}
+
+sub migrate_xfprint
+{
+    my $mcs = 'xfprint';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return if(!defined($ref));
+
+    my $chan = 'xfprint';
+    
+    save_xfconf_prop($ref, $chan, 'XfPrint/system',
+                     '/printing-system', 'string');
+
+    return $mcs.'.xml';
+}
+
+setup_env;
+
+my @migrated = ();
+my $tmp;
+
+push(@migrated, $tmp) if(defined(($tmp = migrate_xfdesktop)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_xsettings)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_mouse)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_wmtweaks)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
+
+disable_autostart_file;
+write_info_file(@migrated);
+
+print "\nMCS->Xfconf settings migration complete\n\n";

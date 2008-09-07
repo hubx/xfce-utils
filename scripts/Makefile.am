@@ -42,14 +42,37 @@ conffiles_DATA=\
 	xinitrc \
 	Xft.xrdb
 
+if XFCONF_MIGRATION
+
+migrationscriptdir = $(datadir)/xfce4/xfconf-migration
+migrationscript_in_files = xfconf-migration-4.6.pl.in
+migrationscript_SCRIPTS = $(migrationscript_in_files:.pl.in=.pl)
+
+xfconf-migration-4.6.pl: $(srcdir)/xfconf-migration-4.6.pl.in
+	sed 's,\@PERL\@,$(PERL),' < $< > $@
+
+autostartdir = $(sysconfdir)/xdg/autostart
+autostart_in_files = xfconf-migration-4.6.desktop.in
+autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
+
+xfconf-migration-4.6.desktop: $(srcdir)/xfconf-migration-4.6.desktop.in
+	sed 's,\@datadir\@,$(datadir),' < $< > $@
+
+endif
+
 EXTRA_DIST = \
 	$(scripts) \
 	$(conffiles_DATA) \
 	xfbrowser4.in \
 	startxfce4.in \
 	xfhelp4.in \
-	xinitrc.in
+	xinitrc.in \
+	xfconf-migration-4.6.desktop.in \
+	xfconf-migration-4.6.pl
 
-distclean-local:
-	rm -f xfhelp4 startxfce4 xfbrowser4 xinitrc
-
+DISTCLEANFILES = \
+	xfhelp4 \
+	startxfce4 \
+	xfbrowser4 \
+	xinitrc \
+	xfconf-migration-4.6.desktop
