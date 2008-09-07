@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Rodrigo Coacci <rcoacci@gmail.com>, 2004.
 # Adriano Winter Bess <awbess@gmail.com>, 2005.
+# Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-06-07 14:59-0300\n"
-"Last-Translator: Pablo Lerina <pabloalr@gmail.com>\n"
+"PO-Revision-Date: 2008-09-07 12:22-0300\n"
+"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "Language-Team: Brazilian Portuguese <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -23,7 +24,7 @@ msgstr "Não é possível carregar "
 #. Project lead
 #: ../xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr "Coordenador do Projeto"
+msgstr "Coordenador do projeto"
 
 #. Core developers
 #: ../xfce4-about/info.c:205
@@ -66,9 +67,7 @@ msgstr "Tradutores"
 
 #: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Se você sabe de alguém que está faltando nesta lista, por favor faça-nos "
-"saber em <"
+msgstr "Se você sabe de alguém que está faltando nesta lista, por favor faça-nos saber em <"
 
 #: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -110,7 +109,7 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Modo Daemon"
+msgstr "Modo daemon"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
@@ -118,14 +117,12 @@ msgstr "O modo daemon não é suportado."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"O Xfrun precisa ser compilado com suporte ao D-BUS para habilitar o modo "
-"daemon."
+msgstr "O Xfrun precisa ser compilado com suporte ao D-BUS para habilitar o modo daemon."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Não é possível abrir o display \"%s\"."
+msgstr "Não foi possível abrir a tela \"%s\"."
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
@@ -133,11 +130,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "O barramento de mensagens do D-BUS foi desconectado. Saindo...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340
+#: ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr "Erro de Sistema"
+msgstr "Erro de sistema"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Não foi possível fazer fork para segundo plano:"
 
@@ -156,11 +155,11 @@ msgstr "O comando \"%s\" falhou ao executar:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
-msgstr "Erro de Execução"
+msgstr "Erro de execução"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
-msgstr "Erro Desconhecido"
+msgstr "Erro desconhecido"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
@@ -173,11 +172,12 @@ msgstr "Executar programa"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Use esta sessão para executar o Xfce como seu ambiente de trabalho"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sessão do Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Ambiente de Trabalho Xfce"
+
