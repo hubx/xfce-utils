@@ -1,5 +1,22 @@
 #!@PERL@ -w
 
+#
+#  Copyright (c) 2008 Brian Tarricone <bjt23@cornell.edu>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; version 2 of the License ONLY.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+#
+
 use XML::Parser;
 use strict;
 
@@ -410,6 +427,21 @@ sub migrate_xfwm4
     return $mcs.'.xml';
 }
 
+sub migrate_xfwm4_keythemename
+{
+    my $mcs = 'xfwm4_keys';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    my $chan = 'xfwm4';
+
+    save_xfconf_prop($ref, $chan, 'Xfwm/KeyThemeName',
+                     '/general/keytheme', 'string');
+
+    return $mcs.'.xml';
+}
+
 sub migrate_wmtweaks
 {
     my $mcs = 'wmtweaks';
@@ -562,6 +594,7 @@ push(@migrated, $tmp) if(defined(($tmp = migrate_xsettings)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_mouse)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4_keythemename)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_wmtweaks)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
