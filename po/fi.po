@@ -1,14 +1,14 @@
 # Translation of xfce-utils into Finnish.
 # This file is distributed under the same license as the xfce-utils package.
-# Copyright (C) 2002-2007 The Xfce Development Team.
-# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2006.
+# Copyright (C) 2002-2008 The Xfce Development Team.
+# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-01-16 09:38+0200\n"
+"POT-Creation-Date: 2008-09-08 11:20+0300\n"
+"PO-Revision-Date: 2008-09-08 11:22+0300\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -170,11 +170,8 @@ msgstr "Suorita ohjelma"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Valitse tämä istunto, kun haluat käyttää Xfce-työpöytäympäristöä"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Xfce-työpöytäympäristö"
+msgstr "Xfce-istunto"
