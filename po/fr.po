@@ -1,15 +1,15 @@
-# French translation of the xfce-utils package.
-# Copyright (C) 2002-2007 The Xfce development team.
+# French translation for the xfce-utils package.
+# Copyright (C) 2002-2008 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Olivier Fourdan <fourdan@xfce.org>, 2004.
-# Maximilian Schleiss <maximilian@xfce.org>, 2007.
+# Maximilian Schleiss <maximilian@xfce.org>, 2007-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-01-20 21:15+0100\n"
+"PO-Revision-Date: 2008-09-07 20:18+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -66,14 +66,11 @@ msgstr "Traducteurs"
 
 #: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Si vous pensez qu'une personne devrait figurer sur cette liste, merci de "
-"nous le faire savoir à l'adresse <"
+msgstr "Si vous pensez qu'une personne devrait figurer sur cette liste, merci de nous le faire savoir à l'adresse <"
 
 #: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Merci à toutes les personnes qui ont aidé à la réalisation de ce projet."
+msgstr "Merci à toutes les personnes qui ont aidé à la réalisation de ce projet."
 
 #: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
@@ -119,8 +116,7 @@ msgstr "Le mode démon n'est pas supporté"
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun doit être compilé avec le support D-BUS pour activer le mode démon."
+msgstr "Xfrun doit être compilé avec le support D-BUS pour activer le mode démon."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -133,11 +129,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Bus de messages D-BUS déconnecté. Fermeture ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340
+#: ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Erreur système"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Impossible de passer le processus en arrière-plan :"
 
@@ -173,8 +171,9 @@ msgstr "Exécuter un programme"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Utilisez cette session pour exécuter Xfce comme environnement de bureau"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Session Xfce"
+
