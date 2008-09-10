@@ -68,11 +68,12 @@ EXTRA_DIST = \
 	xfhelp4.in \
 	xinitrc.in \
 	xfconf-migration-4.6.desktop.in \
-	xfconf-migration-4.6.pl
+	xfconf-migration-4.6.pl.in
 
 DISTCLEANFILES = \
 	xfhelp4 \
 	startxfce4 \
 	xfbrowser4 \
 	xinitrc \
-	xfconf-migration-4.6.desktop
+	xfconf-migration-4.6.desktop \
+	xfconf-migration-4.6.pl
