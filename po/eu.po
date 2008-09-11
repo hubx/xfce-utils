@@ -1,22 +1,22 @@
-# translation of eu.po to librezale
+# translation of eu.po to Euskara
 # Euskara translations for xfce-utila package.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 #
 # Jon Latorre Martinez <patataman@airtel.net>, 2003.
-# Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005, 2006.
+# Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005, 2006, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2006-03-07 23:01+0100\n"
+"PO-Revision-Date: 2008-09-11 09:29+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: librezale <librezale@librezale.org>\n"
+"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../xfce4-about/info.c:172
@@ -41,16 +41,16 @@ msgstr "Laguntzaileak"
 #. Previous contributors
 #: ../xfce4-about/info.c:213
 msgid "Previous contributors"
-msgstr "Laguntzaile Oihak"
+msgstr "Laguntzaile oihak"
 
 #: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Web osatalaritza eta posta zerrendak: "
+msgstr "Web ostalaritza eta posta zerrendak"
 
 #. Server admins
 #: ../xfce4-about/info.c:250
 msgid "Server maintained by"
-msgstr "Zerbitzari mantenua: "
+msgstr "Zerbitzari mantenua"
 
 #. Goodies supervision
 #: ../xfce4-about/info.c:254
@@ -69,8 +69,7 @@ msgstr "Itzultzaileak"
 
 #: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Zerrenda honetan falta den bati berri jakin ezkero mesedez berri eman hona <"
+msgstr "Zerrenda honetan falta den bati berri jakin ezkero mesedez berri eman hona <"
 
 #: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
@@ -112,7 +111,7 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Deabru Modua"
+msgstr "Deabru modua"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
@@ -135,7 +134,7 @@ msgstr "D-BUS mezu hilara deskonektatua. Irteten ...\n"
 #. failed
 #: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr "Sistema Errorea"
+msgstr "Sistema errorea"
 
 #: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
@@ -156,11 +155,11 @@ msgstr "\"%s\" komandoa huts egn du abiaraztean:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
-msgstr "Abiarazte Errorea"
+msgstr "Abiarazte errorea"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
-msgstr "Errore Ezezaguna"
+msgstr "Errore ezezaguna"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
@@ -173,11 +172,9 @@ msgstr "Programa abiarazi"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Saio hau erabili Xfce idazmahai ingurune bezala erabiltzeko"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce saioa"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "XFce Idazmahai Ingurunea"
