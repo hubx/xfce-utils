@@ -1,11 +1,41 @@
-4.5.x
-=====
+4.5.90 (Xfce 4.6alpha)
+======================
 
 - Use gnome-screensaver if xscreensaver is not available (Bug #3131)
 - Fix syntax error in startxfce script (Bug #3089).
 - Fix insecure use of temporary file in startup script.
 - Put /usr/local/share first (Bug #2967).
 - Fix an issue with the syntax in startxfce4 script (Bug #2967).
+- Use real GtkComboBoxEntry instead of separate GtkEntry/Button for
+  xfrun4 dialog (bug 3820).
+- Remove Xft.dpi fallback setting since xfsettingsd handles this now.
+- Update xinitrc to run xfsettingsd instead of xfce-mcs-manager (only
+  used when the user has disabled the session manager).
+- Add MCS -> Xfconf settings migration script.
+
+
+4.4.2
+=====
+- Put back a default DPI value as Xorg (Bug #3164, #3158)
+- Use gnome-screensaver if xscreensaver is not available (Bug #3131)
+- Fix typo on XDG_DATA_DIRS path definition (Bug #2967).
+- Updated credits in the about dialog.
+- Updated translations: Fabio Riga (it), Nuno Miguel (pt_PT),
+  Dimitri Gogelia (ka), Ivan Masar (sk), Vladimir Melo (pt_BR),
+  Mişu Moldovan (ro).
+- New translations: Terje Uriansrud (nb_NO), Tegegne Tefera (am),
+  RPrieditis (lv).
+
+
+4.4.1
+=====
+- Update the AUTHORS file.
+- Fix syntax error in startxfce script (Bug #3089).
+- Fix insecure use of temporary file in startup script.
+- Put /usr/local/share first (Bug #2967).
+- Fix an issue with the syntax in startxfce4 script (Bug #2967).
+- Many translation updates.
+
 
 4.4.0
 =====
