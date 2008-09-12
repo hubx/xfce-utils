@@ -520,8 +520,28 @@ sub migrate_workspaces
 
     save_xfconf_prop($ref, $chan, 'Xfwm/WorkspaceCount',
                      '/general/workspace_count', 'int');
-    save_xfconf_prop($ref, $chan, 'names',
-                     '/general/workspace_names', 'string');
+
+    # going to use a new format for the workspace names.  it used to be
+    # a semicolon delimited list of names, but we might as well use
+    # an xfconf string array.
+    if(defined(${$ref}{'names'})) {
+        my $val = ${$ref}{'names'}->{'value'};
+        my @names = split(/;/, $val);
+
+        if(scalar(@names)) {
+            my $xfconf_query = 'xfconf-query -n -c '.$chan;
+            $xfconf_query .= ' -p /general/workspace_names';
+
+            foreach my $name (@names) {
+                $name =~ s/'/'\''/g;
+                $xfconf_query .= " -t string -s '$name'";
+            }
+
+            print $xfconf_query."\n" if($debug);
+
+            system("$xfconf_query");
+        }
+    }
 
     return $mcs.'.xml';
 }
