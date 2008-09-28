@@ -1,3 +1,11 @@
+4.5.91 (Xfce 4.6beta1)
+======================
+
+- Fix migrating shortcut keys in the xfconf settings migration script.
+  Previously keys that had more than one char in the keysym name were
+  getting parsed incorrectly.
+
+
 4.5.90 (Xfce 4.6alpha)
 ======================
 
