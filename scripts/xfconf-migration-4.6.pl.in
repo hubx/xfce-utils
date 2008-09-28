@@ -595,7 +595,7 @@ sub migrate_keyboard_shortcuts
         $str .= '<Control>' if($keys =~ /Control\+/);
         $str .= '<Meta>' if($keys =~ /Alt\+/);
         $str .= '<Super>' if($keys =~ /Mod4\+/ || $keys =~ /Super\+/);
-        if($keys =~ /(^|\+)([A-Za-z0-9_])+$/) {
+        if($keys =~ /(^|\+)([A-Za-z0-9_]+)$/) {
             $str .= $2;
             xfconf_set_keybind($chan, $str, $command);
         }
