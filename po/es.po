@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Edscott Wilson Garcia <edscott@xfce.org>, 2004.
 # Rudy Godoy <rudy@stone-head.org>, 2005.
+# Abel Martín <abel.martin.ruiz@gmail.com>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2005-11-07 21:54+0900\n"
-"Last-Translator: Rudy Godoy <rudy@kernel-panik.org>\n"
+"PO-Revision-Date: 2008-09-29 21:37+0100\n"
+"Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr "No se pudo cargar"
 #. Project lead
 #: ../xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr "Líder del proyecto"
+msgstr "Líder del Proyecto"
 
 #. Core developers
 #: ../xfce4-about/info.c:205
@@ -32,19 +33,17 @@ msgstr "Desarrolladores principales"
 
 #. Active contributors
 #: ../xfce4-about/info.c:209
-#, fuzzy
 msgid "Active contributors"
-msgstr "Colaboradores"
+msgstr "Colaboradores activos"
 
 #. Previous contributors
 #: ../xfce4-about/info.c:213
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Colaboradores"
+msgstr "Anteriores colaboradores"
 
 #: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Alojamiento web y listas de correo provistos por"
+msgstr "Alojamiento Web y Listas de Correo proporcionados por"
 
 #. Server admins
 #: ../xfce4-about/info.c:250
@@ -53,9 +52,8 @@ msgstr "Servidor administrado por"
 
 #. Goodies supervision
 #: ../xfce4-about/info.c:254
-#, fuzzy
 msgid "Goodies supervision"
-msgstr "Supervisión de traducciones"
+msgstr "Supervisión de goodies"
 
 #. Translations supervision
 #: ../xfce4-about/info.c:258
@@ -69,19 +67,17 @@ msgstr "Traductores"
 
 #: ../xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Si conoce alguien que no está en esta lista, por favor haganos saber"
+msgstr "Si conoce alguien que no está en esta lista, por favor háganoslo saber en <"
 
 #: ../xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Gracias a todos los que colaboraron para la publicación de este software."
+msgstr "Gracias a todos los que ayudaron a hacer este software posible."
 
 #: ../xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Acerca de XFce 4"
 
 #: ../xfce4-about/info.c:398
-#, fuzzy
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 por Olivier Fourdan"
 
@@ -96,7 +92,7 @@ msgstr "Créditos"
 
 #: ../xfce4-about/info.c:424
 msgid "Copyright"
-msgstr "Derechos de autor"
+msgstr "Copyright"
 
 #: ../xfce4-about/info.c:425
 msgid "BSDL"
@@ -113,34 +109,36 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Modo Demonio"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "El modo demonio no está soportado"
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
+msgstr "Xfrun debe ser compilado con soporte para D-BUS para habilitar el modo demonio."
 
 #: ../xfrun/xfrun-dbus.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "No se pudo cargar"
+msgstr "No se pudo abrir el display \"%s\"."
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "Mensaje de desconexión de bus D-BUS. Saliendo...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340
+#: ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr ""
+msgstr "Error de Sistema"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "No se pudo pasar a segundo plano:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
@@ -153,17 +151,15 @@ msgstr "Ejecuta_r"
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "El comando \"%s\" falló al ejecutarse:"
 
 #: ../xfrun/xfrun-dialog.c:542
-#, fuzzy
 msgid "Run Error"
-msgstr "Ejecutar Programa"
+msgstr "Error de Ejecución"
 
 #: ../xfrun/xfrun-dialog.c:544
-#, fuzzy
 msgid "Unknown Error"
-msgstr "Ejecutar Programa"
+msgstr "Error Desconocido"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
@@ -172,15 +168,16 @@ msgstr "¿Abrir %s con qué programa?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
-msgstr "Ejecutar Programa"
+msgstr "Ejecutar programa"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Use esta sesión para ejecutar Xfce como su entorno de escritorio"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesión Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Entorno de Escritorio XFce"
+
