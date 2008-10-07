@@ -1,4 +1,4 @@
-# translation of xfce-utils.po to Sinhala
+# translation of si.po to Sinhalese
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2008-02-10 19:03+0530\n"
+"PO-Revision-Date: 2008-10-06 17:16+0530\n"
 "Last-Translator: Rashan Anushka <rashan.uoc@gmail.com>\n"
-"Language-Team: Sinhala <si@li.org>\n"
+"Language-Team: Sinhalese <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -169,8 +169,9 @@ msgstr "යෙදුම ක්‍රියාත්මක කරන්න"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "XFCE ඔබගේ වැඩතලය ලෙස ක්‍රියාත්මක කිරීමට මෙම සැසිය භාවිතා කරන්න"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce සැසිය"
+

@@ -8,11 +8,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-03-25 22:45+0900\n"
-"Last-Translator: Daichi Kawahata <daichi@xfce.org>\n"
+"PO-Revision-Date: 2008-10-07 22:45+0900\n"
+"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmai.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -123,7 +123,7 @@ msgstr "デーモンモードはサポートされていません。"
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
-"デーモンモードを有効にするには D-BUS サポートで Xfrun をコンパイルする必要が"
+"デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必要が"
 "あります。"
 
 #: ../xfrun/xfrun-dbus.c:141
@@ -169,7 +169,7 @@ msgstr "不明なエラー"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "どのプログラムで「%s」を開きますか？"
+msgstr "どのプログラムで「%s」を開きますか?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -177,8 +177,8 @@ msgstr "実行するプログラムを入力してください"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "このセションでデスクトップ環境として Xfce を使用します"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce セション"
