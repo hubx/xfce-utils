@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-01-19 19:54+0100\n"
+"PO-Revision-Date: 2008-10-08 21:34+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -133,11 +133,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "A D-BUS üzenet-busz levált. Kilépek ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:340
+#: ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Rendszer hiba"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "Nem tudok a háttérbe forkolni:"
 
@@ -173,11 +175,12 @@ msgstr "Program futtatása"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Használd e folyamatot az Xfce futtatásához mint asztali környezet"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce folyamat"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce Munkakörnyezet"
+
