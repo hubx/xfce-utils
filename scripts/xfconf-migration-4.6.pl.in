@@ -604,6 +604,65 @@ sub migrate_keyboard_shortcuts
     return $mcs.'.xml';
 }
 
+sub migrate_xfce4_session
+{
+    my $file = $ENV{'XDG_CONFIG_HOME'}.'/xfce4-session/xfce4-session.rc';
+    my $group = '';
+    my $chan = 'xfce4-session';
+
+    open(RCFILE, '<'.$file) or return undef;
+
+    while(<RCFILE>) {
+        chomp;
+        next if($_ eq '');
+
+        if(/^\[(.*?)\]$/) {
+            $group = $1;
+        } else {
+            my ($key, $val) = split(/=/, $_, 2);
+            next if(!defined($key) || !defined($val));
+
+            if($group eq 'General') {
+                if($key eq 'SessionName') {
+                    xfconf_set($chan, '/general/SessionName', 'string', $val);
+                } elsif($key eq 'SaveOnExit') {
+                    xfconf_set($chan, '/general/SaveOnExit', 'bool', $val);
+                } elsif($key eq 'AutoSave') {
+                    xfconf_set($chan, '/general/AutoSave', 'bool', $val);
+                } elsif($key eq 'PromptOnLogout') {
+                    xfconf_set($chan, '/general/PromptOnLogout', 'bool', $val);
+                } elsif($key eq 'DisableTcp') {
+                    # reverse sense
+                    if($val eq 'true') {
+                        $val = 'false'
+                    } else {
+                        $val = 'true';
+                    }
+                    xfconf_set($chan, '/security/EnableTcp', 'bool', $val);
+                }
+            } elsif($group eq 'Splash Screen') {
+                if($key eq 'Engine') {
+                    xfconf_set($chan, '/splash/Engine', 'string', $val);
+                }
+            } elsif($group eq 'Compatibility') {
+                if($key eq 'LaunchGnome') {
+                    xfconf_set($chan, '/compat/LaunchGNOME', 'bool', $val);
+                } elsif($key eq 'LaunchKDE') {
+                    xfconf_set($chan, '/compat/LaunchKDE', 'bool', $val);
+                }
+            } elsif($group eq 'Chooser') {
+                if($key eq 'AlwaysDisplay') {
+                    xfconf_set($chan, '/chooser/AlwaysDisplay', 'bool', $val);
+                }
+            }
+        }
+    }
+
+    close(RCFILE);
+
+    return $file;
+}
+
 setup_env;
 
 my @migrated = ();
@@ -619,6 +678,7 @@ push(@migrated, $tmp) if(defined(($tmp = migrate_wmtweaks)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard_shortcuts)));
+migrate_xfce4_session;
 
 disable_autostart_file;
 write_info_file(@migrated);
