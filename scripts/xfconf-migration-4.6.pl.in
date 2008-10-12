@@ -31,9 +31,12 @@ sub setup_env
 
 sub xfconf_set
 {
-    my ($chan,$prop,$type,$val) = @_;
+    my ($chan,$prop,$type,$val,$force_arr) = @_;
     $val =~ s/'/'\\''/g;
     my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t $type -s '$val');
+    if(defined($force_arr) && $force_arr) {
+        $cmd .= qq( -a);
+    }
     if($debug) {
         print $cmd."\n";
     }
@@ -42,10 +45,10 @@ sub xfconf_set
 
 sub xfconf_set_keybind
 {
-    my ($chan,$prop,$command) = @_;
+    my ($chan,$keystr,$command) = @_;
+    my $prop = '/commands/custom/'.$keystr;
     $command =~ s/'/'\\''/g;
-    my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t string -t string );
-    $cmd .= qq(-s execute -s '$command');
+    my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t string -s '$command');
     if($debug) {
         print $cmd."\n";
     }
@@ -565,6 +568,7 @@ sub migrate_keyboard_shortcuts
 {
     my $mcs = 'shortcuts';
     my $chan = 'xfce4-keyboard-shortcuts';
+    my $keybind_set = 0;
 
     my $ref = parse_mcs_xml_file($mcs);
     return undef if(!defined($ref));
@@ -590,7 +594,7 @@ sub migrate_keyboard_shortcuts
         my $command = $sc{'command'};
         next if(!defined($keys) || !defined($command));
 
-        my $str = '/';
+        my $str = '';
         $str .= '<Shift>' if($keys =~ /Shift\+/);
         $str .= '<Control>' if($keys =~ /Control\+/);
         $str .= '<Meta>' if($keys =~ /Alt\+/);
@@ -598,7 +602,13 @@ sub migrate_keyboard_shortcuts
         if($keys =~ /(^|\+)([A-Za-z0-9_]+)$/) {
             $str .= $2;
             xfconf_set_keybind($chan, $str, $command);
+            $keybind_set = 1;
         }
+    }
+
+    if($keybind_set) {
+        xfconf_set($chan, '/commands/custom/override', 'bool', 'true');
+        xfconf_set($chan, '/providers', 'string', 'commands', 1);
     }
 
     return $mcs.'.xml';
