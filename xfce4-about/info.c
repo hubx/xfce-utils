@@ -118,10 +118,20 @@ static gboolean
 add_author (FILE * file_authors, GtkTextBuffer * textbuffer, GtkTextIter * iter, const gchar * category,
             const gchar * title)
 {
+  GtkTextIter iter_before;
+  GtkTextIter iter_after;
+  gint offset_before;
+  gint offset_before_content;
+  gint offset_after_content;
   gchar buf[80];
+
+  offset_before = gtk_text_iter_get_offset (iter);
 
   gtk_text_buffer_insert_with_tags_by_name (textbuffer, iter, title, -1, "title", NULL);
   gtk_text_buffer_insert (textbuffer, iter, "\n", -1);
+
+  offset_before_content = gtk_text_iter_get_offset (iter);
+
   while (fgets (buf, sizeof (buf), file_authors)) {
     g_strstrip (buf);
     if (strcmp (buf, category) == 0)
@@ -146,6 +156,18 @@ add_author (FILE * file_authors, GtkTextBuffer * textbuffer, GtkTextIter * iter,
 
     g_strfreev (author);
   }
+
+  offset_after_content = gtk_text_iter_get_offset (iter);
+
+  /* If there was no content added in addition to the title, remove the title */
+  if (offset_before_content == offset_after_content)
+    {
+      gtk_text_buffer_get_iter_at_offset (textbuffer, &iter_before, offset_before);
+      gtk_text_buffer_get_iter_at_offset (textbuffer, &iter_after, offset_after_content);
+      gtk_text_buffer_delete (textbuffer, &iter_before, &iter_after);
+
+      gtk_text_buffer_get_iter_at_offset (textbuffer, iter, offset_before);
+    }
 
   return TRUE;
 }
