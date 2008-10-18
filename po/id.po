@@ -8,11 +8,11 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2008-09-09 23:38+0700\n"
+"PO-Revision-Date: 2008-10-13 22:20+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../xfce4-about/info.c:172
@@ -147,7 +147,7 @@ msgstr "Jalankan di _terminal"
 
 #: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
-msgstr "Jalankan (_R)"
+msgstr "_Jalankan"
 
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
