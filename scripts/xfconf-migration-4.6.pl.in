@@ -673,6 +673,50 @@ sub migrate_xfce4_session
     return $file;
 }
 
+sub migrate_xfce4_splash
+{
+    my $file = $ENV{'XDG_CONFIG_HOME'}.'/xfce4-session/xfce4-splash.rc';
+    my $group = '';
+    my $chan = 'xfce4-session';
+
+    open(RCFILE, '<'.$file) or return undef;
+
+    while(<RCFILE>) {
+        chomp;
+        next if($_ eq '');
+
+        if(/^\[(.*?)\]$/) {
+            $group = $1;
+        } else {
+            my ($key, $val) = split(/=/, $_, 2);
+            next if(!defined($key) || !defined($val));
+
+            my $p;
+            if($group =~ /^Engine: (.*)$/) {
+                $p = '/splash/engines/'.$1.'/'.$key;
+            } else {
+                next;
+            }
+
+            if($group eq 'Engine: balou') {
+                if($key eq 'Theme') {
+                    xfconf_set($chan, $p, 'string', $val);
+                }
+            } elsif($group eq 'Engine: simple') {
+                if($key eq 'Font' || $key eq 'BgColor' ||
+                   $key eq 'FgColor' || $key eq 'Image')
+                {
+                    xfconf_set($chan, $p, 'string', $val);
+                }
+            }
+        }
+    }
+
+    close(RCFILE);
+
+    return $file;
+}
+
 setup_env;
 
 my @migrated = ();
@@ -689,6 +733,7 @@ push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard_shortcuts)));
 migrate_xfce4_session;
+migrate_xfce4_splash;
 
 disable_autostart_file;
 write_info_file(@migrated);
