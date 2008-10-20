@@ -2,178 +2,178 @@
 # xfce-utils for XFce desktop environment.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2003.
+# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2003, 2008.
 # Pau Rul·lan Ferragut <paurullan@bulma.net> 2005, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-04-05 14:32+0200\n"
-"Last-Translator: Pau Rul·lan Ferragut <paurullan@bulma.net>\n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"PO-Revision-Date: 2008-09-07 16:43+0100\n"
+"Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: catalan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfce4-about/info.c:172
+#: xfce4-about/info.c:172
 msgid "Unable to load "
 msgstr "No s'ha pogut carregar"
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: xfce4-about/info.c:201
 msgid "Project Lead"
 msgstr "Cap de projecte"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: xfce4-about/info.c:205
 msgid "Core developers"
 msgstr "Desenvolupadors principals"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: xfce4-about/info.c:209
 msgid "Active contributors"
 msgstr "Coŀlaboradors actius"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: xfce4-about/info.c:213
 msgid "Previous contributors"
 msgstr "Antics coŀlaboradors"
 
-#: ../xfce4-about/info.c:218
+#: xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Hostatjament de la plana web i de les llistes de correu per"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: xfce4-about/info.c:250
 msgid "Server maintained by"
 msgstr "Servidor mantingut per"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: xfce4-about/info.c:254
 msgid "Goodies supervision"
 msgstr "Supervisors de les extensions"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: xfce4-about/info.c:258
 msgid "Translations supervision"
 msgstr "Supervisors de traduccions"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: xfce4-about/info.c:262
 msgid "Translators"
 msgstr "Traductors"
 
-#: ../xfce4-about/info.c:293
+#: xfce4-about/info.c:293
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Si sabeu d'algú que hauria d'apareixar a aquest llista, si us plau faciu "
 "saber a"
 
-#: ../xfce4-about/info.c:297
+#: xfce4-about/info.c:297
 msgid "Thanks to all who helped making this software available."
 msgstr "Moltes gràcies a tothom que ha ajudat a fer aquest programa realitat."
 
-#: ../xfce4-about/info.c:397
+#: xfce4-about/info.c:397
 msgid "About Xfce 4"
 msgstr "Quant a Xfce 4"
 
-#: ../xfce4-about/info.c:398
+#: xfce4-about/info.c:398
 msgid "Copyright 2002-2007 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 per Olivier Fourdan"
 
-#: ../xfce4-about/info.c:421
+#: xfce4-about/info.c:421
 msgid "Info"
 msgstr "Informació"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: xfce4-about/info.c:423
 msgid "Credits"
 msgstr "Crèdits"
 
-#: ../xfce4-about/info.c:424
+#: xfce4-about/info.c:424
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:425
+#: xfce4-about/info.c:425
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: xfce4-about/info.c:426
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: xfce4-about/info.c:427
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "Mode dimoni"
 
-#: ../xfrun/xfrun.c:52
+#: xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "El mode dimoni no està suportat"
 
-#: ../xfrun/xfrun.c:53
+#: xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
 
-#: ../xfrun/xfrun-dbus.c:141
+#: xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "No s’ha pogut obrir la pantalla «%s»,"
 
-#: ../xfrun/xfrun-dbus.c:200
+#: xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "S’ha desconnectat el bus de missatges de D-BUS. S’està sortint\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
 msgid "System Error"
 msgstr "Error del sistema"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
 msgid "Unable to fork to background:"
 msgstr "No s’ha pogut crear un nou procés al rerefons:"
 
-#: ../xfrun/xfrun-dialog.c:188
+#: xfrun/xfrun-dialog.c:216
 msgid "Run in _terminal"
 msgstr "Executa a un _terminal"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: xfrun/xfrun-dialog.c:232
 msgid "_Run"
 msgstr "_Executa"
 
-#: ../xfrun/xfrun-dialog.c:540
+#: xfrun/xfrun-dialog.c:661
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "L'ordre «%s» no s'ha pogut executar:"
 
-#: ../xfrun/xfrun-dialog.c:542
+#: xfrun/xfrun-dialog.c:663
 msgid "Run Error"
 msgstr "Error d'execució"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: xfrun/xfrun-dialog.c:665
 msgid "Unknown Error"
 msgstr "Error desconegut"
 
-#: ../xfrun/xfrun-dialog.c:631
+#: xfrun/xfrun-dialog.c:752
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Amb quin programa voleu obrir %s?"
 
-#: ../xfrun/xfrun-dialog.c:636
+#: xfrun/xfrun-dialog.c:757
 msgid "Run program"
 msgstr "Executa el programa"
 
-#: ../xfce.desktop.in.h:1
-msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+#~ msgid "Use this session to run Xfce as your desktop environment"
+#~ msgstr ""
+#~ "Empra aquest sessió per executar l'Xfce com el vostre entorn d'escriptori"
 
-#: ../xfce.desktop.in.h:2
-msgid "Xfce Session"
-msgstr ""
+#~ msgid "Xfce Session"
+#~ msgstr "Sessió Xfce"
