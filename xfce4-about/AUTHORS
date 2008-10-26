@@ -61,6 +61,12 @@ ca;Ivà Burgos;debian.public@gmail.com
 ca;Pau Rul·lan Ferragut;paurullan@bulma.net
 cs;Michal Várady;miko.vaji@gmail.com
 da;Niels Rasmussen;nielsrasmus@gmail.com
+da;Per Kongstad;p_kongstad@op.pl
+da;Lars Nielsen;lars@mit-web.dk
+da;Søren Waaben Hansen;soren@minorflaw.dk
+da;Morten Juhl-Johansen Zölde-Fejér;morten@technographer.net
+da;Lars Jensen;lars@jink.dk
+da;Claus Futtrup;cfuttrup@gmail.com
 de;Benedikt Meurer;benny@xfce.org
 de;Borja Schwember;mail@borja.de
 de;Enrico Tröger;enrico.troeger@uvena.de
@@ -70,11 +76,13 @@ de;Nico Schümann;nico@prog.nico22.de
 dz;Tenzin Dendup;tenzin.dendup@gmail.com
 el;Stathis Kamperis;ekamperi@auth.gr
 el;Stavros Giannouris;stavrosg@hellug.gr
+el;Evaggelos Balaskas;ebalaskas@ebalaskas.gr
 en_GB;Jeff Bailes;thepizzaking@gmail.com
 eo;Antono Vasiljev;antono.vasiljev@gmail.com
 eo;Jarbas Araujo;jarbasaraujojr@yahoo.com.br
 eo;Sylvain Vedrenne;gnu_sylvain@xfce.org
 es;Rudy Godoy;rudy@stone-head.org
+es;Abel Martín;abel.martin.ruiz@gmail.com
 et;Peeter Vois;Peeter.Vois@mail.ee
 eu;Piarres Beobide Egaña;pi@beobide.net
 fi;Jari Rahkonen;jari.rahkonen@pp1.inet.fi
@@ -84,16 +92,21 @@ fr;Maximilian Schleiss;maxschleiss@solnet.ch
 fr;Mike Massonnet;mmassonnet@gmail.com
 fr;Olivier Fourdan;fourdan@xfce.org
 gl;Leandro Regueiro;leandro.regueiro@gmail.com
+gl;Protecto Trasno;http://trasno.net/xfce:inicio
 he;Dotan Kamber;kamberd@yahoo.com
 he;Yuval Tanny;tanai@int.gov.il
 hu;Szervác Attila;sas@321.hu
+id;Andhika Padmawan;andhika.padmawan@gmail.com
 it;Fabio Riga;usul@aruba.it
 it;Roberto Pariset;r.pariset@gmail.com
 ja;Daichi Kawahata;daichi@xfce.org
 ja;Hirotaka Moue;admin@mail.dayomon.net
+ja;Masato Hashimoto;cabezon.hashimito@gmail.com
+ja;Nobuhiro Iwamatsu;iwamatsu@nigauri.org
 ka;Dimitri Gogelia;delphi.knight@gmail.com
 ko;ByungHyun Choi;byunghyun.choi@gmail.com
 lt;Mantas Zapolskas;mantaz@users.sf.net
+nb_NO;Terje Uriansrud;ter@operamail.com
 nl;Jasper Huijsmans;jasper@xfce.org
 nl;Stephan Arts;stephan@xfce.org
 nl;Vincent Tunru;imnotb@gmail.com
@@ -102,11 +115,15 @@ pl;Piotr Maliński;riklaunim@gmail.com
 pl;Szymon Kałasz;szymon_maestro@gazeta.pl
 pt_BR;Adriano Winter Bess;awbess@gmail.com
 pt_BR;Rodrigo Coacci;rcoacci@gmail.com
+pt_BR;Og Maciel;ogmaciel@gnome.org
+pt_BR;Fábio Nogueira;deb-user-ba@ubuntu.com
+pt_BR;Vladimir Melo;vladimirmelo.psi@gmail.com
 pt_PT;Nuno Miguel;nunis@netcabo.pt
 ro;Mişu Moldovan;dumol@gnome.ro
 ru;Andrey Fedoseev;andrey.fedoseev@gmail.com
 ru;Maxim Zenin;webmechanics@gmail.com
 ru;Sergey Fedoseev;fedoseev.sergey@gmail.com
+si;Rashan Anushka;rashan.uoc@gmail.com
 sk;Roman Moravcik;roman.moravcik@gmail.com
 sq;Besnik Bleta;besnik@programeshqip.org
 sv;Alexander Toresson;alexander.toresson@gmail.com
