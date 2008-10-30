@@ -325,6 +325,8 @@ main(int argc,
      char **argv)
 {
     gboolean have_gtk = gtk_init_check(&argc, &argv);
+
+    xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
     
     if(argc > 1 && !strcmp(argv[1], "--quit"))
         xfrun_send_quit();
