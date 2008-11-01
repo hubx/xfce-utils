@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2008-09-10 18:00+0100\n"
+"PO-Revision-Date: 2008-11-01 22:57+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -173,11 +173,11 @@ msgstr "Spustit program"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Použijte toto sezení ke spuštění Xfce jako vašeho pracovního prostředí"
+msgstr "Tuto relaci použijte ke spuštění Xfce jako vašeho pracovního prostředí"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Sezení Xfce"
+msgstr "Relace Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Desktopové prostředí Xfce"
