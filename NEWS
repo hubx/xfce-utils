@@ -2,6 +2,8 @@
 ======================
 
 - Migrate xfce4-session splash settings to xfconf.
+- Be sure $XDG_CONFIG_HOME/autostart exists when creating .desktop
+  file to disable xfconf migration script.
 
 
 4.5.91 (Xfce 4.6beta1)

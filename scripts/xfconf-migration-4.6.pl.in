@@ -117,6 +117,14 @@ sub disable_autostart_file
 {
     my $autostart_file = $ENV{'XDG_CONFIG_HOME'}.'/autostart/xfconf-migration-4.6.desktop';
 
+    # ensure autostart dir exists
+    if(! -d $ENV{'XDG_CONFIG_HOME'}) {
+        mkdir($ENV{'XDG_CONFIG_HOME'}) or warn("Failed to create ".$ENV{'XDG_CONFIG_HOME'}.": $!");
+    }
+    if(! -d $ENV{'XDG_CONFIG_HOME'}.'/autostart') {
+        mkdir($ENV{'XDG_CONFIG_HOME'}.'/autostart') or warn("Failed to create ".$ENV{'XDG_CONFIG_HOME'}."/autostart: $!");
+    }
+
     open(DOUT, '>'.$autostart_file) and do {
         print DOUT "[Desktop Entry]\n";
         print DOUT "Hidden=true\n";
