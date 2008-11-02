@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2008-09-29 21:37+0100\n"
+"PO-Revision-Date: 2008-11-02 14:17+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "No se pudo cargar"
 #. Project lead
 #: ../xfce4-about/info.c:201
 msgid "Project Lead"
-msgstr "Líder del Proyecto"
+msgstr "Líder del proyecto"
 
 #. Core developers
 #: ../xfce4-about/info.c:205
@@ -43,7 +43,7 @@ msgstr "Anteriores colaboradores"
 
 #: ../xfce4-about/info.c:218
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Alojamiento Web y Listas de Correo proporcionados por"
+msgstr "Alojamiento web y listas de correo proporcionados por"
 
 #. Server admins
 #: ../xfce4-about/info.c:250
@@ -109,7 +109,7 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Modo Demonio"
+msgstr "Modo demonio"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
@@ -133,7 +133,7 @@ msgstr "Mensaje de desconexión de bus D-BUS. Saliendo...\n"
 #: ../xfrun/xfrun-dbus.c:340
 #: ../xfrun/xfrun-dbus.c:351
 msgid "System Error"
-msgstr "Error de Sistema"
+msgstr "Error de sistema"
 
 #: ../xfrun/xfrun-dbus.c:342
 #: ../xfrun/xfrun-dbus.c:353
@@ -155,11 +155,11 @@ msgstr "El comando \"%s\" falló al ejecutarse:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
-msgstr "Error de Ejecución"
+msgstr "Error de ejecución"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
-msgstr "Error Desconocido"
+msgstr "Error desconocido"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
