@@ -45,8 +45,8 @@ sub xfconf_set
 
 sub xfconf_set_keybind
 {
-    my ($chan,$keystr,$command) = @_;
-    my $prop = '/commands/custom/'.$keystr;
+    my ($chan,$type,$keystr,$command) = @_;
+    my $prop = "/$type/custom/$keystr";
     $command =~ s/'/'\\''/g;
     my $cmd = qq(xfconf-query -n -c $chan -p '$prop' -t string -s '$command');
     if($debug) {
@@ -438,21 +438,6 @@ sub migrate_xfwm4
     return $mcs.'.xml';
 }
 
-sub migrate_xfwm4_keythemename
-{
-    my $mcs = 'xfwm4_keys';
-
-    my $ref = parse_mcs_xml_file($mcs);
-    return undef if(!defined($ref));
-
-    my $chan = 'xfwm4';
-
-    save_xfconf_prop($ref, $chan, 'Xfwm/KeyThemeName',
-                     '/general/keytheme', 'string');
-
-    return $mcs.'.xml';
-}
-
 sub migrate_wmtweaks
 {
     my $mcs = 'wmtweaks';
@@ -572,6 +557,23 @@ sub migrate_xfprint
     return $mcs.'.xml';
 }
 
+sub convert_key
+{
+    my $keys = shift;
+    my $str = '';
+
+    $str .= '<Shift>' if($keys =~ /Shift\+/);
+    $str .= '<Control>' if($keys =~ /Control\+/);
+    $str .= '<Meta>' if($keys =~ /Alt\+/);
+    $str .= '<Super>' if($keys =~ /Mod4\+/ || $keys =~ /Super\+/);
+    if($keys =~ /(^|\+)([A-Za-z0-9_]+)$/) {
+        $str .= $2;
+        return $str;
+    }
+
+    return undef;
+}
+
 sub migrate_keyboard_shortcuts
 {
     my $mcs = 'shortcuts';
@@ -602,14 +604,9 @@ sub migrate_keyboard_shortcuts
         my $command = $sc{'command'};
         next if(!defined($keys) || !defined($command));
 
-        my $str = '';
-        $str .= '<Shift>' if($keys =~ /Shift\+/);
-        $str .= '<Control>' if($keys =~ /Control\+/);
-        $str .= '<Meta>' if($keys =~ /Alt\+/);
-        $str .= '<Super>' if($keys =~ /Mod4\+/ || $keys =~ /Super\+/);
-        if($keys =~ /(^|\+)([A-Za-z0-9_]+)$/) {
-            $str .= $2;
-            xfconf_set_keybind($chan, $str, $command);
+        my $str = convert_key($keys);
+        if(defined($str)) {
+            xfconf_set_keybind($chan, 'commands', $str, $command);
             $keybind_set = 1;
         }
     }
@@ -617,6 +614,49 @@ sub migrate_keyboard_shortcuts
     if($keybind_set) {
         xfconf_set($chan, '/commands/custom/override', 'bool', 'true');
         xfconf_set($chan, '/providers', 'string', 'commands', 1);
+    }
+
+    return $mcs.'.xml';
+}
+
+sub migrate_xfwm4_shortcuts
+{
+    my $mcs = 'xfwm4_keys';
+    my $chan = 'xfce4-keyboard-shortcuts';
+
+    my $ref = parse_mcs_xml_file($mcs);
+    return undef if(!defined($ref));
+
+    return undef if(!defined(${$ref}{'Xfwm/KeyThemeName'}));
+    my $keytheme = ${$ref}{'Xfwm/KeyThemeName'}->{'value'};
+
+    my $datadirs = defined($ENV{'XDG_DATA_DIRS'}) ? $ENV{'XDG_DATA_DIRS'} : '/usr/local/share:/usr/share';
+    my @themefiles = ( $ENV{'HOME'}."/.themes/$keytheme/xfwm4/keythemerc",
+                       map { $_."/themes/$keytheme/xfwm4/keythemerc" } split(/:/, $datadirs) );
+
+    my $keybind_set = 0;
+    foreach my $tf (@themefiles) {
+        next if(! -f $tf);
+
+        open(TF, '<'.$tf) and do {
+            while(<TF>) {
+                my ($name,$key) = split(/\s*=\s*/, $_, 2);
+                next if(!defined($name));
+
+                my $newkey = convert_key($key);
+                if(defined($newkey)) {
+                    xfconf_set_keybind($chan, 'xfwm4', $newkey, $name);
+                    $keybind_set = 1;
+                }
+            }
+            close(TF);
+
+            last if($keybind_set);
+        };
+    }
+
+    if($keybind_set) {
+        xfconf_set($chan, '/xfwm4/custom/override', 'bool', 'true');
     }
 
     return $mcs.'.xml';
@@ -735,7 +775,7 @@ push(@migrated, $tmp) if(defined(($tmp = migrate_xsettings)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_keyboard)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_mouse)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4)));
-push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4_keythemename)));
+push(@migrated, $tmp) if(defined(($tmp = migrate_xfwm4_shortcuts)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_wmtweaks)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_workspaces)));
 push(@migrated, $tmp) if(defined(($tmp = migrate_xfprint)));
