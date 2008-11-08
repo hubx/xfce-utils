@@ -119,7 +119,7 @@ sub disable_autostart_file
 
     # ensure autostart dir exists
     if(! -d $ENV{'XDG_CONFIG_HOME'}) {
-        mkdir($ENV{'XDG_CONFIG_HOME'}) or warn("Failed to create ".$ENV{'XDG_CONFIG_HOME'}.": $!");
+        mkdir($ENV{'XDG_CONFIG_HOME'}, 0700) or warn("Failed to create ".$ENV{'XDG_CONFIG_HOME'}.": $!");
     }
     if(! -d $ENV{'XDG_CONFIG_HOME'}.'/autostart') {
         mkdir($ENV{'XDG_CONFIG_HOME'}.'/autostart') or warn("Failed to create ".$ENV{'XDG_CONFIG_HOME'}."/autostart: $!");
