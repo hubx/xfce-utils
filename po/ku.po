@@ -1,0 +1,168 @@
+# Kurdish translations for xfce-utils package.
+# Copyright (C) 2003-2005 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils 4.2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"PO-Revision-Date: 2008-11-03 03:25+0100\n"
+"Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
+"Language-Team: Kurdish <ku@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: xfce4-about/info.c:172
+msgid "Unable to load "
+msgstr ""
+
+#. Project lead
+#: xfce4-about/info.c:201
+msgid "Project Lead"
+msgstr ""
+
+#. Core developers
+#: xfce4-about/info.c:205
+msgid "Core developers"
+msgstr ""
+
+#. Active contributors
+#: xfce4-about/info.c:209
+msgid "Active contributors"
+msgstr ""
+
+#. Previous contributors
+#: xfce4-about/info.c:213
+msgid "Previous contributors"
+msgstr ""
+
+#: xfce4-about/info.c:218
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr ""
+
+#. Server admins
+#: xfce4-about/info.c:250
+msgid "Server maintained by"
+msgstr ""
+
+#. Goodies supervision
+#: xfce4-about/info.c:254
+msgid "Goodies supervision"
+msgstr ""
+
+#. Translations supervision
+#: xfce4-about/info.c:258
+msgid "Translations supervision"
+msgstr ""
+
+#. Translators
+#: xfce4-about/info.c:262
+msgid "Translators"
+msgstr "Wergêr"
+
+#: xfce4-about/info.c:293
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+
+#: xfce4-about/info.c:297
+msgid "Thanks to all who helped making this software available."
+msgstr ""
+
+#: xfce4-about/info.c:397
+msgid "About Xfce 4"
+msgstr "Der barê Xfce 4 de"
+
+#: xfce4-about/info.c:398
+msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Mafê kopîkirinê 2002-2007 by Olivier Fourdan"
+
+#: xfce4-about/info.c:421
+msgid "Info"
+msgstr "Agahî"
+
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: xfce4-about/info.c:423
+msgid "Credits"
+msgstr "Spas"
+
+#: xfce4-about/info.c:424
+msgid "Copyright"
+msgstr "Mafê kopyakirinê"
+
+#: xfce4-about/info.c:425
+msgid "BSDL"
+msgstr "BSDL"
+
+#: xfce4-about/info.c:426
+msgid "LGPL"
+msgstr "LGPL"
+
+#: xfce4-about/info.c:427
+msgid "GPL"
+msgstr "GPL"
+
+#. we don't support daemon mode
+#: xfrun/xfrun.c:50
+msgid "Daemon Mode"
+msgstr ""
+
+#: xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr ""
+
+#: xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:141
+#, c-format
+msgid "Unable to open display \"%s\"."
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr ""
+
+#. failed
+#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+msgid "System Error"
+msgstr ""
+
+#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+msgid "Unable to fork to background:"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:216
+msgid "Run in _terminal"
+msgstr "Di _termînalê de bimeşîne"
+
+#: xfrun/xfrun-dialog.c:232
+msgid "_Run"
+msgstr "_Bimeşîne"
+
+#: xfrun/xfrun-dialog.c:661
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:663
+msgid "Run Error"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:665
+msgid "Unknown Error"
+msgstr ""
+
+#: xfrun/xfrun-dialog.c:752
+#, c-format
+msgid "Open %s with what program?"
+msgstr "%s bi kijan bernameyê veke?"
+
+#: xfrun/xfrun-dialog.c:757
+msgid "Run program"
+msgstr "Bernameyê bimesîne"
+
