@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2008-11-02 14:17+0100\n"
+"PO-Revision-Date: 2008-11-15 19:15+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../xfce4-about/info.c:172
 msgid "Unable to load "
-msgstr "No se pudo cargar"
+msgstr "No se pudo cargar "
 
 #. Project lead
 #: ../xfce4-about/info.c:201
@@ -113,7 +113,7 @@ msgstr "Modo demonio"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr "El modo demonio no está soportado"
+msgstr "El modo demonio no está soportado."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
