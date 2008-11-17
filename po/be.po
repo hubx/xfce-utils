@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-01-16 02:14+0300\n"
+"PO-Revision-Date: 2008-11-18 01:13+0200\n"
 "Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Невядомая памылка"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Адчыніць %s з гэтай праграмай?"
+msgstr "Адчыніць %s у гэтай праграме?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -172,11 +172,11 @@ msgstr "Запуск праграмы"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Выкарыстоўваць гэты сэанс для запуску працоўнага асяродзьдзя Xfce"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Сэанс Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Працоўнае асяродзьдзе Xfce"
