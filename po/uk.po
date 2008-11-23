@@ -2,15 +2,15 @@
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2003-2006.
-#
+# Dmitry Nikitin <luckas_fb@mail.ru>, 2008
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 22:45+0200\n"
-"PO-Revision-Date: 2007-03-03 23:35+0900\n"
-"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
-"Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2007-11-17 11:38+0200\n"
+"Last-Translator:  Dmitry Nikitin <luckas_fb@mail.ru>\n"
+"Language-Team: Ukrainian <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -117,8 +117,7 @@ msgstr "Режим служби не підтримується."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
+msgstr "Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -171,8 +170,9 @@ msgstr "Запуск програми"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Використовуйте цю сесію для запуску Xfce як Вашого робочого середовища"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Сесія Xfce"
+
