@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2008-10-06 17:16+0530\n"
 "Last-Translator: Rashan Anushka <rashan.uoc@gmail.com>\n"
 "Language-Team: Sinhalese <en@li.org>\n"
@@ -16,92 +16,93 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "ප්‍රවේශනය කළ නොහැක"
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "ව්‍යාපෘති නායක"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "මූලික වැඩිදියුණුකරන්නන්"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 msgid "Active contributors"
 msgstr "සක්‍රීය දායකයින්"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 msgid "Previous contributors"
 msgstr "පෙරසිටි දායකයින්"
 
-#: ../xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "වෙබ් සත්කාරකරනය හා තැපැල් ලැයිස්තු සපයනු ලබන්නේ"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "සේවාදායකය නඩත්තු කරන්නේ"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 msgid "Goodies supervision"
 msgstr "ගූඩීස් අධීක්ෂණය"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "පරිවර්ථන අධීක්ෂණය"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "පරිවර්ථකයින්"
 
-#: ../xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "කිසියම් කෙනෙකු මඟහැරී ඇති බව ඔබට පෙනේ නම්, කරුණාකර අප වෙත දන්වන්න <"
 
-#: ../xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
 msgstr "මෙම මෘදුකාංගය නිකුත් කිරීමට සහය වූ සැමට ස්තූතියි."
 
-#: ../xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "Xfce 4 ගැන"
 
-#: ../xfce4-about/info.c:398
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+#: ../xfce4-about/info.c:420
+#, fuzzy
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "කතුහිමිකම 2002-2007 ඔලිවර් ෆෝදන්"
 
-#: ../xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "විස්තර"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "සම්මාන"
 
-#: ../xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "කතුහිමිකම"
 
-#: ../xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
@@ -129,11 +130,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS පනිවිඩ බසය විසන්ධි විය. පිටවේ ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "පද්ධති දෝෂයකි"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "පසුබිම වෙත පිවිසිය නොහැක:"
 
@@ -174,4 +175,3 @@ msgstr "XFCE ඔබගේ වැඩතලය ලෙස ක්‍රියාත�
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce සැසිය"
-

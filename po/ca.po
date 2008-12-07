@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-20 17:58+0100\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2008-09-07 16:43+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: catalan\n"
@@ -17,163 +17,166 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "No s'ha pogut carregar"
 
 #. Project lead
-#: xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "Cap de projecte"
 
 #. Core developers
-#: xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "Desenvolupadors principals"
 
 #. Active contributors
-#: xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 msgid "Active contributors"
 msgstr "Coŀlaboradors actius"
 
 #. Previous contributors
-#: xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 msgid "Previous contributors"
 msgstr "Antics coŀlaboradors"
 
-#: xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Hostatjament de la plana web i de les llistes de correu per"
 
 #. Server admins
-#: xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "Servidor mantingut per"
 
 #. Goodies supervision
-#: xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 msgid "Goodies supervision"
 msgstr "Supervisors de les extensions"
 
 #. Translations supervision
-#: xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "Supervisors de traduccions"
 
 #. Translators
-#: xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "Traductors"
 
-#: xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Si sabeu d'algú que hauria d'apareixar a aquest llista, si us plau faciu "
 "saber a"
 
-#: xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
 msgstr "Moltes gràcies a tothom que ha ajudat a fer aquest programa realitat."
 
-#: xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "Quant a Xfce 4"
 
-#: xfce4-about/info.c:398
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+#: ../xfce4-about/info.c:420
+#, fuzzy
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 per Olivier Fourdan"
 
-#: xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "Informació"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "Crèdits"
 
-#: xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "Copyright"
 
-#: xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
 msgstr "Mode dimoni"
 
-#: xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
 msgstr "El mode dimoni no està suportat"
 
-#: xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
 
-#: xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "No s’ha pogut obrir la pantalla «%s»,"
 
-#: xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "S’ha desconnectat el bus de missatges de D-BUS. S’està sortint\n"
 
 #. failed
-#: xfrun/xfrun-dbus.c:340 xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Error del sistema"
 
-#: xfrun/xfrun-dbus.c:342 xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "No s’ha pogut crear un nou procés al rerefons:"
 
-#: xfrun/xfrun-dialog.c:216
+#: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
 msgstr "Executa a un _terminal"
 
-#: xfrun/xfrun-dialog.c:232
+#: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
 msgstr "_Executa"
 
-#: xfrun/xfrun-dialog.c:661
+#: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "L'ordre «%s» no s'ha pogut executar:"
 
-#: xfrun/xfrun-dialog.c:663
+#: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
 msgstr "Error d'execució"
 
-#: xfrun/xfrun-dialog.c:665
+#: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
 msgstr "Error desconegut"
 
-#: xfrun/xfrun-dialog.c:752
+#: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Amb quin programa voleu obrir %s?"
 
-#: xfrun/xfrun-dialog.c:757
+#: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
 msgstr "Executa el programa"
 
-#~ msgid "Use this session to run Xfce as your desktop environment"
-#~ msgstr ""
-#~ "Empra aquest sessió per executar l'Xfce com el vostre entorn d'escriptori"
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr ""
+"Empra aquest sessió per executar l'Xfce com el vostre entorn d'escriptori"
 
-#~ msgid "Xfce Session"
-#~ msgstr "Sessió Xfce"
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr "Sessió Xfce"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2008-10-07 22:45+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmai.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
@@ -19,95 +19,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "次のファイルを読込めません "
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "プロジェクトリーダー"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "中心開発者"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 msgid "Active contributors"
 msgstr "現在の協力者"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 msgid "Previous contributors"
 msgstr "以前の協力者"
 
-#: ../xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "ウェブホスティングとメーリングリストの提供"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "サーバーの管理"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 msgid "Goodies supervision"
 msgstr "Goodies の監修"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "翻訳の監修"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "翻訳者"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "このリストに記載ミスがある場合は、以下のアドレスまでお知らせください。\n"
 "<"
 
-#: ../xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
 msgstr "Xfce 4 を利用できるよう協力して下さった方全てに感謝します。"
 
-#: ../xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "Xfce 4 について"
 
-#: ../xfce4-about/info.c:398
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+#: ../xfce4-about/info.c:420
+#, fuzzy
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "情報"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "提供"
 
-#: ../xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "著作権"
 
-#: ../xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
@@ -123,8 +124,8 @@ msgstr "デーモンモードはサポートされていません。"
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
-"デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必要が"
-"あります。"
+"デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必"
+"要があります。"
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -137,11 +138,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS メッセージバスが切断されました。終了します...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "システムエラー"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "fork() できません:"
 

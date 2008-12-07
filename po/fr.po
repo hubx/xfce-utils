@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2008-09-07 20:18+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
@@ -16,92 +16,96 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "Impossible de charger "
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "Direction du projet"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "Développeurs principaux"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 msgid "Active contributors"
 msgstr "Contributeurs en activité"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 msgid "Previous contributors"
 msgstr "Contributeurs précédents"
 
-#: ../xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Hébergement Web et listes de diffusion fournis par"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "Maintenance du serveur par"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 msgid "Goodies supervision"
 msgstr "Supervision des Goodies"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "Supervision des traductions"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "Traducteurs"
 
-#: ../xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Si vous pensez qu'une personne devrait figurer sur cette liste, merci de nous le faire savoir à l'adresse <"
+msgstr ""
+"Si vous pensez qu'une personne devrait figurer sur cette liste, merci de "
+"nous le faire savoir à l'adresse <"
 
-#: ../xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
-msgstr "Merci à toutes les personnes qui ont aidé à la réalisation de ce projet."
+msgstr ""
+"Merci à toutes les personnes qui ont aidé à la réalisation de ce projet."
 
-#: ../xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "À propos de Xfce 4"
 
-#: ../xfce4-about/info.c:398
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+#: ../xfce4-about/info.c:420
+#, fuzzy
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 par Olivier Fourdan"
 
-#: ../xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "Crédits"
 
-#: ../xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
@@ -116,7 +120,8 @@ msgstr "Le mode démon n'est pas supporté"
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun doit être compilé avec le support D-BUS pour activer le mode démon."
+msgstr ""
+"Xfrun doit être compilé avec le support D-BUS pour activer le mode démon."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -129,13 +134,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Bus de messages D-BUS déconnecté. Fermeture ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340
-#: ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Erreur système"
 
-#: ../xfrun/xfrun-dbus.c:342
-#: ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Impossible de passer le processus en arrière-plan :"
 
@@ -171,9 +174,9 @@ msgstr "Exécuter un programme"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Utilisez cette session pour exécuter Xfce comme environnement de bureau"
+msgstr ""
+"Utilisez cette session pour exécuter Xfce comme environnement de bureau"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Session Xfce"
-

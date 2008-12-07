@@ -417,7 +417,7 @@ main (int argc, char **argv)
 
   info = xfce_titled_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (info), _("About Xfce 4"));
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (info), _("Copyright 2002-2007 by Olivier Fourdan"));
+  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (info), _("Copyright 2002-2008 by Olivier Fourdan"));
   gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
   gtk_window_stick (GTK_WINDOW (info));
 

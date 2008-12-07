@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2005-10-07 23:25+0900\n"
 "Last-Translator: Ankit Patel <ankit644@yahoo.com>\n"
 "Language-Team: Gujarati <indianoss-gujarati@lists.sourceforge.net>\n"
@@ -19,98 +19,98 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "લાવવામાં અસમર્થ "
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "પ્રોજેક્ટ આગેવાન"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "મૂળ વિકાસકર્તાઓ"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 #, fuzzy
 msgid "Active contributors"
 msgstr "ફાળો આપનારાઓ"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 #, fuzzy
 msgid "Previous contributors"
 msgstr "ફાળો આપનારાઓ"
 
-#: ../xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "વેબ હોસ્ટીંગ અને મેઈલિગ યાદીઓ આના દ્વારા પૂરી પડાયેલ છે"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "સર્વરની જાણવણી આના દ્વારા થયેલ છે"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 #, fuzzy
 msgid "Goodies supervision"
 msgstr "ભાષાંતરોનું સુપરવિઝન"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "ભાષાંતરોનું સુપરવિઝન"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "અનુવાદકો"
 
-#: ../xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "જો તમે જાણતા હોવ કે આ યાદીમાંથી કોઈપણ ગુમ થયેલ છે, તો મહેરબાની કરીને અમને આના પર "
 "જણાવો <"
 
-#: ../xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
 msgstr "આ સોફ્ટવેર ઉપલબ્ધ કરાવવામાં મદદ કરનાર બધાને આભાર."
 
-#: ../xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "Xfce 4 વિશે"
 
-#: ../xfce4-about/info.c:398
+#: ../xfce4-about/info.c:420
 #, fuzzy
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2007 by Olivier Fourdan"
 
-#: ../xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "જાણકારી"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "યશો"
 
-#: ../xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "મુદ્રણાધિકાર"
 
-#: ../xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
@@ -138,11 +138,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr ""
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr ""
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr ""
 

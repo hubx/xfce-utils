@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 22:45+0200\n"
+"POT-Creation-Date: 2008-12-07 21:09+0100\n"
 "PO-Revision-Date: 2007-01-20 23:50+0200\n"
 "Last-Translator: Mişu Moldovan <dumol@gnome.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
@@ -17,94 +17,95 @@ msgstr ""
 "Plural-Forms: nplurals=3;plural=(n==1?0:(n==0||((n%100)>0&&(n%100)<20))?"
 "1:2)\n"
 
-#: ../xfce4-about/info.c:172
+#: ../xfce4-about/info.c:194
 msgid "Unable to load "
 msgstr "Nu se poate încărca "
 
 #. Project lead
-#: ../xfce4-about/info.c:201
+#: ../xfce4-about/info.c:223
 msgid "Project Lead"
 msgstr "Dezvoltator principal"
 
 #. Core developers
-#: ../xfce4-about/info.c:205
+#: ../xfce4-about/info.c:227
 msgid "Core developers"
 msgstr "Dezvoltatori"
 
 #. Active contributors
-#: ../xfce4-about/info.c:209
+#: ../xfce4-about/info.c:231
 msgid "Active contributors"
 msgstr "Contributori activi"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:213
+#: ../xfce4-about/info.c:235
 msgid "Previous contributors"
 msgstr "Contributori inactivi"
 
-#: ../xfce4-about/info.c:218
+#: ../xfce4-about/info.c:240
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Găzduire web şi liste de mail"
 
 #. Server admins
-#: ../xfce4-about/info.c:250
+#: ../xfce4-about/info.c:272
 msgid "Server maintained by"
 msgstr "Server administrat de"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:254
+#: ../xfce4-about/info.c:276
 msgid "Goodies supervision"
 msgstr "Supervizare „goodies”"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:258
+#: ../xfce4-about/info.c:280
 msgid "Translations supervision"
 msgstr "Supervizare localizare"
 
 #. Translators
-#: ../xfce4-about/info.c:262
+#: ../xfce4-about/info.c:284
 msgid "Translators"
 msgstr "Traducători"
 
-#: ../xfce4-about/info.c:293
+#: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să ne daţi de "
 "ştire la <"
 
-#: ../xfce4-about/info.c:297
+#: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
 msgstr "Mulţumim tuturor celor ce au sprijinit acest proiect software."
 
-#: ../xfce4-about/info.c:397
+#: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
 msgstr "Despre Xfce 4"
 
-#: ../xfce4-about/info.c:398
-msgid "Copyright 2002-2007 by Olivier Fourdan"
+#: ../xfce4-about/info.c:420
+#, fuzzy
+msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Drepturi de autor 2002-2007, Olivier Fourdan"
 
-#: ../xfce4-about/info.c:421
+#: ../xfce4-about/info.c:443
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:423
+#: ../xfce4-about/info.c:445
 msgid "Credits"
 msgstr "Credit"
 
-#: ../xfce4-about/info.c:424
+#: ../xfce4-about/info.c:446
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:425
+#: ../xfce4-about/info.c:447
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:426
+#: ../xfce4-about/info.c:448
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:427
+#: ../xfce4-about/info.c:449
 msgid "GPL"
 msgstr "GPL"
 
@@ -132,11 +133,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Deconectare de la magistrala D-BUS. Ieşire...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:340 ../xfrun/xfrun-dbus.c:351
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Eroare de sistem"
 
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Nu se poate face fork în fundal:"
 
