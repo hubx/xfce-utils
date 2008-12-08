@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2008-11-01 22:57+0100\n"
+"PO-Revision-Date: 2008-12-08 23:39+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../xfce4-about/info.c:194
 msgid "Unable to load "
-msgstr "Nelze načíst"
+msgstr "Nelze načíst "
 
 #. Project lead
 #: ../xfce4-about/info.c:223
@@ -68,8 +68,7 @@ msgstr "Překladatelé"
 
 #: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
+msgstr "Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
 
 #: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
@@ -77,12 +76,11 @@ msgstr "Děkujeme všem, kteří se podíleli na vývoji tohoto softwaru."
 
 #: ../xfce4-about/info.c:419
 msgid "About Xfce 4"
-msgstr "O Xfce 4"
+msgstr "O prostředí Xfce 4"
 
 #: ../xfce4-about/info.c:420
-#, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007 by Olivier Fourdan"
+msgstr "Copyright 2002-2008 Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"
@@ -112,16 +110,15 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Mód démon"
+msgstr "Režim démon"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr "Mód démon není podporován."
+msgstr "Režim démon není podporován."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Pro použití módu démon musí být aplikace Xfrun zkompilována s podporou D-BUS."
+msgstr "Pro použití režimu démon musí být aplikace Xfrun zkompilována s podporou D-BUS."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -131,14 +128,16 @@ msgstr "Nelze otevřít displej \"%s\"."
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Sběrnice zpráv D-BUS byla odpojena. Ukončuji...\n"
+msgstr "Sběrnice zpráv D-BUS byla odpojena. Ukončování...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Systémová chyba"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Nelze vytvořit proces na pozadí:"
 
@@ -166,7 +165,7 @@ msgstr "Neznámá chyba"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Ve kterém programu bude otevřeno %s?"
+msgstr "Ve které aplikaci se otevře %s?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -182,3 +181,4 @@ msgstr "Relace Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Desktopové prostředí Xfce"
+
