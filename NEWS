@@ -1,7 +1,7 @@
 4.5.93 (Xfce 4.6beta3)
 ======================
 
-- Add --xfce-version option to print the Xfce release version (bug 1471).
+- Add --xfce-version option to print the Xfce release version (bug 3754).
 
 
 4.5.92 (Xfce 4.6beta2)
