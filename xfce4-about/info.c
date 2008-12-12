@@ -4,6 +4,7 @@
  *                2003 Jasper Huijsmans (huysmans@users.sourceforge.net)
  *                2003,2006 Benedikt Meurer (benny@xfce.org)
  *                2005,2006 Jean-François Wauthy (pollux@xfce.org)
+ *                2007 Cody A.W. Somerville <cody-somerville@ubuntu.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -410,6 +411,15 @@ main (int argc, char **argv)
   GtkWidget *info_ok_button;
   GtkWidget *info_help_button;
   GdkPixbuf *logo_pb;
+
+  if(argc >= 2 && !strcmp (argv[1], "--xfce-version")) {
+#ifdef RELEASE_LABEL
+    g_printf ("%s (%s)\n", xfce_version_string (), RELEASE_LABEL);
+#else
+    g_printf ("%s\n", xfce_version_string ());
+#endif
+    exit (0);
+  }
 
   xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
