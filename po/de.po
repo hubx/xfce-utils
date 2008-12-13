@@ -1,5 +1,5 @@
 # German translations for xfce-utils package.
-# Copyright (C) 2002-2007 The Xfce development team.
+# Copyright (C) 2002-2008 The Xfce development team.
 # This file is distributed under the same license as the xfce-mcs-manager package.
 # Moritz Heiber <moe@xfce.org>, 2003.
 # Fabian Nowak <timystery@aarcor.de>, 2006, 2008.
@@ -82,7 +82,7 @@ msgstr "Über Xfce 4"
 #: ../xfce4-about/info.c:420
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007 von Olivier Fourdan"
+msgstr "Copyright 2002-2008 von Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"

@@ -10,105 +10,104 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2008-10-07 22:45+0900\n"
-"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmai.com>\n"
+"POT-Creation-Date: 2008-12-13 23:47+0900\n"
+"PO-Revision-Date: 2008-12-08 23:43+0900\n"
+"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "次のファイルを読込めません "
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
-msgstr "プロジェクトリーダー"
+msgstr "プロジェクトリーダ"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "中心開発者"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "現在の協力者"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "以前の協力者"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "ウェブホスティングとメーリングリストの提供"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
-msgstr "サーバーの管理"
+msgstr "サーバの管理"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "Goodies の監修"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "翻訳の監修"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "翻訳者"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "このリストに記載ミスがある場合は、以下のアドレスまでお知らせください。\n"
 "<"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
-msgstr "Xfce 4 を利用できるよう協力して下さった方全てに感謝します。"
+msgstr "Xfce 4 を利用できるよう協力して下さった全ての方々に感謝します。"
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "Xfce 4 について"
 
-#: ../xfce4-about/info.c:420
-#, fuzzy
+#: ../xfce4-about/info.c:430
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007 Olivier Fourdan"
+msgstr "Copyright 2002-2008 by Olivier Fourdan"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "情報"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "提供"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "著作権"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 
@@ -130,7 +129,7 @@ msgstr ""
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "ディスプレイ「%s」を開けません。"
+msgstr "ディスプレイ \"%s\" を開けません。"
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
@@ -144,7 +143,7 @@ msgstr "システムエラー"
 
 #: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
-msgstr "fork() できません:"
+msgstr "バックグラウンドで fork できません:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
@@ -157,7 +156,7 @@ msgstr "実行(_R)"
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr "コマンド「%s」の実行に失敗しました:"
+msgstr "コマンド \"%s\" の実行に失敗しました:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
@@ -170,7 +169,7 @@ msgstr "不明なエラー"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "どのプログラムで「%s」を開きますか?"
+msgstr "どのプログラムで \"%s\" を開きますか?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -178,8 +177,8 @@ msgstr "実行するプログラムを入力してください"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "このセションでデスクトップ環境として Xfce を使用します"
+msgstr "このセッションでデスクトップ環境として Xfce を使用します"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Xfce セション"
+msgstr "Xfce セッション"
