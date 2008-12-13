@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2008-11-15 19:15+0100\n"
+"PO-Revision-Date: 2008-12-11 00:39+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -67,8 +67,7 @@ msgstr "Traductores"
 
 #: ../xfce4-about/info.c:315
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Si conoce alguien que no está en esta lista, por favor háganoslo saber en <"
+msgstr "Si conoce a alguien que no está en esta lista, por favor háganoslo saber en <"
 
 #: ../xfce4-about/info.c:319
 msgid "Thanks to all who helped making this software available."
@@ -79,9 +78,8 @@ msgid "About Xfce 4"
 msgstr "Acerca de XFce 4"
 
 #: ../xfce4-about/info.c:420
-#, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007 por Olivier Fourdan"
+msgstr "Copyright 2002-2008 por Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"
@@ -119,9 +117,7 @@ msgstr "El modo demonio no está soportado."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun debe ser compilado con soporte para D-BUS para habilitar el modo "
-"demonio."
+msgstr "Xfrun debe ser compilado con soporte para D-BUS para habilitar el modo demonio."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -134,11 +130,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Mensaje de desconexión de bus D-BUS. Saliendo...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Error de sistema"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "No se pudo pasar a segundo plano:"
 
@@ -182,3 +180,4 @@ msgstr "Sesión Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Entorno de Escritorio XFce"
+
