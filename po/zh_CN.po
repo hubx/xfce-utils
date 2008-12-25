@@ -5,14 +5,15 @@
 # Yongtao Yang <yongtao.yang@telia.com>, 2004, 2006.
 # Huang Huan <unicon221@gmail.com>, 2006.
 # Jick Nan <jick.nan@gmail.com>, 2006.
-# wuli <wurisky@gmail.com>,2007
+# wuli <wurisky@gmail.com>,2007.
+# Hunt Xu <huntxu@live.cn>,2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2007-02-03 04:00+0800\n"
-"Last-Translator: wuli <wurisky@gmail.com>\n"
+"PO-Revision-Date: 2008-12-17 01:48+0800\n"
+"Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr "无法加载"
 #. Project lead
 #: ../xfce4-about/info.c:223
 msgid "Project Lead"
-msgstr "项目领导"
+msgstr "项目领导者"
 
 #. Core developers
 #: ../xfce4-about/info.c:227
@@ -79,9 +80,8 @@ msgid "About Xfce 4"
 msgstr "关于Xfce 4 "
 
 #: ../xfce4-about/info.c:420
-#, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "版权所有2002-2007 Olivier Fourdan"
+msgstr "版权所有2002-2008 Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"
@@ -132,11 +132,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS 信息总线没有连接。离开中...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "系统错误"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "无法派生指令到后台"
 
@@ -172,11 +174,12 @@ msgstr "运行程序"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "使用此会话运行 Xfce 作为您默认的桌面环境"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce 会话"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce 桌面环境"
+

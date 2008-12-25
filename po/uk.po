@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2007-11-17 11:38+0200\n"
+"PO-Revision-Date: 2007-12-15 13:37+0200\n"
 "Last-Translator:  Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -78,9 +78,8 @@ msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
 #: ../xfce4-about/info.c:420
-#, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Авторське право 2002-2007, Olivier Fourdan"
+msgstr "Авторські права 2002-2008, Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"
@@ -118,8 +117,7 @@ msgstr "Режим служби не підтримується."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
+msgstr "Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -177,3 +175,4 @@ msgstr "Використовуйте цю сесію для запуску Xfce 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Сесія Xfce"
+
