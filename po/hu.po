@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-07 21:09+0100\n"
-"PO-Revision-Date: 2008-10-08 21:34+0100\n"
+"PO-Revision-Date: 2008-12-30 09:12+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -81,9 +81,8 @@ msgid "About Xfce 4"
 msgstr "Az Xfce 4 névjegye"
 
 #: ../xfce4-about/info.c:420
-#, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007, Olivier Fourdan"
+msgstr "Copyright 2002-2008, Olivier Fourdan"
 
 #: ../xfce4-about/info.c:443
 msgid "Info"
@@ -134,11 +133,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "A D-BUS üzenet-busz levált. Kilépek ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Rendszer hiba"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Nem tudok a háttérbe forkolni:"
 
@@ -182,3 +183,4 @@ msgstr "Xfce folyamat"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce Munkakörnyezet"
+
