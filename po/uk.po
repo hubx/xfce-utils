@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2007-12-15 13:37+0200\n"
 "Last-Translator:  Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce-i18n@xfce.org>\n"
@@ -15,94 +15,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "Не вдається завантажити"
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
 msgstr "Лідер проекту"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "Головні розробники"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "Активні помічники"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "Попередні помічники"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Веб-хостінг та списки розсилки надані"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
 msgstr "Сервер підтримується"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "Координація розробки доповнень"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "Координація перекладів"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "Перекладачі"
 
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, "
 "дайте нам знати за адресою <"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
 msgstr "Дякуємо усім, хто допоміг зробити це програмне забезпечення."
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
-#: ../xfce4-about/info.c:420
+#: ../xfce4-about/info.c:430
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Авторські права 2002-2008, Olivier Fourdan"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "Інформація"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "Подяки"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 
@@ -117,7 +117,8 @@ msgstr "Режим служби не підтримується."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
+msgstr ""
+"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -175,4 +176,3 @@ msgstr "Використовуйте цю сесію для запуску Xfce 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Сесія Xfce"
-

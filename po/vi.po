@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2006-09-05 02:40+0400\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -19,94 +19,94 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: nplurals=1; nplural=0\n"
 
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "Không nạp được "
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
 msgstr "Lãnh đạo dự án"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "Nhà phát triển chính"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "Cộng tác viên tích cực"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "Cộng tác viên trước đây"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Trang Web và danh sách thư cung cấp bởi"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
 msgstr "Điều hành máy chủ"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "Giám sát goodies"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "Giám sát dịch"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "Người dịch"
 
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Nếu còn thiếu ai đó trong danh sách này, xin hãy cho chúng tôi biết tại <"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
 msgstr "Cảm ơn các bạn đã giúp đỡ cho phần mềm này."
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "Giới thiệu XFce 4"
 
-#: ../xfce4-about/info.c:420
+#: ../xfce4-about/info.c:430
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Bản quyền 2002-2007 thuộc về Olivier Fourdan"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "Thông tin"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "Ghi công"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "Bản quyền"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 

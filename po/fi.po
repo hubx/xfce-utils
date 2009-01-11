@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-13 16:31+0200\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2008-12-13 16:33+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -65,8 +65,7 @@ msgstr "Kääntäjät"
 
 #: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
+msgstr "Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
 
 #: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."

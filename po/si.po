@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2008-10-06 17:16+0530\n"
 "Last-Translator: Rashan Anushka <rashan.uoc@gmail.com>\n"
 "Language-Team: Sinhalese <en@li.org>\n"
@@ -16,93 +16,93 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "ප්‍රවේශනය කළ නොහැක"
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
 msgstr "ව්‍යාපෘති නායක"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "මූලික වැඩිදියුණුකරන්නන්"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "සක්‍රීය දායකයින්"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "පෙරසිටි දායකයින්"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "වෙබ් සත්කාරකරනය හා තැපැල් ලැයිස්තු සපයනු ලබන්නේ"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
 msgstr "සේවාදායකය නඩත්තු කරන්නේ"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "ගූඩීස් අධීක්ෂණය"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "පරිවර්ථන අධීක්ෂණය"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "පරිවර්ථකයින්"
 
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "කිසියම් කෙනෙකු මඟහැරී ඇති බව ඔබට පෙනේ නම්, කරුණාකර අප වෙත දන්වන්න <"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
 msgstr "මෙම මෘදුකාංගය නිකුත් කිරීමට සහය වූ සැමට ස්තූතියි."
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "Xfce 4 ගැන"
 
-#: ../xfce4-about/info.c:420
+#: ../xfce4-about/info.c:430
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "කතුහිමිකම 2002-2007 ඔලිවර් ෆෝදන්"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "විස්තර"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "සම්මාන"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "කතුහිමිකම"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 

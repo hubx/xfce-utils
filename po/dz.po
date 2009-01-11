@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2006-10-25 15:38+0530\n"
 "Last-Translator: sonam rinchen <somindruk@druknet.bt>\n"
 "Language-Team: dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -19,93 +19,93 @@ msgstr ""
 "X-Poedit-Country: bhutan\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "མངོན་གསལ་འབད་མི་ཚུགས།"
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
 msgstr "ལས་འགུལ་འགོ་ཁྲིད།"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "ནང་སྙིང་བཟོ་མི་ཚུ།"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "ཤུགས་ལྡན་ཕན་འདེབས་པ་ཚུ།"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "ཧེ་མའི་ཕན་འདེབས་པ་ཚུ།"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "གིས་བྱིན་ཏེ་ཡོད་མི་ཝེབ་ཧོསཊི་ཊིང་དང་ཡིག་འཕྲིན་གཏང་ནིའི་ཐོ་ཡིག་ཚུ།"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
 msgstr "གིས་རྒྱུན་སྐྱོང་འབད་ཡོད་པའི་སར་བར།"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "གུ་ཌིསི་ལྟ་རྟོག།"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "སྐད་སྒྱུར་ཚུའི་ལྟ་རྟོག།"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "སྐད་བསྒྱུར་པ་ཚུ།"
 
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "ཁྱོད་ཀྱིས་ཐོ་ཡིག་འདི་ལས་གང་རུང་ཅིག་བརླག་སྟོར་ཞུགསཔ་ཨིནམ་ཤེས་པ་ཅིན་ ང་བཅས་ལུ་སླབ་གནང་ <"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
 msgstr "མཉེན་ཆས་འདི་འཐོབ་ཚུགསཔ་བཟོ་མི་ཆ་མཉམ་ལུ་བཀྲིན་ཆེ།"
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་༤གི་སྐོར་ལས།"
 
-#: ../xfce4-about/info.c:420
+#: ../xfce4-about/info.c:430
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "ཨོ་ལི་བར་ཕོར་ཌེན་གིས་འདྲ་བཤུས་དབང་ཆ་༢༠༠༢-༢༠༠༦"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "བརྡ་དོན།"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "ངོ་བསྟོད་ཚུ།"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "འདྲ་བཤུས་དབང་ཆ།"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "བི་ཨེསི་ཌི་ཨེལ།"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "ཨེལ་ཇི་པི་ཨེལ།"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "ཇི་པི་ཨེལ།"
 

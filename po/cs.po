@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-07 21:09+0100\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
 "PO-Revision-Date: 2008-12-08 23:39+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -18,92 +18,93 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 
-#: ../xfce4-about/info.c:194
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
 msgstr "Nelze načíst "
 
 #. Project lead
-#: ../xfce4-about/info.c:223
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
 msgstr "Vedoucí projektu"
 
 #. Core developers
-#: ../xfce4-about/info.c:227
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
 msgstr "Klíčoví vývojáři"
 
 #. Active contributors
-#: ../xfce4-about/info.c:231
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "Aktivní přispěvatelé"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:235
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "Dřívější přispěvatelé"
 
-#: ../xfce4-about/info.c:240
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Hostování webu a diskusních skupin poskytuje"
 
 #. Server admins
-#: ../xfce4-about/info.c:272
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
 msgstr "Server spravuje"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:276
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
 msgstr "Vedoucí pro doplňky"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:280
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "Vedoucí překladatel"
 
 #. Translators
-#: ../xfce4-about/info.c:284
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "Překladatelé"
 
-#: ../xfce4-about/info.c:315
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
+msgstr ""
+"Víte-li o někom, kdo na seznamu chybí, oznamte tuto skutečnost na adresu <"
 
-#: ../xfce4-about/info.c:319
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
 msgstr "Děkujeme všem, kteří se podíleli na vývoji tohoto softwaru."
 
-#: ../xfce4-about/info.c:419
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
 msgstr "O prostředí Xfce 4"
 
-#: ../xfce4-about/info.c:420
+#: ../xfce4-about/info.c:430
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2008 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:443
+#: ../xfce4-about/info.c:453
 msgid "Info"
 msgstr "Informace"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:445
+#: ../xfce4-about/info.c:455
 msgid "Credits"
 msgstr "Zásluhy"
 
-#: ../xfce4-about/info.c:446
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:447
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:448
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:449
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 
@@ -118,7 +119,9 @@ msgstr "Režim démon není podporován."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Pro použití režimu démon musí být aplikace Xfrun zkompilována s podporou D-BUS."
+msgstr ""
+"Pro použití režimu démon musí být aplikace Xfrun zkompilována s podporou D-"
+"BUS."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -131,13 +134,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Sběrnice zpráv D-BUS byla odpojena. Ukončování...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342
-#: ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Systémová chyba"
 
-#: ../xfrun/xfrun-dbus.c:344
-#: ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Nelze vytvořit proces na pozadí:"
 
@@ -181,4 +182,3 @@ msgstr "Relace Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Desktopové prostředí Xfce"
-
