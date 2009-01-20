@@ -106,6 +106,15 @@ AM_CONDITIONAL([HAVE_DBUS], [test "x$DBUS_FOUND" = "xyes"])
 XDT_CHECK_OPTIONAL_PACKAGE([DBUS], [dbus-glib-1], 
                            [0.33], [dbus], [D-BUS support])
 
+dnl check for location Xfce glade files were installed to
+XFCE_LIBGLADE_MODULE_PATH="`pkg-config --variable libglade_module_path libxfcegui4-1.0`"
+XFCE_GLADE_CATALOG_PATH="`pkg-config --variable glade_catalog_path libxfcegui4-1.0`"
+XFCE_GLADE_PIXMAP_PATH="`pkg-config --variable glade_pixmap_path libxfcegui4-1.0`"
+XFCE_GLADE_MODULE_PATH="`pkg-config --variable glade_module_path libxfcegui4-1.0`"
+AC_SUBST(XFCE_LIBGLADE_MODULE_PATH)
+AC_SUBST(XFCE_GLADE_CATALOG_PATH)
+AC_SUBST(XFCE_GLADE_PIXMAP_PATH)
+AC_SUBST(XFCE_GLADE_MODULE_PATH)
 
 dnl Check for debugging support
 XDT_FEATURE_DEBUG
@@ -141,6 +150,7 @@ icons/Makefile
 icons/48x48/Makefile
 xfrun/Makefile
 scripts/Makefile
+scripts/xinitrc.in
 xfce4-about/Makefile
 ])
 
