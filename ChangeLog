@@ -1,3 +1,66 @@
+2009-01-26 00:00  jannis
+
+	* NEWS, configure.in.in, po/ChangeLog, po/af.po, po/am.po,
+	  po/ar.po, po/az.po, po/be.po, po/bg.po, po/bn_IN.po, po/ca.po,
+	  po/cs.po, po/da.po, po/de.po, po/dz.po, po/el.po, po/en_GB.po,
+	  po/eo.po, po/es.po, po/es_MX.po, po/et.po, po/eu.po, po/fa.po,
+	  po/fi.po, po/fr.po, po/gl.po, po/gu.po, po/he.po, po/hi.po,
+	  po/hu.po, po/hy.po, po/id.po, po/it.po, po/ja.po, po/ka.po,
+	  po/ko.po, po/ku.po, po/lt.po, po/lv.po, po/mk.po, po/mr.po,
+	  po/ms.po, po/nb_NO.po, po/nl.po, po/pa.po, po/pl.po, po/pt_BR.po,
+	  po/pt_PT.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sq.po,
+	  po/sv.po, po/ta.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po,
+	  po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po, xfce4-about/info.c:
+	  == 4.5.99.1 released! == Bump version number and update NEWS as
+	  well as translation files for the release. Add missing gprintf.h
+	  include to xfce4-about/info.c.
+
+2009-01-23 15:36  pko
+
+	* po/ChangeLog, po/da.po:
+	  * da.po: Danish translation update (Per Kongstad) * da.po: Danish
+	  translation updated (Per Kongstad) * da.po: Danish translation
+	  update (Per Kongstad) * da.po: Danish translation updated (Per
+	  Kongstad) * da.po: Danish translation updated to 0.5.2 (Per
+	  Kongstad) * da.po: Danish translation update (Per Kongstad) *
+	  da.po: Danish tranlation update 4.5.93 (Per Kongstad) * da.po,
+	  LINGUAS: Danish translation added (Per Kongstad) * da.po : Danish
+	  translation updated (Per Kongstad)
+
+2009-01-20 02:45  jannis
+
+	* configure.in.in, scripts/xinitrc.in, scripts/xinitrc.in.in:
+	  Modify configure.in.in to determine the glade paths defined in
+	  the pkg-config file for libxfcegui4. Create scripts/xinitrc.in
+	  from scripts/xinitrc.in.in where LIBGLADE_MODULE_PATH,
+	  GLADE_MODULE_PATH, GLADE_CATALOG_PATH and GLADE_PIXMAP_PATH are
+	  now defined prior to starting Xfce.
+
+2009-01-19 20:58  maximilian
+
+	* po/ChangeLog, po/nb_NO.po:
+	  Translations udpates - es fr nb_NO zh_CN
+
+2009-01-15 13:57  omaciel
+
+	* po/ChangeLog, po/pt_BR.po:
+	  Updated Brazilian Portuguese translation.
+
+2009-01-11 09:25  stephan
+
+	* ChangeLog, configure.in.in, po/af.po, po/am.po, po/ar.po,
+	  po/az.po, po/be.po, po/bg.po, po/bn_IN.po, po/ca.po, po/cs.po,
+	  po/da.po, po/de.po, po/dz.po, po/el.po, po/en_GB.po, po/eo.po,
+	  po/es.po, po/es_MX.po, po/et.po, po/eu.po, po/fa.po, po/fi.po,
+	  po/fr.po, po/gl.po, po/gu.po, po/he.po, po/hi.po, po/hu.po,
+	  po/hy.po, po/id.po, po/it.po, po/ja.po, po/ka.po, po/ko.po,
+	  po/ku.po, po/lt.po, po/lv.po, po/mk.po, po/mr.po, po/ms.po,
+	  po/nb_NO.po, po/nl.po, po/pa.po, po/pl.po, po/pt_BR.po,
+	  po/pt_PT.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sq.po,
+	  po/sv.po, po/ta.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po,
+	  po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po:
+	  Update .po files, ChangeLog, version-number
+
 2009-01-04 21:35  maximilian
 
 	* po/ChangeLog, po/ca.po:
@@ -31,26 +94,20 @@
 2008-12-13 21:25  eulex
 
 	* po/ChangeLog, po/sv.po:
-	  xfce4-panel/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  xfdesktop/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  xfprint/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  xfce4-mixer/trunk/po:
-	  * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
-	  xfce4-icon-theme/trunk/po:
-	  * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
-	  xfce-utils/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  thunar/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  xfce4-appfinder/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
-	  xfconf/trunk/po:
-	  * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
-	  xfce4-trigger-launcher/trunk/po:
-	  * sv.po: Swedish translation update (Daniel Nylander)
+	  xfce4-panel/trunk/po: * sv.po: Swedish translation update (Daniel
+	  Nylander) xfdesktop/trunk/po: * sv.po: Swedish translation update
+	  (Daniel Nylander) xfprint/trunk/po: * sv.po: Swedish translation
+	  update (Daniel Nylander) xfce4-mixer/trunk/po: * sv.po, LINGUAS:
+	  Swedish translation added (Daniel Nylander)
+	  xfce4-icon-theme/trunk/po: * sv.po, LINGUAS: Swedish translation
+	  added (Daniel Nylander) xfce-utils/trunk/po: * sv.po: Swedish
+	  translation update (Daniel Nylander) thunar/trunk/po: * sv.po:
+	  Swedish translation update (Daniel Nylander)
+	  xfce4-appfinder/trunk/po: * sv.po: Swedish translation update
+	  (Daniel Nylander) xfconf/trunk/po: * sv.po, LINGUAS: Swedish
+	  translation added (Daniel Nylander)
+	  xfce4-trigger-launcher/trunk/po: * sv.po: Swedish translation
+	  update (Daniel Nylander)
 
 2008-12-13 15:04  jari
 
@@ -90,8 +147,7 @@
 	  po/sk.po, po/sq.po, po/sv.po, po/ta.po, po/tr.po, po/uk.po,
 	  po/ur.po, po/vi.po, po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po,
 	  xfce4-about/info.c:
-	  * Update copyright 2008 year.
-	  * Rebuild po.
+	  * Update copyright 2008 year. * Rebuild po.
 
 2008-11-25 21:20  maximilian
 
@@ -126,9 +182,7 @@
 2008-11-14 09:34  stephan
 
 	* ChangeLog, configure.in.in:
-	  Update Changelog
-	  Update version-number
-	  Update Release-string
+	  Update Changelog Update version-number Update Release-string
 
 2008-11-12 11:09  piarres
 
@@ -203,8 +257,7 @@
 
 	* xfce4-about/AUTHORS, xfce4-about/info.c:
 	  Move a few names up and down in the AUTHORS file. Don't display
-	  empty
-	  categories on the credits page.
+	  empty categories on the credits page.
 
 2008-10-14 15:25  lars
 
@@ -214,350 +267,8 @@
 2008-10-14 14:56  lars
 
 	* po/ChangeLog, po/LINGUAS, po/da.po:
-	  * da.po,LINGUAS: Added Danish translation
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  * da.po: Danish translation update
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	  * da.po,LINGUAS: Added Danish translation * da.po: Danish
+	  translation update
 
 2008-10-13 11:47  stephan
 
@@ -582,33 +293,27 @@
 2008-10-07 19:55  maximilian
 
 	* po/ChangeLog, po/ja.po, po/si.po:
-	  Translation updates:
-	  - xfce4-appfinder: ja, si
-	  - xfce-utils: ja, si
-	  - xfce4-mixer: si
-	  - xfce4-panel: ja, si
-	  - xfdesktop: ja
-	  - terminal: ja
+	  Translation updates: - xfce4-appfinder: ja, si - xfce-utils: ja,
+	  si - xfce4-mixer: si - xfce4-panel: ja, si - xfdesktop: ja -
+	  terminal: ja
 
 2008-10-05 17:52  maximilian
 
 	* po/ChangeLog, po/es.po, po/id.po:
 	  Updated and added Estonian translations for the libxfcegui4,
 	  terminal and mousepad trunk modules and libxfce4util branch 4.4
-	  module
-	  Updated Indonesian translations for the xfce-utils, xfce4-mixer,
-	  xarchiver, xfwm4, xfcalendar and xfdesktop trunk modules
-	  Updated and added Spanish translations for the xfce4-appfinder,
-	  squeeze, libexo, xfce-utils, libxfce4menu, xfce4-session,
-	  xfce4-mixer, libxfce4util, libxfce4ui, xfce4-icon-theme, thunar,
-	  libxfcegui4, xfce4-panel, xfdesktop, xfce4-trigger-launcher,
-	  terminal, mousepad and xfmedia trunk modules
-	  Updated Russian translation for the xarchiver, libexo and
-	  libxfcegui4 trunk modules
-	  Updated and added German translation of the xfce4-settings and
-	  xfwm4 trunk modules
-	  Updated Japanese translation for the thunar module
-	  Updated Sinhalese translation for the libxfcegui4 trunk module
+	  module Updated Indonesian translations for the xfce-utils,
+	  xfce4-mixer, xarchiver, xfwm4, xfcalendar and xfdesktop trunk
+	  modules Updated and added Spanish translations for the
+	  xfce4-appfinder, squeeze, libexo, xfce-utils, libxfce4menu,
+	  xfce4-session, xfce4-mixer, libxfce4util, libxfce4ui,
+	  xfce4-icon-theme, thunar, libxfcegui4, xfce4-panel, xfdesktop,
+	  xfce4-trigger-launcher, terminal, mousepad and xfmedia trunk
+	  modules Updated Russian translation for the xarchiver, libexo and
+	  libxfcegui4 trunk modules Updated and added German translation of
+	  the xfce4-settings and xfwm4 trunk modules Updated Japanese
+	  translation for the thunar module Updated Sinhalese translation
+	  for the libxfcegui4 trunk module
 
 2008-09-28 09:38  kelnos
 
@@ -619,8 +324,7 @@
 
 	* scripts/xfconf-migration-4.6.pl.in:
 	  fix keyboard settings migration script for key names that are
-	  more than
-	  a single letter long
+	  more than a single letter long
 
 2008-09-16 06:42  kelnos
 
@@ -718,9 +422,8 @@
 	  po/pt_PT.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sq.po,
 	  po/sv.po, po/ta.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po,
 	  po/zh_CN.po, po/zh_TW.po, xfce.desktop.in:
-	  Update .po files
-	  Add xfce.desktop.in
-	  Fix makefile.am (make distcheck)
+	  Update .po files Add xfce.desktop.in Fix makefile.am (make
+	  distcheck)
 
 2008-09-06 20:34  stephan
 
@@ -734,11 +437,8 @@
 	  po/nl.po, po/pa.po, po/pl.po, po/pt_BR.po, po/pt_PT.po, po/ro.po,
 	  po/ru.po, po/si.po, po/sk.po, po/sq.po, po/sv.po, po/ta.po,
 	  po/tr.po, po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po:
-	  Update deps
-	  remove gdm folder
-	  Fix xsession .desktop file installation
-	  Update .po files
-	  Remove -svn tag
+	  Update deps remove gdm folder Fix xsession .desktop file
+	  installation Update .po files Remove -svn tag
 
 2008-08-25 13:15  kelnos
 
@@ -769,8 +469,7 @@
 	* configure.in.in, gdm/Makefile.am, po/am.po, po/en_GB.po,
 	  po/et.po, po/fr.po, po/lv.po, po/pa.po, po/pt_BR.po, po/pt_PT.po,
 	  po/ro.po, po/sk.po, po/sq.po, po/tr.po, po/ur.po, po/zh_CN.po:
-	  Fix make distcheck
-	  Update .po files
+	  Fix make distcheck Update .po files
 
 2008-07-18 19:19  alnokta
 
@@ -817,8 +516,7 @@
 
 	* xfrun/xfrun-dialog.c:
 	  use real GtkComboBoxEntry instead of separate GtkEntry and
-	  GtkButton, patch
-	  from Stefan Stuhr (bug 3820)
+	  GtkButton, patch from Stefan Stuhr (bug 3820)
 
 2008-02-26 09:24  kelnos
 
@@ -855,11 +553,11 @@
 2007-09-24 01:41  mmassonnet
 
 	* po/ChangeLog, po/LINGUAS, po/lv.po:
-	  * thunar, xfce4-panel: Update Korean translation
-	  * libxfce4menu, libxfcegui4, mousepad, squeeze, xfce4-appfinder,
+	  * thunar, xfce4-panel: Update Korean translation * libxfce4menu,
+	  libxfcegui4, mousepad, squeeze, xfce4-appfinder,
 	  xfce4-icon-theme, xfce4-mixer, xfce4-terminal,
-	  xfce4-trigger-launcher,
-	  xfce-mcs-manager, xfce-utils: Add Latvian translation
+	  xfce4-trigger-launcher, xfce-mcs-manager, xfce-utils: Add Latvian
+	  translation
 
 2007-09-23 20:18  pollux
 
@@ -894,18 +592,16 @@
 2007-07-08 19:19  maximilian
 
 	* po/ChangeLog, po/pt_PT.po:
-	  * Updated some Brazilian Portuguese translations for Xfce 4.4.
-	  * Updated some European Portuguese translations for trunk.
+	  * Updated some Brazilian Portuguese translations for Xfce 4.4. *
+	  Updated some European Portuguese translations for trunk.
 
 2007-06-27 21:39  maximilian
 
 	* po/ChangeLog, po/pt_PT.po:
 	  * no_NO.po: Norwegian Bokmal translation update for the xfburn
-	  package
-	  * pt_PT.po: European Portuguese translation update for some
-	  packages in trunk
-	  * ka.po: Georgian translation update for the xfce-mcs-manager
-	  package (4.4)
+	  package * pt_PT.po: European Portuguese translation update for
+	  some packages in trunk * ka.po: Georgian translation update for
+	  the xfce-mcs-manager package (4.4)
 
 2007-06-09 09:37  maximilian
 
@@ -917,8 +613,7 @@
 
 	* scripts/Xft.xrdb:
 	  remove Xft.dpi fallback, as the fallback should be 'system
-	  default' now that
-	  the UI plugin has a DPI setting
+	  default' now that the UI plugin has a DPI setting
 
 2007-05-07 18:27  maximilian
 
@@ -941,37 +636,36 @@
 2007-04-13 21:03  maximilian
 
 	* xfce4-about/AUTHORS:
-	  * fr.po: Updated squeeze's French translation
-	  * Updated AUTHORS file in xfce-utils trunk and branch 4.4
-	  * Fixed headers in some po files in branch
+	  * fr.po: Updated squeeze's French translation * Updated AUTHORS
+	  file in xfce-utils trunk and branch 4.4 * Fixed headers in some
+	  po files in branch
 
 2007-04-10 18:47  maximilian
 
 	* xfce4-about/AUTHORS:
-	  * de.po: Updated xfwm4's German translation in trunk
-	  * Updated AUTHORS file in xfce-utils trunk and branch 4.4
+	  * de.po: Updated xfwm4's German translation in trunk * Updated
+	  AUTHORS file in xfce-utils trunk and branch 4.4
 
 2007-04-09 20:07  maximilian
 
 	* po/fr.po, xfce4-about/AUTHORS:
-	  * fr.po: Fixed headers in trunk
-	  * Updated AUTHORS file in xfce-utils trunk and branch 4.4
+	  * fr.po: Fixed headers in trunk * Updated AUTHORS file in
+	  xfce-utils trunk and branch 4.4
 
 2007-04-09 13:50  maximilian
 
 	* xfce4-about/AUTHORS:
-	  * *.po: Updated .pot and .po files for Xfdesktop and Xfwm4
-	  * de.po: Updated xfwm4's German file in trunk
-	  * fr.po: Fixed headers in 4.4 branch
-	  * Updated xfce-utils AUTHORS file for trunk and 4.4 branch
+	  * *.po: Updated .pot and .po files for Xfdesktop and Xfwm4 *
+	  de.po: Updated xfwm4's German file in trunk * fr.po: Fixed
+	  headers in 4.4 branch * Updated xfce-utils AUTHORS file for trunk
+	  and 4.4 branch
 
 2007-04-09 10:05  maximilian
 
 	* po/fr.po:
 	  * fr.po: Fixed typos and style in the French translation of
-	  Terminal's manual
-	  * Changed my email address in all the fr.po files in trunk and
-	  4.4
+	  Terminal's manual * Changed my email address in all the fr.po
+	  files in trunk and 4.4
 
 2007-04-08 21:30  olivier
 
@@ -1002,8 +696,8 @@
 2007-03-28 20:51  maximilian
 
 	* po/ChangeLog, po/de.po, po/en_GB.po:
-	  * de.po: Nico Schümann minor fixes to the German translations
-	  * en_GB.po: Jeff Bailes updated the British English translations
+	  * de.po: Nico Schümann minor fixes to the German translations *
+	  en_GB.po: Jeff Bailes updated the British English translations
 	  for trunk and branches
 
 2007-03-25 13:22  daichi
@@ -1051,8 +745,8 @@
 2007-02-20 19:19  maximilian
 
 	* po/ChangeLog, po/ko.po:
-	  * fr.po: Updated the French translations of libexo and squeeze
-	  * ko.po: Updated the Korean translations by ByungHyun Choi in
+	  * fr.po: Updated the French translations of libexo and squeeze *
+	  ko.po: Updated the Korean translations by ByungHyun Choi in
 	  xfce-utils, thunar, xfburn and mousepad
 
 2007-02-10 18:56  maximilian
@@ -1115,14 +809,11 @@
 2007-01-21 14:08  maximilian
 
 	* po/ChangeLog, po/fr.po, po/ro.po:
-	  * fr.po: Minor changes to the French translations
-	  in xfce-utils, libxfce4util and mousepad
-	  * pl.po: Updated the Polish translation by Szymon Kałasz
-	  <szymon_maestro@gazeta.pl>
-	  in thunar and mousepad.
-	  * ro.po: Updated the Romanian translation by Mişu Moldovan
-	  <dumol@gnome.ro>
-	  in most core packages.
+	  * fr.po: Minor changes to the French translations in xfce-utils,
+	  libxfce4util and mousepad * pl.po: Updated the Polish translation
+	  by Szymon Kałasz <szymon_maestro@gazeta.pl> in thunar and
+	  mousepad. * ro.po: Updated the Romanian translation by Mişu
+	  Moldovan <dumol@gnome.ro> in most core packages.
 
 2007-01-20 17:02  benny
 
@@ -1155,19 +846,9 @@
 2007-01-18 23:10  eulex
 
 	* po/ChangeLog, po/sv.po:
-	  Updated Swedish translations for:
-	  * libexo
-	  * libxfcegui4
-	  * mousepad
-	  * thunar
-	  * xfcalendar
-	  * xfce4-appfinder
-	  * xfce4-panel
-	  * xfce-mcs-plugins
-	  * xfce-utils
-	  * xfdesktop
-	  * xfprint
-	  * xfwm4
+	  Updated Swedish translations for: * libexo * libxfcegui4 *
+	  mousepad * thunar * xfcalendar * xfce4-appfinder * xfce4-panel *
+	  xfce-mcs-plugins * xfce-utils * xfdesktop * xfprint * xfwm4
 	  
 	  Also thus updated appropriate ChangeLog files.
 
@@ -1180,8 +861,8 @@
 2007-01-18 18:56  nick
 
 	* ChangeLog, xfce4-about/AUTHORS, xfce4-about/INFO.fr:
-	  * AUTHORS: Add GÃ©rald BarrÃ©.
-	  * INFO.fr: Update French translations outside the po directory.
+	  * AUTHORS: Add GÃ©rald BarrÃ©. * INFO.fr: Update French
+	  translations outside the po directory.
 
 2007-01-17 11:41  piarres
 
@@ -1253,16 +934,13 @@
 	  doc/xfce4-user-guide/C/xfce4-user-guide.xml,
 	  doc/xfce4-user-guide/Makefile.am, doc/xfce4-user-guide/fr,
 	  doc/xfce4-user-guide/it, icons/Makefile.am, icons/scalable:
-	  * Updates to xfce-utils manual and xfce user guide.
-	  * Remove outdated fr and it translations.
-	  * Update xsl and css files with some minor tweaks.
-	  * Remove taskbar icon.
-	  * Update index.html.
+	  * Updates to xfce-utils manual and xfce user guide. * Remove
+	  outdated fr and it translations. * Update xsl and css files with
+	  some minor tweaks. * Remove taskbar icon. * Update index.html.
 	  
 	  NOTE: The documentation, especially the user guide needs more
-	  work.
-	  NOTE2: xfce4-about info probably needs to be updated, especially
-	  AUTHORS.
+	  work. NOTE2: xfce4-about info probably needs to be updated,
+	  especially AUTHORS.
 
 2006-12-25 11:14  maximilian
 
@@ -1293,9 +971,9 @@
 2006-11-19 11:57  maximilian
 
 	* po/ChangeLog, po/fr.po:
-	  Fixed spelling and header in xfce-utils French translation
-	  Added the Brazilian portuguese translation for libexo's manual
-	  by Gunther Furtado <gunzera0@yahoo.com.br>
+	  Fixed spelling and header in xfce-utils French translation Added
+	  the Brazilian portuguese translation for libexo's manual by
+	  Gunther Furtado <gunzera0@yahoo.com.br>
 
 2006-11-17 22:31  olivier
 
@@ -1405,8 +1083,7 @@
 
 	* scripts/xfterm4.in:
 	  Apply patch from Mike Massonnet <mike.massonnet@gmail.com> to
-	  properly escape
-	  the command. Bug #1100.
+	  properly escape the command. Bug #1100.
 
 2006-09-18 20:57  paurullan
 
@@ -1539,8 +1216,7 @@
 	  po/vi.po, po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po,
 	  xfce4-about/AUTHORS, xfce4-about/info.c:
 	  add Jannis in Active contributors and in the new 'Goodies
-	  supervision'
-	  category
+	  supervision' category
 
 2006-08-07 21:32  pollux
 
@@ -1554,8 +1230,8 @@
 	  po/vi.po, po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po,
 	  xfce4-about/AUTHORS, xfce4-about/info.c:
 	  * Split contributors into 'Active contributors' and 'Previous
+	  contributors' * Add Nick Schermer and Darren Salt to 'Active
 	  contributors'
-	  * Add Nick Schermer and Darren Salt to 'Active contributors'
 
 2006-08-04 17:28  stavrosg
 
@@ -1597,12 +1273,10 @@
 2006-07-30 21:18  kelnos
 
 	* xfrun/xfrun-dialog.c:
-	  stuff from nick:
-	  * use g_type_class_add_private() as a bit of an optimisation
-	  * chain up to the parent's _finalize() - that should fix the last
-	  memleak.
-	  note to self: when valgrind says there's memory lost on
-	  g_type_create_instance(), this is usually why.
+	  stuff from nick: * use g_type_class_add_private() as a bit of an
+	  optimisation * chain up to the parent's _finalize() - that should
+	  fix the last memleak. note to self: when valgrind says there's
+	  memory lost on g_type_create_instance(), this is usually why.
 
 2006-07-30 08:31  pollux
 
@@ -1613,22 +1287,16 @@
 
 	* xfrun/xfrun-dbus.c, xfrun/xfrun-dialog.c:
 	  * fix dialog positioning when running fallback dialog (when the
-	  dbus service
-	  can't be contacted)
-	  * fix command parsing so arguments can be passed to commands in
-	  the dialog
-	  box (bug 2085)
+	  dbus service can't be contacted) * fix command parsing so
+	  arguments can be passed to commands in the dialog box (bug 2085)
 
 2006-07-21 04:06  kelnos
 
 	* xfrun/xfrun-dbus.c, xfrun/xfrun-dialog.c:
 	  * fix returning focus to the entry widget if the box is canceled
 	  * unref the dbus connection (patch from nick schermer). not
-	  really necessary,
-	  but can't hurt.
-	  * if the xfrun4 client can't contact the dbus session bus, pop up
-	  a dialog
-	  on our own
+	  really necessary, but can't hurt. * if the xfrun4 client can't
+	  contact the dbus session bus, pop up a dialog on our own
 
 2006-07-20 20:48  stavrosg
 
@@ -1657,8 +1325,7 @@
 	* configure.in.in, xfrun/Makefile.am, xfrun/xfrun-dialog.c,
 	  xfrun/xfrun-dialog.h, xfrun/xfrun.c:
 	  first reorg for dbus support for xfrun. no actual changes yet;
-	  need to write
-	  xfrun-dbus.c
+	  need to write xfrun-dbus.c
 
 2006-07-09 22:40  pollux
 
@@ -1703,12 +1370,11 @@
 	* po/ChangeLog:
 	  Changelogs for appfinder, exo, utils, mcs-plugins, mcs-manager,
 	  xfce4-session, xfce4-mixer, thunar, libgui, xfwm4, the panel,
-	  orage, trigger-launcher and terminal updated.
-	  Also couldn't resist to fix a small error in the xfce4-mixer
-	  Changelog.
-	  Didn't updated the changelog of xfprint, because I discovered
-	  that that translation wasn't updated, it had just slipped through
-	  the commit by mistake.
+	  orage, trigger-launcher and terminal updated. Also couldn't
+	  resist to fix a small error in the xfce4-mixer Changelog. Didn't
+	  updated the changelog of xfprint, because I discovered that that
+	  translation wasn't updated, it had just slipped through the
+	  commit by mistake.
 
 2006-06-04 00:10  eulex
 
@@ -1719,14 +1385,12 @@
 
 	* po/sv.po:
 	  Merged Swedish translations (by me and Jens Hagerman) into the
-	  xfce svn.
-	  This includes updated translations of appfinder, xfce-utils,
-	  mcs-plugins,
-	  xfprint, xfce4-session, xfce4-mixer, thunar, libxfcegui4, xfwm4,
-	  xfce4-panel, xfdesktop, orage, xfce4-trigger-launcher and
-	  mcs-manager,
-	  and added translations for libexo and terminal.
-	  The appropriate LINGUAS files were also updated.
+	  xfce svn. This includes updated translations of appfinder,
+	  xfce-utils, mcs-plugins, xfprint, xfce4-session, xfce4-mixer,
+	  thunar, libxfcegui4, xfwm4, xfce4-panel, xfdesktop, orage,
+	  xfce4-trigger-launcher and mcs-manager, and added translations
+	  for libexo and terminal. The appropriate LINGUAS files were also
+	  updated.
 
 2006-05-28 20:51  pollux
 
@@ -1738,12 +1402,10 @@
 	* po/LINGUAS:
 	  * xfcalendar/trunk/po/LINGUAS, xfce-utils/trunk/po/LINGUAS,
 	  xfce4-appfinder/trunk/po/LINGUAS, xfce4-session/trunk/po/LINGUAS:
-	  Added a newline at the end of file.
-	  * xfce-mcs-manager/trunk/po/LINGUAS: Removed an extra white
-	  space.
+	  Added a newline at the end of file. *
+	  xfce-mcs-manager/trunk/po/LINGUAS: Removed an extra white space.
 	  * xfce4-trigger-launcher/trunk/po/LINGUAS,
-	  xfwm4/trunk/po/LINGUAS:
-	  Removed an extra white line.
+	  xfwm4/trunk/po/LINGUAS: Removed an extra white line.
 
 2006-05-26 19:20  pollux
 
@@ -1824,8 +1486,8 @@
 2006-05-02 16:06  daichi
 
 	* po/ChangeLog:
-	  Removed timestamps so that a translator isn't bothered:
-	  "Then, what time is it now in UTC?"
+	  Removed timestamps so that a translator isn't bothered: "Then,
+	  what time is it now in UTC?"
 
 2006-05-02 13:11  daichi
 
@@ -1929,8 +1591,7 @@
 
 	* xfrun/xfrun.c:
 	  pop up the completion menu if the down arrow is pressed from the
-	  entry box
-	  (bug 1637)
+	  entry box (bug 1637)
 
 2006-04-01 03:37  stavrosg
 
@@ -1947,15 +1608,15 @@
 2006-03-27 14:34  daichi
 
 	* po/ru.po:
-	  Added/Updated Russian translations by
-	  Andrey Fedoseev <andrey.fedoseev@gmail.com> and
-	  Sergey Fedoseev <fedoseev.sergey@gmail.com>.
+	  Added/Updated Russian translations by Andrey Fedoseev
+	  <andrey.fedoseev@gmail.com> and Sergey Fedoseev
+	  <fedoseev.sergey@gmail.com>.
 
 2006-03-20 22:13  gnu_sylvain
 
 	* po/eo.po:
-	  Removed address from field 'Report-Msgid-Bugs-To'.
-	  Updated address of Esperanto translation list.
+	  Removed address from field 'Report-Msgid-Bugs-To'. Updated
+	  address of Esperanto translation list.
 
 2006-03-19 15:37  daichi
 
@@ -1965,15 +1626,14 @@
 2006-03-18 19:00  paurullan
 
 	* po/ca.po:
-	  [i18n] catalan
-	  little of work on trunk
+	  [i18n] catalan little of work on trunk
 
 2006-03-18 09:15  daichi
 
 	* po/ru.po:
-	  Added/Updated Russian translations by
-	  Andrey Fedoseev <andrey.fedoseev@gmail.com>,
-	  Sergey Fedoseev <fedoseev.sergey@gmail.com>.
+	  Added/Updated Russian translations by Andrey Fedoseev
+	  <andrey.fedoseev@gmail.com>, Sergey Fedoseev
+	  <fedoseev.sergey@gmail.com>.
 
 2006-03-15 17:12  kelnos
 
@@ -2096,8 +1756,8 @@
 2006-02-23 08:06  kelnos
 
 	* xfrun/xfrun.c:
-	  prefill entry box with most-recently-used command.
-	  20k SVN revisions, w00t!
+	  prefill entry box with most-recently-used command. 20k SVN
+	  revisions, w00t!
 
 2006-02-21 13:20  daichi
 
@@ -2109,23 +1769,19 @@
 
 	* configure.ac, xfrun/xfrun.c:
 	  fix some warnings, including those that olivier fixed and i
-	  accidentally
-	  uncommitted =p
+	  accidentally uncommitted =p
 
 2006-02-18 16:17  kelnos
 
 	* Makefile.am, configure.ac, m4, xfrun/Makefile.am, xfrun/xfrun.c:
-	  * use xfce4-dev-tools
-	  * make xfrun4 not need to link to libxfcegui4, which also removes
-	  the link
-	  to libstartup-notification. might load a tiny bit faster now.
-	  code size
-	  has only a marginal increase. it would be nice to try to
-	  statically link
-	  only libxfce4util, as we only use a tiny bit of it. unfortunatly
-	  libtool
-	  tries to statically link everything. oh well.
-	  * fix window centering. stupid gtk_window_set_default_size().
+	  * use xfce4-dev-tools * make xfrun4 not need to link to
+	  libxfcegui4, which also removes the link to
+	  libstartup-notification. might load a tiny bit faster now. code
+	  size has only a marginal increase. it would be nice to try to
+	  statically link only libxfce4util, as we only use a tiny bit of
+	  it. unfortunatly libtool tries to statically link everything. oh
+	  well. * fix window centering. stupid
+	  gtk_window_set_default_size().
 
 2006-02-18 14:29  daichi
 
@@ -2169,18 +1825,15 @@
 
 	* xfrun/xfrun.c:
 	  reduce vertical widget spacing, increase button spacing, and
-	  change 'run'
-	  button to use GTK_STOCK_EXECUTE. latter 2 suggestions by stefan
-	  stuhr.
+	  change 'run' button to use GTK_STOCK_EXECUTE. latter 2
+	  suggestions by stefan stuhr.
 
 2006-02-17 19:42  kelnos
 
 	* xfrun/Makefile.am, xfrun/xfcombo.i, xfrun/xfrun.c:
 	  simple replacement for xfrun that seems to load a bit snappier.
-	  doesn't
-	  depend on xfcombo or libdbh and instead uses GtkEntryCompletion
-	  and a flat
-	  file.
+	  doesn't depend on xfcombo or libdbh and instead uses
+	  GtkEntryCompletion and a flat file.
 
 2006-02-16 16:31  pollux
 
@@ -2196,8 +1849,7 @@
 
 	* scripts/xfbrowser4.in, scripts/xfterm4.in:
 	  Use exo-open if available to make sure we default to the user's
-	  preferred
-	  applications.
+	  preferred applications.
 
 2006-02-05 17:53  yuvaltanny
 
@@ -2234,8 +1886,7 @@
 2006-01-29 06:52  daichi
 
 	* po/ca.po:
-	  * Updated.
-	  * Discarded obsolete translations.
+	  * Updated. * Discarded obsolete translations.
 
 2006-01-18 17:50  daichi
 
@@ -2250,9 +1901,8 @@
 2006-01-08 21:12  paurullan
 
 	* po/ca.po:
-	  catalan translation:
-	  little heading fixing but in every trunk file
-	  Created the xfmedia translation
+	  catalan translation: little heading fixing but in every trunk
+	  file Created the xfmedia translation
 
 2006-01-07 09:40  daichi
 
@@ -2308,9 +1958,8 @@
 	  Fixed bug #1240 reported by Vincent Fretin
 	  <vincent.fretin@gmail.com>.
 	  
-	  * Added <meta ...> to specify used charset.
-	  * Converted charset to ISO-8859-1 (in 4.2 branch).
-	  * Fixed typo.
+	  * Added <meta ...> to specify used charset. * Converted charset
+	  to ISO-8859-1 (in 4.2 branch). * Fixed typo.
 
 2005-11-28 15:19  daichi
 
@@ -2343,8 +1992,7 @@
 
 	* scripts/xfterm4.in:
 	  hmm, i guess i forgot to commit this. this should fix
-	  multi-argument
-	  commands
+	  multi-argument commands
 
 2005-11-09 23:21  kelnos
 
@@ -2407,8 +2055,8 @@
 2005-10-27 20:32  paurullan
 
 	* po/ca.po:
-	  begin process to 4.4 work
-	  autotranslation of most of the actual po
+	  begin process to 4.4 work autotranslation of most of the actual
+	  po
 	  
 	  -- paurullan@bulma.net , ca translator
 
@@ -2591,8 +2239,7 @@
 
 	* configure.ac, po/el.po:
 	  Add initial Greek translations in trunk for xfce-utils,
-	  xfce4-toys,
-	  xfce4-trigger-launcher & xfce-mcs-manager
+	  xfce4-toys, xfce4-trigger-launcher & xfce-mcs-manager
 
 2005-08-05 19:27  pollux
 
@@ -2619,8 +2266,7 @@
 	* scripts/xinitrc:
 	  add mouse cursor theme selector from Pasi Orovuo, with bunches of
 	  modifications by yours truly. when gtk 2.8 comes out, this should
-	  support
-	  changing cursor themes on the fly without any changes.
+	  support changing cursor themes on the fly without any changes.
 
 2005-07-04 11:47  pollux
 
@@ -2814,10 +2460,8 @@
 
 	* scripts/xinitrc:
 	  i'm really really REALLY getting tired of questions about why
-	  editing
-	  xinitrc doesn't do anything when users are using the session
-	  manager.
-	  perhaps this note will help.
+	  editing xinitrc doesn't do anything when users are using the
+	  session manager. perhaps this note will help.
 
 2005-01-22 15:12  pollux
 
@@ -2937,16 +2581,12 @@
 	* Makefile.am, Makefile.in, configure, configure.ac,
 	  po/POTFILES.in, scripts/Makefile.am, scripts/Makefile.in,
 	  scripts/xfbrowser4.in, scripts/xfhelp4.in, xftaskbar:
-	  Big reorganization for 4.3:
-	  * move taskbar and iconbox to panel
-	  * panel config files in separate directory
-	  * add panel library
-	  * remove generated files. autogen.sh is now required to build
-	  from CVS.
-	  * add time to taskbar
-	  * use XfcePanelWindow widget for panel and taskbar (fixes bug
-	  #367 ;-)
-	  * iconbox not functional yet (needs rewrite).
+	  Big reorganization for 4.3: * move taskbar and iconbox to panel *
+	  panel config files in separate directory * add panel library *
+	  remove generated files. autogen.sh is now required to build from
+	  CVS. * add time to taskbar * use XfcePanelWindow widget for panel
+	  and taskbar (fixes bug #367 ;-) * iconbox not functional yet
+	  (needs rewrite).
 
 2005-01-06 19:24  pollux
 
@@ -3136,8 +2776,7 @@
 
 	* scripts/xinitrc:
 	  only start ssh-agent if it isn't already running, and only kill
-	  it if
-	  we started it
+	  it if we started it
 
 2004-11-21 21:45  olivier
 
@@ -3257,9 +2896,8 @@
 	  scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
 	  Update automake/autoconf/libtool/gettext versions to generate the
-	  configure scripts and Makefiles,
-	  Update versions of all packages to 4.1.99.1 (ie 4.2 RC1),
-	  Update ChangeLogs.
+	  configure scripts and Makefiles, Update versions of all packages
+	  to 4.1.99.1 (ie 4.2 RC1), Update ChangeLogs.
 
 2004-11-05 22:15  olivier
 
@@ -3444,8 +3082,7 @@
 	  xfce4-about/Makefile.in, xfrun/Makefile.in,
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
 	  Added --enable-final (-O1 for GNU ld) as per Jaspers request.
-	  Added missing
-	  m4 files.
+	  Added missing m4 files.
 
 2004-10-07 07:22  jasper
 
@@ -3667,8 +3304,8 @@
 
 	* po/de.po, xfce4-about/AUTHORS.de, xfce4-about/AUTHORS.html.de:
 	  Updating these for alpha release. Not yet finished .. but I'm
-	  just too tired to continue. Needs extensive spell checking
-	  and approvement (Note to myself: Write mail to the list!).
+	  just too tired to continue. Needs extensive spell checking and
+	  approvement (Note to myself: Write mail to the list!).
 
 2004-09-16 22:10  pollux
 
@@ -3816,13 +3453,10 @@
 	  xfce4-about/AUTHORS.html.it, xfce4-about/AUTHORS.it,
 	  xfce4-about/AUTHORS.lt, xfce4-about/AUTHORS.vi,
 	  xftaskbar/plugin/xfce-taskbar-settings.desktop:
-	  Resync with repository, most notably:
-	  - libxfcegui4 fixes with gtk 2.2
-	  - xfwm4 updates
-	  - Present panel plugins in alphabetical order
-	  - Fix add plugin dialog being placed over the panel when using SM
-	  - French po updates
-	  - Other various small bug fixes
+	  Resync with repository, most notably: - libxfcegui4 fixes with
+	  gtk 2.2 - xfwm4 updates - Present panel plugins in alphabetical
+	  order - Fix add plugin dialog being placed over the panel when
+	  using SM - French po updates - Other various small bug fixes
 
 2004-08-14 19:43  pollux
 
@@ -3887,8 +3521,7 @@
 
 	* scripts/xinitrc:
 	  something i've had locally for a while... start ssh-agent on xfce
-	  startup
-	  if it's available
+	  startup if it's available
 
 2004-08-06 14:50  benny
 
@@ -3915,8 +3548,7 @@
 	  xfrun/Makefile.in, xftaskbar/Makefile.in,
 	  xftaskbar/plugin/Makefile.in:
 	  Allow vendors to easily add a vendor specific tab to xfce4-about
-	  using the
-	  --with-vendor-info switch.
+	  using the --with-vendor-info switch.
 
 2004-07-29 11:19  benny
 
@@ -3931,8 +3563,7 @@
 	  xfce4-about/Makefile.in, xfce4-about/info.c,
 	  xfce4-about/xfce-logo-icon.h, xfce4-about/xfce-logo.jpg:
 	  Fixed bug in xfce4-about Makefile, where several mandotary files
-	  were deleted
-	  on distclean. Make logo themable.
+	  were deleted on distclean. Make logo themable.
 
 2004-07-28 21:28  benny
 
@@ -3943,8 +3574,7 @@
 
 	* m4/depends.m4:
 	  Fixed (module)_FOUND bug reported by brian. Hopefully nothing
-	  else broke
-	  this time.
+	  else broke this time.
 
 2004-07-27 19:10  benny
 
@@ -3961,8 +3591,7 @@
 
 	* m4/depends.m4:
 	  Readded XFCE_MCS_PLUGIN() again, dunno how I manage to remove it
-	  everytime
-	  I edit depends.m4!
+	  everytime I edit depends.m4!
 
 2004-07-24 17:30  benny
 
@@ -4030,8 +3659,7 @@
 	  xfrun/xfrun.c, xftaskbar/Makefile.in,
 	  xftaskbar/plugin/Makefile.in:
 	  add check for xfheaders (this is *not* a dependency). no attempt
-	  to load
-	  combo module will be made if xfheaders *and* dbh are not
+	  to load combo module will be made if xfheaders *and* dbh are not
 	  installed.
 
 2004-07-21 23:00  benny
@@ -4054,14 +3682,12 @@
 
 	* m4/depends.m4:
 	  Modifed panel plugin check, so one (the installer) can choose to
-	  install
-	  into a different plugin dir.
+	  install into a different plugin dir.
 
 2004-07-16 14:12  pollux
 
 	* xfrun/xfcombo.i, xftaskbar/plugin/inline-icon.h:
-	  - fix #256
-	  - change some hardcoded .xfce4 to xfce_get_userdir
+	  - fix #256 - change some hardcoded .xfce4 to xfce_get_userdir
 
 2004-07-14 20:30  jasper
 
@@ -4137,8 +3763,8 @@
 	  xfce4-about/AUTHORS.lt, xfce4-about/AUTHORS.vi,
 	  xfce4-about/Makefile.in, xfrun/Makefile.in,
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
-	  * add Italian translation of the doc from Sascha Ales
-	  * some AUTHORS.* modifications (locale in charge added)
+	  * add Italian translation of the doc from Sascha Ales * some
+	  AUTHORS.* modifications (locale in charge added)
 
 2004-07-04 19:05  pollux
 
@@ -4243,10 +3869,8 @@
 
 	* scripts/xinitrc:
 	  Don't call xsetroot prior to starting xfce4-session, cause the
-	  session manager
-	  will setup the splash screen right afterwards. Also call xrdb
-	  only once, to
-	  speed up the starting process.
+	  session manager will setup the splash screen right afterwards.
+	  Also call xrdb only once, to speed up the starting process.
 
 2004-06-06 08:50  benny
 
@@ -4295,8 +3919,8 @@
 	  xftaskbar/plugin/Makefile.in,
 	  xftaskbar/plugin/xftaskbar_plugin.c, xftaskbar/xftaskbar.c:
 	  Replace Xfce version at runtime instead of compile time using the
-	  xfce-utils
-	  version. Don't use deprecated functions. replaced XFce -> Xfce.
+	  xfce-utils version. Don't use deprecated functions. replaced XFce
+	  -> Xfce.
 
 2004-06-01 12:08  pollux
 
@@ -4346,8 +3970,8 @@
 
 	* xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in,
 	  xftaskbar/plugin/xfce-taskbar-settings.desktop:
-	  forgot to add xftaskbar settings .desktop file
-	  and this time with EXTRA_DIST even
+	  forgot to add xftaskbar settings .desktop file and this time with
+	  EXTRA_DIST even
 
 2004-05-03 06:54  kelnos
 
@@ -4364,8 +3988,7 @@
 
 	* scripts/startxfce4.in:
 	  no longer require ~/.xfce4/xinitrc to be executable as it's a
-	  common source
-	  of confusion and is inconsistent and unnecessary.
+	  common source of confusion and is inconsistent and unnecessary.
 
 2004-04-25 09:56  jasper
 
@@ -4466,8 +4089,7 @@
 
 	* scripts/xfhelp4.in:
 	  Added firebird and firefox. How often will they rename this piece
-	  of software
-	  again?
+	  of software again?
 
 2004-03-15 23:19  pollux
 
@@ -4490,11 +4112,10 @@
 	  xfce4-about/AUTHORS.it, xfce4-about/AUTHORS.vi,
 	  xfce4-about/INFO.html.it.in, xfce4-about/INFO.it.in,
 	  xfce4-about/Makefile.am, xfce4-about/Makefile.in:
-	  Add/update i18n for:
-	  Bulgarian from Miroslav Yordanov <miordanov@i-space.org> and
-	  Peter Slavov <peshka@i-space.org>
-	  Italian from Alex Dupre <ale@FreeBSD.org>
-	  Arabic from Saleh Hathal <hathalsal@hotmail.com>
+	  Add/update i18n for: Bulgarian from Miroslav Yordanov
+	  <miordanov@i-space.org> and Peter Slavov <peshka@i-space.org>
+	  Italian from Alex Dupre <ale@FreeBSD.org> Arabic from Saleh
+	  Hathal <hathalsal@hotmail.com>
 
 2004-03-12 22:37  olivier
 
@@ -4512,16 +4133,15 @@
 
 	* aclocal.m4, configure, configure.ac, gdm/Makefile.am,
 	  gdm/Makefile.in, gdm/xfce.desktop, ltmain.sh, xfce-utils.spec.in:
-	  Make --enable-gdm compatible with gdk 2.4.x
-	  Change the semantic of "--with-gdm-prefix=" to be really the
-	  prefix of gdm data dir (and not the session dir as before)
+	  Make --enable-gdm compatible with gdk 2.4.x Change the semantic
+	  of "--with-gdm-prefix=" to be really the prefix of gdm data dir
+	  (and not the session dir as before)
 
 2004-03-01 21:09  benny
 
 	* m4/debug.m4:
 	  Added --enable-gcov to compile xfce with support for coverage
-	  tests. Very
-	  useful.
+	  tests. Very useful.
 
 2004-02-27 22:22  olivier
 
@@ -4629,12 +4249,9 @@
 	* ., .cvsignore, aclocal.m4, autogen.sh, configure, configure.ac,
 	  xftaskbar/plugin/xftaskbar_plugin.c, xftaskbar/xftaskbar.c:
 	  Added new taskbar functionality as requested in bug #113. The
-	  taskbar
-	  width can now be specified in % of the screen width (in a
-	  xinerama
-	  compatible way) and the horiz. alignment of the taskbar can be
-	  set
-	  to either "left", "center" or "right".
+	  taskbar width can now be specified in % of the screen width (in a
+	  xinerama compatible way) and the horiz. alignment of the taskbar
+	  can be set to either "left", "center" or "right".
 
 2004-02-01 16:12  benny
 
@@ -4704,9 +4321,8 @@
 
 	* xfrun/xfcombo.i:
 	  Fix invalid cast, still dangerous cast from fn-pointer to void
-	  pointer
-	  (Future compilers may rely on strict aliasing?!). Some unused
-	  variable fixes.
+	  pointer (Future compilers may rely on strict aliasing?!). Some
+	  unused variable fixes.
 
 2004-01-13 19:28  benny
 
@@ -4732,11 +4348,9 @@
 
 	* xfrun/xfcombo.i:
 	  changes for xfce4-modules and small bugfix (load module should
-	  return NULL
-	  if it fails to load instead of terminating program) which should
-	  keep
-	  a configuration with dbh but without modules functional (like
-	  Moe's).
+	  return NULL if it fails to load instead of terminating program)
+	  which should keep a configuration with dbh but without modules
+	  functional (like Moe's).
 
 2003-12-29 17:32  jasper
 
@@ -4994,10 +4608,8 @@
 
 	* scripts/xinitrc:
 	  Huge commit to bring new repository in sync with SF. We are
-	  losing some
-	  CVS history here, but for completeness sake I'm including the
-	  ChangeLog
-	  entries here:
+	  losing some CVS history here, but for completeness sake I'm
+	  including the ChangeLog entries here:
 	  
 	  +++
 	  
@@ -5005,34 +4617,30 @@
 	  
 	  * xffm/src/: add_folder.c, add_node_contents.c, callbacks.c,
 	  keybindings.c, main.c, treeview.c: do second letter search if
-	  first
-	  letter is / -- DONE autohide diagnostics on click or
-	  keypress--DONE
-	  compare dates between mime file and dbh file before updating
-	  applications -- DONE scroll by keyboard debugged and enhanced
-	  --DONE g_strchug() crash on openwith by menu... --FIXED on go_up
-	  do
-	  not place in history, nor back nor forward --DONE
+	  first letter is / -- DONE autohide diagnostics on click or
+	  keypress--DONE compare dates between mime file and dbh file
+	  before updating applications -- DONE scroll by keyboard debugged
+	  and enhanced --DONE g_strchug() crash on openwith by menu...
+	  --FIXED on go_up do not place in history, nor back nor forward
+	  --DONE
 	  
 	  2003-10-11 00:05 edscott
 	  
 	  * xffm/: libs/apps.c, libs/bookmarks.c, libs/constants.h,
 	  libs/cpy.c, libs/dnd.c, libs/dummies.c, libs/duplicate.c,
 	  libs/entry.c, libs/goto.c, libs/goto.h, libs/icons.c,
-	  libs/menu.c,
-	  libs/menu_callbacks.c, libs/misc.c, libs/misc.h, libs/monitor.c,
-	  libs/new_win.c, libs/pasteboard.c, libs/print.c, libs/refresh.c,
-	  libs/reg.c, libs/remove.c, libs/rename.c, libs/run.c, libs/run.h,
-	  libs/scramble.c, libs/symlink.c, libs/terminal.c, libs/touch.c,
-	  libs/trash.c, libs/xfdiff.c, smb/smb_download.c, smb/smb_list.c:
-	  do
-	  second letter search if first letter is / -- DONE autohide
-	  diagnostics on click or keypress--DONE compare dates between mime
-	  file and dbh file before updating applications -- DONE scroll by
-	  keyboard debugged and enhanced --DONE g_strchug() crash on
-	  openwith
-	  by menu... --FIXED on go_up do not place in history, nor back nor
-	  forward --DONE
+	  libs/menu.c, libs/menu_callbacks.c, libs/misc.c, libs/misc.h,
+	  libs/monitor.c, libs/new_win.c, libs/pasteboard.c, libs/print.c,
+	  libs/refresh.c, libs/reg.c, libs/remove.c, libs/rename.c,
+	  libs/run.c, libs/run.h, libs/scramble.c, libs/symlink.c,
+	  libs/terminal.c, libs/touch.c, libs/trash.c, libs/xfdiff.c,
+	  smb/smb_download.c, smb/smb_list.c: do second letter search if
+	  first letter is / -- DONE autohide diagnostics on click or
+	  keypress--DONE compare dates between mime file and dbh file
+	  before updating applications -- DONE scroll by keyboard debugged
+	  and enhanced --DONE g_strchug() crash on openwith by menu...
+	  --FIXED on go_up do not place in history, nor back nor forward
+	  --DONE
 	  
 	  2003-10-10 23:19 xfce
 	  
@@ -5137,27 +4745,24 @@
 	  2003-10-09 07:04 edscott
 	  
 	  * xffm/src/: Makefile.am, Makefile.in, callbacks.c,
-	  keybindings.c,
-	  keybindings.h, treeview.c, treeview.h: scroll by keyboard is now
-	  case insensitive, if shift is pressed, scroll search w ill
-	  proceed
-	  backwards. Backward scroll-search will not wrap. Forward
-	  scroll-sear ch will wrap (as before).
+	  keybindings.c, keybindings.h, treeview.c, treeview.h: scroll by
+	  keyboard is now case insensitive, if shift is pressed, scroll
+	  search w ill proceed backwards. Backward scroll-search will not
+	  wrap. Forward scroll-sear ch will wrap (as before).
 	  
 	  2003-10-09 04:14 edscott
 	  
 	  * xffm/: glade/xffm_main.glade, libs/apps.c, libs/bookmarks.c,
 	  libs/combo.c, libs/cpy.c, libs/dummies.c, libs/duplicate.c,
 	  libs/entry.c, libs/filter.c, libs/find.h, libs/goto.c,
-	  libs/goto.h,
-	  libs/icons.c, libs/input.c, libs/menu.c, libs/menu_callbacks.c,
-	  libs/misc.c, libs/monitor.c, libs/options.c, libs/options.h,
-	  libs/print.h, libs/refresh.c, libs/reg.c, libs/reg.h,
-	  libs/remove.c, libs/remove.h, libs/rename.c, libs/run.c,
-	  libs/run.h, libs/symlink.c, libs/touch.c, libs/trash.c,
-	  smb/smb_download.c, smb/smb_list.c, src/glade_main_gui.c,
-	  src/main.c, src/treeview.c, src/widgets.c: eliminate all warnings
-	  when compiling with --enable-debug
+	  libs/goto.h, libs/icons.c, libs/input.c, libs/menu.c,
+	  libs/menu_callbacks.c, libs/misc.c, libs/monitor.c,
+	  libs/options.c, libs/options.h, libs/print.h, libs/refresh.c,
+	  libs/reg.c, libs/reg.h, libs/remove.c, libs/remove.h,
+	  libs/rename.c, libs/run.c, libs/run.h, libs/symlink.c,
+	  libs/touch.c, libs/trash.c, smb/smb_download.c, smb/smb_list.c,
+	  src/glade_main_gui.c, src/main.c, src/treeview.c, src/widgets.c:
+	  eliminate all warnings when compiling with --enable-debug
 	  
 	  2003-10-09 01:46 edscott
 	  
@@ -5176,17 +4781,16 @@
 	  libs/symlink.c, libs/terminal.c, libs/touch.c, libs/trash.c,
 	  libs/tubo.c, libs/xfdiff.c, libs/zoom.c, smb/smb_list.c,
 	  src/Makefile.am, src/Makefile.in, src/add_file.c,
-	  src/add_folder.c,
-	  src/add_node_contents.c, src/aux.c, src/callbacks.c,
-	  src/glade_callbacks.c, src/glade_find_callbacks.c,
-	  src/glade_find_callbacks.h, src/glade_find_gui.c,
-	  src/glade_find_gui.h, src/glade_gui.c,
-	  src/glade_main_callbacks.c,
-	  src/glade_main_callbacks.h, src/glade_main_gui.c,
-	  src/glade_main_gui.h, src/glade_remove_callbacks.c,
-	  src/glade_remove_callbacks.h, src/glade_remove_gui.c,
-	  src/glade_remove_gui.h, src/main.c, src/mcs-manager.c,
-	  src/treeview.c, src/widgets.c: broke glade files into three parts
+	  src/add_folder.c, src/add_node_contents.c, src/aux.c,
+	  src/callbacks.c, src/glade_callbacks.c,
+	  src/glade_find_callbacks.c, src/glade_find_callbacks.h,
+	  src/glade_find_gui.c, src/glade_find_gui.h, src/glade_gui.c,
+	  src/glade_main_callbacks.c, src/glade_main_callbacks.h,
+	  src/glade_main_gui.c, src/glade_main_gui.h,
+	  src/glade_remove_callbacks.c, src/glade_remove_callbacks.h,
+	  src/glade_remove_gui.c, src/glade_remove_gui.h, src/main.c,
+	  src/mcs-manager.c, src/treeview.c, src/widgets.c: broke glade
+	  files into three parts
 	  
 	  2003-10-08 23:43 xfce
 	  
@@ -5231,9 +4835,8 @@
 	  xfwm4/mcs-plugin/workspaces.c, xfwm4/mcs-plugin/workspaces.h,
 	  xfwm4/mcs-plugin/workspaces.png, xfwm4/src/settings.c,
 	  xfwm4/themes/Makefile.am, xfwm4/themes/Makefile.in: Largish
-	  update:
-	  merge workspaces dialog from xfdesktop with workspace margins
-	  dialog from xfwm4. The new dialog is part of xfwm4.
+	  update: merge workspaces dialog from xfdesktop with workspace
+	  margins dialog from xfwm4. The new dialog is part of xfwm4.
 	  
 	  2003-10-07 22:44 xfce
 	  
@@ -5241,8 +4844,7 @@
 	  netk-class-group.c, netk-class-group.h, netk-private.h,
 	  netk-screen.c, netk-screen.h, netk-tasklist.c, netk-window.c,
 	  netk-window.h, netk-xutils.c, netk-xutils.h: Backport changes
-	  from
-	  libwnck HEAD cvs
+	  from libwnck HEAD cvs
 	  
 	  2003-10-07 22:40 xfce
 	  
@@ -5260,8 +4862,8 @@
 	  themes/default/bottom-right-inactive.xpm,
 	  themes/default/left-active.xpm, themes/default/left-inactive.xpm,
 	  themes/default/right-active.xpm,
-	  themes/default/right-inactive.xpm,
-	  themes/default/themerc, themes/default/title-1-active.xpm,
+	  themes/default/right-inactive.xpm, themes/default/themerc,
+	  themes/default/title-1-active.xpm,
 	  themes/default/title-1-inactive.xpm,
 	  themes/default/title-2-active.xpm,
 	  themes/default/title-2-inactive.xpm,
@@ -5327,8 +4929,7 @@
 	  themes/tgc-large/top-left-inactive.xpm,
 	  themes/tgc-large/top-right-active.xpm,
 	  themes/tgc-large/top-right-inactive.xpm: Change default theme,
-	  keep
-	  old 4.0 theme as default-4.0 and add tgc-large theme Include
+	  keep old 4.0 theme as default-4.0 and add tgc-large theme Include
 	  improvements for fullscreen mode for gst from Arwed von Merkatz
 	  <v.merkatz@gmx.net>
 	  
@@ -5380,8 +4981,8 @@
 2003-09-21 22:19  xfce
 
 	* configure, configure.ac:
-	  Update version number to 4.0.0
-	  Improve focus change for modal dialogs in xfwm4
+	  Update version number to 4.0.0 Improve focus change for modal
+	  dialogs in xfwm4
 
 2003-09-19 21:10  xfce
 
@@ -5623,8 +5224,8 @@
 2003-07-22 19:50  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c:
-	  Don't enable pager in taskbar by default
-	  Enable systray by default
+	  Don't enable pager in taskbar by default Enable systray by
+	  default
 
 2003-07-21 20:15  xfce
 
@@ -5694,10 +5295,9 @@
 
 	* xftaskbar/plugin/xftaskbar_plugin.c:
 	  Fixed the following problem: Set "Show system tray in taskbar" to
-	  false, log
-	  out and log in then the field is selected but the system tray is
-	  not shown in
-	  taskbar. Clicking twice on the box enables it again.
+	  false, log out and log in then the field is selected but the
+	  system tray is not shown in taskbar. Clicking twice on the box
+	  enables it again.
 
 2003-07-15 20:23  bmeurer
 
@@ -5713,8 +5313,8 @@
 2003-07-14 11:42  xfce
 
 	* configure, configure.ac, scripts/xinitrc:
-	  Fix case where wich returns "no" instead of nothing at all
-	  Set version to 3.99.2 (rc2)
+	  Fix case where wich returns "no" instead of nothing at all Set
+	  version to 3.99.2 (rc2)
 
 2003-07-13 08:43  huysmans
 
@@ -5872,9 +5472,8 @@
 	  doc/xfce4-user-guide/Makefile.in, gdm/Makefile.in, ltmain.sh,
 	  scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
-	  Update to libtool-1.5
-	  Use proper complete CURRENT:REVISION:AGE scheme for lib
-	  versionning
+	  Update to libtool-1.5 Use proper complete CURRENT:REVISION:AGE
+	  scheme for lib versionning
 
 2003-06-24 20:40  xfce
 
@@ -5926,8 +5525,7 @@
 	  "[This bug was found when using the ebuilds from Gentoo]
 	  
 	  When disabling system tray, xftaskbar4 will segfault at startup
-	  in
-	  taskbar_toggle_tray when calling gtk_widget_destroy(...) with
+	  in taskbar_toggle_tray when calling gtk_widget_destroy(...) with
 	  uninitialized taskbar->iconbox."
 	  
 	  Thanks to Matti Rendahl <matti@comedialabs.com> for providing
@@ -6014,8 +5612,8 @@
 2003-06-09 23:36  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c:
-	  Add new widget xfce_framebox to unify look across UI
-	  Migrate all plugins to this new widget
+	  Add new widget xfce_framebox to unify look across UI Migrate all
+	  plugins to this new widget
 
 2003-06-09 17:17  xfce
 
@@ -6454,8 +6052,7 @@
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in,
 	  xftaskbar/xftaskbar.c:
 	  Remove gtk+-2.2 requirement, thus an API change in libxfcegui4
-	  that jumps to version 0.22
-	  Change xftaskbar accordingly.
+	  that jumps to version 0.22 Change xftaskbar accordingly.
 
 2003-05-05 07:08  huysmans
 
@@ -6504,8 +6101,8 @@
 	  xfrun/Makefile.in, xftaskbar/Makefile.in,
 	  xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in:
 	  Several changes. See
-	  http://www.home.unix-ag.org/bmeurer/xfce/index.html#20030502
-	  for details.
+	  http://www.home.unix-ag.org/bmeurer/xfce/index.html#20030502 for
+	  details.
 
 2003-05-01 19:33  bmeurer
 
@@ -6597,8 +6194,7 @@
 
 	* xfce4-about/info.c:
 	  Fixed bug with hfilename only declared for the HTML version, as
-	  noted by
-	  Moritz.
+	  noted by Moritz.
 
 2003-04-25 22:35  xfce
 
@@ -6635,8 +6231,7 @@
 	  xfce4-about/Makefile.am, xfce4-about/Makefile.in,
 	  xfce4-about/info.c:
 	  Added a hack to support localized info pages. This will be
-	  rewritten
-	  in the near future.
+	  rewritten in the near future.
 
 2003-04-25 18:48  bmeurer
 
@@ -6673,8 +6268,7 @@
 
 	* m4/depends.m4:
 	  Updated depends.m4 and added macro for use with panel plugins.
-	  Updated
-	  libxfce4util to install the common m4 files into
+	  Updated libxfce4util to install the common m4 files into
 	  $(datadir)/xfce4/m4.
 
 2003-04-24 22:51  bmeurer
@@ -6705,8 +6299,7 @@
 	* configure, configure.ac, xfce4-about/AUTHORS,
 	  xfce4-about/AUTHORS.html:
 	  Changed Madkiss' email to madkiss@debian.org (on his request) and
-	  increased
-	  version to 0.2.1.
+	  increased version to 0.2.1.
 
 2003-04-24 20:43  bmeurer
 
@@ -6718,8 +6311,7 @@
 	  xfce4-about/info.c, xfrun/Makefile.in, xftaskbar/Makefile.in,
 	  xftaskbar/plugin/Makefile.in:
 	  Added optional gtkhtml support to the about box. Someone should
-	  rework
-	  the INFO.html.in file.
+	  rework the INFO.html.in file.
 
 2003-04-24 20:33  xfce
 
@@ -6747,8 +6339,7 @@
 	  xfce4-about/Makefile.in, xfce4-about/info.c,
 	  xftaskbar/plugin/xftaskbar_plugin.c, xftaskbar/xftaskbar.c:
 	  Cleaned up xfce4-about code. Added some systray related stuff to
-	  xftaskbar4,
-	  requires more work.
+	  xftaskbar4, requires more work.
 
 2003-04-19 21:32  bmeurer
 
@@ -6763,8 +6354,7 @@
 	  xftaskbar/plugin/Makefile.am, xftaskbar/plugin/Makefile.in,
 	  xftaskbar/xftaskbar.c:
 	  Added system tray support to libxfcegui4 and frontend to
-	  xftaskbar4.
-	  Lots of cleanups in the autotools stuff.
+	  xftaskbar4. Lots of cleanups in the autotools stuff.
 
 2003-04-18 21:44  xfce
 
@@ -6790,8 +6380,7 @@
 2003-04-01 21:33  xfce
 
 	* xftaskbar/plugin/xftaskbar_plugin.c:
-	  Initialize early i18n in mcs plugins
-	  Add Etria theme
+	  Initialize early i18n in mcs plugins Add Etria theme
 
 2003-03-30 18:24  huysmans
 
@@ -6845,10 +6434,9 @@
 2003-03-18 22:34  xfce
 
 	* ChangeLog, ltcf-c.sh, ltconfig, ltmain.sh:
-	  Update ChangeLog
-	  Update build scripts (ie rerun autogen.sh)
-	  Update xfwm4's microdeck theme
-	  Remove 1 pix border arround xffm menu bar
+	  Update ChangeLog Update build scripts (ie rerun autogen.sh)
+	  Update xfwm4's microdeck theme Remove 1 pix border arround xffm
+	  menu bar
 
 2003-03-17 15:24  bmeurer
 
@@ -6894,8 +6482,8 @@
 	  doc/xml/Makefile.in, gdm/Makefile.in, ltmain.sh,
 	  scripts/Makefile.in, xfce4-about/Makefile.in, xfrun/Makefile.in,
 	  xftaskbar/Makefile.in, xftaskbar/plugin/Makefile.in:
-	  Fix xfce-mcs-manager API/ABI versionning
-	  Update configure/libtool to use libtool 1.4.3
+	  Fix xfce-mcs-manager API/ABI versionning Update configure/libtool
+	  to use libtool 1.4.3
 
 2003-02-28 10:47  bmeurer
 
@@ -6922,9 +6510,9 @@
 	  xftaskbar/plugin/Makefile.in,
 	  xftaskbar/plugin/xftaskbar_plugin.c:
 	  Apply Benedikt Meurer <Benedikt.Meurer@unix-ag.uni-siegen.de>
-	  patch
-	  Replace all occurences of g_getenv("HOME") with g_get_home_dir()
-	  Regenerate all Makefiles.on and configure scripts
+	  patch Replace all occurences of g_getenv("HOME") with
+	  g_get_home_dir() Regenerate all Makefiles.on and configure
+	  scripts
 
 2003-02-25 22:17  huysmans
 
@@ -7049,9 +6637,8 @@
 	* Makefile.in, configure, configure.ac, scripts/Makefile.am,
 	  scripts/Makefile.in, scripts/startxfce4.in, scripts/xinitrc,
 	  xfce-utils.spec.in, xfrun/xfrun.c:
-	  Add startxfce4 script, a default xinitrc
-	  Fix various issues with xfrun
-	  Remove unsecure expand_path function
+	  Add startxfce4 script, a default xinitrc Fix various issues with
+	  xfrun Remove unsecure expand_path function
 
 2003-02-10 22:18  huysmans
 
@@ -7200,8 +6787,8 @@
 	  xfrun/Makefile.in, xftaskbar/Makefile.in, xftaskbar/xftaskbar.c:
 	  make sure required libs for build/rpm are listed, with versions
 	  and keep the minimum version required at only one place
-	  (configure.in/ac)
-	  xfbd uses preview file selector from libxfcegui4
+	  (configure.in/ac) xfbd uses preview file selector from
+	  libxfcegui4
 
 2002-11-02 20:23  xfce
 
