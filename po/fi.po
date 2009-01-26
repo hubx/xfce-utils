@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"POT-Creation-Date: 2009-01-26 00:57+0100\n"
 "PO-Revision-Date: 2008-12-13 16:33+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -15,93 +15,93 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:195
+#: ../xfce4-about/info.c:197
 msgid "Unable to load "
 msgstr "Ei voi ladata kohdetta "
 
 #. Project lead
-#: ../xfce4-about/info.c:224
+#: ../xfce4-about/info.c:226
 msgid "Project Lead"
 msgstr "Projektin vetäjä"
 
 #. Core developers
-#: ../xfce4-about/info.c:228
+#: ../xfce4-about/info.c:230
 msgid "Core developers"
 msgstr "Pääkehittäjät"
 
 #. Active contributors
-#: ../xfce4-about/info.c:232
+#: ../xfce4-about/info.c:234
 msgid "Active contributors"
 msgstr "Aktiiviset kehittäjät"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:236
+#: ../xfce4-about/info.c:238
 msgid "Previous contributors"
 msgstr "Aikaisemmat kehittäjät"
 
-#: ../xfce4-about/info.c:241
+#: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Web-sivutilan ja postituslistat tarjoaa"
 
 #. Server admins
-#: ../xfce4-about/info.c:273
+#: ../xfce4-about/info.c:275
 msgid "Server maintained by"
 msgstr "Palvelimen ylläpitäjä"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:277
+#: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
 msgstr "Goodies-projektin ohjaus"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:281
+#: ../xfce4-about/info.c:283
 msgid "Translations supervision"
 msgstr "Käännöstyön ohjaus"
 
 #. Translators
-#: ../xfce4-about/info.c:285
+#: ../xfce4-about/info.c:287
 msgid "Translators"
 msgstr "Kääntäjät"
 
-#: ../xfce4-about/info.c:316
+#: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
 
-#: ../xfce4-about/info.c:320
+#: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 "Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
 
-#: ../xfce4-about/info.c:429
+#: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Tietoja Xfce 4:stä"
 
-#: ../xfce4-about/info.c:430
+#: ../xfce4-about/info.c:432
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Tekijänoikeus 2002-2008 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:453
+#: ../xfce4-about/info.c:455
 msgid "Info"
 msgstr "Tietoja"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:457
 msgid "Credits"
 msgstr "Tekijät"
 
-#: ../xfce4-about/info.c:456
+#: ../xfce4-about/info.c:458
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:459
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:460
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:461
 msgid "GPL"
 msgstr "GPL"
 

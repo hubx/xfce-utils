@@ -1,3 +1,11 @@
+4.5.99.1 (Xfce 4.6rc1)
+======================
+
+- Determine glade paths used by libxfcegui4 and set environment
+  variables like LIBGLADE_MODULE_PATH according to these paths in
+  the xinitrc file.
+
+
 4.5.93 (Xfce 4.6beta3)
 ======================
 

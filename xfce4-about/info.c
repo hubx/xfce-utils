@@ -39,6 +39,8 @@
 #include <string.h>
 #endif
 
+#include <glib/gprintf.h>
+
 #ifdef HAVE_LIBGTKHTML
 #include <libgtkhtml/gtkhtml.h>
 #endif

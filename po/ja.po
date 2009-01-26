@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"POT-Creation-Date: 2009-01-26 00:57+0100\n"
 "PO-Revision-Date: 2008-12-08 23:43+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
@@ -19,95 +19,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:195
+#: ../xfce4-about/info.c:197
 msgid "Unable to load "
 msgstr "次のファイルを読込めません "
 
 #. Project lead
-#: ../xfce4-about/info.c:224
+#: ../xfce4-about/info.c:226
 msgid "Project Lead"
 msgstr "プロジェクトリーダ"
 
 #. Core developers
-#: ../xfce4-about/info.c:228
+#: ../xfce4-about/info.c:230
 msgid "Core developers"
 msgstr "中心開発者"
 
 #. Active contributors
-#: ../xfce4-about/info.c:232
+#: ../xfce4-about/info.c:234
 msgid "Active contributors"
 msgstr "現在の協力者"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:236
+#: ../xfce4-about/info.c:238
 msgid "Previous contributors"
 msgstr "以前の協力者"
 
-#: ../xfce4-about/info.c:241
+#: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "ウェブホスティングとメーリングリストの提供"
 
 #. Server admins
-#: ../xfce4-about/info.c:273
+#: ../xfce4-about/info.c:275
 msgid "Server maintained by"
 msgstr "サーバの管理"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:277
+#: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
 msgstr "Goodies の監修"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:281
+#: ../xfce4-about/info.c:283
 msgid "Translations supervision"
 msgstr "翻訳の監修"
 
 #. Translators
-#: ../xfce4-about/info.c:285
+#: ../xfce4-about/info.c:287
 msgid "Translators"
 msgstr "翻訳者"
 
 # FIXME: needs C format string
-#: ../xfce4-about/info.c:316
+#: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "このリストに記載ミスがある場合は、以下のアドレスまでお知らせください。\n"
 "<"
 
-#: ../xfce4-about/info.c:320
+#: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
 msgstr "Xfce 4 を利用できるよう協力して下さった全ての方々に感謝します。"
 
-#: ../xfce4-about/info.c:429
+#: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Xfce 4 について"
 
-#: ../xfce4-about/info.c:430
+#: ../xfce4-about/info.c:432
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2008 by Olivier Fourdan"
 
-#: ../xfce4-about/info.c:453
+#: ../xfce4-about/info.c:455
 msgid "Info"
 msgstr "情報"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:457
 msgid "Credits"
 msgstr "提供"
 
-#: ../xfce4-about/info.c:456
+#: ../xfce4-about/info.c:458
 msgid "Copyright"
 msgstr "著作権"
 
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:459
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:460
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:461
 msgid "GPL"
 msgstr "GPL"
 

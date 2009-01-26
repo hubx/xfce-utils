@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"POT-Creation-Date: 2009-01-26 00:57+0100\n"
 "PO-Revision-Date: 2006-02-28 16:15+0200\n"
 "Last-Translator: Peeter Vois <Peeter.Vois@proekspert.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -16,96 +16,96 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:195
+#: ../xfce4-about/info.c:197
 msgid "Unable to load "
 msgstr "Ei suuda laadida"
 
 #. Project lead
-#: ../xfce4-about/info.c:224
+#: ../xfce4-about/info.c:226
 msgid "Project Lead"
 msgstr "Projekti juht"
 
 #. Core developers
-#: ../xfce4-about/info.c:228
+#: ../xfce4-about/info.c:230
 msgid "Core developers"
 msgstr "Põhiarendajad"
 
 #. Active contributors
-#: ../xfce4-about/info.c:232
+#: ../xfce4-about/info.c:234
 #, fuzzy
 msgid "Active contributors"
 msgstr "Toetajad"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:236
+#: ../xfce4-about/info.c:238
 #, fuzzy
 msgid "Previous contributors"
 msgstr "Toetajad"
 
-#: ../xfce4-about/info.c:241
+#: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Netileht ja kirjakuhjad"
 
 #. Server admins
-#: ../xfce4-about/info.c:273
+#: ../xfce4-about/info.c:275
 msgid "Server maintained by"
 msgstr "Serveri hooldus"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:277
+#: ../xfce4-about/info.c:279
 #, fuzzy
 msgid "Goodies supervision"
 msgstr "Tõlgete juhendamine"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:281
+#: ../xfce4-about/info.c:283
 msgid "Translations supervision"
 msgstr "Tõlgete juhendamine"
 
 #. Translators
-#: ../xfce4-about/info.c:285
+#: ../xfce4-about/info.c:287
 msgid "Translators"
 msgstr "Tõlkijad"
 
-#: ../xfce4-about/info.c:316
+#: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "Kui te teade kedagi, kes on selles nimistus puudu, palun anke teada <"
 
-#: ../xfce4-about/info.c:320
+#: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
 msgstr "Tänud kõigile, kes aitasid selle tarkvara loomisele kaasa."
 
-#: ../xfce4-about/info.c:429
+#: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Xfce4 info"
 
-#: ../xfce4-about/info.c:430
+#: ../xfce4-about/info.c:432
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Autoriõigus 2002-2007 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:453
+#: ../xfce4-about/info.c:455
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:457
 msgid "Credits"
 msgstr "Tiitrid"
 
-#: ../xfce4-about/info.c:456
+#: ../xfce4-about/info.c:458
 msgid "Copyright"
 msgstr "Autoriõigused"
 
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:459
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:460
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:461
 msgid "GPL"
 msgstr "GPL"
 

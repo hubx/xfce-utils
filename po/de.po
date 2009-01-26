@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"POT-Creation-Date: 2009-01-26 00:57+0100\n"
 "PO-Revision-Date: 2008-10-31 22:55+0100\n"
 "Last-Translator: Fabian Nowak <timystery@aarcor.de>\n"
 "Language-Team: German <de@li.org>\n"
@@ -17,95 +17,95 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:195
+#: ../xfce4-about/info.c:197
 msgid "Unable to load "
 msgstr "Kann nicht laden"
 
 #. Project lead
-#: ../xfce4-about/info.c:224
+#: ../xfce4-about/info.c:226
 msgid "Project Lead"
 msgstr "Projektleitung"
 
 #. Core developers
-#: ../xfce4-about/info.c:228
+#: ../xfce4-about/info.c:230
 msgid "Core developers"
 msgstr "Hauptentwickler"
 
 #. Active contributors
-#: ../xfce4-about/info.c:232
+#: ../xfce4-about/info.c:234
 msgid "Active contributors"
 msgstr "Aktive Mitentwickler"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:236
+#: ../xfce4-about/info.c:238
 msgid "Previous contributors"
 msgstr "Frühere Mitentwickler"
 
-#: ../xfce4-about/info.c:241
+#: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Webhosting und Mailinglisten verfügbar gemacht von"
 
 #. Server admins
-#: ../xfce4-about/info.c:273
+#: ../xfce4-about/info.c:275
 msgid "Server maintained by"
 msgstr "Server gewartet von"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:277
+#: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
 msgstr "Koordination der Goodies"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:281
+#: ../xfce4-about/info.c:283
 msgid "Translations supervision"
 msgstr "Koordination der Übersetzungen"
 
 #. Translators
-#: ../xfce4-about/info.c:285
+#: ../xfce4-about/info.c:287
 msgid "Translators"
 msgstr "Übersetzer"
 
-#: ../xfce4-about/info.c:316
+#: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Falls Sie jemanden kennen, der auf dieser Liste fehlt, lassen Sie es uns "
 "bitte wissen."
 
-#: ../xfce4-about/info.c:320
+#: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
 msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen."
 
-#: ../xfce4-about/info.c:429
+#: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Über Xfce 4"
 
-#: ../xfce4-about/info.c:430
+#: ../xfce4-about/info.c:432
 #, fuzzy
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "Copyright 2002-2008 von Olivier Fourdan"
 
-#: ../xfce4-about/info.c:453
+#: ../xfce4-about/info.c:455
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:457
 msgid "Credits"
 msgstr "Das Team"
 
-#: ../xfce4-about/info.c:456
+#: ../xfce4-about/info.c:458
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:459
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:460
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:461
 msgid "GPL"
 msgstr "GPL"
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"POT-Creation-Date: 2009-01-26 00:57+0100\n"
 "PO-Revision-Date: 2008-12-17 01:48+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -19,92 +19,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:195
+#: ../xfce4-about/info.c:197
 msgid "Unable to load "
 msgstr "无法加载"
 
 #. Project lead
-#: ../xfce4-about/info.c:224
+#: ../xfce4-about/info.c:226
 msgid "Project Lead"
 msgstr "项目领导者"
 
 #. Core developers
-#: ../xfce4-about/info.c:228
+#: ../xfce4-about/info.c:230
 msgid "Core developers"
 msgstr "核心开发者"
 
 #. Active contributors
-#: ../xfce4-about/info.c:232
+#: ../xfce4-about/info.c:234
 msgid "Active contributors"
 msgstr "活跃贡献者"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:236
+#: ../xfce4-about/info.c:238
 msgid "Previous contributors"
 msgstr "先前贡献者"
 
-#: ../xfce4-about/info.c:241
+#: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "网站和邮件列表提供"
 
 #. Server admins
-#: ../xfce4-about/info.c:273
+#: ../xfce4-about/info.c:275
 msgid "Server maintained by"
 msgstr "服务器维护者"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:277
+#: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
 msgstr "Goodies 管理"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:281
+#: ../xfce4-about/info.c:283
 msgid "Translations supervision"
 msgstr "翻译管理"
 
 #. Translators
-#: ../xfce4-about/info.c:285
+#: ../xfce4-about/info.c:287
 msgid "Translators"
 msgstr "翻译者"
 
-#: ../xfce4-about/info.c:316
+#: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "如果你知道本列表上有漏掉的任何信息，请告诉我们<"
 
-#: ../xfce4-about/info.c:320
+#: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
 msgstr "谢谢所有帮助这个软件发展的人。"
 
-#: ../xfce4-about/info.c:429
+#: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "关于Xfce 4 "
 
-#: ../xfce4-about/info.c:430
+#: ../xfce4-about/info.c:432
 msgid "Copyright 2002-2008 by Olivier Fourdan"
 msgstr "版权所有2002-2008 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:453
+#: ../xfce4-about/info.c:455
 msgid "Info"
 msgstr "信息"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:457
 msgid "Credits"
 msgstr "光荣榜"
 
-#: ../xfce4-about/info.c:456
+#: ../xfce4-about/info.c:458
 msgid "Copyright"
 msgstr "版权"
 
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:459
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:460
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:461
 msgid "GPL"
 msgstr "GPL"
 
