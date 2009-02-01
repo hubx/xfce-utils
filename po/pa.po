@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2007-02-23 21:31+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
@@ -82,8 +82,8 @@ msgstr "ਐਕਸਫੇਸ ੪ ਬਾਰੇ"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਵਲੋਂ ਕਾਪੀਰਾਈਟ 2002-2007"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "ਓਲੀਵੀਅਰ ਫਾਰਡਨ ਵਲੋਂ ਕਾਪੀਰਾਈਟ 2002-2009"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

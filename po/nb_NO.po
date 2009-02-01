@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2008-10-15 23:01+0200\n"
 "Last-Translator: Terje Uriansrud <terje@uriansrud.net>\n"
 "Language-Team: Norwegian Bokmal\n"
@@ -78,8 +78,8 @@ msgid "About Xfce 4"
 msgstr "Om Xfce 4"
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2008 ved Olivier Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Copyright 2002-2009 ved Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

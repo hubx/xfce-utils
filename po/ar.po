@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2008-07-18 21:07+0200\n"
 "Last-Translator: Mohamed Magdy <mohamedmk@gmail.com>\n"
 "Language-Team: Arabeyes Translation & Documentation <admin@arabeyes.org>\n"
@@ -78,8 +78,8 @@ msgstr "حول XFce 4"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "حقوق النسخ 2002-2007 بواسطة أوليفير فوردان"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "حقوق النسخ 2002-2009 بواسطة أوليفير فوردان"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

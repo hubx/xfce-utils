@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2008-06-28 13:25+0100\n"
 "Last-Translator: Leandro Regueiro <leandro DOT regueiro AT gmail DOT com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -83,8 +83,8 @@ msgstr "Acerca de Xfce 4"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2007 de Olivier Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Copyright 2002-2009 de Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

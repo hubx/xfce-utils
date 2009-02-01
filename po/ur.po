@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2007-10-31 19:28+0200\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmai.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -82,8 +82,8 @@ msgstr "ایکسفس 4 کی بابت"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "کاپی رائٹ 2002-2007 از Olivier Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "کاپی رائٹ 2002-2009 از Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

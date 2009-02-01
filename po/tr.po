@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2009-01-30 18:09+0200\n"
 "Last-Translator: Gökmen Görgen <gkmngrgn@gmail.com>\n"
 "Language-Team: Turkish <turkce@pardus.org.tr>\n"
@@ -66,7 +66,9 @@ msgstr "Çevirmenler"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Bu listede birilerinin eksik olduğunu düşünüyorsanız lütfen bizi bilgilendirin <"
+msgstr ""
+"Bu listede birilerinin eksik olduğunu düşünüyorsanız lütfen bizi "
+"bilgilendirin <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
@@ -77,8 +79,8 @@ msgid "About Xfce 4"
 msgstr "Xfce 4 Hakkında"
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Telif Hakkı 2002-2008, Olivier·Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Telif Hakkı 2002-2009, Olivier·Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"
@@ -116,7 +118,9 @@ msgstr "Arkaplan kipi desteklenmiyor."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Arkaplan kipinin etkin olabilmesi için Xfrun uygulamasının D-BUS ile birlikte derlenmesi gerekir."
+msgstr ""
+"Arkaplan kipinin etkin olabilmesi için Xfrun uygulamasının D-BUS ile "
+"birlikte derlenmesi gerekir."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -129,13 +133,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS mesaj soketi bağlantıyı kesi. Çıkılıyor ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342
-#: ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Sistem Hatası"
 
-#: ../xfrun/xfrun-dbus.c:344
-#: ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Arkaplanda çalışılamıyor:"
 
@@ -179,4 +181,3 @@ msgstr "Xfce Oturumu"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Xfce Masaüstü Ortamı"
-

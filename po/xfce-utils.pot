@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "About Xfce 4"
 msgstr ""
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2008 by Olivier Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr ""
 
 #: ../xfce4-about/info.c:455

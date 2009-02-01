@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 00:57+0100\n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
 "PO-Revision-Date: 2005-10-07 23:30+0900\n"
 "Last-Translator: Harun Musa <mharun@gmx.net>\n"
 "Language-Team: Malay <translation-team-ms@list.sourceforge.net>\n"
@@ -78,8 +78,8 @@ msgstr "Perihal XFce 4"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Hakcipta 2002-2007 oleh Olivier Fourdan"
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Hakcipta 2002-2009 oleh Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"
