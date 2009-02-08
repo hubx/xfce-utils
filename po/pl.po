@@ -4,144 +4,146 @@
 # Paweł Pastuła <pastulap@poczta.onet.pl>, 2003.
 # Daniel 'Beorn' Mróz <beorn@alpha.pl>, 2003.
 # Piotr Maliński <admin@rk.edu.pl>, 2005, 2006.
+# Piotr Sokół <piotr.sokol@10g.pl>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2005-10-08 04:20+0900\n"
-"Last-Translator: Piotr Maliński <admin@rk.edu.pl>\n"
-"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2009-01-11 10:24+0100\n"
+"PO-Revision-Date: 2009-02-03 10:43+0100\n"
+"Last-Translator: Piotr Sokół <piotr.sokol@10g.pl>\n"
+"Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:197
+#: ../xfce4-about/info.c:195
 msgid "Unable to load "
-msgstr "Nie można załadować"
+msgstr "Nie można wczytać"
 
 #. Project lead
-#: ../xfce4-about/info.c:226
+#: ../xfce4-about/info.c:224
 msgid "Project Lead"
-msgstr "Kierownictwo Projektu"
+msgstr "Kierownictwo projektu"
 
 #. Core developers
-#: ../xfce4-about/info.c:230
+#: ../xfce4-about/info.c:228
 msgid "Core developers"
-msgstr "Główni Programiści"
+msgstr "Główni programiści"
 
 #. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/info.c:232
 msgid "Active contributors"
 msgstr "Aktywni przyjaciele projektu"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:238
+#: ../xfce4-about/info.c:236
 msgid "Previous contributors"
 msgstr "Byli przyjaciele projektu"
 
-#: ../xfce4-about/info.c:243
+#: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Dostawca Usług Hostingowych"
+msgstr "Dostawca usług hostingowych"
 
 #. Server admins
-#: ../xfce4-about/info.c:275
+#: ../xfce4-about/info.c:273
 msgid "Server maintained by"
-msgstr "Serwer zarządzany przez"
+msgstr "Zarządca serwera"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/info.c:277
 msgid "Goodies supervision"
-msgstr "Zarządzanie XFCE Goodies"
+msgstr "Zarządzanie Xfce Goodies"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/info.c:281
 msgid "Translations supervision"
 msgstr "Zarządzanie tłumaczeniami"
 
 #. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/info.c:285
 msgid "Translators"
 msgstr "Tłumacze"
 
-#: ../xfce4-about/info.c:318
+#: ../xfce4-about/info.c:316
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Jeżeli kogoś brakuje skontaktuj się z nami - <"
+msgstr "Jeśli ktoś jeszcze powinien znaleź się na powyższej liście, prosimy o kontakt pod adresem <"
 
-#: ../xfce4-about/info.c:322
+#: ../xfce4-about/info.c:320
 msgid "Thanks to all who helped making this software available."
-msgstr "Podziękowania wszystkim, którzy stworzyli niniejszą aplikację"
+msgstr "Dziękujemy wszystkim, którzy przyczynili się do stworzenia niniejszego oprogramowania."
 
-#: ../xfce4-about/info.c:431
+#: ../xfce4-about/info.c:429
 msgid "About Xfce 4"
-msgstr "O XFce 4"
+msgstr "O środowisku Xfce"
 
-#: ../xfce4-about/info.c:432
-#, fuzzy
-msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Copyright 2002-2009 by Olivier Fourdan"
+#: ../xfce4-about/info.c:430
+msgid "Copyright 2002-2008 by Olivier Fourdan"
+msgstr "Copyright 2002-2008 by Olivier Fourdan"
 
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:453
 msgid "Info"
-msgstr "Informacja"
+msgstr "Informacje"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:455
 msgid "Credits"
-msgstr "Autorzy"
+msgstr "Twórcy"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:456
 msgid "Copyright"
 msgstr "Licencja"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:457
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:460
+#: ../xfce4-about/info.c:458
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/info.c:459
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Tryb Daemona"
+msgstr "Tryb usługi"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr "Tryb Daemona nie wspierany"
+msgstr "Tryb usługi nie jest obsługiwany."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun musi być skompilowane ze wsparciem dla D-BUS dla trybu daemona."
+msgstr "Aby włączyć tryb usługi, Xfrun musi zostać skompilowane z obsługą D-BUS."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Nie można otworzyć ekranu \"%s\"."
+msgstr "Nie można otworzyć ekranu „%s”."
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Połączenie z D-BUS przerwane. Zamykam...\n"
+msgstr "Połączenie z D-BUS zostało przerwane. Kończenie programu...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
-msgstr "Błąd Systemu"
+msgstr "Błąd systemu"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
-msgstr "Nie mogę przejść do działania w tle:"
+msgstr "Nie można przejść do działania w tle:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
-msgstr "Uruchom w _terminalu"
+msgstr "W _terminalu"
 
 #: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
@@ -150,7 +152,7 @@ msgstr "_Uruchom"
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr "Polecenie \"%s\" nie powiodło się:"
+msgstr "Nie udało się uruchomić polecenia „%s”:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
@@ -158,24 +160,25 @@ msgstr "Błąd uruchamiania"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
-msgstr "Nieznany Błąd"
+msgstr "Nieznany błąd"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Otwórz %s za pomocą programu?"
+msgstr "Otworzyć „%s” za pomocą programu?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
-msgstr "Uruchom program"
+msgstr "Uruchamianie programu"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Uruchamia środowisko graficzne Xfce"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesja Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Środowisko XFce"
+

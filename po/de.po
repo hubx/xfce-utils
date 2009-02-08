@@ -1,25 +1,27 @@
-# German translations for xfce-utils package.
+# German translation of the xfce-utils package.
 # Copyright (C) 2002-2008 The Xfce development team.
-# This file is distributed under the same license as the xfce-mcs-manager package.
+# This file is distributed under the same license as the xfce-utils package.
 # Moritz Heiber <moe@xfce.org>, 2003.
 # Fabian Nowak <timystery@aarcor.de>, 2006, 2008.
 # Nico Schümann <nico@prog.nico22.de>, 2007.
+# Enrico Tröger <enrico@xfce.org>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils 4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-10-31 22:55+0100\n"
-"Last-Translator: Fabian Nowak <timystery@aarcor.de>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2009-01-24 08:56+0100\n"
+"Last-Translator: Enrico Tröger <enrico@xfce.org>\n"
+"Language-Team: German <xfce-i18n-de@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../xfce4-about/info.c:197
 msgid "Unable to load "
-msgstr "Kann nicht laden"
+msgstr "Kann die folgende Datei nicht laden "
 
 #. Project lead
 #: ../xfce4-about/info.c:226
@@ -43,7 +45,7 @@ msgstr "Frühere Mitentwickler"
 
 #: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Webhosting und Mailinglisten verfügbar gemacht von"
+msgstr "Webhosting und Mailinglisten bereitgestellt durch"
 
 #. Server admins
 #: ../xfce4-about/info.c:275
@@ -69,7 +71,7 @@ msgstr "Übersetzer"
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 "Falls Sie jemanden kennen, der auf dieser Liste fehlt, lassen Sie es uns "
-"bitte wissen."
+"bitte wissen, Kontakt: <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
@@ -80,7 +82,6 @@ msgid "About Xfce 4"
 msgstr "Über Xfce 4"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Copyright 2002-2009 von Olivier Fourdan"
 
@@ -112,17 +113,17 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Daemon-Modus"
+msgstr "Als Dienst starten"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr "Daemon-Modus wird nicht unterstützt."
+msgstr "»Als Dienst starten« wird nicht unterstützt."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
-"Xfrun muss mit Unterstützung für D-BUS erzeugt werden, um den Daemon-Modus "
-"zu unterstützen."
+"Xfrun muss mit Unterstützung für D-Bus erzeugt werden, um als Dienst "
+"gestartet werden zu können."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -132,7 +133,7 @@ msgstr "Kann Anzeige »%s« nicht öffnen."
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Verbindung zum Nachrichtenbus D-BUS abgebaut. Beende ...\n"
+msgstr "Verbindung zum Nachrichtenbus D-Bus wurde getrennt. Beende ...\n"
 
 #. failed
 #: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
@@ -167,7 +168,7 @@ msgstr "Unbekannter Fehler"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Öffne »%s« mit welchem Programm?"
+msgstr "Programm zum Öffnen von »%s«"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
