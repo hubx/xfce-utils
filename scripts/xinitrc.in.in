@@ -71,7 +71,7 @@ export GLADE_MODULE_PATH="$GLADE_MODULE_PATH:@XFCE_GLADE_MODULE_PATH@"
 XRESOURCES=""
 
 # Has to go prior to merging Xft.xrdb, as its the "Defaults" file
-test -r "@sysconfdir@/xdg/xfce4/Xft.xrdb" && XRESOURCES="$XRESOURCES @sysconfdir@/xdg/xfce4/Xft.xrdb"
+test -r "@_sysconfdir_@/xdg/xfce4/Xft.xrdb" && XRESOURCES="$XRESOURCES @_sysconfdir_@/xdg/xfce4/Xft.xrdb"
 test -r $HOME/.Xdefaults && XRESOURCES="$XRESOURCES $HOME/.Xdefaults"
 
 BASEDIR=$XDG_CONFIG_HOME/xfce4

@@ -12,10 +12,10 @@ bin_SCRIPTS= \
 
 # cannot be set from configure, because ${prefix} is not expanded
 edit = sed \
-	-e 's,@datadir\@,$(datadir),g' \
-	-e 's,@sysconfdir\@,$(sysconfdir),g' \
-	-e 's,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g' \
-	-e 's,@TERMINAL_DEFAULT\@,@TERMINAL_DEFAULT@,g'
+	-e "s,@_datadir_\@,$(datadir),g" \
+	-e "s,@_sysconfdir_\@,$(sysconfdir),g" \
+	-e "s,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g" \
+	-e "s,@TERMINAL_DEFAULT\@,@TERMINAL_DEFAULT@,g"
 
 xfbrowser4: Makefile $(srcdir)/xfbrowser4.in
 	rm -f xfbrowser4 xfbrowser4.tmp
