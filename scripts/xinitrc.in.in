@@ -67,6 +67,10 @@ export GLADE_PIXMAP_PATH="$GLADE_PIXMAP_PATH:@XFCE_GLADE_PIXMAP_PATH@"
 export GLADE_MODULE_PATH="$GLADE_MODULE_PATH:@XFCE_GLADE_MODULE_PATH@"
 
 
+# Export GTK_PATH so that GTK+ can find the Xfce theme engine
+export GTK_PATH="$GTK_PATH:@_libdir_@/gtk-2.0"
+
+
 # For now, start with an empty list
 XRESOURCES=""
 

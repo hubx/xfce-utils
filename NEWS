@@ -3,6 +3,8 @@
 
 - Fix sysconfdir and datadir not being expanded properly in 
   xinitrc (bug #4924).
+- Export GTK_PATH variable in xinitrc so that GTK+ has a chance to find
+  the Xfce theme engine even in a custom prefix (bug #4925).
 
 
 4.5.99.1 (Xfce 4.6rc1)
