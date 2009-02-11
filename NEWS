@@ -1,3 +1,10 @@
+4.6.0 (Xfce 4.6.0)?
+===================
+
+- Fix sysconfdir and datadir not being expanded properly in 
+  xinitrc (bug #4924).
+
+
 4.5.99.1 (Xfce 4.6rc1)
 ======================
 
