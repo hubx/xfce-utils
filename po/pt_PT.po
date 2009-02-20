@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2007-06-16 22:21+0100\n"
+"PO-Revision-Date: 2009-02-15 21:38+0100\n"
 "Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Líder de Projecto"
 #. Core developers
 #: ../xfce4-about/info.c:230
 msgid "Core developers"
-msgstr "Desenvolvedores"
+msgstr "Núcleo de programadores"
 
 #. Active contributors
 #: ../xfce4-about/info.c:234
@@ -52,7 +52,7 @@ msgstr "Servidor mantido por"
 #. Goodies supervision
 #: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
-msgstr "Supervisão de Goodies"
+msgstr "Supervisão de goodies"
 
 #. Translations supervision
 #: ../xfce4-about/info.c:283
@@ -66,18 +66,17 @@ msgstr "Tradutores"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Se sabe de alguém omisso da lista, faça-nos saber <"
+msgstr "Se sabe de alguém em falta nesta lista, por favor faça-nos saber em <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
-msgstr "Obrigado a todos os que ajudaram"
+msgstr "Obrigado a todos os que ajudaram a disponibilizar este software."
 
 #: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
-msgstr "Sobre o XFce 4"
+msgstr "Sobre o Xfce 4"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Copyright 2002-2009 por Olivier Fourdan"
 
@@ -127,14 +126,16 @@ msgstr "Impossível abrir ecrã \"%s\"."
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "D-BUS desligou. Saindo ...\n"
+msgstr "Barramento de mensagens do D-BUS desligou. Saindo ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Erro de Sistema"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Incapaz de derivar para segundo plano:"
 
@@ -170,8 +171,9 @@ msgstr "Executar Programa"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Usar esta sessão para correr o Xfce como seu ambiente de trabalho"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sessão Xfce"
+

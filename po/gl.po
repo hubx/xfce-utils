@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-06-28 13:25+0100\n"
+"PO-Revision-Date: 2009-02-11 17:24+0100\n"
 "Last-Translator: Leandro Regueiro <leandro DOT regueiro AT gmail DOT com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Non foi posible cargar "
 #. Project lead
 #: ../xfce4-about/info.c:226
 msgid "Project Lead"
-msgstr "Líder do Proxecto"
+msgstr "Líder do proxecto"
 
 #. Core developers
 #: ../xfce4-about/info.c:230
@@ -46,7 +46,7 @@ msgstr "Contribuíntes anteriores"
 
 #: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Aloxamento Web e Listas de Correo proporcionadas por"
+msgstr "Aloxamento web e listas de correo proporcionadas por"
 
 #. Server admins
 #: ../xfce4-about/info.c:275
@@ -74,15 +74,13 @@ msgstr "Se coñece a alguén que falta nesta lista, fáganolo saber en <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Grazas a tódolos que axudaron a facer que este software estea dispoñible."
+msgstr "Grazas a tódolos que axudaron a facer que este software estea dispoñible."
 
 #: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Acerca de Xfce 4"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Copyright 2002-2009 de Olivier Fourdan"
 
@@ -114,7 +112,7 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Modo Daemon"
+msgstr "Modo daemon"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
@@ -122,8 +120,7 @@ msgstr "O modo daemon non está soportado."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Debe compilarse xfrun con soporte para D-BUS para activar o modo daemon."
+msgstr "Debe compilarse xfrun con soporte para D-BUS para activar o modo daemon."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -136,13 +133,16 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Desconectouse o bus de mensaxes D-BUS. Saíndo...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
-msgstr "Erro do Sistema"
+msgstr "Erro do sistema"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
+#, fuzzy
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "%s para seleccionar unha cor de fondo"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
@@ -159,11 +159,11 @@ msgstr "O comando \"%s\" fallou ó executar:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
-msgstr "Erro de Execución"
+msgstr "Erro de execución"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
-msgstr "Erro Descoñecido"
+msgstr "Erro descoñecido"
 
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
@@ -176,11 +176,14 @@ msgstr "Executar programa"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Usar esta sesión para executar Xfce coma ambiente de escritorio"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesión de Xfce"
 
+#~ msgid "Copyright 2002-2008 by Olivier Fourdan"
+#~ msgstr "Copyright 2002-2008 de Olivier Fourdan"
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Ambiente de Escritorio Xfce"
+
