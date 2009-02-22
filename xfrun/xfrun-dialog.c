@@ -674,3 +674,10 @@ xfrun_dialog_get_working_directory(XfrunDialog *dialog)
     g_return_val_if_fail(XFRUN_IS_DIALOG(dialog), NULL);
     return dialog->priv->working_directory;
 }
+
+void
+xfrun_dialog_select_text(XfrunDialog *dialog)
+{
+    gtk_editable_select_region(GTK_EDITABLE(XFRUN_DIALOG(dialog)->priv->entry),
+                               0, -1);
+}
