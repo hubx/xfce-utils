@@ -8,12 +8,12 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-m4_define([xfce_utils_version], [4.5.99.1])
+m4_define([xfce_utils_version], [4.6.0])
 
 AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.6 RC1"], [Optional release plain name])
+AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.6"], [Optional release plain name])
 AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
@@ -98,8 +98,8 @@ XDT_I18N([@LINGUAS@])
 
 dnl Check for required packages
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.10.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.5.99.1])
-XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.5.99.1])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.6.0])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.6.0])
 
 dnl check for dbus and libdbus-glib
 AM_CONDITIONAL([HAVE_DBUS], [test "x$DBUS_FOUND" = "xyes"])
