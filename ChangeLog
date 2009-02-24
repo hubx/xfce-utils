@@ -1,3 +1,88 @@
+2009-02-24 06:29  stephan
+
+	* configure.in.in:
+	  ==== Xfce 4.6.0 Released! ====
+
+2009-02-22 19:09  kelnos
+
+	* NEWS, xfrun/xfrun-dbus.c, xfrun/xfrun-dialog.c,
+	  xfrun/xfrun-dialog.h:
+	  make sure text in dialog gets selected (bug 2836)
+
+2009-02-20 23:58  maximilian
+
+	* po/ChangeLog, po/gl.po, po/pt_PT.po:
+	  Translations Updates - ca es gl id it pt_PT zh_CN
+
+2009-02-11 10:58  jannis
+
+	* NEWS, scripts/Makefile.am, scripts/xinitrc.in.in:
+	  Export GTK_PATH variable in xinitrc so that GTK+ has a chance to
+	  find the Xfce theme engine even in a custom prefix (bug #4925).
+
+2009-02-11 10:31  jannis
+
+	* NEWS:
+	  Update NEWS file.
+
+2009-02-11 10:31  jannis
+
+	* scripts/Makefile.am, scripts/startxfce4.in, scripts/xfhelp4.in,
+	  scripts/xinitrc.in.in:
+	  Use @_sysconfdir_@ and @_datadir_@ in scripts created by the
+	  Makefile in order to avoid @sysconfdir@/@datadir@ to be expanded
+	  in scripts that are created in two stages (configure + Makefile).
+	  This only affects xinitrc right now, but who knows about the
+	  future. This fixes bug #4924.
+
+2009-02-08 08:20  maximilian
+
+	* po/ChangeLog, po/de.po, po/ja.po, po/pl.po:
+	  Translations udaptes - de id ja nb pl zh_CN
+
+2009-02-02 22:43  stephan
+
+	* xfce4-about/COPYING:
+	  Fix typo in the Copyright entry (Bug #3993), patch by Enrico
+	  Troeger
+
+2009-02-01 18:18  stephan
+
+	* xfce4-about/AUTHORS:
+	  Add two turkish translators
+
+2009-02-01 10:49  nick
+
+	* po/af.po, po/am.po, po/ar.po, po/az.po, po/be.po, po/bg.po,
+	  po/bn_IN.po, po/ca.po, po/cs.po, po/da.po, po/de.po, po/dz.po,
+	  po/el.po, po/en_GB.po, po/eo.po, po/es.po, po/es_MX.po, po/et.po,
+	  po/eu.po, po/fa.po, po/fi.po, po/fr.po, po/gl.po, po/gu.po,
+	  po/he.po, po/hi.po, po/hu.po, po/hy.po, po/id.po, po/it.po,
+	  po/ja.po, po/ka.po, po/ko.po, po/ku.po, po/lt.po, po/lv.po,
+	  po/mk.po, po/mr.po, po/ms.po, po/nb_NO.po, po/nl.po, po/pa.po,
+	  po/pl.po, po/pt_BR.po, po/pt_PT.po, po/ro.po, po/ru.po, po/si.po,
+	  po/sk.po, po/sq.po, po/sv.po, po/ta.po, po/tr.po, po/uk.po,
+	  po/ur.po, po/vi.po, po/xfce-utils.pot, po/zh_CN.po, po/zh_TW.po,
+	  xfce4-about/info.c:
+	  Update copyright year to 2009, manually updated the translations
+	  and regenerated them.
+
+2009-01-31 17:38  erenturkay
+
+	* po/ChangeLog, po/tr.po:
+	  Turkish translation update by Gokmen Gorgen and Samed Beyribey
+
+2009-01-26 21:19  jannis
+
+	* scripts/xinitrc.in.in:
+	  Export glade environment variables in xinitrc. Hope this works in
+	  other shells than bash.
+
+2009-01-26 00:02  jannis
+
+	* ChangeLog:
+	  Update ChangeLog.
+
 2009-01-26 00:00  jannis
 
 	* NEWS, configure.in.in, po/ChangeLog, po/af.po, po/am.po,
