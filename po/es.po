@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Edscott Wilson Garcia <edscott@xfce.org>, 2004.
 # Rudy Godoy <rudy@stone-head.org>, 2005.
-# Abel Martín <abel.martin.ruiz@gmail.com>, 2008.
+# Abel Martín <abel.martin.ruiz@gmail.com>, 2008-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-12-11 00:39+0100\n"
+"PO-Revision-Date: 2009-02-24 13:39+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -165,7 +165,7 @@ msgstr "Error desconocido"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "¿Abrir %s con qué programa?"
+msgstr "¿Con qué programa abrir %s?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -177,7 +177,7 @@ msgstr "Use esta sesión para ejecutar Xfce como su entorno de escritorio"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Sesión Xfce"
+msgstr "Sesión de Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Entorno de Escritorio XFce"
