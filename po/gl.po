@@ -1,8 +1,8 @@
 # Galician translation of xfce4-utils
-# Copyright (C) 2006, 2008 Leandro Regueiro
+# Copyright (C) 2006, 2008, 2009 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
 #
-# Leandro Regueiro <leandro.regueiro@gmail.com>, 2006, 2008.
+# Leandro Regueiro <leandro.regueiro@gmail.com>, 2006, 2008, 2009.
 #
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en <http://trasno.net>
@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: xfce-i18n@xfce.org\n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2009-02-11 17:24+0100\n"
+"PO-Revision-Date: 2009-03-08 00:33+0100\n"
 "Last-Translator: Leandro Regueiro <leandro DOT regueiro AT gmail DOT com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -142,7 +142,7 @@ msgstr "Erro do sistema"
 #: ../xfrun/xfrun-dbus.c:355
 #, fuzzy
 msgid "Unable to fork to background:"
-msgstr "%s para seleccionar unha cor de fondo"
+msgstr "Non facer fork na tarefa de fondo"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
