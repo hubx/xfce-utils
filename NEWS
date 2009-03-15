@@ -1,5 +1,12 @@
-4.6.0 (Xfce 4.6.0)
-==================
+4.6.1
+=====
+
+- Reset icon theme name if the migrated icon theme name (possibly 'Rodent')
+  doesn't exist anymore.
+
+
+4.6.0
+=====
 
 - Fix sysconfdir and datadir not being expanded properly in 
   xinitrc (bug #4924).
