@@ -296,7 +296,7 @@ sub migrate_icon_theme
 
     if(!icon_theme_exists(\@icondirs, $val)) {
         $val = undef;
-        foreach my $itheme (('Tango', 'gnome', 'crystalsvg')) {
+        foreach my $itheme (('Tango', 'gnome', 'crystalsvg', 'Rodent')) {
             if(icon_theme_exists(\@icondirs, $itheme)) {
                 $val = $itheme;
                 last;
