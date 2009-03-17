@@ -3,6 +3,7 @@
 
 - Reset icon theme name if the migrated icon theme name (possibly 'Rodent')
   doesn't exist anymore.
+- Remove a bash-ishm ('source') from xinitrc.
 
 
 4.6.0

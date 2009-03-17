@@ -33,7 +33,7 @@ if type xdg-user-dirs-update >/dev/null 2>&1; then
 fi
 
 if test -f "$XDG_CONFIG_HOME/user-dirs.dirs"; then
-    source "$XDG_CONFIG_HOME/user-dirs.dirs"
+    . "$XDG_CONFIG_HOME/user-dirs.dirs"
     # i'm deliberately not 'export'-ing the XDG_ vars, because you shouldn't
     # rely on the env vars inside apps, since the file could be changed at
     # any time by the user.  this is solely here for migration purposes.
