@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"POT-Creation-Date: 2009-02-28 11:20+0900\n"
 "PO-Revision-Date: 2009-02-02 01:43+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
@@ -122,26 +122,26 @@ msgstr "デーモンモードはサポートされていません。"
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必要があります。"
+msgstr ""
+"デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必"
+"要があります。"
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "ディスプレイ \"%s\" を開けません。"
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS メッセージバスが切断されました。終了します...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342
-#: ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "システムエラー"
 
-#: ../xfrun/xfrun-dbus.c:344
-#: ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
 msgstr "バックグラウンドで fork できません:"
 
@@ -182,4 +182,3 @@ msgstr "このセッションでデスクトップ環境として Xfce を使用
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce セッション"
-
