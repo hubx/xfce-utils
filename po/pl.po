@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-11 10:24+0100\n"
-"PO-Revision-Date: 2009-03-07 17:21+0100\n"
+"PO-Revision-Date: 2009-03-16 15:45+0100\n"
 "Last-Translator: Piotr Sokół <piotr.sokol@10g.pl>\n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -165,11 +165,11 @@ msgstr "Nieznany błąd"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Otworzyć „%s” za pomocą programu?"
+msgstr "Za pomocą jakiego programu otworzyć „%s”?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
-msgstr "Uruchom programu"
+msgstr "Uruchamianie polecenia"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
