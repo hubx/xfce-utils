@@ -1,3 +1,84 @@
+2009-04-14 22:18  stephan
+
+	* configure.in.in:
+	  == Xfce 4.6.1 released ==
+
+2009-04-07 22:53  jannis
+
+	* xfce4-about/INFO.es:
+	  Update Spanish translations of the xfce4-about text.
+
+2009-03-29 22:03  maximilian
+
+	* po/ChangeLog, po/es.po:
+	  Translations updates - es it ku
+
+2009-03-23 10:13  brzydki
+
+	* po/ChangeLog, po/pl.po:
+	  Updated Polish translations
+
+2009-03-19 15:02  hashimo
+
+	* po/ChangeLog, po/ja.po:
+	  * ja.po: Japanese translation update (Masato Hashimoto) * ja.po:
+	  Japanese translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto) * ja.po: Japanese
+	  translation update (Masato Hashimoto)
+
+2009-03-17 08:13  kelnos
+
+	* NEWS, scripts/xinitrc.in.in:
+	  use '.' instead of 'source' to be sh-compatible
+
+2009-03-15 00:08  kelnos
+
+	* scripts/xfconf-migration-4.6.pl.in:
+	  might as well try Rodent too; can't hurt anyway
+
+2009-03-15 00:01  kelnos
+
+	* NEWS, scripts/xfconf-migration-4.6.pl.in:
+	  ensure that there's a valid icon theme set after migration
+
+2009-03-14 14:55  maximilian
+
+	* po/ChangeLog, po/gl.po:
+	  Translations updates - da es fr gl it nn
+
+2009-03-08 16:05  brzydki
+
+	* po/pl.po:
+	  Updated Polish translations
+
+2009-03-05 14:52  mmassonnet
+
+	* po/ChangeLog, po/LINGUAS, po/nb.po, po/nb_NO.po, po/pt.po,
+	  po/pt_PT.po:
+	  Renamed pt_PT to pt and nb_NO to nb (bug #4574)
+
+2009-03-01 22:47  maximilian
+
+	* po/ChangeLog, po/es.po, po/pl.po:
+	  Translations updates - es pl uk
+
+2009-02-25 22:25  stephan
+
+	* ChangeLog:
+	  update changelog
+
 2009-02-25 22:23  stephan
 
 	* ChangeLog:
