@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-11 10:24+0100\n"
-"PO-Revision-Date: 2009-03-16 15:45+0100\n"
+"PO-Revision-Date: 2009-04-10 11:03+0100\n"
 "Last-Translator: Piotr Sokół <piotr.sokol@10g.pl>\n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -35,12 +35,12 @@ msgstr "Główni programiści"
 #. Active contributors
 #: ../xfce4-about/info.c:232
 msgid "Active contributors"
-msgstr "Aktywni przyjaciele projektu"
+msgstr "Aktywni współpracownicy"
 
 #. Previous contributors
 #: ../xfce4-about/info.c:236
 msgid "Previous contributors"
-msgstr "Byli przyjaciele projektu"
+msgstr "Byli współpracownicy"
 
 #: ../xfce4-about/info.c:241
 msgid "Web Hosting and Mailing Lists provided by"
@@ -49,7 +49,7 @@ msgstr "Dostawca usług hostingowych"
 #. Server admins
 #: ../xfce4-about/info.c:273
 msgid "Server maintained by"
-msgstr "Zarządca serwera"
+msgstr "Opiekun serwera"
 
 #. Goodies supervision
 #: ../xfce4-about/info.c:277
@@ -165,7 +165,7 @@ msgstr "Nieznany błąd"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Za pomocą jakiego programu otworzyć „%s”?"
+msgstr "Za pomocą, którego programu otworzyć „%s”?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
