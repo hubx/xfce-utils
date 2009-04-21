@@ -1,15 +1,15 @@
 # Romanian translation of xfce-utils.
-# Copyright (C) 2002-2007 The Xfce development team.
+# Copyright (C) 2002-2009 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
-# Mişu Moldovan <dumol@gnome.ro>, 2004-2007.
+# Mișu Moldovan <dumol@gnome.ro>, 2004-2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils 4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2007-01-20 23:50+0200\n"
-"Last-Translator: Mişu Moldovan <dumol@gnome.ro>\n"
+"POT-Creation-Date: 2009-04-22 00:34+0300\n"
+"PO-Revision-Date: 2009-04-22 00:44+0300\n"
+"Last-Translator: Mișu Moldovan <dumol@gnome.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,21 +34,21 @@ msgstr "Dezvoltatori"
 #. Active contributors
 #: ../xfce4-about/info.c:234
 msgid "Active contributors"
-msgstr "Contributori activi"
+msgstr "Contribuitori activi"
 
 #. Previous contributors
 #: ../xfce4-about/info.c:238
 msgid "Previous contributors"
-msgstr "Contributori inactivi"
+msgstr "Contribuitori inactivi"
 
 #: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Găzduire web şi liste de mail"
+msgstr "Găzduire web și liste de mail"
 
 #. Server admins
 #: ../xfce4-about/info.c:275
 msgid "Server maintained by"
-msgstr "Server administrat de"
+msgstr "Administrare server"
 
 #. Goodies supervision
 #: ../xfce4-about/info.c:279
@@ -67,20 +67,18 @@ msgstr "Traducători"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Dacă ştiţi pe cineva care lipseşte din această listă vă rugăm să ne daţi de "
-"ştire la <"
+msgstr "Dacă știți pe cineva care lipsește din această listă vă rugăm să ne "
+"dați de știre la <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
-msgstr "Mulţumim tuturor celor ce au sprijinit acest proiect software."
+msgstr "Mulțumim tuturor celor ce au sprijinit acest proiect software."
 
 #: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Despre Xfce 4"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Drepturi de autor 2002-2009, Olivier Fourdan"
 
@@ -91,11 +89,11 @@ msgstr "Info"
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: ../xfce4-about/info.c:457
 msgid "Credits"
-msgstr "Credit"
+msgstr "Autori"
 
 #: ../xfce4-about/info.c:458
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Drepturi de autor"
 
 #: ../xfce4-about/info.c:459
 msgid "BSDL"
@@ -127,19 +125,19 @@ msgstr "Xfrun trebuie compilat cu suport D-BUS pentru activarea modului demon."
 msgid "Unable to open display \"%s\"."
 msgstr "Nu se poate deschide ecranul „%s”."
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Deconectare de la magistrala D-BUS. Ieşire...\n"
+msgstr "Deconectare de la magistrala D-BUS. Ieșire...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "Eroare de sistem"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
-msgstr "Nu se poate face fork în fundal:"
+msgstr "Nu se poate face „fork” în fundal:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
@@ -147,12 +145,12 @@ msgstr "În _terminal"
 
 #: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
-msgstr "_Porneşte"
+msgstr "_Pornește"
 
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr "Comanda „%s” a eşuat la executare:"
+msgstr "Executarea comenzii „%s” a eșuat:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
@@ -173,8 +171,9 @@ msgstr "Pornire programe"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Alegeți această sesiune pentru a utiliza mediul desktop Xfce"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesiune Xfce"
+
