@@ -10,15 +10,16 @@ msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-04-06 21:38+0300\n"
-"Last-Translator: Rihards Prieditis <RPrieditis@gmail.com>\n"
-"Language-Team: Latvian <RPrieditis@gmail.com>\n"
+"PO-Revision-Date: 2009-05-01 21:42+0300\n"
+"Last-Translator: Rihards Priedītis <rprieditis@gmail.com>\n"
+"Language-Team: Latvian <rprieditis@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Poedit-Language: Latvian\n"
+"X-Poedit-Country: Latvia\n"
 
 #: ../xfce4-about/info.c:197
 msgid "Unable to load "
@@ -70,8 +71,7 @@ msgstr "Tulkotāji"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Ja, Jums ir zināms, kāds, kurš nav minēts sarakstā, lūdzu, dodiet ziņu <"
+msgstr "Ja, Jums ir zināms, kāds, kurš nav minēts sarakstā, lūdzu, dodiet ziņu <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
@@ -82,7 +82,6 @@ msgid "About Xfce 4"
 msgstr "Par Xfce 4"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Autortiesības 2002-2009 pieder Olivier Fourdan"
 
@@ -135,11 +134,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS ziņu kopne atvienota. Izeju ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Sistēmas kļūda"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Nevarēja fonā sazaroties:"
 
@@ -175,8 +176,9 @@ msgstr "Izpildīt programmu"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Izmantot šo sesiju, lai palaistu Xfce darbavirsmas vidi"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Xfce sesija"
+
