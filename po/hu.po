@@ -1,33 +1,30 @@
-# Hungarian translations for xfce-utils package.
-# Copyright (C) 2002-2007 The Xfce development team
+# Hungarian translation of xfce-utils
+# Copyright (C) 2009. Free Software Foundation, Inc.
 # This file is distributed under the same license as the xfce-utils package.
-# Somogyi Peter <jerry@gnu>, 2003.
-# Egmont Koblinger <egmont@uhulinux.hu>, 2003.
-# Servitore <sas@321 uh:))>, 2004-2007.
 #
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: untitled\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-12-30 09:12+0100\n"
-"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
-"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2009-06-14 01:23+0200\n"
+"PO-Revision-Date: 2009-06-15 17:22+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at gnome dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Language: Hungarian\n"
-"X-Poedit-Country: HUNGARY\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../xfce4-about/info.c:197
 msgid "Unable to load "
-msgstr "Nem tölthető be"
+msgstr "Nem tölthető be "
 
 #. Project lead
 #: ../xfce4-about/info.c:226
 msgid "Project Lead"
-msgstr "Projekt-vezető"
+msgstr "Projektvezető"
 
 #. Core developers
 #: ../xfce4-about/info.c:230
@@ -46,17 +43,17 @@ msgstr "Korábbi közreműködők"
 
 #: ../xfce4-about/info.c:243
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Webhoszt és levelező listák:"
+msgstr "Weboldal és levelezőlisták"
 
 #. Server admins
 #: ../xfce4-about/info.c:275
 msgid "Server maintained by"
-msgstr "Szerver-karbantartó:"
+msgstr "Kiszolgáló karbantartása"
 
 #. Goodies supervision
 #: ../xfce4-about/info.c:279
 msgid "Goodies supervision"
-msgstr "Cukik felügyelete"
+msgstr "Goodie-k felügyelete"
 
 #. Translations supervision
 #: ../xfce4-about/info.c:283
@@ -70,11 +67,11 @@ msgstr "Fordítók"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Ha bárki lemaradt, tudasd rögtön itt <"
+msgstr "Ha valaki hiányzik a listáról, tudassa velünk itt: <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
-msgstr "Köszönet mindenkinek, aki segítette e szoftver létrejöttét"
+msgstr "Köszönet mindenkinek, aki segítette e szoftver létrejöttét."
 
 #: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
@@ -82,16 +79,16 @@ msgstr "Az Xfce 4 névjegye"
 
 #: ../xfce4-about/info.c:432
 msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Copyright 2002-2009, Olivier Fourdan"
+msgstr "Copyright 2002-2009 by Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"
-msgstr "Névjegy"
+msgstr "Információk"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: ../xfce4-about/info.c:457
 msgid "Credits"
-msgstr "Csapat"
+msgstr "Köszönet"
 
 #: ../xfce4-about/info.c:458
 msgid "Copyright"
@@ -120,30 +117,30 @@ msgstr "A démon mód nem támogatott."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Az Xfrun-t D-BUS támogatással kell fordítani a démon módhoz."
+msgstr "A démon mód engedélyezéséhez az Xfrun programot D-Bus támogatással kell fordítani."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "\"%s\" képernyő nem nyitható meg."
+msgstr "A képernyő nem nyitható meg: „%s”"
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "A D-BUS üzenet-busz levált. Kilépek ...\n"
+msgstr "D-Bus üzenetbusz leválasztva, kilépés…\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
-msgstr "Rendszer hiba"
+msgstr "Rendszerhiba"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
-msgstr "Nem tudok a háttérbe forkolni:"
+msgstr "Nem indítható program a háttérben:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
-msgstr "_Terminálban futtatás"
+msgstr "_Terminálban fusson"
 
 #: ../xfrun/xfrun-dialog.c:209
 msgid "_Run"
@@ -152,11 +149,11 @@ msgstr "_Futtatás"
 #: ../xfrun/xfrun-dialog.c:540
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr "\"%s\" parancs futása meghiúsult:"
+msgstr "A parancs („%s”) futtatása meghiúsult:"
 
 #: ../xfrun/xfrun-dialog.c:542
 msgid "Run Error"
-msgstr "Futási hiba"
+msgstr "Futtatási hiba"
 
 #: ../xfrun/xfrun-dialog.c:544
 msgid "Unknown Error"
@@ -165,7 +162,7 @@ msgstr "Ismeretlen hiba"
 #: ../xfrun/xfrun-dialog.c:631
 #, c-format
 msgid "Open %s with what program?"
-msgstr "Melyik programmal nyissuk meg ezt: %s?"
+msgstr "Melyik programmal nyitja meg ezt: %s?"
 
 #: ../xfrun/xfrun-dialog.c:636
 msgid "Run program"
@@ -173,11 +170,9 @@ msgstr "Program futtatása"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Használd e folyamatot az Xfce futtatásához mint asztali környezet"
+msgstr "Ezen munkamenet használatával indítható az Xfce asztali környezet"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Xfce folyamat"
+msgstr "Xfce munkamenet"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Xfce Munkakörnyezet"
