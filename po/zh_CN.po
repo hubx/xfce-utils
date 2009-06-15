@@ -5,16 +5,17 @@
 # Yongtao Yang <yongtao.yang@telia.com>, 2004, 2006.
 # Huang Huan <unicon221@gmail.com>, 2006.
 # Jick Nan <jick.nan@gmail.com>, 2006.
-# wuli <wurisky@gmail.com>,2007.
-# Hunt Xu <huntxu@live.cn>,2008.
+# wuli <wurisky@gmail.com>, 2007.
+# Hunt Xu <huntxu@live.cn>, 2008, 2009.
+# Aron Xu <aronmalache@163.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-12-17 01:48+0800\n"
+"PO-Revision-Date: 2009-06-14 02:40+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
-"Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
+"Language-Team: Chinese/Simplified <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -111,25 +112,25 @@ msgstr "GPL"
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:50
 msgid "Daemon Mode"
-msgstr "Daemon 模式"
+msgstr "守护进程模式"
 
 #: ../xfrun/xfrun.c:52
 msgid "Daemon mode is not supported."
-msgstr "不支持 Daemon模式"
+msgstr "不支持守护进程模式"
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "xfrun必须在编译时加入 D-BUS 支持才能启用 daemon 模式"
+msgstr "xfrun 必须在编译时加入 D-BUS 支持才能启用守护进程模式"
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "无法打开显示  \"%s\" 。"
+msgstr "无法打开显示“%s”。"
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "D-BUS 信息总线没有连接。离开中...\n"
+msgstr "与 D-BUS 信息总线的连接已被断开。正在退出...\n"
 
 #. failed
 #: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
