@@ -209,7 +209,7 @@ xfrun_handle_dbus_message(DBusConnection *connection,
 
 /* server registration */
 static gboolean
-xfrun_register_dbus_service()
+xfrun_register_dbus_service(void)
 {
     static const struct DBusObjectPathVTable vtable = {
         NULL, 
@@ -297,7 +297,7 @@ xfrun_show_dialog(const gchar *run_argument)
 
 /* send quit message */
 static void
-xfrun_send_quit()
+xfrun_send_quit(void)
 {
     DBusConnection *connection;
     DBusMessage *method, *result;

@@ -77,9 +77,6 @@ enum
     XFRUN_N_COLS,
 };
 
-static void xfrun_dialog_class_init(XfrunDialogClass *klass);
-static void xfrun_dialog_init(XfrunDialog *dialog);
-
 static void xfrun_dialog_set_property(GObject *object,
                                       guint property_id,
                                       const GValue *value,
@@ -340,7 +337,7 @@ xfrun_setup_entry_completion(XfrunDialog *dialog)
 }
 
 static gchar **
-xfrun_get_histfile_content()
+xfrun_get_histfile_content(void)
 {
     gchar **lines = NULL, *histfile, *contents = NULL;
     gsize length = 0;
