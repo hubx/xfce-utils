@@ -5,7 +5,6 @@ scripts= \
 
 bin_SCRIPTS= \
 	$(scripts) \
-	xfterm4 \
 	xfbrowser4 \
 	startxfce4 \
 	xfhelp4
