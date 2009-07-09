@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"PO-Revision-Date: 2009-07-06 16:24+0100\n"
+"Last-Translator: astur <malditoastur@gmail.com>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../xfce4-about/info.c:197
+msgid "Unable to load "
+msgstr "Nun pudo cargase "
+
+#. Project lead
+#: ../xfce4-about/info.c:226
+msgid "Project Lead"
+msgstr "Xefe del proyeutu"
+
+#. Core developers
+#: ../xfce4-about/info.c:230
+msgid "Core developers"
+msgstr "Desendolcadores principales"
+
+#. Active contributors
+#: ../xfce4-about/info.c:234
+msgid "Active contributors"
+msgstr "Collaboradores activos"
+
+#. Previous contributors
+#: ../xfce4-about/info.c:238
+msgid "Previous contributors"
+msgstr "Anteriores collaboradores"
+
+#: ../xfce4-about/info.c:243
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr "Agospiamientu web y llistes de corréu proporcionaes por"
+
+#. Server admins
+#: ../xfce4-about/info.c:275
+msgid "Server maintained by"
+msgstr "Sirvidor alministráu por"
+
+#. Goodies supervision
+#: ../xfce4-about/info.c:279
+msgid "Goodies supervision"
+msgstr "Supervisión de Goodies"
+
+#. Translations supervision
+#: ../xfce4-about/info.c:283
+msgid "Translations supervision"
+msgstr "Supervisión de traducciones"
+
+#. Translators
+#: ../xfce4-about/info.c:287
+msgid "Translators"
+msgstr "Traductores"
+
+#: ../xfce4-about/info.c:318
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr ""
+"Si conoces a daquién que nun ta nesta llista, por favor fáinoslo saber en <"
+
+#: ../xfce4-about/info.c:322
+msgid "Thanks to all who helped making this software available."
+msgstr "Gracies a tolos qu'aidaron a facer dable esti software."
+
+#: ../xfce4-about/info.c:431
+msgid "About Xfce 4"
+msgstr "Tocante a XFce 4"
+
+#: ../xfce4-about/info.c:432
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Copyright 2002-2009 por Olivier Fourdan"
+
+#: ../xfce4-about/info.c:455
+msgid "Info"
+msgstr "Información"
+
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: ../xfce4-about/info.c:457
+msgid "Credits"
+msgstr "Créditos"
+
+#: ../xfce4-about/info.c:458
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../xfce4-about/info.c:459
+msgid "BSDL"
+msgstr "BSDL"
+
+#: ../xfce4-about/info.c:460
+msgid "LGPL"
+msgstr "LGPL"
+
+#: ../xfce4-about/info.c:461
+msgid "GPL"
+msgstr "GPL"
+
+#. we don't support daemon mode
+#: ../xfrun/xfrun.c:50
+msgid "Daemon Mode"
+msgstr "Mou degorriu"
+
+#: ../xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr "El mou degorriu nun ta sofitáu."
+
+#: ../xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr ""
+"Xfrun tien de compilase con sofitu pa D-BUS pa habilitar el mou degorriu."
+
+#: ../xfrun/xfrun-dbus.c:141
+#, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "Nun pudo abrise'l display \"%s\"."
+
+#: ../xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr "Mensax de desconexón de bus D-BUS. Colando...\n"
+
+#. failed
+#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+msgid "System Error"
+msgstr "Fallu de sistema"
+
+#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+msgid "Unable to fork to background:"
+msgstr "Nun pudo pasase a segundu planu:"
+
+#: ../xfrun/xfrun-dialog.c:188
+msgid "Run in _terminal"
+msgstr "Executar en _terminal"
+
+#: ../xfrun/xfrun-dialog.c:209
+msgid "_Run"
+msgstr "Executa_r"
+
+#: ../xfrun/xfrun-dialog.c:540
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr "El comandu \"%s\" falló al executase:"
+
+#: ../xfrun/xfrun-dialog.c:542
+msgid "Run Error"
+msgstr "Fallu d'execución"
+
+#: ../xfrun/xfrun-dialog.c:544
+msgid "Unknown Error"
+msgstr "Fallu desconocíu"
+
+#: ../xfrun/xfrun-dialog.c:631
+#, c-format
+msgid "Open %s with what program?"
+msgstr "¿Con qué programa abrir %s?"
+
+#: ../xfrun/xfrun-dialog.c:636
+msgid "Run program"
+msgstr "Executar programa"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr "Use esta sesión pa executar Xfce como'l so entornu d'escritoriu"
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr "Sesión de Xfce"
