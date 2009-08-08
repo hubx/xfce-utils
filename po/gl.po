@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2009-04-18 00:31+0100\n"
+"PO-Revision-Date: 2009-07-13 17:57+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -140,9 +140,8 @@ msgstr "Erro do sistema"
 
 #: ../xfrun/xfrun-dbus.c:344
 #: ../xfrun/xfrun-dbus.c:355
-#, fuzzy
 msgid "Unable to fork to background:"
-msgstr "Non facer fork na tarefa de fondo"
+msgstr ""
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
