@@ -1,0 +1,179 @@
+# xfce-utils to kazakh.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"PO-Revision-Date: 2009-08-20 12:51+0600\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../xfce4-about/info.c:197
+msgid "Unable to load "
+msgstr "Жүктеу мүмкін емес"
+
+#. Project lead
+#: ../xfce4-about/info.c:226
+msgid "Project Lead"
+msgstr "Жоба басшысы"
+
+#. Core developers
+#: ../xfce4-about/info.c:230
+msgid "Core developers"
+msgstr "Негізгі өндеушілер"
+
+#. Active contributors
+#: ../xfce4-about/info.c:234
+msgid "Active contributors"
+msgstr "Белсенді қатысушылар"
+
+#. Previous contributors
+#: ../xfce4-about/info.c:238
+msgid "Previous contributors"
+msgstr "Алдындағы қатысушылар"
+
+#: ../xfce4-about/info.c:243
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr "Веб хостинг пен пошта тарату тізімдерін ұсынған"
+
+#. Server admins
+#: ../xfce4-about/info.c:275
+msgid "Server maintained by"
+msgstr "Сервер үшін жауап беретін"
+
+#. Goodies supervision
+#: ../xfce4-about/info.c:279
+msgid "Goodies supervision"
+msgstr "Goodies үшін жауап беретін"
+
+#. Translations supervision
+#: ../xfce4-about/info.c:283
+msgid "Translations supervision"
+msgstr "Аудармалар үшін жауап беретін"
+
+#. Translators
+#: ../xfce4-about/info.c:287
+msgid "Translators"
+msgstr "Аудармашылар"
+
+#: ../xfce4-about/info.c:318
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr "Егер осы тізімнен қалып қойған біреуді білсеңіз, бізге хабарласыңыз, <"
+
+#: ../xfce4-about/info.c:322
+msgid "Thanks to all who helped making this software available."
+msgstr "Осы бағдарламалық қамтаманы қолжетерлік қылуға көмектескен барлық адамдарға рахмет."
+
+#: ../xfce4-about/info.c:431
+msgid "About Xfce 4"
+msgstr "Xfce 4 туралы"
+
+#: ../xfce4-about/info.c:432
+msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgstr "Copyright 2002-2009 by Olivier Fourdan"
+
+#: ../xfce4-about/info.c:455
+msgid "Info"
+msgstr "Ақпарат"
+
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: ../xfce4-about/info.c:457
+msgid "Credits"
+msgstr "Жасаушылар"
+
+#: ../xfce4-about/info.c:458
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../xfce4-about/info.c:459
+msgid "BSDL"
+msgstr "BSDL"
+
+#: ../xfce4-about/info.c:460
+msgid "LGPL"
+msgstr "LGPL"
+
+#: ../xfce4-about/info.c:461
+msgid "GPL"
+msgstr "GPL"
+
+#. we don't support daemon mode
+#: ../xfrun/xfrun.c:50
+msgid "Daemon Mode"
+msgstr "Қызмет түрінде"
+
+#: ../xfrun/xfrun.c:52
+msgid "Daemon mode is not supported."
+msgstr "Қызмет түріндегі жұмысқа қолдау жоқ."
+
+#: ../xfrun/xfrun.c:53
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr "Қызмет түріндегі жұмысы қолжетерлі болу үшін Xfrun D-BUS қолдауымен компиляциялануы керек."
+
+#: ../xfrun/xfrun-dbus.c:141
+#, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "\"%s\" экранын ашу мүмкін емес."
+
+#: ../xfrun/xfrun-dbus.c:200
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr "D-BUS хабарламалар қызметімен байланыс үзілді. Шығу ...\n"
+
+#. failed
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
+msgid "System Error"
+msgstr "Жүйелік қате"
+
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
+msgid "Unable to fork to background:"
+msgstr "Фонда жіберу мүмкін емес:"
+
+#: ../xfrun/xfrun-dialog.c:188
+msgid "Run in _terminal"
+msgstr "_Терминалда орындау"
+
+#: ../xfrun/xfrun-dialog.c:209
+msgid "_Run"
+msgstr "О_рындау"
+
+#: ../xfrun/xfrun-dialog.c:540
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr "\"%s\" орындау сәтсіз аяқталды:"
+
+#: ../xfrun/xfrun-dialog.c:542
+msgid "Run Error"
+msgstr "Орындау қатесі"
+
+#: ../xfrun/xfrun-dialog.c:544
+msgid "Unknown Error"
+msgstr "Белгісіз қате"
+
+#: ../xfrun/xfrun-dialog.c:631
+#, c-format
+msgid "Open %s with what program?"
+msgstr "%s қай бағдарлама көмегімен ашу керек?"
+
+#: ../xfrun/xfrun-dialog.c:636
+msgid "Run program"
+msgstr "Бағдарламаны орындау"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr "Өзіңіздің жұмыс үстел ортасы ретінде Xfce жіберу үшін осы сессияны қолданыңыз"
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr "Xfce сессиясы"
+
