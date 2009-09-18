@@ -99,46 +99,84 @@ cat /dev/null $XRESOURCES | xrdb -nocpp -merge -
 # load local modmap
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
-# Launch xscreensaver (if available), but only as non-root user
-if test $UID -gt 0 -a -z "$VNCSESSION"; then 
-    if test x"`which xscreensaver 2>/dev/null`" != x""; then
-        xscreensaver -no-splash &
-    elif test x"`which gnome-screensaver 2>/dev/null`" != x""; then
-        gnome-screensaver &
-    fi
-fi 
-
-# Use ssh-agent if installed and not already running.  Run it separately
-# so it populates the environment here, so we can clean it up later.
-sshagent=`which ssh-agent`
-kill_sshagent=0
-if test -z "$SSH_AGENT_PID" -a "$sshagent" -a "x$sshagent" != "xno"; then
-	eval `$sshagent -s`
-	kill_sshagent=1
-fi
 
 # Use dbus-launch if installed.
 if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
-	dbuslaunch=`which dbus-launch`
-	if test x"$dbuslaunch" != x"" -a x"$dbuslaunch" != x"no"; then
+    if type dbus-launch >/dev/null 2>&1; then
 		eval `$dbuslaunch --sh-syntax --exit-with-session`
+        # some older versions of dbus don't export the var properly
+        export DBUS_SESSION_BUS_ADDRESS
+    else
+        echo "Could not find dbus-launch; Xfce will not work properly" >&2
 	fi
 fi
 
-# Run xfce4-session if installed
-xfcesm=`which xfce4-session`
-case "x$xfcesm" in
-	x|xno*)
-		;;
-	*)
-		$xfcesm
 
-		if test $kill_sshagent -eq 1; then
-			eval `$sshagent -k`
-		fi
-		exit 0
-		;;
-esac
+# launch a screensaver if enabled.  do not launch if we're root or if
+# we're in a VNC session.
+screensaver_enabled=`xfconf-query -c xfce4-session -p /startup/screensaver/enabled`
+if test $UID -gt 0 -a -z "$VNCSESSION" -a "$screensaver_enabled" != "false"; then
+    screensaver_type=`xfconf-query -c xfce4-session -p /startup/screensaver/type`
+
+    case "$screensaver_type" in
+        xscreensaver)
+            xscreensaver -no-splash &
+            ;;
+
+        gnome-screensaver)
+            gnome-screensaver &
+            ;;
+
+        *)
+            if test x"`which xscreensaver 2>/dev/null`" != x""; then
+                xscreensaver -no-splash &
+            elif test x"`which gnome-screensaver 2>/dev/null`" != x""; then
+                gnome-screensaver &
+            fi
+            ;;
+    esac
+fi
+
+
+# launch gpg-agent or ssh-agent if enabled.
+ssh_agent_enabled=`xfconf-query -c xfce4-session -p /startup/ssh-agent/enabled`
+if test -z "$SSH_AGENT_PID" -a "$ssh_agent_enabled" != "false"; then
+    ssh_agent_type=`xfconf-query -c xfce4-session -p /startup/ssh-agent/type`
+
+    case "$ssh_agent_type" in
+        gpg-agent)
+            eval `gpg-agent --daemon --enable-ssh-support`
+            ssh_agent_kill_cmd="kill -INT $SSH_AGENT_PID"
+            ;;
+
+        ssh-agent)
+            eval `ssh-agent -s`
+            ssh_agent_kill_cmd="ssh-agent -k"
+            ;;
+
+        *)
+            if type gpg-agent >/dev/null 2>&1; then
+                eval `gpg-agent --daemon --enable-ssh-support`
+                ssh_agent_kill_cmd="kill -INT $SSH_AGENT_PID"
+            elif type ssh-agent >/dev/null 2>&1; then
+                eval `ssh-agent -s`
+                ssh_agent_kill_cmd="ssh-agent -k"
+            fi
+            ;;
+    esac
+fi
+
+
+# Run xfce4-session if installed
+if type xfce4-session >/dev/null 2>&1; then
+    xfce4-session
+
+    if test "$ssh_agent_kill_cmd"; then
+        $ssh_agent_kill_cmd
+    fi
+
+    exit 0
+fi
 
 
 ##################
@@ -222,8 +260,8 @@ EOF
 		;;
 esac
 
-if test $kill_sshagent -eq 1; then
-	eval `$sshagent -k`
+if test "$ssh_agent_kill_cmd"; then
+	$ssh_agent_kill_cmd
 fi
 
 xsetroot -bg white -fg red  -solid black -cursor_name watch
