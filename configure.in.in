@@ -8,13 +8,13 @@ dnl Huijsmans <jasper@xfce.org>, Benedikt Meurer <benny@xfce.org>
 dnl and Xavier MAILLARD <zedek@fxgsproject.org>.
 dnl
 
-m4_define([xfce_utils_version], [4.6.1])
+m4_define([xfce_utils_version], [4.7.0git])
 
 AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
 
-AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.6"], [Optional release plain name])
-AC_SUBST(RELEASE_LABEL)
+dnl AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.6"], [Optional release plain name])
+dnl AC_SUBST(RELEASE_LABEL)
 
 AM_CONFIG_HEADER([config.h])
 
