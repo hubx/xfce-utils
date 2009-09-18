@@ -1,3 +1,10 @@
+4.7.0
+=====
+
+- Add ability to enable/disable or change the type of screensaver and
+  ssh-agent using xfconf.
+
+
 4.6.1
 =====
 
