@@ -1,6 +1,7 @@
 4.7.0
 =====
 
+- Add support for starting gpg-agent.
 - Add ability to enable/disable or change the type of screensaver and
   ssh-agent using xfconf.
 
