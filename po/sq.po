@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.3.99.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-11-04 22:28+0200\n"
+"PO-Revision-Date: 2009-09-26 02:09+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <translation-team-sq@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -64,20 +64,17 @@ msgstr "Përkthyesa"
 
 #: ../xfce4-about/info.c:318
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Nëse dini ndonjë që i mungon kësaj liste, ju lutemi na e bëni të ditur <"
+msgstr "Nëse dini ndonjë që i mungon kësaj liste, ju lutemi na e bëni të ditur <"
 
 #: ../xfce4-about/info.c:322
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Falenderime për të gjithë ata që ndihmuan në realizimin e këtij software-i."
+msgstr "Falenderime për të gjithë ata që ndihmuan në realizimin e këtij software-i."
 
 #: ../xfce4-about/info.c:431
 msgid "About Xfce 4"
 msgstr "Rreth Xfce 4-s"
 
 #: ../xfce4-about/info.c:432
-#, fuzzy
 msgid "Copyright 2002-2009 by Olivier Fourdan"
 msgstr "Të Drejta Kopjimi 2002-2009 nga Olivier Fourdan"
 
@@ -117,9 +114,7 @@ msgstr "Mënyra daemon nuk mbulohet."
 
 #: ../xfrun/xfrun.c:53
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Për të bërë të mundur aktivizimin e mënyrës daemon Xfrun duhet përpiluar me "
-"mbulim të D-BUS-it."
+msgstr "Për të bërë të mundur aktivizimin e mënyrës daemon Xfrun duhet përpiluar me mbulim të D-BUS-it."
 
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
@@ -132,11 +127,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Busi i mesazheve D-BUS është shkëputur. Po dal ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Gabim Sistemi"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 #, fuzzy
 msgid "Unable to fork to background:"
 msgstr "I pazoti ta përthyejë drejt sfondit:"
@@ -173,8 +170,9 @@ msgstr "Xhiro program"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Përdoreni këtë sesion për të xhiruar Xfce-në su mjedisin tuaj dekstop"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesion Xfce"
+
