@@ -103,7 +103,7 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 # Use dbus-launch if installed.
 if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
     if type dbus-launch >/dev/null 2>&1; then
-		eval `$dbuslaunch --sh-syntax --exit-with-session`
+		eval `dbus-launch --sh-syntax --exit-with-session`
         # some older versions of dbus don't export the var properly
         export DBUS_SESSION_BUS_ADDRESS
     else
