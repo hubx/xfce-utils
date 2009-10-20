@@ -49,7 +49,7 @@ struct _XfrunDialogClass
     void (*closed)(XfrunDialog *dialog);
 };
 
-GType xfrun_dialog_get_type                        () G_GNUC_CONST;
+GType xfrun_dialog_get_type                        (void) G_GNUC_CONST;
 
 GtkWidget *xfrun_dialog_new                        (const gchar *run_argument);
 

@@ -46,7 +46,7 @@
 #endif
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/libxfcegui4.h>
+#include <libxfce4ui/libxfce4ui.h>
 
 #define SEARCHPATH	(DATADIR G_DIR_SEPARATOR_S "%F.%L:"	\
                          DATADIR G_DIR_SEPARATOR_S "%F.%l:"	\
@@ -66,7 +66,15 @@ static GtkWidget *info;
 static void
 info_help_cb (GtkWidget * w, gpointer data)
 {
-  xfce_exec ("xfhelp4", FALSE, FALSE, NULL);
+  GError *error = NULL;
+
+  if (!gdk_spawn_command_line_on_screen (gtk_widget_get_screen (w),
+                                         "xfhelp4", &error)) {
+    xfce_dialog_show_error (GTK_WINDOW (gtk_widget_get_toplevel (w)),
+                            error, "The command \"%s\" failed to run:",
+                            "xfhelp4");
+    g_error_free (error);
+  }
 }
 
 static gchar *
@@ -194,7 +202,8 @@ add_credits_page (GtkNotebook * notebook, const gchar * name, gboolean hscrollin
   file_authors = fopen (authors_filename, "r");
 
   if (!file_authors) {
-    xfce_err ("%s%s", _("Unable to load "), authors_filename);
+    xfce_dialog_show_error (GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (notebook))),
+                            NULL, _("Unable to load the file %s"), authors_filename);
     g_free (authors_filename);
     return;
   }
@@ -372,7 +381,9 @@ add_page (GtkNotebook * notebook, const gchar * name, const gchar * filename, gb
   }
 
   if (err != NULL) {
-    xfce_err ("%s", err->message);
+    xfce_dialog_show_error (GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (notebook))),
+                            err, _("Unable to load the file %s"),
+                            filename);
     g_error_free (err);
   }
   else {
@@ -412,7 +423,6 @@ main (int argc, char **argv)
   GtkWidget *buttonbox;
   GtkWidget *info_ok_button;
   GtkWidget *info_help_button;
-  GdkPixbuf *logo_pb;
 
   if(argc >= 2 && !strcmp (argv[1], "--xfce-version")) {
 #ifdef RELEASE_LABEL
@@ -431,11 +441,7 @@ main (int argc, char **argv)
   gtk_window_set_title (GTK_WINDOW (info), _("About Xfce 4"));
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (info), _("Copyright 2002-2009 by Olivier Fourdan"));
   gtk_dialog_set_has_separator (GTK_DIALOG (info), FALSE);
-  gtk_window_stick (GTK_WINDOW (info));
-
-  logo_pb = xfce_themed_icon_load ("xfce4-logo", 48);
-  gtk_window_set_icon (GTK_WINDOW (info), logo_pb);
-  g_object_unref (logo_pb);
+  gtk_window_set_icon_name (GTK_WINDOW (info), "xfce4-logo");
 
   vbox = gtk_vbox_new (FALSE, BORDER);
   gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER);
@@ -478,7 +484,7 @@ main (int argc, char **argv)
   g_signal_connect (info_ok_button, "clicked", G_CALLBACK (gtk_main_quit), NULL);
   g_signal_connect (info_help_button, "clicked", G_CALLBACK (info_help_cb), NULL);
 
-  xfce_gtk_window_center_on_monitor_with_pointer (GTK_WINDOW (info));
+  xfce_gtk_window_center_on_active_screen (GTK_WINDOW (info));
   gtk_widget_show (info);
 
   gtk_main ();

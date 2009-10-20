@@ -28,6 +28,10 @@
 #include <string.h>
 #endif
 
+#ifdef HAVE_UNISTD_H
+#include <unistd.h>
+#endif
+
 #ifdef HAVE_STDLIB_H
 #include <stdlib.h>
 #endif
@@ -37,9 +41,9 @@
 #endif
 
 #include <gtk/gtk.h>
-
+#include <gdk/gdkx.h>
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/libxfcegui4.h>
+#include <libxfce4ui/libxfce4ui.h>
 
 #include <dbus/dbus.h>
 #include <dbus/dbus-glib.h>
@@ -134,7 +138,6 @@ xfrun_handle_dbus_message(DBusConnection *connection,
             dbus_error_free(&derror);
         } else {
             GdkDisplay *gdpy;
-            GdkScreen *gscreen = NULL;
             
             gdpy = xfrun_find_or_open_display(display_name);
             if(!gdpy) {
@@ -146,8 +149,6 @@ xfrun_handle_dbus_message(DBusConnection *connection,
                 g_free(msgstr);
             } else {
                 GtkWidget *dialog;
-                
-                gscreen = gdk_display_get_default_screen(gdpy);
                 
                 if(!strlen(run_argument))
                     run_argument = NULL;
@@ -172,8 +173,7 @@ xfrun_handle_dbus_message(DBusConnection *connection,
                 }
                 
                 /* this handles setting the dialog to the right screen */
-                xfce_gtk_window_center_on_monitor(GTK_WINDOW(dialog),
-                                                  gscreen, 0);
+                xfce_gtk_window_center_on_active_screen(GTK_WINDOW(dialog));
                 xfrun_dialog_select_text(XFRUN_DIALOG(dialog));
                 gtk_widget_show(dialog);
             
@@ -393,7 +393,7 @@ main(int argc,
                                               TRUE);
             g_signal_connect(G_OBJECT(fallback_dialog), "destroy",
                              G_CALLBACK(gtk_main_quit), NULL);
-            xfce_gtk_window_center_on_monitor_with_pointer(GTK_WINDOW(fallback_dialog));
+            xfce_gtk_window_center_on_active_screen(GTK_WINDOW(fallback_dialog));
             gtk_widget_show(fallback_dialog);
             
             gtk_main();

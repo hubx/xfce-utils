@@ -36,7 +36,8 @@
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 
-#include <libxfcegui4/libxfcegui4.h>
+#include <libxfce4util/libxfce4util.h>
+#include <libxfce4ui/libxfce4ui.h>
 
 #include "xfrun-dialog.h"
 
@@ -76,6 +77,7 @@ enum
     XFRUN_COL_IN_TERMINAL,
     XFRUN_N_COLS,
 };
+
 
 static void xfrun_dialog_set_property(GObject *object,
                                       guint property_id,
@@ -203,7 +205,7 @@ xfrun_dialog_init(XfrunDialog *dialog)
     g_signal_connect_swapped(G_OBJECT(btn), "clicked",
                              G_CALLBACK(xfrun_dialog_delete_event), dialog);
     
-    btn = xfce_create_mixed_button(GTK_STOCK_EXECUTE, _("_Run"));
+    btn = xfce_gtk_button_new_mixed(GTK_STOCK_EXECUTE, _("_Run"));
     gtk_widget_show(btn);
     gtk_box_pack_end(GTK_BOX(bbox), btn, FALSE, FALSE, 0);
     GTK_WIDGET_SET_FLAGS(btn, GTK_CAN_DEFAULT);
@@ -525,11 +527,11 @@ xfrun_run_clicked(GtkWidget *widget,
         g_shell_parse_argv(cmdline, &argc, &argv, &error);
     }
     
-    if(argv && xfce_gdk_spawn_on_screen(gscreen,
-                                        dialog->priv->working_directory,
-                                        argv, NULL, G_SPAWN_SEARCH_PATH,
-                                        xfrun_spawn_child_setup, NULL, NULL,
-                                        &error))
+    if(argv && gdk_spawn_on_screen(gscreen,
+                                   dialog->priv->working_directory,
+                                   argv, NULL, G_SPAWN_SEARCH_PATH,
+                                   xfrun_spawn_child_setup, NULL, NULL,
+                                   &error))
     {
         xfrun_add_to_history(cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);

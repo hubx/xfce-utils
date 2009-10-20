@@ -29,7 +29,6 @@
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/libxfcegui4.h>
 
 #include "xfrun-dialog.h"
 
@@ -58,7 +57,7 @@ main(int argc,
     }
     
     dialog = xfrun_dialog_new(run_argument);
-    xfce_gtk_window_center_on_monitor_with_pointer(GTK_WINDOW(dialog));
+    xfce_gtk_window_center_on_active_screen(GTK_WINDOW(dialog));
     gtk_widget_show(dialog);
     g_signal_connect(G_OBJECT(dialog), "closed",
                      G_CALLBACK(gtk_main_quit), NULL);
