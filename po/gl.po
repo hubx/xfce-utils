@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2009-08-19 12:52+0100\n"
+"PO-Revision-Date: 2009-11-13 14:03+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgstr "Debe compilarse xfrun con soporte para D-BUS para activar o modo daemon.
 #: ../xfrun/xfrun-dbus.c:141
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "Non foi posible abrir a pantalla \"%s\"."
 
 #: ../xfrun/xfrun-dbus.c:200
 #, c-format
@@ -141,7 +141,7 @@ msgstr "Erro do sistema"
 #: ../xfrun/xfrun-dbus.c:344
 #: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "Non foi posible crear un novo proceso en segundo plano:"
 
 #: ../xfrun/xfrun-dialog.c:188
 msgid "Run in _terminal"
