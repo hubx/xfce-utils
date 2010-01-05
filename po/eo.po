@@ -79,8 +79,8 @@ msgstr "Pri Xfce 4"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Aŭtorrajto (C) 2002-2009 de Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Aŭtorrajto (C) 2002-2010 de Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

@@ -79,8 +79,8 @@ msgid "About Xfce 4"
 msgstr "O środowisku Xfce"
 
 #: ../xfce4-about/info.c:430
-msgid "Copyright 2002-2008 by Olivier Fourdan"
-msgstr "Copyright 2002-2008 by Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Copyright 2002-2010 by Olivier Fourdan"
 
 #: ../xfce4-about/info.c:453
 msgid "Info"

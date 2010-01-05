@@ -79,8 +79,8 @@ msgid "About Xfce 4"
 msgstr "Περί Xfce 4"
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Πνευματικά δικαιώματα 2002-2009 από τον Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Πνευματικά δικαιώματα 2002-2010 από τον Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

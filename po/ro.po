@@ -1,5 +1,5 @@
 # Romanian translation of xfce-utils.
-# Copyright (C) 2002-2009 The Xfce development team.
+# Copyright (C) 2002-2010 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Mișu Moldovan <dumol@xfce.org>, 2004-2009.
 #
@@ -79,8 +79,8 @@ msgid "About Xfce 4"
 msgstr "Despre Xfce 4"
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Drepturi de autor 2002-2009, Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Drepturi de autor 2002-2010, Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

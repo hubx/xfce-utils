@@ -80,8 +80,8 @@ msgid "About Xfce 4"
 msgstr "Quant a Xfce 4"
 
 #: ../xfce4-about/info.c:432
-msgid "Copyright 2002-2009 by Olivier Fourdan"
-msgstr "Copyright 2002-2009 d'Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Copyright 2002-2010 d'Olivier Fourdan"
 
 #: ../xfce4-about/info.c:455
 msgid "Info"

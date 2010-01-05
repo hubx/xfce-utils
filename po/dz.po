@@ -81,7 +81,7 @@ msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་༤གི་སྐོར
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
 msgstr "ཨོ་ལི་བར་ཕོར་ཌེན་གིས་འདྲ་བཤུས་དབང་ཆ་༢༠༠༢-༢༠༠༦"
 
 #: ../xfce4-about/info.c:455

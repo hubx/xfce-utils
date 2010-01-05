@@ -78,7 +78,7 @@ msgstr "Xfce 4 পরিচিতি"
 
 #: ../xfce4-about/info.c:432
 #, fuzzy
-msgid "Copyright 2002-2009 by Olivier Fourdan"
+msgid "Copyright 2002-2010 by Olivier Fourdan"
 msgstr "সত্ত্বাধিকার ২০০২-২০০৪ অলিভার ফোর্ডেন"
 
 #: ../xfce4-about/info.c:455
