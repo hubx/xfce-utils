@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Copyright (C) 2002-2008 The Xfce Development Team.
 # Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2008.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"POT-Creation-Date: 2010-01-20 18:03+0100\n"
 "PO-Revision-Date: 2008-12-13 16:33+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -15,155 +15,155 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:197
-msgid "Unable to load "
-msgstr "Ei voi ladata kohdetta "
+#: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr "Ei voi ladata tiedostoa %s"
 
 #. Project lead
-#: ../xfce4-about/info.c:226
+#: ../xfce4-about/info.c:235
 msgid "Project Lead"
 msgstr "Projektin vetäjä"
 
 #. Core developers
-#: ../xfce4-about/info.c:230
+#: ../xfce4-about/info.c:239
 msgid "Core developers"
 msgstr "Pääkehittäjät"
 
 #. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/info.c:243
 msgid "Active contributors"
 msgstr "Aktiiviset kehittäjät"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:238
+#: ../xfce4-about/info.c:247
 msgid "Previous contributors"
 msgstr "Aikaisemmat kehittäjät"
 
-#: ../xfce4-about/info.c:243
+#: ../xfce4-about/info.c:252
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Web-sivutilan ja postituslistat tarjoaa"
 
 #. Server admins
-#: ../xfce4-about/info.c:275
+#: ../xfce4-about/info.c:284
 msgid "Server maintained by"
 msgstr "Palvelimen ylläpitäjä"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/info.c:288
 msgid "Goodies supervision"
 msgstr "Goodies-projektin ohjaus"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/info.c:292
 msgid "Translations supervision"
 msgstr "Käännöstyön ohjaus"
 
 #. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/info.c:296
 msgid "Translators"
 msgstr "Kääntäjät"
 
-#: ../xfce4-about/info.c:318
+#: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
 
-#: ../xfce4-about/info.c:322
+#: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
+msgstr "Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
 
-#: ../xfce4-about/info.c:431
+#: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
 msgstr "Tietoja Xfce 4:stä"
 
-#: ../xfce4-about/info.c:432
+#: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
 msgstr "Tekijänoikeus 2002-2010 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:461
 msgid "Info"
 msgstr "Tietoja"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:463
 msgid "Credits"
 msgstr "Tekijät"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:464
 msgid "Copyright"
 msgstr "Tekijänoikeus"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:465
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:460
+#: ../xfce4-about/info.c:466
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
 msgstr "Taustaprosessitila"
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Daemon mode is not supported."
 msgstr "Taustaprosessitilaa ei tueta."
 
-#: ../xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "Taustaprosessitila edellyttää, että Xfrun on käännetty D-BUS -tuella."
 
-#: ../xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:144
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Ei voi avata näyttöä \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS -viestiväylä katkaistu. Poistutaan...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "Järjestelmävirhe"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
 msgstr "Ei voi haarautua taustalle:"
 
-#: ../xfrun/xfrun-dialog.c:188
+#: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
 msgstr "Suorita p_äätteessä"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: ../xfrun/xfrun-dialog.c:208
 msgid "_Run"
 msgstr "_Suorita"
 
-#: ../xfrun/xfrun-dialog.c:540
+#: ../xfrun/xfrun-dialog.c:539
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Komennon \"%s\" suoritus epäonnistui:"
 
-#: ../xfrun/xfrun-dialog.c:542
+#: ../xfrun/xfrun-dialog.c:541
 msgid "Run Error"
 msgstr "Suoritusvirhe"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: ../xfrun/xfrun-dialog.c:543
 msgid "Unknown Error"
 msgstr "Tuntematon virhe"
 
-#: ../xfrun/xfrun-dialog.c:631
+#: ../xfrun/xfrun-dialog.c:630
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
 
-#: ../xfrun/xfrun-dialog.c:636
+#: ../xfrun/xfrun-dialog.c:635
 msgid "Run program"
 msgstr "Suorita ohjelma"
 
