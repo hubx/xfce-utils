@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-26 18:03+0100\n"
+"POT-Creation-Date: 2010-02-01 12:04+0100\n"
 "PO-Revision-Date: 2006-08-13 17:39+0600\n"
 "Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -83,7 +83,7 @@ msgstr "Об Xfce 4"
 
 #: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr "Авторское право: Olivier Fourdan, 2002-2010"
+msgstr "Авторское право: Olivier Fourdan (Оливье Фурдан), 2002-2010"
 
 #: ../xfce4-about/info.c:461
 msgid "Info"
@@ -131,7 +131,7 @@ msgstr "Невозможно открыть экран \"%s\"."
 #: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Канал сообщений D-BUS разсоединён. Выход ...\n"
+msgstr "Отключение от шины D-BUS. Выход ...\n"
 
 #. failed
 #: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
@@ -140,7 +140,7 @@ msgstr "Системная ошибка"
 
 #: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
-msgstr "Невозможно переместить процесс в фоновый режим:"
+msgstr "Невозможно перевести процесс в фоновый режим:"
 
 #: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
@@ -174,11 +174,11 @@ msgstr "Запуск программы"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Используйте данную сессию для запуска Xfce как своего рабочего стола"
+msgstr "Используйте данный сеанс для запуска Xfce как своего рабочего стола"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Сессия Xfce"
+msgstr "Сеанс Xfce"
 
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "Рабочая среда Xfce"
