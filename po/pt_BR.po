@@ -44,7 +44,7 @@ msgstr "Contribuidores anteriores"
 
 #: ../xfce4-about/info.c:252
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr "Hospedagem Web e Listas de E-mail providenciadas por "
+msgstr "Hospedagem web e listas de discussão providenciadas por "
 
 #. Server admins
 #: ../xfce4-about/info.c:284
