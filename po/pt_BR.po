@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-13 12:04+0100\n"
+"POT-Creation-Date: 2010-02-04 12:04+0100\n"
 "PO-Revision-Date: 2009-01-15 08:57-0500\n"
 "Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <xfce-i18n@xfce.org>\n"
@@ -68,11 +68,11 @@ msgstr "Tradutores"
 
 #: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Se você sabe de alguém que está faltando nesta lista, por favor faça-nos saber em <"
+msgstr "Se você sabe de alguém que está faltando nesta lista, por favor nos informe em <"
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr "Obrigado a todos que ajudaram a fazer este software disponível."
+msgstr "Obrigado a todos que ajudaram a tornar este software disponível."
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
