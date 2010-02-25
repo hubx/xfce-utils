@@ -23,6 +23,8 @@ if test x"`which xscreensaver-command 2>/dev/null`" != x""; then
     xscreensaver-command -lock 
 elif test x"`which gnome-screensaver-command 2>/dev/null`" != x""; then
     gnome-screensaver-command --lock
+elif test x"`which slock 2>/dev/null`" != x""; then
+   slock
 else
     xlock $*
 fi
