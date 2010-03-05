@@ -7,165 +7,163 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"POT-Creation-Date: 2010-03-05 06:04+0100\n"
 "PO-Revision-Date: 2007-12-15 13:37+0200\n"
-"Last-Translator:  Dmitry Nikitin <luckas_fb@mail.ru>\n"
+"Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:197
-msgid "Unable to load "
-msgstr "Не вдається завантажити"
+#: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr "Не вдається завантажити файл %s"
 
 #. Project lead
-#: ../xfce4-about/info.c:226
+#: ../xfce4-about/info.c:235
 msgid "Project Lead"
 msgstr "Лідер проекту"
 
 #. Core developers
-#: ../xfce4-about/info.c:230
+#: ../xfce4-about/info.c:239
 msgid "Core developers"
 msgstr "Головні розробники"
 
 #. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/info.c:243
 msgid "Active contributors"
 msgstr "Активні помічники"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:238
+#: ../xfce4-about/info.c:247
 msgid "Previous contributors"
 msgstr "Попередні помічники"
 
-#: ../xfce4-about/info.c:243
+#: ../xfce4-about/info.c:252
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Веб-хостінг та списки розсилки надані"
 
 #. Server admins
-#: ../xfce4-about/info.c:275
+#: ../xfce4-about/info.c:284
 msgid "Server maintained by"
 msgstr "Сервер підтримується"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/info.c:288
 msgid "Goodies supervision"
 msgstr "Координація розробки доповнень"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/info.c:292
 msgid "Translations supervision"
 msgstr "Координація перекладів"
 
 #. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/info.c:296
 msgid "Translators"
 msgstr "Перекладачі"
 
-#: ../xfce4-about/info.c:318
+#: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, "
-"дайте нам знати за адресою <"
+msgstr "Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, дайте нам знати за адресою <"
 
-#: ../xfce4-about/info.c:322
+#: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
 msgstr "Дякуємо усім, хто допоміг зробити це програмне забезпечення."
 
-#: ../xfce4-about/info.c:431
+#: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
 msgstr "Про XFce 4"
 
-#: ../xfce4-about/info.c:432
+#: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
 msgstr "Авторські права 2002-2010, Olivier Fourdan"
 
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:461
 msgid "Info"
 msgstr "Інформація"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:463
 msgid "Credits"
 msgstr "Подяки"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:464
 msgid "Copyright"
 msgstr "Авторські права"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:465
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:460
+#: ../xfce4-about/info.c:466
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
 msgstr "Режим служби"
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Daemon mode is not supported."
 msgstr "Режим служби не підтримується."
 
-#: ../xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
+msgstr "Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
-#: ../xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:144
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Неможливо відкрити екран \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Канал повідомлень D-BUS роз'єднаний. Вихід ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "Системна помилка"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
 msgstr "Не вдається перемістити процес у фоновий режим:"
 
-#: ../xfrun/xfrun-dialog.c:188
+#: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
 msgstr "Запустити у _терміналі"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: ../xfrun/xfrun-dialog.c:208
 msgid "_Run"
 msgstr "_Запустити"
 
-#: ../xfrun/xfrun-dialog.c:540
+#: ../xfrun/xfrun-dialog.c:539
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Помилка запуску команди \"%s\":"
 
-#: ../xfrun/xfrun-dialog.c:542
+#: ../xfrun/xfrun-dialog.c:541
 msgid "Run Error"
 msgstr "Помилка запуску"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: ../xfrun/xfrun-dialog.c:543
 msgid "Unknown Error"
 msgstr "Невідома помилка"
 
-#: ../xfrun/xfrun-dialog.c:631
+#: ../xfrun/xfrun-dialog.c:630
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Якою програмою відкрити %s?"
 
-#: ../xfrun/xfrun-dialog.c:636
+#: ../xfrun/xfrun-dialog.c:635
 msgid "Run program"
 msgstr "Запуск програми"
 
