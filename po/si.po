@@ -75,11 +75,11 @@ msgstr "මෙම මෘදුකාංගය නිකුත් කිරීම
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
-msgstr "Xfce 4 ගැන"
+msgstr "Xfce 4 පිළිබඳ"
 
 #: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "ප්‍රතිරූපණ අයිතිය 2002-2010 ඔලිවියේර් පදනම"
 
 #: ../xfce4-about/info.c:461
 msgid "Info"
