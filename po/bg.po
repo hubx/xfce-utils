@@ -7,172 +7,174 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2005-08-17 21:11+0900\n"
-"Last-Translator: Miroslav Yordanov <miordanov@i-space.org>\n"
+"POT-Creation-Date: 2010-03-24 18:04+0100\n"
+"PO-Revision-Date: 2010-03-24 23:12+0200\n"
+"Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:197
-msgid "Unable to load "
-msgstr ""
+#: ../xfce4-about/info.c:206
+#: ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr "Не може да се отвори файла „%s“"
 
 #. Project lead
-#: ../xfce4-about/info.c:226
+#: ../xfce4-about/info.c:235
 msgid "Project Lead"
-msgstr ""
+msgstr "Водач на проекта"
 
 #. Core developers
-#: ../xfce4-about/info.c:230
+#: ../xfce4-about/info.c:239
 msgid "Core developers"
-msgstr ""
+msgstr "Основни разработчици"
 
 #. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/info.c:243
 msgid "Active contributors"
-msgstr ""
+msgstr "Активни сътрудници"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:238
+#: ../xfce4-about/info.c:247
 msgid "Previous contributors"
-msgstr ""
+msgstr "Предишни сътрудници"
 
-#: ../xfce4-about/info.c:243
+#: ../xfce4-about/info.c:252
 msgid "Web Hosting and Mailing Lists provided by"
-msgstr ""
+msgstr "Уеб хост и пощенски списъци предоставени от"
 
 #. Server admins
-#: ../xfce4-about/info.c:275
+#: ../xfce4-about/info.c:284
 msgid "Server maintained by"
-msgstr ""
+msgstr "Сървър поддържан от"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/info.c:288
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Управление на екстрите"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/info.c:292
 msgid "Translations supervision"
-msgstr ""
+msgstr "Управление на преводите"
 
 #. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/info.c:296
 msgid "Translators"
-msgstr ""
+msgstr "Преводачи"
 
-#: ../xfce4-about/info.c:318
+#: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr ""
 
-#: ../xfce4-about/info.c:322
+#: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
 msgstr ""
 
-#: ../xfce4-about/info.c:431
-#, fuzzy
+#: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
-msgstr "Относно XFce 4"
+msgstr "Относно Xfce 4"
 
-#: ../xfce4-about/info.c:432
-#, fuzzy
+#: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr "Запазена марка 2002-2010·на·Olivier·Fourdan"
+msgstr "Авторски права 2002-2010·на·Olivier·Fourdan"
 
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:461
 msgid "Info"
 msgstr "Информация"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:463
 msgid "Credits"
-msgstr "Кредити"
+msgstr "Заслуги"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:464
 msgid "Copyright"
-msgstr "Запазана марка"
+msgstr "Авторски права"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:465
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:460
+#: ../xfce4-about/info.c:466
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
 msgstr ""
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Daemon mode is not supported."
 msgstr ""
 
-#: ../xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 
-#: ../xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:144
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr ""
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:201
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr ""
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
-msgstr ""
+msgstr "Системна грешка"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:345
+#: ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
 msgstr ""
 
-#: ../xfrun/xfrun-dialog.c:188
+#: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
-msgstr "Стартира в терминал"
+msgstr "Изпълнение в терминал"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: ../xfrun/xfrun-dialog.c:208
 msgid "_Run"
-msgstr "_Стартира"
+msgstr "_Изпълнение"
 
-#: ../xfrun/xfrun-dialog.c:540
+#: ../xfrun/xfrun-dialog.c:539
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr ""
 
-#: ../xfrun/xfrun-dialog.c:542
+#: ../xfrun/xfrun-dialog.c:541
 #, fuzzy
 msgid "Run Error"
 msgstr "Стартира програма"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: ../xfrun/xfrun-dialog.c:543
 #, fuzzy
 msgid "Unknown Error"
 msgstr "Стартира програма"
 
-#: ../xfrun/xfrun-dialog.c:631
+#: ../xfrun/xfrun-dialog.c:630
 #, c-format
 msgid "Open %s with what program?"
-msgstr ""
+msgstr "Отваряне на %s с коя програма?"
 
-#: ../xfrun/xfrun-dialog.c:636
+#: ../xfrun/xfrun-dialog.c:635
 msgid "Run program"
-msgstr "Стартира програма"
+msgstr "Изпълнение на програма"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Използвайте тази сесия за изпълнение на Xfce като ваша графична среда"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
@@ -181,3 +183,4 @@ msgstr ""
 #, fuzzy
 #~ msgid "Xfce Desktop Environment"
 #~ msgstr "XFce·десктоп среда"
+
