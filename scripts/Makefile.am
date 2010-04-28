@@ -32,6 +32,11 @@ xfhelp4: Makefile $(srcdir)/xfhelp4.in
 	$(edit) $(srcdir)/xfhelp4.in >xfhelp4.tmp
 	mv xfhelp4.tmp xfhelp4
 
+desktopdir = $(datadir)/applications
+desktop_in_files = xfhelp4.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
 xinitrc: Makefile $(srcdir)/xinitrc.in
 	rm -f xinitrc xinitrc.tmp
 	$(edit) $(srcdir)/xinitrc.in >xinitrc.tmp
@@ -63,6 +68,7 @@ endif
 EXTRA_DIST = \
 	$(scripts) \
 	$(conffiles_DATA) \
+	$(desktop_in_files) \
 	xfbrowser4.in \
 	startxfce4.in \
 	xfhelp4.in \
@@ -71,6 +77,7 @@ EXTRA_DIST = \
 	xfconf-migration-4.6.pl.in
 
 DISTCLEANFILES = \
+	$(desktop_DATA) \
 	xfhelp4 \
 	startxfce4 \
 	xfbrowser4 \

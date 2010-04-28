@@ -32,6 +32,15 @@ xfce4_about_CFLAGS =							\
 xfce4_about_LDADD =							\
 	@LIBXFCE4UI_LIBS@
 
+desktopdir = $(datadir)/applications
+desktop_in_files = xfce4-about.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
 EXTRA_DIST = 								\
-	$(about_DATA)
+	$(about_DATA)							\
+	$(desktop_in_files)
+
+DISTCLEANFILES = 							\
+	$(desktop_DATA)
 
