@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-14 12:04+0100\n"
+"POT-Creation-Date: 2010-04-29 10:04+0000\n"
 "PO-Revision-Date: 2009-06-14 02:40+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Chinese/Simplified <xfce-i18n@xfce.org>\n"
@@ -110,6 +110,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "关于 Xfce "
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Xfce 桌面环境信息"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -172,6 +180,14 @@ msgstr "用什么程序打开 %s ?"
 msgid "Run program"
 msgstr "运行程序"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "运行程序..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "运行程序"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "使用此会话运行 Xfce 作为您默认的桌面环境"
@@ -180,5 +196,10 @@ msgstr "使用此会话运行 Xfce 作为您默认的桌面环境"
 msgid "Xfce Session"
 msgstr "Xfce 会话"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Xfce 桌面环境"
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "帮助"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "使用 Xfce 的帮助"
