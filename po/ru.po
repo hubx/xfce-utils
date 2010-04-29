@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-01 12:04+0100\n"
+"POT-Creation-Date: 2010-04-28 22:04+0000\n"
 "PO-Revision-Date: 2006-08-13 17:39+0600\n"
 "Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -110,6 +110,16 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+#, fuzzy
+msgid "About Xfce"
+msgstr "Об Xfce 4"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+#, fuzzy
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Рабочая среда Xfce"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -172,6 +182,16 @@ msgstr "Какой программой открыть %s?"
 msgid "Run program"
 msgstr "Запуск программы"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+#, fuzzy
+msgid "Run Program..."
+msgstr "Запуск программы"
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+#, fuzzy
+msgid "Run a program"
+msgstr "Запуск программы"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "Используйте данный сеанс для запуска Xfce как своего рабочего стола"
@@ -180,5 +200,10 @@ msgstr "Используйте данный сеанс для запуска Xfc
 msgid "Xfce Session"
 msgstr "Сеанс Xfce"
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Рабочая среда Xfce"
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Справка"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Справка по использованию Xfce"
