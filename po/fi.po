@@ -1,14 +1,14 @@
 # Translation of xfce-utils into Finnish.
 # This file is distributed under the same license as the xfce-utils package.
 # Copyright (C) 2002-2008 The Xfce Development Team.
-# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2008.
+# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2005-2010.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-20 18:03+0100\n"
-"PO-Revision-Date: 2008-12-13 16:33+0200\n"
+"POT-Creation-Date: 2010-04-30 04:04+0000\n"
+"PO-Revision-Date: 2010-04-30 09:48+0300\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,8 @@ msgstr "Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr "Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
+msgstr ""
+"Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
@@ -104,6 +105,14 @@ msgstr "LGPL"
 #: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Tietoja Xfce:stä"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Tietoja Xfce-työpöytäympäristöstä"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
@@ -165,7 +174,15 @@ msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
 
 #: ../xfrun/xfrun-dialog.c:635
 msgid "Run program"
-msgstr "Suorita ohjelma"
+msgstr "Käynnistä ohjelma"
+
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Käynnistä ohjelma..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Käynnistä ohjelma"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
@@ -174,3 +191,11 @@ msgstr "Valitse tämä istunto, kun haluat käyttää Xfce-työpöytäympärist�
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce-istunto"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Ohje"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Ohjeita Xfce:n käyttöön"
