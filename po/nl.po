@@ -3,24 +3,30 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Jasper Huijsmans <jasper@xfce.org>, 2004.
 # Vincent Tunru <imnotb@gmail.com>, 2006.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
-"Report-Msgid-Bugs-To: http://bugzilla.xfce.org\n"
-"POT-Creation-Date: 2010-01-10 11:03+0000\n"
-"PO-Revision-Date: 2006-02-02 17:31+0100\n"
-"Last-Translator: Stephan Arts <psybsd@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-30 10:04+0000\n"
+"PO-Revision-Date: 2010-04-30 16:20+0100\n"
+"Last-Translator: Vincent Tunru <projects@vinnl.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Project lead
+#: ../xfce4-about/info.c:206
+#: ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr "Fout bij laden van het bestand %s"
+
 # Lead could be more things I believe
+#. Project lead
 #: ../xfce4-about/info.c:235
 msgid "Project Lead"
-msgstr "Project leiding"
+msgstr "Projectleiding"
 
 #. Core developers
 #: ../xfce4-about/info.c:239
@@ -73,6 +79,10 @@ msgstr "Bedankt iedereen die geholpen heeft bij het ontwikkelen van deze softwar
 msgid "About Xfce 4"
 msgstr "Over Xfce 4"
 
+#: ../xfce4-about/info.c:442
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr "Copyright 2002-2010 door Olivier Fourdan"
+
 #: ../xfce4-about/info.c:461
 msgid "Info"
 msgstr "Info"
@@ -98,6 +108,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Over Xfce"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Informatie over de Xfce bureaubladomgeving"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -122,9 +140,15 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Verbinding met D-BUS berichten bus verbroken. Sluiten...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
+#: ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "Systeem Fout"
+
+#: ../xfrun/xfrun-dbus.c:345
+#: ../xfrun/xfrun-dbus.c:356
+msgid "Unable to fork to background:"
+msgstr "Kan niet naar achtergrond afsplitsen:"
 
 #: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
@@ -156,6 +180,14 @@ msgstr "Open %s met welk programma?"
 msgid "Run program"
 msgstr "Programma uitvoeren"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Programma uitvoeren..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Programma uitvoeren"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "Gebruik deze sessie om Xfce op te starten"
@@ -164,19 +196,11 @@ msgstr "Gebruik deze sessie om Xfce op te starten"
 msgid "Xfce Session"
 msgstr "Xfce Sessie"
 
-#: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
-#, c-format
-msgid "Unable to load the file %s"
-msgstr "Fout bij laden van het bestand %s"
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Hulp"
 
-#: ../xfce4-about/info.c:442
-msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr "Copyright 2002-2010 door Olivier Fourdan"
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Hulp bij het gebruik van Xfce"
 
-#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
-#, fuzzy
-msgid "Unable to fork to background:"
-msgstr "Kan niet  naar achtergrond"
-
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "Xfce Bureaublad Omgeving"
