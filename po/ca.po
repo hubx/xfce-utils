@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
-"Report-Msgid-Bugs-To: http://bugzilla.xfce.org\n"
-"POT-Creation-Date: 2010-01-06 17:03+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-04 16:04+0000\n"
 "PO-Revision-Date: 2010-01-06 18:56+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: catalan\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Catalan\n"
-"X-Poedit-Country: ANDORRA\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: ANDORRA\n"
 
 #: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
 #, c-format
@@ -71,9 +71,7 @@ msgstr "Traductors"
 
 #: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr ""
-"Si sabeu d'algú que hauria d'aparèixer a aquest llista, si us plau, feu-nos-"
-"lo saber a <"
+msgstr "Si sabeu d'algú que hauria d'aparèixer a aquest llista, si us plau, feu-nos-lo saber a <"
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
@@ -112,6 +110,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Quant a Xfce"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Informació sobre l'entorn d'escriptori Xfce"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -123,8 +129,7 @@ msgstr "El mode dimoni no està suportat"
 
 #: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
+msgstr "Xfrun s’ha de compilar amb suport per D-BUS per habilitat el mode dimoni"
 
 #: ../xfrun/xfrun-dbus.c:144
 #, c-format
@@ -175,11 +180,26 @@ msgstr "Amb quin programa voleu obrir «%s»?"
 msgid "Run program"
 msgstr "Executa el programa"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Executa el programa…"
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Executa un programa"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
-"Empra aquest sessió per executar l'Xfce com el vostre entorn d'escriptori"
+msgstr "Empra aquest sessió per executar l'Xfce com el vostre entorn d'escriptori"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Sessió Xfce"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Ajuda de Xfce"
