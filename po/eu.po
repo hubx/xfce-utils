@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-03 00:03+0100\n"
+"POT-Creation-Date: 2010-05-05 04:04+0000\n"
 "PO-Revision-Date: 2008-12-08 23:23+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
@@ -110,6 +110,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "XFce-ri buruz"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Xfce mahaigain inguruneari buruzko argibideak"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -172,6 +180,14 @@ msgstr "Zein programekin ireki %s?"
 msgid "Run program"
 msgstr "Programa abiarazi"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Programa abiarazi..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Programa abiarazi"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "Saio hau erabili Xfce idazmahai ingurune bezala erabiltzeko"
@@ -179,3 +195,11 @@ msgstr "Saio hau erabili Xfce idazmahai ingurune bezala erabiltzeko"
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce saioa"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Laguntza"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Lagundu Xfce erabiltzen"
