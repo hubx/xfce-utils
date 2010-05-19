@@ -1,0 +1,180 @@
+# $Id$
+#
+# Uyghur translations for xfce-utils package.
+# Copyright (C) 2002-2007 The Xfce development team.
+# This file is distributed under the same license as the xfce-utils package.
+# Gheyret T.Kenji <gheyret@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-utils 4.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-06 17:18+0900\n"
+"PO-Revision-Date: 2010-01-06 17:18+0900\n"
+"Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
+"Language-Team:Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr ""
+
+#. Project lead
+#: ../xfce4-about/info.c:235
+msgid "Project Lead"
+msgstr "Project باشلىقى"
+
+#. Core developers
+#: ../xfce4-about/info.c:239
+msgid "Core developers"
+msgstr "ئاساسلىق ئىجادىيەتچىلەر"
+
+#. Active contributors
+#: ../xfce4-about/info.c:243
+msgid "Active contributors"
+msgstr "ئاكتىپ تۆھپىكارلار"
+
+#. Previous contributors
+#: ../xfce4-about/info.c:247
+msgid "Previous contributors"
+msgstr "بۇرۇنقى تۆھپىكارلار"
+
+#: ../xfce4-about/info.c:252
+msgid "Web Hosting and Mailing Lists provided by"
+msgstr "تور مۇلازىمىتى ۋە ئېلخەت گۇرۇپپىسىنى تەمىنلىگۈچى"
+
+#. Server admins
+#: ../xfce4-about/info.c:284
+msgid "Server maintained by"
+msgstr "مۇلازىمېتىر باشقۇرغۇچى"
+
+#. Goodies supervision
+#: ../xfce4-about/info.c:288
+msgid "Goodies supervision"
+msgstr "Goodies يېتەكچىسى"
+
+#. Translations supervision
+#: ../xfce4-about/info.c:292
+msgid "Translations supervision"
+msgstr "تەرجىمە يېتەكچىسى"
+
+#. Translators
+#: ../xfce4-about/info.c:296
+msgid "Translators"
+msgstr "تەرجىمانلار"
+
+# FIXME: needs C format string
+#: ../xfce4-about/info.c:327
+msgid "If you know of anyone missing from this list, please let us know on <"
+msgstr "ئەگەر چۈشۈپ قالغانلار بولسا، تۆۋەندىكى ئېلخەتكە خەۋەر قىلىڭ:\n"
+"<"
+
+#: ../xfce4-about/info.c:331
+msgid "Thanks to all who helped making this software available."
+msgstr "Xfce 4 نى ئىشلەتكىلى بولىدىغان قىلىشقا كۈچ چىقارغانلار تەشەككۈر"
+
+#: ../xfce4-about/info.c:441
+msgid "About Xfce 4"
+msgstr "Xfce 4 ھەققىدە"
+
+#: ../xfce4-about/info.c:442
+msgid "Copyright 2002-2010 by Olivier Fourdan"
+msgstr ""
+
+#: ../xfce4-about/info.c:461
+msgid "Info"
+msgstr "ئۇچۇر"
+
+#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
+#: ../xfce4-about/info.c:463
+msgid "Credits"
+msgstr "提供"
+
+#: ../xfce4-about/info.c:464
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../xfce4-about/info.c:465
+msgid "BSDL"
+msgstr "BSDL"
+
+#: ../xfce4-about/info.c:466
+msgid "LGPL"
+msgstr "LGPL"
+
+#: ../xfce4-about/info.c:467
+msgid "GPL"
+msgstr "GPL"
+
+#. we don't support daemon mode
+#: ../xfrun/xfrun.c:49
+msgid "Daemon Mode"
+msgstr "Daemon ھالىتى"
+
+#: ../xfrun/xfrun.c:51
+msgid "Daemon mode is not supported."
+msgstr "Daemon ھالىتىنى ئىشلەتكىلى بولمايدۇ"
+
+#: ../xfrun/xfrun.c:52
+msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
+msgstr "Daemon ھالىتى ئىشلىتىش ئۈچۈن Xfrun نى D-BUS نى ئىشلەتكىلى بولىدىغان قىلىپ compile قىلىش كېرەك."
+
+#: ../xfrun/xfrun-dbus.c:144
+#, c-format
+msgid "Unable to open display \"%s\"."
+msgstr "ئېكران  \"%s\" ئاچقىلى بولمىدى."
+
+#: ../xfrun/xfrun-dbus.c:201
+#, c-format
+msgid "D-BUS message bus disconnected. Exiting ...\n"
+msgstr "D-BUS ئۇچۇر باش لىنىيىسى ئۈزۈلدى. ئاخىرلىشىدۇ...\n"
+
+#. failed
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
+msgid "System Error"
+msgstr "سىستېما خاتالىقى"
+
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
+msgid "Unable to fork to background:"
+msgstr "background دە  fork قىلغىلى بولمىدى:"
+
+#: ../xfrun/xfrun-dialog.c:187
+msgid "Run in _terminal"
+msgstr "تېرمىنالدا ئىجرا قىل(_T)"
+
+#: ../xfrun/xfrun-dialog.c:208
+msgid "_Run"
+msgstr "ئىجرا قىل(_R)"
+
+#: ../xfrun/xfrun-dialog.c:539
+#, c-format
+msgid "The command \"%s\" failed to run:"
+msgstr "بۇيرۇق  \"%s\" نى ئىجرا قىلىش مەغلۇپ بولدى:"
+
+#: ../xfrun/xfrun-dialog.c:541
+msgid "Run Error"
+msgstr "ئىجرا قىلىشتىكى خاتالىق"
+
+#: ../xfrun/xfrun-dialog.c:543
+msgid "Unknown Error"
+msgstr "نامەلۇم خاتالىق"
+
+#: ../xfrun/xfrun-dialog.c:630
+#, c-format
+msgid "Open %s with what program?"
+msgstr "\"%s\" نى قايسى پروگراممىدا ئاچىدۇ؟"
+
+#: ../xfrun/xfrun-dialog.c:635
+msgid "Run program"
+msgstr "ئىجرا قىلىدىغان پروگرامما"
+
+#: ../xfce.desktop.in.h:1
+msgid "Use this session to run Xfce as your desktop environment"
+msgstr "مەزكۇر session دا  ئۈستەل يۈزى ئۈچۈن Xfce ئىشلىتىلىدۇ"
+
+#: ../xfce.desktop.in.h:2
+msgid "Xfce Session"
+msgstr "Xfce Session"
