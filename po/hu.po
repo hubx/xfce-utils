@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: untitled\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-05 00:04+0100\n"
+"POT-Creation-Date: 2010-05-20 10:04+0000\n"
 "PO-Revision-Date: 2009-06-15 17:22+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at gnome dot hu>\n"
@@ -107,6 +107,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Az Xfce névjegye"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Információk az Xfce asztali környezetről"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -169,6 +177,14 @@ msgstr "Melyik programmal nyitja meg ezt: %s?"
 msgid "Run program"
 msgstr "Program futtatása"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Program futtatása…"
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Program futtatása"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "Ezen munkamenet használatával indítható az Xfce asztali környezet"
@@ -176,3 +192,11 @@ msgstr "Ezen munkamenet használatával indítható az Xfce asztali környezet"
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce munkamenet"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Súgó"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Segítség az Xfce használatához"
