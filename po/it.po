@@ -4,15 +4,16 @@
 # Davide D'Amico <dave@gufi.org>, 2003.
 # Alex Dupre <ale@FreeBSD.org>, 2005.
 # Cristian Marchi <cri.penta@gmail.com>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-28 12:04+0100\n"
-"PO-Revision-Date: 2009-12-07 19:59+0100\n"
+"POT-Creation-Date: 2010-07-02 16:05+0000\n"
+"PO-Revision-Date: 2010-05-05 09:07+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
-"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
+"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups."
+"com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +21,7 @@ msgstr ""
 #: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
 #, c-format
 msgid "Unable to load the file %s"
-msgstr "Caricamento del file \"%s\" non riuscito"
+msgstr "Caricamento del file «%s» non riuscito"
 
 #. Project lead
 #: ../xfce4-about/info.c:235
@@ -68,11 +69,13 @@ msgstr "Traduttori"
 
 #: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "Se dovesse mancare qualcuno nell'elenco, fatecelo sapere su <"
+msgstr "Se dovesse mancare qualcuno nell'elenco, segnalatelo su <"
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr "Si ringraziano tutti quelli che hanno contribuito a rendere questo programma disponibile."
+msgstr ""
+"Si ringraziano tutti quelli che hanno contribuito a rendere questo programma "
+"disponibile."
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
@@ -108,6 +111,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Informazioni su Xfce"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Informazioni sull'ambiente grafico Xfce"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -119,7 +130,9 @@ msgstr "La modalità demone non è supportata."
 
 #: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Xfrun deve essere compilato con il supporto a D-BUS per poter abilitare la modalità demone."
+msgstr ""
+"Xfrun deve essere compilato con il supporto a D-BUS per poter abilitare la "
+"modalità demone."
 
 #: ../xfrun/xfrun-dbus.c:144
 #, c-format
@@ -170,6 +183,14 @@ msgstr "Con quale programma aprire %s ?"
 msgid "Run program"
 msgstr "Esegui il programma"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Esegui programma..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Esegue un programma"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "Usare questa sessione per eseguire Xfce come ambiente desktop"
@@ -177,3 +198,11 @@ msgstr "Usare questa sessione per eseguire Xfce come ambiente desktop"
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Sessione di Xfce"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Aiuto"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Aiuto per l'utilizzo di Xfce"
