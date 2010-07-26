@@ -142,7 +142,7 @@ if test "$ssh_agent_enabled" != "false"; then
         ssh-agent)
             if test -z "$SSH_AGENT_PID"; then
                 eval `ssh-agent -s`
-                ssh_agent_kill_cmd="ssh-agent -k"
+                ssh_agent_kill_cmd="ssh-agent -s -k"
             else
                 echo "ssh-agent is already running"
             fi
