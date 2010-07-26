@@ -28,7 +28,7 @@ fi
 
 # set up XDG user directores.  see
 # http://freedesktop.org/wiki/Software/xdg-user-dirs
-if type xdg-user-dirs-update >/dev/null 2>&1; then
+if which xdg-user-dirs-update >/dev/null 2>&1; then
     xdg-user-dirs-update
 fi
 
@@ -101,7 +101,7 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 # Use dbus-launch if installed.
 if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
-    if type dbus-launch >/dev/null 2>&1; then
+    if which dbus-launch >/dev/null 2>&1; then
 		eval `dbus-launch --sh-syntax --exit-with-session`
         # some older versions of dbus don't export the var properly
         export DBUS_SESSION_BUS_ADDRESS
@@ -120,7 +120,7 @@ if test "$ssh_agent_enabled" != "false"; then
 
     ssh_agent_type=`xfconf-query -c xfce4-session -p /startup/ssh-agent/type 2> /dev/null`
     if test -z "$ssh_agent_type"; then
-        if type gpg-agent >/dev/null 2>&1; then
+        if which gpg-agent >/dev/null 2>&1; then
             ssh_agent_type=gpg-agent
         else
             ssh_agent_type=ssh-agent
@@ -192,8 +192,8 @@ fi
 
 
 # Run xfce4-session if installed
-if type xfce4-session >/dev/null 2>&1; then
-    if type ck-launch-session >/dev/null 2>&1; then
+if which xfce4-session >/dev/null 2>&1; then
+    if which ck-launch-session >/dev/null 2>&1; then
       ck-launch-session xfce4-session
     else
       xfce4-session
@@ -244,11 +244,11 @@ if test -d "$XDG_CONFIG_HOME/autostart"; then
     # check for TryExec
     trycmd=`grep -E "^TryExec=" "$i" | cut -d'=' -f2`
     if test "$trycmd"; then
-      type "$trycmd" >/dev/null 2>&1 || continue
+      which "$trycmd" >/dev/null 2>&1 || continue
     fi
     
     cmd=`grep -E "^Exec=" "$i" | cut -d'=' -f2`
-    if test "$cmd" && type "$cmd" >/dev/null 2>&1; then
+    if test "$cmd" && which "$cmd" >/dev/null 2>&1; then
       $cmd &
     fi
   done
