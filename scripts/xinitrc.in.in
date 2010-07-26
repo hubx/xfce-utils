@@ -99,6 +99,16 @@ cat /dev/null $XRESOURCES | xrdb -nocpp -merge -
 # load local modmap
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
+# Use dbus-launch if installed.
+if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
+    if type dbus-launch >/dev/null 2>&1; then
+		eval `dbus-launch --sh-syntax --exit-with-session`
+        # some older versions of dbus don't export the var properly
+        export DBUS_SESSION_BUS_ADDRESS
+    else
+        echo "Could not find dbus-launch; Xfce will not work properly" >&2
+	fi
+fi
 
 # launch gpg-agent or ssh-agent if enabled.
 ssh_agent_enabled=`xfconf-query -c xfce4-session -p /startup/ssh-agent/enabled 2> /dev/null`
@@ -152,18 +162,6 @@ if test "$ssh_agent_enabled" != "false"; then
             echo "Unrecognized agent type '$ssh_agent_type'" >&2
             ;;
     esac
-fi
-
-
-# Use dbus-launch if installed.
-if test x"$DBUS_SESSION_BUS_ADDRESS" = x""; then
-    if type dbus-launch >/dev/null 2>&1; then
-		eval `dbus-launch --sh-syntax --exit-with-session`
-        # some older versions of dbus don't export the var properly
-        export DBUS_SESSION_BUS_ADDRESS
-    else
-        echo "Could not find dbus-launch; Xfce will not work properly" >&2
-	fi
 fi
 
 
