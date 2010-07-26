@@ -195,7 +195,11 @@ fi
 
 # Run xfce4-session if installed
 if type xfce4-session >/dev/null 2>&1; then
-    xfce4-session
+    if type ck-launch-session >/dev/null 2>&1; then
+      ck-launch-session xfce4-session
+    else
+      xfce4-session
+    fi
 
     if test "$ssh_agent_kill_cmd"; then
         echo "running '$ssh_agent_kill_cmd'"
