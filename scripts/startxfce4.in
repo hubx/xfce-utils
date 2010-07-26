@@ -55,7 +55,7 @@ then
     CLIENTRC=${OPT}
   else
     SERVERRC=${OPT#*-- }
-    CLIENTRC=${OPT% --*}
+    CLIENTRC=${OPT%--*}
   fi
 fi
 
