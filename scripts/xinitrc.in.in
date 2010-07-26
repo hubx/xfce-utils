@@ -101,14 +101,14 @@ test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
 
 
 # launch gpg-agent or ssh-agent if enabled.
-ssh_agent_enabled=`xfconf-query -c xfce4-session -p /startup/ssh-agent/enabled`
+ssh_agent_enabled=`xfconf-query -c xfce4-session -p /startup/ssh-agent/enabled 2> /dev/null`
 if test "$ssh_agent_enabled" != "false"; then
     # if the user has pam_ssh installed, it will start ssh-agent for us, but
     # of course won't start gpg-agent.  so, if ssh-agent is already running,
     # but we want gpg-agent (and that's not running yet) start gpg-agent
     # without ssh support
 
-    ssh_agent_type=`xfconf-query -c xfce4-session -p /startup/ssh-agent/type`
+    ssh_agent_type=`xfconf-query -c xfce4-session -p /startup/ssh-agent/type 2> /dev/null`
     if test -z "$ssh_agent_type"; then
         if type gpg-agent >/dev/null 2>&1; then
             ssh_agent_type=gpg-agent
@@ -169,9 +169,9 @@ fi
 
 # launch a screensaver if enabled.  do not launch if we're root or if
 # we're in a VNC session.
-screensaver_enabled=`xfconf-query -c xfce4-session -p /startup/screensaver/enabled`
+screensaver_enabled=`xfconf-query -c xfce4-session -p /startup/screensaver/enabled 2> /dev/null`
 if test $UID -gt 0 -a -z "$VNCSESSION" -a "$screensaver_enabled" != "false"; then
-    screensaver_type=`xfconf-query -c xfce4-session -p /startup/screensaver/type`
+    screensaver_type=`xfconf-query -c xfce4-session -p /startup/screensaver/type 2> /dev/null`
 
     case "$screensaver_type" in
         xscreensaver)
