@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-30 10:05+0000\n"
+"POT-Creation-Date: 2010-08-22 16:05+0000\n"
 "PO-Revision-Date: 2009-01-24 08:56+0100\n"
 "Last-Translator: Enrico Tröger <enrico@xfce.org>\n"
 "Language-Team: German <xfce-i18n-de@xfce.org>\n"
@@ -20,9 +20,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to load the file %s"
-msgstr "Kann die folgende Datei nicht laden "
+msgstr "Kann Datei »%s« nicht laden "
 
 #. Project lead
 #: ../xfce4-about/info.c:235
@@ -110,12 +110,10 @@ msgid "GPL"
 msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
-#, fuzzy
 msgid "About Xfce"
 msgstr "Über Xfce 4"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
-#, fuzzy
 msgid "Information about the Xfce Desktop Environment"
 msgstr "Informationen über die Xfce-Desktopumgebung"
 
@@ -182,14 +180,12 @@ msgid "Run program"
 msgstr "Programm ausführen"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
-#, fuzzy
 msgid "Run Program..."
-msgstr "Programm ausführen"
+msgstr "Programm ausführen..."
 
 #: ../xfrun/xfrun4.desktop.in.h:2
-#, fuzzy
 msgid "Run a program"
-msgstr "Programm ausführen"
+msgstr "Ein Programm ausführen"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
@@ -204,7 +200,6 @@ msgid "Help"
 msgstr "Hilfe"
 
 #: ../scripts/xfhelp4.desktop.in.h:2
-#, fuzzy
 msgid "Help using Xfce"
 msgstr "Hilfe zur Nutzung von Xfce"
 
