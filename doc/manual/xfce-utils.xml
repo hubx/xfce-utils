@@ -42,7 +42,7 @@
       <listitem><para><ulink url="../../../xfce4-session/html/C/index.html">Session Manager</ulink></para></listitem>
       <listitem><para><ulink url="../../../xfdesktop/html/C/index.html">Desktop Manager</ulink></para></listitem>
       <listitem><para><link linkend="xfce-utils">Utilities and Scripts</link></para></listitem>
-      <listitem><para><ulink url="../../../exo/html/C/index.html">Preferred Applications</ulink></para></listitem>
+      <listitem><para><ulink url="../../../exo/html/C/exo-preferred-applications.html">Preferred Applications</ulink></para></listitem>
       <listitem><para><ulink url="../../../Thunar/html/C/index.html">File Manager</ulink></para></listitem>
     </itemizedlist>
   </sect2>
