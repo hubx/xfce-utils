@@ -20,7 +20,7 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-HELP_DIR="@_datadir_@/xfce4/doc"
+HELP_DIR="@_datadir_@/doc"
 
 if [ ! x"$1" = x"" ]; then
     HELP_FILE="$1"

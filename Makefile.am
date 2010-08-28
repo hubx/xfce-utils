@@ -40,6 +40,7 @@ DISTCLEANFILES = \
 	$(desktop_DATA)
 
 DISTCHECK_CONFIGURE_FLAGS = \
-	--with-xsession-prefix=/tmp/$(PACKAGE)-distcheck
+	--with-xsession-prefix=/tmp/$(PACKAGE)-distcheck \
+	--enable-gen-doc
 
 # vi:set ts=8 sw=8 noet ai nocindent:

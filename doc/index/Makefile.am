@@ -1,5 +1,0 @@
-SUBDIRS = \
-	C \
-	fr \
-	it
-
