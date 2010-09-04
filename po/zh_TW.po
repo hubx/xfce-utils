@@ -1,15 +1,16 @@
 # Traditional Chinese translations for xfce-utils package.
-# Copyrsght (C) 2002-2007 The Xfce development team.
+# Copyrsght (C) 2003-2005, 2010 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # umm <umm@pchome.com.tw>, 2003.
 # Minor updates by Ambrose Li <acli@ada.dhs.org>, 2004.
 # Hydonsingore Cia <hydonsingore@educities.edu.tw>, 2005.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.xfce.org\n"
-"POT-Creation-Date: 2010-05-08 04:04+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-03 22:05+0000\n"
 "PO-Revision-Date: 2010-05-08 15:19+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -17,8 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../xfce4-about/info.c:206
-#: ../xfce4-about/info.c:385
+#: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
 #, c-format
 msgid "Unable to load the file %s"
 msgstr "無法載入檔案 %s"
@@ -140,13 +140,11 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS 訊息匯流排斷線。離開中...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:343
-#: ../xfrun/xfrun-dbus.c:354
+#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
 msgid "System Error"
 msgstr "系統錯誤"
 
-#: ../xfrun/xfrun-dbus.c:345
-#: ../xfrun/xfrun-dbus.c:356
+#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
 msgid "Unable to fork to background:"
 msgstr "無法分支至背景執行："
 
@@ -203,4 +201,3 @@ msgstr "幫助"
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
 msgstr "幫助您使用 Xfce"
-
