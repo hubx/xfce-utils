@@ -1,9 +1,34 @@
 4.7.0
 =====
-
+- Fix gpg/ssh-agent startup for users with pam_ssh installed.
+- $dbuslaunch var isn't used anymore (bug #5863).
+- Start ssh-agent before dbus so dbus has the env vars set.
+- Switch to xdt 4.7.2.
+- Port to libxfce4ui.
+- Bump copyright to 2010.
+- Add slock functionality (bug #6253).
+- Add desktop files for the applications in the Xfce menu.
+- Avoid /usr/local/share being added to XDG_DATA_DIRS more than once.
+- Build ChangeLog from GIT.
+- Hide xfconf-query warnings when properties do not exist.
+- Launch xfce4-session with ck-launch-session if installed.
+- Use right comment character in Xft.xrdb (bug #6314).
+- Also kill ssh-agent in bash like environment (bug #6476).
+- Spawn dbus-launch before the dbus users (bug #5576).
+- Don't set /usr/share twice in XDG_DATA_DIRS (bug #5151).
+- Startxfce4 doesn't handle empty client options (bug #5382).
+- Fix some bashism in xinitrc (bug #5557).
+- Make xinitrc work with Solaris (bug #5557).
+- Remove deprecated encoding key from desktop files.
+- Build documentation during make dist.
+- Fix xfhelp4 for the new documentation locations.
 - Add support for starting gpg-agent.
 - Add ability to enable/disable or change the type of screensaver and
   ssh-agent using xfconf.
+- Remove duplicate Makefile.am entry for xfterm4.
+- Translation updates (pl, gl, pt, ro, lv, ur, ur_PK, zh_CN, hu, ast, kk,
+  el, ru, sk, sq, it, da, ja, pt, ca, nl, pt_BR, cs, fi, eu, si, bg, pa,
+  uk).
 
 
 4.6.1
