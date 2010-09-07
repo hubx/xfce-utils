@@ -1,15 +1,15 @@
 # $Id$
-#
+# 
 # Uyghur translations for xfce-utils package.
 # Copyright (C) 2002-2007 The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Gheyret T.Kenji <gheyret@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-06 17:18+0900\n"
+"POT-Creation-Date: 2010-09-06 22:05+0000\n"
 "PO-Revision-Date: 2010-01-06 17:18+0900\n"
 "Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
 "Language-Team:Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
 #, c-format
 msgid "Unable to load the file %s"
-msgstr "ھوججەت %s نى ئوقۇغىلى بولمىدى"
+msgstr "ھۆججەت %s نى ئوقۇغىلى بولمىدى"
 
 #. Project lead
 #: ../xfce4-about/info.c:235
@@ -69,7 +69,8 @@ msgstr "تەرجىمانلار"
 # FIXME: needs C format string
 #: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "ئەگەر چۈشۈپ قالغانلار بولسا، تۆۋەندىكى ئېلخەتكە خەۋەر قىلىڭ:\n"
+msgstr ""
+"ئەگەر چۈشۈپ قالغانلار بولسا، تۆۋەندىكى ئېلخەتكە خەۋەر قىلىڭ:\n"
 "<"
 
 #: ../xfce4-about/info.c:331
@@ -109,6 +110,14 @@ msgstr "LGPL"
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Xfce 4 ھەققىدە"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Xfce 桌面环境信息"
+
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
@@ -120,7 +129,9 @@ msgstr "Daemon ھالىتىنى ئىشلەتكىلى بولمايدۇ"
 
 #: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr "Daemon ھالىتى ئىشلىتىش ئۈچۈن Xfrun نى D-BUS نى ئىشلەتكىلى بولىدىغان قىلىپ compile قىلىش كېرەك."
+msgstr ""
+"Daemon ھالىتى ئىشلىتىش ئۈچۈن Xfrun نى D-BUS نى ئىشلەتكىلى بولىدىغان قىلىپ "
+"compile قىلىش كېرەك."
 
 #: ../xfrun/xfrun-dbus.c:144
 #, c-format
@@ -171,6 +182,14 @@ msgstr "\"%s\" نى قايسى پروگراممىدا ئاچىدۇ؟"
 msgid "Run program"
 msgstr "ئىجرا قىلىدىغان پروگرامما"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "پروگرامما ئىجرا قىل..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "پروگرامما ئىجرا قىلىدۇ"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "مەزكۇر session دا  ئۈستەل يۈزى ئۈچۈن Xfce ئىشلىتىلىدۇ"
@@ -178,3 +197,11 @@ msgstr "مەزكۇر session دا  ئۈستەل يۈزى ئۈچۈن Xfce ئىش�
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce ئەڭگىمە"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "يادەم"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Xfce ياردەملىرى"
