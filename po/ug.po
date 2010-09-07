@@ -20,12 +20,12 @@ msgstr ""
 #: ../xfce4-about/info.c:206 ../xfce4-about/info.c:385
 #, c-format
 msgid "Unable to load the file %s"
-msgstr ""
+msgstr "ھوججەت %s نى ئوقۇغىلى بولمىدى"
 
 #. Project lead
 #: ../xfce4-about/info.c:235
 msgid "Project Lead"
-msgstr "Project باشلىقى"
+msgstr "قۇرۇلۇش باشلىقى"
 
 #. Core developers
 #: ../xfce4-about/info.c:239
@@ -74,7 +74,7 @@ msgstr "ئەگەر چۈشۈپ قالغانلار بولسا، تۆۋەندىكى
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr "Xfce 4 نى ئىشلەتكىلى بولىدىغان قىلىشقا كۈچ چىقارغانلار تەشەككۈر"
+msgstr "Xfce 4 نى ئىشلەتكىلى بولىدىغان قىلىشقا كۈچ چىقارغانلارغا تەشەككۈر"
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
@@ -82,7 +82,7 @@ msgstr "Xfce 4 ھەققىدە"
 
 #: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr ""
+msgstr "Copyright 2002-2010 by Olivier Fourdan"
 
 #: ../xfce4-about/info.c:461
 msgid "Info"
@@ -91,7 +91,7 @@ msgstr "ئۇچۇر"
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: ../xfce4-about/info.c:463
 msgid "Credits"
-msgstr "提供"
+msgstr "تەشەككۇرلەر"
 
 #: ../xfce4-about/info.c:464
 msgid "Copyright"
@@ -177,4 +177,4 @@ msgstr "مەزكۇر session دا  ئۈستەل يۈزى ئۈچۈن Xfce ئىش�
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr "Xfce Session"
+msgstr "Xfce ئەڭگىمە"
