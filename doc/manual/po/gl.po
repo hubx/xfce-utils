@@ -42,7 +42,7 @@ msgstr ""
 
 #: ./xfce-utils.xml14(title)
 msgid "The Xfce Desktop Environment"
-msgstr ""
+msgstr "Ambiente de escritorio Xfce"
 
 #: ./xfce-utils.xml21(title)
 msgid "Xfce Documentation"
@@ -218,7 +218,7 @@ msgstr ""
 
 #: ./xfce-utils.xml208(title)
 msgid "The Default Desktop"
-msgstr ""
+msgstr "O escritorio predeterminado"
 
 #: ./xfce-utils.xml210(para)
 msgid "The Xfce Desktop Environment is not a single entity that provides all funtionality, but rather it tries to adhere to the old UNIX tradition of small tools that do one job and do it well. A default Xfce desktop with no applications running is shown in <xref linkend=\"default-session-fig\"/>."
@@ -226,7 +226,7 @@ msgstr ""
 
 #: ./xfce-utils.xml217(title)
 msgid "Default Xfce 4 session"
-msgstr ""
+msgstr "Sesión predeterminada de Xfce 4"
 
 #: ./xfce-utils.xml224(phrase)
 msgid "Default Xfce session, with desktop manager and panel."
@@ -250,7 +250,7 @@ msgstr ""
 
 #: ./xfce-utils.xml259(para)
 msgid "For more information, have a look at the <ulink url=\"xfce4-panel.html\" type=\"html\">panel manual</ulink>."
-msgstr ""
+msgstr "Para obter máis información bótelle unha ollada ao <ulink url=\"xfce4-panel.html\" type=\"html\">manual do panel</ulink>."
 
 #: ./xfce-utils.xml269(para)
 msgid "The desktop manager provides the desktop background image and two menus when you click on the desktop background. Optionally, it can show icons on the desktop, either for minimized applications or for files in the <filename>~/Desktop</filename> folder."
@@ -270,7 +270,7 @@ msgstr ""
 
 #: ./xfce-utils.xml304(term)
 msgid "Settings Manager"
-msgstr ""
+msgstr "Xestor de configuración"
 
 #: ./xfce-utils.xml306(para)
 msgid "The settings manager runs in the background and makes sure that all Xfce applications update their settings when the user changes something in the settings manager dialog (see following section) and it takes care of reading the configuration from disk at startup. Have a look at the <ulink url=\"xfce-mcs-manager.html\" type=\"html\">Settings Manager</ulink> and <ulink url=\"xfce-mcs-plugins.html\" type=\"html\">Settings Plugins</ulink> manuals for a full explanation of the settings manager."
@@ -278,7 +278,7 @@ msgstr ""
 
 #: ./xfce-utils.xml322(title)
 msgid "Common Tasks"
-msgstr ""
+msgstr "Tarefas comúns"
 
 #: ./xfce-utils.xml324(para)
 msgid "This section will explain how to perform several common tasks to quickly get you started working with Xfce 4. Because that is what Xfce 4 is designed for, to allow you to get work done."
@@ -286,11 +286,11 @@ msgstr ""
 
 #: ./xfce-utils.xml330(title)
 msgid "Running programs"
-msgstr ""
+msgstr "Execución de programas"
 
 #: ./xfce-utils.xml334(term)
 msgid "Xfce Panel"
-msgstr ""
+msgstr "Panel de Xfce"
 
 #: ./xfce-utils.xml336(para)
 msgid "The panel is designed to allow quick access to the most frequently used applications by putting them on the main panel. Less often used applications can be put in a launcher menu."
@@ -298,7 +298,7 @@ msgstr ""
 
 #: ./xfce-utils.xml344(term)
 msgid "Desktop Menu"
-msgstr ""
+msgstr "Menú de escritorio"
 
 #: ./xfce-utils.xml346(para)
 msgid "Another method for starting applications is from the desktop mouse menu. Read the <ulink url=\"xfdesktop.html\" type=\"html\">Desktop Manager manual</ulink> for information on how to change the menu contents."
@@ -306,7 +306,7 @@ msgstr ""
 
 #: ./xfce-utils.xml355(term) ./xfce-utils.xml813(title)
 msgid "Run Dialog"
-msgstr ""
+msgstr "Diálogo de execución"
 
 #: ./xfce-utils.xml357(para)
 msgid "If you know the name of a program and it is not on the panel or in the desktop menu you can use the run dialog. To open the dialog type <keycap>Alt+F2</keycap> or choose the <guilabel>Run program...</guilabel> option from the desktop menu."
@@ -318,7 +318,7 @@ msgstr ""
 
 #: ./xfce-utils.xml375(title)
 msgid "Managing windows and workspaces"
-msgstr ""
+msgstr "Xestión de fiestras e de espazos de traballo"
 
 #: ./xfce-utils.xml380(term)
 msgid "Basic window operations"
@@ -354,7 +354,7 @@ msgstr ""
 
 #: ./xfce-utils.xml418(term)
 msgid "Workspaces"
-msgstr ""
+msgstr "Espazos de traballo"
 
 #: ./xfce-utils.xml420(para)
 msgid "You can change workspaces by clicking on them in the graphical pager, either on the taskbar or on the panel. Pressing <keycap>Ctrl+Alt+LeftArrow</keycap> or <keycap>Ctrl+Alt+RightArrow</keycap> will cycle through the workspaces. Using the mousewheel over the pager or the desktop background has the same effect."
@@ -386,7 +386,7 @@ msgstr ""
 
 #: ./xfce-utils.xml467(title)
 msgid "Components of Xfce"
-msgstr ""
+msgstr "Compoñentes de Xfce"
 
 #: ./xfce-utils.xml469(para)
 msgid "The Xfce components are packaged separately. This section contains a list of the available modules with a short description."
@@ -394,7 +394,7 @@ msgstr ""
 
 #: ./xfce-utils.xml476(term)
 msgid "libxfce4util"
-msgstr ""
+msgstr "libxfce4util"
 
 #: ./xfce-utils.xml478(para)
 msgid "Library with non-graphical helper functions."
@@ -402,7 +402,7 @@ msgstr ""
 
 #: ./xfce-utils.xml483(term)
 msgid "libxfcegui4"
-msgstr ""
+msgstr "libxfcegui4"
 
 #: ./xfce-utils.xml485(para)
 msgid "Widget library and X Window System interaction."
@@ -410,7 +410,7 @@ msgstr ""
 
 #: ./xfce-utils.xml490(term)
 msgid "libexo"
-msgstr ""
+msgstr "libexo"
 
 #: ./xfce-utils.xml492(para)
 msgid "A library created for the Thunar file manager, containing many useful functions for applications designed for Xfce."
@@ -418,7 +418,7 @@ msgstr ""
 
 #: ./xfce-utils.xml499(term)
 msgid "libxfce4mcs"
-msgstr ""
+msgstr "libxfce4mcs"
 
 #: ./xfce-utils.xml501(para)
 msgid "Settings management library used by many Xfce components."
@@ -426,7 +426,7 @@ msgstr ""
 
 #: ./xfce-utils.xml507(term)
 msgid "xfce-mcs-manager"
-msgstr ""
+msgstr "xfce-mcs-manager"
 
 #: ./xfce-utils.xml509(para)
 msgid "Settings manager. Runs in the background and provides global settings information to other Xfce components. There is a main control panel to access the configuration dialogs of Xfce components."
@@ -434,7 +434,7 @@ msgstr ""
 
 #: ./xfce-utils.xml518(term)
 msgid "xfce-mcs-plugins"
-msgstr ""
+msgstr "xfce-mcs-plugins"
 
 #: ./xfce-utils.xml520(para)
 msgid "Settings manager plugins. These plugins provide settings dialogs for general items that are not part of a package, e.g. user interface settings (Gtk+ theme, icon theme, font settings), mouse settings, keyboard settings and display settings."
@@ -442,7 +442,7 @@ msgstr ""
 
 #: ./xfce-utils.xml529(term)
 msgid "xfce4-session"
-msgstr ""
+msgstr "xfce4-session"
 
 #: ./xfce-utils.xml531(para)
 msgid "Session manager. The session manager controls the startup and shutdown of the Xfce Desktop Environment. On logout it can save the state of running applications (if the application supports it) and restore them properly again the next time you log in."
@@ -450,7 +450,7 @@ msgstr ""
 
 #: ./xfce-utils.xml540(term)
 msgid "xfwm4"
-msgstr ""
+msgstr "xfwm4"
 
 #: ./xfce-utils.xml542(para)
 msgid "The Xfce window mananger. Manages the placement of application windows on the screen, provides window decorations and manages workspaces."
@@ -458,7 +458,7 @@ msgstr ""
 
 #: ./xfce-utils.xml550(term)
 msgid "xfce4-panel"
-msgstr ""
+msgstr "xfce4-panel"
 
 #: ./xfce-utils.xml552(para)
 msgid "The Xfce panel. Provides program lauchers, a workspace switcher, a clock, menus and more."
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ./xfce-utils.xml559(term)
 msgid "xfdesktop"
-msgstr ""
+msgstr "xfdesktop"
 
 #: ./xfce-utils.xml561(para)
 msgid "Desktop background manager. This program sets the background image and/or color, and provides a root window menu, a menu panel plugin and a menu editor. Optionally, it can show icons on the desktop as well."
@@ -474,7 +474,7 @@ msgstr ""
 
 #: ./xfce-utils.xml570(term)
 msgid "xfce-utils"
-msgstr ""
+msgstr "xfce-utils"
 
 #: ./xfce-utils.xml572(para)
 msgid "Essential utilities and scripts. Provides the Xfce about dialog, a run dialog, the startxfce4 script and several other important scripts. Also contains this user guide."
@@ -482,7 +482,7 @@ msgstr ""
 
 #: ./xfce-utils.xml580(term)
 msgid "Thunar"
-msgstr ""
+msgstr "Thunar"
 
 #: ./xfce-utils.xml582(para)
 msgid "A fast and efficient file manager."
@@ -490,7 +490,7 @@ msgstr ""
 
 #: ./xfce-utils.xml587(term)
 msgid "xfprint"
-msgstr ""
+msgstr "xfprint"
 
 #: ./xfce-utils.xml589(para)
 msgid "Printing support. Provides a graphical frontend for printing. Includes <application>xfprint4</application> and <application>xfprint-manager</application>."
@@ -498,7 +498,7 @@ msgstr ""
 
 #: ./xfce-utils.xml597(term)
 msgid "xfce4-appfinder"
-msgstr ""
+msgstr "xfce4-appfinder"
 
 #: ./xfce-utils.xml599(para)
 msgid "An application finder that allows you to search, launch and find information about applications installed on your system."
@@ -506,7 +506,7 @@ msgstr ""
 
 #: ./xfce-utils.xml606(term)
 msgid "orage"
-msgstr ""
+msgstr "orage"
 
 #: ./xfce-utils.xml608(para)
 msgid "Simple calendar application with reminders."
@@ -514,7 +514,7 @@ msgstr ""
 
 #: ./xfce-utils.xml613(term)
 msgid "gtk-xfce-engine-2"
-msgstr ""
+msgstr "gtk-xfce-engine-2"
 
 #: ./xfce-utils.xml615(para)
 msgid "Theme engine for GTK2. Not required for the desktop, but it's a nice theme engine so you might just as well give it a try."
@@ -522,7 +522,7 @@ msgstr ""
 
 #: ./xfce-utils.xml622(term)
 msgid "xfce4-icon-theme"
-msgstr ""
+msgstr "xfce4-icon-theme"
 
 #: ./xfce-utils.xml624(para)
 msgid "Default icon theme for Xfce, called <emphasis>Rodent</emphasis>."
@@ -530,11 +530,11 @@ msgstr ""
 
 #: ./xfce-utils.xml632(title)
 msgid "Installing Xfce4"
-msgstr ""
+msgstr "Instalación de Xfce4"
 
 #: ./xfce-utils.xml635(title)
 msgid "Binary packages"
-msgstr ""
+msgstr "Paquetes binarios"
 
 #: ./xfce-utils.xml637(para)
 msgid "The Xfce project officially only releases source code for the desktop environment. However, binary packages may have been contributed by other people for your OS or distribution."
@@ -546,7 +546,7 @@ msgstr ""
 
 #: ./xfce-utils.xml652(title)
 msgid "Graphical installers"
-msgstr ""
+msgstr "Instaladores gráficos"
 
 #: ./xfce-utils.xml654(para)
 msgid "The easiest way to install Xfce from source is by using the <ulink url=\"http://www.xfce.org/archive/xfce-4.4.0/installers/\" type=\"html\">graphical installers</ulink>. Documentation and instructions are available."
@@ -600,7 +600,7 @@ msgstr ""
 
 #: ./xfce-utils.xml716(title)
 msgid "Additional software"
-msgstr ""
+msgstr "Software adicional"
 
 #: ./xfce-utils.xml718(para)
 msgid "The <ulink url=\"http://goodies.xfce.org\" type=\"html\">Xfce Goodies</ulink> project collects third-party contributions for Xfce. There are some excellent panel plugins available that greatly enhance the functionality of Xfce."
@@ -616,7 +616,7 @@ msgstr ""
 
 #: ./xfce-utils.xml741(title)
 msgid "Copyright and Licences"
-msgstr ""
+msgstr "Copyright e licenzas"
 
 #: ./xfce-utils.xml743(para)
 msgid "Xfce 4 is copyright &copy; Olivier Fourdan (<email>fourdan@xfce.org</email>). The different components are copyrighted by their respective authors."
@@ -632,23 +632,23 @@ msgstr ""
 
 #: ./xfce-utils.xml767(year)
 msgid "2004"
-msgstr ""
+msgstr "2004"
 
 #: ./xfce-utils.xml767(holder)
 msgid "Benedikt Meurer"
-msgstr ""
+msgstr "Benedikt Meurer"
 
 #: ./xfce-utils.xml793(email)
 msgid "benedikt.meurer@unix-ag.uni-siegen.de"
-msgstr ""
+msgstr "benedikt.meurer@unix-ag.uni-siegen.de"
 
 #: ./xfce-utils.xml798(releaseinfo)
 msgid "This manual describes the @PACKAGE_NAME@ package, version @PACKAGE_VERSION@."
-msgstr ""
+msgstr "Este manual describe a versión @PACKAGE_VERSION@ do paquete @PACKAGE_NAME@."
 
 #: ./xfce-utils.xml800(title)
 msgid "Xfce Utilities and Scripts"
-msgstr ""
+msgstr "Utilidades e scripts de Xfce"
 
 #: ./xfce-utils.xml804(para)
 msgid "The <application>@PACKAGE_NAME@</application> package provides the general 'About Xfce 4' dialog, a run dialog and several useful scripts that are also used by other Xfce components such as the panel and the desktop menu."
@@ -656,11 +656,11 @@ msgstr ""
 
 #: ./xfce-utils.xml816(title)
 msgid "Run dialog"
-msgstr ""
+msgstr "Diálogo de execución"
 
 #: ./xfce-utils.xml824(phrase)
 msgid "Shows the run dialog."
-msgstr ""
+msgstr "Mostra o diálogo de execución."
 
 #: ./xfce-utils.xml830(para)
 msgid "The run dialog allows the user to launch applications. Applications can be run in a Terminal emulator (Terminal by default, see xfterm4 script below). In a default Xfce environment, the Alt+F2 key combination will open the run dialog."
@@ -688,7 +688,7 @@ msgstr "Scripts"
 
 #: ./xfce-utils.xml870(term)
 msgid "startxfce4"
-msgstr ""
+msgstr "startxfce4"
 
 #: ./xfce-utils.xml872(para)
 msgid "The <application>startxfce4</application> is a convenient script to start an Xfce 4 session from the console. It will give you a session with two panels and with the desktop manager and window manager running."
@@ -704,7 +704,7 @@ msgstr ""
 
 #: ./xfce-utils.xml898(term)
 msgid "xfhelp4"
-msgstr ""
+msgstr "xfhelp4"
 
 #: ./xfce-utils.xml900(para)
 msgid "This script is used to open the local Xfce 4 documentation in a browser. By default it will try to use <application>exo-open</application> from the libexo library. You can change the preferred browser from the Xfce Settings Manager dialog. If <application>exo-open</application> is not available, the script will try a number of well-known browsers, like firefox, galeon or konqueror, but you can change that by setting the $BROWSER environment variable."
