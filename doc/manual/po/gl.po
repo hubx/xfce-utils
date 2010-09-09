@@ -684,7 +684,7 @@ msgstr ""
 
 #: ./xfce-utils.xml866(title)
 msgid "Scripts"
-msgstr ""
+msgstr "Scripts"
 
 #: ./xfce-utils.xml870(term)
 msgid "startxfce4"
@@ -716,7 +716,7 @@ msgstr ""
 
 #: ./xfce-utils.xml920(term)
 msgid "xflock4"
-msgstr ""
+msgstr "xfclock4"
 
 #: ./xfce-utils.xml922(para)
 msgid "This script is used by the panel to lock the screen using xscreensaver if available and falling back to xlock."
@@ -741,4 +741,4 @@ msgstr ""
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: ./xfce-utils.xml0(None)
 msgid "translator-credits"
-msgstr ""
+msgstr "Leandro Regueiro <leandro.regueiro@gmail.com>, 2010."
