@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils-docs\n"
 "POT-Creation-Date: 2010-08-28 16:12+0200\n"
-"PO-Revision-Date: 2010-09-08 17:48+0100\n"
+"PO-Revision-Date: 2010-09-27 15:57+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian <xfce-it-translators@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +104,7 @@ msgstr "Jasper Huijsmans"
 #: ./xfce-utils.xml:59(para)
 #: ./xfce-utils.xml:771(para)
 msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.1 or any later version published by the Free Software Foundation; with no Invariant Sections, with no Front-Cover Texts, and with no Back-Cover Texts. The complete license text is available from the <ulink type=\"http\" url=\"http://www.gnu.org/\">Free Software Foundation</ulink>."
-msgstr "È garantito il diritto di copiare, distribuire e/o modificare questo documento nel rispetto dei termini della licenza GNU Free Documentation License, versione 1.1 o qualsiasi versione successiva pubblicata dalal Free Software Foundation; senza Invariant Section senza testi di Front-Cover e senza testi di Back-Cover. Il testo della licenza completa è reso disponibile dalla <ulink type=\"http\" url=\"http://www.gnu.org/\">Free Software Foundation</ulink>. "
+msgstr "È garantito il diritto di copiare, distribuire e/o modificare questo documento nel rispetto dei termini della licenza GNU Free Documentation License, versione 1.1 o qualsiasi versione successiva pubblicata dalla Free Software Foundation; senza Invariant Section senza testi di Front-Cover e senza testi di Back-Cover. Il testo della licenza completa è reso disponibile dalla <ulink type=\"http\" url=\"http://www.gnu.org/\">Free Software Foundation</ulink>. "
 
 #: ./xfce-utils.xml:71(firstname)
 #: ./xfce-utils.xml:784(firstname)
@@ -137,7 +137,7 @@ msgstr "benny@xfce.org"
 
 #: ./xfce-utils.xml:89(releaseinfo)
 msgid "This manual describes version @PACKAGE_VERSION@ of Xfce."
-msgstr "Questo manueale descrive la versione  @PACKAGE_VERSION@ di Xfce."
+msgstr "Questo manuale descrive la versione  @PACKAGE_VERSION@ di Xfce."
 
 #: ./xfce-utils.xml:96(emphasis)
 msgid "... and mice fly ..."
@@ -166,7 +166,7 @@ msgstr "Xfce abbraccia la filosofia tradizionale UNIX di modularità e ri-usabil
 
 #: ./xfce-utils.xml:127(para)
 msgid "Adhereance to standards is one of the main design goals of Xfce 4, specifically those defined at <ulink url=\"http://www.freedesktop.org\" type=\"html\">Freedesktop.org</ulink>. This allows Xfce 4 to seamlessly interoperate with programs written for other desktop environments that follow these specifications."
-msgstr "L'adesione agli standard è uno dei maggiori obiettivi di progetto di Xfce 4, nello specifico per quanto riguarda quelli definiti in <ulink url=\"http://www.freedesktop.org\" type=\"html\">Freedesktop.org</ulink>. Questo consente a Xfce 4 di interopera senza compromessi con i programmi scritti per altri ambienti grafici che seguono queste specifiche."
+msgstr "L'adesione agli standard è uno dei maggiori obiettivi di progetto di Xfce 4, nello specifico per quanto riguarda quelli definiti in <ulink url=\"http://www.freedesktop.org\" type=\"html\">Freedesktop.org</ulink>. Questo consente a Xfce 4 di interoperare senza compromessi con i programmi scritti per altri ambienti grafici che seguono queste specifiche."
 
 #: ./xfce-utils.xml:135(para)
 msgid "Xfce is all free software. The separate components are released under either the BSD license, the GNU LGPL or the GNU GPL (see <xref linkend=\"xfce4-copyright\"/> for details)."
@@ -210,11 +210,11 @@ msgstr "Per cominciare"
 
 #: ./xfce-utils.xml:176(para)
 msgid "Use <application>startxfce4</application> to start an Xfce session, which includes the session manager, the panel, the window manager and the desktop manager."
-msgstr "Usare <application>startxfce4</application> per avviare una sessione di Xfce, incluso il gestore di sessione, il pannnello, il gestore delle finestre e il gestore della scrivania."
+msgstr "Usare <application>startxfce4</application> per avviare una sessione di Xfce, incluso il gestore di sessione, il pannello, il gestore delle finestre e il gestore della scrivania."
 
 #: ./xfce-utils.xml:182(para)
 msgid "By default the Xfce session manager manages the startup of applications. It allows you to save your session when you quit Xfce, so that the next time you log in, the same applications will be started for you automatically."
-msgstr "Di default il gestore della sessione di Xfce gestisce l'avvio delle applicazioni. Permette di salvare la propria sessione quando si esce da Xfce in modo che, al prossimo riavvio, le stesse applicazioni vengano riavviate automaticamente."
+msgstr "Di default il gestore della sessione di Xfce gestisce l'avvio delle applicazioni. Permette di salvare la propria sessione quando si esce da Xfce in modo che, al successivo riavvio, le stesse applicazioni vengano riavviate automaticamente."
 
 #: ./xfce-utils.xml:189(para)
 msgid "To customize the behaviour of <application>startxfce4</application>, copy the file <filename>${sysconfdir}/xdg/xfce4/xinitrc</filename> to your personal <filename role=\"directory\">~/.config/xfce4/</filename> directory and edit that file. Depending on your installation method the location of the system <filename>xinitrc</filename> file may be different. If you install from source, <filename role=\"directory\">${sysconfdir}</filename> defaults to <filename role=\"directory\">/usr/local/etc/</filename>. For binary packages it is often set to <filename role=\"directory\">/etc/</filename>, <filename role=\"directory\">/etc/X11</filename>, <filename role=\"directory\">/usr/pkg/etc</filename> or <filename role=\"directory\">/usr/X11R6/etc</filename>; you can use your package manager to find out."
@@ -226,7 +226,7 @@ msgstr "La scrivania predefinita"
 
 #: ./xfce-utils.xml:210(para)
 msgid "The Xfce Desktop Environment is not a single entity that provides all funtionality, but rather it tries to adhere to the old UNIX tradition of small tools that do one job and do it well. A default Xfce desktop with no applications running is shown in <xref linkend=\"default-session-fig\"/>."
-msgstr "L'ambiente grafico Xfce non è una singola entità che fornisce tutte le funzionalità, ma cerca invece di aderire alla vecchia tradizione UNIX di piccole utilità che svolgono un unico lavoro al meglio. Una scrivania Xfce senza applicazioni in esecuzione è mostrato in <xref linkend=\"default-session-fig\"/>."
+msgstr "L'ambiente grafico Xfce non è una singola entità che fornisce tutte le funzionalità, ma cerca invece di aderire alla vecchia tradizione UNIX di piccole utilità che svolgono un unico lavoro al meglio. Un desktop Xfce senza applicazioni in esecuzione è mostrato in <xref linkend=\"default-session-fig\"/>."
 
 #: ./xfce-utils.xml:217(title)
 msgid "Default Xfce 4 session"
@@ -246,11 +246,11 @@ msgstr "In una sessione predefinita è presente un pannello a tutta larghezza ne
 
 #: ./xfce-utils.xml:246(para)
 msgid "The top panel shows a graphical pager with a miniature view of all workspaces, a task list showing all applications running on the current workspace and a system tray to show status icons that are used for example by some media players or instant messaging applications."
-msgstr "Il pannello superiore mostra un selettore con una vista in miniatura di tutti gli sapzi di lavoro, un elenco di applicazioni in esecuzione nello spazio di lavoro corrente e un vassoio di sistema che mostra le icone di stato utilizzate per esempio da alcuni riproduttori multimediali o dalle applicazioni di messaggistica istantanea."
+msgstr "Il pannello superiore mostra un selettore con una vista in miniatura di tutti gli spazi di lavoro, un elenco di applicazioni in esecuzione nello spazio di lavoro corrente e un vassoio di sistema che mostra le icone di stato utilizzate per esempio da alcuni riproduttori multimediali o dalle applicazioni di messaggistica istantanea."
 
 #: ./xfce-utils.xml:253(para)
 msgid "The bottom panel contains several application launchers and a clock. You can right-click on any panel item to get a menu that allows you to change its properties, add or remove new items or to change the properties of the panel itself."
-msgstr "Il pannello inferiore contiene diversi avviatori di applicazioni e un orologio. Facendo clic con il tasto destro del mouse su un qualsiasi elemnto del pannello viene visualizzato un menu che permette di cambiare le proprietà, di aggiungere o rimuovere un elemento o di cambiare le proprietà del pannello stesso."
+msgstr "Il pannello inferiore contiene diversi avviatori di applicazioni e un orologio. Facendo clic con il tasto destro del mouse su un qualsiasi elemento del pannello viene visualizzato un menu che permette di cambiare le proprietà, di aggiungere o rimuovere un elemento o di cambiare le proprietà del pannello stesso."
 
 #: ./xfce-utils.xml:259(para)
 msgid "For more information, have a look at the <ulink url=\"xfce4-panel.html\" type=\"html\">panel manual</ulink>."
@@ -266,7 +266,7 @@ msgstr "Il pulsante destro del mouse apre un menu che permette di avviare le app
 
 #: ./xfce-utils.xml:282(para)
 msgid "The middle mouse button (or Shift + left click) opens a list of all applications that are currently running. You can activate an application by clicking on its menu entry."
-msgstr "Il tasto centrale del mouse (o Maiusc + clic sinistro) apre un lenco di applicazioni che sono attualmente in esecuzione. È possibile atttivare un'applicazione facendo clic sulla corrispondente voce del menu."
+msgstr "Il tasto centrale del mouse (o Maiusc + clic sinistro) apre un elenco di applicazioni che sono attualmente in esecuzione. È possibile attivare un'applicazione facendo clic sulla corrispondente voce del menu."
 
 #: ./xfce-utils.xml:292(para)
 msgid "The window manager is responsible for placing the windows on the screen and provides the window borders and decorations. It allows you to move windows around by draggin the titlebar and provides title bar buttons, for example to close, minimize or maximize a window. Look at the <ulink url=\"xfwm4.html\" type=\"html\">manual</ulink> for a full explanation of the window manager settings."
@@ -298,7 +298,7 @@ msgstr "Pannello di Xfce"
 
 #: ./xfce-utils.xml:336(para)
 msgid "The panel is designed to allow quick access to the most frequently used applications by putting them on the main panel. Less often used applications can be put in a launcher menu."
-msgstr "Il pannello è progettato per permettere un accesso veloce alle applicazioni utilizzate più di frequente inserendole nela pannello principale. Le applicazioni utilizzate di rado possono essere inserite in un menu di avvio."
+msgstr "Il pannello è progettato per permettere un accesso veloce alle applicazioni utilizzate più di frequente inserendole nel pannello principale. Le applicazioni utilizzate di rado possono essere inserite in un menu di avvio."
 
 #: ./xfce-utils.xml:344(term)
 msgid "Desktop Menu"
@@ -311,11 +311,11 @@ msgstr "Un altro metodo per avviare le applicazioni è dal menu della scrivania.
 #: ./xfce-utils.xml:355(term)
 #: ./xfce-utils.xml:813(title)
 msgid "Run Dialog"
-msgstr "Finestra di eecuzione"
+msgstr "Finestra di esecuzione"
 
 #: ./xfce-utils.xml:357(para)
 msgid "If you know the name of a program and it is not on the panel or in the desktop menu you can use the run dialog. To open the dialog type <keycap>Alt+F2</keycap> or choose the <guilabel>Run program...</guilabel> option from the desktop menu."
-msgstr "Se si conosce il nome di un programma e questo non è nel pannello o nel menu della scrivania, è possibile usare la finestra di esecuzione. Per aprirla digiatre <keycap>Alt+F2</keycap> o scegliere l'opzione <guilabel>Esegui programma...</guilabel> dal menu della scrivania."
+msgstr "Se si conosce il nome di un programma e questo non è nel pannello o nel menu della scrivania, è possibile usare la finestra di esecuzione. Per aprirla digitare <keycap>Alt+F2</keycap> o scegliere l'opzione <guilabel>Esegui programma...</guilabel> dal menu della scrivania."
 
 #: ./xfce-utils.xml:363(para)
 msgid "The dialog will remeber the 10 last commands that were executed successfully."
@@ -331,7 +331,7 @@ msgstr "Operazioni basilari con le finestre"
 
 #: ./xfce-utils.xml:382(para)
 msgid "You can move windows around the screen by dragging their title bar. A window can be closed, hidden, maximized, shaded and made sticky &mdash; this means it will show up on all workspaces &mdash; by using the title bar buttons."
-msgstr "Le finestre possono essere spostate trascinenandole per la barra del titolo. Una finestra può essere chiusa, anscosta, amssimizzata, arrotolata e bloccata &mdash; ciò significa che verrà visualizzata in tutti gli sapzi di lavoro &mdash; utilizzando i pulsanti della barra del titolo."
+msgstr "Le finestre possono essere spostate trascinandole per la barra del titolo. Una finestra può essere chiusa, nascosta, massimizzata, arrotolata e bloccata &mdash; ciò significa che verrà visualizzata in tutti gli spazi di lavoro &mdash; utilizzando i pulsanti della barra del titolo."
 
 #: ./xfce-utils.xml:387(para)
 msgid "Right clicking on the title bar will open a menu that gives access to all window operations."
@@ -339,11 +339,11 @@ msgstr "Facendo clic con il tasto destro sulla barra del titolo verrà aperto un
 
 #: ./xfce-utils.xml:389(para)
 msgid "Shading a window, which means collapsing it to only show the title bar, can also be accomplished by using the mouse wheel over the title bar. Mouse wheel up is shade, mouse wheel down is unshade."
-msgstr "Arrotolare una finestra, che significa collassarla in modo che venga visualizzata solamente la barra del titolo, piò anche essere eseguito utilizzando la rotella del mouse sulla barra del titolo. Rotella verso l'alto arrotola, rotella verso il basso srotola."
+msgstr "Arrotolare una finestra, che significa collassarla in modo che venga visualizzata solamente la barra del titolo, può anche essere eseguito utilizzando la rotella del mouse sulla barra del titolo. Rotella verso l'alto arrotola, rotella verso il basso srotola."
 
 #: ./xfce-utils.xml:394(para)
 msgid "If you want maximized windows to not cover the entire screen you can set workspace margins from the settings manager dialog (see below)."
-msgstr "Se si vuole eviatre che le finestre massimizzate coprano l'intero schermo, è possibile impostare i margini dello sapzio di lavoro dalla finestra del gestore delle impostazioni (vedere nel seguito)."
+msgstr "Se si vuole evitare che le finestre massimizzate coprano l'intero schermo, è possibile impostare i margini dello spazio di lavoro dalla finestra del gestore delle impostazioni (vedere nel seguito)."
 
 #: ./xfce-utils.xml:402(term)
 msgid "Application management"
@@ -351,7 +351,7 @@ msgstr "Gestire le applicazioni"
 
 #: ./xfce-utils.xml:404(para)
 msgid "To find out what applications are currently running you can look at the task list on the top panel. Clicking on a button in the task list will focus the associated application. Clicking again will hide it."
-msgstr "Per sapere quali applicazioni sono attualmente in esecuzione è possibile guardare alla lista delle applicazioni nel pannello superiore. Facendo clic su un pulsante nella lista la relativa applicazione verrà portata in primo piano. Un secondo clic la nasconderà."
+msgstr "Per sapere quali applicazioni sono attualmente in esecuzione è possibile guardare la lista delle applicazioni nel pannello superiore. Facendo clic su un pulsante nella lista la relativa applicazione verrà portata in primo piano. Un secondo clic la nasconderà."
 
 #: ./xfce-utils.xml:409(para)
 msgid "When you click with the middle mouse button on the desktop background a list of windows is shown, ordered by workspace. You can activate the application or change workspaces by choosing the appropriate menu entry."
@@ -363,7 +363,7 @@ msgstr "Spazi di lavoro"
 
 #: ./xfce-utils.xml:420(para)
 msgid "You can change workspaces by clicking on them in the graphical pager, either on the taskbar or on the panel. Pressing <keycap>Ctrl+Alt+LeftArrow</keycap> or <keycap>Ctrl+Alt+RightArrow</keycap> will cycle through the workspaces. Using the mousewheel over the pager or the desktop background has the same effect."
-msgstr "È possibile cambiare spazio di lavoro selelzionandolo con un clic nell'apposito selettore sia sul pannello che sulla barra delle applicazioni. Premendo <keycap>Ctrl+Alt+Freccia sinistra</keycap> o <keycap>Ctrl+Alt+Freccia destra</keycap> si potranno scorrere gli spazi di lavoro. Utilizzando la rotella del mouse sopra al selettore o sullo sfondo della scrivania sortirà lo stesso effetto."
+msgstr "È possibile cambiare spazio di lavoro selezionandolo con un clic nell'apposito selettore sia sul pannello che sulla barra delle applicazioni. Premendo <keycap>Ctrl+Alt+Freccia sinistra</keycap> o <keycap>Ctrl+Alt+Freccia destra</keycap> si potranno scorrere gli spazi di lavoro. Utilizzando la rotella del mouse sopra al selettore o sullo sfondo della scrivania sortirà lo stesso effetto."
 
 #: ./xfce-utils.xml:427(para)
 msgid "To add or remove workspaces you can use the middle click desktop menu or the settings dialog (see below)."
@@ -379,7 +379,7 @@ msgstr "Il gestore delle impostazioni fornisce accesso alle preferenze globali d
 
 #: ./xfce-utils.xml:445(para)
 msgid "Dialogs to change many aspects of the Xfce Desktop Environment are available. See the separate manuals of the Xfce components for more information. It may be interesting to have a quick look at all the dialogs to find out what options are available that allow you to create the best possible working environment."
-msgstr "Sono disponibili diverse schermate per configurare molti aspetti dell'ambiente grafico Xfce. Consulatre i singoli manuali dei componenti di Xfce per maggiori informazioni. Può essere interessante fornire una panoramica di tutte le schermate per capire quali opzioni sono disponibili al fine di creare l'ambiente di lavoro migliore possibile."
+msgstr "Sono disponibili diverse schermate per configurare molti aspetti dell'ambiente grafico Xfce. Consultare i singoli manuali dei componenti di Xfce per maggiori informazioni. Può essere interessante fornire una panoramica di tutte le schermate per capire quali opzioni sono disponibili al fine di creare l'ambiente di lavoro migliore possibile."
 
 #: ./xfce-utils.xml:455(title)
 msgid "Further Reading"
@@ -387,7 +387,7 @@ msgstr "Altri spunti"
 
 #: ./xfce-utils.xml:457(para)
 msgid "This user guide has only given a very general overview of the Xfce Desktop Environment. More information is available in the <ulink url=\"index.html\" type=\"html\">manuals</ulink> of the separate components of Xfce."
-msgstr "Questa guida ha solamente fornito una panoramica molto generale dell'ambiente grafico Xfce. Altre informazioni sono disponibili nei <ulink url=\"index.html\" type=\"html\">manuals</ulink> dei singoli componenti di Xfce."
+msgstr "Questa guida ha solamente fornito una panoramica molto generale dell'ambiente grafico Xfce. Altre informazioni sono disponibili nei <ulink url=\"index.html\" type=\"html\">manuali</ulink> dei singoli componenti di Xfce."
 
 #: ./xfce-utils.xml:467(title)
 msgid "Components of Xfce"
@@ -395,7 +395,7 @@ msgstr "Componenti di Xfce"
 
 #: ./xfce-utils.xml:469(para)
 msgid "The Xfce components are packaged separately. This section contains a list of the available modules with a short description."
-msgstr "I componenti di Xfce sono pacchettizzati separatamente. Questa sezione contiene un elenco di tutti i mouli disponibili corredati da una breve descrizione."
+msgstr "I componenti di Xfce sono pacchettizzati separatamente. Questa sezione contiene un elenco di tutti i moduli disponibili corredati da una breve descrizione."
 
 #: ./xfce-utils.xml:476(term)
 msgid "libxfce4util"
@@ -427,7 +427,7 @@ msgstr "libxfce4mcs"
 
 #: ./xfce-utils.xml:501(para)
 msgid "Settings management library used by many Xfce components."
-msgstr "Lireria di gestione delle impostazioni utilizzata da diversi componenti di Xfce."
+msgstr "Libreria di gestione delle impostazioni utilizzata da diversi componenti di Xfce."
 
 #: ./xfce-utils.xml:507(term)
 msgid "xfce-mcs-manager"
@@ -451,7 +451,7 @@ msgstr "xfce4-session"
 
 #: ./xfce-utils.xml:531(para)
 msgid "Session manager. The session manager controls the startup and shutdown of the Xfce Desktop Environment. On logout it can save the state of running applications (if the application supports it) and restore them properly again the next time you log in."
-msgstr "Gestore di sessione. Il gestore della sessione controlla l'avvio e lo spegnimento dell'ambiente grafico Xfce. All'uscita può salvare lo satto delle applicazioni in esecuzione ( se l'applicazione lo supporta) e ripristinarlo al prossimo accesso."
+msgstr "Gestore di sessione. Il gestore della sessione controlla l'avvio e lo spegnimento dell'ambiente grafico Xfce. All'uscita può salvare lo stato delle applicazioni in esecuzione ( se l'applicazione lo supporta) e ripristinarlo al successivo accesso."
 
 #: ./xfce-utils.xml:540(term)
 msgid "xfwm4"
@@ -467,7 +467,7 @@ msgstr "xfce4-panel"
 
 #: ./xfce-utils.xml:552(para)
 msgid "The Xfce panel. Provides program lauchers, a workspace switcher, a clock, menus and more."
-msgstr "Il panenllo di Xfce. Fornisce gli avviatori di programmi, un selettore di spazi di lavoro, un orologio, i menu e altro."
+msgstr "Il pannello di Xfce. Fornisce gli avviatori di programmi, un selettore di spazi di lavoro, un orologio, i menu e altro."
 
 #: ./xfce-utils.xml:559(term)
 msgid "xfdesktop"
@@ -543,11 +543,11 @@ msgstr "Pacchetti binari"
 
 #: ./xfce-utils.xml:637(para)
 msgid "The Xfce project officially only releases source code for the desktop environment. However, binary packages may have been contributed by other people for your OS or distribution."
-msgstr "Il progetto Xfce ufficialmente rilascia solamente il codice sorgente per l'ambiente grafico. Comunque, i pacchetti binari potrebbero essere stati forniti da qualcun'altro per il proprio OS o per la propria distribuzione."
+msgstr "Il progetto Xfce ufficialmente rilascia solamente il codice sorgente per l'ambiente grafico. Comunque, i pacchetti binari potrebbero essere stati forniti da qualcun altro per il proprio OS o per la propria distribuzione."
 
 #: ./xfce-utils.xml:642(para)
 msgid "Look at the Xfce site for <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">download locations</ulink> and additional information about available binary packages. If you could not find binary packages for your OS, they may be available from your OS vendor or distributor, or you can install Xfce from source."
-msgstr "COntrollare il sito di Xfce per <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">le posizioni di scaricamento</ulink> e per informazioni aggiuntive relative ai pacchetti binari disponibili. Se non si riescono a trovare dei pacchetti binari per il proprio OS, potrebbero esser disponibili dal fornitore dell'OS oppure è possibile installare Xfce da sorgente."
+msgstr "Controllare il sito di Xfce per <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">le posizioni di scaricamento</ulink> e per informazioni aggiuntive relative ai pacchetti binari disponibili. Se non si riescono a trovare dei pacchetti binari per il proprio OS, potrebbero esser disponibili dal fornitore dell'OS oppure è possibile installare Xfce da sorgente."
 
 #: ./xfce-utils.xml:652(title)
 msgid "Graphical installers"
@@ -563,7 +563,7 @@ msgstr "Compilare da sorgente"
 
 #: ./xfce-utils.xml:664(para)
 msgid "To compile Xfce manually, look at the Xfce site for <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">download locations</ulink>."
-msgstr "Per compilare Xfce manualmente, ricercare nel sito di Xfce le posizioni di <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">download</ulink>."
+msgstr "Per compilare Xfce manualmente, ricercare nel sito di Xfce le posizioni di <ulink url=\"http://xfce.org/index.php?page=download\" type=\"html\">scaricamento</ulink>."
 
 #: ./xfce-utils.xml:672(programlisting)
 #, no-wrap
@@ -613,7 +613,7 @@ msgstr "Il progetto <ulink url=\"http://goodies.xfce.org\" type=\"html\">Xfce Go
 
 #: ./xfce-utils.xml:724(para)
 msgid "<ulink url=\"http://spuriousinterrupt.org/projects/xfmedia/\" type=\"html\">Xfmedia</ulink> is a lightweight media player for Xfce, based on the xine engine."
-msgstr "<ulink url=\"http://spuriousinterrupt.org/projects/xfmedia/\" type=\"html\">Xfmedia</ulink> è un leggero riproduttore multimediale per Xfce, baseto sul motore xine."
+msgstr "<ulink url=\"http://spuriousinterrupt.org/projects/xfmedia/\" type=\"html\">Xfmedia</ulink> è un leggero riproduttore multimediale per Xfce, basato sul motore xine."
 
 #: ./xfce-utils.xml:730(para)
 msgid "<ulink url=\"http://terminal.os-cillation.com/\" type=\"html\">Terminal</ulink> is an easy to use terminal emulator for the Xfce Desktop Environment. It contains all feature you would expect from a modern terminal emulator."
@@ -625,7 +625,7 @@ msgstr "Copyright e licenze"
 
 #: ./xfce-utils.xml:743(para)
 msgid "Xfce 4 is copyright &copy; Olivier Fourdan (<email>fourdan@xfce.org</email>). The different components are copyrighted by their respective authors."
-msgstr "Xfce 4 is copyright &copy; Olivier Fourdan (<email>fourdan@xfce.org</email>). I vari componenti sono protetti da copyright dai rispettivi autori."
+msgstr "Xfce 4 è copyright &copy; Olivier Fourdan (<email>fourdan@xfce.org</email>). I vari componenti sono protetti da copyright dai rispettivi autori."
 
 #: ./xfce-utils.xml:748(para)
 msgid "Three different licenses are used in the Xfce 4 project: <link linkend=\"BSD\">BSD</link>, <link linkend=\"LGPL\">LGPL</link> and <link linkend=\"GPL\">GPL</link>."
@@ -697,7 +697,7 @@ msgstr "startxfce4"
 
 #: ./xfce-utils.xml:872(para)
 msgid "The <application>startxfce4</application> is a convenient script to start an Xfce 4 session from the console. It will give you a session with two panels and with the desktop manager and window manager running."
-msgstr "L'applicazione <application>startxfce4</application> è uno script utile ad avviare una sessioen di Xfce 4 dal terminale. Fornirà una sessione con due pannelli, con il gestore della scrivania e il gestore delle finestre."
+msgstr "L'applicazione <application>startxfce4</application> è uno script utile ad avviare una sessione di Xfce 4 dal terminale. Fornirà una sessione con due pannelli, con il gestore della scrivania e il gestore delle finestre."
 
 #: ./xfce-utils.xml:879(para)
 msgid "To customize the behaviour of <application>startxfce4</application>, copy the file <filename>${sysconfdir}/xdg/xfce4/xinitrc</filename> to your personal <filename>~/.config/xfce4/</filename> directory and edit that file. If you install from source, <filename>${sysconfdir}</filename> defaults to <filename>/usr/local/etc</filename>; for binary packages it is usually set to <filename>/etc</filename>."
@@ -705,7 +705,7 @@ msgstr "Per personalizzare il comportamento di <application>startxfce4</applicat
 
 #: ./xfce-utils.xml:889(para)
 msgid "With the inclusion of a session manager in Xfce 4.2, the preferred way to change startup behaviour is by using the \"Save session\" option in the logout dialog."
-msgstr "Con l'aggiunta di un gestore dis essione in Xfce 4.2, il modo migliore per modificare il comportamento all'avvio consiste nell'utilizzare l'opzione \"Salva sessione\" nella finestra di uscita."
+msgstr "Con l'aggiunta di un gestore di sessione in Xfce 4.2, il modo migliore per modificare il comportamento all'avvio consiste nell'utilizzare l'opzione \"Salva sessione\" nella finestra di uscita."
 
 #: ./xfce-utils.xml:898(term)
 msgid "xfhelp4"
@@ -713,7 +713,7 @@ msgstr "xfhelp4"
 
 #: ./xfce-utils.xml:900(para)
 msgid "This script is used to open the local Xfce 4 documentation in a browser. By default it will try to use <application>exo-open</application> from the libexo library. You can change the preferred browser from the Xfce Settings Manager dialog. If <application>exo-open</application> is not available, the script will try a number of well-known browsers, like firefox, galeon or konqueror, but you can change that by setting the $BROWSER environment variable."
-msgstr "Questo script è utilizzato per aprire la documentazione lcoale di Xfce 4 in un browser. Di norma, tenterà di utilizzare <application>exo-open</application> dalla libreria di libexo. Il browser preferito può essere cambiato dalla schermata del gestore delle impostazioni di Xfce. Se <application>exo-open</application> non è disponibile, lo script proverà fra un numero di browser conosciuti quali firefox, galeon o conqueror, ma è possibile cambiarlo impostando la variabile di ambiente $BROWSER."
+msgstr "Questo script è utilizzato per aprire la documentazione locale di Xfce 4 in un browser. Di norma, tenterà di utilizzare <application>exo-open</application> dalla libreria di libexo. Il browser preferito può essere cambiato dalla schermata del gestore delle impostazioni di Xfce. Se <application>exo-open</application> non è disponibile, lo script proverà fra un numero di browser conosciuti quali firefox, galeon o conqueror, ma è possibile cambiarlo impostando la variabile di ambiente $BROWSER."
 
 #: ./xfce-utils.xml:911(para)
 msgid "If there is documentation installed in the language of your current locale, xfhelp4 will open that instead of the default English documentation."
@@ -733,7 +733,7 @@ msgstr "Informazioni su xfce-utils"
 
 #: ./xfce-utils.xml:935(para)
 msgid "<application>@PACKAGE_NAME@</application> was written by Jasper Huijsmans (<email>jasper@xfce.org</email>), Olivier Fourdan (<email>fourdan@xfce.org</email>) and Benedikt Meurer (<email>benny@xfce.org</email>). To find more information, visit the <ulink url=\"http://www.xfce.org\" type=\"http\">Xfce web site</ulink>."
-msgstr "<application>@PACKAGE_NAME@</application> è stata scritta da Jasper Huijsmans (<email>jasper@xfce.org</email>), Olivier Fourdan (<email>fourdan@xfce.org</email>) e Benedikt Meurer (<email>benny@xfce.org</email>). Per avere ulteriore informzazioni, visitare il <ulink url=\"http://www.xfce.org\" type=\"http\">sito web di Xfce</ulink>."
+msgstr "<application>@PACKAGE_NAME@</application> è stato scritto da Jasper Huijsmans (<email>jasper@xfce.org</email>), Olivier Fourdan (<email>fourdan@xfce.org</email>) e Benedikt Meurer (<email>benny@xfce.org</email>). Per avere ulteriore informazioni, visitare il <ulink url=\"http://www.xfce.org\" type=\"http\">sito web di Xfce</ulink>."
 
 #: ./xfce-utils.xml:944(para)
 msgid "To report a bug or make a suggestion regarding this application or this manual, please use the bug tracking system at <ulink url=\"http://bugzilla.xfce.org/\" type=\"http\">http://bugzilla.xfce.org/</ulink>."
