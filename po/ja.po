@@ -10,10 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-06 17:18+0900\n"
+"POT-Creation-Date: 2010-06-02 15:20+0900\n"
 "PO-Revision-Date: 2010-01-06 17:18+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -76,7 +77,7 @@ msgstr ""
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr "Xfce 4 を利用できるよう協力して下さった全ての方々に感謝します。"
+msgstr "Xfce 4 を利用できるよう協力して下さったすべての方々に感謝します。"
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
@@ -110,6 +111,15 @@ msgstr "LGPL"
 #: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+#, fuzzy
+msgid "About Xfce"
+msgstr "Xfce 4 について"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr ""
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:49
@@ -175,6 +185,16 @@ msgstr "どのプログラムで \"%s\" を開きますか?"
 msgid "Run program"
 msgstr "実行するプログラムを入力してください"
 
+#: ../xfrun/xfrun4.desktop.in.h:1
+#, fuzzy
+msgid "Run Program..."
+msgstr "実行するプログラムを入力してください"
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+#, fuzzy
+msgid "Run a program"
+msgstr "実行するプログラムを入力してください"
+
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
 msgstr "このセッションでデスクトップ環境として Xfce を使用します"
@@ -182,3 +202,11 @@ msgstr "このセッションでデスクトップ環境として Xfce を使用
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce セッション"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr ""
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr ""
