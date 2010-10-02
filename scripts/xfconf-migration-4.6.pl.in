@@ -637,7 +637,7 @@ sub convert_key
 
     $str .= '<Shift>' if($keys =~ /Shift\+/);
     $str .= '<Control>' if($keys =~ /Control\+/);
-    $str .= '<Meta>' if($keys =~ /Alt\+/);
+    $str .= '<Alt>' if($keys =~ /Alt\+/);
     $str .= '<Super>' if($keys =~ /Mod4\+/ || $keys =~ /Super\+/);
     if($keys =~ /(^|\+)([A-Za-z0-9_]+)$/) {
         $str .= $2;
