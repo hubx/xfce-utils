@@ -50,11 +50,11 @@ struct _XfrunDialogPrivate
     GtkWidget *entry;
     GtkWidget *terminal_chk;
     GtkTreeModel *completion_model;
-    
+
     gchar *run_argument;
     gboolean destroy_on_close;
     gchar *working_directory;
-    
+
     gchar *entry_val_tmp;
 };
 
@@ -123,16 +123,16 @@ xfrun_dialog_class_init(XfrunDialogClass *klass)
 {
     GObjectClass *gobject_class = (GObjectClass *)klass;
     GtkWidgetClass *widget_class = (GtkWidgetClass *)klass;
-    
+
     g_type_class_add_private(klass, sizeof(XfrunDialogPrivate));
-    
+
     gobject_class->set_property = xfrun_dialog_set_property;
     gobject_class->get_property = xfrun_dialog_get_property;
     gobject_class->finalize = xfrun_dialog_finalize;
-    
+
     widget_class->key_press_event = xfrun_dialog_key_press_event;
     widget_class->delete_event = xfrun_dialog_delete_event;
-    
+
     __signals[SIG_CLOSED] = g_signal_new("closed", XFRUN_TYPE_DIALOG,
                                          G_SIGNAL_RUN_LAST,
                                          G_STRUCT_OFFSET(XfrunDialogClass,
@@ -140,14 +140,14 @@ xfrun_dialog_class_init(XfrunDialogClass *klass)
                                          NULL, NULL,
                                          g_cclosure_marshal_VOID__VOID,
                                          G_TYPE_NONE, 0);
-    
+
     g_object_class_install_property(gobject_class, PROP_RUN_ARGUMENT,
                                     g_param_spec_string("run-argument",
                                                         "Run argument",
                                                         "1st argument to pass to the program run",
                                                         NULL,
                                                         G_PARAM_READWRITE));
-    
+
     g_object_class_install_property(gobject_class, PROP_WORKING_DIRECTORY,
                                     g_param_spec_string("working-directory",
                                                         "Working directory",
@@ -161,18 +161,18 @@ xfrun_dialog_init(XfrunDialog *dialog)
 {
     GtkWidget *entry, *comboboxentry, *chk, *btn, *vbox, *bbox;
     GtkTreeIter itr;
-    
+
     dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, XFRUN_TYPE_DIALOG,
                                                XfrunDialogPrivate);
     GTK_WINDOW(dialog)->type = GTK_WINDOW_TOPLEVEL;
-    
+
     gtk_widget_set_size_request(GTK_WIDGET(dialog), 400, -1);
-    
+
     vbox = gtk_vbox_new(FALSE, BORDER/2);
     gtk_container_set_border_width(GTK_CONTAINER(vbox), BORDER);
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(dialog), vbox);
-    
+
     dialog->priv->comboboxentry = comboboxentry = gtk_combo_box_entry_new();
     dialog->priv->entry = entry = gtk_bin_get_child(GTK_BIN(comboboxentry));
     gtk_entry_set_activates_default(GTK_ENTRY(entry), TRUE);
@@ -183,28 +183,28 @@ xfrun_dialog_init(XfrunDialog *dialog)
                      G_CALLBACK(xfrun_comboboxentry_changed), dialog);
     g_signal_connect(G_OBJECT(entry), "focus-out-event",
                      G_CALLBACK(xfrun_entry_focus_out), dialog);
-    
+
     dialog->priv->terminal_chk = chk = gtk_check_button_new_with_mnemonic(_("Run in _terminal"));
     gtk_widget_show(chk);
     gtk_box_pack_start(GTK_BOX(vbox), chk, FALSE, FALSE, 0);
-    
+
     if(gtk_tree_model_get_iter_first(dialog->priv->completion_model, &itr)) {
         gtk_combo_box_set_active_iter(GTK_COMBO_BOX(comboboxentry), &itr);
         gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(chk), FALSE);
     }
-    
+
     bbox = gtk_hbutton_box_new();
     gtk_button_box_set_layout(GTK_BUTTON_BOX(bbox), GTK_BUTTONBOX_END);
     gtk_box_set_spacing(GTK_BOX(bbox), BORDER);
     gtk_widget_show(bbox);
     gtk_box_pack_end(GTK_BOX(vbox), bbox, FALSE, FALSE, 0);
-    
+
     btn = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
     gtk_widget_show(btn);
     gtk_box_pack_end(GTK_BOX(bbox), btn, FALSE, FALSE, 0);
     g_signal_connect_swapped(G_OBJECT(btn), "clicked",
                              G_CALLBACK(xfrun_dialog_delete_event), dialog);
-    
+
     btn = xfce_gtk_button_new_mixed(GTK_STOCK_EXECUTE, _("_Run"));
     gtk_widget_show(btn);
     gtk_box_pack_end(GTK_BOX(bbox), btn, FALSE, FALSE, 0);
@@ -221,17 +221,17 @@ xfrun_dialog_set_property(GObject *object,
                           GParamSpec *pspec)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(object);
-    
+
     switch(property_id) {
         case PROP_RUN_ARGUMENT:
             xfrun_dialog_set_run_argument(dialog, g_value_get_string(value));
             break;
-        
+
         case PROP_WORKING_DIRECTORY:
             xfrun_dialog_set_working_directory(dialog,
                                                g_value_get_string(value));
             break;
-        
+
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID(object, property_id, pspec);
             break;
@@ -245,17 +245,17 @@ xfrun_dialog_get_property(GObject *object,
                           GParamSpec *pspec)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(object);
-    
+
     switch(property_id) {
         case PROP_RUN_ARGUMENT:
             g_value_set_string(value, xfrun_dialog_get_run_argument(dialog));
             break;
-        
+
         case PROP_WORKING_DIRECTORY:
             g_value_set_string(value,
                                xfrun_dialog_get_working_directory(dialog));
             break;
-        
+
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID(object, property_id, pspec);
             break;
@@ -266,14 +266,14 @@ static void
 xfrun_dialog_finalize(GObject *object)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(object);
-    
+
     g_free(dialog->priv->run_argument);
     g_free(dialog->priv->working_directory);
     g_free(dialog->priv->entry_val_tmp);
-    
+
     if(dialog->priv->completion_model)
         g_object_unref(G_OBJECT(dialog->priv->completion_model));
-    
+
     G_OBJECT_CLASS(xfrun_dialog_parent_class)->finalize(object);
 }
 
@@ -285,7 +285,7 @@ xfrun_dialog_key_press_event(GtkWidget *widget,
         xfrun_dialog_delete_event(widget, NULL);
         return TRUE;
     }
-    
+
     return GTK_WIDGET_CLASS(xfrun_dialog_parent_class)->key_press_event(widget, evt);
 }
 
@@ -294,9 +294,9 @@ xfrun_dialog_delete_event(GtkWidget *widget,
                           GdkEventAny *evt)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(widget);
-    
+
     g_signal_emit(G_OBJECT(widget), __signals[SIG_CLOSED], 0);
-    
+
     if(dialog->priv->destroy_on_close)
         gtk_widget_destroy(widget);
     else {
@@ -306,7 +306,7 @@ xfrun_dialog_delete_event(GtkWidget *widget,
         gtk_widget_grab_focus(dialog->priv->entry);
         gtk_widget_hide(widget);
     }
-    
+
     return TRUE;
 }
 
@@ -316,24 +316,24 @@ xfrun_setup_entry_completion(XfrunDialog *dialog)
     GtkComboBoxEntry *comboboxentry = GTK_COMBO_BOX_ENTRY(dialog->priv->comboboxentry);
     GtkEntryCompletion *completion = gtk_entry_completion_new();
     GtkTreeModel *completion_model;
-    
+
     /* clear out the old completion and resources, if any */
     gtk_entry_set_completion(GTK_ENTRY(dialog->priv->entry), NULL);
     gtk_combo_box_set_model(GTK_COMBO_BOX(comboboxentry), NULL);
     if(dialog->priv->completion_model)
         g_object_unref(dialog->priv->completion_model);
-    
+
     dialog->priv->completion_model = completion_model = xfrun_create_completion_model(dialog);
     gtk_combo_box_set_model(GTK_COMBO_BOX(comboboxentry), completion_model);
     gtk_combo_box_entry_set_text_column(comboboxentry, XFRUN_COL_COMMAND);
-    
+
     gtk_entry_completion_set_model(completion, completion_model);
     gtk_entry_completion_set_text_column(completion, XFRUN_COL_COMMAND);
     gtk_entry_completion_set_popup_completion(completion, TRUE);
     gtk_entry_completion_set_inline_completion(completion, TRUE);
     g_signal_connect(G_OBJECT(completion), "match-selected",
                      G_CALLBACK(xfrun_match_selected), dialog);
-    
+
     gtk_entry_set_completion(GTK_ENTRY(dialog->priv->entry), completion);
     g_object_unref(G_OBJECT(completion));
 }
@@ -343,15 +343,15 @@ xfrun_get_histfile_content(void)
 {
     gchar **lines = NULL, *histfile, *contents = NULL;
     gsize length = 0;
-    
+
     histfile = xfce_resource_lookup(XFCE_RESOURCE_CACHE, "xfce4/xfrun4/history");
     if(histfile && g_file_get_contents(histfile, &contents, &length, NULL)) {
         lines = g_strsplit(contents, "\n", -1);
         g_free(contents);
     }
-    
+
     g_free(histfile);
-    
+
     return lines;
 }
 
@@ -363,7 +363,7 @@ xfrun_comboboxentry_changed(GtkComboBoxEntry *comboboxentry,
     GtkTreeModel *model;
     GtkTreeIter iter;
     gboolean in_terminal = FALSE;
-    
+
     if(gtk_combo_box_get_active_iter(GTK_COMBO_BOX(comboboxentry), &iter)) {
         model = gtk_combo_box_get_model(GTK_COMBO_BOX(comboboxentry));
         gtk_tree_model_get(model, &iter,
@@ -372,7 +372,7 @@ xfrun_comboboxentry_changed(GtkComboBoxEntry *comboboxentry,
         gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk),
                                      in_terminal);
     }
-    
+
     return FALSE;
 }
 
@@ -385,20 +385,20 @@ xfrun_entry_check_match(GtkTreeModel *model,
     XfrunDialog *dialog = XFRUN_DIALOG(data);
     gchar *command = NULL;
     gboolean in_terminal = FALSE, ret = FALSE;
-    
+
     gtk_tree_model_get(model, iter,
                        XFRUN_COL_COMMAND, &command,
                        XFRUN_COL_IN_TERMINAL, &in_terminal,
                        -1);
-    
+
     if(!g_utf8_collate(command, dialog->priv->entry_val_tmp)) {
         gtk_combo_box_set_active_iter(GTK_COMBO_BOX(dialog->priv->comboboxentry),
                                       iter);
         ret = TRUE;
     }
-    
+
     g_free(command);
-    
+
     return ret;
 }
 
@@ -408,7 +408,7 @@ xfrun_entry_focus_out(GtkWidget *widget,
                       gpointer user_data)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    
+
     if(gtk_combo_box_get_active(GTK_COMBO_BOX(dialog->priv->comboboxentry)) < 0) {
         dialog->priv->entry_val_tmp = gtk_editable_get_chars(GTK_EDITABLE(widget),
                                                              0, -1);
@@ -417,7 +417,7 @@ xfrun_entry_focus_out(GtkWidget *widget,
         g_free(dialog->priv->entry_val_tmp);
         dialog->priv->entry_val_tmp = NULL;
     }
-    
+
     return FALSE;
 }
 
@@ -429,14 +429,14 @@ xfrun_add_to_history(const gchar *command,
     gint i;
     FILE *fp = NULL;
     GList *new_lines = NULL, *l;
-    
+
     histfile = xfce_resource_save_location(XFCE_RESOURCE_CACHE,
                                     "xfce4/xfrun4/history.new", TRUE);
     if(!histfile) {
         g_critical("Unable to write to history file.");
         return;
     }
-    
+
     if(!lines) {
         fp = fopen(histfile, "w");
         if(fp) {
@@ -445,35 +445,35 @@ xfrun_add_to_history(const gchar *command,
         }
     } else {
         gchar *new_line;
-        
+
         for(i = 0; lines[i]; ++i) {
             if(strlen(lines[i]) < 3 || lines[i][1] != ':')
                 continue;
-            
+
             if(g_utf8_collate(lines[i] + 2, command))
                 new_lines = g_list_append(new_lines, lines[i]);
         }
-        
+
         new_line = g_strdup_printf("%d:%s", in_terminal ? 1 : 0, command);
         new_lines = g_list_prepend(new_lines, new_line);
-        
+
         fp = fopen(histfile, "w");
         if(fp) {
             for(l = new_lines, i = 0; l && i < MAX_ENTRIES; l = l->next, ++i)
                 fprintf(fp, "%s\n", (char *)l->data);
             fclose(fp);
         }
-        
+
         g_free(new_line);
     }
-    
+
     histfile1 = g_strdup(histfile);
     histfile1[strlen(histfile1)-4] = 0;
-    
+
     if(rename(histfile, histfile1))
         g_critical("Unable to rename '%s' to '%s'", histfile, histfile1);
     unlink(histfile);
-    
+
     g_free(histfile1);
     g_free(histfile);
     g_strfreev(lines);
@@ -497,26 +497,26 @@ xfrun_run_clicked(GtkWidget *widget,
     GdkScreen *gscreen;
     GError *error = NULL;
     gint argc;
-    
+
     cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
     in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk));
-    
+
     gscreen = gtk_widget_get_screen(widget);
-    
+
     if(dialog->priv->run_argument) {
         gchar *new_cmdline, *run_arg_quoted;
-        
+
         run_arg_quoted = g_shell_quote(dialog->priv->run_argument);
         new_cmdline = g_strconcat(cmdline, " ", run_arg_quoted, NULL);
-        
+
         g_free(run_arg_quoted);
         g_free(cmdline);
         cmdline = new_cmdline;
     }
-    
+
     if(in_terminal) {
         gint i = 0;
-        
+
         argv = g_new0(gchar *, 4);
         argv[i++] = "xfterm4";
         argv[i++] = "-e";
@@ -526,7 +526,7 @@ xfrun_run_clicked(GtkWidget *widget,
         /* error is handled below */
         g_shell_parse_argv(cmdline, &argc, &argv, &error);
     }
-    
+
     if(argv && gdk_spawn_on_screen(gscreen,
                                    dialog->priv->working_directory,
                                    argv, NULL, G_SPAWN_SEARCH_PATH,
@@ -546,7 +546,7 @@ xfrun_run_clicked(GtkWidget *widget,
         if(error)
             g_error_free(error);
     }
-    
+
     g_free(cmdline);
     if(in_terminal)
         g_free(argv);
@@ -562,13 +562,13 @@ xfrun_match_selected(GtkEntryCompletion *completion,
 {
     XfrunDialog *dialog = XFRUN_DIALOG(user_data);
     gboolean in_terminal = FALSE;
-    
+
     gtk_tree_model_get(model, iter,
                        XFRUN_COL_IN_TERMINAL, &in_terminal,
                        -1);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk),
                                  in_terminal);
-    
+
     return FALSE;
 }
 
@@ -578,18 +578,18 @@ xfrun_create_completion_model(XfrunDialog *dialog)
     GtkListStore *ls;
     gchar **lines = NULL;
     gchar *histfile = NULL;
-    
+
     ls = gtk_list_store_new(XFRUN_N_COLS, G_TYPE_STRING, G_TYPE_BOOLEAN);
-    
+
     lines = xfrun_get_histfile_content();
     if(lines) {
         GtkTreeIter itr;
         gint i;
-        
+
         for(i = 0; lines[i]; ++i) {
             if(strlen(lines[i]) < 3 || lines[i][1] != ':')
                 continue;
-            
+
             gtk_list_store_append(ls, &itr);
             gtk_list_store_set(ls, &itr,
                                XFRUN_COL_COMMAND, lines[i] + 2,
@@ -597,12 +597,12 @@ xfrun_create_completion_model(XfrunDialog *dialog)
                                lines[i][0] == '1' ? TRUE : FALSE,
                                -1);
         }
-        
+
         g_strfreev(lines);
     }
-    
+
     g_free(histfile);
-    
+
     return GTK_TREE_MODEL(ls);
 }
 
@@ -622,10 +622,10 @@ xfrun_dialog_set_run_argument(XfrunDialog *dialog,
                               const gchar *run_argument)
 {
     g_return_if_fail(XFRUN_IS_DIALOG(dialog));
-    
+
     g_free(dialog->priv->run_argument);
     dialog->priv->run_argument = g_strdup(run_argument);
-    
+
     if(run_argument) {
         gchar *title = g_strdup_printf(_("Open %s with what program?"),
                                        run_argument);
@@ -662,7 +662,7 @@ xfrun_dialog_set_working_directory(XfrunDialog *dialog,
                                    const gchar *working_directory)
 {
     g_return_if_fail(XFRUN_IS_DIALOG(dialog));
-    
+
     g_free(dialog->priv->working_directory);
     dialog->priv->working_directory = g_strdup(working_directory);
 }

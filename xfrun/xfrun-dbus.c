@@ -9,12 +9,12 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
@@ -93,12 +93,12 @@ xfrun_find_or_open_display(const gchar *display_name)
 {
     static GHashTable *open_displays = NULL;
     GdkDisplay *gdpy = NULL;
-    
+
     if(G_UNLIKELY(!open_displays)) {
         open_displays = g_hash_table_new_full(g_str_hash, g_str_equal,
                                               (GDestroyNotify)g_free, NULL);
     }
-    
+
     gdpy = g_hash_table_lookup(open_displays, display_name);
     if(!gdpy) {
         DBG("couldn't find display '%s'; opening a new one", display_name);
@@ -106,7 +106,7 @@ xfrun_find_or_open_display(const gchar *display_name)
         if(gdpy)
             g_hash_table_insert(open_displays, g_strdup(display_name), gdpy);
     }
-    
+
     return gdpy;
 }
 
@@ -124,10 +124,10 @@ xfrun_handle_dbus_message(DBusConnection *connection,
         DBusMessage *reply = NULL;
         DBusError derror;
         gchar *display_name = NULL, *cwd = NULL, *run_argument = NULL;
-        
+
         dbus_error_init(&derror);
-        
-        if(!dbus_message_get_args(message, &derror, 
+
+        if(!dbus_message_get_args(message, &derror,
                                   DBUS_TYPE_STRING, &display_name,
                                   DBUS_TYPE_STRING, &cwd,
                                   DBUS_TYPE_STRING, &run_argument,
@@ -138,7 +138,7 @@ xfrun_handle_dbus_message(DBusConnection *connection,
             dbus_error_free(&derror);
         } else {
             GdkDisplay *gdpy;
-            
+
             gdpy = xfrun_find_or_open_display(display_name);
             if(!gdpy) {
                 gchar *msgstr = g_strdup_printf(_("Unable to open display \"%s\"."),
@@ -149,10 +149,10 @@ xfrun_handle_dbus_message(DBusConnection *connection,
                 g_free(msgstr);
             } else {
                 GtkWidget *dialog;
-                
+
                 if(!strlen(run_argument))
                     run_argument = NULL;
-                
+
                 if(static_dialog_in_use) {
                     dialog = xfrun_dialog_new(run_argument);
                     xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(dialog),
@@ -171,20 +171,19 @@ xfrun_handle_dbus_message(DBusConnection *connection,
                     }
                     static_dialog_in_use = TRUE;
                 }
-                
+
                 /* this handles setting the dialog to the right screen */
                 xfce_gtk_window_center_on_active_screen(GTK_WINDOW(dialog));
                 xfrun_dialog_select_text(XFRUN_DIALOG(dialog));
                 gtk_widget_show(dialog);
-            
+
                 reply = dbus_message_new_method_return(message);
-                
             }
         }
 
         dbus_connection_send(connection, reply, NULL);
         dbus_message_unref(reply);
-        
+
         return DBUS_HANDLER_RESULT_HANDLED;
     } else if(dbus_message_is_method_call(message,
                                           RUNDIALOG_DBUS_INTERFACE,
@@ -193,17 +192,17 @@ xfrun_handle_dbus_message(DBusConnection *connection,
         DBusMessage *reply = dbus_message_new_method_return(message);
         dbus_connection_send(connection, reply, NULL);
         dbus_message_unref(reply);
-        
+
         gtk_main_quit();
     } else if(dbus_message_is_signal(message, DBUS_INTERFACE_LOCAL,
                                      "Disconnected"))
     {
         g_printerr(_("D-BUS message bus disconnected. Exiting ...\n"));
         gtk_main_quit();
-        
+
         return DBUS_HANDLER_RESULT_HANDLED;
     }
-    
+
     return DBUS_HANDLER_RESULT_NOT_YET_HANDLED;
 }
 
@@ -212,27 +211,27 @@ static gboolean
 xfrun_register_dbus_service(void)
 {
     static const struct DBusObjectPathVTable vtable = {
-        NULL, 
+        NULL,
         xfrun_handle_dbus_message,
         NULL,
     };
     DBusConnection *connection;
     DBusError derror;
-    
+
     dbus_error_init(&derror);
     connection = dbus_bus_get(DBUS_BUS_SESSION, &derror);
     if(G_UNLIKELY(!connection)) {
         dbus_error_free(&derror);
         return FALSE;
     }
-    
+
     dbus_connection_setup_with_g_main(connection, NULL);
-    
+
     if(dbus_bus_request_name(connection, RUNDIALOG_DBUS_SERVICE, 0, &derror) < 0) {
         dbus_error_free(&derror);
         return FALSE;
     }
-    
+
     if(!dbus_connection_register_object_path(connection, RUNDIALOG_DBUS_PATH,
                                              &vtable, NULL))
     {
@@ -251,36 +250,36 @@ xfrun_show_dialog(const gchar *run_argument)
     DBusMessage *result;
     DBusError derror;
     gchar *cwd, *display_name, *dummy_run_argument = NULL;
-    
+
     dbus_error_init(&derror);
     connection = dbus_bus_get(DBUS_BUS_SESSION, &derror);
     if(!connection) {
         dbus_error_free(&derror);
         return FALSE;
     }
-    
+
     method = dbus_message_new_method_call(RUNDIALOG_DBUS_SERVICE,
                                           RUNDIALOG_DBUS_PATH,
                                           RUNDIALOG_DBUS_INTERFACE,
                                           RUNDIALOG_DBUS_METHOD_OPEN);
     dbus_message_set_auto_start(method, TRUE);
-    
+
     display_name = gdk_screen_make_display_name(gdk_screen_get_default());
     cwd = g_get_current_dir();
-    
+
     if(!run_argument)
         run_argument = dummy_run_argument = g_strdup("");
-    
+
     dbus_message_append_args(method,
                              DBUS_TYPE_STRING, &display_name,
                              DBUS_TYPE_STRING, &cwd,
                              DBUS_TYPE_STRING, &run_argument,
                              DBUS_TYPE_INVALID);
-    
+
     g_free(display_name);
     g_free(cwd);
     g_free(dummy_run_argument);
-    
+
     result = dbus_connection_send_with_reply_and_block(connection, method,
                                                        5000, &derror);
     dbus_message_unref(method);
@@ -288,10 +287,10 @@ xfrun_show_dialog(const gchar *run_argument)
         dbus_error_free(&derror);
         return FALSE;
     }
-    
+
     dbus_message_unref(result);
     dbus_connection_unref(connection);
-    
+
     return TRUE;
 }
 
@@ -301,23 +300,23 @@ xfrun_send_quit(void)
 {
     DBusConnection *connection;
     DBusMessage *method, *result;
-    
+
     connection = dbus_bus_get(DBUS_BUS_SESSION, NULL);
     if(!connection)
         return;
-    
+
     method = dbus_message_new_method_call(RUNDIALOG_DBUS_SERVICE,
                                           RUNDIALOG_DBUS_PATH,
                                           RUNDIALOG_DBUS_INTERFACE,
                                           RUNDIALOG_DBUS_METHOD_QUIT);
     dbus_message_set_auto_start(method, FALSE);
-    
+
     result = dbus_connection_send_with_reply_and_block(connection, method,
                                                        5000, NULL);
     dbus_message_unref(method);
     if(result)
         dbus_message_unref(result);
-    
+
     dbus_connection_unref(connection);
 }
 
@@ -328,7 +327,7 @@ main(int argc,
     gboolean have_gtk = gtk_init_check(&argc, &argv);
 
     xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
-    
+
     if(argc > 1 && !strcmp(argv[1], "--quit"))
         xfrun_send_quit();
     else if(argc > 1 && !strcmp(argv[1], "--daemon")) {
@@ -336,7 +335,7 @@ main(int argc,
             g_critical("GTK is not available, failing.");
             return 1;
         }
-        
+
         if(argc == 2 || strcmp(argv[2], "--no-detach")) {  /* for debugging purposes... */
 #ifdef HAVE_DAEMON
             if(daemon(1, 1)) {
@@ -369,22 +368,22 @@ main(int argc,
             }
 #endif
         }
-        
+
         static_dialog = xfrun_dialog_new(NULL);
         xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(static_dialog), FALSE);
         g_signal_connect(G_OBJECT(static_dialog), "closed",
                          G_CALLBACK(xfrun_static_dialog_closed), NULL);
         static_dialog_in_use = FALSE;
-        
+
         xfrun_register_dbus_service();
-        
+
         gtk_main();
     } else {
         if(!have_gtk) {
             g_critical("GTK is not available, failing.");
             return 1;
         }
-        
+
         if(!xfrun_show_dialog(argc > 1 ? argv[1] : NULL)) {
             GtkWidget *fallback_dialog = xfrun_dialog_new(argc > 1
                                                           ? argv[1]
@@ -395,10 +394,10 @@ main(int argc,
                              G_CALLBACK(gtk_main_quit), NULL);
             xfce_gtk_window_center_on_active_screen(GTK_WINDOW(fallback_dialog));
             gtk_widget_show(fallback_dialog);
-            
+
             gtk_main();
         }
     }
-    
+
     return 0;
 }

@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -36,7 +36,7 @@ typedef struct _XfrunDialogPrivate XfrunDialogPrivate;
 struct _XfrunDialog
 {
     GtkWindow parent;
-    
+
     /*< private >*/
     XfrunDialogPrivate *priv;
 };
@@ -44,7 +44,7 @@ struct _XfrunDialog
 struct _XfrunDialogClass
 {
     GtkWindowClass parent_class;
-    
+
     /*< signals >*/
     void (*closed)(XfrunDialog *dialog);
 };
