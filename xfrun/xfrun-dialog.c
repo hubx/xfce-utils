@@ -189,8 +189,13 @@ xfrun_dialog_init(XfrunDialog *dialog)
     gtk_box_pack_start(GTK_BOX(vbox), chk, FALSE, FALSE, 0);
 
     if(gtk_tree_model_get_iter_first(dialog->priv->completion_model, &itr)) {
+        gboolean in_terminal = FALSE;
+
+        gtk_tree_model_get (dialog->priv->completion_model, &itr,
+                            XFRUN_COL_IN_TERMINAL, &in_terminal, -1);
+
         gtk_combo_box_set_active_iter(GTK_COMBO_BOX(comboboxentry), &itr);
-        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(chk), FALSE);
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(chk), in_terminal);
     }
 
     bbox = gtk_hbutton_box_new();
