@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
-"PO-Revision-Date: 2008-12-11 01:39+0100\n"
+"POT-Creation-Date: 2010-10-16 10:07+0000\n"
+"PO-Revision-Date: 2010-10-16 16:25+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -19,109 +19,119 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../xfce4-about/info.c:197
-msgid "Unable to load "
-msgstr "Kunde inte läsa in"
+#: ../xfce4-about/info.c:206
+#: ../xfce4-about/info.c:385
+#, c-format
+msgid "Unable to load the file %s"
+msgstr "Kunde inte läsa in filen %s"
 
 #. Project lead
-#: ../xfce4-about/info.c:226
+#: ../xfce4-about/info.c:235
 msgid "Project Lead"
 msgstr "Projektledning"
 
 #. Core developers
-#: ../xfce4-about/info.c:230
+#: ../xfce4-about/info.c:239
 msgid "Core developers"
 msgstr "Ledande utvecklare"
 
 #. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/info.c:243
 msgid "Active contributors"
 msgstr "Aktiva bidragsgivare"
 
 #. Previous contributors
-#: ../xfce4-about/info.c:238
+#: ../xfce4-about/info.c:247
 msgid "Previous contributors"
 msgstr "Tidigare bidragsgivare"
 
-#: ../xfce4-about/info.c:243
+#: ../xfce4-about/info.c:252
 msgid "Web Hosting and Mailing Lists provided by"
 msgstr "Webbdrift och sändlistor tillhandahålls av"
 
 #. Server admins
-#: ../xfce4-about/info.c:275
+#: ../xfce4-about/info.c:284
 msgid "Server maintained by"
 msgstr "Serverunderhåll av"
 
 #. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/info.c:288
 msgid "Goodies supervision"
 msgstr "Övervakning av tredjepartskomponenter"
 
 #. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/info.c:292
 msgid "Translations supervision"
 msgstr "Översättningsansvariga"
 
 #. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/info.c:296
 msgid "Translators"
 msgstr "Översättare"
 
-#: ../xfce4-about/info.c:318
+#: ../xfce4-about/info.c:327
 msgid "If you know of anyone missing from this list, please let us know on <"
 msgstr "Om du vet någon som saknas i den här listan, låt oss få veta på <"
 
-#: ../xfce4-about/info.c:322
+#: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
 msgstr "Tack till alla som hjälpt till att göra denna programvara möjlig."
 
-#: ../xfce4-about/info.c:431
+#: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
 msgstr "Om Xfce 4"
 
-#: ../xfce4-about/info.c:432
+#: ../xfce4-about/info.c:442
 msgid "Copyright 2002-2010 by Olivier Fourdan"
 msgstr "Copyright 2002-2010 Olivier Fourdan"
 
-#: ../xfce4-about/info.c:455
+#: ../xfce4-about/info.c:461
 msgid "Info"
 msgstr "Info"
 
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
+#: ../xfce4-about/info.c:463
 msgid "Credits"
 msgstr "Tack"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/info.c:464
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/info.c:459
+#: ../xfce4-about/info.c:465
 msgid "BSDL"
 msgstr "BSDL"
 
-#: ../xfce4-about/info.c:460
+#: ../xfce4-about/info.c:466
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/info.c:467
 msgid "GPL"
 msgstr "GPL"
 
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "Om Xfce"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Information om skrivbordsmiljön Xfce"
+
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:49
 msgid "Daemon Mode"
 msgstr "Demonläge"
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Daemon mode is not supported."
 msgstr "Demonläge stöds inte."
 
-#: ../xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:52
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "Xfrun måste kompileras med D-BUS-stöd för att aktivera demonläget."
 
-#: ../xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:144
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Kunde inte öppna display \"%s\"."
@@ -132,43 +142,53 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS-meddelandebussen kopplade från. Avslutar...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:342
+#: ../xfrun/xfrun-dbus.c:353
 msgid "System Error"
 msgstr "Systemfel"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:344
+#: ../xfrun/xfrun-dbus.c:355
 msgid "Unable to fork to background:"
 msgstr "Kunde inte grena process till bakgrunden:"
 
-#: ../xfrun/xfrun-dialog.c:188
+#: ../xfrun/xfrun-dialog.c:187
 msgid "Run in _terminal"
 msgstr "Kör i _terminal"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: ../xfrun/xfrun-dialog.c:213
 msgid "_Run"
 msgstr "_Kör"
 
-#: ../xfrun/xfrun-dialog.c:540
+#: ../xfrun/xfrun-dialog.c:544
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Kommandot \"%s\" misslyckades:"
 
-#: ../xfrun/xfrun-dialog.c:542
+#: ../xfrun/xfrun-dialog.c:546
 msgid "Run Error"
 msgstr "Fel vid körning"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: ../xfrun/xfrun-dialog.c:548
 msgid "Unknown Error"
 msgstr "Okänt fel"
 
-#: ../xfrun/xfrun-dialog.c:631
+#: ../xfrun/xfrun-dialog.c:635
 #, c-format
 msgid "Open %s with what program?"
 msgstr "Öppna %s med vilket program?"
 
-#: ../xfrun/xfrun-dialog.c:636
+#: ../xfrun/xfrun-dialog.c:640
 msgid "Run program"
 msgstr "Kör program"
+
+#: ../xfrun/xfrun4.desktop.in.h:1
+msgid "Run Program..."
+msgstr "Kör program..."
+
+#: ../xfrun/xfrun4.desktop.in.h:2
+msgid "Run a program"
+msgstr "Kör ett program"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
@@ -177,3 +197,12 @@ msgstr "Använd denna session för att köra Xfce som din skrivbordsmiljö"
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
 msgstr "Xfce-session"
+
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr "Hjälp"
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr "Hjälp hur man använder Xfce"
+
