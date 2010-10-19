@@ -1,17 +1,17 @@
 # Galician translation of xfce-utils-doc
 # Copyright (C) 2010 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
-# 
+#
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2010.
-# 
+#
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en <http://trasno.net>
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils-doc\n"
 "POT-Creation-Date: 2010-08-28 16:12+0200\n"
-"PO-Revision-Date: 2010-09-09 13:11+0200\n"
+"PO-Revision-Date: 2010-10-19 18:40+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "Panel"
 
 #: ./xfce-utils.xml41(ulink) ./xfce-utils.xml290(term)
 msgid "Window Manager"
-msgstr "Xestor de fiestras"
+msgstr "Xestor de xanelas"
 
 #: ./xfce-utils.xml42(ulink)
 msgid "Session Manager"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ./xfce-utils.xml171(title)
 msgid "Using Xfce4"
-msgstr ""
+msgstr "Uso de Xfce4"
 
 #: ./xfce-utils.xml174(title)
 msgid "Getting started"
@@ -230,7 +230,7 @@ msgstr "Sesión predeterminada de Xfce 4"
 
 #: ./xfce-utils.xml224(phrase)
 msgid "Default Xfce session, with desktop manager and panel."
-msgstr ""
+msgstr "Sesión predefinida de Xfce, co xestor de escritorio e o panel."
 
 #: ./xfce-utils.xml231(para)
 msgid "When you run <application>startxfce4</application> for the first time, several applications are started by the Xfce session manager:"
@@ -318,11 +318,11 @@ msgstr ""
 
 #: ./xfce-utils.xml375(title)
 msgid "Managing windows and workspaces"
-msgstr "Xestión de fiestras e de espazos de traballo"
+msgstr "Xestión de xanelas e de espazos de traballo"
 
 #: ./xfce-utils.xml380(term)
 msgid "Basic window operations"
-msgstr ""
+msgstr "Operacións de xanela básicas"
 
 #: ./xfce-utils.xml382(para)
 msgid "You can move windows around the screen by dragging their title bar. A window can be closed, hidden, maximized, shaded and made sticky &mdash; this means it will show up on all workspaces &mdash; by using the title bar buttons."
@@ -342,7 +342,7 @@ msgstr ""
 
 #: ./xfce-utils.xml402(term)
 msgid "Application management"
-msgstr ""
+msgstr "Xestión de aplicativos"
 
 #: ./xfce-utils.xml404(para)
 msgid "To find out what applications are currently running you can look at the task list on the top panel. Clicking on a button in the task list will focus the associated application. Clicking again will hide it."
@@ -378,7 +378,7 @@ msgstr ""
 
 #: ./xfce-utils.xml455(title)
 msgid "Further Reading"
-msgstr ""
+msgstr "Lecturas posteriores"
 
 #: ./xfce-utils.xml457(para)
 msgid "This user guide has only given a very general overview of the Xfce Desktop Environment. More information is available in the <ulink url=\"index.html\" type=\"html\">manuals</ulink> of the separate components of Xfce."
@@ -486,7 +486,7 @@ msgstr "Thunar"
 
 #: ./xfce-utils.xml582(para)
 msgid "A fast and efficient file manager."
-msgstr ""
+msgstr "Un xestor de ficheiros rápido e eficiente."
 
 #: ./xfce-utils.xml587(term)
 msgid "xfprint"
@@ -588,7 +588,7 @@ msgstr ""
 
 #: ./xfce-utils.xml700(title)
 msgid "Using SVN"
-msgstr ""
+msgstr "Uso de SVN"
 
 #: ./xfce-utils.xml702(para)
 msgid "The latest development sources for Xfce 4 are available from subversion (SVN)."
@@ -724,7 +724,7 @@ msgstr ""
 
 #: ./xfce-utils.xml933(title)
 msgid "About xfce-utils"
-msgstr ""
+msgstr "Acerca de xfce-utils"
 
 #: ./xfce-utils.xml935(para)
 msgid "<application>@PACKAGE_NAME@</application> was written by Jasper Huijsmans (<email>jasper@xfce.org</email>), Olivier Fourdan (<email>fourdan@xfce.org</email>) and Benedikt Meurer (<email>benny@xfce.org</email>). To find more information, visit the <ulink url=\"http://www.xfce.org\" type=\"http\">Xfce web site</ulink>."
@@ -742,3 +742,4 @@ msgstr ""
 #: ./xfce-utils.xml0(None)
 msgid "translator-credits"
 msgstr "Leandro Regueiro <leandro.regueiro@gmail.com>, 2010."
+
