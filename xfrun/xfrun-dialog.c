@@ -502,10 +502,12 @@ xfrun_run_clicked(GtkWidget *widget,
     GError       *error = NULL;
     gchar       **argv = NULL;
     gchar        *cmdline;
+    gchar        *original_cmdline;
     gchar        *new_cmdline;
     gint          argc;
 
     cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
+    original_cmdline = g_strdup (cmdline);
     in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk));
 
     new_cmdline = xfce_expand_variables (cmdline, NULL);
@@ -555,7 +557,7 @@ xfrun_run_clicked(GtkWidget *widget,
                                    xfrun_spawn_child_setup, NULL, NULL,
                                    &error))
     {
-        xfrun_add_to_history(cmdline, in_terminal);
+        xfrun_add_to_history(original_cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
     } else {
         gchar *primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
@@ -570,6 +572,7 @@ xfrun_run_clicked(GtkWidget *widget,
     }
 
     g_free(cmdline);
+    g_free(original_cmdline);
     if(in_terminal)
         g_free(argv);
     else
