@@ -496,20 +496,26 @@ static void
 xfrun_run_clicked(GtkWidget *widget,
                   gpointer user_data)
 {
-    XfrunDialog *dialog = XFRUN_DIALOG(user_data);
-    gchar *cmdline, **argv = NULL;
-    gboolean in_terminal;
-    GdkScreen *gscreen;
-    GError *error = NULL;
-    gint argc;
+    XfrunDialog  *dialog = XFRUN_DIALOG(user_data);
+    GdkScreen    *gscreen;
+    gboolean      in_terminal;
+    GError       *error = NULL;
+    gchar       **argv = NULL;
+    gchar        *cmdline;
+    gchar        *new_cmdline;
+    gint          argc;
 
     cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
     in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk));
 
+    new_cmdline = xfce_expand_variables (cmdline, NULL);
+    g_free (cmdline);
+    cmdline = new_cmdline;
+
     gscreen = gtk_widget_get_screen(widget);
 
     if(dialog->priv->run_argument) {
-        gchar *new_cmdline, *run_arg_quoted;
+        gchar *run_arg_quoted;
 
         run_arg_quoted = g_shell_quote(dialog->priv->run_argument);
         new_cmdline = g_strconcat(cmdline, " ", run_arg_quoted, NULL);
