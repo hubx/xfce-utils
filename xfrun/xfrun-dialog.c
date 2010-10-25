@@ -502,26 +502,25 @@ xfrun_run_clicked(GtkWidget *widget,
     if(g_str_has_prefix(cmdline, "#"))
       {
         /* Shortcut to open manpages in terminal */
-        new_cmdline = g_strconcat("exo-open --launch TerminalEmulator 'man ",
-                                  cmdline + 1, "'", NULL);
+        new_cmdline = g_strconcat("man ", cmdline + 1, NULL);
         g_free(cmdline);
         cmdline = new_cmdline;
-        /* We already do that */
-        in_terminal = FALSE;
+        /* Make sure this is opened in a terminal */
+        in_terminal = TRUE;
       }
 
     if(in_terminal) {
-        gint i = 0;
+        const gchar *quoted_cmdline;
 
-        argv = g_new0(gchar *, 4);
-        argv[i++] = "xfterm4";
-        argv[i++] = "-e";
-        argv[i++] = cmdline;
-        argv[i++] = NULL;
-    } else {
-        /* error is handled below */
-        g_shell_parse_argv(cmdline, &argc, &argv, &error);
+        quoted_cmdline = g_shell_quote (cmdline);
+        new_cmdline = g_strconcat ("exo-open --launch TerminalEmulator ",
+                                   quoted_cmdline, NULL);
+        g_free(cmdline);
+        cmdline = new_cmdline;
     }
+
+    /* error is handled below */
+    g_shell_parse_argv(cmdline, &argc, &argv, &error);
 
     result = (argv && gdk_spawn_on_screen(gscreen,
                                           dialog->priv->working_directory,
