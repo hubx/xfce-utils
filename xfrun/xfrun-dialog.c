@@ -499,6 +499,7 @@ xfrun_run_clicked(GtkWidget *widget,
     XfrunDialog  *dialog = XFRUN_DIALOG(user_data);
     GdkScreen    *gscreen;
     gboolean      in_terminal;
+    gboolean      result;
     GError       *error = NULL;
     gchar       **argv = NULL;
     gchar        *cmdline;
@@ -551,24 +552,73 @@ xfrun_run_clicked(GtkWidget *widget,
         g_shell_parse_argv(cmdline, &argc, &argv, &error);
     }
 
-    if(argv && gdk_spawn_on_screen(gscreen,
-                                   dialog->priv->working_directory,
-                                   argv, NULL, G_SPAWN_SEARCH_PATH,
-                                   xfrun_spawn_child_setup, NULL, NULL,
-                                   &error))
+    DBG ("cmdline: %s", cmdline);
+
+    result = (argv && gdk_spawn_on_screen(gscreen,
+                                          dialog->priv->working_directory,
+                                          argv, NULL, G_SPAWN_SEARCH_PATH,
+                                          xfrun_spawn_child_setup, NULL, NULL,
+                                          &error));
+
+    if (result)
     {
         xfrun_add_to_history(original_cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
     } else {
-        gchar *primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
-                                         cmdline);
-        xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
-                            GTK_STOCK_DIALOG_ERROR, primary,
-                            error ? error->message : _("Unknown Error"),
-                            GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
-        g_free(primary);
-        if(error)
-            g_error_free(error);
+        gchar    *primary;
+        gboolean  exo_opened = FALSE;
+
+        if (!in_terminal) {
+            /* Try to open with exo-open (for files, folders, uris...) */
+            gchar       **exo_argv = NULL;
+            const gchar  *exo_open;
+            const gchar  *quoted_cmdline;
+            gint          exo_argc;
+
+            quoted_cmdline = g_shell_quote (cmdline);
+            exo_open = g_strconcat ("exo-open ", quoted_cmdline, NULL);
+            DBG ("exo: %s", exo_open);
+            /* Don't handle errors, if any we will display the first one */
+            g_shell_parse_argv(exo_open, &exo_argc, &exo_argv, NULL);
+
+            if(exo_argv) {
+                if (gdk_spawn_on_screen(gscreen,
+                                        dialog->priv->working_directory,
+                                        exo_argv, NULL, G_SPAWN_SEARCH_PATH,
+                                        xfrun_spawn_child_setup, NULL, NULL,
+                                        NULL)) {
+                    exo_opened = TRUE;
+                    xfrun_add_to_history(original_cmdline, in_terminal);
+                    xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
+                    g_error_free(error);
+                }
+
+                g_strfreev(exo_argv);
+            }
+
+            if (!exo_opened) {
+                /* Display the first error */
+                primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
+                                                 cmdline);
+                xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
+                                    GTK_STOCK_DIALOG_ERROR, primary,
+                                    error ? error->message : _("Unknown Error"),
+                                    GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
+                g_free(primary);
+                if(error)
+                    g_error_free(error);
+            }
+        }else {
+            primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
+                                     cmdline);
+            xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
+                                GTK_STOCK_DIALOG_ERROR, primary,
+                                error ? error->message : _("Unknown Error"),
+                                GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
+            g_free(primary);
+            if(error)
+                g_error_free(error);
+        }
     }
 
     g_free(cmdline);
