@@ -37,7 +37,6 @@ main(int argc,
      char **argv)
 {
     GtkWidget *dialog;
-    const gchar *run_argument = NULL;
 
     xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
 
@@ -52,11 +51,10 @@ main(int argc,
                                 _("Xfrun must be compiled with D-BUS support to enable daemon mode."),
                                 GTK_STOCK_QUIT, GTK_RESPONSE_ACCEPT, NULL);
             return 1;
-        } else
-            run_argument = argv[1];
+        }
     }
 
-    dialog = xfrun_dialog_new(run_argument);
+    dialog = xfrun_dialog_new();
     xfce_gtk_window_center_on_active_screen(GTK_WINDOW(dialog));
     gtk_widget_show(dialog);
     g_signal_connect(G_OBJECT(dialog), "closed",

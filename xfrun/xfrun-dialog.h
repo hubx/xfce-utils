@@ -51,10 +51,8 @@ struct _XfrunDialogClass
 
 GType xfrun_dialog_get_type                        (void) G_GNUC_CONST;
 
-GtkWidget *xfrun_dialog_new                        (const gchar *run_argument);
+GtkWidget *xfrun_dialog_new                        (void);
 
-void xfrun_dialog_set_run_argument                 (XfrunDialog *dialog,
-                                                    const gchar *run_argument);
 G_CONST_RETURN gchar *xfrun_dialog_get_run_argument(XfrunDialog *dialog);
 
 void xfrun_dialog_set_destroy_on_close             (XfrunDialog *dialog,

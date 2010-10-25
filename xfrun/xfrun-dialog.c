@@ -51,7 +51,6 @@ struct _XfrunDialogPrivate
     GtkWidget *terminal_chk;
     GtkTreeModel *completion_model;
 
-    gchar *run_argument;
     gboolean destroy_on_close;
     gchar *working_directory;
 
@@ -61,7 +60,6 @@ struct _XfrunDialogPrivate
 enum
 {
     PROP0,
-    PROP_RUN_ARGUMENT,
     PROP_WORKING_DIRECTORY,
 };
 
@@ -140,13 +138,6 @@ xfrun_dialog_class_init(XfrunDialogClass *klass)
                                          NULL, NULL,
                                          g_cclosure_marshal_VOID__VOID,
                                          G_TYPE_NONE, 0);
-
-    g_object_class_install_property(gobject_class, PROP_RUN_ARGUMENT,
-                                    g_param_spec_string("run-argument",
-                                                        "Run argument",
-                                                        "1st argument to pass to the program run",
-                                                        NULL,
-                                                        G_PARAM_READWRITE));
 
     g_object_class_install_property(gobject_class, PROP_WORKING_DIRECTORY,
                                     g_param_spec_string("working-directory",
@@ -228,10 +219,6 @@ xfrun_dialog_set_property(GObject *object,
     XfrunDialog *dialog = XFRUN_DIALOG(object);
 
     switch(property_id) {
-        case PROP_RUN_ARGUMENT:
-            xfrun_dialog_set_run_argument(dialog, g_value_get_string(value));
-            break;
-
         case PROP_WORKING_DIRECTORY:
             xfrun_dialog_set_working_directory(dialog,
                                                g_value_get_string(value));
@@ -252,10 +239,6 @@ xfrun_dialog_get_property(GObject *object,
     XfrunDialog *dialog = XFRUN_DIALOG(object);
 
     switch(property_id) {
-        case PROP_RUN_ARGUMENT:
-            g_value_set_string(value, xfrun_dialog_get_run_argument(dialog));
-            break;
-
         case PROP_WORKING_DIRECTORY:
             g_value_set_string(value,
                                xfrun_dialog_get_working_directory(dialog));
@@ -272,7 +255,6 @@ xfrun_dialog_finalize(GObject *object)
 {
     XfrunDialog *dialog = XFRUN_DIALOG(object);
 
-    g_free(dialog->priv->run_argument);
     g_free(dialog->priv->working_directory);
     g_free(dialog->priv->entry_val_tmp);
 
@@ -517,17 +499,6 @@ xfrun_run_clicked(GtkWidget *widget,
 
     gscreen = gtk_widget_get_screen(widget);
 
-    if(dialog->priv->run_argument) {
-        gchar *run_arg_quoted;
-
-        run_arg_quoted = g_shell_quote(dialog->priv->run_argument);
-        new_cmdline = g_strconcat(cmdline, " ", run_arg_quoted, NULL);
-
-        g_free(run_arg_quoted);
-        g_free(cmdline);
-        cmdline = new_cmdline;
-    }
-
     if(g_str_has_prefix(cmdline, "#"))
       {
         /* Shortcut to open manpages in terminal */
@@ -682,36 +653,9 @@ xfrun_create_completion_model(XfrunDialog *dialog)
 
 
 GtkWidget *
-xfrun_dialog_new(const gchar *run_argument)
+xfrun_dialog_new(void)
 {
-    return g_object_new(XFRUN_TYPE_DIALOG,
-                        "run-argument", run_argument,
-                        NULL);
-}
-
-void
-xfrun_dialog_set_run_argument(XfrunDialog *dialog,
-                              const gchar *run_argument)
-{
-    g_return_if_fail(XFRUN_IS_DIALOG(dialog));
-
-    g_free(dialog->priv->run_argument);
-    dialog->priv->run_argument = g_strdup(run_argument);
-
-    if(run_argument) {
-        gchar *title = g_strdup_printf(_("Open %s with what program?"),
-                                       run_argument);
-        gtk_window_set_title(GTK_WINDOW(dialog), title);
-        g_free(title);
-    } else
-        gtk_window_set_title(GTK_WINDOW(dialog), _("Run program"));
-}
-
-G_CONST_RETURN gchar *
-xfrun_dialog_get_run_argument(XfrunDialog *dialog)
-{
-    g_return_val_if_fail(XFRUN_IS_DIALOG(dialog), NULL);
-    return dialog->priv->run_argument;
+    return g_object_new(XFRUN_TYPE_DIALOG, NULL);
 }
 
 void

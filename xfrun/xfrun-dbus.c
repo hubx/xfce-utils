@@ -55,7 +55,6 @@
  * method: org.xfce.RunDialog.OpenDialog
  * param:  display_name (DBUS_TYPE_STRING)
  * param:  working_directory (DBUS_TYPE_STRING)
- * param:  run_argument (DBUS_TYPE_STRING)
  * return: success, or org.xfce.RunDialog.ErrorGeneral
  * description: shows the run dialog on the specified display.  will execute
  *              the command in the specified working directory.  an optional
@@ -123,14 +122,13 @@ xfrun_handle_dbus_message(DBusConnection *connection,
     {
         DBusMessage *reply = NULL;
         DBusError derror;
-        gchar *display_name = NULL, *cwd = NULL, *run_argument = NULL;
+        gchar *display_name = NULL, *cwd = NULL;
 
         dbus_error_init(&derror);
 
         if(!dbus_message_get_args(message, &derror,
                                   DBUS_TYPE_STRING, &display_name,
                                   DBUS_TYPE_STRING, &cwd,
-                                  DBUS_TYPE_STRING, &run_argument,
                                   DBUS_TYPE_INVALID))
         {
             reply = dbus_message_new_error(message, RUNDIALOG_DBUS_ERROR_GENERAL,
@@ -150,19 +148,14 @@ xfrun_handle_dbus_message(DBusConnection *connection,
             } else {
                 GtkWidget *dialog;
 
-                if(!strlen(run_argument))
-                    run_argument = NULL;
-
                 if(static_dialog_in_use) {
-                    dialog = xfrun_dialog_new(run_argument);
+                    dialog = xfrun_dialog_new();
                     xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(dialog),
                                                       TRUE);
                     xfrun_dialog_set_working_directory(XFRUN_DIALOG(dialog),
                                                        cwd);
                 } else {
                     dialog = static_dialog;
-                    xfrun_dialog_set_run_argument(XFRUN_DIALOG(dialog),
-                                                  run_argument);
                     xfrun_dialog_set_working_directory(XFRUN_DIALOG(dialog),
                                                        cwd);
                     if(GTK_WIDGET_REALIZED(dialog)) {
@@ -243,13 +236,13 @@ xfrun_register_dbus_service(void)
 
 /* client handler */
 static gboolean
-xfrun_show_dialog(const gchar *run_argument)
+xfrun_show_dialog(void)
 {
     DBusConnection *connection;
     DBusMessage *method;
     DBusMessage *result;
     DBusError derror;
-    gchar *cwd, *display_name, *dummy_run_argument = NULL;
+    gchar *cwd, *display_name;
 
     dbus_error_init(&derror);
     connection = dbus_bus_get(DBUS_BUS_SESSION, &derror);
@@ -267,18 +260,13 @@ xfrun_show_dialog(const gchar *run_argument)
     display_name = gdk_screen_make_display_name(gdk_screen_get_default());
     cwd = g_get_current_dir();
 
-    if(!run_argument)
-        run_argument = dummy_run_argument = g_strdup("");
-
     dbus_message_append_args(method,
                              DBUS_TYPE_STRING, &display_name,
                              DBUS_TYPE_STRING, &cwd,
-                             DBUS_TYPE_STRING, &run_argument,
                              DBUS_TYPE_INVALID);
 
     g_free(display_name);
     g_free(cwd);
-    g_free(dummy_run_argument);
 
     result = dbus_connection_send_with_reply_and_block(connection, method,
                                                        5000, &derror);
@@ -369,7 +357,7 @@ main(int argc,
 #endif
         }
 
-        static_dialog = xfrun_dialog_new(NULL);
+        static_dialog = xfrun_dialog_new();
         xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(static_dialog), FALSE);
         g_signal_connect(G_OBJECT(static_dialog), "closed",
                          G_CALLBACK(xfrun_static_dialog_closed), NULL);
@@ -384,10 +372,8 @@ main(int argc,
             return 1;
         }
 
-        if(!xfrun_show_dialog(argc > 1 ? argv[1] : NULL)) {
-            GtkWidget *fallback_dialog = xfrun_dialog_new(argc > 1
-                                                          ? argv[1]
-                                                          : NULL);
+        if(!xfrun_show_dialog()) {
+            GtkWidget *fallback_dialog = xfrun_dialog_new();
             xfrun_dialog_set_destroy_on_close(XFRUN_DIALOG(fallback_dialog),
                                               TRUE);
             g_signal_connect(G_OBJECT(fallback_dialog), "destroy",
