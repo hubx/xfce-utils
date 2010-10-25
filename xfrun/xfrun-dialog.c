@@ -525,6 +525,17 @@ xfrun_run_clicked(GtkWidget *widget,
         cmdline = new_cmdline;
     }
 
+    if (g_str_has_prefix (cmdline, "#"))
+      {
+        /* Shortcut to open manpages in terminal */
+        new_cmdline = g_strconcat ("exo-open --launch TerminalEmulator 'man ",
+                                   cmdline + 1, "'", NULL);
+        g_free (cmdline);
+        cmdline = new_cmdline;
+        /* We already do that */
+        in_terminal = FALSE;
+      }
+
     if(in_terminal) {
         gint i = 0;
 
