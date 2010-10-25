@@ -508,11 +508,11 @@ xfrun_run_clicked(GtkWidget *widget,
     gint          argc;
 
     cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
-    original_cmdline = g_strdup (cmdline);
+    original_cmdline = g_strdup(cmdline);
     in_terminal = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(dialog->priv->terminal_chk));
 
-    new_cmdline = xfce_expand_variables (cmdline, NULL);
-    g_free (cmdline);
+    new_cmdline = xfce_expand_variables(cmdline, NULL);
+    g_free(cmdline);
     cmdline = new_cmdline;
 
     gscreen = gtk_widget_get_screen(widget);
@@ -528,12 +528,12 @@ xfrun_run_clicked(GtkWidget *widget,
         cmdline = new_cmdline;
     }
 
-    if (g_str_has_prefix (cmdline, "#"))
+    if(g_str_has_prefix(cmdline, "#"))
       {
         /* Shortcut to open manpages in terminal */
-        new_cmdline = g_strconcat ("exo-open --launch TerminalEmulator 'man ",
-                                   cmdline + 1, "'", NULL);
-        g_free (cmdline);
+        new_cmdline = g_strconcat("exo-open --launch TerminalEmulator 'man ",
+                                  cmdline + 1, "'", NULL);
+        g_free(cmdline);
         cmdline = new_cmdline;
         /* We already do that */
         in_terminal = FALSE;
@@ -552,15 +552,13 @@ xfrun_run_clicked(GtkWidget *widget,
         g_shell_parse_argv(cmdline, &argc, &argv, &error);
     }
 
-    DBG ("cmdline: %s", cmdline);
-
     result = (argv && gdk_spawn_on_screen(gscreen,
                                           dialog->priv->working_directory,
                                           argv, NULL, G_SPAWN_SEARCH_PATH,
                                           xfrun_spawn_child_setup, NULL, NULL,
                                           &error));
 
-    if (result)
+    if(result)
     {
         xfrun_add_to_history(original_cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
@@ -568,25 +566,24 @@ xfrun_run_clicked(GtkWidget *widget,
         gchar    *primary;
         gboolean  exo_opened = FALSE;
 
-        if (!in_terminal) {
+        if(!in_terminal) {
             /* Try to open with exo-open (for files, folders, uris...) */
             gchar       **exo_argv = NULL;
             const gchar  *exo_open;
             const gchar  *quoted_cmdline;
             gint          exo_argc;
 
-            quoted_cmdline = g_shell_quote (cmdline);
-            exo_open = g_strconcat ("exo-open ", quoted_cmdline, NULL);
-            DBG ("exo: %s", exo_open);
+            quoted_cmdline = g_shell_quote(cmdline);
+            exo_open = g_strconcat("exo-open ", quoted_cmdline, NULL);
             /* Don't handle errors, if any we will display the first one */
             g_shell_parse_argv(exo_open, &exo_argc, &exo_argv, NULL);
 
             if(exo_argv) {
-                if (gdk_spawn_on_screen(gscreen,
-                                        dialog->priv->working_directory,
-                                        exo_argv, NULL, G_SPAWN_SEARCH_PATH,
-                                        xfrun_spawn_child_setup, NULL, NULL,
-                                        NULL)) {
+                if(gdk_spawn_on_screen(gscreen,
+                                       dialog->priv->working_directory,
+                                       exo_argv, NULL, G_SPAWN_SEARCH_PATH,
+                                       xfrun_spawn_child_setup, NULL, NULL,
+                                       NULL)) {
                     exo_opened = TRUE;
                     xfrun_add_to_history(original_cmdline, in_terminal);
                     xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
@@ -596,7 +593,7 @@ xfrun_run_clicked(GtkWidget *widget,
                 g_strfreev(exo_argv);
             }
 
-            if (!exo_opened) {
+            if(!exo_opened) {
                 /* Display the first error */
                 primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
                                                  cmdline);
