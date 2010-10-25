@@ -1,15 +1,96 @@
-body 		{ font: "Vera Sans", "Arial", "Helvetica", "sans-serif"; 
-    		  margin: 2em; background-color: #F3F4F8}
-h1,h2,h3,h4	{ color: #11375F; }
-h2              { margin-top: 1.5em; border-bottom: solid 1px; }
-h3              { margin-top: 1em; margin-bottom: 0; }
-dt              { margin-top: 0.2em; }
-a		{ font-weight: bold; text-decoration: none; }
-a:link,a:active { color: #1A5593; }
-a:visited	{ color: #1A5593; }
-a:hover		{ color: #3366FF; text-decoration: underline; }
-hr		{ background-color: #11375F; border-style: solid; }
-li		{ list-style-type: square; }
-dt		{ font-weight: bold; }
-.programlisting { background-color: #F8F9FD; border-color: #8593B3;
-		  border-width: 1px; border-style: solid; padding: 0.5em; }
+body {
+font-family: "DejaVuSerif", "Times New Roman", Times, serif;
+color: black;
+background-color: white;
+margin: 2em auto;
+width: 80%;
+max-width: 900px;
+font-size: 0.95em;
+}
+h1 {
+color: white;
+background-color: #4C7EC9;
+font-weight: normal;
+padding: 0.1em 0.2em;
+margin: 1em 0;
+}
+h2,h3,h4 {
+color: #266BBD;
+background-color: inherit;
+font-weight: normal;
+margin: 1em 0;
+}
+p {
+text-align: justify;
+line-height: 1.5em;
+}
+li {
+list-style-type: square;
+line-height: 1.35em;
+}
+dt {
+line-height: 1.5em;
+font-weight: bold;
+}
+dl {
+margin: 0;
+}
+dd {
+margin-left: 1em;
+}
+hr {
+border: 0;
+}
+.sect1 {
+}
+.sect2 {
+margin-left: 1em;
+}
+.sect3 {
+margin-left: 1.5em;
+}
+.programlisting {
+padding: 0.5em;
+}
+.table-contents table {
+border: solid 1px black;
+}
+.table-contents th, .table-contents td {
+border: solid 1px black;
+border-width: 0 1px 1px 0;
+}
+.table-contents thead {
+background-color: #4C7EC9;
+color: white;
+}
+.table-contents th {
+font-weight: normal;
+}
+.table-contents td {
+font-size: 0.9em;
+}
+.navheader table, .navfooter table {
+font-size: 0.8em;
+font-family: Helvetica, Arial, sans-serif;
+}
+.navheader {
+border-bottom: 1px solid #4C7EC9;
+}
+.navfooter {
+border-top: 1px solid #4C7EC9;
+}
+a {
+font-weight: bold;
+text-decoration: none;
+}
+a:link,a:active {
+color: #266BBD;
+}
+a:visited {
+color: #163E6E;
+}
+a:hover {
+color: #266BBD;
+text-decoration: underline;
+}
+
