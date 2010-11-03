@@ -143,12 +143,12 @@ if test x"$enable_gen_doc" = x"yes"; then
     fi
 
     AC_PATH_PROG([XMLLINT], [xmllint], [no])
-    if test x"$XML2PO" = x"no"; then
+    if test x"$XMLLINT" = x"no"; then
         enable_gen_doc=no
     fi
 
     if test x"$enable_gen_doc" = x"no"; then
-        AC_MSG_ERROR([Compiling with --enable-gen-doc but one of xml2po, xsltproc or xmllint not found.])
+        AC_MSG_ERROR([Compiling with --enable-gen-doc but one of xml2po, xsltproc or xmllint is missing.])
     fi
 fi
 AM_CONDITIONAL([GENERATE_DOCUMENTATION], [test x"$enable_gen_doc" = x"yes"])
