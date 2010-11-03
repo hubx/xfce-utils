@@ -43,7 +43,7 @@ fi
 
 if [ "x$1" = "x" ]; then
     echo $0: You must provide a mount point
-    exit -1
+    exit 1
 else
 	if [ -d "$1" ]; then
 		MOUNTPNT="$1"
@@ -62,7 +62,7 @@ else
                 exit 0
         else
 		echo $0: The mount point $1 does not exist
-        	exit -2
+        	exit 2
         fi
 fi        
 exit 0
