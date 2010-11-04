@@ -1,3 +1,20 @@
+4.7.1
+=====
+- Drop ck-launch-session as CK is handled in xfce4-session (bug #6684).
+- Fix Alt conversion in migration script (bug #4811).
+- Restore xfrun4's terminal checkbox state on launch.
+- Expand command to handle ~ in xfrun4 (Bug #4041).
+- Use '#' as a shortcut to open man pages using xfrun4 (Bug #5984).
+- Save the command the user typed in xfrun4, not the expanded one.
+- Fallback to exo-open when failure in xfrun4 (Bugs #4985 and #2506).
+- Remove run argument feature in xfrun4.
+- Fix handling of CLI arguments when opening in terminal with xfrun4
+  (Bug #5478).
+- Update CSS based on Mike Massonnet's work (Bug #5255).
+- Fix typo in configure.in.in.
+- Fix incorrect (negative) exit values in xfmountdev4.
+- Translation updates (ug, it, gl, ja, sv, pt).
+
 4.7.0
 =====
 - Fix gpg/ssh-agent startup for users with pam_ssh installed.
