@@ -4,16 +4,15 @@
 # Davide D'Amico <dave@gufi.org>, 2003.
 # Alex Dupre <ale@FreeBSD.org>, 2005.
 # Cristian Marchi <cri.penta@gmail.com>, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-02 16:05+0000\n"
+"POT-Creation-Date: 2010-11-04 17:07+0000\n"
 "PO-Revision-Date: 2010-05-05 09:07+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
-"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups."
-"com>\n"
+"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,9 +72,7 @@ msgstr "Se dovesse mancare qualcuno nell'elenco, segnalatelo su <"
 
 #: ../xfce4-about/info.c:331
 msgid "Thanks to all who helped making this software available."
-msgstr ""
-"Si ringraziano tutti quelli che hanno contribuito a rendere questo programma "
-"disponibile."
+msgstr "Si ringraziano tutti quelli che hanno contribuito a rendere questo programma disponibile."
 
 #: ../xfce4-about/info.c:441
 msgid "About Xfce 4"
@@ -120,68 +117,58 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Informazioni sull'ambiente grafico Xfce"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:49
+#: ../xfrun/xfrun.c:48
 msgid "Daemon Mode"
 msgstr "Modalità demone"
 
-#: ../xfrun/xfrun.c:51
+#: ../xfrun/xfrun.c:50
 msgid "Daemon mode is not supported."
 msgstr "La modalità demone non è supportata."
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun deve essere compilato con il supporto a D-BUS per poter abilitare la "
-"modalità demone."
+msgstr "Xfrun deve essere compilato con il supporto a D-BUS per poter abilitare la modalità demone."
 
-#: ../xfrun/xfrun-dbus.c:144
+#: ../xfrun/xfrun-dbus.c:142
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Impossibile aprire lo schermo \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:201
+#: ../xfrun/xfrun-dbus.c:193
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Bus del messaggio D-BUS disconnesso. Uscita in corso...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
+#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
 msgid "System Error"
 msgstr "Errore di sistema"
 
-#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
+#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
 msgid "Unable to fork to background:"
 msgstr "Impossibile effettuare il fork in background"
 
-#: ../xfrun/xfrun-dialog.c:187
+#: ../xfrun/xfrun-dialog.c:178
 msgid "Run in _terminal"
 msgstr "Esegui in un _terminale"
 
-#: ../xfrun/xfrun-dialog.c:208
+#: ../xfrun/xfrun-dialog.c:204
 msgid "_Run"
 msgstr "_Esegui"
 
-#: ../xfrun/xfrun-dialog.c:539
+#. Display the first error
+#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Non è riuscita l'esecuzione del comando \"%s\":"
 
-#: ../xfrun/xfrun-dialog.c:541
+#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 msgid "Run Error"
 msgstr "Errore di esecuzione"
 
-#: ../xfrun/xfrun-dialog.c:543
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Unknown Error"
 msgstr "Errore sconosciuto"
-
-#: ../xfrun/xfrun-dialog.c:630
-#, c-format
-msgid "Open %s with what program?"
-msgstr "Con quale programma aprire %s ?"
-
-#: ../xfrun/xfrun-dialog.c:635
-msgid "Run program"
-msgstr "Esegui il programma"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
 msgid "Run Program..."
@@ -193,7 +180,7 @@ msgstr "Esegue un programma"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Usare questa sessione per eseguire Xfce come ambiente desktop"
+msgstr "Usare questa sessione per eseguire Xfce come ambiente grafico"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
@@ -206,3 +193,9 @@ msgstr "Aiuto"
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
 msgstr "Aiuto per l'utilizzo di Xfce"
+
+#~ msgid "Open %s with what program?"
+#~ msgstr "Con quale programma aprire %s ?"
+
+#~ msgid "Run program"
+#~ msgstr "Esegui il programma"
