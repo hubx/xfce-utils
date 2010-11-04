@@ -364,7 +364,7 @@ msgstr "Usare la finestra del gestore delle impostazioni"
 
 #: ./xfce-utils.xml439(para)
 msgid "The settings manager dialog provides access to the global preferences of many Xfce applications. You can run it by pressing its launcher on the panel, from the desktop mouse menu or by running <application>xfce-setting-show</application>."
-msgstr "Il gestore delle impostazioni fornisce accesso alle preferenze globali di varie applicazioni di Xfce. Lo si può eseguire selezionando il relativo lanciatore sul pannello, oppure dal menu che compare premendo il tasto centrale del mouse sulla scrivania o eseguendo <application>xfce-setting-show</application>."
+msgstr "Il gestore delle impostazioni fornisce accesso alle preferenze globali di varie applicazioni di Xfce. Lo si può eseguire selezionando il relativo avviatore sul pannello, oppure dal menu che compare premendo il tasto centrale del mouse sulla scrivania o eseguendo <application>xfce-setting-show</application>."
 
 #: ./xfce-utils.xml445(para)
 msgid "Dialogs to change many aspects of the Xfce Desktop Environment are available. See the separate manuals of the Xfce components for more information. It may be interesting to have a quick look at all the dialogs to find out what options are available that allow you to create the best possible working environment."
