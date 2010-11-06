@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 11:39+0100\n"
+"POT-Creation-Date: 2010-11-06 17:02+0100\n"
 "PO-Revision-Date: 2006-10-25 15:38+0530\n"
 "Last-Translator: sonam rinchen <somindruk@druknet.bt>\n"
 "Language-Team: dzongkha <pgeyleg@dit.gov.bt>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,158 +20,332 @@ msgstr ""
 "X-Poedit-Country: bhutan\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../xfce4-about/info.c:197
-msgid "Unable to load "
+#: ../xfce4-about/main.c:52
+msgid "Version information"
+msgstr ""
+
+#: ../xfce4-about/main.c:70
+msgid "Window Manager"
+msgstr ""
+
+#: ../xfce4-about/main.c:71
+msgid "Handles the placement of windows on the screen."
+msgstr ""
+
+#: ../xfce4-about/main.c:74
+msgid "Panel"
+msgstr ""
+
+#: ../xfce4-about/main.c:75
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
+msgstr ""
+
+#: ../xfce4-about/main.c:79
+msgid "Desktop Manager"
+msgstr ""
+
+#: ../xfce4-about/main.c:80
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr ""
+
+#: ../xfce4-about/main.c:84
+msgid "File Manager "
+msgstr ""
+
+#: ../xfce4-about/main.c:85
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr ""
+
+#: ../xfce4-about/main.c:89
+msgid "Session Manager"
+msgstr ""
+
+#: ../xfce4-about/main.c:90
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr ""
+
+#: ../xfce4-about/main.c:94
+msgid "Setting System"
+msgstr ""
+
+#: ../xfce4-about/main.c:95
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr ""
+
+#: ../xfce4-about/main.c:99
+msgid "Application Finder"
+msgstr ""
+
+#: ../xfce4-about/main.c:100
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr ""
+
+#: ../xfce4-about/main.c:104
+msgid "Utilities and Scripts"
+msgstr ""
+
+#: ../xfce4-about/main.c:105
+msgid "Startup scripts, run dialog and about dialog."
+msgstr ""
+
+#: ../xfce4-about/main.c:108
+msgid "Settings Daemon"
+msgstr ""
+
+#: ../xfce4-about/main.c:109
+msgid "D-Bus-based configuration storage system."
+msgstr ""
+
+#: ../xfce4-about/main.c:116
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr ""
+
+#: ../xfce4-about/main.c:140
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr ""
+
+#: ../xfce4-about/main.c:146
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr ""
+
+#: ../xfce4-about/main.c:153
+msgid "Thank you for your interest in Xfce."
+msgstr ""
+
+#: ../xfce4-about/main.c:157
+msgid "The Xfce Development Team"
+msgstr ""
+
+#: ../xfce4-about/main.c:267
+#, fuzzy
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr "ཁྱོད་ཀྱིས་ཐོ་ཡིག་འདི་ལས་གང་རུང་ཅིག་བརླག་སྟོར་ཞུགསཔ་ཨིནམ་ཤེས་པ་ཅིན་ ང་བཅས་ལུ་སླབ་གནང་ <"
+
+#: ../xfce4-about/main.c:271
+#, fuzzy
+msgid "Thanks to all who helped making this software available!"
+msgstr "མཉེན་ཆས་འདི་འཐོབ་ཚུགསཔ་བཟོ་མི་ཆ་མཉམ་ལུ་བཀྲིན་ཆེ།"
+
+#: ../xfce4-about/main.c:284
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr ""
+
+#: ../xfce4-about/main.c:289
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+
+#: ../xfce4-about/main.c:296
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../xfce4-about/main.c:386
+#, c-format
+msgid "Type '%s --help' for usage information."
+msgstr ""
+
+#: ../xfce4-about/main.c:392
+msgid "Unable to initialize GTK+."
+msgstr ""
+
+#: ../xfce4-about/main.c:401
+msgid "The Xfce development team. All rights reserved."
+msgstr ""
+
+#: ../xfce4-about/main.c:402
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr ""
+
+#. I18N: date/time the translators list was updated
+#: ../xfce4-about/main.c:405
+#, c-format
+msgid "Tanslators list from %s."
+msgstr ""
+
+#: ../xfce4-about/main.c:415
+#, fuzzy
+msgid "Failed to load interface"
 msgstr "མངོན་གསལ་འབད་མི་ཚུགས།"
 
-#. Project lead
-#: ../xfce4-about/info.c:226
-msgid "Project Lead"
-msgstr "ལས་འགུལ་འགོ་ཁྲིད།"
+#: ../xfce4-about/main.c:426
+#, c-format
+msgid "Version %s"
+msgstr ""
 
-#. Core developers
-#: ../xfce4-about/info.c:230
+#. { N_("Project Lead"),
+#. xfce_contributors_lead
+#. },
+#: ../xfce4-about/contributors.h:127
 msgid "Core developers"
 msgstr "ནང་སྙིང་བཟོ་མི་ཚུ།"
 
-#. Active contributors
-#: ../xfce4-about/info.c:234
+#: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
 msgstr "ཤུགས་ལྡན་ཕན་འདེབས་པ་ཚུ།"
 
-#. Previous contributors
-#: ../xfce4-about/info.c:238
-msgid "Previous contributors"
-msgstr "ཧེ་མའི་ཕན་འདེབས་པ་ཚུ།"
-
-#: ../xfce4-about/info.c:243
-msgid "Web Hosting and Mailing Lists provided by"
-msgstr "གིས་བྱིན་ཏེ་ཡོད་མི་ཝེབ་ཧོསཊི་ཊིང་དང་ཡིག་འཕྲིན་གཏང་ནིའི་ཐོ་ཡིག་ཚུ།"
-
-#. Server admins
-#: ../xfce4-about/info.c:275
-msgid "Server maintained by"
+#: ../xfce4-about/contributors.h:133
+#, fuzzy
+msgid "Servers maintained by"
 msgstr "གིས་རྒྱུན་སྐྱོང་འབད་ཡོད་པའི་སར་བར།"
 
-#. Goodies supervision
-#: ../xfce4-about/info.c:279
+#: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
 msgstr "གུ་ཌིསི་ལྟ་རྟོག།"
 
-#. Translations supervision
-#: ../xfce4-about/info.c:283
+#: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
 msgstr "སྐད་སྒྱུར་ཚུའི་ལྟ་རྟོག།"
 
-#. Translators
-#: ../xfce4-about/info.c:287
+#: ../xfce4-about/contributors.h:142
 msgid "Translators"
 msgstr "སྐད་བསྒྱུར་པ་ཚུ།"
 
-#: ../xfce4-about/info.c:318
-msgid "If you know of anyone missing from this list, please let us know on <"
-msgstr "ཁྱོད་ཀྱིས་ཐོ་ཡིག་འདི་ལས་གང་རུང་ཅིག་བརླག་སྟོར་ཞུགསཔ་ཨིནམ་ཤེས་པ་ཅིན་ ང་བཅས་ལུ་སླབ་གནང་ <"
+#: ../xfce4-about/contributors.h:145
+msgid "Previous contributors"
+msgstr "ཧེ་མའི་ཕན་འདེབས་པ་ཚུ།"
 
-#: ../xfce4-about/info.c:322
-msgid "Thanks to all who helped making this software available."
-msgstr "མཉེན་ཆས་འདི་འཐོབ་ཚུགསཔ་བཟོ་མི་ཆ་མཉམ་ལུ་བཀྲིན་ཆེ།"
-
-#: ../xfce4-about/info.c:431
-msgid "About Xfce 4"
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+#, fuzzy
+msgid "About Xfce"
 msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་༤གི་སྐོར་ལས།"
 
-#: ../xfce4-about/info.c:432
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
 #, fuzzy
-msgid "Copyright 2002-2010 by Olivier Fourdan"
-msgstr "ཨོ་ལི་བར་ཕོར་ཌེན་གིས་འདྲ་བཤུས་དབང་ཆ་༢༠༠༢-༢༠༠༦"
+msgid "Information about the Xfce Desktop Environment"
+msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་ཌིཀསི་ཊོཔ་མཐའ་འཁོར།"
 
-#: ../xfce4-about/info.c:455
-msgid "Info"
-msgstr "བརྡ་དོན།"
+#: ../xfce4-about/xfce4-about-dialog.glade.h:1
+msgid "About"
+msgstr ""
 
-#. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
-#: ../xfce4-about/info.c:457
-msgid "Credits"
-msgstr "ངོ་བསྟོད་ཚུ།"
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+#, fuzzy
+msgid "About the Xfce Desktop Environment"
+msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་ཌིཀསི་ཊོཔ་མཐའ་འཁོར།"
 
-#: ../xfce4-about/info.c:458
+#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+#, fuzzy
+msgid "BSD"
+msgstr "བི་ཨེསི་ཌི་ཨེལ།"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
 msgstr "འདྲ་བཤུས་དབང་ཆ།"
 
-#: ../xfce4-about/info.c:459
-msgid "BSDL"
-msgstr "བི་ཨེསི་ཌི་ཨེལ།"
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Credits"
+msgstr "ངོ་བསྟོད་ཚུ།"
 
-#: ../xfce4-about/info.c:460
-msgid "LGPL"
-msgstr "ཨེལ་ཇི་པི་ཨེལ།"
-
-#: ../xfce4-about/info.c:461
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
 msgstr "ཇི་པི་ཨེལ།"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "LGPL"
+msgstr "ཨེལ་ཇི་པི་ཨེལ།"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+msgid "License"
+msgstr ""
+
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:50
+#: ../xfrun/xfrun.c:48
 msgid "Daemon Mode"
 msgstr "ཌེ་མཱོན་ཐབས་ལམ།"
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:50
 msgid "Daemon mode is not supported."
 msgstr "ཌེ་མཱོན་ཐབས་ལམ་འདི་རྒྱབ་སྐྱོར་མ་འབད་བས།"
 
-#: ../xfrun/xfrun.c:53
+#: ../xfrun/xfrun.c:51
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "ཌེ་མཱོན་ཐབས་ལམ་ལཽགས་ཅན་བཟོ་ནི་ལུ་ཨེཀསི་ཨེཕ་ཨར་ཡུ་ཨེན་འདི་ཌི་-བི་ཡུ་ཨེསི་གཅིག་ཁར་ངེས་པར་ཕྱོགས་སྒྲིག་"
 "འབད་དགོ།"
 
-#: ../xfrun/xfrun-dbus.c:141
+#: ../xfrun/xfrun-dbus.c:142
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "\"%s\" བཀྲམ་སྟོན་ཁ་ཕྱེ་མི་ཚུགས།"
 
-#: ../xfrun/xfrun-dbus.c:200
+#: ../xfrun/xfrun-dbus.c:193
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "ཌི་-བི་ཡུ་ཨེསི་ འཕྲིན་དོན་བརྡ་རྟགས་འགྲུལ་ལམ་མཐུད་ལམ་བཏོག་ཡོདཔ། ཡོད་བཞིན་པའི་...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:342 ../xfrun/xfrun-dbus.c:353
+#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
 msgid "System Error"
 msgstr "རིམ་ལུགས་འཛོལ་བ།"
 
-#: ../xfrun/xfrun-dbus.c:344 ../xfrun/xfrun-dbus.c:355
+#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
 msgid "Unable to fork to background:"
 msgstr "རྒྱབ་གཞི་ལུ་ཁ་སྤེལ་མི་ཚུགས།"
 
-#: ../xfrun/xfrun-dialog.c:188
+#: ../xfrun/xfrun-dialog.c:178
 msgid "Run in _terminal"
 msgstr "ཊར་མི་ནཱལ་ནང་གཡོག་བཀོལ།(_t)"
 
-#: ../xfrun/xfrun-dialog.c:209
+#: ../xfrun/xfrun-dialog.c:204
 msgid "_Run"
 msgstr "གཡོག་བཀོལ།(_R)"
 
-#: ../xfrun/xfrun-dialog.c:540
+#. Display the first error
+#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "བརྡ་བཀོད་ \"%s\" གཡོག་བཀོལ་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོདཔ་:"
 
-#: ../xfrun/xfrun-dialog.c:542
+#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 msgid "Run Error"
 msgstr "གཡོག་བཀོལ་ནི་འཛོལ་བ།"
 
-#: ../xfrun/xfrun-dialog.c:544
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Unknown Error"
 msgstr "མ་ཤེསཔ་འཛོལ་བ།"
 
-#: ../xfrun/xfrun-dialog.c:631
-#, c-format
-msgid "Open %s with what program?"
-msgstr "ལས་རིམ་ག་ཅི་གཅིག་ཁར་ %s ཁ་ཕྱེ?"
+#: ../xfrun/xfrun4.desktop.in.h:1
+#, fuzzy
+msgid "Run Program..."
+msgstr "ལས་རིམ་གཡོག་བཀོལ།"
 
-#: ../xfrun/xfrun-dialog.c:636
-msgid "Run program"
+#: ../xfrun/xfrun4.desktop.in.h:2
+#, fuzzy
+msgid "Run a program"
 msgstr "ལས་རིམ་གཡོག་བཀོལ།"
 
 #: ../xfce.desktop.in.h:1
@@ -181,5 +356,26 @@ msgstr ""
 msgid "Xfce Session"
 msgstr ""
 
-#~ msgid "Xfce Desktop Environment"
-#~ msgstr "ཨེཀསི་ཨེཕ་སི་ཨི་ཌིཀསི་ཊོཔ་མཐའ་འཁོར།"
+#: ../scripts/xfhelp4.desktop.in.h:1
+msgid "Help"
+msgstr ""
+
+#: ../scripts/xfhelp4.desktop.in.h:2
+msgid "Help using Xfce"
+msgstr ""
+
+#~ msgid "Project Lead"
+#~ msgstr "ལས་འགུལ་འགོ་ཁྲིད།"
+
+#~ msgid "Web Hosting and Mailing Lists provided by"
+#~ msgstr "གིས་བྱིན་ཏེ་ཡོད་མི་ཝེབ་ཧོསཊི་ཊིང་དང་ཡིག་འཕྲིན་གཏང་ནིའི་ཐོ་ཡིག་ཚུ།"
+
+#, fuzzy
+#~ msgid "Copyright 2002-2010 by Olivier Fourdan"
+#~ msgstr "ཨོ་ལི་བར་ཕོར་ཌེན་གིས་འདྲ་བཤུས་དབང་ཆ་༢༠༠༢-༢༠༠༦"
+
+#~ msgid "Info"
+#~ msgstr "བརྡ་དོན།"
+
+#~ msgid "Open %s with what program?"
+#~ msgstr "ལས་རིམ་ག་ཅི་གཅིག་ཁར་ %s ཁ་ཕྱེ?"
