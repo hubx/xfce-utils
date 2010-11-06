@@ -220,7 +220,6 @@ xfce_about_credits (GtkTextBuffer *buffer)
   const ContributorGroup *group;
   const ContributorInfo  *user;
 
-
   g_return_if_fail (GTK_IS_TEXT_BUFFER (buffer));
 
   email = gtk_text_buffer_create_tag (buffer, "email",
@@ -264,11 +263,11 @@ xfce_about_credits (GtkTextBuffer *buffer)
     }
 
   gtk_text_buffer_insert (buffer, &end,
-      N_("If you know of anyone missing from this list; don't hesitate and "
-         "file a bug on <http://bugzilla.xfce.org> ."), -1);
+      _("If you know of anyone missing from this list; don't hesitate and "
+        "file a bug on <http://bugzilla.xfce.org> ."), -1);
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert_with_tags (buffer, &end,
-      N_("Thanks to all who helped making this software available!"), -1, title, NULL);
+      _("Thanks to all who helped making this software available!"), -1, title, NULL);
 
   gtk_text_buffer_insert (buffer, &end, "\n", -1);
 }
@@ -278,28 +277,32 @@ xfce_about_credits (GtkTextBuffer *buffer)
 static void
 xfce_about_copyright (GtkTextBuffer *buffer)
 {
+  GtkTextIter end;
+
   g_return_if_fail (GTK_IS_TEXT_BUFFER (buffer));
 
-  gtk_text_buffer_insert_at_cursor (buffer,
+  gtk_text_buffer_get_end_iter (buffer, &end);
+
+  gtk_text_buffer_insert (buffer, &end,
       _("Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
         "components are copyrighted by their respective authors."), -1);
 
-  gtk_text_buffer_insert_at_cursor (buffer, "\n\n", -1);
-  gtk_text_buffer_insert_at_cursor (buffer,
+  gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
+  gtk_text_buffer_insert (buffer, &end,
       _("The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
         "distributed under the terms of the GNU Library General Public License as "
         "published by the Free Software Foundation; either version 2 of the License, or "
         "(at your option) any later version."), -1);
 
-  gtk_text_buffer_insert_at_cursor (buffer, "\n\n", -1);
-  gtk_text_buffer_insert_at_cursor (buffer,
+  gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
+  gtk_text_buffer_insert (buffer, &end,
       _("The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-        "xfce4-settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are "
+        "xfce4-settings, xfce-utils, xfce-utils, xfconf, xfdesktop and xfwm4 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);
 
-  gtk_text_buffer_insert_at_cursor (buffer, "\n", -1);
+  gtk_text_buffer_insert (buffer, &end, "\n", -1);
 }
 
 
