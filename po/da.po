@@ -116,18 +116,16 @@ msgid "The Xfce Development Team"
 msgstr "Udviklingholdet for Xfce"
 
 #: ../xfce4-about/main.c:267
-#, fuzzy
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "Hvis du er bekendt med nogen, der mangler på denne liste, så kontakt os venligst på <"
+msgstr "Hvis du er bekendt med nogen, der mangler på denne liste, opret en fejlrapport på <http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:271
-#, fuzzy
 msgid "Thanks to all who helped making this software available!"
-msgstr "Tak til alle, der har hjulpet med at gøre denne software tilgængelig."
+msgstr "Tak til alle, der har hjulpet med at gøre denne software tilgængelig!"
 
 #: ../xfce4-about/main.c:284
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 rettigheder tilhører Olivier Fourdan (fourdan@xfce.org). De enkelte komponenters rettigheder tilhører deres forfattere."
 
 #: ../xfce4-about/main.c:289
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
@@ -140,20 +138,20 @@ msgstr ""
 #: ../xfce4-about/main.c:386
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Indtast '%s --help' for hjælp til brugen."
 
 #: ../xfce4-about/main.c:392
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Kunne ikke klargøre GTK+."
 
 #: ../xfce4-about/main.c:401
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Udviklingsholdet Xfce. Alle rettigheder reserveres."
 
 #: ../xfce4-about/main.c:402
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Opret fejlrapport på <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:405
@@ -162,14 +160,13 @@ msgid "Tanslators list from %s."
 msgstr ""
 
 #: ../xfce4-about/main.c:415
-#, fuzzy
 msgid "Failed to load interface"
-msgstr "Kan ikke indlæse filen %s"
+msgstr "Kan ikke indlæse grænseflade"
 
 #: ../xfce4-about/main.c:426
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Version %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -183,9 +180,8 @@ msgid "Active contributors"
 msgstr "Aktive bidragsydere"
 
 #: ../xfce4-about/contributors.h:133
-#, fuzzy
 msgid "Servers maintained by"
-msgstr "Server vedligeholdt af"
+msgstr "Servere vedligeholdt af"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
@@ -212,19 +208,16 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Information om skrivebordsmiljøet Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-#, fuzzy
 msgid "About"
-msgstr "Om Xfce"
+msgstr "Om"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
-#, fuzzy
 msgid "About the Xfce Desktop Environment"
 msgstr "Information om skrivebordsmiljøet Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-#, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -244,7 +237,7 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
