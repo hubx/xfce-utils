@@ -108,7 +108,7 @@ msgstr "I componenti di Xfce sono rilasciati con licenze a codice aperto; GPL o 
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr "Grazie per esserti interessato ad Xfce"
+msgstr "Grazie per esservi interessati a Xfce"
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
@@ -116,7 +116,7 @@ msgstr "Il gruppo di sviluppo di Xfce"
 
 #: ../xfce4-about/main.c:267
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "Se dovesse mancare qualcuno nell'elenco, segnalatelo su <http://bugzilla.xfce.org>."
+msgstr "Se dovesse mancare qualcuno nell'elenco, segnalarlo su <http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:271
 msgid "Thanks to all who helped making this software available!"
@@ -268,7 +268,7 @@ msgstr "Errore di sistema"
 
 #: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
 msgid "Unable to fork to background:"
-msgstr "Impossibile effettuare il fork in background"
+msgstr "Impossibile effettuare il fork in background:"
 
 #: ../xfrun/xfrun-dialog.c:178
 msgid "Run in _terminal"
