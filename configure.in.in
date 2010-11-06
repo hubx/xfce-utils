@@ -20,15 +20,11 @@ m4_define([xfce_utils_version], [xfce_utils_version_major().xfce_utils_version_m
 dnl Debugging support for GIT snapshots
 m4_define([xfce_utils_debug_default], [ifelse(xfce_utils_version_tag(), [git], [yes], [minimum])])
 
-AC_INIT([xfce-utils], [xfce_utils_version], [xfce@xfce.org])
+AC_INIT([xfce-utils], [xfce_utils_version], [http://bugzilla.xfce.org])
 AM_INIT_AUTOMAKE([dist-bzip2])
-
-dnl AC_DEFINE_UNQUOTED([RELEASE_LABEL], ["Xfce 4.6"], [Optional release plain name])
-dnl AC_SUBST(RELEASE_LABEL)
-
 AM_CONFIG_HEADER([config.h])
-
-AM_MAINTAINER_MODE
+AM_MAINTAINER_MODE()
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 dnl Check for UNIX variants
 AC_AIX
@@ -48,7 +44,7 @@ AC_C_INLINE
 
 dnl Check for standard header files
 AC_HEADER_STDC
-AC_CHECK_HEADERS([errno.h unistd.h string.h])
+AC_CHECK_HEADERS([errno.h unistd.h string.h stdlib.h])
 AC_CHECK_FUNCS([daemon setsid])
 
 dnl Check for X11 installed
