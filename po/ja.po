@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-05 22:45+0900\n"
-"PO-Revision-Date: 2010-10-05 22:44+0900\n"
+"POT-Creation-Date: 2010-11-06 23:59+0900\n"
+"PO-Revision-Date: 2010-11-06 23:57+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "Language: ja\n"
@@ -94,7 +94,7 @@ msgstr "情報"
 #. add_page (GTK_NOTEBOOK (notebook), _("Credits"), XFCE_AUTHORS, FALSE);
 #: ../xfce4-about/info.c:463
 msgid "Credits"
-msgstr "提供"
+msgstr "クレジット"
 
 #: ../xfce4-about/info.c:464
 msgid "Copyright"
@@ -121,68 +121,60 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Xfce デスクトップ環境に関する情報です"
 
 #. we don't support daemon mode
-#: ../xfrun/xfrun.c:49
+#: ../xfrun/xfrun.c:48
 msgid "Daemon Mode"
 msgstr "デーモンモード"
 
-#: ../xfrun/xfrun.c:51
+#: ../xfrun/xfrun.c:50
 msgid "Daemon mode is not supported."
 msgstr "デーモンモードはサポートされていません。"
 
-#: ../xfrun/xfrun.c:52
+#: ../xfrun/xfrun.c:51
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必"
 "要があります。"
 
-#: ../xfrun/xfrun-dbus.c:144
+#: ../xfrun/xfrun-dbus.c:142
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "ディスプレイ \"%s\" を開けません。"
 
-#: ../xfrun/xfrun-dbus.c:201
+#: ../xfrun/xfrun-dbus.c:193
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS メッセージバスが切断されました。終了します...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:343 ../xfrun/xfrun-dbus.c:354
+#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
 msgid "System Error"
 msgstr "システムエラー"
 
-#: ../xfrun/xfrun-dbus.c:345 ../xfrun/xfrun-dbus.c:356
+#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
 msgid "Unable to fork to background:"
 msgstr "バックグラウンドで fork できません:"
 
-#: ../xfrun/xfrun-dialog.c:187
+#: ../xfrun/xfrun-dialog.c:178
 msgid "Run in _terminal"
 msgstr "ターミナルで実行する(_T)"
 
-#: ../xfrun/xfrun-dialog.c:208
+#: ../xfrun/xfrun-dialog.c:204
 msgid "_Run"
 msgstr "実行(_R)"
 
-#: ../xfrun/xfrun-dialog.c:539
+#. Display the first error
+#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "コマンド \"%s\" の実行に失敗しました:"
 
-#: ../xfrun/xfrun-dialog.c:541
+#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 msgid "Run Error"
 msgstr "実行エラー"
 
-#: ../xfrun/xfrun-dialog.c:543
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Unknown Error"
 msgstr "不明なエラー"
-
-#: ../xfrun/xfrun-dialog.c:630
-#, c-format
-msgid "Open %s with what program?"
-msgstr "どのプログラムで \"%s\" を開きますか?"
-
-#: ../xfrun/xfrun-dialog.c:635
-msgid "Run program"
-msgstr "実行するプログラムを入力してください"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
 msgid "Run Program..."
@@ -207,3 +199,9 @@ msgstr "ヘルプ"
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
 msgstr "Xfce の使用に関するヘルプです"
+
+#~ msgid "Open %s with what program?"
+#~ msgstr "どのプログラムで \"%s\" を開きますか?"
+
+#~ msgid "Run program"
+#~ msgstr "実行するプログラムを入力してください"
