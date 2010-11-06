@@ -7,108 +7,123 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-06 17:02+0100\n"
-"PO-Revision-Date: 2010-04-30 09:48+0300\n"
+"POT-Creation-Date: 2010-11-06 16:03+0000\n"
+"PO-Revision-Date: 2010-11-06 19:23+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
-"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
-"Language: fi\n"
+"Language-Team: Finnish <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Versiotiedot"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Ikkunamanageri"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Hallitsee ikkunoiden sijaintia ja käytöstä ruudulla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Paneeli"
 
 #: ../xfce4-about/main.c:75
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
+"Tarjoaa käynnistimet, tehtävälistan, sovellusvalikon, työtilanvaihtajan ynnä "
+"muuta."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Työpöydän hallinta"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
+"Asettaa työpöydän taustakuvan tai -värin ja näyttää kuvakkeina joko "
+"pienennetyt sovellukset tai tiedostot, käynnistimet sekä irrotettavat "
+"taltiot."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Tiedostonhallinta"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
+"Nykyaikainen, helppokäyttöinen ja nopea tiedostonhallinta "
+"Unix/Linux-työpöydille."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Istunnonhallinta"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
+"Palauttaa istuntosi käynnistäessä ja mahdollistaa tietokoneen sammuttamisen "
+"Xfce-ympäristöstä."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Asetusjärjestelmä"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr ""
+"Järjestelmä, jonka avulla hallitset työpöytäsi ominaisuuksia, kuten sen "
+"ulkoasua sekä näyttöjen, näppäimistön ja hiiren asetuksia."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Sovellusten hakutyökalu"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr ""
+"Näyttää järjestelmääsi asennetut sovellukset luokiteltuna niiden löytämisen "
+"ja käynnistämisen helpottamiseksi."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Työkalut ja komentosarjat"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Käynnistyksen komentosarjat sekä suoritus- ja tietodialogit."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Asetustenhallinnan taustaprosessi"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "D-Bus -tekniikkaa hyödyntävä asetusten tallennusjärjestelmä."
 
 #: ../xfce4-about/main.c:116
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
+"Xfce on kokoelma sovelluksia, jotka yhdessä tarjoavat täysimittaisen "
+"työpöytäympäristön. Seuraavat sovellukset muodostavat Xfce:n ytimen:"
 
 #: ../xfce4-about/main.c:140
 msgid ""
@@ -116,6 +131,8 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
+"Xfce on myös kehitysalusta. Se tarjoaa useita ohjelmakirjastoja, jotka "
+"auttavat ohjelmoijia luomaan työpöytäympäristöön hyvin istuvia sovelluksia."
 
 #: ../xfce4-about/main.c:146
 msgid ""
@@ -124,33 +141,37 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
+"Xfce:n osat käyttävät vapaita tai avoimen lähdekoodin lisenssejä; GPL tai "
+"BSDL sovelluksille sekä LGPL tai BSDL kirjastoille. Lisätietoja löydät "
+"dokumentaatiosta, lähdekoodista tai Xfce:n verkkosivustolta osoitteessa "
+"(http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Kiitos kiinnostuksestasi Xfce:tä kohtaan."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Xfce:n kehittäjät"
 
 #: ../xfce4-about/main.c:267
-#, fuzzy
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Jos tiedät jonkun puuttuvan listalta, ilmoita meille osoitteeseen <"
+msgstr "Jos tiedät jonkun puuttuvan listalta, tee vikailmoitus osoitteessa "
+"<http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:271
-#, fuzzy
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
-"Kiitos kaikille niille, jotka auttoivat tämän ohjelmiston tuottamisessa."
+msgstr "Kiitos kaikille, jotka auttoivat tämän ohjelmiston tuottamisessa."
 
 #: ../xfce4-about/main.c:284
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
+"Xfce 4:n tekijänoikeuden omistaa Olivier Fourdan (fourdan@xfce.org). Sen "
+"osien tekijänoikeudet kuuluvat niiden kehittäjille."
 
 #: ../xfce4-about/main.c:289
 msgid ""
@@ -159,6 +180,9 @@ msgid ""
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
 msgstr ""
+"Ohjelmistoja libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ja exo "
+"levitetään Free Software Foundationin julkaiseman LGPL-lisenssin version 2 "
+"tai (halutessasi) minkä tahansa lisenssin myöhemmän version ehtojen alaisena."
 
 #: ../xfce4-about/main.c:296
 msgid ""
@@ -168,40 +192,43 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"Ohjelmistoja thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfce-utils, xfconf, xfdesktop ja xfwm4 levitetään Free "
+"Software Foundationin julkaiseman GPL-lisenssin version 2 tai (halutessasi) "
+"minkä tahansa lisenssin myöhemmän version ehtojen alaisena."
 
 #: ../xfce4-about/main.c:386
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Saat käyttöohjeita kirjoittamalla \"%s --help\"."
 
 #: ../xfce4-about/main.c:392
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "GTK+:n alustaminen epäonnistui."
 
 #: ../xfce4-about/main.c:401
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce:n kehittäjät. Kaikki oikeudet pidätetään."
 
 #: ../xfce4-about/main.c:402
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Ilmoita ohjelmavirheistä osoitteessa <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:405
 #, c-format
 msgid "Tanslators list from %s."
-msgstr ""
+msgstr "Kääntäjät (päivitetty %s)."
 
 #: ../xfce4-about/main.c:415
-#, fuzzy
 msgid "Failed to load interface"
-msgstr "Ei voi ladata tiedostoa %s"
+msgstr "Rajapinnan lataaminen epäonnistui"
 
 #: ../xfce4-about/main.c:426
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Versio %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -215,9 +242,8 @@ msgid "Active contributors"
 msgstr "Aktiiviset kehittäjät"
 
 #: ../xfce4-about/contributors.h:133
-#, fuzzy
 msgid "Servers maintained by"
-msgstr "Palvelimen ylläpitäjä"
+msgstr "Palvelimien ylläpito"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
@@ -244,19 +270,16 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Tietoja Xfce-työpöytäympäristöstä"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-#, fuzzy
 msgid "About"
-msgstr "Tietoja Xfce:stä"
+msgstr "Tietoja"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
-#, fuzzy
 msgid "About the Xfce Desktop Environment"
 msgstr "Tietoja Xfce-työpöytäympäristöstä"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-#, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -276,7 +299,7 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Lisenssi"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
@@ -294,7 +317,7 @@ msgstr "Taustaprosessitila edellyttää, että Xfrun on käännetty D-BUS -tuell
 #: ../xfrun/xfrun-dbus.c:142
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Ei voi avata näyttöä \"%s\"."
+msgstr "Näyttöä \"%s\" ei voi avata."
 
 #: ../xfrun/xfrun-dbus.c:193
 #, c-format
@@ -355,24 +378,3 @@ msgstr "Ohje"
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
 msgstr "Ohjeita Xfce:n käyttöön"
-
-#~ msgid "Project Lead"
-#~ msgstr "Projektin vetäjä"
-
-#~ msgid "Web Hosting and Mailing Lists provided by"
-#~ msgstr "Web-sivutilan ja postituslistat tarjoaa"
-
-#~ msgid "About Xfce 4"
-#~ msgstr "Tietoja Xfce 4:stä"
-
-#~ msgid "Copyright 2002-2010 by Olivier Fourdan"
-#~ msgstr "Tekijänoikeus 2002-2010 Olivier Fourdan"
-
-#~ msgid "Info"
-#~ msgstr "Tietoja"
-
-#~ msgid "Open %s with what program?"
-#~ msgstr "Millä ohjelmalla haluat avata tiedoston %s?"
-
-#~ msgid "Run program"
-#~ msgstr "Käynnistä ohjelma"
