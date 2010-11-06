@@ -101,11 +101,11 @@ msgstr "Xfce er en samling af programmer som til sammen danner et fuldt udstyret
 
 #: ../xfce4-about/main.c:140
 msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr ""
+msgstr "Xfce er en udvilingsplatform som tilbyder flere biblioteker, som hjælper programmørerne med at skabe programmer som passer til skrivebordsmiljøet."
 
 #: ../xfce4-about/main.c:146
 msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr ""
+msgstr "Komponenterne som udgør Xfce er licenseret under frie eller åben kilde licenser. GPL eller BSDL for programmer og LGPL eller BSDL for biblioteker. Se dokumentationen. kildekoden eller neststedet til Xfce (http://www.xfce.org) for yderligere information."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
@@ -129,11 +129,11 @@ msgstr "Xfce 4 rettigheder tilhører Olivier Fourdan (fourdan@xfce.org). De enke
 
 #: ../xfce4-about/main.c:289
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo packages er distribueret under betingelserne GNU Library General Public License som publikeret af Free Software Foundation; enten version 2 af licensen eller (det er dit valg) enhver senere version."
 
 #: ../xfce4-about/main.c:296
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "Pakkerne thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfce-utils, xfconfxfdesktop og xfwm4 er distribueret under betingelserne GNU Library General Public License som publikeret af Free Software Foundation; enten version 2 af licensen eller (det er dit valg) enhver senere version."
 
 #: ../xfce4-about/main.c:386
 #, c-format
@@ -157,7 +157,7 @@ msgstr "Opret fejlrapport på <%s>."
 #: ../xfce4-about/main.c:405
 #, c-format
 msgid "Tanslators list from %s."
-msgstr ""
+msgstr "Oversigt af oversætterere %s"
 
 #: ../xfce4-about/main.c:415
 msgid "Failed to load interface"
