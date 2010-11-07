@@ -13,7 +13,9 @@
 - Update CSS based on Mike Massonnet's work (Bug #5255).
 - Fix typo in configure.in.in.
 - Fix incorrect (negative) exit values in xfmountdev4.
-- Translation updates (ug, it, gl, ja, sv, pt).
+- Rework the xfce4-about code.
+- Translation updates (ug, it, gl, ja, sv, pt, fi, da, el).
+
 
 4.7.0
 =====
