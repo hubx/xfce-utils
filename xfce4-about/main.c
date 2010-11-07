@@ -297,7 +297,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
       _("The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-        "xfce4-settings, xfce-utils, xfce-utils, xfconf, xfdesktop and xfwm4 are "
+        "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);
