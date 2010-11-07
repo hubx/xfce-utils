@@ -369,6 +369,24 @@ xfce_about_license_bsd (GtkBuilder *builder)
 
 
 
+static void
+xfce_about_help (GtkWidget *button)
+{
+  GError    *error = NULL;
+  GdkScreen *screen;
+
+  g_return_if_fail (GTK_IS_BUTTON (button));
+
+  screen = gtk_widget_get_screen (button);
+  if (!gdk_spawn_command_line_on_screen (screen, "xfhelp4", &error))
+    {
+      g_critical ("Failed to spawn xfhelp4: %s", error->message);
+      g_error_free (error);
+    }
+}
+
+
+
 gint
 main (gint    argc,
       gchar **argv)
@@ -450,6 +468,10 @@ main (gint    argc,
   object = gtk_builder_get_object (builder, "bsd-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
       G_CALLBACK (xfce_about_license_bsd), builder);
+
+  object = gtk_builder_get_object (builder, "help-button");
+  g_signal_connect (G_OBJECT (object), "clicked",
+      G_CALLBACK (xfce_about_help), NULL);
 
   object = gtk_builder_get_object (builder, "close-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
