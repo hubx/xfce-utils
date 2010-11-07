@@ -307,6 +307,45 @@ xfce_about_copyright (GtkTextBuffer *buffer)
 
 
 
+#ifdef VENDOR_INFO
+static void
+xfce_about_vendor (GtkBuilder *builder)
+{
+  gchar   *contents;
+  gchar   *filename;
+  GObject *object;
+  gsize    length;
+
+  g_return_if_fail (GTK_IS_BUILDER (builder));
+
+  filename = g_build_filename (DATADIR, VENDOR_INFO, NULL);
+  if (g_file_get_contents (filename, &contents, &length, NULL))
+    {
+      if (g_utf8_validate(contents, length, NULL))
+        {
+          object = gtk_builder_get_object (builder, "vendor-buffer");
+          gtk_text_buffer_set_text (GTK_TEXT_BUFFER (object), contents, length);
+
+          object = gtk_builder_get_object (builder, "vendor-label");
+          gtk_label_set_text (GTK_LABEL (object), VENDOR_INFO);
+
+          object = gtk_builder_get_object (builder, "vendor-tab");
+          gtk_widget_show (GTK_WIDGET (object));
+        }
+      else
+        {
+          g_critical ("\"%s\" is not UTF-8 valid", filename);
+        }
+
+      g_free (contents);
+    }
+
+  g_free (filename);
+}
+#endif
+
+
+
 static void
 xfce_about_license (GtkBuilder *builder,
                     GObject    *buffer)
@@ -444,7 +483,15 @@ main (gint    argc,
   g_signal_connect_swapped (G_OBJECT (dialog), "delete-event",
       G_CALLBACK (gtk_main_quit), NULL);
 
+#ifdef VENDOR_INFO
+  /* I18N: first %s will be replaced by the version, second by
+   * the name of the distribution (--with-vendor-info=NAME) */
+  version = g_strdup_printf (_("Version %s, distributed by %s"),
+                             xfce_version_string (), VENDOR_INFO);
+#else
+  /* I18N: %s will be replaced by the Xfce version number */
   version = g_strdup_printf (_("Version %s"), xfce_version_string ());
+#endif
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog), version);
   g_free (version);
 
@@ -456,6 +503,10 @@ main (gint    argc,
 
   object = gtk_builder_get_object (builder, "copyright-buffer");
   xfce_about_copyright (GTK_TEXT_BUFFER (object));
+
+#ifdef VENDOR_INFO
+  xfce_about_vendor (builder);
+#endif
 
   object = gtk_builder_get_object (builder, "gpl-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
