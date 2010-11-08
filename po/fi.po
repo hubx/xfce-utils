@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-utils 4.4.0\n"
+"Project-Id-Version: xfce-utils 4.7.*\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-06 16:03+0000\n"
-"PO-Revision-Date: 2010-11-06 19:23+0200\n"
+"POT-Creation-Date: 2010-11-08 05:07+0000\n"
+"PO-Revision-Date: 2010-11-08 12:04+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,8 +62,8 @@ msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
-"Nykyaikainen, helppokäyttöinen ja nopea tiedostonhallinta "
-"Unix/Linux-työpöydille."
+"Nykyaikainen, helppokäyttöinen ja nopea tiedostonhallinta Unix/Linux-"
+"työpöydille."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -154,18 +154,19 @@ msgstr "Kiitos kiinnostuksestasi Xfce:tä kohtaan."
 msgid "The Xfce Development Team"
 msgstr "Xfce:n kehittäjät"
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:266
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Jos tiedät jonkun puuttuvan listalta, tee vikailmoitus osoitteessa "
-"<http://bugzilla.xfce.org>."
+msgstr ""
+"Jos tiedät jonkun puuttuvan listalta, tee vikailmoitus osoitteessa <http://"
+"bugzilla.xfce.org>."
 
-#: ../xfce4-about/main.c:271
+#: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
 msgstr "Kiitos kaikille, jotka auttoivat tämän ohjelmiston tuottamisessa."
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:287
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
@@ -173,7 +174,7 @@ msgstr ""
 "Xfce 4:n tekijänoikeuden omistaa Olivier Fourdan (fourdan@xfce.org). Sen "
 "osien tekijänoikeudet kuuluvat niiden kehittäjille."
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:292
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -184,48 +185,56 @@ msgstr ""
 "levitetään Free Software Foundationin julkaiseman LGPL-lisenssin version 2 "
 "tai (halutessasi) minkä tahansa lisenssin myöhemmän version ehtojen alaisena."
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:299
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are distributed "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
 msgstr ""
 "Ohjelmistoja thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
 "settings, xfce-utils, xfce-utils, xfconf, xfdesktop ja xfwm4 levitetään Free "
 "Software Foundationin julkaiseman GPL-lisenssin version 2 tai (halutessasi) "
 "minkä tahansa lisenssin myöhemmän version ehtojen alaisena."
 
-#: ../xfce4-about/main.c:386
+#: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Saat käyttöohjeita kirjoittamalla \"%s --help\"."
 
-#: ../xfce4-about/main.c:392
+#: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
 msgstr "GTK+:n alustaminen epäonnistui."
 
-#: ../xfce4-about/main.c:401
+#: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce:n kehittäjät. Kaikki oikeudet pidätetään."
 
-#: ../xfce4-about/main.c:402
+#: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Ilmoita ohjelmavirheistä osoitteessa <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:405
+#: ../xfce4-about/main.c:465
 #, c-format
 msgid "Tanslators list from %s."
 msgstr "Kääntäjät (päivitetty %s)."
 
-#: ../xfce4-about/main.c:415
+#: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
 msgstr "Rajapinnan lataaminen epäonnistui"
 
-#: ../xfce4-about/main.c:426
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr "Versio %s, %s"
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
 msgstr "Versio %s"
