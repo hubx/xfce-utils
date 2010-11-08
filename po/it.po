@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 08:44+0000\n"
+"POT-Creation-Date: 2010-11-08 05:07+0000\n"
 "PO-Revision-Date: 2010-05-05 09:07+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
@@ -134,35 +134,43 @@ msgstr "I pacchetti libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ed exo son
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "I pacchetti thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 sono distribuiti nei termini della licenza GNU Library General Public License così come pubblicata dalla Free Software Foundation; sia essa nella versione 2 o (a propria scelta) in una versione successiva."
 
-#: ../xfce4-about/main.c:389
+#: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Digitare \"%s --help\" per le informazioni di utilizzo."
 
-#: ../xfce4-about/main.c:395
+#: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
 msgstr "Impossibile inizializzare GTK+"
 
-#: ../xfce4-about/main.c:404
+#: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
 msgstr "Il gruppo di sviluppo di Xfce. Tutti i diritti riservati."
 
-#: ../xfce4-about/main.c:405
+#: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Segnalare i problemi a <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:408
+#: ../xfce4-about/main.c:465
 #, c-format
 msgid "Tanslators list from %s."
 msgstr "Elenco dei traduttori da %s."
 
-#: ../xfce4-about/main.c:418
+#: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
 msgstr "Impossibile caricare l'interfaccia"
 
-#: ../xfce4-about/main.c:429
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr "Versione %s, distribuita da %s"
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
 msgstr "Versione %s"
