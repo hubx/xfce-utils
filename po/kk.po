@@ -118,9 +118,8 @@ msgid "If you know of anyone missing from this list; don't hesitate and file a b
 msgstr "Бұл тізімнен қалып қойған біреуді білсеңіз, ақаулық хабарламасын <http://bugzilla.xfce.org> жеріне жазыңыз."
 
 #: ../xfce4-about/main.c:270
-#, fuzzy
 msgid "Thanks to all who helped making this software available!"
-msgstr "Осы бағдарламалық қамтаманы қолжетерлік қылуға көмектескен барлық адамдарға рахмет."
+msgstr "Осы бағдарламалық қамтаманы қолжетерлік қылуға көмектескен барлық адамдарға рахмет!"
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
