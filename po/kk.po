@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 23:07+0000\n"
-"PO-Revision-Date: 2010-03-11 15:52+0600\n"
+"POT-Creation-Date: 2010-11-09 05:07+0000\n"
+"PO-Revision-Date: 2010-11-09 12:49+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -179,7 +179,7 @@ msgstr "Нұсқасы %s"
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr "Негізгі өндеушілер"
+msgstr "Негізгі өңдеушілер"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
@@ -231,7 +231,7 @@ msgstr "Copyright"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr "Жасаушылар"
+msgstr "Жасағандар"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
@@ -269,11 +269,13 @@ msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS хабарламалар қызметімен байланыс үзілді. Шығу ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:330
+#: ../xfrun/xfrun-dbus.c:341
 msgid "System Error"
 msgstr "Жүйелік қате"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:332
+#: ../xfrun/xfrun-dbus.c:343
 msgid "Unable to fork to background:"
 msgstr "Фонда жіберу мүмкін емес:"
 
@@ -286,16 +288,19 @@ msgid "_Run"
 msgstr "О_рындау"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:568
+#: ../xfrun/xfrun-dialog.c:579
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "\"%s\" орындау сәтсіз аяқталды:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:570
+#: ../xfrun/xfrun-dialog.c:581
 msgid "Run Error"
 msgstr "Орындау қатесі"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:572
+#: ../xfrun/xfrun-dialog.c:583
 msgid "Unknown Error"
 msgstr "Белгісіз қате"
 
