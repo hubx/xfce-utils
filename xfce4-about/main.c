@@ -462,7 +462,7 @@ main (gint    argc,
       g_print (_("Please report bugs to <%s>."), PACKAGE_BUGREPORT);
       g_print ("\n");
       /* I18N: date/time the translators list was updated */
-      g_print (_("Tanslators list from %s."), TRANSLATORS_H_STAMP);
+      g_print (_("Translators list from %s."), TRANSLATORS_H_STAMP);
       g_print ("\n");
 
       return EXIT_SUCCESS;
