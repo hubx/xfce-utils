@@ -7,199 +7,170 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-06 17:02+0100\n"
+"POT-Creation-Date: 2010-11-09 11:07+0000\n"
 "PO-Revision-Date: 2007-12-15 13:37+0200\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce-i18n@xfce.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Інформація про версію"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Менеджер вікон"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Ручки розміщення вікон на екрані."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Панель"
 
 #: ../xfce4-about/main.c:75
-msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
+msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
+msgstr "Запускачі програм, кнопки вікон, меню програм, перемикач робочого простору та інше."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Менеджер стільниці"
 
 #: ../xfce4-about/main.c:80
-msgid ""
-"Sets the background color or image with optional application menu or icons "
-"for minimized applications or launchers, devices and folders."
-msgstr ""
+msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
+msgstr "Встановлення кольору підложки або малюнка із вибором меню програм або значків для мінімізованих програм чи запускачів, пристроїв і тек."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Менеджер файлів"
 
 #: ../xfce4-about/main.c:85
-msgid ""
-"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
-"and fast."
-msgstr ""
+msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
+msgstr "Сучасний файловий менеджер для Unix/Linux стільниці, націлений на просте використання та швидкодію."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Менеджер сеансів"
 
 #: ../xfce4-about/main.c:90
-msgid ""
-"Restores your session on startup and allows you to shutdown the computer "
-"from Xfce."
-msgstr ""
+msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
+msgstr "Відновлює Ваші сеанси під час завантаження і дозволяє Вам вимикати комп'ютер із Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Налаштування системи"
 
 #: ../xfce4-about/main.c:95
-msgid ""
-"Configuration system to control various aspects of the desktop like "
-"appearance, display, keyboard and mouse settings."
-msgstr ""
+msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
+msgstr "Налаштовуйте систему для контролю різних аспектів стільниці, таких як зовнішній вигляд, дисплей, властивості клавіатури та миші."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Шукач програм"
 
 #: ../xfce4-about/main.c:100
-msgid ""
-"Shows the applications installed on your system in categories, so you can "
-"quickly find and launch them."
-msgstr ""
+msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
+msgstr "Відображає встановлені у вашій системі програми по категоріям, щоб Ви могли швидко їх знайти та запустити."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Інструменти та скрипти"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Стартові скрипти, діалог запуску і діалог про програму."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Сервіс налаштувань"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Основана на D-Bus система збереження налаштувань."
 
 #: ../xfce4-about/main.c:116
-msgid ""
-"Xfce is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
+msgstr "Xfce є колекцією програм що в сукупності забезпечують повнофункціональне середовище стільниці. Наступні програми є частиною ядра Xfce:"
 
 #: ../xfce4-about/main.c:140
-msgid ""
-"Xfce is also a development platform providing several libraries, that help "
-"programmers create applications that fit in well with the desktop "
-"environment."
-msgstr ""
+msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
+msgstr "Xfce є також платформою для забезпечення розробки декілької бібліотек, що допомагають програмістам створювати програми, що прекрасно вписуються в середовище стільниці."
 
 #: ../xfce4-about/main.c:146
-msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
-"information."
-msgstr ""
+msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
+msgstr "Компоненти Xfce ліцензовані під вільними чи з відкритим вихідним кодом ліцензіями; GPL чи BSDL для програм і LGPL чи BSDL для бібліотек. Дивіться документацію, вихідний код чи веб-сайт Xfce (http://www.xfce.org) для розширеної інформації."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Дякуємо за Ваш інтерес до Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Команда розробників Xfce"
 
-#: ../xfce4-about/main.c:267
-#, fuzzy
-msgid ""
-"If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Якщо ви знаєте когось ще, хто має бути присутній у цьому списку, будь ласка, "
-"дайте нам знати за адресою <"
+#: ../xfce4-about/main.c:266
+msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
+msgstr "Якщо Ви знаєте когось, хто відсутній у цьому переліку, не соромтесь і повідомте про помилку на <http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:271
+#: ../xfce4-about/main.c:270
 #, fuzzy
 msgid "Thanks to all who helped making this software available!"
 msgstr "Дякуємо усім, хто допоміг зробити це програмне забезпечення."
 
-#: ../xfce4-about/main.c:284
-msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
-"components are copyrighted by their respective authors."
+#: ../xfce4-about/main.c:287
+msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
 msgstr ""
 
-#: ../xfce4-about/main.c:289
-msgid ""
-"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
-"distributed under the terms of the GNU Library General Public License as "
-"published by the Free Software Foundation; either version 2 of the License, "
-"or (at your option) any later version."
+#: ../xfce4-about/main.c:292
+msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:296
-msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are distributed "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
+#: ../xfce4-about/main.c:299
+msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:386
+#: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr ""
 
-#: ../xfce4-about/main.c:392
+#: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
 msgstr ""
 
-#: ../xfce4-about/main.c:401
+#: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
 msgstr ""
 
-#: ../xfce4-about/main.c:402
+#: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr ""
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:405
+#: ../xfce4-about/main.c:465
 #, c-format
 msgid "Tanslators list from %s."
 msgstr ""
 
-#: ../xfce4-about/main.c:415
+#: ../xfce4-about/main.c:475
 #, fuzzy
 msgid "Failed to load interface"
 msgstr "Не вдається завантажити файл %s"
 
-#: ../xfce4-about/main.c:426
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr ""
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
 msgstr ""
@@ -290,8 +261,7 @@ msgstr "Режим служби не підтримується."
 
 #: ../xfrun/xfrun.c:51
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
-msgstr ""
-"Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
+msgstr "Xfrun повинна бути зібрана з підтримкою D-BUS для використання режиму служби."
 
 #: ../xfrun/xfrun-dbus.c:142
 #, c-format
