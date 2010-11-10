@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce-utils 4.5.93\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-08 11:07+0000\n"
+"POT-Creation-Date: 2010-11-10 05:07+0000\n"
 "PO-Revision-Date: 2009-01-23 10:24+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -156,8 +156,8 @@ msgstr "Opret fejlrapport på <%s>."
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
-msgstr "Oversigt af oversætterere %s"
+msgid "Translators list from %s."
+msgstr "Oversigt af oversætterere %s."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
