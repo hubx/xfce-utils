@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-09 05:07+0000\n"
-"PO-Revision-Date: 2010-11-09 12:49+0600\n"
+"POT-Creation-Date: 2010-11-10 05:07+0000\n"
+"PO-Revision-Date: 2010-11-10 11:52+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -154,8 +154,8 @@ msgstr "Ақаулықтар жөнінде хабарлаңыз: <%s>."
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
-msgstr "%s ішінен алынған аудармашылар тізімі."
+msgid "Translators list from %s."
+msgstr "Аудармашылар тізімі (%s орай)."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
