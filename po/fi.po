@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.7.*\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-08 05:07+0000\n"
-"PO-Revision-Date: 2010-11-08 12:04+0200\n"
+"POT-Creation-Date: 2010-11-11 11:07+0000\n"
+"PO-Revision-Date: 2010-11-11 17:30+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -219,7 +219,7 @@ msgstr "Ilmoita ohjelmavirheistä osoitteessa <%s>."
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
+msgid "Translators list from %s."
 msgstr "Kääntäjät (päivitetty %s)."
 
 #: ../xfce4-about/main.c:475
