@@ -15,7 +15,7 @@ BuildRequires:	libxfce4mcs-devel >= @LIBXFCE4MCS_CLIENT_REQUIRED_VERSION@
 BuildRequires:	xfce-mcs-manager-devel
 
 %description
-xfce-utils contains utilities for the XFce Desktop Environment
+xfce-utils contains utilities for the Xfce Desktop Environment
 
 %prep
 %setup -q
