@@ -329,7 +329,7 @@ msgstr "Допомога про використання Xfce"
 #~ msgstr "Веб-хостінг та списки розсилки надані"
 
 #~ msgid "About Xfce 4"
-#~ msgstr "Про XFce 4"
+#~ msgstr "Про Xfce 4"
 
 #~ msgid "Copyright 2002-2010 by Olivier Fourdan"
 #~ msgstr "Авторські права 2002-2010, Olivier Fourdan"

@@ -233,7 +233,7 @@ msgstr ""
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "एक्सएफसीई 4 (XFce 4) के बारे में "
+msgstr "एक्सएफसीई 4 (Xfce 4) के बारे में "
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 #, fuzzy

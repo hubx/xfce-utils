@@ -238,7 +238,7 @@ msgstr "이전에 도와주신 분들"
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "XFce 4란..."
+msgstr "Xfce 4란..."
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"

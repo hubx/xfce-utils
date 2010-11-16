@@ -242,7 +242,7 @@ msgstr "Cộng tác viên trước đây"
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "Giới thiệu XFce 4"
+msgstr "Giới thiệu Xfce 4"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 #, fuzzy

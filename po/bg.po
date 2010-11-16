@@ -240,7 +240,7 @@ msgstr "Относно Xfce 4"
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 #, fuzzy
 msgid "Information about the Xfce Desktop Environment"
-msgstr "XFce·десктоп среда"
+msgstr "Xfce·десктоп среда"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
@@ -249,7 +249,7 @@ msgstr ""
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
 msgid "About the Xfce Desktop Environment"
-msgstr "XFce·десктоп среда"
+msgstr "Xfce·десктоп среда"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 #, fuzzy

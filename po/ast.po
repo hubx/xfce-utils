@@ -233,7 +233,7 @@ msgstr "Anteriores collaboradores"
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "Tocante a XFce 4"
+msgstr "Tocante a Xfce 4"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"

@@ -233,12 +233,12 @@ msgstr ""
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "Acerca de XFce 4"
+msgstr "Acerca de Xfce 4"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 #, fuzzy
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Entorno de Escritorio XFce"
+msgstr "Entorno de Escritorio Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
@@ -247,7 +247,7 @@ msgstr ""
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
 msgid "About the Xfce Desktop Environment"
-msgstr "Entorno de Escritorio XFce"
+msgstr "Entorno de Escritorio Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 #, fuzzy

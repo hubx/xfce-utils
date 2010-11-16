@@ -251,7 +251,7 @@ msgstr ""
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
 msgid "About the Xfce Desktop Environment"
-msgstr "XFCE ඔබගේ වැඩතලය ලෙස ක්‍රියාත්මක කිරීමට මෙම සැසිය භාවිතා කරන්න"
+msgstr "Xfce ඔබගේ වැඩතලය ලෙස ක්‍රියාත්මක කිරීමට මෙම සැසිය භාවිතා කරන්න"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 #, fuzzy
@@ -344,7 +344,7 @@ msgstr "යෙදුම ක්‍රියාත්මක කරන්න"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr "XFCE ඔබගේ වැඩතලය ලෙස ක්‍රියාත්මක කිරීමට මෙම සැසිය භාවිතා කරන්න"
+msgstr "Xfce ඔබගේ වැඩතලය ලෙස ක්‍රියාත්මක කිරීමට මෙම සැසිය භාවිතා කරන්න"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"

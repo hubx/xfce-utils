@@ -241,7 +241,7 @@ msgstr "Laguntzaile oihak"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "XFce-ri buruz"
+msgstr "Xfce-ri buruz"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
@@ -250,7 +250,7 @@ msgstr "Xfce mahaigain inguruneari buruzko argibideak"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 #, fuzzy
 msgid "About"
-msgstr "XFce-ri buruz"
+msgstr "Xfce-ri buruz"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
@@ -367,7 +367,7 @@ msgstr "Lagundu Xfce erabiltzen"
 #~ msgstr "Web ostalaritza eta posta zerrendak"
 
 #~ msgid "About Xfce 4"
-#~ msgstr "XFce 4-ri buruz"
+#~ msgstr "Xfce 4-ri buruz"
 
 #~ msgid "Copyright 2002-2010 by Olivier Fourdan"
 #~ msgstr "Copyright 2002-2010 Olivier Fourdan"

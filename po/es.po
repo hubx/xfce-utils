@@ -239,7 +239,7 @@ msgstr "Anteriores colaboradores"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "Acerca de XFce"
+msgstr "Acerca de Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
@@ -248,7 +248,7 @@ msgstr "Información sobre el entorno de escritorio Xfce"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 #, fuzzy
 msgid "About"
-msgstr "Acerca de XFce"
+msgstr "Acerca de Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
@@ -367,7 +367,7 @@ msgstr "Ayuda usando Xfce"
 #~ msgstr "Alojamiento web y listas de correo proporcionados por"
 
 #~ msgid "About Xfce 4"
-#~ msgstr "Acerca de XFce 4"
+#~ msgstr "Acerca de Xfce 4"
 
 #~ msgid "Copyright 2002-2010 by Olivier Fourdan"
 #~ msgstr "Copyright 2002-2010 por Olivier Fourdan"

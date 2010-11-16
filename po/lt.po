@@ -238,7 +238,7 @@ msgstr "Ankstesni bendradarbiai"
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 #, fuzzy
 msgid "About Xfce"
-msgstr "Apie XFce 4"
+msgstr "Apie Xfce 4"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
