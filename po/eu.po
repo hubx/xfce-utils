@@ -126,15 +126,15 @@ msgstr "Milesker software hau posible egiten duzuen guztioi."
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 Oliviar Fourdan (fourdan@xfce.org)-ren copyright da. Osagai ezberdinak dagokien garatzaileen copyright dira."
 
 #: ../xfce4-about/main.c:292
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 
 #: ../xfce4-about/main.c:299
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 
 #: ../xfce4-about/main.c:446
 #, c-format
