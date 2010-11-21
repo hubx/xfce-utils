@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-08 05:07+0000\n"
+"POT-Creation-Date: 2010-11-21 11:07+0000\n"
 "PO-Revision-Date: 2010-05-05 09:07+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
@@ -155,7 +155,7 @@ msgstr "Segnalare i problemi a <%s>."
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
+msgid "Translators list from %s."
 msgstr "Elenco dei traduttori da %s."
 
 #: ../xfce4-about/main.c:475
