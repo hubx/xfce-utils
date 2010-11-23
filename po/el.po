@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils git\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 05:07+0000\n"
-"PO-Revision-Date: 2010-11-07 11:41+0200\n"
+"POT-Creation-Date: 2010-11-23 05:08+0000\n"
+"PO-Revision-Date: 2010-11-23 08:52+0200\n"
 "Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -116,7 +116,7 @@ msgstr "Σας ευχαριστούμε για το ενδιαφέρον σας 
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr "Η ομάδα ανάπτυξης του xfce"
+msgstr "Η ομάδα ανάπτυξης xfce"
 
 #: ../xfce4-about/main.c:266
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
@@ -135,38 +135,46 @@ msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages ar
 msgstr "Τα πακέτα libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs και exo διανέμονται κάτω από τους όρους της GNU Library General Public License όπως δημοσιεύτηκε από το Free Software Foundation, είτε της έκδοσης 2 της άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
 
 #: ../xfce4-about/main.c:299
-msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "Τα πακέτα thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfce-utils, xfconf, xfdesktop και xfwm4 διανέμονται κάτω από τους όρους της GNU General Public License όπως δημοσιεύτηκε από το Free Software Foundation είτε της έκδοσης 2 της άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
+msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Τα πακέτα thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop και xfwm4 διανέμονται κάτω από τους όρους της GNU General Public License όπως δημοσιεύτηκε από το Free Software Foundation είτε της έκδοσης 2 της άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
 
-#: ../xfce4-about/main.c:389
+#: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Πληκτρολογήστε '%s --help' για πληροφορίες χρήσης."
 
-#: ../xfce4-about/main.c:395
+#: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
 msgstr "Αδυναμία αρχικοποίησης του GTK+."
 
-#: ../xfce4-about/main.c:404
+#: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
 msgstr "Η ομάδα ανάπτυξης xfce. Όλα τα δικαιώματα είναι δεσμευμένα."
 
-#: ../xfce4-about/main.c:405
+#: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Παρακαλώ αναφέρετε σφάλματα στο <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:408
+#: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
-msgstr "Η λίστα των μεταφραστών από %s."
+msgid "Translators list from %s."
+msgstr "Η λίστα των μεταφραστών είναι από %s."
 
-#: ../xfce4-about/main.c:418
+#: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
 msgstr "Απέτυχε η φόρτωση της διεπαφής"
 
-#: ../xfce4-about/main.c:429
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr "Έκδοση %s, διανέμεται από %s"
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
 msgstr "Έκδοση %s"
