@@ -3,27 +3,29 @@
 # This file is distributed under the same license as the xfce-utils package.
 # Juraj Brosz <juro@jurajbrosz.info>, 2004, 2005.
 # Roman Moravcik <roman.moravcik@gmail.com> 2006.
-# Robert Hartl <hartl.robert@gmail.com>, 2009.
+# Robert Hartl <hartl.robert@gmail.com>, 2009, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-06 17:02+0100\n"
-"PO-Revision-Date: 2009-10-27 20:57+0100\n"
+"POT-Creation-Date: 2010-11-23 17:07+0000\n"
+"PO-Revision-Date: 2010-11-23 23:13+0100\n"
 "Last-Translator: Robert Hartl <hartl.robert@gmail.com>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
-"Language: sk\n"
+"Language-Team:  <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Language: sk\n"
+"Plural-Forms: \n"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Informácie o verzii"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -31,7 +33,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
 msgid ""
@@ -51,7 +53,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Správca súborov"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -61,7 +63,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Správca sedenia"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -71,7 +73,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Nastavenie systému"
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -81,7 +83,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Vyhľadávač aplikácií"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -99,7 +101,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Nastavenia démona"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
@@ -128,13 +130,13 @@ msgstr ""
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Ďakujeme Vám za Váš záujem o Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Vývojový tím Xfce"
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:266
 #, fuzzy
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
@@ -143,18 +145,19 @@ msgstr ""
 "Ak poznáte niekoho, kto chýba na tomto zozname, tak nám prosím dajte vedieť "
 "na <"
 
-#: ../xfce4-about/main.c:271
-#, fuzzy
+#: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr "Poďakovanie všetkým, ktorí pomáhajú robiť tento softvér dostupnejším."
+msgstr "Ďakujeme všetkým, ktorí pomohli aby bol tento softvér k dispozícii."
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:287
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
+"Xfce 4 je autorským právom Oliviera Fourdana (fourdan@xfce.org). Rôzne "
+"komponenty sú chránené autorskými právami ich autorov."
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:292
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -162,48 +165,59 @@ msgid ""
 "or (at your option) any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:299
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfce-utils, xfconfxfdesktop and xfwm4 are distributed "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
 msgstr ""
+"Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
+"xfce-utils, xfconf, xfdesktop a xfwm4 sú distribuované pod GNU General "
+"Public License, vydávanej Free Software Foundation; buď verzie 2 tejto "
+"licencie alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
 
-#: ../xfce4-about/main.c:386
+#: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr ""
 
-#: ../xfce4-about/main.c:392
+#: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Nepodarilo sa inicializovať GTK+."
 
-#: ../xfce4-about/main.c:401
+#: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Vývojový tím Xfce. Všetky práva vyhradené."
 
-#: ../xfce4-about/main.c:402
+#: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Chyby hláste na <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:405
+#: ../xfce4-about/main.c:465
 #, c-format
-msgid "Tanslators list from %s."
-msgstr ""
+msgid "Translators list from %s."
+msgstr "Zoznam prekladateľov z %s."
 
-#: ../xfce4-about/main.c:415
-#, fuzzy
+#: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr "Nie je možné načítať súbor %s"
+msgstr "Nepodarilo sa načítať rozhranie"
 
-#: ../xfce4-about/main.c:426
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr "Verzia %s, distribuovaný %s"
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Verzia %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -256,9 +270,8 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Informácie o pracovnom prostredie Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-#, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -278,7 +291,7 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
@@ -330,7 +343,7 @@ msgstr "Chyba spúšťania príkazu \"%s\":"
 
 #: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 msgid "Run Error"
-msgstr "Chyba pri spúštaní programu"
+msgstr "Chyba pri spustení"
 
 #: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Unknown Error"
