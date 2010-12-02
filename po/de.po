@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-01 05:08+0000\n"
+"POT-Creation-Date: 2010-12-02 05:08+0000\n"
 "PO-Revision-Date: 2010-11-24 01:14+0100\n"
 "Last-Translator: Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>\n"
 "Language-Team: German <xfce-i18n-de@xfce.org>\n"
@@ -31,8 +31,9 @@ msgid "Window Manager"
 msgstr "Fenstermanager"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Regelt die Platzierung der Fenster auf dem Bildschirm."
 
 #: ../xfce4-about/main.c:74
 #, fuzzy
@@ -40,8 +41,9 @@ msgid "Panel"
 msgstr "Leiste"
 
 #: ../xfce4-about/main.c:75
+#, fuzzy
 msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
-msgstr ""
+msgstr "Programmstarter, Fensterknöpfe, Anwendungsmenü, Arbeitsflächenumschalter und mehr."
 
 #: ../xfce4-about/main.c:79
 #, fuzzy
@@ -71,8 +73,9 @@ msgid "Restores your session on startup and allows you to shutdown the computer 
 msgstr "Stellt Ihre Sitzung beim Start wieder her und erlaubt es Ihnen den Computer mit Xfce herunter zu fahren."
 
 #: ../xfce4-about/main.c:94
+#, fuzzy
 msgid "Setting System"
-msgstr ""
+msgstr "Einstellungssystem"
 
 #: ../xfce4-about/main.c:95
 msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
@@ -178,9 +181,9 @@ msgstr "Kann Schnittstelle nicht laden "
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
-#, c-format
+#, c-format, fuzzy
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Version %s, verteilt von %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
