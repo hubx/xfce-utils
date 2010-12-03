@@ -14,7 +14,7 @@ m4_define([xfce_utils_version_minor], [7])
 m4_define([xfce_utils_version_micro], [2])
 m4_define([xfce_utils_version_nano],  []) dnl leave this empty to have no nano version
 m4_define([xfce_utils_version_build], [@REVISION@])
-m4_define([xfce_utils_version_tag],   [])
+m4_define([xfce_utils_version_tag],   [git])
 m4_define([xfce_utils_version], [xfce_utils_version_major().xfce_utils_version_minor().xfce_utils_version_micro()ifelse(xfce_utils_version_nano(), [], [], [.xfce_utils_version_nano()])ifelse(xfce_utils_version_tag(), [git], [xfce_utils_version_tag()-xfce_utils_version_build()], [xfce_utils_version_tag()])])
 
 dnl Debugging support for GIT snapshots
