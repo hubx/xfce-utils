@@ -1,3 +1,12 @@
+4.7.2
+=====
+- Return support for vendor information.
+- Hookup the help button in xfce4-about.
+- Fix typo in xfce4-about --help.
+- Fix some wrong capitalizations of Xfce.
+- Translation updates (id, zh_TW, kk, it, fi, gl, da, ca, pt, uk,
+  eu, sk, de, hu).
+
 4.7.1
 =====
 - Drop ck-launch-session as CK is handled in xfce4-session (bug #6684).
