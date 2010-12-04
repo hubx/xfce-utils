@@ -1,3 +1,8 @@
+4.7.x
+=====
+- Set XDG_MENU_PREFIX to "xfce-" and export it (bug #5980).
+
+
 4.7.2
 =====
 - Return support for vendor information.
@@ -6,6 +11,7 @@
 - Fix some wrong capitalizations of Xfce.
 - Translation updates (id, zh_TW, kk, it, fi, gl, da, ca, pt, uk,
   eu, sk, de, hu).
+
 
 4.7.1
 =====
