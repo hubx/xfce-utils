@@ -11,8 +11,10 @@ fi
 
 # set $XDG_MENU_PREFIX to "xfce-" so that "xfce-applications.menu" is picked
 # over "applications.menu" in all Xfce applications.
-XDG_MENU_PREFIX="xfce-"
-export XDG_MENU_PREFIX
+if test "x$XDG_MENU_PREFIX" = "x"; then
+  XDG_MENU_PREFIX="xfce-"
+  export XDG_MENU_PREFIX
+fi
 
 # $XDG_CONFIG_HOME defines the base directory relative to which user specific
 # configuration files should be stored. If $XDG_CONFIG_HOME is either not set
