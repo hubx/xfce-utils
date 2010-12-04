@@ -5,4 +5,3 @@ Exec=@libexecdir@/xfce4/xfconf-migration/xfconf-migration-4.6.pl
 Terminal=false
 Type=Application
 StartupNotify=false
-Terminal=false
