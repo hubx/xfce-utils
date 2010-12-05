@@ -1,6 +1,9 @@
-4.7.x
+4.7.3
 =====
 - Set XDG_MENU_PREFIX to "xfce-" and export it (bug #5980).
+- Move xfconf migration script to $libdir (bug #6917).
+- Remove Terminal key duplicate (bug #6913).
+- Update translators.
 
 
 4.7.2
