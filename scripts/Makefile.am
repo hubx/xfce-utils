@@ -49,7 +49,7 @@ conffiles_DATA=\
 
 if XFCONF_MIGRATION
 
-migrationscriptdir = $(libexecdir)/xfce4/xfconf-migration
+migrationscriptdir = $(libdir)/xfce4/xfconf-migration
 migrationscript_in_files = xfconf-migration-4.6.pl.in
 migrationscript_SCRIPTS = $(migrationscript_in_files:.pl.in=.pl)
 
@@ -61,7 +61,7 @@ autostart_in_files = xfconf-migration-4.6.desktop.in
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 
 xfconf-migration-4.6.desktop: $(srcdir)/xfconf-migration-4.6.desktop.in
-	sed 's,\@libexecdir\@,$(libexecdir),' < $< > $@
+	sed 's,\@libdir\@,$(libdir),' < $< > $@
 
 endif
 
