@@ -53,6 +53,7 @@ struct _XfrunDialogPrivate
 
     gboolean destroy_on_close;
     gchar *working_directory;
+    gchar **envp;
 
     gchar *entry_val_tmp;
 };
@@ -257,6 +258,7 @@ xfrun_dialog_finalize(GObject *object)
 
     g_free(dialog->priv->working_directory);
     g_free(dialog->priv->entry_val_tmp);
+    g_strfreev(dialog->priv->envp);
 
     if(dialog->priv->completion_model)
         g_object_unref(G_OBJECT(dialog->priv->completion_model));
@@ -524,7 +526,7 @@ xfrun_run_clicked(GtkWidget *widget,
 
     result = (argv && gdk_spawn_on_screen(gscreen,
                                           dialog->priv->working_directory,
-                                          argv, NULL, G_SPAWN_SEARCH_PATH,
+                                          argv, dialog->priv->envp, G_SPAWN_SEARCH_PATH,
                                           xfrun_spawn_child_setup, NULL, NULL,
                                           &error));
 
@@ -687,6 +689,16 @@ xfrun_dialog_get_working_directory(XfrunDialog *dialog)
 {
     g_return_val_if_fail(XFRUN_IS_DIALOG(dialog), NULL);
     return dialog->priv->working_directory;
+}
+
+void
+xfrun_dialog_set_environment(XfrunDialog *dialog,
+                             gchar **envp)
+{
+    g_return_if_fail(XFRUN_IS_DIALOG(dialog));
+
+    g_strfreev(dialog->priv->envp);
+    dialog->priv->envp = g_strdupv(envp);
 }
 
 void

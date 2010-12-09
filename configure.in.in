@@ -44,8 +44,9 @@ AC_C_INLINE
 
 dnl Check for standard header files
 AC_HEADER_STDC
-AC_CHECK_HEADERS([errno.h unistd.h string.h stdlib.h])
-AC_CHECK_FUNCS([daemon setsid])
+AC_CHECK_HEADERS([errno.h unistd.h string.h stdlib.h crt_externs.h])
+AC_CHECK_FUNCS([daemon setsid _NSGetEnviron])
+AC_CHECK_DECLS([environ])
 
 dnl Check for X11 installed
 XDT_CHECK_LIBX11_REQUIRE

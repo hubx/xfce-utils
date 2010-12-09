@@ -35,6 +35,9 @@
 #ifdef HAVE_STDLIB_H
 #include <stdlib.h>
 #endif
+#ifdef HAVE_CRT_EXTERNS_H
+#include <crt_externs.h> /* for _NSGetEnviron */
+#endif
 
 #ifdef HAVE_ERRNO_H
 #include <errno.h>
@@ -50,6 +53,14 @@
 #include <dbus/dbus-glib-lowlevel.h>
 
 #include "xfrun-dialog.h"
+
+#ifdef HAVE__NSGETENVIRON
+/* for support under apple/darwin */
+#define environ (*_NSGetEnviron())
+#elif !HAVE_DECL_ENVIRON
+/* try extern if environ is not defined in unistd.h */
+extern gchar **environ;
+#endif
 
 /**
  * method: org.xfce.RunDialog.OpenDialog
@@ -123,12 +134,15 @@ xfrun_handle_dbus_message(DBusConnection *connection,
         DBusMessage *reply = NULL;
         DBusError derror;
         gchar *display_name = NULL, *cwd = NULL;
+        gchar **envp = NULL;
+        gint n_envp;
 
         dbus_error_init(&derror);
 
         if(!dbus_message_get_args(message, &derror,
                                   DBUS_TYPE_STRING, &display_name,
                                   DBUS_TYPE_STRING, &cwd,
+                                  DBUS_TYPE_ARRAY, DBUS_TYPE_STRING, &envp, &n_envp,
                                   DBUS_TYPE_INVALID))
         {
             reply = dbus_message_new_error(message, RUNDIALOG_DBUS_ERROR_GENERAL,
@@ -154,10 +168,13 @@ xfrun_handle_dbus_message(DBusConnection *connection,
                                                       TRUE);
                     xfrun_dialog_set_working_directory(XFRUN_DIALOG(dialog),
                                                        cwd);
+                    xfrun_dialog_set_environment(XFRUN_DIALOG(dialog), envp);
                 } else {
                     dialog = static_dialog;
                     xfrun_dialog_set_working_directory(XFRUN_DIALOG(dialog),
                                                        cwd);
+                    xfrun_dialog_set_environment(XFRUN_DIALOG(dialog), envp);
+
                     if(GTK_WIDGET_REALIZED(dialog)) {
                         gdk_x11_window_set_user_time(dialog->window,
                                                      gdk_x11_get_server_time(dialog->window));
@@ -243,6 +260,7 @@ xfrun_show_dialog(void)
     DBusMessage *result;
     DBusError derror;
     gchar *cwd, *display_name;
+    gchar **envp = (gchar **) environ;
 
     dbus_error_init(&derror);
     connection = dbus_bus_get(DBUS_BUS_SESSION, &derror);
@@ -263,6 +281,8 @@ xfrun_show_dialog(void)
     dbus_message_append_args(method,
                              DBUS_TYPE_STRING, &display_name,
                              DBUS_TYPE_STRING, &cwd,
+                             DBUS_TYPE_ARRAY, DBUS_TYPE_STRING, &envp,
+                                 envp ? g_strv_length(envp) : 0,
                              DBUS_TYPE_INVALID);
 
     g_free(display_name);

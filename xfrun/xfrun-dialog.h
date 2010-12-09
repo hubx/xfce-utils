@@ -62,6 +62,9 @@ gboolean xfrun_dialog_get_destroy_on_close         (XfrunDialog *dialog);
 void xfrun_dialog_set_working_directory            (XfrunDialog *dialog,
                                                     const gchar *working_directory);
 
+void xfrun_dialog_set_environment                  (XfrunDialog *dialog,
+                                                    gchar **envp);
+
 void xfrun_dialog_select_text                      (XfrunDialog *dialog);
 
 G_CONST_RETURN gchar *xfrun_dialog_get_working_directory
