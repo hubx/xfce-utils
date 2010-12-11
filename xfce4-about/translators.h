@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2010-12-05 00:00:04"
+#define TRANSLATORS_H_STAMP "2010-12-12 00:00:07"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -328,6 +328,7 @@ static const TranslatorInfo xfce_translators_ru[] =
   { "Alexander Yashkin", "alex" DOTSIGN "aspirine" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Claque", "cpt-alatriste" ATSIGN "ya" DOTSIGN "ru", FALSE },
   { "Styopa Semenukha", "semenukha" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Aleksandr Ponomarenko", "davian818" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ivan Nikolaev", "voidexp" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Anton Batenev", "antonbatenev" ATSIGN "yandex" DOTSIGN "ru", FALSE },
   { "Evgeniy Kosov", "eugene" ATSIGN "kosov" DOTSIGN "net", FALSE },
@@ -486,7 +487,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Kazakh", "kk", xfce_translators_kk },
   { "Lithuanian", "lt", xfce_translators_lt },
   { "Latvian", "lv", xfce_translators_lv },
-  { "Norwegian Bokmål", "nb", xfce_translators_nb },
+  { "Norwegian Bokmal", "nb", xfce_translators_nb },
   { "Dutch (Flemish)", "nl", xfce_translators_nl },
   { "Norwegian Nynorsk", "nn", xfce_translators_nn },
   { "Panjabi (Punjabi)", "pa", xfce_translators_pa },
