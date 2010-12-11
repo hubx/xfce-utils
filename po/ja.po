@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
-"PO-Revision-Date: 2010-11-07 16:28+0900\n"
+"POT-Creation-Date: 2010-12-11 23:22+0900\n"
+"PO-Revision-Date: 2010-12-11 23:22+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "Language: ja\n"
@@ -225,7 +225,7 @@ msgstr "バグの報告は <%s> までお願いします。"
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "Translators list from %s."
 msgstr "翻訳者リストの更新日: %s"
 
@@ -238,7 +238,7 @@ msgstr "インターフェイスを読込めません "
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "バージョン %s  配布: %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
@@ -332,44 +332,44 @@ msgstr ""
 "デーモンモードを有効にするためには D-BUS サポートで Xfrun をコンパイルする必"
 "要があります。"
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "ディスプレイ \"%s\" を開けません。"
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS メッセージバスが切断されました。終了します...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "システムエラー"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "バックグラウンドで fork できません:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:179
 msgid "Run in _terminal"
 msgstr "ターミナルで実行する(_T)"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:205
 msgid "_Run"
 msgstr "実行(_R)"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "コマンド \"%s\" の実行に失敗しました:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Run Error"
 msgstr "実行エラー"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Unknown Error"
 msgstr "不明なエラー"
 
