@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-05 15:39+0100\n"
-"PO-Revision-Date: 2010-12-10 16:07+0100\n"
+"PO-Revision-Date: 2010-12-18 15:54+0100\n"
 "Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
 "Language-Team: \n"
 "Language: \n"
@@ -121,7 +121,7 @@ msgstr "Se sabe de alguém em falta nesta lista, não hesite e preencha um relat
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr "Obrigado a todos os que ajudaram a disponibilizar este programa."
+msgstr "Obrigado a todos os que ajudaram a disponibilizar este software."
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
@@ -129,11 +129,11 @@ msgstr "O Xfce 4 tem como detentor de direitos Olivier Fourdan (fourdan@xfce.org
 
 #: ../xfce4-about/main.c:292
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "Os pacotes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs e exo são distribuídos nos termos da GNU Library General Public License conforme publicada pela Free Software Foundation; tanto na versão 2 da licença ou (por opção) qualquer versão mais recente."
+msgstr "Os pacotes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs e exo são distribuídos nos termos da GNU Library General Public License conforme publicada pela Free Software Foundation; tanto na versão 2 da licença ou (por opção sua) qualquer versão mais recente."
 
 #: ../xfce4-about/main.c:299
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 são distribuidos nos termos da GNU General Public License conforme publicada pela Free Software Foundation; tanto na versão 2 da licença ou (por opção) qualquer versão mais recente."
+msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 são distribuídos nos termos da GNU General Public License conforme publicada pela Free Software Foundation; tanto na versão 2 da licença ou (por opção sua) qualquer versão mais recente."
 
 #: ../xfce4-about/main.c:446
 #, c-format
@@ -151,7 +151,7 @@ msgstr "A equipa de desenvolvimento Xfce. Todos os direitos reservados."
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Por favor, reporte erros em <%s>."
+msgstr "Por favor, reporte erros para <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
@@ -263,7 +263,7 @@ msgstr "O Xfrun tem de ser compilado com suporte D-BUS para activar o serviço."
 #: ../xfrun/xfrun-dbus.c:142
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "Incapaz de abrir a exibição \"%s\""
+msgstr "Incapaz de abrir o ecrã \"%s\""
 
 #: ../xfrun/xfrun-dbus.c:193
 #, c-format
