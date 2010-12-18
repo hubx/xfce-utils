@@ -1,116 +1,129 @@
 # Norwegian Bokmal translations for PACKAGE package.
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Terje Uriansrud <ter@operamail.com>, 2008.
-# Terje Uriansrud <terje@uriansrud.net>, 2009.
+# Terje Uriansrud <terje@uriansrud.net>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
+"POT-Creation-Date: 2010-12-18 17:08+0000\n"
 "PO-Revision-Date: 2008-10-15 23:01+0200\n"
 "Last-Translator: Terje Uriansrud <terje@uriansrud.net>\n"
 "Language-Team: Norwegian Bokmal\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Versjonsinformasjon"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Vindusbehandler"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Styrer plassering av vinduer på skjermen."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
+"Applikasjonssnarveier, vindusknapper, applikasjonsmeny, arbeidsområdevelger "
+"med mer."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Skrivebordsbehandler"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
+"Setter bakgrunnsfarge eller bilde med valbar applikasjonsmeny eller ikoner "
+"for minimerte applikasjonmer eller snarveier, enheter og mapper."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Filbehandler"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
+"En moderne filbehandler for Unix/Linux skrivebordet, med målsetning om å "
+"være rask og enkel i bruk."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Sesjonsbehandler"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
+"Gjenoppretter økten din ved oppstart og tillater deg å skru av maskinen "
+"fra Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Innstillingssystem"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr ""
+"Innstillingssystem til å kontrollere forskjellige områder av skrivebordet "
+"som utseende, skjerm, tastatur og musepekerinnstillinger."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Applikasjonssøk"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr ""
+"Viser applikasjoner installert på systemet ditt i kategorier, slik at du "
+"kan finne og starte dem."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Nytteprogrammer og skript"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Oppstartsskript, kjørevindu og Om vindu"
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Innstillingsprosess"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "D-Bus basert innstillings/lagrings-system"
 
 #: ../xfce4-about/main.c:116
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
+"Xfce er en samling programmer som tilsammen tilbyr et fulltstendig og "
+"funksjonelt skrivebordsmiljø. Følgende programmer er del av Xfce kjernen:"
 
 #: ../xfce4-about/main.c:140
 msgid ""
@@ -118,6 +131,8 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
+"Xfce er også en utviklingsplattform som tilbyr flere biblioteker som hjelper "
+"programmerere å lage applikasjoner som passer inn i skrivebordsmiljøet."
 
 #: ../xfce4-about/main.c:146
 msgid ""
@@ -126,32 +141,38 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
+"Xfce komponentene er lisensiert under frie eller åpenkildekodelisenser; "
+"GPL eller BSDL for applikasjoner og LGPL eller BSDL for biblioteker. Se "
+"dokumentasjonen, kildekode eller på Xfce sitt nettsted "
+"(http://www.xfce.org) for mer informasjon."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Takk for din interesse i Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Xfce utviklingsteam"
 
 #: ../xfce4-about/main.c:266
-#, fuzzy
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Vet du om noen mangler på denne listen, gi oss beskjed på <"
+msgstr ""
+"Vet du om noen mangler på denne listen, gi oss beskjed ved å opprette en bug "
+"på <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:270
-#, fuzzy
 msgid "Thanks to all who helped making this software available!"
-msgstr "Takk til alle som bidrar å gjøre denne programvaren tilgjengelig."
+msgstr "Takk til alle som hjalp til å gjøre denne programvaren tilgjengelig!"
 
 #: ../xfce4-about/main.c:287
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
+"Xfce 4 er copyright Olivier Fourdan (fourdan@xfce.org). Forskjellige "
+"komponenter er copyright av deres respektive utviklere."
 
 #: ../xfce4-about/main.c:292
 msgid ""
@@ -160,6 +181,10 @@ msgid ""
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
 msgstr ""
+"libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo packages er "
+"distribuert under GNU Library General Public License som "
+"publisert av Free Software Foundation; enten versjon 2 av lisensen, "
+"eller en senere verson."
 
 #: ../xfce4-about/main.c:299
 msgid ""
@@ -169,48 +194,52 @@ msgid ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 msgstr ""
+"Pakkene thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop og xfwm4 er distribuert under "
+"GNU Library General Public License som "
+"publisert av Free Software Foundation; enten versjon 2 av lisensen, "
+"eller en senere verson."
 
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Skriv '%s --help' for bruksinformasjon"
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Klarte ikke initialisere GTK+"
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce utviklingsteam. Alle rettigheter reservert."
 
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Rappoerter bugs til <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "Translators list from %s."
-msgstr "Oversettere"
+msgstr "Oversetterliste fra %s."
 
 #: ../xfce4-about/main.c:475
-#, fuzzy
 msgid "Failed to load interface"
-msgstr "Kunne ikke laste  "
+msgstr "Failet ved lasting av grensesnitt"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Versjon %s, distribuert av %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Versjon %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -224,17 +253,16 @@ msgid "Active contributors"
 msgstr "Aktive bidragsytere"
 
 #: ../xfce4-about/contributors.h:133
-#, fuzzy
 msgid "Servers maintained by"
-msgstr "Tjener vedlikeholdes av"
+msgstr "Tjenere vedlikeholdes av"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr "Godteri (Goodies) tilsyn"
+msgstr "Goodies organisator"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr "Oversettelses tilsyn"
+msgstr "Organisering av oversettelser"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
@@ -245,31 +273,28 @@ msgid "Previous contributors"
 msgstr "Tidligere bidragsytere"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
-#, fuzzy
 msgid "About Xfce"
-msgstr "Om Xfce 4"
+msgstr "Om Xfce "
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Informasjon om Xfce skrivebordsmiljø."
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
-#, fuzzy
 msgid "About the Xfce Desktop Environment"
-msgstr "Bruk denne økten for å kjøre Xfce som ditt skrivebordsmiljø"
+msgstr "Om Xfce skrivebordsmiljø"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-#, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Opphavsrett"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
@@ -285,7 +310,7 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Lisens"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
@@ -301,56 +326,54 @@ msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
 "«Xfrun» må kompileres med «D-BUS» støtte for å aktivere bakgrunnsmodus."
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "Kunne ikke åpne skjerm \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "«D-BUS» meldingsbuss frakoblet. Avslutter ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "Systemfeil"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "Kunne ikke starte prgram i bakgrunn:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:179
 msgid "Run in _terminal"
 msgstr "Kjør i _terminal"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:205
 msgid "_Run"
 msgstr "_Kjør"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "Kommandoen \"%s\" feilet:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 msgid "Run Error"
 msgstr "Kjørefeil"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Unknown Error"
 msgstr "Ukjent feil"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
-#, fuzzy
 msgid "Run Program..."
-msgstr "Kjør program"
+msgstr "Kjør program..."
 
 #: ../xfrun/xfrun4.desktop.in.h:2
-#, fuzzy
 msgid "Run a program"
-msgstr "Kjør program"
+msgstr "Kjør et program"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
@@ -362,23 +385,9 @@ msgstr "Xfce Økt"
 
 #: ../scripts/xfhelp4.desktop.in.h:1
 msgid "Help"
-msgstr ""
+msgstr "Hjelp"
 
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
-msgstr ""
+msgstr "Hjelp til å bruke Xfce"
 
-#~ msgid "Project Lead"
-#~ msgstr "Prosjektleder"
-
-#~ msgid "Web Hosting and Mailing Lists provided by"
-#~ msgstr "Vevtjener og epostlister levert av"
-
-#~ msgid "Copyright 2002-2010 by Olivier Fourdan"
-#~ msgstr "Copyright 2002-2010 ved Olivier Fourdan"
-
-#~ msgid "Info"
-#~ msgstr "Info"
-
-#~ msgid "Open %s with what program?"
-#~ msgstr "Åpne %s med program?"
