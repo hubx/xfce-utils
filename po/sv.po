@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-18 11:08+0000\n"
+"POT-Creation-Date: 2010-12-18 17:08+0000\n"
 "PO-Revision-Date: 2010-10-16 16:25+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -54,7 +54,7 @@ msgstr "Filhanterare"
 
 #: ../xfce4-about/main.c:85
 msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
-msgstr ""
+msgstr "En modern filhanterare för Unix/Linux-skrivbord vars mål är att vara lättanvänd och snabb."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -62,15 +62,15 @@ msgstr "Sessionshanterare"
 
 #: ../xfce4-about/main.c:90
 msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr ""
+msgstr "Återställer din session vid uppstart och låter dig stänga av datorn från Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Programstartare, fönsterknappar, programmeny, arbetsyteväxlare och mer."
 
 #: ../xfce4-about/main.c:95
 msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Ställer in bakgrundsfärg eller bild med valfri programmeny eller ikoner för minimerade program eller programstartare, enheter och mappar."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -102,18 +102,17 @@ msgstr "Xfce är en samling program som tillsammans ger en funktionsrik skrivbor
 
 #: ../xfce4-about/main.c:140
 msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr ""
+msgstr "Xfce är även en utvecklingsplattform som tillhandahåller ett flertal bibliotek, vilka hjälper programmerare att skapa program som passar skrivbordsmiljön."
 
 #: ../xfce4-about/main.c:146
 msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr ""
+msgstr "Programlista"
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
 msgstr "Tack för ditt intresse för Xfce."
 
 #: ../xfce4-about/main.c:157
-#, fuzzy
 msgid "The Xfce Development Team"
 msgstr "The Xfce Development Team"
 
@@ -127,15 +126,15 @@ msgstr "Tack till alla som hjälpt till att göra denna programvara möjlig!"
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 - Copyright Olivier Fourdan (fourdan@xfce.org). De olika komponenterna är upphovsrättsskyddade av deras respektive upphovsmän."
 
 #: ../xfce4-about/main.c:292
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "Paketen libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs och exo distribueras under villkoren för GNU Library General Public License som publicerats av Free Software Foundation; antingen version 2 av licensen eller (upp till dig) någon senare version."
 
 #: ../xfce4-about/main.c:299
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgstr "Paketen thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop och xfwm4 distribueras under villkoren för GNU General Public License som publicerats av Free Software Foundation; antingen version 2 av licensen eller (upp till dig) någon senare version."
 
 #: ../xfce4-about/main.c:446
 #, c-format
@@ -148,7 +147,7 @@ msgstr "Kunde inte initiera GTK+."
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "The Xfce development team. Alla rättigheter förbehålles."
 
 #: ../xfce4-about/main.c:462
 #, c-format
