@@ -156,31 +156,30 @@ msgstr ""
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Rapportera fel till <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "Translators list from %s."
-msgstr "Översättare"
+msgstr "Översättarlistan från %s."
 
 #: ../xfce4-about/main.c:475
-#, fuzzy
 msgid "Failed to load interface"
-msgstr "Kunde inte läsa in filen %s"
+msgstr "Misslyckades med att läsa in gränssnittet"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Version %s, distribuerad av %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Version %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -194,7 +193,6 @@ msgid "Active contributors"
 msgstr "Aktiva bidragsgivare"
 
 #: ../xfce4-about/contributors.h:133
-#, fuzzy
 msgid "Servers maintained by"
 msgstr "Serverunderhåll av"
 
@@ -223,19 +221,16 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Information om skrivbordsmiljön Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-#, fuzzy
 msgid "About"
-msgstr "Om Xfce"
+msgstr "Om"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
-#, fuzzy
 msgid "About the Xfce Desktop Environment"
-msgstr "Information om skrivbordsmiljön Xfce"
+msgstr "Om skrivbordsmiljön Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-#, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -255,7 +250,7 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
