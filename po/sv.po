@@ -78,7 +78,7 @@ msgstr "Programlista"
 
 #: ../xfce4-about/main.c:100
 msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
-msgstr ""
+msgstr "Visar i kategorier de programmen som har installerats på din dator så att du snabbt kan hitta och starta dem."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
@@ -90,11 +90,11 @@ msgstr "Uppstartsskript, dialogrutor för Kör och Om."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Inställningshanterare"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "D-Bus-baserat konfigurationslagringssystem."
 
 #: ../xfce4-about/main.c:116
 msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
