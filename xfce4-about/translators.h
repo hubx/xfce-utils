@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2010-12-12 00:00:07"
+#define TRANSLATORS_H_STAMP "2010-12-19 00:00:05"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -54,6 +54,7 @@ static const TranslatorInfo xfce_translators_am[] =
 static const TranslatorInfo xfce_translators_ar[] =
 {
   { "Hasen il Judy", "hasan" DOTSIGN "aljudy" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "كريم اولاد الشلحة", "herr-linux" ATSIGN "hotmail" DOTSIGN "fr", FALSE },
   { NULL, NULL }
 };
 
@@ -127,6 +128,7 @@ static const TranslatorInfo xfce_translators_el[] =
   { "Evaggelos Balaskas", "ebalaskas" ATSIGN "ebalaskas" DOTSIGN "gr", TRUE },
   { "Stavros Giannouris", "stavrosg" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Ioannis Daliakopoulos", "yannis" ATSIGN "farm" DOTSIGN "gr", FALSE },
+  { "forfolias", "forfolias" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "gapan", "vlahavas" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mario Andonoudiou", "supermodmusic" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Spiros Georgaras", "sng" ATSIGN "hellug" DOTSIGN "gr", FALSE },
@@ -162,7 +164,6 @@ static const TranslatorInfo xfce_translators_eu[] =
 static const TranslatorInfo xfce_translators_fa[] =
 {
   { "Ehsan Akhlaghi", "esnka" ATSIGN "yahoo" DOTSIGN "com", FALSE },
-  { "Morteza Fakhraee", "acr" DOTSIGN "regs" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
