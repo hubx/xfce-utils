@@ -319,6 +319,7 @@ xfrun_setup_entry_completion(XfrunDialog *dialog)
     gtk_entry_completion_set_model(completion, completion_model);
     gtk_entry_completion_set_text_column(completion, XFRUN_COL_COMMAND);
     gtk_entry_completion_set_popup_completion(completion, TRUE);
+    gtk_entry_completion_set_popup_single_match(completion, FALSE);
     gtk_entry_completion_set_inline_completion(completion, TRUE);
     g_signal_connect(G_OBJECT(completion), "match-selected",
                      G_CALLBACK(xfrun_match_selected), dialog);
