@@ -157,6 +157,7 @@ xfrun_dialog_init(XfrunDialog *dialog)
     dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, XFRUN_TYPE_DIALOG,
                                                XfrunDialogPrivate);
     GTK_WINDOW(dialog)->type = GTK_WINDOW_TOPLEVEL;
+    gtk_window_set_icon_name(GTK_WINDOW(dialog), "system-run");
 
     gtk_widget_set_size_request(GTK_WIDGET(dialog), 400, -1);
 
