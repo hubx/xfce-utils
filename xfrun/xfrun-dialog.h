@@ -65,6 +65,8 @@ void xfrun_dialog_set_working_directory            (XfrunDialog *dialog,
 void xfrun_dialog_set_environment                  (XfrunDialog *dialog,
                                                     gchar **envp);
 
+void xfrun_dialog_select_text                      (XfrunDialog *dialog);
+
 G_CONST_RETURN gchar *xfrun_dialog_get_working_directory
                                                    (XfrunDialog *dialog);
 
