@@ -184,7 +184,6 @@ xfrun_handle_dbus_message(DBusConnection *connection,
 
                 /* this handles setting the dialog to the right screen */
                 xfce_gtk_window_center_on_active_screen(GTK_WINDOW(dialog));
-                xfrun_dialog_select_text(XFRUN_DIALOG(dialog));
                 gtk_widget_show(dialog);
 
                 reply = dbus_message_new_method_return(message);

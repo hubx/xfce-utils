@@ -702,10 +702,3 @@ xfrun_dialog_set_environment(XfrunDialog *dialog,
     g_strfreev(dialog->priv->envp);
     dialog->priv->envp = g_strdupv(envp);
 }
-
-void
-xfrun_dialog_select_text(XfrunDialog *dialog)
-{
-    gtk_editable_select_region(GTK_EDITABLE(XFRUN_DIALOG(dialog)->priv->entry),
-                               0, -1);
-}
