@@ -34,7 +34,7 @@ then
     XDG_DATA_DIRS="@_datadir_@:/usr/local/share:/usr/share"
   fi
 else
-  XDG_DATA_DIRS="@_datadir_@:$XDG_DATA_DIRS"
+  XDG_DATA_DIRS="$XDG_DATA_DIRS:@_datadir_@"
 fi
 export XDG_DATA_DIRS
 
