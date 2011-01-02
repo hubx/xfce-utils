@@ -1,5 +1,11 @@
-4.7.x
+4.7.4
 =====
+- Send the xfrun4 caller environ over dbus (bug #6927).
+- Don't show popup completion if there is a single match.
+- Add an icon to the xfrun4 window.
+- Append Xfce path to XDG_DATA_DIRS (bug #7040).
+- Translation updates (he, de, zh_TW, sk, ru, pt, cs, ja,
+  en_GB, sv, id, ug).
 
 
 4.7.3
