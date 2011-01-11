@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-07 11:09+0000\n"
-"PO-Revision-Date: 2011-01-07 14:27+0200\n"
+"PO-Revision-Date: 2011-01-11 12:18+0200\n"
 "Last-Translator: Mișu Moldovan <dumol@xfce.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -336,7 +336,7 @@ msgstr "Nu se poate deschide displayul „%s”."
 #: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr "Deconectare de la magistrala mesajlor D-BUS. Ieșire...\n"
+msgstr "Deconectare de la D-BUS message bus. Ieșire...\n"
 
 #. failed
 #: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
