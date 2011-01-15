@@ -5,13 +5,13 @@
 # Minor updates by Ambrose Li <acli@ada.dhs.org>, 2004.
 # Hydonsingore Cia <hydonsingore@educities.edu.tw>, 2005.
 # Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-06 17:07+0000\n"
-"PO-Revision-Date: 2010-11-07 21:55+0800\n"
+"POT-Creation-Date: 2011-01-15 17:08+0000\n"
+"PO-Revision-Date: 2011-01-16 01:30+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -260,44 +260,49 @@ msgstr "不支援幕後模式。"
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "Xfrun 必須在編譯時納入 D-BUS 支援才能啟用幕後模式。"
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr "無法開啟顯示器「%s」。"
+msgstr "無法開啟顯示「%s」。"
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS 訊息匯流排斷線。離開中...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350
+#: ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "系統發生錯誤"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352
+#: ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "無法分支至背景執行："
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "在終端機中執行(_T)"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "執行(_R)"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572
+#: ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "指令 \"%s\" 無法執行："
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574
+#: ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "執行發生錯誤"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576
+#: ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "未知的錯誤"
 
@@ -327,21 +332,16 @@ msgstr "幫助您使用 Xfce"
 
 #~ msgid "Project Lead"
 #~ msgstr "計劃領導"
-
 #~ msgid "Web Hosting and Mailing Lists provided by"
 #~ msgstr "網站主機及郵件列表提供"
-
 #~ msgid "About Xfce 4"
 #~ msgstr "關於 Xfce 4"
-
 #~ msgid "Copyright 2002-2010 by Olivier Fourdan"
 #~ msgstr "版權所有 2002-2010 by Olivier Fourdan"
-
 #~ msgid "Info"
 #~ msgstr "資訊"
-
 #~ msgid "Open %s with what program?"
 #~ msgstr "使用那個程式開啟 %s？"
-
 #~ msgid "Run program"
 #~ msgstr "執行程式"
+
