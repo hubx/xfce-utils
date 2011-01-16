@@ -127,16 +127,16 @@ msgstr "Xfce 4 est copyright Olivier Fourdan (fourdan@xfce.org). Les différents
 
 #: ../xfce4-about/main.c:292
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Les composants libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs et exo sont distribués sous les termes de la licence GNU Library General Public License tel que publié par la Free Software Foundation ; la version 2 de la licence, ou (à votre option) une version supérieure."
 
 #: ../xfce4-about/main.c:299
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Les composants thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop et xfwm4 sont distribués sous les termes de la licence GNU General Public License tel que publié par la Free Software Foundation ; la version 2 de la licence, ou (à votre option) une version supérieure."
 
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Pour les informations d'utilisation, tapper '% s --help'."
+msgstr "Tapez '%s --help' pour plus d'aide."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
