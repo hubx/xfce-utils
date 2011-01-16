@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2010-02-24 01:44+0600\n"
 "Last-Translator: Loba Yeasmeen <loba@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -299,44 +299,44 @@ msgstr "ডেমন মোড সমর্থিত নয়।"
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "ডেমন মোড সক্রিয় করার জন্য D-BUS সমর্থনের সাথে Xfrun অবশ্যই তুলনা করা হবে।"
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "\"%s\" ডিসপ্লে খুলতে ব্যর্থ।"
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS বার্তা বাস সংযোগবিহীন করা হয়েছে। প্রস্থান করা হচ্ছে ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "সিস্টেমের ত্রুটি"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "পটভুমির সাথে সংযোগ করতে ব্যর্থ:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "টার্মিনালে রান করানো হবে (_t)"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "রান (_R)"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "\"%s\" কমান্ডটি রান করতে ব্যর্থ:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "রান করারনোর ত্রুটি"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "অজানা ত্রুটি"
 

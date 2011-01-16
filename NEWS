@@ -1,3 +1,12 @@
+4.8.0
+=====
+- Set DESKTOP_SESSION to "xfce" in xinitrc (bug #6376).
+- Add missing main category to desktop entries (bug #7050).
+- Update translator credits.
+- Translation updates: Chinese (Taiwan), Croatian, French, Galician,
+  Greek, Polish, Romanian.
+
+
 4.7.4
 =====
 - Send the xfrun4 caller environ over dbus (bug #6927).

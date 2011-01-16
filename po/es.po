@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2009-03-19 17:40+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
@@ -303,44 +303,44 @@ msgstr ""
 "Xfrun debe ser compilado con soporte para D-BUS para habilitar el modo "
 "demonio."
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "No se pudo abrir el display \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "Mensaje de desconexión de bus D-BUS. Saliendo...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "Error de sistema"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "No se pudo pasar a segundo plano:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "Ejecutar en _terminal"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "Ejecuta_r"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "El comando \"%s\" falló al ejecutarse:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "Error de ejecución"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "Error desconocido"
 

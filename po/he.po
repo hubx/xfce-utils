@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 23:07+0000\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2010-12-06 10:21+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.2\n"
 "X-Poedit-Language: Hebrew\n"
 
@@ -142,8 +142,8 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
-"רכיבי Xfce מופצים תחת רשיונות חופשיים או בקוד פתוח; GPL או BSDL ליישומים "
-"ו־LGPL או BSDL לספריות. ניתן למצוא מידע נוסף באתר של Xfce שכתובתו http://www."
+"רכיבי Xfce מופצים תחת רשיונות חופשיים או בקוד פתוח; GPL או BSDL ליישומים ו־"
+"LGPL או BSDL לספריות. ניתן למצוא מידע נוסף באתר של Xfce שכתובתו http://www."
 "xfce.org"
 
 #: ../xfce4-about/main.c:153
@@ -323,44 +323,44 @@ msgstr "מצב סוכן אינו נתמך"
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "יש להדר את Xfrun עם תמיכה ב־D-BUS כדי לאפשר מצב סוכן."
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "אין אפשרות לפתוח את התצוגה \"%s\"."
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "ערוץ התקשורת של D-BUS התנתק. נסגר ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "שגיאת מערכת"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "לתהליך אין אפשרות להתפצל לרקע:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "הרצה ב_מסוף"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "ה_רצה"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "הפקודה \"%s\" נכשלה בהרצה:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "שגיאת הרצה"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "שגיאה לא ידועה"
 

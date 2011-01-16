@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: untitled\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2010-11-30 10:45+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
@@ -325,44 +325,44 @@ msgstr ""
 "A démon mód engedélyezéséhez az Xfrun programot D-Bus támogatással kell "
 "fordítani."
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "A képernyő nem nyitható meg: „%s”"
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-Bus üzenetbusz leválasztva, kilépés…\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "Rendszerhiba"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "Nem indítható program a háttérben:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "_Terminálban fusson"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "_Futtatás"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "A parancs („%s”) futtatása meghiúsult:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "Futtatási hiba"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "Ismeretlen hiba"
 

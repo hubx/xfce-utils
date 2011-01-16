@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-05 15:39+0100\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2010-04-06 06:42+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
@@ -303,44 +303,44 @@ msgstr "ਡੈਮਨ ਢੰਗ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ।"
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr "ਡੈਮਨ ਢੰਗ ਯੋਗ ਕਰਨ ਲਈ Xfrun ਨੂੰ D-BUS ਸਹਿਯੋਗ ਨਾਲ ਕੰਪਾਇਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ।"
 
-#: ../xfrun/xfrun-dbus.c:142
+#: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
 msgstr "ਡਿਸਪਲੇਅ \"%s\" ਖੋਲ੍ਹਣ ਲਈ ਅਸਫ਼ਲ ਹੈ।"
 
-#: ../xfrun/xfrun-dbus.c:193
+#: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
 msgstr "D-BUS ਮੈਸਜ਼ ਬਸ ਨਾਲ ਸੰਪਰਕ ਟੁੱਟ ਗਿਆ। ਬੰਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ ...\n"
 
 #. failed
-#: ../xfrun/xfrun-dbus.c:330 ../xfrun/xfrun-dbus.c:341
+#: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
 msgstr "ਸਿਸਟਮ ਗਲਤੀ"
 
-#: ../xfrun/xfrun-dbus.c:332 ../xfrun/xfrun-dbus.c:343
+#: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
 msgstr "ਬੈਕਗਰਾਊਂਡ 'ਚ ਫੋਰਕ ਕਰਨ ਲਈ ਫੇਲ੍ਹ:"
 
-#: ../xfrun/xfrun-dialog.c:178
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ(_t)"
 
-#: ../xfrun/xfrun-dialog.c:204
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "ਚਲਾਓ(_R)"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:568 ../xfrun/xfrun-dialog.c:579
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "ਕਮਾਂਡ \"%s\" ਚਲਾਉਣ ਲਈ ਫੇਲ੍ਹ:"
 
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "ਚੱਲਣ ਗਲਤੀ"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ"
 

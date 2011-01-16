@@ -1,6 +1,6 @@
 dnl $Id$
 dnl
-dnl Copyright (c) 2002-2010
+dnl Copyright (c) 2002-2011
 dnl         The Xfce development team. All rights reserved.
 dnl
 dnl Written for Xfce by Olivier Fourdan <fourdan@xfce.org>, Jasper
@@ -10,11 +10,11 @@ dnl
 
 dnl Version information
 m4_define([xfce_utils_version_major], [4])
-m4_define([xfce_utils_version_minor], [7])
-m4_define([xfce_utils_version_micro], [4])
+m4_define([xfce_utils_version_minor], [8])
+m4_define([xfce_utils_version_micro], [0])
 m4_define([xfce_utils_version_nano],  []) dnl leave this empty to have no nano version
 m4_define([xfce_utils_version_build], [@REVISION@])
-m4_define([xfce_utils_version_tag],   [git])
+m4_define([xfce_utils_version_tag],   [])
 m4_define([xfce_utils_version], [xfce_utils_version_major().xfce_utils_version_minor().xfce_utils_version_micro()ifelse(xfce_utils_version_nano(), [], [], [.xfce_utils_version_nano()])ifelse(xfce_utils_version_tag(), [git], [xfce_utils_version_tag()-xfce_utils_version_build()], [xfce_utils_version_tag()])])
 
 dnl Debugging support for GIT snapshots
@@ -105,8 +105,8 @@ XDT_I18N([@LINGUAS@])
 
 dnl Check for required packages
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.10.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.6.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-1], [4.7.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.8.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-1], [4.8.0])
 
 dnl check for dbus and libdbus-glib
 AM_CONDITIONAL([HAVE_DBUS], [test "x$DBUS_FOUND" = "xyes"])

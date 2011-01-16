@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-11 23:22+0900\n"
+"POT-Creation-Date: 2011-01-16 17:12+0100\n"
 "PO-Revision-Date: 2010-12-11 23:22+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
@@ -351,25 +351,25 @@ msgstr "システムエラー"
 msgid "Unable to fork to background:"
 msgstr "バックグラウンドで fork できません:"
 
-#: ../xfrun/xfrun-dialog.c:179
+#: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
 msgstr "ターミナルで実行する(_T)"
 
-#: ../xfrun/xfrun-dialog.c:205
+#: ../xfrun/xfrun-dialog.c:206
 msgid "_Run"
 msgstr "実行(_R)"
 
 #. Display the first error
-#: ../xfrun/xfrun-dialog.c:570 ../xfrun/xfrun-dialog.c:581
+#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
 msgstr "コマンド \"%s\" の実行に失敗しました:"
 
-#: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
+#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
 msgstr "実行エラー"
 
-#: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
+#: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
 msgid "Unknown Error"
 msgstr "不明なエラー"
 
