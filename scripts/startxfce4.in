@@ -38,6 +38,18 @@ else
 fi
 export XDG_DATA_DIRS
 
+if test "x$XDG_CONFIG_DIRS" = "x"
+then
+  if test "x@_sysconfdir_@" = "x/etc"; then
+    XDG_CONFIG_DIRS="/etc/xdg"
+  else
+    XDG_CONFIG_DIRS="/etc/xdg:@_sysconfdir_@/xdg"
+  fi
+else
+  XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:@_sysconfdir_@/xdg"
+fi
+export XDG_CONFIG_DIRS
+
 if test "x$DISPLAY" = "x"
 then
   echo "$0: Starting X server"
