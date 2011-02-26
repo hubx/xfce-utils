@@ -1,7 +1,4 @@
-SUBDIRS = \
-	el
-
-imagesdir = $(docdir)/html/C/images
+imagesdir = $(docdir)/html/el/images
 images_DATA = \
 	xfce-mouse.png \
 	run-dialog.png \

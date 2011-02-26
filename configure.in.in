@@ -184,6 +184,7 @@ po/Makefile.in
 doc/Makefile
 doc/manual/Makefile
 doc/manual/images/Makefile
+doc/manual/images/el/Makefile
 doc/manual/po/Makefile
 icons/Makefile
 icons/48x48/Makefile
