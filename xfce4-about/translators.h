@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-03-13 00:00:05"
+#define TRANSLATORS_H_STAMP "2011-03-20 00:00:06"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -258,6 +258,12 @@ static const TranslatorInfo xfce_translators_kn[] =
   { NULL, NULL }
 };
 
+static const TranslatorInfo xfce_translators_ko[] =
+{
+  { "Boram Kim", "boramism" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
 static const TranslatorInfo xfce_translators_lt[] =
 {
   { "Ričardas Vasiulis", "ricardas" DOTSIGN "v" ATSIGN "inbox" DOTSIGN "lt", TRUE },
@@ -422,8 +428,12 @@ static const TranslatorInfo xfce_translators_tr[] =
   { "Gökmen Görgen", "gkmngrgn" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Ertuğrul HAZAR", "ertugrulhazar" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Murat PINAR", "wargasm" ATSIGN "archlinux" DOTSIGN "us", FALSE },
+  { "alpertekinalp", "alper" DOTSIGN "tekinalp" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ayhan YALÇINSOY", "ayhanyalcinsoy" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Eren Türkay", "erenturkay" ATSIGN "xfce" DOTSIGN "org", FALSE },
+  { "kozdincer", "kaanozdincer" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "martinamca", "martinamca" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "necdetyucel", "necdetyucel" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Osman Karagöz", "osmank3" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ozan Türkyılmaz", "ozan" DOTSIGN "turkyilmaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Özgür Kuru", "ozgur" ATSIGN "ozgurkuru" DOTSIGN "net", FALSE },
@@ -501,6 +511,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Japanese", "ja", xfce_translators_ja },
   { "Kazakh", "kk", xfce_translators_kk },
   { "Kannada", "kn", xfce_translators_kn },
+  { "Korean", "ko", xfce_translators_ko },
   { "Lithuanian", "lt", xfce_translators_lt },
   { "Latvian", "lv", xfce_translators_lv },
   { "Norwegian Bokmal", "nb", xfce_translators_nb },
