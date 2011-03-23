@@ -10,14 +10,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 17:12+0100\n"
-"PO-Revision-Date: 2011-01-07 17:31+0100\n"
+"POT-Creation-Date: 2011-03-23 17:09+0000\n"
+"PO-Revision-Date: 2011-03-24 00:19+0100\n"
 "Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: Polish <>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
 "%100<10 || n%100>=20)) ? 1 : 2));\n"
 
@@ -224,7 +224,7 @@ msgstr "Proszę zgłaszać błędy na adres <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "Translators list from %s."
 msgstr "Lista tłumaczy pochodzi z %s."
 
@@ -237,7 +237,7 @@ msgstr "Nie udało się wczytać interfejsu"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Wersja %s, rozprowadzana przez %s"
+msgstr "Wersja %s, dystrybuowana przez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
@@ -362,7 +362,7 @@ msgstr "_Uruchom"
 #: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr "Nie udało się uruchomić polecenia „%s”:"
+msgstr "Nie udało się wykonać polecenia „%s”:"
 
 #: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
 msgid "Run Error"
@@ -374,11 +374,11 @@ msgstr "Nieznany błąd"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
 msgid "Run Program..."
-msgstr "Uruchom polecenie"
+msgstr "Uruchomienie programu"
 
 #: ../xfrun/xfrun4.desktop.in.h:2
 msgid "Run a program"
-msgstr "Uruchamia polecenie z opcjonalnymi argumentami"
+msgstr "Uruchamia programy z opcjonalnymi argumentami"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
@@ -394,7 +394,7 @@ msgstr "Pomoc"
 
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
-msgstr "Pomoc dla środowiska Xfce"
+msgstr "Wyświetla podręcznik użytkownika środowiska Xfce"
 
 #~ msgid "Project Lead"
 #~ msgstr "Kierownictwo projektu"
