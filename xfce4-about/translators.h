@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-03-20 00:00:06"
+#define TRANSLATORS_H_STAMP "2011-03-27 00:00:16"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -67,9 +67,7 @@ static const TranslatorInfo xfce_translators_ast[] =
 static const TranslatorInfo xfce_translators_bg[] =
 {
   { "Valentin Tunev", "hdbuster" ATSIGN "gmail" DOTSIGN "com", TRUE },
-  { "Valio Yolovski", "vyolovski" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Daniel Georgiev", "r3sp3k7projects" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Georgi Mitrev", "gvmitrev" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Hristo Bozhkov", "biernywidz" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -426,13 +424,16 @@ static const TranslatorInfo xfce_translators_tl[] =
 static const TranslatorInfo xfce_translators_tr[] =
 {
   { "Gökmen Görgen", "gkmngrgn" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "Avatar", "coskuno_99" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "Ertuğrul HAZAR", "ertugrulhazar" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Murat PINAR", "wargasm" ATSIGN "archlinux" DOTSIGN "us", FALSE },
+  { "Akın Ömeroğlu", "akin" ATSIGN "pardus" DOTSIGN "org" DOTSIGN "tr", FALSE },
   { "alpertekinalp", "alper" DOTSIGN "tekinalp" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ayhan YALÇINSOY", "ayhanyalcinsoy" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Eren Türkay", "erenturkay" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "kozdincer", "kaanozdincer" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "martinamca", "martinamca" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "mesutcank", "mesutcank" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "necdetyucel", "necdetyucel" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Osman Karagöz", "osmank3" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ozan Türkyılmaz", "ozan" DOTSIGN "turkyilmaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
