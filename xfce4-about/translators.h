@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-04-03 00:00:11"
+#define TRANSLATORS_H_STAMP "2011-04-10 00:00:10"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -234,6 +234,7 @@ static const TranslatorInfo xfce_translators_it[] =
   { "Cristian Cozzolino", "cristiancozzolino" ATSIGN "libero" DOTSIGN "it", FALSE },
   { "maluc", "incjsp" ATSIGN "yahoo" DOTSIGN "it", FALSE },
   { "Riccardo Magini", "rcrmgn" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Sergio Spinatelli", "eseasonsapp" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -341,7 +342,7 @@ static const TranslatorInfo xfce_translators_ro[] =
 
 static const TranslatorInfo xfce_translators_ru[] =
 {
-  { "Dmitrij Smirnov", "arch" ATSIGN "cnc-parts" DOTSIGN "info", TRUE },
+  { "Dmitrij Smirnov", "other" ATSIGN "igus" DOTSIGN "lv", TRUE },
   { "0leg", "s" ATSIGN "0leg" DOTSIGN "me", FALSE },
   { "Alexander Yashkin", "alex" DOTSIGN "aspirine" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Claque", "cpt-alatriste" ATSIGN "ya" DOTSIGN "ru", FALSE },
@@ -356,6 +357,7 @@ static const TranslatorInfo xfce_translators_ru[] =
   { "Andres Kovtunos", "kovtunos" ATSIGN "yandex" DOTSIGN "ru", FALSE },
   { "Dmitriy Kudryashov", "overmailed" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergey Abramkin", "sergey" ATSIGN "abramk" DOTSIGN "in", FALSE },
+  { "Victor Homyakov", "homyakov" ATSIGN "isida" DOTSIGN "by", FALSE },
   { NULL, NULL }
 };
 
