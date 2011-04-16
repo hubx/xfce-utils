@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-04-10 00:00:10"
+#define TRANSLATORS_H_STAMP "2011-04-17 00:00:08"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -61,6 +61,12 @@ static const TranslatorInfo xfce_translators_ar[] =
 static const TranslatorInfo xfce_translators_ast[] =
 {
   { "Iñigo Varela", "malditoastur" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { NULL, NULL }
+};
+
+static const TranslatorInfo xfce_translators_be[] =
+{
+  { "Andrei Zakharevich", "andrej" ATSIGN "zahar" DOTSIGN "ws", TRUE },
   { NULL, NULL }
 };
 
@@ -357,6 +363,7 @@ static const TranslatorInfo xfce_translators_ru[] =
   { "Andres Kovtunos", "kovtunos" ATSIGN "yandex" DOTSIGN "ru", FALSE },
   { "Dmitriy Kudryashov", "overmailed" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergey Abramkin", "sergey" ATSIGN "abramk" DOTSIGN "in", FALSE },
+  { "ton", "tonawuda" ATSIGN "inbox" DOTSIGN "ru", FALSE },
   { "Victor Homyakov", "homyakov" ATSIGN "isida" DOTSIGN "by", FALSE },
   { NULL, NULL }
 };
@@ -418,6 +425,12 @@ static const TranslatorInfo xfce_translators_ta[] =
   { NULL, NULL }
 };
 
+static const TranslatorInfo xfce_translators_te[] =
+{
+  { "Praveen Illa", "mail2ipn" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
 static const TranslatorInfo xfce_translators_tl[] =
 {
   { "Manuel Oliva", "oliva" DOTSIGN "manuel" ATSIGN "ymail" DOTSIGN "com", TRUE },
@@ -471,6 +484,12 @@ static const TranslatorInfo xfce_translators_uk[] =
   { NULL, NULL }
 };
 
+static const TranslatorInfo xfce_translators_ur[] =
+{
+  { "Irfan Ashraf", "visualrange" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
 static const TranslatorInfo xfce_translators_vi[] =
 {
   { "Vinh Nguyen", "kureikain" ATSIGN "gmail" DOTSIGN "com", TRUE },
@@ -498,6 +517,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Amharic", "am", xfce_translators_am },
   { "Arabic", "ar", xfce_translators_ar },
   { "Asturian", "ast", xfce_translators_ast },
+  { "Belarusian", "be", xfce_translators_be },
   { "Bulgarian", "bg", xfce_translators_bg },
   { "Bengali", "bn", xfce_translators_bn },
   { "Bengali (India)", "bn_IN", xfce_translators_bn_IN },
@@ -543,10 +563,12 @@ static const TranslatorTeam xfce_translators[] =
   { "Serbian (Latin)", "sr@latin", xfce_translators_sr_latin },
   { "Swedish", "sv", xfce_translators_sv },
   { "Tamil", "ta", xfce_translators_ta },
+  { "Telugu", "te", xfce_translators_te },
   { "Tagalog", "tl", xfce_translators_tl },
   { "Turkish", "tr", xfce_translators_tr },
   { "Uyghur", "ug", xfce_translators_ug },
   { "Ukrainian", "uk", xfce_translators_uk },
+  { "Urdu", "ur", xfce_translators_ur },
   { "Vietnamese", "vi", xfce_translators_vi },
   { "Chinese (China)", "zh_CN", xfce_translators_zh_CN },
   { "Chinese (Taiwan)", "zh_TW", xfce_translators_zh_TW },
