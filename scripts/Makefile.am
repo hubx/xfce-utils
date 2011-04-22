@@ -13,6 +13,7 @@ bin_SCRIPTS= \
 edit = sed \
 	-e "s,@_datadir_\@,$(datadir),g" \
 	-e "s,@_libdir_\@,$(libdir),g" \
+	-e "s,@_docdir_\@,$$(dirname $(docdir)),g" \
 	-e "s,@_sysconfdir_\@,$(sysconfdir),g" \
 	-e "s,@BROWSER_DEFAULT\@,@BROWSER_DEFAULT@,g" \
 	-e "s,@TERMINAL_DEFAULT\@,@TERMINAL_DEFAULT@,g"
