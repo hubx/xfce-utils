@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-04-17 00:00:08"
+#define TRANSLATORS_H_STAMP "2011-04-24 00:00:12"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -215,6 +215,12 @@ static const TranslatorInfo xfce_translators_hr[] =
 static const TranslatorInfo xfce_translators_hu[] =
 {
   { "Gabor Kelemen", "kelemeng" ATSIGN "gnome" DOTSIGN "hu", TRUE },
+  { NULL, NULL }
+};
+
+static const TranslatorInfo xfce_translators_hy[] =
+{
+  { "sssilver", "sssilver" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { NULL, NULL }
 };
 
@@ -440,6 +446,7 @@ static const TranslatorInfo xfce_translators_tl[] =
 static const TranslatorInfo xfce_translators_tr[] =
 {
   { "Gökmen Görgen", "gkmngrgn" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "gokmen", "gokmen" ATSIGN "alageek" DOTSIGN "com", TRUE },
   { "Avatar", "coskuno_99" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "Ertuğrul HAZAR", "ertugrulhazar" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Hafzullah", "hafzullah" DOTSIGN "is" ATSIGN "windowslive" DOTSIGN "com", FALSE },
@@ -537,6 +544,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Hebrew", "he", xfce_translators_he },
   { "Croatian", "hr", xfce_translators_hr },
   { "Hungarian", "hu", xfce_translators_hu },
+  { "Armenian", "hy", xfce_translators_hy },
   { "Indonesian", "id", xfce_translators_id },
   { "Icelandic", "is", xfce_translators_is },
   { "Italian", "it", xfce_translators_it },
