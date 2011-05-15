@@ -492,6 +492,7 @@ xfrun_run_clicked(GtkWidget *widget,
     gchar        *original_cmdline;
     gchar        *new_cmdline;
     gint          argc;
+    gint          exo_exit_code = 0;
 
     cmdline = gtk_editable_get_chars(GTK_EDITABLE(dialog->priv->entry), 0, -1);
     original_cmdline = g_strdup(cmdline);
@@ -503,8 +504,7 @@ xfrun_run_clicked(GtkWidget *widget,
 
     gscreen = gtk_widget_get_screen(widget);
 
-    if(g_str_has_prefix(cmdline, "#"))
-      {
+    if(g_str_has_prefix(cmdline, "#")) {
         /* Shortcut to open manpages in terminal */
         new_cmdline = g_strconcat("man ", cmdline + 1, NULL);
         g_free(cmdline);
@@ -523,7 +523,6 @@ xfrun_run_clicked(GtkWidget *widget,
         cmdline = new_cmdline;
     }
 
-    /* error is handled below */
     g_shell_parse_argv(cmdline, &argc, &argv, &error);
 
     result = (argv && gdk_spawn_on_screen(gscreen,
@@ -532,64 +531,28 @@ xfrun_run_clicked(GtkWidget *widget,
                                           xfrun_spawn_child_setup, NULL, NULL,
                                           &error));
 
-    if(result)
-    {
+    if(!result && !in_terminal) {
+        /* application failed. try to open with exo-open for URIs */
+        const gchar  *exo_open;
+
+        exo_open = g_strconcat("exo-open ", g_shell_quote(cmdline), NULL);
+        g_spawn_command_line_sync(exo_open, NULL, NULL, &exo_exit_code, NULL);
+    }
+    if((!result && in_terminal) || exo_exit_code != 0) {
+        /* terminal application or exo-open failed */
+        gchar    *primary;
+        primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
+                                     cmdline);
+        xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
+                            GTK_STOCK_DIALOG_ERROR, primary,
+                            error ? error->message : _("Unknown Error"),
+                            GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
+        g_free(primary);
+        if(error)
+            g_error_free(error);
+    } else {
         xfrun_add_to_history(original_cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
-    } else {
-        gchar    *primary;
-        gboolean  exo_opened = FALSE;
-
-        if(!in_terminal) {
-            /* Try to open with exo-open (for files, folders, uris...) */
-            gchar       **exo_argv = NULL;
-            const gchar  *exo_open;
-            const gchar  *quoted_cmdline;
-            gint          exo_argc;
-
-            quoted_cmdline = g_shell_quote(cmdline);
-            exo_open = g_strconcat("exo-open ", quoted_cmdline, NULL);
-            /* Don't handle errors, if any we will display the first one */
-            g_shell_parse_argv(exo_open, &exo_argc, &exo_argv, NULL);
-
-            if(exo_argv) {
-                if(gdk_spawn_on_screen(gscreen,
-                                       dialog->priv->working_directory,
-                                       exo_argv, NULL, G_SPAWN_SEARCH_PATH,
-                                       xfrun_spawn_child_setup, NULL, NULL,
-                                       NULL)) {
-                    exo_opened = TRUE;
-                    xfrun_add_to_history(original_cmdline, in_terminal);
-                    xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
-                    g_error_free(error);
-                }
-
-                g_strfreev(exo_argv);
-            }
-
-            if(!exo_opened) {
-                /* Display the first error */
-                primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
-                                                 cmdline);
-                xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
-                                    GTK_STOCK_DIALOG_ERROR, primary,
-                                    error ? error->message : _("Unknown Error"),
-                                    GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
-                g_free(primary);
-                if(error)
-                    g_error_free(error);
-            }
-        }else {
-            primary = g_strdup_printf(_("The command \"%s\" failed to run:"),
-                                     cmdline);
-            xfce_message_dialog(GTK_WINDOW(dialog), _("Run Error"),
-                                GTK_STOCK_DIALOG_ERROR, primary,
-                                error ? error->message : _("Unknown Error"),
-                                GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
-            g_free(primary);
-            if(error)
-                g_error_free(error);
-        }
     }
 
     g_free(cmdline);
