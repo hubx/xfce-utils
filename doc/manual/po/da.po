@@ -49,7 +49,6 @@ msgid "The documentation for Xfce is installed with the different components tha
 msgstr "Dokumentationen for Xfce installeres med de forskellige komponenter, der udgør skrivebordsmiljøet. Som følge af dette kan der her være nævnt dokumenter, som ikke er til rådighed på dit system."
 
 #: xfce-utils.xml29(title)
-#, fuzzy
 msgid "Guides"
 msgstr "Guides"
 
@@ -103,7 +102,7 @@ msgstr "Jasper Huijsmans"
 
 #: xfce-utils.xml59(para) xfce-utils.xml771(para)
 msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.1 or any later version published by the Free Software Foundation; with no Invariant Sections, with no Front-Cover Texts, and with no Back-Cover Texts. The complete license text is available from the <ulink type=\"http\" url=\"http://www.gnu.org/\">Free Software Foundation</ulink>."
-msgstr ""
+msgstr "Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver nyere version, udgivet af Free Software Foundation uden invariante afsnit, uden forsidetekster, og uden bagsidetekster. Du kan finde en kopi af GFDL'en her: <ulink type=\"http\" url=\"http://www.gnu.org/\">Free Software Foundation</ulink>. "
 
 #: xfce-utils.xml71(firstname) xfce-utils.xml784(firstname)
 msgid "Jasper"
@@ -127,31 +126,31 @@ msgstr "Meurer"
 
 #: xfce-utils.xml84(email)
 msgid "benny@xfce.org"
-msgstr ""
+msgstr "benny@xfce.org"
 
 #: xfce-utils.xml89(releaseinfo)
 msgid "This manual describes version @PACKAGE_VERSION@ of Xfce."
-msgstr ""
+msgstr "Denne manual beskriver versionen @PACKAGE_VERSION@ af Xfce."
 
 #: xfce-utils.xml96(emphasis)
 msgid "... and mice fly ..."
-msgstr ""
+msgstr "... og mus flyver..."
 
 #: xfce-utils.xml101(title)
 msgid "Preface"
-msgstr ""
+msgstr "Forord"
 
 #: xfce-utils.xml103(para)
 msgid "This document gives an overview of the Xfce Desktop Environment and explains how to perform several common tasks. It is meant to be a starting point for anyone who wants to use Xfce and it includes pointers to other sources of information."
-msgstr ""
+msgstr "Dette dokument giver et overblik over skrivebordsmiljøet Xfce og forklarer, hvordan man udfører forskellige almindelige opgaver. Det er tænkt som et udgangspunkt for enhver, der ønsker at anvende Xfce, og inkluderer henvisninger til andre kilder til oplysning."
 
 #: xfce-utils.xml113(title) xfce-utils.xml802(title)
 msgid "Introduction"
-msgstr ""
+msgstr "Præsentation"
 
 #: xfce-utils.xml115(para)
 msgid "Xfce is a lightweight desktop environment for unix-like operating systems. It aims to be fast and light on system resources, while still being visually appealing and easy to use."
-msgstr ""
+msgstr "Xfce er et letvægts-skrivebordsmiljø for Unix-lignende styresystemer. Det sigter efter at være hurtigt og kræve få systemressourcer, og på samme tid være visuelt tiltalende og nemt at bruge."
 
 #: xfce-utils.xml120(para)
 msgid "Xfce embodies the traditional UNIX philosophy of modularity and re-usability. All of Xfce's core components can be build and installed separately. Xfce 4 is based on the <ulink url=\"http://www.gtk.org\" type=\"html\">GTK+ toolkit</ulink> version 2."
@@ -167,27 +166,27 @@ msgstr ""
 
 #: xfce-utils.xml142(title)
 msgid "Resources"
-msgstr ""
+msgstr "Resourcer"
 
 #: xfce-utils.xml144(para)
 msgid "If you are looking for specific information about Xfce 4, chances are you can obtain it from one of the resources in this list:"
-msgstr ""
+msgstr "Ønsker du specifikke oplysninger om Xfce 4, så er der en god chance for, at de kan findes hos en af ressourcerne på nedenstående liste:"
 
 #: xfce-utils.xml151(ulink)
 msgid "Xfce website"
-msgstr ""
+msgstr "Hjemmesiden for Xfce"
 
 #: xfce-utils.xml154(ulink)
 msgid "User mailing list"
-msgstr ""
+msgstr "Brugerpostlisten"
 
 #: xfce-utils.xml157(ulink)
 msgid "Development mailing list"
-msgstr ""
+msgstr "Udviklerpostlisten"
 
 #: xfce-utils.xml160(ulink)
 msgid "Xfce Forum"
-msgstr ""
+msgstr "Xfce-forum"
 
 #: xfce-utils.xml163(ulink)
 msgid "Bug tracker"
@@ -195,11 +194,11 @@ msgstr ""
 
 #: xfce-utils.xml171(title)
 msgid "Using Xfce4"
-msgstr ""
+msgstr "Brug af Xfce 4"
 
 #: xfce-utils.xml174(title)
 msgid "Getting started"
-msgstr ""
+msgstr "Kom i gang"
 
 #: xfce-utils.xml176(para)
 msgid "Use <application>startxfce4</application> to start an Xfce session, which includes the session manager, the panel, the window manager and the desktop manager."
