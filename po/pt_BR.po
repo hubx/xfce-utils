@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-30 10:10+0000\n"
-"PO-Revision-Date: 2011-05-30 09:40-0300\n"
+"PO-Revision-Date: 2011-05-30 09:49-0300\n"
 "Last-Translator: Sérgio Cipolla <secipolla@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <xfce-i18n@xfce.org>\n"
 "Language: pt_BR\n"
@@ -42,7 +42,7 @@ msgstr "Lançadores de programas, botões de janelas, menu de aplicativos, alter
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Gerenciador de área de trabalho"
+msgstr "Gerenciador da área de trabalho"
 
 #: ../xfce4-about/main.c:80
 msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
