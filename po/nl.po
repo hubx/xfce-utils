@@ -1,4 +1,4 @@
-# Dutch translations for xfce-utils package.
+# Dutch translations for the xfce-utils package.
 # Copyright (C) The Xfce development team.
 # This file is distributed under the same license as the xfce-utils package.
 # Jasper Huijsmans <jasper@xfce.org>, 2004.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-utils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 10:11+0000\n"
+"POT-Creation-Date: 2011-06-02 04:10+0000\n"
 "PO-Revision-Date: 2010-04-30 16:20+0100\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -170,17 +170,17 @@ msgstr ""
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
 msgstr ""
-"Bedankt iedereen die geholpen heeft bij het beschikbaarstellen van deze "
-"software!"
+"Bedankt iedereen die geholpen heeft bij het beschikbaarstellen "
+"van deze programmatuur!"
 
 #: ../xfce4-about/main.c:287
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
-"Xfce 4 valt onder het autersrecht van Olivier Fourdan (fourdan@xfce.org). De "
-"diverse onderdelen vallen onder het auteursrecht van hun respectievelijke "
-"makers."
+"Xfce 4 valt onder het autersrecht van Olivier Fourdan (fourdan@xfce.org). "
+"De diverse onderdelen vallen onder het auteursrecht van hun "
+"respectievelijke makers."
 
 #: ../xfce4-about/main.c:292
 msgid ""
@@ -274,7 +274,7 @@ msgstr "Vertalingen leiding"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr "Vertalers"
+msgstr "Vertalers: Jasper Huijsmans (2004), Vincent Tunru (2006), Pjotr (2011)."
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
