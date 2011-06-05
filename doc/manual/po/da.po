@@ -202,7 +202,7 @@ msgstr "Kom i gang"
 
 #: xfce-utils.xml176(para)
 msgid "Use <application>startxfce4</application> to start an Xfce session, which includes the session manager, the panel, the window manager and the desktop manager."
-msgstr ""
+msgstr "Anvend <application>startxfce4</application> til at starte en Xfce-session, hvilket inkluderer sessionshåndtering, panelet, vindueshåndteringen og skrivebordshåndteringen."
 
 #: xfce-utils.xml182(para)
 msgid "By default the Xfce session manager manages the startup of applications. It allows you to save your session when you quit Xfce, so that the next time you log in, the same applications will be started for you automatically."
