@@ -154,15 +154,15 @@ msgstr "Xfce er et letvægts-skrivebordsmiljø for Unix-lignende styresystemer. 
 
 #: xfce-utils.xml120(para)
 msgid "Xfce embodies the traditional UNIX philosophy of modularity and re-usability. All of Xfce's core components can be build and installed separately. Xfce 4 is based on the <ulink url=\"http://www.gtk.org\" type=\"html\">GTK+ toolkit</ulink> version 2."
-msgstr ""
+msgstr "Xfce manifesterer den traditionelle UNIX-filosofi om modularitet og genanvendelighed. Alle kernekomponenterne i Xfce kan bygges og installeres separat. Xfce 4 er baseret på <ulink url=\"http://www.gtk.org\" type=\"html\">GTK+</ulink> version 2."
 
 #: xfce-utils.xml127(para)
 msgid "Adhereance to standards is one of the main design goals of Xfce 4, specifically those defined at <ulink url=\"http://www.freedesktop.org\" type=\"html\">Freedesktop.org</ulink>. This allows Xfce 4 to seamlessly interoperate with programs written for other desktop environments that follow these specifications."
-msgstr ""
+msgstr "Overholdelse af standarder er et af de primære designmål for Xfce 4, særligt af dem, der er defineret på <ulink url=\"http://www.freedesktop.org\" type=\"html\">Freedesktop.org</ulink>. Dette tillader Xfce 4 interoperabilitet med programmer, der er skrevet til andre skrivebordsmiljøer, der overholder disse specifikationer."
 
 #: xfce-utils.xml135(para)
 msgid "Xfce is all free software. The separate components are released under either the BSD license, the GNU LGPL or the GNU GPL (see <xref linkend=\"xfce4-copyright\"/> for details)."
-msgstr ""
+msgstr "Xfce er fuldt ud fri software. De enkelte komponenter er udgivet under enten BSD-licensen, GNU LGPL eller GNU GPL (se <xref linkend=\"xfce4-copyright\"/> for nærmere detaljer)."
 
 #: xfce-utils.xml142(title)
 msgid "Resources"
