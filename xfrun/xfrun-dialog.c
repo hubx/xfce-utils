@@ -485,6 +485,8 @@ xfrun_run_clicked(GtkWidget *widget,
     XfrunDialog  *dialog = XFRUN_DIALOG(user_data);
     GdkScreen    *gscreen;
     gboolean      in_terminal;
+    gboolean      in_terminal_copy = FALSE;
+    gboolean      man = FALSE;
     gboolean      result;
     GError       *error = NULL;
     gchar       **argv = NULL;
@@ -510,7 +512,9 @@ xfrun_run_clicked(GtkWidget *widget,
         g_free(cmdline);
         cmdline = new_cmdline;
         /* Make sure this is opened in a terminal */
+        in_terminal_copy = in_terminal;
         in_terminal = TRUE;
+        man = TRUE;
       }
 
     if(in_terminal) {
@@ -524,7 +528,6 @@ xfrun_run_clicked(GtkWidget *widget,
     }
 
     g_shell_parse_argv(cmdline, &argc, &argv, &error);
-
     result = (argv && gdk_spawn_on_screen(gscreen,
                                           dialog->priv->working_directory,
                                           argv, dialog->priv->envp, G_SPAWN_SEARCH_PATH,
@@ -538,6 +541,7 @@ xfrun_run_clicked(GtkWidget *widget,
         exo_open = g_strconcat("exo-open ", g_shell_quote(cmdline), NULL);
         g_spawn_command_line_sync(exo_open, NULL, NULL, &exo_exit_code, NULL);
     }
+
     if((!result && in_terminal) || exo_exit_code != 0) {
         /* terminal application or exo-open failed */
         gchar    *primary;
@@ -551,6 +555,8 @@ xfrun_run_clicked(GtkWidget *widget,
         if(error)
             g_error_free(error);
     } else {
+        if(man)
+            in_terminal = in_terminal_copy;
         xfrun_add_to_history(original_cmdline, in_terminal);
         xfrun_dialog_delete_event(GTK_WIDGET(dialog), NULL);
     }
