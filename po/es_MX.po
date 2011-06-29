@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: xfce-utils 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-16 17:12+0100\n"
-"PO-Revision-Date: 2005-08-17 21:17+0900\n"
-"Last-Translator: Edscott Wilson Garcia <edscott@edscott.org>\n"
+"PO-Revision-Date: 2011-06-29 14:19-0600\n"
+"Last-Translator: Jacob S. Preciado <jacsal@starmedia.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -18,97 +18,111 @@ msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Acerca de la versión"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Administrador de Ventanas"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Controla la posición de las ventanas en pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
+"Lanzadores, botones en ventana, menús, switch de espacios de trabajo y "
+"otros más"
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Administrador de escritorio"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
+"Establece el color o la imagen en fondo, con opcionales menús o íconos "
+"para aplicaciones minimizadas o lanzadores, dispositivos y directorios."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Administrador de archivos "
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
+"Un moderno administrador de archivos rápido y fácil de usar "
+"para el entorno de escritorio en Unix/Linux"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Administrador de sesión"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
+"Inicia las preferencias de su sesión y le permite apagar el equipo "
+"desde Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Configurando el sistema"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr ""
+"Sistema de configuración que controla varios aspectos "
+"del escritorio, tales como: apariencia, pantalla, teclado y mouse."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Buscador de aplicaciones"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr ""
+"Muestra las aplicaciones instaladas en su sistema, para así "
+"rápidamente. encontrarlas y ejecutarlas"
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Utilidades y Scripts"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Incluye a los scripts de inicio y a los diálogos de ejecución y acerca de."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Configurando al Deamon"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Sistema de almacenamiento con configuración D-bus"
 
 #: ../xfce4-about/main.c:116
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
+"Xfce es una colección de programas que juntos hacen de éste un "
+"entorno de escritorio. Los siguientes programas son parte del núcleo de Xfce:"
 
 #: ../xfce4-about/main.c:140
 msgid ""
@@ -116,6 +130,9 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
+"Xfce es también una plataforma de desarrollo, y pone a disposición del " 
+"programador una serie de bibliotecas para crear aplicaciones que se integran "
+"a la perfección en el entorno de escritorio."
 
 #: ../xfce4-about/main.c:146
 msgid ""
@@ -124,30 +141,38 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
+"Los componentes de Xfce están licenciados bajo licencias libres; GPL o BSDL " 
+"para aplicaciones y LGPL o BSDL para bibliotecas. Si desea Ud. más información, "
+"dé un vistazo al código fuente o visítenos en el sitio web de Xfce "
+"(http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Gracias por usar Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "El equipo de desarrollo de Xfce"
 
 #: ../xfce4-about/main.c:266
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
+"Si conoce a alguien que no está en la lista, por favor háganoslo saber en "
+"<http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Gracias a todos los que ayudaron a hacer este software posible."
 
 #: ../xfce4-about/main.c:287
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
+"Los derechos de autor de Xfce 4 pertenecen a Olivier Fourdan (fourdan@xfce.org). " 
+"Los diferentes componentes tienen copyright de sus autores respectivos."
 
 #: ../xfce4-about/main.c:292
 msgid ""
@@ -156,6 +181,10 @@ msgid ""
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
 msgstr ""
+"Los paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs y exo son "
+"distribuidos bajo los términos de la GNU Library General Public License "
+"versión 2, publicadas por la Free Software Fundation, o (en su defecto) "
+"cualquier versión posterior"
 
 #: ../xfce4-about/main.c:299
 msgid ""
@@ -165,92 +194,97 @@ msgid ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 msgstr ""
+"Los paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 son distribuidos "
+"bajo los términos de la GNU Library General Public License versión 2 "
+"publicadas por la Free Software Fundation, o (en su defecto) cualquier "
+"versión posterior"
 
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Comande a '%s --help' para obtener ayuda"
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "No es posible inicializar a GTK+."
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
 msgstr ""
+"El equipo de desarrollo de Xfce. Todos los derechos"
+"reservados"
 
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Por favor reportar los Bugs a: <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Lista de traductores desde %s"
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Fallo al cargar la interfáz"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Versión %s, distribuida por ½s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Versión %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Desarrolladores de código"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Contribuidores activos"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Servidor administrados por:"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervisar los Goodies"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervisar traducción"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Traductores"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Contribuciones anteriores"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
-#, fuzzy
 msgid "About Xfce"
-msgstr "Acerca de Xfce 4"
+msgstr "Acerca de Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
-#, fuzzy
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Entorno de Escritorio Xfce"
+msgstr "Acerca de el Entorno de Escritorio Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 #, fuzzy
@@ -260,11 +294,11 @@ msgstr "Entorno de Escritorio Xfce"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 #, fuzzy
 msgid "BSD"
-msgstr "BSDL"
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr "Derechos de autor"
+msgstr "Copyrigth"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
@@ -280,39 +314,41 @@ msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #. we don't support daemon mode
 #: ../xfrun/xfrun.c:48
 msgid "Daemon Mode"
-msgstr ""
+msgstr "Modo de Daemon"
 
 #: ../xfrun/xfrun.c:50
 msgid "Daemon mode is not supported."
-msgstr ""
+msgstr "El modo de Daemon no está soportado"
 
 #: ../xfrun/xfrun.c:51
 msgid "Xfrun must be compiled with D-BUS support to enable daemon mode."
 msgstr ""
+"Xfrun debe de estar compilado con soportea para Dbus, para " 
+"habilitar el modo en Daemon"
 
 #: ../xfrun/xfrun-dbus.c:156
 #, c-format
 msgid "Unable to open display \"%s\"."
-msgstr ""
+msgstr "No es posible abrir la pantalla \"%s\"."
 
 #: ../xfrun/xfrun-dbus.c:210
 #, c-format
 msgid "D-BUS message bus disconnected. Exiting ...\n"
-msgstr ""
+msgstr "D-BUS ha sido desconectado, Saliendo...\n"
 
 #. failed
 #: ../xfrun/xfrun-dbus.c:350 ../xfrun/xfrun-dbus.c:361
 msgid "System Error"
-msgstr ""
+msgstr "Error de sistema"
 
 #: ../xfrun/xfrun-dbus.c:352 ../xfrun/xfrun-dbus.c:363
 msgid "Unable to fork to background:"
-msgstr ""
+msgstr "No es posible derivar a operación de fondo"
 
 #: ../xfrun/xfrun-dialog.c:180
 msgid "Run in _terminal"
@@ -326,43 +362,43 @@ msgstr "_Ejecutar"
 #: ../xfrun/xfrun-dialog.c:572 ../xfrun/xfrun-dialog.c:583
 #, c-format
 msgid "The command \"%s\" failed to run:"
-msgstr ""
+msgstr "El comando \"%s\" falló al intentar la ejecución"
 
 #: ../xfrun/xfrun-dialog.c:574 ../xfrun/xfrun-dialog.c:585
-#, fuzzy
+
 msgid "Run Error"
-msgstr "Ejecutar Programa"
+msgstr "Error de ejecución"
 
 #: ../xfrun/xfrun-dialog.c:576 ../xfrun/xfrun-dialog.c:587
-#, fuzzy
+
 msgid "Unknown Error"
-msgstr "Ejecutar Programa"
+msgstr "Error desconocido"
 
 #: ../xfrun/xfrun4.desktop.in.h:1
-#, fuzzy
+
 msgid "Run Program..."
-msgstr "Ejecutar Programa"
+msgstr "Ejecutar Programa..."
 
 #: ../xfrun/xfrun4.desktop.in.h:2
-#, fuzzy
+
 msgid "Run a program"
-msgstr "Ejecutar Programa"
+msgstr "Ejecutar un programa"
 
 #: ../xfce.desktop.in.h:1
 msgid "Use this session to run Xfce as your desktop environment"
-msgstr ""
+msgstr "Usa esta sesión para ejecutar a Xfce como su entorno de escritorio"
 
 #: ../xfce.desktop.in.h:2
 msgid "Xfce Session"
-msgstr ""
+msgstr "Sesión de Xfce"
 
 #: ../scripts/xfhelp4.desktop.in.h:1
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 #: ../scripts/xfhelp4.desktop.in.h:2
 msgid "Help using Xfce"
-msgstr ""
+msgstr "Ayuda usando Xfce"
 
 #, fuzzy
 #~ msgid "Copyright 2002-2010 by Olivier Fourdan"
